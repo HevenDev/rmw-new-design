@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
+import "@/app/marque.css"
 
 const ProjectSwiper = () => {
   return (
@@ -39,6 +40,7 @@ const ProjectSwiper = () => {
                     autoplay={{
                       delay: 1,
                       disableOnInteraction: true,
+                      // reverseDirection: true
                     }}
                     className="tp-text__1-slider-active"
                   >

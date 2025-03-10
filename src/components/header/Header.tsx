@@ -41,7 +41,7 @@ const Header = () => {
               <div className="tp-main__logo">
                 <a
                   className="main-logo"
-                  href="https://etorisoft.com/wp/avtrix/"
+                  href="/"
                 >
                   <img
                     src="https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/logo/logo.png"
@@ -62,7 +62,7 @@ const Header = () => {
                     >
                       <a
                         title="Home"
-                        href="https://etorisoft.com/wp/avtrix/"
+                        href="/"
                         className="nav-links"
                       >
                         Home
@@ -281,7 +281,7 @@ const Header = () => {
                     >
                       <a
                         title="About"
-                        href="https://etorisoft.com/wp/avtrix/about/"
+                        href="/about/"
                         className="nav-links"
                       >
                         About
@@ -295,7 +295,7 @@ const Header = () => {
                     >
                       <a
                         title="Service"
-                        href="https://etorisoft.com/wp/avtrix/service/"
+                        href="#"
                         className="nav-links"
                       >
                         Service
@@ -546,8 +546,8 @@ const Header = () => {
                       id="menu-item-94"
                       className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown has-dropdown menu-item-94 nav-item"
                     >
-                      <a title="Projects" href="#" className="nav-links">
-                        Projects
+                      <a title="Projects" href="/projects/" className="nav-links">
+                        Our Work
                       </a>
                       {/* <ul
                         className="submenu tp-submenu"
@@ -620,7 +620,7 @@ const Header = () => {
                     >
                       <a
                         title="Blog"
-                        href="https://etorisoft.com/wp/avtrix/blog/"
+                        href="/blog/"
                         className="nav-links"
                       >
                         Blog
@@ -666,8 +666,8 @@ const Header = () => {
                       id="menu-item-95"
                       className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown has-dropdown menu-item-95 nav-item"
                     >
-                      <a title="Pages" href="#" className="nav-links">
-                        Pages
+                      <a title="Pages" href="/contact/" className="nav-links">
+                        Contact us
                       </a>
                       {/* <ul
                         className="submenu tp-submenu"
