@@ -6,7 +6,8 @@ import AboutFirst from "./aboutPage/AboutFirst";
 import Awards from "./Homepage/Awards";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
-
+import Swiper1 from "./aboutPage/Swiper1";
+import Swiper2 from "./aboutPage/Swiper2";
 
 const About = () => {
     return(
@@ -15,7 +16,9 @@ const About = () => {
         <AboutFirst/>
         <Stratagies/>
         <Awards/>
-        {/* <Experts/> */}
+        <Swiper1/>
+        <Swiper2/>
+        <Experts/>
         <Work/>
         <Choose/>
         <Footer/>
