@@ -1,0 +1,872 @@
+"use client"
+
+import { useEffect } from "react";
+
+const Header = () => {
+  useEffect(() => {
+    const desktopMenu = document.querySelector(".tp-main-menu-content");
+    const mobileMenu = document.querySelector(".tp-main-menu-mobile");
+
+    if (desktopMenu && mobileMenu) {
+      mobileMenu.innerHTML = desktopMenu.outerHTML; // Copy desktop menu to mobile
+    }
+
+    const dropdownLinks = document.querySelectorAll(
+      ".tp-main-menu-mobile .has-dropdown > a"
+    );
+
+    dropdownLinks.forEach((link) => {
+      const arrowBtn = document.createElement("button");
+      arrowBtn.classList.add("dropdown-toggle-btn");
+      arrowBtn.innerHTML = "<i class='far fa-angle-right'></i>";
+      link.appendChild(arrowBtn);
+
+      arrowBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const parent = link.parentElement;
+        parent?.classList.toggle("expanded");
+        parent?.querySelector(".tp-submenu")?.classList.toggle("open");
+      });
+    });
+  }, []);
+  return (
+    <header>
+      <div
+        id="header-sticky"
+        className="tp-header-top-area tp-header__style-1 tp-header__transparent tp-header__border pr-160 pl-160 black-bg"
+      >
+        <div className="contianer-fluid">
+          <div className="row align-items-center">
+            <div className="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
+              <div className="tp-main__logo">
+                <a
+                  className="main-logo"
+                  href="https://etorisoft.com/wp/avtrix/"
+                >
+                  <img
+                    src="https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/logo/logo.png"
+                    alt="logo"
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="col-xl-8 col-lg-8 d-none d-lg-block ">
+              <div className="tp-main__menu d-flex justify-content-center">
+                <nav>
+                  <ul id="menu-main-menu" className="">
+                    <li
+                      itemScope
+                      itemType="https://www.schema.org/SiteNavigationElement"
+                      id="menu-item-2496"
+                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-17 current_page_item active menu-item-2496 has-mega-menu has-dropdown nav-item"
+                    >
+                      <a
+                        title="Home"
+                        href="https://etorisoft.com/wp/avtrix/"
+                        className="nav-links"
+                      >
+                        Home
+                      </a>
+                      {/* <div className="tp-submenu submenu has-homemenu">
+                        <div
+                          data-elementor-type="container"
+                          data-elementor-id="103"
+                          className="elementor elementor-103"
+                        >
+                          <div
+                            className="elementor-element elementor-element-039dca9 e-con-full e-flex e-con e-parent"
+                            data-id="039dca9"
+                            data-element_type="container"
+                          >
+                            <div
+                              className="elementor-element elementor-element-f21576b e-con-full e-flex e-con e-child"
+                              data-id="f21576b"
+                              data-element_type="container"
+                            >
+                              <div
+                                className="elementor-element elementor-element-08a5267 elementor-widget elementor-widget-tp-menu-demo"
+                                data-id="08a5267"
+                                data-element_type="widget"
+                                data-widget_type="tp-menu-demo.default"
+                              >
+                                <div className="elementor-widget-container">
+                                  <div className="row gx-6 row-cols-1 row-cols-md-2 row-cols-lg-5 row-cols-xl-6">
+                                    <div className="col homemenu">
+                                      <div className="homemenu-thumb mb-15">
+                                        <img
+                                          src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/home-1.jpg"
+                                          alt=""
+                                        />
+                                        <div className="homemenu-btn">
+                                          <a
+                                            className="tp-menu-btn"
+                                            href="https://etorisoft.com/wp/avtrix/"
+                                            target="_self"
+                                            rel="nofollow"
+                                          >
+                                            Multi page
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div className="homemenu-content text-center">
+                                        <h4 className="homemenu-title">
+                                          <a
+                                            href="https://etorisoft.com/wp/avtrix/"
+                                            target="_self"
+                                            rel="nofollow"
+                                          >
+                                            Digital Marketing{" "}
+                                          </a>
+                                        </h4>
+                                      </div>
+                                    </div>
+                                    <div className="col homemenu">
+                                      <div className="homemenu-thumb mb-15">
+                                        <img
+                                          src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/home-2.jpg"
+                                          alt=""
+                                        />
+                                        <div className="homemenu-btn">
+                                          <a
+                                            className="tp-menu-btn"
+                                            href="https://etorisoft.com/wp/avtrix/home-02/"
+                                            target="_self"
+                                            rel="nofollow"
+                                          >
+                                            Multi page
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div className="homemenu-content text-center">
+                                        <h4 className="homemenu-title">
+                                          <a
+                                            href="https://etorisoft.com/wp/avtrix/home-02/"
+                                            target="_self"
+                                            rel="nofollow"
+                                          >
+                                            Branding{" "}
+                                          </a>
+                                        </h4>
+                                      </div>
+                                    </div>
+                                    <div className="col homemenu">
+                                      <div className="homemenu-thumb mb-15">
+                                        <img
+                                          src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/home-3.jpg"
+                                          alt=""
+                                        />
+                                        <div className="homemenu-btn">
+                                          <a
+                                            className="tp-menu-btn"
+                                            href="https://etorisoft.com/wp/avtrix/home-03/"
+                                            target="_self"
+                                            rel="nofollow"
+                                          >
+                                            Multi page
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div className="homemenu-content text-center">
+                                        <h4 className="homemenu-title">
+                                          <a
+                                            href="https://etorisoft.com/wp/avtrix/home-03/"
+                                            target="_self"
+                                            rel="nofollow"
+                                          >
+                                            Design Studio{" "}
+                                          </a>
+                                        </h4>
+                                      </div>
+                                    </div>
+                                    <div className="col homemenu">
+                                      <div className="homemenu-thumb mb-15">
+                                        <img
+                                          src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/home-4.jpg"
+                                          alt=""
+                                        />
+                                        <div className="homemenu-btn">
+                                          <a
+                                            className="tp-menu-btn"
+                                            href="https://etorisoft.com/wp/avtrix/home-04/"
+                                            target="_self"
+                                            rel="nofollow"
+                                          >
+                                            Multi page
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div className="homemenu-content text-center">
+                                        <h4 className="homemenu-title">
+                                          <a
+                                            href="https://etorisoft.com/wp/avtrix/home-04/"
+                                            target="_self"
+                                            rel="nofollow"
+                                          >
+                                            Freelancer{" "}
+                                          </a>
+                                        </h4>
+                                      </div>
+                                    </div>
+                                    <div className="col homemenu">
+                                      <div className="homemenu-thumb mb-15">
+                                        <img
+                                          src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/home-5.jpg"
+                                          alt=""
+                                        />
+                                        <div className="homemenu-btn">
+                                          <a
+                                            className="tp-menu-btn"
+                                            href="https://etorisoft.com/wp/avtrix/home-05/"
+                                            target="_self"
+                                            rel="nofollow"
+                                          >
+                                            Multi page
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div className="homemenu-content text-center">
+                                        <h4 className="homemenu-title">
+                                          <a
+                                            href="https://etorisoft.com/wp/avtrix/home-05/"
+                                            target="_self"
+                                            rel="nofollow"
+                                          >
+                                            Creative Agency{" "}
+                                          </a>
+                                        </h4>
+                                      </div>
+                                    </div>
+                                    <div className="col homemenu">
+                                      <div className="homemenu-thumb mb-15">
+                                        <img
+                                          src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/home-6.jpg"
+                                          alt=""
+                                        />
+                                        <div className="homemenu-btn">
+                                          <a
+                                            className="tp-menu-btn"
+                                            href="https://etorisoft.com/wp/avtrix/home-06/"
+                                            target="_self"
+                                            rel="nofollow"
+                                          >
+                                            Multi page
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div className="homemenu-content text-center">
+                                        <h4 className="homemenu-title">
+                                          <a
+                                            href="https://etorisoft.com/wp/avtrix/home-06/"
+                                            target="_self"
+                                            rel="nofollow"
+                                          >
+                                            Portfolio Showcase{" "}
+                                          </a>
+                                        </h4>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div> */}
+                    </li>
+                    <li
+                      itemScope
+                      itemType="https://www.schema.org/SiteNavigationElement"
+                      id="menu-item-73"
+                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-73 nav-item"
+                    >
+                      <a
+                        title="About"
+                        href="https://etorisoft.com/wp/avtrix/about/"
+                        className="nav-links"
+                      >
+                        About
+                      </a>
+                    </li>
+                    <li
+                      itemScope
+                      itemType="https://www.schema.org/SiteNavigationElement"
+                      id="menu-item-88"
+                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown has-dropdown menu-item-88 nav-item"
+                    >
+                      <a
+                        title="Service"
+                        href="https://etorisoft.com/wp/avtrix/service/"
+                        className="nav-links"
+                      >
+                        Service
+                      </a>
+                      {/* <ul
+                        className="submenu tp-submenu"
+                        aria-labelledby="103"
+                        role="menu"
+                      >
+                        <li
+                          itemScope
+                          itemType="https://www.schema.org/SiteNavigationElement"
+                          id="menu-item-92"
+                          className="menu-item menu-item-type-post_type menu-item-object-page menu-item-92 nav-item"
+                        >
+                          <a
+                            title="Service"
+                            href="https://etorisoft.com/wp/avtrix/service/"
+                            className="dropdown-items"
+                          >
+                            Service
+                          </a>
+                        </li>
+                        <li
+                          itemScope
+                          itemType="https://www.schema.org/SiteNavigationElement"
+                          id="menu-item-89"
+                          className="menu-item menu-item-type-post_type menu-item-object-page menu-item-89 nav-item"
+                        >
+                          <a
+                            title="Service Details"
+                            href="https://etorisoft.com/wp/avtrix/service-details/"
+                            className="dropdown-items"
+                          >
+                            Service Details
+                          </a>
+                        </li>
+                      </ul> */}
+                      <div className="tp-submenu submenu has-homemenu">
+                        <div
+                          data-elementor-type="container"
+                          data-elementor-id="103"
+                          className="elementor elementor-103"
+                        >
+                          <div
+                            className="elementor-element elementor-element-039dca9 e-con-full e-flex e-con e-parent"
+                            data-id="039dca9"
+                            data-element_type="container"
+                          >
+                            <div
+                              className="elementor-element elementor-element-f21576b e-con-full e-flex e-con e-child"
+                              data-id="f21576b"
+                              data-element_type="container"
+                            >
+                              <div
+                                className="elementor-element elementor-element-08a5267 elementor-widget elementor-widget-tp-menu-demo"
+                                data-id="08a5267"
+                                data-element_type="widget"
+                                data-widget_type="tp-menu-demo.default"
+                              >
+                                <div className="elementor-widget-container">
+                                  <div className="row gx-6 row-cols-1 row-cols-md-2 row-cols-lg-5 row-cols-xl-6">
+                                    <div className="col homemenu">
+                                      <div className="homemenu-thumb mb-15">
+                                        <img
+                                          src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/home-1.jpg"
+                                          alt=""
+                                        />
+                                        <div className="homemenu-btn">
+                                          <a
+                                            className="tp-menu-btn"
+                                            href="https://etorisoft.com/wp/avtrix/"
+                                            target="_self"
+                                            rel="nofollow"
+                                          >
+                                            Multi page
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div className="homemenu-content text-center">
+                                        <h4 className="homemenu-title">
+                                          <a
+                                            href="https://etorisoft.com/wp/avtrix/"
+                                            target="_self"
+                                            rel="nofollow"
+                                          >
+                                            Digital Marketing{" "}
+                                          </a>
+                                        </h4>
+                                      </div>
+                                    </div>
+                                    <div className="col homemenu">
+                                      <div className="homemenu-thumb mb-15">
+                                        <img
+                                          src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/home-2.jpg"
+                                          alt=""
+                                        />
+                                        <div className="homemenu-btn">
+                                          <a
+                                            className="tp-menu-btn"
+                                            href="https://etorisoft.com/wp/avtrix/home-02/"
+                                            target="_self"
+                                            rel="nofollow"
+                                          >
+                                            Multi page
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div className="homemenu-content text-center">
+                                        <h4 className="homemenu-title">
+                                          <a
+                                            href="https://etorisoft.com/wp/avtrix/home-02/"
+                                            target="_self"
+                                            rel="nofollow"
+                                          >
+                                            Branding{" "}
+                                          </a>
+                                        </h4>
+                                      </div>
+                                    </div>
+                                    <div className="col homemenu">
+                                      <div className="homemenu-thumb mb-15">
+                                        <img
+                                          src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/home-3.jpg"
+                                          alt=""
+                                        />
+                                        <div className="homemenu-btn">
+                                          <a
+                                            className="tp-menu-btn"
+                                            href="https://etorisoft.com/wp/avtrix/home-03/"
+                                            target="_self"
+                                            rel="nofollow"
+                                          >
+                                            Multi page
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div className="homemenu-content text-center">
+                                        <h4 className="homemenu-title">
+                                          <a
+                                            href="https://etorisoft.com/wp/avtrix/home-03/"
+                                            target="_self"
+                                            rel="nofollow"
+                                          >
+                                            Design Studio{" "}
+                                          </a>
+                                        </h4>
+                                      </div>
+                                    </div>
+                                    <div className="col homemenu">
+                                      <div className="homemenu-thumb mb-15">
+                                        <img
+                                          src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/home-4.jpg"
+                                          alt=""
+                                        />
+                                        <div className="homemenu-btn">
+                                          <a
+                                            className="tp-menu-btn"
+                                            href="https://etorisoft.com/wp/avtrix/home-04/"
+                                            target="_self"
+                                            rel="nofollow"
+                                          >
+                                            Multi page
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div className="homemenu-content text-center">
+                                        <h4 className="homemenu-title">
+                                          <a
+                                            href="https://etorisoft.com/wp/avtrix/home-04/"
+                                            target="_self"
+                                            rel="nofollow"
+                                          >
+                                            Freelancer{" "}
+                                          </a>
+                                        </h4>
+                                      </div>
+                                    </div>
+                                    <div className="col homemenu">
+                                      <div className="homemenu-thumb mb-15">
+                                        <img
+                                          src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/home-5.jpg"
+                                          alt=""
+                                        />
+                                        <div className="homemenu-btn">
+                                          <a
+                                            className="tp-menu-btn"
+                                            href="https://etorisoft.com/wp/avtrix/home-05/"
+                                            target="_self"
+                                            rel="nofollow"
+                                          >
+                                            Multi page
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div className="homemenu-content text-center">
+                                        <h4 className="homemenu-title">
+                                          <a
+                                            href="https://etorisoft.com/wp/avtrix/home-05/"
+                                            target="_self"
+                                            rel="nofollow"
+                                          >
+                                            Creative Agency{" "}
+                                          </a>
+                                        </h4>
+                                      </div>
+                                    </div>
+                                    <div className="col homemenu">
+                                      <div className="homemenu-thumb mb-15">
+                                        <img
+                                          src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/home-6.jpg"
+                                          alt=""
+                                        />
+                                        <div className="homemenu-btn">
+                                          <a
+                                            className="tp-menu-btn"
+                                            href="https://etorisoft.com/wp/avtrix/home-06/"
+                                            target="_self"
+                                            rel="nofollow"
+                                          >
+                                            Multi page
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div className="homemenu-content text-center">
+                                        <h4 className="homemenu-title">
+                                          <a
+                                            href="https://etorisoft.com/wp/avtrix/home-06/"
+                                            target="_self"
+                                            rel="nofollow"
+                                          >
+                                            Portfolio Showcase{" "}
+                                          </a>
+                                        </h4>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      itemScope
+                      itemType="https://www.schema.org/SiteNavigationElement"
+                      id="menu-item-94"
+                      className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown has-dropdown menu-item-94 nav-item"
+                    >
+                      <a title="Projects" href="#" className="nav-links">
+                        Projects
+                      </a>
+                      {/* <ul
+                        className="submenu tp-submenu"
+                        aria-labelledby="103"
+                        role="menu"
+                      >
+                        <li
+                          itemScope
+                          itemType="https://www.schema.org/SiteNavigationElement"
+                          id="menu-item-83"
+                          className="menu-item menu-item-type-post_type menu-item-object-page menu-item-83 nav-item"
+                        >
+                          <a
+                            title="Portfolio – 01"
+                            href="https://etorisoft.com/wp/avtrix/portfolio/"
+                            className="dropdown-items"
+                          >
+                            Portfolio – 01
+                          </a>
+                        </li>
+                        <li
+                          itemScope
+                          itemType="https://www.schema.org/SiteNavigationElement"
+                          id="menu-item-84"
+                          className="menu-item menu-item-type-post_type menu-item-object-page menu-item-84 nav-item"
+                        >
+                          <a
+                            title="Portfolio – 02"
+                            href="https://etorisoft.com/wp/avtrix/portfolio-02/"
+                            className="dropdown-items"
+                          >
+                            Portfolio – 02
+                          </a>
+                        </li>
+                        <li
+                          itemScope
+                          itemType="https://www.schema.org/SiteNavigationElement"
+                          id="menu-item-85"
+                          className="menu-item menu-item-type-post_type menu-item-object-page menu-item-85 nav-item"
+                        >
+                          <a
+                            title="Portfolio – 03"
+                            href="https://etorisoft.com/wp/avtrix/portfolio-03/"
+                            className="dropdown-items"
+                          >
+                            Portfolio – 03
+                          </a>
+                        </li>
+                        <li
+                          itemScope
+                          itemType="https://www.schema.org/SiteNavigationElement"
+                          id="menu-item-86"
+                          className="menu-item menu-item-type-post_type menu-item-object-page menu-item-86 nav-item"
+                        >
+                          <a
+                            title="Portfolio Details"
+                            href="https://etorisoft.com/wp/avtrix/portfolio-details/"
+                            className="dropdown-items"
+                          >
+                            Portfolio Details
+                          </a>
+                        </li>
+                      </ul> */}
+                    </li>
+                    <li
+                      itemScope
+                      itemType="https://www.schema.org/SiteNavigationElement"
+                      id="menu-item-74"
+                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown has-dropdown menu-item-74 nav-item"
+                    >
+                      <a
+                        title="Blog"
+                        href="https://etorisoft.com/wp/avtrix/blog/"
+                        className="nav-links"
+                      >
+                        Blog
+                      </a>
+                      {/* <ul
+                        className="submenu tp-submenu"
+                        aria-labelledby="103"
+                        role="menu"
+                      >
+                        <li
+                          itemScope
+                          itemType="https://www.schema.org/SiteNavigationElement"
+                          id="menu-item-2461"
+                          className="menu-item menu-item-type-post_type menu-item-object-page menu-item-2461 nav-item"
+                        >
+                          <a
+                            title="Blog"
+                            href="https://etorisoft.com/wp/avtrix/blog/"
+                            className="dropdown-items"
+                          >
+                            Blog
+                          </a>
+                        </li>
+                        <li
+                          itemScope
+                          itemType="https://www.schema.org/SiteNavigationElement"
+                          id="menu-item-2460"
+                          className="menu-item menu-item-type-post_type menu-item-object-post menu-item-2460 nav-item"
+                        >
+                          <a
+                            title="Blog Details"
+                            href="https://etorisoft.com/wp/avtrix/innovative-solutions-for-a-digital-tomorrow/"
+                            className="dropdown-items"
+                          >
+                            Blog Details
+                          </a>
+                        </li>
+                      </ul> */}
+                    </li>
+                    <li
+                      itemScope
+                      itemType="https://www.schema.org/SiteNavigationElement"
+                      id="menu-item-95"
+                      className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown has-dropdown menu-item-95 nav-item"
+                    >
+                      <a title="Pages" href="#" className="nav-links">
+                        Pages
+                      </a>
+                      {/* <ul
+                        className="submenu tp-submenu"
+                        aria-labelledby="103"
+                        role="menu"
+                      >
+                        <li
+                          itemScope
+                          itemType="https://www.schema.org/SiteNavigationElement"
+                          id="menu-item-90"
+                          className="menu-item menu-item-type-post_type menu-item-object-page menu-item-90 nav-item"
+                        >
+                          <a
+                            title="Team"
+                            href="https://etorisoft.com/wp/avtrix/team/"
+                            className="dropdown-items"
+                          >
+                            Team
+                          </a>
+                        </li>
+                        <li
+                          itemScope
+                          itemType="https://www.schema.org/SiteNavigationElement"
+                          id="menu-item-91"
+                          className="menu-item menu-item-type-post_type menu-item-object-page menu-item-91 nav-item"
+                        >
+                          <a
+                            title="Team Details"
+                            href="https://etorisoft.com/wp/avtrix/team-details/"
+                            className="dropdown-items"
+                          >
+                            Team Details
+                          </a>
+                        </li>
+                        <li
+                          itemScope
+                          itemType="https://www.schema.org/SiteNavigationElement"
+                          id="menu-item-87"
+                          className="menu-item menu-item-type-post_type menu-item-object-page menu-item-87 nav-item"
+                        >
+                          <a
+                            title="Pricing"
+                            href="https://etorisoft.com/wp/avtrix/pricing/"
+                            className="dropdown-items"
+                          >
+                            Pricing
+                          </a>
+                        </li>
+                        <li
+                          itemScope
+                          itemType="https://www.schema.org/SiteNavigationElement"
+                          id="menu-item-76"
+                          className="menu-item menu-item-type-post_type menu-item-object-page menu-item-76 nav-item"
+                        >
+                          <a
+                            title="Error Page"
+                            href="https://etorisoft.com/wp/avtrix/error-page/"
+                            className="dropdown-items"
+                          >
+                            Error Page
+                          </a>
+                        </li>
+                        <li
+                          itemScope
+                          itemType="https://www.schema.org/SiteNavigationElement"
+                          id="menu-item-75"
+                          className="menu-item menu-item-type-post_type menu-item-object-page menu-item-75 nav-item"
+                        >
+                          <a
+                            title="Contact"
+                            href="https://etorisoft.com/wp/avtrix/contact/"
+                            className="dropdown-items"
+                          >
+                            Contact
+                          </a>
+                        </li>
+                      </ul> */}
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+
+            <div className="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
+              <div className="tp-header__right d-flex justify-content-end">
+                <div className="tp-header__action">
+                  <ul>
+                    <li>
+                      <button className="tp-header__search-btn tp-search-open-btn">
+                        <span>
+                          <svg
+                            width="18"
+                            height="18"
+                            viewBox="0 0 18 18"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              clipRule="evenodd"
+                              d="M12.4833 13.3769L16.6212 17.5149C16.8678 17.7615 17.2685 17.7615 17.515 17.5149C17.7617 17.2684 17.7617 16.8676 17.515 16.6211L13.3771 12.4832C14.4966 11.1613 15.1718 9.45191 15.1718 7.58592C15.1718 3.39921 11.7727 0 7.58592 0C3.39914 0 0 3.39914 0 7.58592C0 11.7727 3.39914 15.1718 7.58592 15.1718C9.45205 15.1718 11.1614 14.4967 12.4832 13.3771L12.4833 13.3769ZM7.58606 1.26403C11.0749 1.26403 13.9077 4.09676 13.9077 7.58563C13.9077 11.0745 11.0749 13.9072 7.58606 13.9072C4.09719 13.9072 1.26446 11.0745 1.26446 7.58563C1.26446 4.09676 4.09719 1.26403 7.58606 1.26403Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                    </li>
+                    <li>
+                      <button className="tp-header__burs-btn tp-offcanvas-open-btn">
+                        <span>
+                          <svg
+                            width="28"
+                            height="26"
+                            viewBox="0 0 28 26"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <ellipse
+                              cx="2.39023"
+                              cy="2.39022"
+                              rx="2.39023"
+                              ry="2.39022"
+                              fill="#FF521C"
+                            />
+                            <ellipse
+                              cx="13.9137"
+                              cy="2.39022"
+                              rx="2.39023"
+                              ry="2.39022"
+                              fill="white"
+                              fillOpacity="0.7"
+                            />
+                            <ellipse
+                              cx="25.441"
+                              cy="2.39022"
+                              rx="2.39023"
+                              ry="2.39022"
+                              fill="white"
+                              fillOpacity="0.7"
+                            />
+                            <ellipse
+                              cx="2.39023"
+                              cy="12.6339"
+                              rx="2.39023"
+                              ry="2.39022"
+                              fill="white"
+                              fillOpacity="0.7"
+                            />
+                            <ellipse
+                              cx="13.9137"
+                              cy="12.6349"
+                              rx="2.39023"
+                              ry="2.39022"
+                              fill="white"
+                            />
+                            <ellipse
+                              cx="25.441"
+                              cy="12.6349"
+                              rx="2.39023"
+                              ry="2.39022"
+                              fill="white"
+                              fillOpacity="0.7"
+                            />
+                            <ellipse
+                              cx="2.39023"
+                              cy="23.0484"
+                              rx="2.39023"
+                              ry="2.39022"
+                              fill="white"
+                              fillOpacity="0.7"
+                            />
+                            <ellipse
+                              cx="13.9996"
+                              cy="23.0484"
+                              rx="2.39023"
+                              ry="2.39022"
+                              fill="white"
+                              fillOpacity="0.7"
+                            />
+                            <ellipse
+                              cx="25.609"
+                              cy="23.0484"
+                              rx="2.39023"
+                              ry="2.39022"
+                              fill="#FF521C"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Header;
