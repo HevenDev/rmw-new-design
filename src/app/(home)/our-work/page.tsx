@@ -11,7 +11,7 @@ const page = () => {
   return (
     <>
       <Header />
-      <PagesBanner />
+      <PagesBanner headingTitle={"Our work"} />
       <ProjectCards />
       <ProjectMarque />
       <ProjectNumbers />

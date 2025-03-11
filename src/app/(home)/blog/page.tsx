@@ -72,7 +72,7 @@ const page = () => {
     <!-- wrapper-box start -->
 
     <!-- breadcrumb area start --> */}
-      <PagesBanner />
+      <PagesBanner headingTitle={"Blog"} />
       {/* <!-- breadcrumb area end -->
 
     <!-- search popup start --> */}

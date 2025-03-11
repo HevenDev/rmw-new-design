@@ -1,13 +1,16 @@
 import Link from "next/link"
 
 
-
-const PagesBanner = () => {
+interface PagesBannerProps {
+  headingTitle: string;
+}
+const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle }) => {
   return (
     <section
         className="breadcrumb__area fix p-relative breadcrumb__plr breadcrumb__overlay breadcrumb__bg"
         data-background="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/12/breadcrumb-bg-1.jpg"
         data-bg-color="#140e0e"
+        style={{backgroundImage: "url(https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/12/breadcrumb-bg-1.jpg)", backgroundColor: "rgb(20, 14, 14)"}}
       >
         <div className="breadcrumb__shape">
           <img
@@ -34,7 +37,7 @@ const PagesBanner = () => {
                     <meta property="position" content="1" />
                   </span>
                 </div>
-                <h3 className="breadcrumb__title">Blog</h3>
+                <h3 className="breadcrumb__title">{headingTitle}</h3>
               </div>
             </div>
           </div>

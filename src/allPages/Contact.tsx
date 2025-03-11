@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <>
     <Header/>
-    <PagesBanner/>
+    <PagesBanner headingTitle={"Contact Us"}/>
     <Form/>
     <Footer/>
     </>
