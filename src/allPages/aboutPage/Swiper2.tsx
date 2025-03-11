@@ -18,17 +18,17 @@ const Swiper2 = () => {
             <Swiper
               modules={[Autoplay]}
               loop={true}
-              freeMode={true}
               slidesPerView={"auto"}
               spaceBetween={30}
               centeredSlides={true}
               allowTouchMove={false}
-              speed={10000}
+              speed={20000}
               autoplay={{
-                delay: 1,
-                disableOnInteraction: true,
+                delay: 0,
+                disableOnInteraction: false,
                 reverseDirection: true,
               }}
+              dir="ltr"
               id="swiper-wrapper-af37dab55c4fb398"
               aria-live="off"
             >

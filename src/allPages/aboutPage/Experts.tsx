@@ -1,3 +1,10 @@
+"use client";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/autoplay";
+import "@/app/marque.css";
+
 const Experts = () => {
   return (
     <div className="elementor-widget-container">
@@ -28,8 +35,30 @@ const Experts = () => {
 
                     <div className="tp-team__wrap">
                       <div className="swiper-container tp-team__3-active">
-                        <div className="swiper-wrapper">
-                          <div className="swiper-slide">
+                        <Swiper className="swiper-wrapper"
+                        spaceBetween={30}
+                        slidesPerView={4}
+                        loop={true}
+                        autoplay={false}
+                        speed={1200}
+                        breakpoints={{
+                          1200: {
+                            slidesPerView: 4,
+                          },
+                          992: {
+                            slidesPerView: 3,
+                          },
+                          768: {
+                            slidesPerView: 2,
+                          },
+                          576: {
+                            slidesPerView: 1,
+                          },
+                          0: {
+                            slidesPerView: 1,
+                          },
+                        }}>
+                          <SwiperSlide className="swiper-slide">
                             <div
                               className="tp-team__3-item wow none"
                               data-wow-duration=""
@@ -121,8 +150,8 @@ const Experts = () => {
                                 </div>
                               </div>
                             </div>
-                          </div>
-                          <div className="swiper-slide">
+                          </SwiperSlide>
+                          <SwiperSlide className="swiper-slide">
                             <div
                               className="tp-team__3-item wow none"
                               data-wow-duration=""
@@ -214,8 +243,8 @@ const Experts = () => {
                                 </div>
                               </div>
                             </div>
-                          </div>
-                          <div className="swiper-slide">
+                          </SwiperSlide>
+                          <SwiperSlide className="swiper-slide">
                             <div
                               className="tp-team__3-item wow none"
                               data-wow-duration=""
@@ -307,8 +336,8 @@ const Experts = () => {
                                 </div>
                               </div>
                             </div>
-                          </div>
-                          <div className="swiper-slide">
+                          </SwiperSlide>
+                          <SwiperSlide className="swiper-slide">
                             <div
                               className="tp-team__3-item wow none"
                               data-wow-duration=""
@@ -400,8 +429,8 @@ const Experts = () => {
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        </div>
+                          </SwiperSlide>
+                        </Swiper>
                       </div>
                     </div>
                   </div>

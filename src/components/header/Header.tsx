@@ -2,6 +2,8 @@
 
 import { useEffect } from "react";
 
+import Link from "next/link";
+
 const Header = () => {
   useEffect(() => {
     const desktopMenu = document.querySelector(".tp-main-menu-content");
@@ -39,7 +41,7 @@ const Header = () => {
           <div className="row align-items-center">
             <div className="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
               <div className="tp-main__logo">
-                <a
+                <Link
                   className="main-logo"
                   href="/"
                 >
@@ -47,7 +49,7 @@ const Header = () => {
                     src="https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/logo/logo.png"
                     alt="logo"
                   />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-xl-8 col-lg-8 d-none d-lg-block ">
@@ -56,17 +58,17 @@ const Header = () => {
                   <ul id="menu-main-menu" className="">
                     <li
                       itemScope
-                      itemType="https://www.schema.org/SiteNavigationElement"
+                      itemType="https://www.schema.org/"
                       id="menu-item-2496"
                       className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-17 current_page_item active menu-item-2496 has-mega-menu has-dropdown nav-item"
                     >
-                      <a
+                      <Link
                         title="Home"
                         href="/"
                         className="nav-links"
                       >
                         Home
-                      </a>
+                      </Link>
                       {/* <div className="tp-submenu submenu has-homemenu">
                         <div
                           data-elementor-type="container"
@@ -98,25 +100,25 @@ const Header = () => {
                                           alt=""
                                         />
                                         <div className="homemenu-btn">
-                                          <a
+                                          <Link
                                             className="tp-menu-btn"
                                             href="https://etorisoft.com/wp/avtrix/"
                                             target="_self"
                                             rel="nofollow"
                                           >
                                             Multi page
-                                          </a>
+                                          </Link>
                                         </div>
                                       </div>
                                       <div className="homemenu-content text-center">
                                         <h4 className="homemenu-title">
-                                          <a
+                                          <Link
                                             href="https://etorisoft.com/wp/avtrix/"
                                             target="_self"
                                             rel="nofollow"
                                           >
                                             Digital Marketing{" "}
-                                          </a>
+                                          </Link>
                                         </h4>
                                       </div>
                                     </div>
@@ -127,25 +129,25 @@ const Header = () => {
                                           alt=""
                                         />
                                         <div className="homemenu-btn">
-                                          <a
+                                          <Link
                                             className="tp-menu-btn"
                                             href="https://etorisoft.com/wp/avtrix/home-02/"
                                             target="_self"
                                             rel="nofollow"
                                           >
                                             Multi page
-                                          </a>
+                                          </Link>
                                         </div>
                                       </div>
                                       <div className="homemenu-content text-center">
                                         <h4 className="homemenu-title">
-                                          <a
+                                          <Link
                                             href="https://etorisoft.com/wp/avtrix/home-02/"
                                             target="_self"
                                             rel="nofollow"
                                           >
                                             Branding{" "}
-                                          </a>
+                                          </Link>
                                         </h4>
                                       </div>
                                     </div>
@@ -156,25 +158,25 @@ const Header = () => {
                                           alt=""
                                         />
                                         <div className="homemenu-btn">
-                                          <a
+                                          <Link
                                             className="tp-menu-btn"
                                             href="https://etorisoft.com/wp/avtrix/home-03/"
                                             target="_self"
                                             rel="nofollow"
                                           >
                                             Multi page
-                                          </a>
+                                          </Link>
                                         </div>
                                       </div>
                                       <div className="homemenu-content text-center">
                                         <h4 className="homemenu-title">
-                                          <a
+                                          <Link
                                             href="https://etorisoft.com/wp/avtrix/home-03/"
                                             target="_self"
                                             rel="nofollow"
                                           >
                                             Design Studio{" "}
-                                          </a>
+                                          </Link>
                                         </h4>
                                       </div>
                                     </div>
@@ -185,25 +187,25 @@ const Header = () => {
                                           alt=""
                                         />
                                         <div className="homemenu-btn">
-                                          <a
+                                          <Link
                                             className="tp-menu-btn"
                                             href="https://etorisoft.com/wp/avtrix/home-04/"
                                             target="_self"
                                             rel="nofollow"
                                           >
                                             Multi page
-                                          </a>
+                                          </Link>
                                         </div>
                                       </div>
                                       <div className="homemenu-content text-center">
                                         <h4 className="homemenu-title">
-                                          <a
+                                          <Link
                                             href="https://etorisoft.com/wp/avtrix/home-04/"
                                             target="_self"
                                             rel="nofollow"
                                           >
                                             Freelancer{" "}
-                                          </a>
+                                          </Link>
                                         </h4>
                                       </div>
                                     </div>
@@ -214,25 +216,25 @@ const Header = () => {
                                           alt=""
                                         />
                                         <div className="homemenu-btn">
-                                          <a
+                                          <Link
                                             className="tp-menu-btn"
                                             href="https://etorisoft.com/wp/avtrix/home-05/"
                                             target="_self"
                                             rel="nofollow"
                                           >
                                             Multi page
-                                          </a>
+                                          </Link>
                                         </div>
                                       </div>
                                       <div className="homemenu-content text-center">
                                         <h4 className="homemenu-title">
-                                          <a
+                                          <Link
                                             href="https://etorisoft.com/wp/avtrix/home-05/"
                                             target="_self"
                                             rel="nofollow"
                                           >
                                             Creative Agency{" "}
-                                          </a>
+                                          </Link>
                                         </h4>
                                       </div>
                                     </div>
@@ -243,25 +245,25 @@ const Header = () => {
                                           alt=""
                                         />
                                         <div className="homemenu-btn">
-                                          <a
+                                          <Link
                                             className="tp-menu-btn"
                                             href="https://etorisoft.com/wp/avtrix/home-06/"
                                             target="_self"
                                             rel="nofollow"
                                           >
                                             Multi page
-                                          </a>
+                                          </Link>
                                         </div>
                                       </div>
                                       <div className="homemenu-content text-center">
                                         <h4 className="homemenu-title">
-                                          <a
+                                          <Link
                                             href="https://etorisoft.com/wp/avtrix/home-06/"
                                             target="_self"
                                             rel="nofollow"
                                           >
                                             Portfolio Showcase{" "}
-                                          </a>
+                                          </Link>
                                         </h4>
                                       </div>
                                     </div>
@@ -275,31 +277,31 @@ const Header = () => {
                     </li>
                     <li
                       itemScope
-                      itemType="https://www.schema.org/SiteNavigationElement"
+                      itemType="https://www.schema.org/about/"
                       id="menu-item-73"
                       className="menu-item menu-item-type-post_type menu-item-object-page menu-item-73 nav-item"
                     >
-                      <a
+                      <Link
                         title="About"
                         href="/about/"
                         className="nav-links"
                       >
                         About
-                      </a>
+                      </Link>
                     </li>
                     <li
                       itemScope
-                      itemType="https://www.schema.org/SiteNavigationElement"
+                      itemType="https://www.schema.org/service"
                       id="menu-item-88"
                       className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown has-dropdown menu-item-88 nav-item"
                     >
-                      <a
+                      <Link
                         title="Service"
-                        href="#"
+                        href="/service"
                         className="nav-links"
                       >
                         Service
-                      </a>
+                      </Link>
                       {/* <ul
                         className="submenu tp-submenu"
                         aria-labelledby="103"
@@ -311,13 +313,13 @@ const Header = () => {
                           id="menu-item-92"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-92 nav-item"
                         >
-                          <a
+                          <Link
                             title="Service"
                             href="https://etorisoft.com/wp/avtrix/service/"
                             className="dropdown-items"
                           >
                             Service
-                          </a>
+                          </Link>
                         </li>
                         <li
                           itemScope
@@ -325,13 +327,13 @@ const Header = () => {
                           id="menu-item-89"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-89 nav-item"
                         >
-                          <a
+                          <Link
                             title="Service Details"
                             href="https://etorisoft.com/wp/avtrix/service-details/"
                             className="dropdown-items"
                           >
                             Service Details
-                          </a>
+                          </Link>
                         </li>
                       </ul> */}
                       <div className="tp-submenu submenu has-homemenu">
@@ -365,25 +367,25 @@ const Header = () => {
                                           alt=""
                                         />
                                         <div className="homemenu-btn">
-                                          <a
+                                          <Link
                                             className="tp-menu-btn"
                                             href="https://etorisoft.com/wp/avtrix/"
                                             target="_self"
                                             rel="nofollow"
                                           >
                                             Multi page
-                                          </a>
+                                          </Link>
                                         </div>
                                       </div>
                                       <div className="homemenu-content text-center">
                                         <h4 className="homemenu-title">
-                                          <a
+                                          <Link
                                             href="https://etorisoft.com/wp/avtrix/"
                                             target="_self"
                                             rel="nofollow"
                                           >
                                             Digital Marketing{" "}
-                                          </a>
+                                          </Link>
                                         </h4>
                                       </div>
                                     </div>
@@ -394,25 +396,25 @@ const Header = () => {
                                           alt=""
                                         />
                                         <div className="homemenu-btn">
-                                          <a
+                                          <Link
                                             className="tp-menu-btn"
                                             href="https://etorisoft.com/wp/avtrix/home-02/"
                                             target="_self"
                                             rel="nofollow"
                                           >
                                             Multi page
-                                          </a>
+                                          </Link>
                                         </div>
                                       </div>
                                       <div className="homemenu-content text-center">
                                         <h4 className="homemenu-title">
-                                          <a
+                                          <Link
                                             href="https://etorisoft.com/wp/avtrix/home-02/"
                                             target="_self"
                                             rel="nofollow"
                                           >
                                             Branding{" "}
-                                          </a>
+                                          </Link>
                                         </h4>
                                       </div>
                                     </div>
@@ -423,25 +425,25 @@ const Header = () => {
                                           alt=""
                                         />
                                         <div className="homemenu-btn">
-                                          <a
+                                          <Link
                                             className="tp-menu-btn"
                                             href="https://etorisoft.com/wp/avtrix/home-03/"
                                             target="_self"
                                             rel="nofollow"
                                           >
                                             Multi page
-                                          </a>
+                                          </Link>
                                         </div>
                                       </div>
                                       <div className="homemenu-content text-center">
                                         <h4 className="homemenu-title">
-                                          <a
+                                          <Link
                                             href="https://etorisoft.com/wp/avtrix/home-03/"
                                             target="_self"
                                             rel="nofollow"
                                           >
                                             Design Studio{" "}
-                                          </a>
+                                          </Link>
                                         </h4>
                                       </div>
                                     </div>
@@ -452,25 +454,25 @@ const Header = () => {
                                           alt=""
                                         />
                                         <div className="homemenu-btn">
-                                          <a
+                                          <Link
                                             className="tp-menu-btn"
                                             href="https://etorisoft.com/wp/avtrix/home-04/"
                                             target="_self"
                                             rel="nofollow"
                                           >
                                             Multi page
-                                          </a>
+                                          </Link>
                                         </div>
                                       </div>
                                       <div className="homemenu-content text-center">
                                         <h4 className="homemenu-title">
-                                          <a
+                                          <Link
                                             href="https://etorisoft.com/wp/avtrix/home-04/"
                                             target="_self"
                                             rel="nofollow"
                                           >
                                             Freelancer{" "}
-                                          </a>
+                                          </Link>
                                         </h4>
                                       </div>
                                     </div>
@@ -481,25 +483,25 @@ const Header = () => {
                                           alt=""
                                         />
                                         <div className="homemenu-btn">
-                                          <a
+                                          <Link
                                             className="tp-menu-btn"
                                             href="https://etorisoft.com/wp/avtrix/home-05/"
                                             target="_self"
                                             rel="nofollow"
                                           >
                                             Multi page
-                                          </a>
+                                          </Link>
                                         </div>
                                       </div>
                                       <div className="homemenu-content text-center">
                                         <h4 className="homemenu-title">
-                                          <a
+                                          <Link
                                             href="https://etorisoft.com/wp/avtrix/home-05/"
                                             target="_self"
                                             rel="nofollow"
                                           >
                                             Creative Agency{" "}
-                                          </a>
+                                          </Link>
                                         </h4>
                                       </div>
                                     </div>
@@ -510,25 +512,25 @@ const Header = () => {
                                           alt=""
                                         />
                                         <div className="homemenu-btn">
-                                          <a
+                                          <Link
                                             className="tp-menu-btn"
                                             href="https://etorisoft.com/wp/avtrix/home-06/"
                                             target="_self"
                                             rel="nofollow"
                                           >
                                             Multi page
-                                          </a>
+                                          </Link>
                                         </div>
                                       </div>
                                       <div className="homemenu-content text-center">
                                         <h4 className="homemenu-title">
-                                          <a
+                                          <Link
                                             href="https://etorisoft.com/wp/avtrix/home-06/"
                                             target="_self"
                                             rel="nofollow"
                                           >
                                             Portfolio Showcase{" "}
-                                          </a>
+                                          </Link>
                                         </h4>
                                       </div>
                                     </div>
@@ -542,13 +544,13 @@ const Header = () => {
                     </li>
                     <li
                       itemScope
-                      itemType="https://www.schema.org/SiteNavigationElement"
+                      itemType="https://www.schema.org/our-work/"
                       id="menu-item-94"
                       className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown has-dropdown menu-item-94 nav-item"
                     >
-                      <a title="Projects" href="/projects/" className="nav-links">
+                      <Link title="Our Work" href="/our-work/" className="nav-links">
                         Our Work
-                      </a>
+                      </Link>
                       {/* <ul
                         className="submenu tp-submenu"
                         aria-labelledby="103"
@@ -560,13 +562,13 @@ const Header = () => {
                           id="menu-item-83"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-83 nav-item"
                         >
-                          <a
+                          <Link
                             title="Portfolio – 01"
                             href="https://etorisoft.com/wp/avtrix/portfolio/"
                             className="dropdown-items"
                           >
                             Portfolio – 01
-                          </a>
+                          </Link>
                         </li>
                         <li
                           itemScope
@@ -574,13 +576,13 @@ const Header = () => {
                           id="menu-item-84"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-84 nav-item"
                         >
-                          <a
+                          <Link
                             title="Portfolio – 02"
                             href="https://etorisoft.com/wp/avtrix/portfolio-02/"
                             className="dropdown-items"
                           >
                             Portfolio – 02
-                          </a>
+                          </Link>
                         </li>
                         <li
                           itemScope
@@ -588,13 +590,13 @@ const Header = () => {
                           id="menu-item-85"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-85 nav-item"
                         >
-                          <a
+                          <Link
                             title="Portfolio – 03"
                             href="https://etorisoft.com/wp/avtrix/portfolio-03/"
                             className="dropdown-items"
                           >
                             Portfolio – 03
-                          </a>
+                          </Link>
                         </li>
                         <li
                           itemScope
@@ -602,29 +604,29 @@ const Header = () => {
                           id="menu-item-86"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-86 nav-item"
                         >
-                          <a
+                          <Link
                             title="Portfolio Details"
                             href="https://etorisoft.com/wp/avtrix/portfolio-details/"
                             className="dropdown-items"
                           >
                             Portfolio Details
-                          </a>
+                          </Link>
                         </li>
                       </ul> */}
                     </li>
                     <li
                       itemScope
-                      itemType="https://www.schema.org/SiteNavigationElement"
+                      itemType="https://www.schema.org/blog"
                       id="menu-item-74"
                       className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown has-dropdown menu-item-74 nav-item"
                     >
-                      <a
+                      <Link
                         title="Blog"
-                        href="/blog/"
+                        href="/blog"
                         className="nav-links"
                       >
                         Blog
-                      </a>
+                      </Link>
                       {/* <ul
                         className="submenu tp-submenu"
                         aria-labelledby="103"
@@ -636,13 +638,13 @@ const Header = () => {
                           id="menu-item-2461"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-2461 nav-item"
                         >
-                          <a
+                          <Link
                             title="Blog"
                             href="https://etorisoft.com/wp/avtrix/blog/"
                             className="dropdown-items"
                           >
                             Blog
-                          </a>
+                          </Link>
                         </li>
                         <li
                           itemScope
@@ -650,25 +652,25 @@ const Header = () => {
                           id="menu-item-2460"
                           className="menu-item menu-item-type-post_type menu-item-object-post menu-item-2460 nav-item"
                         >
-                          <a
+                          <Link
                             title="Blog Details"
                             href="https://etorisoft.com/wp/avtrix/innovative-solutions-for-a-digital-tomorrow/"
                             className="dropdown-items"
                           >
                             Blog Details
-                          </a>
+                          </Link>
                         </li>
                       </ul> */}
                     </li>
                     <li
                       itemScope
-                      itemType="https://www.schema.org/SiteNavigationElement"
+                      itemType="https://www.schema.org/contact/"
                       id="menu-item-95"
                       className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown has-dropdown menu-item-95 nav-item"
                     >
-                      <a title="Pages" href="/contact/" className="nav-links">
+                      <Link title="Pages" href="/contact/" className="nav-links">
                         Contact us
-                      </a>
+                      </Link>
                       {/* <ul
                         className="submenu tp-submenu"
                         aria-labelledby="103"
@@ -680,13 +682,13 @@ const Header = () => {
                           id="menu-item-90"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-90 nav-item"
                         >
-                          <a
+                          <Link
                             title="Team"
                             href="https://etorisoft.com/wp/avtrix/team/"
                             className="dropdown-items"
                           >
                             Team
-                          </a>
+                          </Link>
                         </li>
                         <li
                           itemScope
@@ -694,13 +696,13 @@ const Header = () => {
                           id="menu-item-91"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-91 nav-item"
                         >
-                          <a
+                          <Link
                             title="Team Details"
                             href="https://etorisoft.com/wp/avtrix/team-details/"
                             className="dropdown-items"
                           >
                             Team Details
-                          </a>
+                          </Link>
                         </li>
                         <li
                           itemScope
@@ -708,13 +710,13 @@ const Header = () => {
                           id="menu-item-87"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-87 nav-item"
                         >
-                          <a
+                          <Link
                             title="Pricing"
                             href="https://etorisoft.com/wp/avtrix/pricing/"
                             className="dropdown-items"
                           >
                             Pricing
-                          </a>
+                          </Link>
                         </li>
                         <li
                           itemScope
@@ -722,13 +724,13 @@ const Header = () => {
                           id="menu-item-76"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-76 nav-item"
                         >
-                          <a
+                          <Link
                             title="Error Page"
                             href="https://etorisoft.com/wp/avtrix/error-page/"
                             className="dropdown-items"
                           >
                             Error Page
-                          </a>
+                          </Link>
                         </li>
                         <li
                           itemScope
@@ -736,13 +738,13 @@ const Header = () => {
                           id="menu-item-75"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-75 nav-item"
                         >
-                          <a
+                          <Link
                             title="Contact"
                             href="https://etorisoft.com/wp/avtrix/contact/"
                             className="dropdown-items"
                           >
                             Contact
-                          </a>
+                          </Link>
                         </li>
                       </ul> */}
                     </li>

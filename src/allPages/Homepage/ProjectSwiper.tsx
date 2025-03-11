@@ -40,7 +40,6 @@ const ProjectSwiper = () => {
                     autoplay={{
                       delay: 1,
                       disableOnInteraction: true,
-                      // reverseDirection: true
                     }}
                     className="tp-text__1-slider-active"
                   >

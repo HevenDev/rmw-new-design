@@ -20,7 +20,7 @@ const Swiper1 = () => {
               spaceBetween={30}
               centeredSlides={true}
               allowTouchMove={false}
-              speed={10000}
+              speed={20000}
               autoplay={{
                 delay: 1,
                 disableOnInteraction: true,
