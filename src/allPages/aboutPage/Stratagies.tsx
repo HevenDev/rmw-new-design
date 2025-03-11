@@ -10,7 +10,7 @@ const Stratagies = () => {
             <div className="tp-cate__title-box">
               <h3 className="tp-cate__title mb-40 tp-split__text tp-split__in-right">
                 STRATEGIES FOR BUILDING GROWING, AND MANAGING YOUR
-                BRAND'S IDENTITY
+                BRAND&apos;S IDENTITY
               </h3>
               <div className="tp-hero__action d-flex align-items-center">
                 <span>

@@ -84,7 +84,7 @@ const Service = () => {
                                   >
                                     <div className="accordion-body">
                                       <p>
-                                        what it's crafting a visually stunning
+                                        what it&apos;s crafting a visually stunning
                                         brand identity designing immersive
                                         digital experiences, develope strtegic
                                         marketing campaigns, we aproach
@@ -120,7 +120,7 @@ const Service = () => {
                                   >
                                     <div className="accordion-body">
                                       <p>
-                                        what it's crafting a visually stunning
+                                        what it&apos;s crafting a visually stunning
                                         brand identity designing immersive
                                         digital experiences, develope strtegic
                                         marketing campaigns, we aproach
@@ -156,7 +156,7 @@ const Service = () => {
                                   >
                                     <div className="accordion-body">
                                       <p>
-                                        what it's crafting a visually stunning
+                                        what it&apos;s crafting a visually stunning
                                         brand identity designing immersive
                                         digital experiences, develope strtegic
                                         marketing campaigns, we aproach
@@ -192,7 +192,7 @@ const Service = () => {
                                   >
                                     <div className="accordion-body">
                                       <p>
-                                        what it's crafting a visually stunning
+                                        what it&apos;s crafting a visually stunning
                                         brand identity designing immersive
                                         digital experiences, develope strtegic
                                         marketing campaigns, we aproach

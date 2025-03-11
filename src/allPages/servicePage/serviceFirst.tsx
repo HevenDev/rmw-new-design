@@ -343,7 +343,7 @@ const serviceFirst = () => {
                       }}
                     >
                       <span className="tp-btn__circle-text">
-                        LET'S TALK TODAY{" "}
+                        LET&apos;S TALK TODAY
                       </span>
                       <span className="tp-btn__circle-arrow">
                         <svg

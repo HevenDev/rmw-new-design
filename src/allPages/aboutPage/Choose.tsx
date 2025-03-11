@@ -51,8 +51,8 @@ const Choose = () => {
                 </h3>
                 <p>
                   
-                  Whether it's crafting a visually stunning brand
-                  identity Whether it's ns designing immersive
+                  Whether it&apos;s crafting a visually stunning brand
+                  identity Whether it&apos;s ns designing immersive
                   digital experiences, or developi crafting a
                   visually strategic marketing campaigns, we
                   approach stunning brand identity
