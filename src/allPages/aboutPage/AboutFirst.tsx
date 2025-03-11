@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const AboutFirst = () => {
   return (
     <div className="elementor-widget-container">
@@ -7,10 +9,10 @@ const AboutFirst = () => {
                       <div className="col-xl-8 col-lg-8">
                         <div className="tp-ab__title-box">
                           <span className="tp-hero__subtitle mb-25 tp-split__text tp-split__in-right">
-                            Creative Agency Beside New York USA{" "}
+                            Creative Agency Beside New York USA
                           </span>
                           <h3 className="tp-ab__title tp-split__text tp-split__in-right">
-                            ABOUT OUR{" "}
+                            ABOUT OUR
                             <span>
                               <img
                                 decoding="async"
@@ -18,21 +20,21 @@ const AboutFirst = () => {
                                 alt=""
                               />
                             </span>
-                            AGENCY &amp; SERVICES{" "}
+                            AGENCY &amp; SERVICES
                           </h3>
                         </div>
                       </div>
                       <div className="col-xl-4 col-lg-4">
                         <div className="tp-ab__btn-wrap text-center text-lg-end">
                           <div className="tp-hover__btn-wrap tp-btn__bounce">
-                            <a
+                            <Link
                               className="tp-hover__btn tp-hover__btn-item"
                               href="https://etorisoft.com/wp/avtrix/contact/"
                               target="_self"
                               rel="nofollow"
                             >
                               <span className="tp-btn__circle-text">
-                                LET&#039;S TALK TODAY{" "}
+                                LET&#039;S TALK TODAY
                               </span>
                               <span className="tp-btn__circle-arrow">
                                 <svg
@@ -50,7 +52,7 @@ const AboutFirst = () => {
                                   />
                                 </svg>
                               </span>
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>

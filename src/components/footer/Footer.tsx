@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
@@ -23,10 +24,10 @@ const Footer = () => {
                   <div className="col-xl-7">
                     <div className="tp-cta__item text-center">
                       <h3 className="tp-cta__title tp-split__text tp-split__in-right tp-cursor-point-area">
-                        <a href="https://oclata.com/wp/avtrix/contact/">
-                          {" "}
+                        <Link href="https://oclata.com/wp/avtrix/contact/">
+                          
                           Get in <span>touch</span>
-                        </a>
+                        </Link>
                       </h3>
                     </div>
                   </div>
@@ -45,12 +46,12 @@ const Footer = () => {
                   <div className="widget_text tp-footer-widget-content">
                     <div className="textwidget custom-html-widget">
                       <div className="tp-footer__logo">
-                        <a href="https://etorisoft.com/wp/avtrix/index.html">
+                        <Link href="https://etorisoft.com/wp/avtrix/index.html">
                           <img
                             src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/logo.png"
                             alt=""
                           />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -69,41 +70,41 @@ const Footer = () => {
                           id="menu-item-140"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-140"
                         >
-                          <a href="https://etorisoft.com/wp/avtrix/contact/">
+                          <Link href="https://etorisoft.com/wp/avtrix/contact/">
                             London
-                          </a>
+                          </Link>
                         </li>
                         <li
                           id="menu-item-141"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-141"
                         >
-                          <a href="https://etorisoft.com/wp/avtrix/portfolio-details/">
+                          <Link href="https://etorisoft.com/wp/avtrix/portfolio-details/">
                             America
-                          </a>
+                          </Link>
                         </li>
                         <li
                           id="menu-item-142"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-142"
                         >
-                          <a href="https://etorisoft.com/wp/avtrix/service-details/">
+                          <Link href="https://etorisoft.com/wp/avtrix/service-details/">
                             Constarica
-                          </a>
+                          </Link>
                         </li>
                         <li
                           id="menu-item-143"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-143"
                         >
-                          <a href="https://etorisoft.com/wp/avtrix/about/">
+                          <Link href="https://etorisoft.com/wp/avtrix/about/">
                             Germany
-                          </a>
+                          </Link>
                         </li>
                         <li
                           id="menu-item-144"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-144"
                         >
-                          <a href="https://etorisoft.com/wp/avtrix/contact/">
+                          <Link href="https://etorisoft.com/wp/avtrix/contact/">
                             India
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -120,13 +121,13 @@ const Footer = () => {
                     <div className="textwidget custom-html-widget">
                       <div className="tp-footer__contact-info">
                         <div className="tp-footer__list">
-                          <a href="#">Ta-134/A, Gulshan Badda Link</a>
-                          <a href="tel:15569569365">(+880)155 69569 365</a>
-                          <a href="mailto:support@rstheme.com">
+                          <Link href="#">Ta-134/A, Gulshan Badda Link</Link>
+                          <Link href="tel:15569569365">(+880)155 69569 365</Link>
+                          <Link href="mailto:support@rstheme.com">
                             support@rstheme.com
-                          </a>
-                          <a href="#">Office Hours: 8AM - 11PM</a>
-                          <a href="#">Sunday - Wekend Day</a>
+                          </Link>
+                          <Link href="#">Office Hours: 8AM - 11PM</Link>
+                          <Link href="#">Sunday - Wekend Day</Link>
                         </div>
                       </div>
                     </div>
@@ -146,41 +147,41 @@ const Footer = () => {
                           id="menu-item-135"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-135"
                         >
-                          <a href="https://etorisoft.com/wp/avtrix/contact/">
+                          <Link href="https://etorisoft.com/wp/avtrix/contact/">
                             Web (UX/UI) Design
-                          </a>
+                          </Link>
                         </li>
                         <li
                           id="menu-item-136"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-136"
                         >
-                          <a href="https://etorisoft.com/wp/avtrix/portfolio-details/">
+                          <Link href="https://etorisoft.com/wp/avtrix/portfolio-details/">
                             Software Technology
-                          </a>
+                          </Link>
                         </li>
                         <li
                           id="menu-item-137"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-137"
                         >
-                          <a href="https://etorisoft.com/wp/avtrix/service-details/">
+                          <Link href="https://etorisoft.com/wp/avtrix/service-details/">
                             Web Development
-                          </a>
+                          </Link>
                         </li>
                         <li
                           id="menu-item-138"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"
                         >
-                          <a href="https://etorisoft.com/wp/avtrix/service/">
+                          <Link href="https://etorisoft.com/wp/avtrix/service/">
                             IT Cyber Security
-                          </a>
+                          </Link>
                         </li>
                         <li
                           id="menu-item-139"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"
                         >
-                          <a href="https://etorisoft.com/wp/avtrix/about/">
+                          <Link href="https://etorisoft.com/wp/avtrix/about/">
                             Cloud Computing
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -203,21 +204,21 @@ const Footer = () => {
                   </div>
                   <div className="col-xl-6 col-lg-5">
                     <div className="tp-copyright__social text-lg-end">
-                      <a href="#" target="_blank">
+                      <Link href="#" target="_blank">
                         <i className="fab fa-facebook-f"></i>
-                      </a>
+                      </Link>
 
-                      <a href="#" target="_blank">
+                      <Link href="#" target="_blank">
                         <i className="fab fa-twitter"></i>
-                      </a>
+                      </Link>
 
-                      <a href="#" target="_blank">
+                      <Link href="#" target="_blank">
                         <i className="fab fa-instagram"></i>
-                      </a>
+                      </Link>
 
-                      <a href="#" target="_blank">
+                      <Link href="#" target="_blank">
                         <i className="fab fa-linkedin-in"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

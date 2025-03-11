@@ -1,4 +1,4 @@
-
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -27,28 +27,28 @@ const Home = () => {
                     <div className="tp-hero__social-content">
                       <ul>
                         <li>
-                          <a href="#">
+                          <Link href="#">
                             <i className="fab fa-facebook-f"></i>
                             <span>Facebook</span>
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="#">
+                          <Link href="#">
                             <i className="fab fa-twitter"></i>
                             <span>Twitter</span>
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="#">
+                          <Link href="#">
                             <i className="fab fa-dribbble"></i>
                             <span>Dribbble</span>
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="#">
+                          <Link href="#">
                             <i className="fab fa-behance"></i>
                             <span>Behance</span>
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -87,7 +87,7 @@ const Home = () => {
                           </div>
                           <div className="tp-hero__action d-flex align-items-center">
                             <span>
-                              <a
+                              <Link
                                 href="https://etorisoft.com/wp/avtrix/contact/"
                                 className="tp-hero__action-btn"
                               >
@@ -108,16 +108,16 @@ const Home = () => {
                                     />
                                   </svg>
                                 </span>
-                              </a>
+                              </Link>
                             </span>
-                            <a
+                            <Link
                               href="https://etorisoft.com/wp/avtrix/contact/"
                               rel="nofollow"
                               target="_self"
                             >
-                              {" "}
-                              LEARN MORE{" "}
-                            </a>
+                              
+                              LEARN MORE
+                            </Link>
                           </div>
                         </div>
                         <div className="col-xl-4 col-lg-5">
@@ -147,8 +147,8 @@ const Home = () => {
                             </div>
                             <p>
                               Business ocean-bass sea unicorn fish creative
-                              treefish eulachon{" "}
-                              <span className="text-white">tidewater</span>{" "}
+                              treefish eulachon
+                              <span className="text-white">tidewater</span>
                               goby. Flier, bighe studio carp Devario shortnose
                               sucker platy smalleye arrow squaretail zebra
                               turkeyfish yellowfin that specialize

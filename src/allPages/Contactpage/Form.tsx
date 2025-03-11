@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Link from "next/link";
 const Form = () => {
     return (
         <div className="tp-contact__area pt-130 pb-90 black-bg">
@@ -44,11 +44,11 @@ const Form = () => {
                             <div className="tp-contact__content d-flex align-items-center wow tpfadeUp animated" data-wow-duration=".9s" data-wow-delay=".5s" style={{ visibility: "visible", animationDuration: "0.9s", animationDelay: "0.5s" }}>
                                 <div className="tp-contact__text">
                                     <h3 className="tp-contact__title">Contact</h3>
-                                    <a href="tel:http://+(2)%20871%20382%20023" className="tp-contact__title-sm">+(2) 871 382 023</a>
+                                    <Link href="tel:http://+(2)%20871%20382%20023" className="tp-contact__title-sm">+(2) 871 382 023</Link>
                                 </div>
                                 <div className="tp-contact__email">
                                     <h3 className="tp-contact__title">Email</h3>
-                                    <a href="mailto:http://hello@joyamen.com" className="tp-contact__title-sm">hello@joyamen.com</a>
+                                    <Link href="mailto:http://hello@joyamen.com" className="tp-contact__title-sm">hello@joyamen.com</Link>
                                 </div>
                             </div>
                             <div className="tp-contact__content d-flex align-items-center wow tpfadeUp animated" data-wow-duration=".9s" data-wow-delay=".7s" style={{ visibility: "visible", animationDuration: "0.9s", animationDelay: "0.7s" }}>
@@ -60,14 +60,14 @@ const Form = () => {
                                 <div className="tp-contact__social">
                                     <h3 className="tp-contact__title">Follow</h3>
                                     <div className="tp-contact__social-link">
-                                        <a href="#" target="http://1" rel="http://1">
-                                            <i aria-hidden="true" className="fab fa-facebook-f"></i>                                                                                                                                                            </a>
-                                        <a href="#" target="http://1" rel="http://1">
-                                            <i aria-hidden="true" className="fab fa-vimeo-v"></i>                                                                                                                                                            </a>
-                                        <a href="#" target="http://1" rel="http://1">
-                                            <i aria-hidden="true" className="fab fa-twitter"></i>                                                                                                                                                            </a>
-                                        <a href="#" target="http://1" rel="http://1">
-                                            <i aria-hidden="true" className="fab fa-linkedin-in"></i>                                                                                                                                                            </a>
+                                        <Link href="#" target="http://1" rel="http://1">
+                                            <i aria-hidden="true" className="fab fa-facebook-f"></i>                                                                                                                                                            </Link>
+                                        <Link href="#" target="http://1" rel="http://1">
+                                            <i aria-hidden="true" className="fab fa-vimeo-v"></i>                                                                                                                                                            </Link>
+                                        <Link href="#" target="http://1" rel="http://1">
+                                            <i aria-hidden="true" className="fab fa-twitter"></i>                                                                                                                                                            </Link>
+                                        <Link href="#" target="http://1" rel="http://1">
+                                            <i aria-hidden="true" className="fab fa-linkedin-in"></i>                                                                                                                                                            </Link>
                                     </div>
                                 </div>
                             </div>

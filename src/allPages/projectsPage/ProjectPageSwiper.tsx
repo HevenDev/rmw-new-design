@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
+import Link from "next/link";
 
 const ProjectPageSwiper = () => {
   return (
@@ -20,10 +21,10 @@ const ProjectPageSwiper = () => {
           <div className="col-md-12">
             <div className="tp-work__title-box text-sm-center mb-55">
               <h3 className="tp-section-title">
-                SELECTED{" "}
+                SELECTED
                 <span>
                   <i>WORKS</i>
-                </span>{" "}
+                </span>
               </h3>
             </div>
           </div>
@@ -56,7 +57,7 @@ const ProjectPageSwiper = () => {
                     />
                   </div>
                   <div className="tp-work__icon d-none d-md-block">
-                    <a
+                    <Link
                       href="https://etorisoft.com/wp/avtrix/portfolio-details/"
                       target=""
                       rel=""
@@ -78,13 +79,13 @@ const ProjectPageSwiper = () => {
                           ></path>
                         </svg>
                       </span>
-                    </a>
+                    </Link>
                   </div>
                   <div className="tp-work__content">
                     <h3 className="tp-work__title">
-                      <a href="https://etorisoft.com/wp/avtrix/portfolio-details/">
+                      <Link href="https://etorisoft.com/wp/avtrix/portfolio-details/">
                         Digital Marketing
-                      </a>
+                      </Link>
                     </h3>
                     <span className="tp-work__subtitle">Art , Direction</span>
                   </div>
@@ -102,7 +103,7 @@ const ProjectPageSwiper = () => {
                     />
                   </div>
                   <div className="tp-work__icon d-none d-md-block">
-                    <a
+                    <Link
                       href="https://etorisoft.com/wp/avtrix/portfolio-details/"
                       target=""
                       rel=""
@@ -124,13 +125,13 @@ const ProjectPageSwiper = () => {
                           ></path>
                         </svg>
                       </span>
-                    </a>
+                    </Link>
                   </div>
                   <div className="tp-work__content">
                     <h3 className="tp-work__title">
-                      <a href="https://etorisoft.com/wp/avtrix/portfolio-details/">
+                      <Link href="https://etorisoft.com/wp/avtrix/portfolio-details/">
                         Digital Marketing
-                      </a>
+                      </Link>
                     </h3>
                     <span className="tp-work__subtitle">Art , Direction</span>
                   </div>
@@ -147,7 +148,7 @@ const ProjectPageSwiper = () => {
                     />
                   </div>
                   <div className="tp-work__icon d-none d-md-block">
-                    <a
+                    <Link
                       href="https://etorisoft.com/wp/avtrix/portfolio-details/"
                       target=""
                       rel=""
@@ -169,13 +170,13 @@ const ProjectPageSwiper = () => {
                           ></path>
                         </svg>
                       </span>
-                    </a>
+                    </Link>
                   </div>
                   <div className="tp-work__content">
                     <h3 className="tp-work__title">
-                      <a href="https://etorisoft.com/wp/avtrix/portfolio-details/">
+                      <Link href="https://etorisoft.com/wp/avtrix/portfolio-details/">
                         Digital Marketing
-                      </a>
+                      </Link>
                     </h3>
                     <span className="tp-work__subtitle">Art , Direction</span>
                   </div>
@@ -192,7 +193,7 @@ const ProjectPageSwiper = () => {
                     />
                   </div>
                   <div className="tp-work__icon d-none d-md-block">
-                    <a
+                    <Link
                       href="https://etorisoft.com/wp/avtrix/portfolio-details/"
                       target=""
                       rel=""
@@ -214,13 +215,13 @@ const ProjectPageSwiper = () => {
                           ></path>
                         </svg>
                       </span>
-                    </a>
+                    </Link>
                   </div>
                   <div className="tp-work__content">
                     <h3 className="tp-work__title">
-                      <a href="https://etorisoft.com/wp/avtrix/portfolio-details/">
+                      <Link href="https://etorisoft.com/wp/avtrix/portfolio-details/">
                         Digital Marketing
-                      </a>
+                      </Link>
                     </h3>
                     <span className="tp-work__subtitle">Art , Direction</span>
                   </div>
@@ -237,7 +238,7 @@ const ProjectPageSwiper = () => {
                     />
                   </div>
                   <div className="tp-work__icon d-none d-md-block">
-                    <a
+                    <Link
                       href="https://etorisoft.com/wp/avtrix/portfolio-details/"
                       target=""
                       rel=""
@@ -259,13 +260,13 @@ const ProjectPageSwiper = () => {
                           ></path>
                         </svg>
                       </span>
-                    </a>
+                    </Link>
                   </div>
                   <div className="tp-work__content">
                     <h3 className="tp-work__title">
-                      <a href="https://etorisoft.com/wp/avtrix/portfolio-details/">
+                      <Link href="https://etorisoft.com/wp/avtrix/portfolio-details/">
                         Digital Marketing
-                      </a>
+                      </Link>
                     </h3>
                     <span className="tp-work__subtitle">Art , Direction</span>
                   </div>
@@ -282,7 +283,7 @@ const ProjectPageSwiper = () => {
                     />
                   </div>
                   <div className="tp-work__icon d-none d-md-block">
-                    <a
+                    <Link
                       href="https://etorisoft.com/wp/avtrix/portfolio-details/"
                       target=""
                       rel=""
@@ -304,13 +305,13 @@ const ProjectPageSwiper = () => {
                           ></path>
                         </svg>
                       </span>
-                    </a>
+                    </Link>
                   </div>
                   <div className="tp-work__content">
                     <h3 className="tp-work__title">
-                      <a href="https://etorisoft.com/wp/avtrix/portfolio-details/">
+                      <Link href="https://etorisoft.com/wp/avtrix/portfolio-details/">
                         Digital Marketing
-                      </a>
+                      </Link>
                     </h3>
                     <span className="tp-work__subtitle">Art , Direction</span>
                   </div>

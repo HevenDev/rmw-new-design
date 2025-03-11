@@ -18,9 +18,9 @@ const Work = () => {
                         <div className="col-xl-6">
                           <div className="tp-funfact__title-box tp-cursor-point-area mb-110 p-relative tp_fun_fact_title_text_align">
                             <h3 className="tp-section-title tp-funfact-title tp-split__text tp-split__in-right">
-                              {" "}
+                              
                               Let’s Work <span>Together</span>
-                            </h3>{" "}
+                            </h3>
                           </div>
                         </div>
                       </div>
@@ -40,7 +40,7 @@ const Work = () => {
                                 >
                                   5
                                 </b>
-                                K+{" "}
+                                K+
                               </h3>
                               <div className="tp-funfact__text">
                                 <span> Business Award </span>
@@ -61,7 +61,7 @@ const Work = () => {
                                 >
                                   2
                                 </b>
-                                K{" "}
+                                K
                               </h3>
                               <div className="tp-funfact__text">
                                 <span> Created projects </span>
@@ -82,7 +82,7 @@ const Work = () => {
                                 >
                                   6
                                 </b>
-                                M{" "}
+                                M
                               </h3>
                               <div className="tp-funfact__text">
                                 <span> Awesome clients </span>
@@ -103,7 +103,7 @@ const Work = () => {
                                 >
                                   3
                                 </b>
-                                K+{" "}
+                                K+
                               </h3>
                               <div className="tp-funfact__text">
                                 <span> Team members </span>

@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react";
-
+import Link from "next/link";
  const Team = () => {
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -78,8 +78,8 @@ import { useEffect, useRef, useState } from "react";
                               <span>
                                 <i>Behind Us</i>
                               </span>
-                            </h3>{" "}
-                            <a
+                            </h3>
+                            <Link
                               href="https://etorisoft.com/wp/avtrix/team/"
                               className="tp-btn-secondary mr-40 wow tpfadeUp"
                               data-wow-duration=".9s"
@@ -87,9 +87,9 @@ import { useEffect, useRef, useState } from "react";
                               rel="nofollow"
                               target="_self"
                             >
-                              {" "}
-                              more member{" "}
-                            </a>
+                              
+                              more member
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -102,7 +102,7 @@ import { useEffect, useRef, useState } from "react";
                           data-wow-delay=".3s"
                         >
                           <div className="tp-team__item tp-widget__item tp-hover__reveal-item ">
-                            <a
+                            <Link
                               href="https://etorisoft.com/wp/avtrix/team-details/"
                               target="_self"
                               rel="nofollow"
@@ -115,20 +115,20 @@ import { useEffect, useRef, useState } from "react";
                                   </span>
                                 </h3>
                                 <div className="tp-team__action">
-                                  Team Details{" "}
+                                  Team Details
                                   <span>
                                     <i className="far fa-arrow-right"></i>
                                   </span>
                                 </div>
                               </div>
-                            </a>
+                            </Link>
                             <div
                               className="tp-hover__reveal-bg"
                               data-background="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/team-3-5.jpg"
                             ></div>
                           </div>
                           <div className="tp-team__item tp-widget__item tp-hover__reveal-item current">
-                            <a
+                            <Link
                               href="https://etorisoft.com/wp/avtrix/team-details/"
                               target="_self"
                               rel="nofollow"
@@ -141,20 +141,20 @@ import { useEffect, useRef, useState } from "react";
                                   </span>
                                 </h3>
                                 <div className="tp-team__action">
-                                  Team Details{" "}
+                                  Team Details
                                   <span>
                                     <i className="far fa-arrow-right"></i>
                                   </span>
                                 </div>
                               </div>
-                            </a>
+                            </Link>
                             <div
                               className="tp-hover__reveal-bg"
                               data-background="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/team-3-6.jpg"
                             ></div>
                           </div>
                           <div className="tp-team__item tp-widget__item tp-hover__reveal-item ">
-                            <a
+                            <Link
                               href="https://etorisoft.com/wp/avtrix/team-details/"
                               target="_self"
                               rel="nofollow"
@@ -167,20 +167,20 @@ import { useEffect, useRef, useState } from "react";
                                   </span>
                                 </h3>
                                 <div className="tp-team__action">
-                                  Team Details{" "}
+                                  Team Details
                                   <span>
                                     <i className="far fa-arrow-right"></i>
                                   </span>
                                 </div>
                               </div>
-                            </a>
+                            </Link>
                             <div
                               className="tp-hover__reveal-bg"
                               data-background="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/team-3-7.jpg"
                             ></div>
                           </div>
                           <div className="tp-team__item tp-widget__item tp-hover__reveal-item current">
-                            <a
+                            <Link
                               href="https://etorisoft.com/wp/avtrix/team-details/"
                               target="_self"
                               rel="nofollow"
@@ -193,13 +193,13 @@ import { useEffect, useRef, useState } from "react";
                                   </span>
                                 </h3>
                                 <div className="tp-team__action">
-                                  Team Details{" "}
+                                  Team Details
                                   <span>
                                     <i className="far fa-arrow-right"></i>
                                   </span>
                                 </div>
                               </div>
-                            </a>
+                            </Link>
                             <div
                               className="tp-hover__reveal-bg"
                               data-background="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/team-3-8.jpg"

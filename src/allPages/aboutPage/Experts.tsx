@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "@/app/marque.css";
+import Link from "next/link";
 
 const Experts = () => {
   return (
@@ -20,16 +21,16 @@ const Experts = () => {
                           <span>
                             <i>Behind Us</i>
                           </span>
-                        </h3>{" "}
-                        <a
+                        </h3>
+                        <Link
                           className="tp-btn-secondary mr-40"
                           href="https://etorisoft.com/wp/avtrix/team/"
                           target="_self"
                           rel="nofollow"
                         >
-                          {" "}
-                          more member{" "}
-                        </a>
+                          
+                          more member
+                        </Link>
                       </div>
                     </div>
 
@@ -65,7 +66,7 @@ const Experts = () => {
                               data-wow-delay=""
                             >
                               <div className="tp-team__3-thumb p-relative">
-                                <a
+                                <Link
                                   href="https://etorisoft.com/wp/avtrix/team-details/"
                                   rel="nofollow"
                                   target="_self"
@@ -75,9 +76,9 @@ const Experts = () => {
                                     src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/team-3-6.jpg"
                                     alt=""
                                   />
-                                </a>
+                                </Link>
                                 <div className="tp-team__3-action">
-                                  <a
+                                  <Link
                                     href="https://etorisoft.com/wp/avtrix/team-details/"
                                     rel="nofollow"
                                     target="_self"
@@ -99,46 +100,46 @@ const Experts = () => {
                                         ></path>
                                       </svg>
                                     </span>
-                                  </a>
+                                  </Link>
                                 </div>
                                 <div className="tp-team__3-social">
                                   <div className="tp-team__3-social-link">
-                                    <a rel="nofollow" target="_blank" href="#">
+                                    <Link rel="nofollow" target="_blank" href="#">
                                       <i className="fab fa-twitter"></i>
-                                    </a>
+                                    </Link>
 
-                                    <a rel="nofollow" target="_blank" href="#">
+                                    <Link rel="nofollow" target="_blank" href="#">
                                       <i className="fab fa-facebook-f"></i>
-                                    </a>
+                                    </Link>
 
-                                    <a rel="nofollow" target="_blank" href="#">
+                                    <Link rel="nofollow" target="_blank" href="#">
                                       <i className="fab fa-instagram"></i>
-                                    </a>
+                                    </Link>
 
-                                    <a rel="nofollow" target="_blank" href="#">
+                                    <Link rel="nofollow" target="_blank" href="#">
                                       <i className="fab fa-youtube"></i>
-                                    </a>
+                                    </Link>
                                   </div>
                                 </div>
                               </div>
                               <div className="tp-team__3-content d-flex align-items-center justify-content-between">
                                 <div className="tp-team__3-text">
                                   <h3 className="tp-team__3-title">
-                                    <a
+                                    <Link
                                       href="https://etorisoft.com/wp/avtrix/team-details/"
                                       rel="nofollow"
                                       target="_self"
                                     >
-                                      Linda P. Jackson{" "}
-                                    </a>
+                                      Linda P. Jackson
+                                    </Link>
                                   </h3>
                                   <span className="tp-team__3-designation">
-                                    {" "}
-                                    GRAPHIC DESIGNER{" "}
+                                    
+                                    GRAPHIC DESIGNER
                                   </span>
                                 </div>
                                 <div className="tp-team__3-link">
-                                  <a
+                                  <Link
                                     href="https://etorisoft.com/wp/avtrix/team-details/"
                                     rel="nofollow"
                                     target="_self"
@@ -146,7 +147,7 @@ const Experts = () => {
                                     <span>
                                       <i className="fas fa-long-arrow-right"></i>
                                     </span>
-                                  </a>
+                                  </Link>
                                 </div>
                               </div>
                             </div>
@@ -158,7 +159,7 @@ const Experts = () => {
                               data-wow-delay=""
                             >
                               <div className="tp-team__3-thumb p-relative">
-                                <a
+                                <Link
                                   href="https://etorisoft.com/wp/avtrix/team-details/"
                                   rel="nofollow"
                                   target="_self"
@@ -168,9 +169,9 @@ const Experts = () => {
                                     src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/team-3-7.jpg"
                                     alt=""
                                   />
-                                </a>
+                                </Link>
                                 <div className="tp-team__3-action">
-                                  <a
+                                  <Link
                                     href="https://etorisoft.com/wp/avtrix/team-details/"
                                     rel="nofollow"
                                     target="_self"
@@ -192,46 +193,46 @@ const Experts = () => {
                                         ></path>
                                       </svg>
                                     </span>
-                                  </a>
+                                  </Link>
                                 </div>
                                 <div className="tp-team__3-social">
                                   <div className="tp-team__3-social-link">
-                                    <a rel="nofollow" target="_blank" href="#">
+                                    <Link rel="nofollow" target="_blank" href="#">
                                       <i className="fab fa-twitter"></i>
-                                    </a>
+                                    </Link>
 
-                                    <a rel="nofollow" target="_blank" href="#">
+                                    <Link rel="nofollow" target="_blank" href="#">
                                       <i className="fab fa-facebook-f"></i>
-                                    </a>
+                                    </Link>
 
-                                    <a rel="nofollow" target="_blank" href="#">
+                                    <Link rel="nofollow" target="_blank" href="#">
                                       <i className="fab fa-instagram"></i>
-                                    </a>
+                                    </Link>
 
-                                    <a rel="nofollow" target="_blank" href="#">
+                                    <Link rel="nofollow" target="_blank" href="#">
                                       <i className="fab fa-youtube"></i>
-                                    </a>
+                                    </Link>
                                   </div>
                                 </div>
                               </div>
                               <div className="tp-team__3-content d-flex align-items-center justify-content-between">
                                 <div className="tp-team__3-text">
                                   <h3 className="tp-team__3-title">
-                                    <a
+                                    <Link
                                       href="https://etorisoft.com/wp/avtrix/team-details/"
                                       rel="nofollow"
                                       target="_self"
                                     >
-                                      Keith T. Buchanan{" "}
-                                    </a>
+                                      Keith T. Buchanan
+                                    </Link>
                                   </h3>
                                   <span className="tp-team__3-designation">
-                                    {" "}
-                                    WEB DEVELOPER{" "}
+                                    
+                                    WEB DEVELOPER
                                   </span>
                                 </div>
                                 <div className="tp-team__3-link">
-                                  <a
+                                  <Link
                                     href="https://etorisoft.com/wp/avtrix/team-details/"
                                     rel="nofollow"
                                     target="_self"
@@ -239,7 +240,7 @@ const Experts = () => {
                                     <span>
                                       <i className="fas fa-long-arrow-right"></i>
                                     </span>
-                                  </a>
+                                  </Link>
                                 </div>
                               </div>
                             </div>
@@ -251,7 +252,7 @@ const Experts = () => {
                               data-wow-delay=""
                             >
                               <div className="tp-team__3-thumb p-relative">
-                                <a
+                                <Link
                                   href="https://etorisoft.com/wp/avtrix/team-details/"
                                   rel="nofollow"
                                   target="_self"
@@ -261,9 +262,9 @@ const Experts = () => {
                                     src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/team-3-8.jpg"
                                     alt=""
                                   />
-                                </a>
+                                </Link>
                                 <div className="tp-team__3-action">
-                                  <a
+                                  <Link
                                     href="https://etorisoft.com/wp/avtrix/team-details/"
                                     rel="nofollow"
                                     target="_self"
@@ -285,46 +286,46 @@ const Experts = () => {
                                         ></path>
                                       </svg>
                                     </span>
-                                  </a>
+                                  </Link>
                                 </div>
                                 <div className="tp-team__3-social">
                                   <div className="tp-team__3-social-link">
-                                    <a rel="nofollow" target="_blank" href="#">
+                                    <Link rel="nofollow" target="_blank" href="#">
                                       <i className="fab fa-twitter"></i>
-                                    </a>
+                                    </Link>
 
-                                    <a rel="nofollow" target="_blank" href="#">
+                                    <Link rel="nofollow" target="_blank" href="#">
                                       <i className="fab fa-facebook-f"></i>
-                                    </a>
+                                    </Link>
 
-                                    <a rel="nofollow" target="_blank" href="#">
+                                    <Link rel="nofollow" target="_blank" href="#">
                                       <i className="fab fa-instagram"></i>
-                                    </a>
+                                    </Link>
 
-                                    <a rel="nofollow" target="_blank" href="#">
+                                    <Link rel="nofollow" target="_blank" href="#">
                                       <i className="fab fa-youtube"></i>
-                                    </a>
+                                    </Link>
                                   </div>
                                 </div>
                               </div>
                               <div className="tp-team__3-content d-flex align-items-center justify-content-between">
                                 <div className="tp-team__3-text">
                                   <h3 className="tp-team__3-title">
-                                    <a
+                                    <Link
                                       href="https://etorisoft.com/wp/avtrix/team-details/"
                                       rel="nofollow"
                                       target="_self"
                                     >
-                                      Geraldine J. Ham{" "}
-                                    </a>
+                                      Geraldine J. Ham
+                                    </Link>
                                   </h3>
                                   <span className="tp-team__3-designation">
-                                    {" "}
-                                    BACKEND DEVELOPER{" "}
+                                    
+                                    BACKEND DEVELOPER
                                   </span>
                                 </div>
                                 <div className="tp-team__3-link">
-                                  <a
+                                  <Link
                                     href="https://etorisoft.com/wp/avtrix/team-details/"
                                     rel="nofollow"
                                     target="_self"
@@ -332,7 +333,7 @@ const Experts = () => {
                                     <span>
                                       <i className="fas fa-long-arrow-right"></i>
                                     </span>
-                                  </a>
+                                  </Link>
                                 </div>
                               </div>
                             </div>
@@ -344,7 +345,7 @@ const Experts = () => {
                               data-wow-delay=""
                             >
                               <div className="tp-team__3-thumb p-relative">
-                                <a
+                                <Link
                                   href="https://etorisoft.com/wp/avtrix/team-details/"
                                   rel="nofollow"
                                   target="_self"
@@ -354,9 +355,9 @@ const Experts = () => {
                                     src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/team-3-9.jpg"
                                     alt=""
                                   />
-                                </a>
+                                </Link>
                                 <div className="tp-team__3-action">
-                                  <a
+                                  <Link
                                     href="https://etorisoft.com/wp/avtrix/team-details/"
                                     rel="nofollow"
                                     target="_self"
@@ -378,46 +379,46 @@ const Experts = () => {
                                         ></path>
                                       </svg>
                                     </span>
-                                  </a>
+                                  </Link>
                                 </div>
                                 <div className="tp-team__3-social">
                                   <div className="tp-team__3-social-link">
-                                    <a rel="nofollow" target="_blank" href="#">
+                                    <Link rel="nofollow" target="_blank" href="#">
                                       <i className="fab fa-twitter"></i>
-                                    </a>
+                                    </Link>
 
-                                    <a rel="nofollow" target="_blank" href="#">
+                                    <Link rel="nofollow" target="_blank" href="#">
                                       <i className="fab fa-facebook-f"></i>
-                                    </a>
+                                    </Link>
 
-                                    <a rel="nofollow" target="_blank" href="#">
+                                    <Link rel="nofollow" target="_blank" href="#">
                                       <i className="fab fa-instagram"></i>
-                                    </a>
+                                    </Link>
 
-                                    <a rel="nofollow" target="_blank" href="#">
+                                    <Link rel="nofollow" target="_blank" href="#">
                                       <i className="fab fa-youtube"></i>
-                                    </a>
+                                    </Link>
                                   </div>
                                 </div>
                               </div>
                               <div className="tp-team__3-content d-flex align-items-center justify-content-between">
                                 <div className="tp-team__3-text">
                                   <h3 className="tp-team__3-title">
-                                    <a
+                                    <Link
                                       href="https://etorisoft.com/wp/avtrix/team-details/"
                                       rel="nofollow"
                                       target="_self"
                                     >
-                                      Kristin Watson{" "}
-                                    </a>
+                                      Kristin Watson
+                                    </Link>
                                   </h3>
                                   <span className="tp-team__3-designation">
-                                    {" "}
-                                    SEO EXPART{" "}
+                                    
+                                    SEO EXPART
                                   </span>
                                 </div>
                                 <div className="tp-team__3-link">
-                                  <a
+                                  <Link
                                     href="https://etorisoft.com/wp/avtrix/team-details/"
                                     rel="nofollow"
                                     target="_self"
@@ -425,7 +426,7 @@ const Experts = () => {
                                     <span>
                                       <i className="fas fa-long-arrow-right"></i>
                                     </span>
-                                  </a>
+                                  </Link>
                                 </div>
                               </div>
                             </div>

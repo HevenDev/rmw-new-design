@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Experience = () => {
@@ -27,7 +28,7 @@ const Experience = () => {
                     data-wow-duration="2.5s"
                   >
                     <div className="tp-chooseus__icon">
-                      <a href="#" rel="" target="">
+                      <Link href="#" rel="" target="">
                         <span>
                           <svg
                             width="229"
@@ -45,7 +46,7 @@ const Experience = () => {
                             />
                           </svg>
                         </span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="container">
@@ -54,11 +55,11 @@ const Experience = () => {
                         <div className="tp-chooseus__wrap pt-100 pb-105">
                           <div className="tp-chooseus__title-box mb-45">
                             <span className="tp-section-title-2-pre tp-split__text tp-split__in-right mb-15">
-                              Why choose us{" "}
+                              Why choose us
                             </span>
                             <h3 className="tp-section-title-2 tp-split__text tp-split__in-right mb-40">
                               + 10 Years Of Experience <br />
-                              In <span>Marketing</span> Field{" "}
+                              In <span>Marketing</span> Field
                               <span className="tp-section-title-2-shape">
                                 <svg
                                   width="285"
@@ -77,11 +78,11 @@ const Experience = () => {
                               </span>
                             </h3>
                             <p>
-                              {" "}
+                              
                               If you ask our clients what it’s like working with
                               36, they’ll talk about cry Whether <br />
                               real success. We love building brands it's
-                              crafting a visually stunning brand{" "}
+                              crafting a visually stunning brand
                             </p>
                           </div>
                           <div className="tp-progress__bar p-relative mb-60">

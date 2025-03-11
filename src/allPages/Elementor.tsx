@@ -5,7 +5,6 @@ import Awards from "./Homepage/Awards";
 import Experience from "./Homepage/Experience";
 import Feedback from "./Homepage/Feedback";
 import Home from "./Homepage/Home";
-import Pricing from "./Homepage/Pricing";
 import Projects from "./Homepage/Projects";
 import ProjectSwiper from "./Homepage/ProjectSwiper";
 import Service from "./Homepage/Service";
@@ -73,10 +72,6 @@ const Elementor = () => {
         <Team />
 
         {/* ======== Section 10 ========  */}
-
-        <Pricing />
-
-        {/* ======== Section 11 ========  */}
 
         <Feedback />
 

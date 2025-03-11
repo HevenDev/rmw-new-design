@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Service = () => {
   return (
     <div
@@ -32,8 +34,8 @@ const Service = () => {
                           <span>
                             <i>Providing</i>
                           </span>
-                        </h3>{" "}
-                        <a
+                        </h3>
+                        <Link
                           className="tp-btn-primary"
                           href="https://etorisoft.com/wp/avtrix/service/"
                           rel="nofollow"
@@ -41,7 +43,7 @@ const Service = () => {
                         >
                           <span>More about us</span>
                           <i className="far fa-arrow-right"></i>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -71,7 +73,7 @@ const Service = () => {
                                           alt=""
                                         />
                                       </span>
-                                      Digital Marketing{" "}
+                                      Digital Marketing
                                       <span className="accordion-num-count"></span>
                                     </button>
                                   </h2>
@@ -107,7 +109,7 @@ const Service = () => {
                                           alt=""
                                         />
                                       </span>
-                                      Content Marketing{" "}
+                                      Content Marketing
                                       <span className="accordion-num-count"></span>
                                     </button>
                                   </h2>
@@ -143,7 +145,7 @@ const Service = () => {
                                           alt=""
                                         />
                                       </span>
-                                      (PPC) Advertising{" "}
+                                      (PPC) Advertising
                                       <span className="accordion-num-count"></span>
                                     </button>
                                   </h2>
@@ -179,7 +181,7 @@ const Service = () => {
                                           alt=""
                                         />
                                       </span>
-                                      Video Production{" "}
+                                      Video Production
                                       <span className="accordion-num-count"></span>
                                     </button>
                                   </h2>

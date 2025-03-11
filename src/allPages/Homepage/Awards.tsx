@@ -1,4 +1,4 @@
-
+import Link from "next/link"
 
 const Awards = () => {
   return (
@@ -29,7 +29,7 @@ const Awards = () => {
                           </span>
                           <div className="tp-section-title-wrap d-flex align-items-center justify-content-between">
                             <h3 className="tp-section-title">
-                              {" "}
+                              
                               Awards &amp; Company
                               <br />
                               <span>
@@ -66,14 +66,14 @@ const Awards = () => {
                               </div>
                               <div className="tp-awards__name d-flex align-items-center">
                                 <h3 className="tp-awards__title">
-                                  <a
+                                  <Link
                                     href="https://etorisoft.com/wp/avtrix/about/"
                                     rel="nofollow"
                                     target="_self"
                                   >
-                                    {" "}
+                                    
                                     Brand of the week.
-                                  </a>
+                                  </Link>
                                 </h3>
                                 <span className="tp-awards__title-sm">
                                   / 2012
@@ -82,13 +82,13 @@ const Awards = () => {
                             </div>
                             <div className="tp-awards__right">
                               <div className="tp-awards__icon">
-                                <a
+                                <Link
                                   href="https://etorisoft.com/wp/avtrix/about/"
                                   rel="nofollow"
                                   target="_self"
                                 >
                                   <i className="far fa-arrow-right"></i>
-                                </a>
+                                </Link>
                               </div>
                             </div>
                           </div>
@@ -106,14 +106,14 @@ const Awards = () => {
                               </div>
                               <div className="tp-awards__name d-flex align-items-center">
                                 <h3 className="tp-awards__title">
-                                  <a
+                                  <Link
                                     href="https://etorisoft.com/wp/avtrix/about/"
                                     rel="nofollow"
                                     target="_self"
                                   >
-                                    {" "}
+                                    
                                     Elite marketing partner.
-                                  </a>
+                                  </Link>
                                 </h3>
                                 <span className="tp-awards__title-sm">
                                   / 2014
@@ -122,13 +122,13 @@ const Awards = () => {
                             </div>
                             <div className="tp-awards__right">
                               <div className="tp-awards__icon">
-                                <a
+                                <Link
                                   href="https://etorisoft.com/wp/avtrix/about/"
                                   rel="nofollow"
                                   target="_self"
                                 >
                                   <i className="far fa-arrow-right"></i>
-                                </a>
+                                </Link>
                               </div>
                             </div>
                           </div>
@@ -146,14 +146,14 @@ const Awards = () => {
                               </div>
                               <div className="tp-awards__name d-flex align-items-center">
                                 <h3 className="tp-awards__title">
-                                  <a
+                                  <Link
                                     href="https://etorisoft.com/wp/avtrix/about/"
                                     rel="nofollow"
                                     target="_self"
                                   >
-                                    {" "}
+                                    
                                     High five awards.
-                                  </a>
+                                  </Link>
                                 </h3>
                                 <span className="tp-awards__title-sm">
                                   / 2016
@@ -162,13 +162,13 @@ const Awards = () => {
                             </div>
                             <div className="tp-awards__right">
                               <div className="tp-awards__icon">
-                                <a
+                                <Link
                                   href="https://etorisoft.com/wp/avtrix/about/"
                                   rel="nofollow"
                                   target="_self"
                                 >
                                   <i className="far fa-arrow-right"></i>
-                                </a>
+                                </Link>
                               </div>
                             </div>
                           </div>
@@ -186,14 +186,14 @@ const Awards = () => {
                               </div>
                               <div className="tp-awards__name d-flex align-items-center">
                                 <h3 className="tp-awards__title">
-                                  <a
+                                  <Link
                                     href="https://etorisoft.com/wp/avtrix/about/"
                                     rel="nofollow"
                                     target="_self"
                                   >
-                                    {" "}
+                                    
                                     Top performer lifetime.
-                                  </a>
+                                  </Link>
                                 </h3>
                                 <span className="tp-awards__title-sm">
                                   / 2024
@@ -202,13 +202,13 @@ const Awards = () => {
                             </div>
                             <div className="tp-awards__right">
                               <div className="tp-awards__icon">
-                                <a
+                                <Link
                                   href="https://etorisoft.com/wp/avtrix/about/"
                                   rel="nofollow"
                                   target="_self"
                                 >
                                   <i className="far fa-arrow-right"></i>
-                                </a>
+                                </Link>
                               </div>
                             </div>
                           </div>

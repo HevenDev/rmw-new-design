@@ -1,3 +1,4 @@
+import Link from "next/link"
 
 
 
@@ -21,32 +22,16 @@ const PagesBanner = () => {
                 <div className="breadcrumb__list">
                   {/* <!-- Breadcrumb NavXT 7.4.1 --> */}
                   <span property="itemListElement" typeof="ListItem">
-                    <a
+                    <Link
                       property="item"
                       typeof="WebPage"
-                      title="Go to Avtrix."
-                      href="https://etorisoft.com/wp/avtrix"
+                      title="Go to Ritz Media World."
+                      href="/"
                       className="home"
                     >
-                      <span property="name">Avtrix</span>
-                    </a>
+                      <span property="name">Ritz Media World</span>
+                    </Link>
                     <meta property="position" content="1" />
-                  </span>
-                  <span className="dvdr">
-                    <i className="far fa-angle-right"></i>
-                  </span>
-                  <span property="itemListElement" typeof="ListItem">
-                    <span
-                      property="name"
-                      className="post-root post post-post current-item"
-                    >
-                      Blog
-                    </span>
-                    <meta
-                      property="url"
-                      content="https://etorisoft.com/wp/avtrix/blog/"
-                    />
-                    <meta property="position" content="2" />
                   </span>
                 </div>
                 <h3 className="breadcrumb__title">Blog</h3>

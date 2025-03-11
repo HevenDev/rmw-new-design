@@ -83,12 +83,12 @@ const page = () => {
               <div className="tp-search__wrapper">
                 <div className="tp-search__top d-flex justify-content-between align-items-center">
                   <div className="tp-search__logo">
-                    <a href="https://etorisoft.com/wp/avtrix/">
+                    <Link href="https://etorisoft.com/wp/avtrix/">
                       <img
                         src="https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/logo/logo.png"
                         alt="logo"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="tp-search__close">
                     <button

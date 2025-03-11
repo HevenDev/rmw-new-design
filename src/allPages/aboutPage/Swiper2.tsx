@@ -41,7 +41,7 @@ const Swiper2 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION{" "}
+                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -54,7 +54,7 @@ const Swiper2 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION{" "}
+                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -67,7 +67,7 @@ const Swiper2 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION{" "}
+                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -80,7 +80,7 @@ const Swiper2 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION{" "}
+                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -93,7 +93,7 @@ const Swiper2 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION{" "}
+                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -106,7 +106,7 @@ const Swiper2 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION{" "}
+                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -119,7 +119,7 @@ const Swiper2 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION{" "}
+                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -132,7 +132,7 @@ const Swiper2 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION{" "}
+                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -145,7 +145,7 @@ const Swiper2 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION{" "}
+                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -158,7 +158,7 @@ const Swiper2 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION{" "}
+                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -171,7 +171,7 @@ const Swiper2 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION{" "}
+                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -184,7 +184,7 @@ const Swiper2 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION{" "}
+                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -197,7 +197,7 @@ const Swiper2 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION{" "}
+                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -210,7 +210,7 @@ const Swiper2 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION{" "}
+                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -223,7 +223,7 @@ const Swiper2 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION{" "}
+                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -236,7 +236,7 @@ const Swiper2 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION{" "}
+                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -249,7 +249,7 @@ const Swiper2 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION{" "}
+                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -262,7 +262,7 @@ const Swiper2 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION{" "}
+                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>

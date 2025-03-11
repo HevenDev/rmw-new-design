@@ -1,4 +1,4 @@
-
+import Link from "next/link";
 
 const Projects = () => {
   return (
@@ -32,7 +32,7 @@ const Projects = () => {
                       <div className="col-xl-12">
                         <div className="tp-project__title-box">
                           <span className="tp-section-title-pre mb-25">
-                            {" "}
+                            
                             Created Projects
                           </span>
                           <div className="tp-section-title-wrap d-flex align-items-center justify-content-between">
@@ -60,8 +60,7 @@ const Projects = () => {
                                   alt=""
                                 />
                                 <div className="tp-project__icon">
-                                  <a
-                                    href="https://etorisoft.com/wp/avtrix/portfolio-details/"
+                                  <Link href="https://etorisoft.com/wp/avtrix/portfolio-details/"
                                     rel="nofollow"
                                     target="_self"
                                   >
@@ -82,20 +81,20 @@ const Projects = () => {
                                         />
                                       </svg>
                                     </span>
-                                  </a>
+                                  </Link>
                                 </div>
                               </div>
                             </div>
                             <div className="tp-project__content">
                               <h3 className="tp-project__title">
-                                <a
+                                <Link
                                   href="https://etorisoft.com/wp/avtrix/portfolio-details/"
                                   rel="nofollow"
                                   target="_self"
                                 >
-                                  {" "}
-                                  Branding &amp; Digital Marketing{" "}
-                                </a>
+                                  
+                                  Branding &amp; Digital Marketing
+                                </Link>
                               </h3>
                               <span className="tp-project__categories">
                                 Business Strategies
@@ -117,8 +116,7 @@ const Projects = () => {
                                   alt=""
                                 />
                                 <div className="tp-project__icon">
-                                  <a
-                                    href="https://etorisoft.com/wp/avtrix/portfolio-details/"
+                                  <Link href="https://etorisoft.com/wp/avtrix/portfolio-details/"
                                     rel="nofollow"
                                     target="_self"
                                   >
@@ -139,20 +137,20 @@ const Projects = () => {
                                         />
                                       </svg>
                                     </span>
-                                  </a>
+                                  </Link>
                                 </div>
                               </div>
                             </div>
                             <div className="tp-project__content">
                               <h3 className="tp-project__title">
-                                <a
+                                <Link
                                   href="https://etorisoft.com/wp/avtrix/portfolio-details/"
                                   rel="nofollow"
                                   target="_self"
                                 >
-                                  {" "}
-                                  Online Media Management{" "}
-                                </a>
+                                  
+                                  Online Media Management
+                                </Link>
                               </h3>
                               <span className="tp-project__categories">
                                 Competitor Analysis
@@ -174,8 +172,7 @@ const Projects = () => {
                                   alt=""
                                 />
                                 <div className="tp-project__icon">
-                                  <a
-                                    href="https://etorisoft.com/wp/avtrix/portfolio-details/"
+                                  <Link href="https://etorisoft.com/wp/avtrix/portfolio-details/"
                                     rel="nofollow"
                                     target="_self"
                                   >
@@ -196,20 +193,20 @@ const Projects = () => {
                                         />
                                       </svg>
                                     </span>
-                                  </a>
+                                  </Link>
                                 </div>
                               </div>
                             </div>
                             <div className="tp-project__content">
                               <h3 className="tp-project__title">
-                                <a
+                                <Link
                                   href="https://etorisoft.com/wp/avtrix/portfolio-details/"
                                   rel="nofollow"
                                   target="_self"
                                 >
-                                  {" "}
+                                  
                                   Professional Website Design
-                                </a>
+                                </Link>
                               </h3>
                               <span className="tp-project__categories">
                                 Web Design &amp; Development
@@ -231,8 +228,7 @@ const Projects = () => {
                                   alt=""
                                 />
                                 <div className="tp-project__icon">
-                                  <a
-                                    href="https://etorisoft.com/wp/avtrix/portfolio-details/"
+                                  <Link href="https://etorisoft.com/wp/avtrix/portfolio-details/"
                                     rel="nofollow"
                                     target="_self"
                                   >
@@ -253,20 +249,20 @@ const Projects = () => {
                                         />
                                       </svg>
                                     </span>
-                                  </a>
+                                  </Link>
                                 </div>
                               </div>
                             </div>
                             <div className="tp-project__content">
                               <h3 className="tp-project__title">
-                                <a
+                                <Link
                                   href="https://etorisoft.com/wp/avtrix/portfolio-details/"
                                   rel="nofollow"
                                   target="_self"
                                 >
-                                  {" "}
+                                  
                                   Search Engine Optimization
-                                </a>
+                                </Link>
                               </h3>
                               <span className="tp-project__categories">
                                 SEO &amp; Analysis
@@ -288,8 +284,7 @@ const Projects = () => {
                                   alt=""
                                 />
                                 <div className="tp-project__icon">
-                                  <a
-                                    href="https://etorisoft.com/wp/avtrix/portfolio-details/"
+                                  <Link href="https://etorisoft.com/wp/avtrix/portfolio-details/"
                                     rel="nofollow"
                                     target="_self"
                                   >
@@ -310,20 +305,20 @@ const Projects = () => {
                                         />
                                       </svg>
                                     </span>
-                                  </a>
+                                  </Link>
                                 </div>
                               </div>
                             </div>
                             <div className="tp-project__content">
                               <h3 className="tp-project__title">
-                                <a
+                                <Link
                                   href="https://etorisoft.com/wp/avtrix/portfolio-details/"
                                   rel="nofollow"
                                   target="_self"
                                 >
-                                  {" "}
-                                  Twice Profit Than Before{" "}
-                                </a>
+                                  
+                                  Twice Profit Than Before
+                                </Link>
                               </h3>
                               <span className="tp-project__categories">
                                 Marketing Plan
@@ -334,15 +329,15 @@ const Projects = () => {
                         <div className="col-xl-6 col-lg-6 col-md-6 col-12 g-5 order-sm-0">
                           <div className="tp-project__action-wrap wow avtrix_clip_right">
                             <div className="tp-project__action tp-btn__bounce">
-                              <a
+                              <Link
                                 className="tp-project__more-title"
                                 href="https://etorisoft.com/wp/avtrix/portfolio-details/"
                                 rel="nofollow"
                                 target="_self"
                               >
-                                {" "}
-                                EXPLORE MORE{" "}
-                              </a>
+                                
+                                EXPLORE MORE
+                              </Link>
                               <span className="tp-project__more-shape">
                                 <svg
                                   width="613"

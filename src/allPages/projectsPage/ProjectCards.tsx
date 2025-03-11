@@ -1,4 +1,5 @@
 import styles from './Card.module.css';
+import Link from "next/link";
 const ProjectCards = () => {
   const cardData = [
     { title: 'Website Idea Generate', image: 'https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/port-3-1.jpg' },
@@ -23,9 +24,9 @@ const ProjectCards = () => {
               </div>
               <div className="card-body text-center">
                 <h5 className="card-title">{card.title}</h5>
-                <a href="#" className={`bg-orange-600 ${styles.button}`}>
+                <Link href="#" className={`bg-orange-600 ${styles.button}`}>
                   Case Studies <span className={styles.arrow}>&rarr;</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

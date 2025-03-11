@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const Choose = () => {
   return (
     <div className="elementor-widget-container">
@@ -9,7 +11,7 @@ const Choose = () => {
         data-wow-duration="2.5s"
       >
         <div className="tp-chooseus__icon">
-          <a
+          <Link
             href="https://etorisoft.com/wp/avtrix/service-details/"
             rel="nofollow"
             target="_self"
@@ -31,7 +33,7 @@ const Choose = () => {
                 />
               </svg>
             </span>
-          </a>
+          </Link>
         </div>
       </div>
       <div className="container">
@@ -40,20 +42,20 @@ const Choose = () => {
             <div className="tp-chooseus__wrap pt-100 pb-105">
               <div className="tp-chooseus__title-box mb-45">
                 <span className="tp-section-title-2-pre tp-split__text tp-split__in-right mb-15">
-                  {" "}
-                  Why choose us{" "}
+                  
+                  Why choose us
                 </span>
                 <h3 className="tp-section-title-2 tp-split__text tp-split__in-right mb-40">
-                  We’re <span>Award</span>-Winning Development{" "}
-                  <span>Agencies</span>{" "}
+                  We’re <span>Award</span>-Winning Development
+                  <span>Agencies</span>
                 </h3>
                 <p>
-                  {" "}
+                  
                   Whether it's crafting a visually stunning brand
                   identity Whether it's ns designing immersive
                   digital experiences, or developi crafting a
                   visually strategic marketing campaigns, we
-                  approach stunning brand identity{" "}
+                  approach stunning brand identity
                 </p>
               </div>
               <div className="tp-progress__bar p-relative mb-60">

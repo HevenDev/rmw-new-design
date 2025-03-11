@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const Stratagies = () => {
   return (
     <div className="elementor-widget-container">
@@ -8,11 +10,11 @@ const Stratagies = () => {
             <div className="tp-cate__title-box">
               <h3 className="tp-cate__title mb-40 tp-split__text tp-split__in-right">
                 STRATEGIES FOR BUILDING GROWING, AND MANAGING YOUR
-                BRAND'S IDENTITY{" "}
+                BRAND'S IDENTITY
               </h3>
               <div className="tp-hero__action d-flex align-items-center">
                 <span>
-                  <a
+                  <Link
                     className="tp-hero__action-btn"
                     href="https://etorisoft.com/wp/avtrix/service/"
                     rel="nofollow"
@@ -35,15 +37,15 @@ const Stratagies = () => {
                         ></path>
                       </svg>
                     </span>
-                  </a>
+                  </Link>
                 </span>
-                <a
+                <Link
                   href="https://etorisoft.com/wp/avtrix/service/"
                   rel="nofollow"
                   target="_self"
                 >
-                  LEARN MORE{" "}
-                </a>
+                  LEARN MORE
+                </Link>
               </div>
             </div>
           </div>
@@ -64,52 +66,52 @@ const Stratagies = () => {
                   because it is pleasure, but because those who do
                   not know how to pursue pleasure rationally
                   encounter.
-                </p>{" "}
+                </p>
               </div>
               <div className="tp-cate__list-box pt-10">
                 <div className="row">
                   <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                     <div className="tp-cate__list">
-                      <a href="#">
+                      <Link href="#">
                         <i
                           aria-hidden="true"
                           className="fas fa-check-circle"
-                        ></i>{" "}
+                        ></i>
                         <span>Efficient Sprint Planning</span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                     <div className="tp-cate__list">
-                      <a href="#">
+                      <Link href="#">
                         <i
                           aria-hidden="true"
                           className="fas fa-check-circle"
-                        ></i>{" "}
+                        ></i>
                         <span>On Time Delivery</span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                     <div className="tp-cate__list">
-                      <a href="#">
+                      <Link href="#">
                         <i
                           aria-hidden="true"
                           className="fas fa-check-circle"
-                        ></i>{" "}
+                        ></i>
                         <span>Innovative Strategies</span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                     <div className="tp-cate__list">
-                      <a href="#">
+                      <Link href="#">
                         <i
                           aria-hidden="true"
                           className="fas fa-check-circle"
-                        ></i>{" "}
+                        ></i>
                         <span>Standup and Demos</span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

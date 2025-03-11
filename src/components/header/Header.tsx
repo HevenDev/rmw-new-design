@@ -117,7 +117,7 @@ const Header = () => {
                                             target="_self"
                                             rel="nofollow"
                                           >
-                                            Digital Marketing{" "}
+                                            Digital Marketing
                                           </Link>
                                         </h4>
                                       </div>
@@ -146,7 +146,7 @@ const Header = () => {
                                             target="_self"
                                             rel="nofollow"
                                           >
-                                            Branding{" "}
+                                            Branding
                                           </Link>
                                         </h4>
                                       </div>
@@ -175,7 +175,7 @@ const Header = () => {
                                             target="_self"
                                             rel="nofollow"
                                           >
-                                            Design Studio{" "}
+                                            Design Studio
                                           </Link>
                                         </h4>
                                       </div>
@@ -204,7 +204,7 @@ const Header = () => {
                                             target="_self"
                                             rel="nofollow"
                                           >
-                                            Freelancer{" "}
+                                            Freelancer
                                           </Link>
                                         </h4>
                                       </div>
@@ -233,7 +233,7 @@ const Header = () => {
                                             target="_self"
                                             rel="nofollow"
                                           >
-                                            Creative Agency{" "}
+                                            Creative Agency
                                           </Link>
                                         </h4>
                                       </div>
@@ -262,7 +262,7 @@ const Header = () => {
                                             target="_self"
                                             rel="nofollow"
                                           >
-                                            Portfolio Showcase{" "}
+                                            Portfolio Showcase
                                           </Link>
                                         </h4>
                                       </div>
@@ -384,7 +384,7 @@ const Header = () => {
                                             target="_self"
                                             rel="nofollow"
                                           >
-                                            Digital Marketing{" "}
+                                            Digital Marketing
                                           </Link>
                                         </h4>
                                       </div>
@@ -413,7 +413,7 @@ const Header = () => {
                                             target="_self"
                                             rel="nofollow"
                                           >
-                                            Branding{" "}
+                                            Branding
                                           </Link>
                                         </h4>
                                       </div>
@@ -442,7 +442,7 @@ const Header = () => {
                                             target="_self"
                                             rel="nofollow"
                                           >
-                                            Design Studio{" "}
+                                            Design Studio
                                           </Link>
                                         </h4>
                                       </div>
@@ -471,7 +471,7 @@ const Header = () => {
                                             target="_self"
                                             rel="nofollow"
                                           >
-                                            Freelancer{" "}
+                                            Freelancer
                                           </Link>
                                         </h4>
                                       </div>
@@ -500,7 +500,7 @@ const Header = () => {
                                             target="_self"
                                             rel="nofollow"
                                           >
-                                            Creative Agency{" "}
+                                            Creative Agency
                                           </Link>
                                         </h4>
                                       </div>
@@ -529,7 +529,7 @@ const Header = () => {
                                             target="_self"
                                             rel="nofollow"
                                           >
-                                            Portfolio Showcase{" "}
+                                            Portfolio Showcase
                                           </Link>
                                         </h4>
                                       </div>

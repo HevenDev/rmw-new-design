@@ -38,9 +38,9 @@ const Swiper1 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__8-text">
-                    <span>MARKETING</span> _{" "}
+                    <span>MARKETING</span> _
                     <span className="tp-theme-text">BRANDING</span> _
-                    <span>CREATIVE</span> AGENCYET _ CHEMICATION{" "}
+                    <span>CREATIVE</span> AGENCYET _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -53,9 +53,9 @@ const Swiper1 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__8-text">
-                    <span>MARKETING</span> _{" "}
+                    <span>MARKETING</span> _
                     <span className="tp-theme-text">BRANDING</span> _
-                    <span>CREATIVE</span> AGENCYET _ CHEMICATION{" "}
+                    <span>CREATIVE</span> AGENCYET _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -68,9 +68,9 @@ const Swiper1 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__8-text">
-                    <span>MARKETING</span> _{" "}
+                    <span>MARKETING</span> _
                     <span className="tp-theme-text">BRANDING</span> _
-                    <span>CREATIVE</span> AGENCYET _ CHEMICATION{" "}
+                    <span>CREATIVE</span> AGENCYET _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -83,9 +83,9 @@ const Swiper1 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__8-text">
-                    <span>MARKETING</span> _{" "}
+                    <span>MARKETING</span> _
                     <span className="tp-theme-text">BRANDING</span> _
-                    <span>CREATIVE</span> AGENCYET _ CHEMICATION{" "}
+                    <span>CREATIVE</span> AGENCYET _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -98,9 +98,9 @@ const Swiper1 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__8-text">
-                    <span>MARKETING</span> _{" "}
+                    <span>MARKETING</span> _
                     <span className="tp-theme-text">BRANDING</span> _
-                    <span>CREATIVE</span> AGENCYET _ CHEMICATION{" "}
+                    <span>CREATIVE</span> AGENCYET _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -113,9 +113,9 @@ const Swiper1 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__8-text">
-                    <span>MARKETING</span> _{" "}
+                    <span>MARKETING</span> _
                     <span className="tp-theme-text">BRANDING</span> _
-                    <span>CREATIVE</span> AGENCYET _ CHEMICATION{" "}
+                    <span>CREATIVE</span> AGENCYET _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -128,9 +128,9 @@ const Swiper1 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__8-text">
-                    <span>MARKETING</span> _{" "}
+                    <span>MARKETING</span> _
                     <span className="tp-theme-text">BRANDING</span> _
-                    <span>CREATIVE</span> AGENCYET _ CHEMICATION{" "}
+                    <span>CREATIVE</span> AGENCYET _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -143,9 +143,9 @@ const Swiper1 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__8-text">
-                    <span>MARKETING</span> _{" "}
+                    <span>MARKETING</span> _
                     <span className="tp-theme-text">BRANDING</span> _
-                    <span>CREATIVE</span> AGENCYET _ CHEMICATION{" "}
+                    <span>CREATIVE</span> AGENCYET _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -158,9 +158,9 @@ const Swiper1 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__8-text">
-                    <span>MARKETING</span> _{" "}
+                    <span>MARKETING</span> _
                     <span className="tp-theme-text">BRANDING</span> _
-                    <span>CREATIVE</span> AGENCYET _ CHEMICATION{" "}
+                    <span>CREATIVE</span> AGENCYET _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -173,9 +173,9 @@ const Swiper1 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__8-text">
-                    <span>MARKETING</span> _{" "}
+                    <span>MARKETING</span> _
                     <span className="tp-theme-text">BRANDING</span> _
-                    <span>CREATIVE</span> AGENCYET _ CHEMICATION{" "}
+                    <span>CREATIVE</span> AGENCYET _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -188,9 +188,9 @@ const Swiper1 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__8-text">
-                    <span>MARKETING</span> _{" "}
+                    <span>MARKETING</span> _
                     <span className="tp-theme-text">BRANDING</span> _
-                    <span>CREATIVE</span> AGENCYET _ CHEMICATION{" "}
+                    <span>CREATIVE</span> AGENCYET _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -203,9 +203,9 @@ const Swiper1 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__8-text">
-                    <span>MARKETING</span> _{" "}
+                    <span>MARKETING</span> _
                     <span className="tp-theme-text">BRANDING</span> _
-                    <span>CREATIVE</span> AGENCYET _ CHEMICATION{" "}
+                    <span>CREATIVE</span> AGENCYET _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -218,9 +218,9 @@ const Swiper1 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__8-text">
-                    <span>MARKETING</span> _{" "}
+                    <span>MARKETING</span> _
                     <span className="tp-theme-text">BRANDING</span> _
-                    <span>CREATIVE</span> AGENCYET _ CHEMICATION{" "}
+                    <span>CREATIVE</span> AGENCYET _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -233,9 +233,9 @@ const Swiper1 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__8-text">
-                    <span>MARKETING</span> _{" "}
+                    <span>MARKETING</span> _
                     <span className="tp-theme-text">BRANDING</span> _
-                    <span>CREATIVE</span> AGENCYET _ CHEMICATION{" "}
+                    <span>CREATIVE</span> AGENCYET _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -248,9 +248,9 @@ const Swiper1 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__8-text">
-                    <span>MARKETING</span> _{" "}
+                    <span>MARKETING</span> _
                     <span className="tp-theme-text">BRANDING</span> _
-                    <span>CREATIVE</span> AGENCYET _ CHEMICATION{" "}
+                    <span>CREATIVE</span> AGENCYET _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -263,9 +263,9 @@ const Swiper1 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__8-text">
-                    <span>MARKETING</span> _{" "}
+                    <span>MARKETING</span> _
                     <span className="tp-theme-text">BRANDING</span> _
-                    <span>CREATIVE</span> AGENCYET _ CHEMICATION{" "}
+                    <span>CREATIVE</span> AGENCYET _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -278,9 +278,9 @@ const Swiper1 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__8-text">
-                    <span>MARKETING</span> _{" "}
+                    <span>MARKETING</span> _
                     <span className="tp-theme-text">BRANDING</span> _
-                    <span>CREATIVE</span> AGENCYET _ CHEMICATION{" "}
+                    <span>CREATIVE</span> AGENCYET _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -293,9 +293,9 @@ const Swiper1 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__8-text">
-                    <span>MARKETING</span> _{" "}
+                    <span>MARKETING</span> _
                     <span className="tp-theme-text">BRANDING</span> _
-                    <span>CREATIVE</span> AGENCYET _ CHEMICATION{" "}
+                    <span>CREATIVE</span> AGENCYET _ CHEMICATION
                   </h3>
                 </div>
               </SwiperSlide>
@@ -313,4 +313,3 @@ const Swiper1 = () => {
 };
 
 export default Swiper1;
-SwiperSlide;
