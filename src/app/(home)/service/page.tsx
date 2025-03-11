@@ -1,10 +1,10 @@
-import React from 'react'
+import Services from "@/allPages/Services";
 
 const service = () => {
   return (
-    <div>
-      <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas officiis voluptates eaque consectetur dolorum, maxime eius, ducimus consequuntur delectus repellendus enim aspernatur!</h1>
-    </div>
+    <>
+    <Services/>
+    </>
   )
 }
 
