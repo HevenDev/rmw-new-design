@@ -1,41 +1,16 @@
 "use client"
 
-import { useEffect } from "react";
-
 import Link from "next/link";
+import Image from "next/image";
 
 const Header = () => {
-  useEffect(() => {
-    const desktopMenu = document.querySelector(".tp-main-menu-content");
-    const mobileMenu = document.querySelector(".tp-main-menu-mobile");
-
-    if (desktopMenu && mobileMenu) {
-      mobileMenu.innerHTML = desktopMenu.outerHTML; // Copy desktop menu to mobile
-    }
-
-    const dropdownLinks = document.querySelectorAll(
-      ".tp-main-menu-mobile .has-dropdown > a"
-    );
-
-    dropdownLinks.forEach((link) => {
-      const arrowBtn = document.createElement("button");
-      arrowBtn.classList.add("dropdown-toggle-btn");
-      arrowBtn.innerHTML = "<i class='far fa-angle-right'></i>";
-      link.appendChild(arrowBtn);
-
-      arrowBtn.addEventListener("click", (e) => {
-        e.preventDefault();
-        const parent = link.parentElement;
-        parent?.classList.toggle("expanded");
-        parent?.querySelector(".tp-submenu")?.classList.toggle("open");
-      });
-    });
-  }, []);
+  
   return (
     <header>
       <div
         id="header-sticky"
-        className="tp-header-top-area tp-header__style-1 tp-header__transparent tp-header__border pr-160 pl-160 black-bg"
+        className="tp-header-top-area tp-header__style-1 tp-header__transparent tp-header__border pr-160 pl-160"
+        style={{backgroundColor: "#101010"}}
       >
         <div className="contianer-fluid">
           <div className="row align-items-center">
@@ -45,8 +20,10 @@ const Header = () => {
                   className="main-logo"
                   href="/"
                 >
-                  <img
-                    src="https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/logo/logo.png"
+                  <Image
+                    width={50}
+                    height={50}
+                    src="/rmw_logo_gold.png"
                     alt="logo"
                   />
                 </Link>

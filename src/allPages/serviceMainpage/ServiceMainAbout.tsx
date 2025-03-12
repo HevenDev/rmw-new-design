@@ -1,0 +1,120 @@
+const ServiceMainAbout = () => {
+  return (
+    <div
+      className="elementor-element elementor-element-17cfdcd e-con-full e-flex e-con e-parent e-lazyloaded"
+      data-id="17cfdcd"
+      data-element_type="container"
+    >
+      <div
+        className="elementor-element elementor-element-48ba934 e-con-full e-flex e-con e-child"
+        data-id="48ba934"
+        data-element_type="container"
+      >
+        <div
+          className="elementor-element elementor-element-c5a8ae4 elementor-widget elementor-widget-cta"
+          data-id="c5a8ae4"
+          data-element_type="widget"
+          data-widget_type="cta.default"
+        >
+          <div className="elementor-widget-container">
+            <section className="tp-cta__2-area black-bg fix pt-110">
+              <div className="container-fluid p-0">
+                <div className="row">
+                  <div className="col-xl-6 col-lg-6">
+                    <div className="tp-cta__2-item p-relative">
+                      <div
+                        className="tp-cta__2-thumb wow avtrix_clip_up"
+                        data-background="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/cta-2-1.jpg"
+                        data-wow-delay=".3s"
+                        data-wow-duration="2s"
+                        style={{
+                          backgroundImage:
+                            "url(https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/cta-2-1.jpg)",
+                          visibility: "visible",
+                          animationDuration: "2s",
+                          animationDelay: "0.3s",
+                          animationName: "avtrix_clip_up",
+                        }}
+                      ></div>
+                      <div className="tp-cta__2-circle"></div>
+                      <div className="tp-cta__2-content">
+                        <div className="tp-cta__2-text p-relative">
+                          <h3 className="tp-cta__2-title mb-45">
+                            We Build <span>Successful</span> <br />
+                            Profitable Products{" "}
+                          </h3>
+                          <a
+                            className="tp-btn-secondary"
+                            href="https://etorisoft.com/wp/avtrix/about/"
+                            target="_self"
+                            rel="nofollow"
+                          >
+                            more about
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="col-xl-6 col-lg-6">
+                    <div className="tp-cta__2-item p-relative">
+                      <div className="tp-cta__2-circle-2"></div>
+                      <div
+                        className="tp-cta__2-thumb wow avtrix_clip_down"
+                        data-background="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/cta-2-2.jpg"
+                        data-wow-delay=".3s"
+                        data-wow-duration="2s"
+                        style={{
+                          backgroundImage:
+                            "url(https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/cta-2-2.jpg)",
+                          visibility: "visible",
+                          animationDuration: "2s",
+                          animationDelay: "0.3s",
+                          animationName: "avtrix_clip_down",
+                        }}
+                      ></div>
+                      <div className="tp-cta__2-content">
+                        <div className="tp-cta__2-text-2 p-relative">
+                          <h3 className="tp-cta__2-title tp-cta-mission">
+                            <span>COMPANY</span> <br />
+                            MISSION{" "}
+                          </h3>
+                          <a
+                            className="tp-cta_2-mission-arrow"
+                            href="https://etorisoft.com/wp/avtrix/service-details/"
+                            target="_self"
+                            rel="nofollow"
+                          >
+                            <span>
+                              <svg
+                                width="63"
+                                height="63"
+                                viewBox="0 0 63 63"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M4 59L56.5 6.5M4 3H60V59"
+                                  stroke="white"
+                                  strokeWidth="4.5"
+                                  strokeLinecap="square"
+                                  strokeLinejoin="round"
+                                ></path>
+                              </svg>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ServiceMainAbout;

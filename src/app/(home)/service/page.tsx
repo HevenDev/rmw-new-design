@@ -1,9 +1,9 @@
-import Services from "@/allPages/Services";
+import ServiceMainPage from "@/allPages/serviceMainpage/ServiceMainPage";
 
 const service = () => {
   return (
     <>
-    <Services/>
+    <ServiceMainPage />
     </>
   )
 }

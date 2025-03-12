@@ -1,14 +1,14 @@
-import ServiceFirst from "./servicePage/serviceFirst";
-import Testimonials from "./servicePage/testimonials";
+import ServiceFirst from "./serviceSecondPage/serviceFirst";
+import Testimonials from "./serviceSecondPage/testimonials";
 import SwiperHome from "./Homepage/SwiperHome";
 import Service from "./Homepage/Service";
-import ServiceImg from "./servicePage/serviceImg";
+import ServiceImg from "./serviceSecondPage/serviceImg";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 
 import React from 'react'
 
-const Services = () => {
+const ServicesSecondPage = () => {
   return (
     <>
       <Header/>
@@ -22,4 +22,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default ServicesSecondPage;

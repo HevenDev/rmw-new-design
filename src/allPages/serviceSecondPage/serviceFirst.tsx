@@ -356,8 +356,8 @@ const serviceFirst = () => {
                           <path
                             d="M1 25.37L23.8469 2.52313M1 1H25.37V25.37"
                             stroke="white"
-                            stroke-linecap="square"
-                            stroke-linejoin="round"
+                            strokeLinecap="square"
+                            strokeLinejoin="round"
                           ></path>
                         </svg>
                       </span>
