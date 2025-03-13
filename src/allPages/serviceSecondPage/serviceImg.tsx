@@ -1,6 +1,6 @@
 import React from 'react'
 
-const serviceImg = () => {
+const ServiceImg = () => {
   return (
     <div className="elementor-widget-container">
 					
@@ -13,4 +13,4 @@ const serviceImg = () => {
   )
 }
 
-export default serviceImg
+export default ServiceImg

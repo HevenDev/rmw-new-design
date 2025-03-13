@@ -1,6 +1,6 @@
 import React from "react";
 
-const serviceFirst = () => {
+const ServiceFirst = () => {
   return (
     <div className="elementor-widget-container">
       <section className="tp-services__area tp-service__plr">
@@ -409,4 +409,4 @@ const serviceFirst = () => {
   );
 };
 
-export default serviceFirst;
+export default ServiceFirst;
