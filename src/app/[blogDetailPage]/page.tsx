@@ -1,9 +1,15 @@
+import Article1 from "@/allPages/blogDetailPage/Article1";
+import Footer from "@/components/footer/Footer";
+import Header from "@/components/header/Header";
+
 
 const BlogDetailPage = () => {
   return (
-    <div>
-      <h1>Hola</h1>      
-    </div>
+   <>
+   <Header/>
+   <Article1/>
+   <Footer/>
+   </>
   )
 }
 
