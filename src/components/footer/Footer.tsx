@@ -24,7 +24,7 @@ const Footer = () => {
                   <div className="col-xl-7">
                     <div className="tp-cta__item text-center">
                       <h3 className="tp-cta__title tp-split__text tp-split__in-right tp-cursor-point-area">
-                        <Link href="https://oclata.com/wp/avtrix/contact/">
+                        <Link href="/contact/">
                           
                           Get in <span>touch</span>
                         </Link>
