@@ -1,9 +1,12 @@
+import LogoutButton from '@/components/logout/Logout'
+import RegisterForm from '@/components/register/RegisterUser'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-      admin
+      <LogoutButton />
+      <RegisterForm />
     </div>
   )
 }
