@@ -1,13 +1,11 @@
-import mysql from "mysql2/promise";
+import mysql, { Pool } from "mysql2/promise";
 
-let pool: mysql.Pool | undefined;
+// Use globalThis instead of global
+const globalForMySQL = globalThis as unknown as { _mysqlPool?: Pool };
 
-declare global {
-  var _mysqlPool: mysql.Pool | undefined;
-}
-
-if (!global._mysqlPool) {
-  global._mysqlPool = mysql.createPool({
+const pool =
+  globalForMySQL._mysqlPool ??
+  mysql.createPool({
     host: process.env.DATABASE_HOST || "127.0.0.1",
     user: process.env.DATABASE_USER || "root",
     password: process.env.DATABASE_PASSWORD || "",
@@ -17,12 +15,13 @@ if (!global._mysqlPool) {
     connectionLimit: 10,
     queueLimit: 0,
   });
+
+if (process.env.NODE_ENV !== "production") {
+  globalForMySQL._mysqlPool = pool; // ✅ Assign pool to globalThis
 }
 
-pool = global._mysqlPool;
-
 /** Returns a guaranteed MySQL pool instance */
-export const getDBPool = (): mysql.Pool => {
+export const getDBPool = (): Pool => {
   if (!pool) {
     throw new Error("Database pool is not initialized");
   }

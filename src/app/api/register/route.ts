@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import { getDBPool } from "@/lib/db";
-
+import { RowDataPacket } from "mysql2";
 const JWT_SECRET = process.env.JWT_SECRET;
 const COOKIE_NAME = "auth_token"; // Cookie name
 
@@ -52,11 +52,12 @@ export async function POST(req: NextRequest) {
     const db = getDBPool();
 
     // ✅ Check if the email is already taken
-    const [existingUsers] = await db.query(
+    const [rows] = await db.query<RowDataPacket[]>(
       "SELECT * FROM users WHERE email = ?",
       [email]
     );
-    if ((existingUsers as any[]).length > 0) {
+    
+    if (rows.length > 0) {
       return NextResponse.json(
         { message: "User already exists" },
         { status: 409 }

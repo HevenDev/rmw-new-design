@@ -604,7 +604,7 @@ const ServiceMainIdentity = () => {
                       <div className="tp-about__content mb-40">
                         <p className="mb-40">
                           {" "}
-                          Whether it's crafting a visually stunning brand
+                          Whether it&apos;s crafting a visually stunning brand
                           identity designing immersive digital experiences, or
                           developing strategic marketing campaigns, we approach
                           each{" "}

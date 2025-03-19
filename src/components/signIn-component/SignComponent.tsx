@@ -48,8 +48,12 @@ const SignInForm = () => {
   
       // ✅ Use `replace` instead of `push` to force navigation
       router.replace("/admin");
-    } catch (err: any) {
-      setError(err.message);
+    } catch (err: unknown) {
+      if (err instanceof Error) {
+        setError(err.message);
+      } else {
+        setError("An unknown error occurred");
+      }
     } finally {
       setLoading(false);
     }

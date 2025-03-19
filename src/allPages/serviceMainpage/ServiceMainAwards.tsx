@@ -28,7 +28,7 @@ const ServiceMainAwards = () => {
                       </h3>{" "}
                       <p>
                         {" "}
-                        Whether it's crafting a visually stunning brand identity
+                        Whether it&apos;s crafting a visually stunning brand identity
                         designing immersive digital experiences, or developing{" "}
                       </p>
                     </div>

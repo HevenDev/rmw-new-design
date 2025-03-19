@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-import { NextRequest, NextResponse } from "next/server";
+import { NextRequest } from "next/server";
 
 const JWT_SECRET = process.env.JWT_SECRET;
 
@@ -16,6 +16,7 @@ export function verifyJWT(req: NextRequest) {
     const decoded = jwt.verify(token, JWT_SECRET as string);
     return decoded;
   } catch (error) {
+    console.error("Error decoding token:", error);
     return null; // Invalid token
   }
 }

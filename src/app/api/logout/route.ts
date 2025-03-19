@@ -1,8 +1,8 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
 const COOKIE_NAME = "auth_token"; // The name of the cookie storing JWT
 
-export async function POST(req: NextRequest) {
+export async function POST() {
   try {
     // Clear the authentication cookie
     const response = NextResponse.json({ message: "Logged out successfully" });
