@@ -9,7 +9,7 @@ export function middleware(req: NextRequest) {
   if (pathname === "/admin/sign-in" && token) {
     return NextResponse.redirect(new URL("/admin", req.url));
   }
-
+                 
   // ✅ Allow access to `/admin/sign-in` if not authenticated
   if (pathname === "/admin/sign-in") {
     return NextResponse.next();
