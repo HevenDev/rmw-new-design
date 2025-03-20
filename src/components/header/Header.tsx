@@ -2,8 +2,10 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import useStickyElements from "@/hooks/useStickyElements";//changed
 
 const Header = () => {
+  useStickyElements();
   
   return (
     <header>

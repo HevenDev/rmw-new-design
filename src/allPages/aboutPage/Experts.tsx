@@ -1,5 +1,5 @@
 "use client";
-
+import { useSplitText } from "@/hooks/useSplitText";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
@@ -7,16 +7,19 @@ import "@/app/marque.css";
 import Link from "next/link";
 
 const Experts = () => {
+
+  const textRefs = useSplitText(); // ✅ Using the existing GSAP animation
+
   return (
     <div className="elementor-widget-container">
                 <section className="tp-team__3-area tp-team__inner-1 p-relative pt-120 pb-135">
                   <div className="container">
                     <div className="tp-team__title-box mb-75">
-                      <span className="tp-section-title-pre mb-25 tp-split__text tp-split__in-right">
+                      <span ref={(el) => { if (el) textRefs.current.push(el) }} className="tp-section-title-pre mb-25 tp-split__text tp-split__in-right">
                         Expert team
                       </span>
                       <div className="tp-section-title-wrap mb-20 d-sm-flex align-items-center justify-content-between">
-                        <h3 className="tp-section-title tp-split__text tp-split__in-right">
+                        <h3 ref={(el) => { if (el) textRefs.current.push(el) }} className="tp-section-title tp-split__text tp-split__in-right">
                           Expert Members <br />
                           <span>
                             <i>Behind Us</i>

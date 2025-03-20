@@ -1,6 +1,12 @@
+"use client" //changed
 import Link from "next/link"
+// changed
+import { useSplitText } from "@/hooks/useSplitText";
 
 const Choose = () => {
+
+  const textRefs = useSplitText();
+
   return (
     <div className="elementor-widget-container">
     <section className="tp-chooseus__area fix tp-chooseus__1 p-relative section-bg tp-bg-className">
@@ -41,11 +47,11 @@ const Choose = () => {
           <div className="col-xl-7 offset-xl-5">
             <div className="tp-chooseus__wrap pt-100 pb-105">
               <div className="tp-chooseus__title-box mb-45">
-                <span className="tp-section-title-2-pre tp-split__text tp-split__in-right mb-15">
+                <span ref={(el) => { if (el) textRefs.current.push(el) }} className="tp-section-title-2-pre tp-split__text tp-split__in-right mb-15">
                   
                   Why choose us
                 </span>
-                <h3 className="tp-section-title-2 tp-split__text tp-split__in-right mb-40">
+                <h3 ref={(el) => { if (el) textRefs.current.push(el) }} className="tp-section-title-2 tp-split__text tp-split__in-right mb-40">
                   We’re <span>Award</span>-Winning Development
                   <span>Agencies</span>
                 </h3>

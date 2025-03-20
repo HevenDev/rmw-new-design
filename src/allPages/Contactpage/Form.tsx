@@ -1,6 +1,14 @@
+"use client" //changed
+
 import React from 'react'
 import Link from "next/link";
+
+import { useSplitText } from "@/hooks/useSplitText"; //changed
+
 const Form = () => {
+
+    const textRefs = useSplitText();//changed
+
     return (
         <div className="tp-contact__area pt-130 pb-90 black-bg">
             <div className="container">
@@ -8,7 +16,7 @@ const Form = () => {
                     <div className="col-xl-6 col-lg-6">
                         <div className="tp-contact__left">
                             <div className="tp-contact__title-box mb-75">
-                                <h3 className="tp-section-title tp-split__text tp-split__in-right mb-35" style={{perspective: "400px"}}><div className="tp-split__line"
+                                <h3 ref={(el) => { if (el) textRefs.current.push(el) }} className="tp-section-title tp-split__text tp-split__in-right mb-35" style={{perspective: "400px"}}><div ref={(el) => { if (el) textRefs.current.push(el) }} className="tp-split__line"
                                     style={{ display: "block", textAlign: "start", position: "relative" }}
                                 ><div
                                     style={{ position: "relative", display: "inline-block" }}

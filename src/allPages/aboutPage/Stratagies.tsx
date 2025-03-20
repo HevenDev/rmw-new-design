@@ -1,6 +1,11 @@
-import Link from "next/link"
+"use client";
+import Link from "next/link";
+import { useSplitText } from "@/hooks/useSplitText";
 
 const Stratagies = () => {
+
+  const textRefs = useSplitText(); // ✅ Using the existing GSAP animation
+
   return (
     <div className="elementor-widget-container">
     <section className="tp-cate__area fix pb-120">
@@ -8,7 +13,7 @@ const Stratagies = () => {
         <div className="row">
           <div className="col-xl-6 col-lg-6">
             <div className="tp-cate__title-box">
-              <h3 className="tp-cate__title mb-40 tp-split__text tp-split__in-right">
+              <h3 ref={(el) => { if (el) textRefs.current.push(el) }}  className="tp-cate__title mb-40 tp-split__text tp-split__in-right">
                 STRATEGIES FOR BUILDING GROWING, AND MANAGING YOUR
                 BRAND&apos;S IDENTITY
               </h3>
@@ -126,3 +131,4 @@ const Stratagies = () => {
 }
 
 export default Stratagies
+

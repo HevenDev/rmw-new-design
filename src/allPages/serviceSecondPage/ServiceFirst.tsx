@@ -1,6 +1,10 @@
 import React from "react";
+import { useSplitText } from "@/hooks/useSplitText";
 
 const ServiceFirst = () => {
+
+  const textRefs = useSplitText();
+
   return (
     <div className="elementor-widget-container">
       <section className="tp-services__area tp-service__plr">
@@ -9,11 +13,12 @@ const ServiceFirst = () => {
             <div className="col-xl-12">
               <div className="tp-service__wrap p-relative">
                 <div className="tp-ab__title-box z-index-2 mb-80">
-                  <h3
+                  <h3 ref={(el) => { if (el) textRefs.current.push(el) }}
                     className="tp-service__title text-center tp-split__text tp-split__in-right"
                     style={{ perspective: "400px" }}
                   >
                     <div
+                    ref={(el) => { if (el) textRefs.current.push(el) }}
                       className="tp-split__line"
                       style={{
                         display: "block",
@@ -207,6 +212,7 @@ const ServiceFirst = () => {
                       </div>{" "}
                     </div>
                     <div
+                    ref={(el) => { if (el) textRefs.current.push(el) }}
                       className="tp-split__line"
                       style={{
                         display: "block",

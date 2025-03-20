@@ -1,4 +1,10 @@
+"use client";
+import { useSplitText } from "@/hooks/useSplitText";
+
 const ServiceMainVideo = () => {
+
+  const textRefs = useSplitText();
+
   return (
     <div
       className="elementor-element elementor-element-07d8760 e-con-full e-flex e-con e-parent e-lazyloaded"
@@ -30,11 +36,11 @@ const ServiceMainVideo = () => {
                 <div className="row align-items-center">
                   <div className="col-md-12">
                     <div className="tp-video__title-box text-center">
-                      <h3
+                      <h3 ref={(el) => { if (el) textRefs.current.push(el) }}
                         className="tp-video__title tp-split__text tp-split__in-right"
                         style={{ perspective: "400px" }}
                       >
-                        <div
+                        <div ref={(el) => { if (el) textRefs.current.push(el) }}
                           className="tp-split__line"
                           style={{
                             display: "block",

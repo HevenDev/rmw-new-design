@@ -7,6 +7,7 @@ const page = () => {
   return (
     <div>
       <Sidebar />
+      
     </div>
   )
 }

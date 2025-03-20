@@ -1,4 +1,8 @@
+import { useSplitText } from "@/hooks/useSplitText";
 const ServiceThirdAward = () => {
+
+  const textRefs = useSplitText();
+
   return (
     <div
       className="elementor-element elementor-element-18bdc72 e-con-full e-flex e-con e-parent e-lazyloaded"
@@ -37,11 +41,11 @@ const ServiceThirdAward = () => {
                   <div className="col-xl-7 offset-xl-5">
                     <div className="tp-awards__3-wrap">
                       <div className="tp-awards__3-title-box mb-45">
-                        <h3
+                        <h3 ref={(el) => { if (el) textRefs.current.push(el) }}
                           className="tp-section-title tp-split__text tp-split__in-right mb-40"
                           style={{ perspective: "400px" }}
                         >
-                          <div
+                          <div ref={(el) => { if (el) textRefs.current.push(el) }}
                             className="tp-split__line"
                             style={{
                               display: "block",
@@ -299,7 +303,7 @@ const ServiceThirdAward = () => {
                               </div>
                             </div>{" "}
                           </div>
-                          <div
+                          <div ref={(el) => { if (el) textRefs.current.push(el) }}
                             className="tp-split__line"
                             style={{
                               display: " block",
