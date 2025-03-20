@@ -4,6 +4,9 @@ import Link from "next/link";
 import { useSplitText } from "@/hooks/useSplitText";
 
 const Footer = () => {
+
+  const textRefs = useSplitText();
+
   return (
     <footer>
       {/* <!-- tp footer area start  --> */}
