@@ -1,5 +1,7 @@
 "use client";
 
+import { useSplitText } from "@/hooks/useSplitText";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -8,6 +10,9 @@ import "swiper/css/navigation";
 import { FreeMode, Navigation  } from "swiper/modules";
 
 const ServiceThirdLegendTeam = () => {
+
+  const textRefs = useSplitText();
+
   return (
     <div
       className="elementor-element elementor-element-402f260 e-con-full e-flex e-con e-parent e-lazyloaded"
@@ -38,11 +43,11 @@ const ServiceThirdLegendTeam = () => {
                 <div className="tp-team__3-top p-relative mb-60">
                   <div className="row align-items-center">
                     <div className="col-md-6 col-sm-7">
-                      <div
+                      <div ref={(el) => { if (el) textRefs.current.push(el) }}
                         className="tp-team__3-title-box mb-30 tp-split__text tp-split__in-right"
                         style={{ perspective: "400px" }}
                       >
-                        <div
+                        <div ref={(el) => { if (el) textRefs.current.push(el) }}
                           className="tp-split__line"
                           style={{
                             display: "block",

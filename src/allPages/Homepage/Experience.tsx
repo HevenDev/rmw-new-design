@@ -1,7 +1,16 @@
+"use client"
+
+
+
 import Link from 'next/link'
 import React from 'react'
 
+import { useSplitText } from "@/hooks/useSplitText"; //changed
+
 const Experience = () => {
+
+  const textRefs = useSplitText();
+
   return (
     <div
           className="elementor-element elementor-element-f0d1a29 e-con-full e-flex e-con e-parent"
@@ -54,10 +63,10 @@ const Experience = () => {
                       <div className="col-xl-7 offset-xl-5">
                         <div className="tp-chooseus__wrap pt-100 pb-105">
                           <div className="tp-chooseus__title-box mb-45">
-                            <span className="tp-section-title-2-pre tp-split__text tp-split__in-right mb-15">
+                            <span ref={(el) => { if (el) textRefs.current.push(el) }} className="tp-section-title-2-pre tp-split__text tp-split__in-right mb-15">
                               Why choose us
                             </span>
-                            <h3 className="tp-section-title-2 tp-split__text tp-split__in-right mb-40">
+                            <h3 ref={(el) => { if (el) textRefs.current.push(el) }} className="tp-section-title-2 tp-split__text tp-split__in-right mb-40">
                               + 10 Years Of Experience <br />
                               In <span>Marketing</span> Field
                               <span className="tp-section-title-2-shape">

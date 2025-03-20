@@ -6900,7 +6900,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 }
 
 .tp-hero__title.tp-marketing span {
-  color: var(--tp-theme-primary);
+  color: white;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {

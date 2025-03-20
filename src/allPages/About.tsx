@@ -10,6 +10,7 @@ import Swiper1 from "./aboutPage/Swiper1";
 import Swiper2 from "./aboutPage/Swiper2";
 
 const About = () => {
+    
     return(
         <>
         <Header/>

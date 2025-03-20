@@ -1,4 +1,10 @@
+"use client";
+import { useSplitText } from "@/hooks/useSplitText";
+
 const ServiceMainTeam = () => {
+
+  const textRefs = useSplitText();
+
   return (
     <div
       className="elementor-element elementor-element-070298b e-con-full e-flex e-con e-parent e-lazyloaded"
@@ -29,10 +35,12 @@ const ServiceMainTeam = () => {
                 <div className="row">
                   <div className="col-xl-12">
                     <div
+                    ref={(el) => { if (el) textRefs.current.push(el) }}
                       className="tp-team__title-box mb-55 d-flex justify-content-center tp-split__text tp-split__in-right"
                       style={{ perspective: "400px" }}
                     >
                       <div
+                      ref={(el) => { if (el) textRefs.current.push(el) }}
                         className="tp-split__line"
                         style={{
                           display: "block",

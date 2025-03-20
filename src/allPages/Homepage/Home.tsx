@@ -1,6 +1,11 @@
 import Link from "next/link";
 
+import { useSplitText } from "@/hooks/useSplitText";
+
 const Home = () => {
+
+  const textRefs = useSplitText();
+
   return (
     <div
           className="elementor-element elementor-element-199ac0f e-con-full e-flex e-con e-parent"
@@ -61,7 +66,7 @@ const Home = () => {
                             <span className="tp-hero__subtitle mb-20">
                               Creative Agency Beside New York City
                             </span>
-                            <h3 className="tp-hero__title tp-marketing tp-split__text tp-split__in-right p-relative">
+                            <h3 ref={(el) => { if (el) textRefs.current.push(el) }} className="tp-hero__title tp-marketing tp-split__text tp-split__in-right p-relative">
                               Digital Marketing Design Studio<span>,</span>
                               <br />
                               Driven by Strategy

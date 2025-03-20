@@ -1,7 +1,9 @@
+"use client";
+
 import Link from "next/link";
+import { useSplitText } from "@/hooks/useSplitText";
 
 const Footer = () => {
-  
   return (
     <footer>
       {/* <!-- tp footer area start  --> */}
@@ -23,7 +25,7 @@ const Footer = () => {
                 <div className="row justify-content-center">
                   <div className="col-xl-7">
                     <div className="tp-cta__item text-center">
-                      <h3 className="tp-cta__title tp-split__text tp-split__in-right tp-cursor-point-area">
+                      <h3 ref={(el) => { if (el) textRefs.current.push(el) }} className="tp-cta__title tp-split__text tp-split__in-right tp-cursor-point-area">
                         <Link href="/contact/">
                           
                           Get in <span>touch</span>

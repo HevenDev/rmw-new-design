@@ -1,4 +1,11 @@
+"use client"
+
+import { useSplitText } from "@/hooks/useSplitText";
+
 const Work = () => {
+
+  const textRefs = useSplitText();
+
   return (
     <div className="elementor-widget-container">
                 <div className="tp-funfact__area fix tp-funfact__1 p-relative pt-75">
@@ -17,7 +24,7 @@ const Work = () => {
                       <div className="row justify-content-center">
                         <div className="col-xl-6">
                           <div className="tp-funfact__title-box tp-cursor-point-area mb-110 p-relative tp_fun_fact_title_text_align">
-                            <h3 className="tp-section-title tp-funfact-title tp-split__text tp-split__in-right">
+                            <h3 ref={(el) => { if (el) textRefs.current.push(el) }}  className="tp-section-title tp-funfact-title tp-split__text tp-split__in-right">
                               
                               Let’s Work <span>Together</span>
                             </h3>
