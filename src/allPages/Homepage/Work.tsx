@@ -28,6 +28,7 @@ const Work = () => {
                       decoding="async"
                       src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/funfact-shape-1-1.png"
                       alt=""
+                      style={{filter: "sepia(100%) saturate(500%) hue-rotate(10deg)"}}
                     />
                   </div>
                   <div
@@ -58,12 +59,12 @@ const Work = () => {
                                   data-purecounter-duration="1"
                                   data-purecounter-end="5"
                                 >
-                                  5
+                                  1
                                 </b>
-                                K+
+                                B+
                               </h3>
                               <div className="tp-funfact__text">
-                                <span> Business Award </span>
+                                <span> Words Written </span>
                               </div>
                             </div>
                           </div>
@@ -79,12 +80,12 @@ const Work = () => {
                                   data-purecounter-duration="1"
                                   data-purecounter-end="500"
                                 >
-                                  500
+                                 1
                                 </b>
-                                +
+                                M+
                               </h3>
                               <div className="tp-funfact__text">
-                                <span> Created projects </span>
+                                <span> Creatives Published </span>
                               </div>
                             </div>
                           </div>
@@ -100,12 +101,12 @@ const Work = () => {
                                   data-purecounter-duration="1"
                                   data-purecounter-end="2"
                                 >
-                                  2
+                                  1
                                 </b>
-                                B+
+                                K+
                               </h3>
                               <div className="tp-funfact__text">
-                                <span> Awesome clients </span>
+                                <span> Campaigns Executed </span>
                               </div>
                             </div>
                           </div>
@@ -121,12 +122,12 @@ const Work = () => {
                                   data-purecounter-duration="1"
                                   data-purecounter-end="10"
                                 >
-                                  10
+                                 500
                                 </b>
-                                K+
+                                +
                               </h3>
                               <div className="tp-funfact__text">
-                                <span> Team members </span>
+                                <span> Success Stories </span>
                               </div>
                             </div>
                           </div>
