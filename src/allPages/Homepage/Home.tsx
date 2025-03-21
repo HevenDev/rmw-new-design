@@ -27,6 +27,7 @@ const Home = () => {
                 <section
                   className="tp-hero__area fix tp-hero__space tp-hero__bg p-relative tp-bg-className"
                   data-background="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/hero-bg-1.jpg"
+                  style={{backgroundImage: "url(https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/hero-bg-1.jpg)"}}
                 >
                   <div className="tp-hero__social">
                     <div className="tp-hero__social-content">
@@ -66,10 +67,19 @@ const Home = () => {
                             <span className="tp-hero__subtitle mb-20">
                               Creative Agency Beside New York City
                             </span>
-                            <h3 ref={(el) => { if (el) textRefs.current.push(el) }} className="tp-hero__title tp-marketing tp-split__text tp-split__in-right p-relative">
-                              Digital Marketing Design Studio<span>,</span>
-                              <br />
-                              Driven by Strategy
+                            <h3  className="tp-hero__title tp-marketing tp-split__text tp-split__in-right p-relative">
+                            Advertising
+                            </h3>
+                            <h3  className="tp-hero__title tp-marketing tp-split__text tp-split__in-right p-relative">
+                            
+                             
+                              Branding
+                              
+                            </h3>
+                            <h3  className="tp-hero__title tp-marketing tp-split__text tp-split__in-right p-relative">
+                            
+                            Communication
+                              
                             </h3>
                             <div className="tp-hero__title-shape">
                               <span>

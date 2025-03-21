@@ -37,7 +37,7 @@ const Service = () => {
                         </h3>
                         <Link
                           className="tp-btn-primary"
-                          href="https://etorisoft.com/wp/avtrix/service/"
+                          href="/service/"
                           rel="nofollow"
                           target="_self"
                         >
