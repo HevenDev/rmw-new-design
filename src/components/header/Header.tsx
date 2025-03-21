@@ -771,7 +771,7 @@ const Header = () => {
                               cy="2.39022"
                               rx="2.39023"
                               ry="2.39022"
-                              fill="#FF521C"
+                              fill="#fddf82"
                             />
                             <ellipse
                               cx="13.9137"
@@ -833,7 +833,7 @@ const Header = () => {
                               cy="23.0484"
                               rx="2.39023"
                               ry="2.39022"
-                              fill="#FF521C"
+                              fill="#fddf82"
                             />
                           </svg>
                         </span>
