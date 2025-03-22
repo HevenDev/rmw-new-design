@@ -1,5 +1,6 @@
-import Editor from "@/allPages/addBlog/AddBlog";
+// import Editor from "@/allPages/addBlog/AddBlog";
 import AddBlogData from "@/components/addBlogData/AddBlogData";
+import Editor from "@/components/Editor/Editor";
 
 const page = () => {
   return (
