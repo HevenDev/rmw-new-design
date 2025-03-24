@@ -78,6 +78,7 @@ html:root {
   --tp-theme-third: #E94D35;
   --tp-theme-rgba-primary: 249, 81, 29;
 }
+
 :where(.is-layout-flex) {
   gap: 0.5em;
 }

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useSplitText } from "@/hooks/useSplitText";
+import Image from "next/image";
 
 const Footer = () => {
 
@@ -19,6 +20,7 @@ const Footer = () => {
           <img
             src="https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/footer/footer-shape-1-1.png"
             alt=""
+            style={{filter: " sepia(100%) saturate(500%) hue-rotate(10deg)"}}
           />
         </div>
         <div className="tp-footer__wrap  ">
@@ -52,9 +54,12 @@ const Footer = () => {
                     <div className="textwidget custom-html-widget">
                       <div className="tp-footer__logo">
                         <Link href="https://etorisoft.com/wp/avtrix/index.html">
-                          <img
-                            src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/logo.png"
-                            alt=""
+                          <Image
+                          width={50}
+                          height={50}
+                          layout="fixed"
+                            src="/rmw_logo_gold.png"
+                            alt="logo"
                           />
                         </Link>
                       </div>

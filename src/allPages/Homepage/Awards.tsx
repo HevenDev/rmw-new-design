@@ -48,6 +48,7 @@ const Awards = () => {
                             decoding="async"
                             src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/awards-1-1.png"
                             alt=""
+                            style={{filter: " sepia(100%) saturate(500%) hue-rotate(10deg)"}}
                           />
                         </div>
                       </div>

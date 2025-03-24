@@ -53,7 +53,7 @@ const Form = () => {
                             opacity: 1,
                         }}
                         >
-                        G
+                        A
                       </div>
                       <div
                         style={{
@@ -66,7 +66,7 @@ const Form = () => {
                             opacity: 1,
                         }}
                         >
-                        e
+                        s
                       </div>
                       <div
                         style={{
@@ -79,7 +79,7 @@ const Form = () => {
                             opacity: 1,
                         }}
                         >
-                        t
+                        k
                       </div>
                     </div>{" "}
                     <div
@@ -96,7 +96,7 @@ const Form = () => {
                             opacity: 1,
                         }}
                         >
-                        I
+                        B
                       </div>
                       <div
                         style={{
@@ -109,9 +109,9 @@ const Form = () => {
                             opacity: 1,
                         }}
                         >
-                        n
+                        o
                       </div>
-                    </div>{" "}
+                    </div>
                     <span>
                       <div
                         style={{
@@ -130,7 +130,7 @@ const Form = () => {
                               opacity: 1,
                             }}
                             >
-                          T
+                          l
                         </div>
                         <div
                           style={{
@@ -143,7 +143,7 @@ const Form = () => {
                               opacity: 1,
                             }}
                             >
-                          o
+                          d
                         </div>
                         <div
                           style={{
@@ -156,7 +156,85 @@ const Form = () => {
                               opacity: 1,
                             }}
                             >
-                          u
+                          l
+                        </div>
+                        <div
+                          style={{
+                              position: "relative",
+                              display: "inline-block",
+                              translate: "none",
+                              rotate: "none",
+                              scale: "none",
+                              transform: "translate(0px, 0px)",
+                              opacity: 1,
+                            }}
+                            >
+                          y,
+                        </div>{" "}
+                        <div
+                          style={{
+                              position: "relative",
+                              display: "inline-block",
+                              translate: "none",
+                              rotate: "none",
+                              scale: "none",
+                              transform: "translate(0px, 0px)",
+                              opacity: 1,
+                            }}
+                            >
+                          A
+                        </div>
+                        <div
+                          style={{
+                              position: "relative",
+                              display: "inline-block",
+                              translate: "none",
+                              rotate: "none",
+                              scale: "none",
+                              transform: "translate(0px, 0px)",
+                              opacity: 1,
+                            }}
+                            >
+                          n
+                        </div>
+                        <div
+                          style={{
+                              position: "relative",
+                              display: "inline-block",
+                              translate: "none",
+                              rotate: "none",
+                              scale: "none",
+                              transform: "translate(0px, 0px)",
+                              opacity: 1,
+                            }}
+                            >
+                          d
+                        </div>{" "}
+                        <div
+                          style={{
+                              position: "relative",
+                              display: "inline-block",
+                              translate: "none",
+                              rotate: "none",
+                              scale: "none",
+                              transform: "translate(0px, 0px)",
+                              opacity: 1,
+                            }}
+                            >
+                          R
+                        </div>
+                        <div
+                          style={{
+                              position: "relative",
+                              display: "inline-block",
+                              translate: "none",
+                              rotate: "none",
+                              scale: "none",
+                              transform: "translate(0px, 0px)",
+                              opacity: 1,
+                            }}
+                            >
+                          e
                         </div>
                         <div
                           style={{
@@ -182,7 +260,189 @@ const Form = () => {
                               opacity: 1,
                             }}
                             >
-                          h
+                          e
+                        </div>
+                        <div
+                          style={{
+                              position: "relative",
+                              display: "inline-block",
+                              translate: "none",
+                              rotate: "none",
+                              scale: "none",
+                              transform: "translate(0px, 0px)",
+                              opacity: 1,
+                            }}
+                            >
+                          i
+                        </div>
+                        <div
+                          style={{
+                              position: "relative",
+                              display: "inline-block",
+                              translate: "none",
+                              rotate: "none",
+                              scale: "none",
+                              transform: "translate(0px, 0px)",
+                              opacity: 1,
+                            }}
+                            >
+                          v
+                        </div>
+                        <div
+                          style={{
+                              position: "relative",
+                              display: "inline-block",
+                              translate: "none",
+                              rotate: "none",
+                              scale: "none",
+                              transform: "translate(0px, 0px)",
+                              opacity: 1,
+                            }}
+                            >
+                          e
+                        </div>{" "}
+                        <div
+                          style={{
+                              position: "relative",
+                              display: "inline-block",
+                              translate: "none",
+                              rotate: "none",
+                              scale: "none",
+                              transform: "translate(0px, 0px)",
+                              opacity: 1,
+                            }}
+                            >
+                          B
+                        </div>
+                        <div
+                          style={{
+                              position: "relative",
+                              display: "inline-block",
+                              translate: "none",
+                              rotate: "none",
+                              scale: "none",
+                              transform: "translate(0px, 0px)",
+                              opacity: 1,
+                            }}
+                            >
+                          r
+                        </div>
+                        <div
+                          style={{
+                              position: "relative",
+                              display: "inline-block",
+                              translate: "none",
+                              rotate: "none",
+                              scale: "none",
+                              transform: "translate(0px, 0px)",
+                              opacity: 1,
+                            }}
+                            >
+                          i
+                        </div>
+                        <div
+                          style={{
+                              position: "relative",
+                              display: "inline-block",
+                              translate: "none",
+                              rotate: "none",
+                              scale: "none",
+                              transform: "translate(0px, 0px)",
+                              opacity: 1,
+                            }}
+                            >
+                          l
+                        </div>
+                        <div
+                          style={{
+                              position: "relative",
+                              display: "inline-block",
+                              translate: "none",
+                              rotate: "none",
+                              scale: "none",
+                              transform: "translate(0px, 0px)",
+                              opacity: 1,
+                            }}
+                            >
+                          l
+                        </div>
+                        <div
+                          style={{
+                              position: "relative",
+                              display: "inline-block",
+                              translate: "none",
+                              rotate: "none",
+                              scale: "none",
+                              transform: "translate(0px, 0px)",
+                              opacity: 1,
+                            }}
+                            >
+                          i
+                        </div>
+                        <div
+                          style={{
+                              position: "relative",
+                              display: "inline-block",
+                              translate: "none",
+                              rotate: "none",
+                              scale: "none",
+                              transform: "translate(0px, 0px)",
+                              opacity: 1,
+                            }}
+                            >
+                          a
+                        </div>
+                        <div
+                          style={{
+                              position: "relative",
+                              display: "inline-block",
+                              translate: "none",
+                              rotate: "none",
+                              scale: "none",
+                              transform: "translate(0px, 0px)",
+                              opacity: 1,
+                            }}
+                            >
+                          n
+                        </div>
+                        <div
+                          style={{
+                              position: "relative",
+                              display: "inline-block",
+                              translate: "none",
+                              rotate: "none",
+                              scale: "none",
+                              transform: "translate(0px, 0px)",
+                              opacity: 1,
+                            }}
+                            >
+                          t
+                        </div>
+                        <div
+                          style={{
+                              position: "relative",
+                              display: "inline-block",
+                              translate: "none",
+                              rotate: "none",
+                              scale: "none",
+                              transform: "translate(0px, 0px)",
+                              opacity: 1,
+                            }}
+                            >
+                          l
+                        </div>
+                        <div
+                          style={{
+                              position: "relative",
+                              display: "inline-block",
+                              translate: "none",
+                              rotate: "none",
+                              scale: "none",
+                              transform: "translate(0px, 0px)",
+                              opacity: 1,
+                            }}
+                            >
+                          y
                         </div>
                       </div>
                     </span>{" "}
@@ -198,8 +458,9 @@ const Form = () => {
                       animationDelay: "0.3s",
                     }}
                     >
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit mattis{" "}
-                  <br /> faucibus odio feugiat arc dolor.
+                        You’ve got a Project, an Idea, or a marketing Emergency that needs our genius intervention?
+                  {" "}
+                    Well, we’ve seen them all. Let’s get in touch and fall in love. All you need to do is fill out the details below and we’ll get in touch.
                 </p>
               </div>
               <div
