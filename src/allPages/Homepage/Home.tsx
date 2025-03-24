@@ -166,12 +166,7 @@ const Home = () => {
                           </div>
                         </div>
                         <p>
-                          Business ocean-bass sea unicorn fish creative treefish
-                          eulachon
-                          <span className="text-white">tidewater</span>
-                          goby. Flier, bighe studio carp Devario shortnose
-                          sucker platy smalleye arrow squaretail zebra
-                          turkeyfish yellowfin that specialize
+                        Billions of words written, Millions of Creatives Delivered, Thousands of Campaigns executed, and hundreds of success stories completed. This is a quick summary of what Ritz Media World is all about.
                         </p>
                       </div>
                     </div>

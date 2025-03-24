@@ -12,6 +12,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
+import Editor from "@/components/Editor/Editor";
 
 const blogCategories = [
   { id: 26, name: "Case Study" },
@@ -147,7 +148,7 @@ const AddBlogData = () => {
 
       <Label>Blog Image</Label>
       <Input type="file" accept="image/*" onChange={handleImageChange} />
-
+      <Editor />
       <Button type="submit" className="w-full mt-4">
         Save Blog
       </Button>

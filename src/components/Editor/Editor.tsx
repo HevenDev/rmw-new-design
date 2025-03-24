@@ -1,7 +1,7 @@
 "use client"
 
 import React, {useState, useRef} from 'react'
-import JoditEditor from "jodit-react"
+import JoditEditor from 'jodit-react'
 const Editor = () => {
     const editor = useRef(null);
     const [content, setContent] = useState('');

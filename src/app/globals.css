@@ -383,3 +383,20 @@ img:is([sizes="auto" i], [sizes^="auto," i]) {
   text-decoration: none
 }
 /* ===== Main page given CSS Ends ===== */
+
+/* ==== Home Experience All page component ==== */
+.tp-experience{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tp-ex-contain{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 7.5px;
+}
+.tp-ex-head{
+  font-size: 22px;
+  color: #fff;
+}
