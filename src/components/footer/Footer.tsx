@@ -66,7 +66,7 @@ const Footer = () => {
                           />
                         </Link>
                       </div>
-                      <h6 style={{color:"#aaa4a4"}}>Accelerate your journey to success with result-oriented solutions for Digital Advertising, Social Media Management, SEO, and Compelling Content backed by more than 17 years of advertising wisdom with a wide array of clients across all industries across the Indian subcontinent.</h6>
+                      <p style={{color:"#aaa4a4"}}>Accelerate your journey to success with result-oriented solutions for Digital Advertising, Social Media Management, SEO, and Compelling Content backed by more than 17 years of advertising wisdom with a wide array of clients across all industries across the Indian subcontinent.</p>
                     </div>
                   </div>
                 </div>
@@ -77,47 +77,55 @@ const Footer = () => {
                   className="tp-footer__widget footer-col-1-2 mb-40 widget_nav_menu"
                 >
                   <div className="tp-footer-widget-content">
-                    <h3 className="tp-footer__widget-title">Our Location</h3>
+                    <h3 className="tp-footer__widget-title">Quick Links</h3>
                     <div className="menu-our-location-container">
                       <ul id="menu-our-location" className="menu">
                         <li
                           id="menu-item-140"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-140"
                         >
-                          <Link href="https://etorisoft.com/wp/avtrix/contact/">
-                            London
+                          <Link href="/">
+                            Home
                           </Link>
                         </li>
                         <li
                           id="menu-item-141"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-141"
                         >
-                          <Link href="https://etorisoft.com/wp/avtrix/portfolio-details/">
-                            America
+                          <Link href="/about">
+                            About
                           </Link>
                         </li>
                         <li
                           id="menu-item-142"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-142"
                         >
-                          <Link href="https://etorisoft.com/wp/avtrix/service-details/">
-                            Constarica
+                          <Link href="/services">
+                            Services
                           </Link>
                         </li>
                         <li
                           id="menu-item-143"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-143"
                         >
-                          <Link href="https://etorisoft.com/wp/avtrix/about/">
-                            Germany
+                          <Link href="/our-work">
+                            Our Work
                           </Link>
                         </li>
                         <li
                           id="menu-item-144"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-144"
                         >
-                          <Link href="https://etorisoft.com/wp/avtrix/contact/">
-                            India
+                          <Link href="/blog">
+                            Blogs
+                          </Link>
+                        </li>
+                        <li
+                          id="menu-item-144"
+                          className="menu-item menu-item-type-post_type menu-item-object-page menu-item-144"
+                        >
+                          <Link href="/contact-us">
+                            Contact
                           </Link>
                         </li>
                       </ul>
