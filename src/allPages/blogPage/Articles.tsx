@@ -1,16 +1,17 @@
 "use client";
 
+import Loader from "@/components/loader/Loader";
 import axios from "axios";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
-interface Article {
-  imageSrc: string;
-  date: string;
-  minutesRead: string;
-  title: string;
-  description: string;
-}
+// interface Article {
+//   imageSrc: string;
+//   date: string;
+//   minutesRead: string;
+//   title: string;
+//   description: string;
+// }
 
 const blogs: React.FC = () => {
   const [blogs, setBlogs] = useState<any[]>([]); // State to store blogs
@@ -50,7 +51,7 @@ const blogs: React.FC = () => {
     setCurrentPage(pageNumber);
   };
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <Loader />;
   if (error) return <p>Error: {error}</p>;
 
   return (
