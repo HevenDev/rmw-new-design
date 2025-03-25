@@ -72,7 +72,7 @@ const Awards = () => {
                                     rel="nofollow"
                                     target="_self"
                                   > 
-                                    Exellence in digital marketing
+                                    Exellence in Digital Marketing
                                   </Link>
                                 </h3>
                                 <span className="tp-awards__title-sm">

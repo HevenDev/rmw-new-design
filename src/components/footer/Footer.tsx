@@ -66,7 +66,7 @@ const Footer = () => {
                           />
                         </Link>
                       </div>
-                      <p style={{color:"#aaa4a4"}}>Accelerate your journey to success with result-oriented solutions for Digital Advertising, Social Media Management, SEO, and Compelling Content backed by more than 17 years of advertising wisdom with a wide array of clients across all industries across the Indian subcontinent.</p>
+                      <p style={{color:"#aaa4a4", fontSize: "14px"}}>Accelerate your journey to success with result-oriented solutions for Digital Advertising, Social Media Management, SEO, and Compelling Content backed by more than 17 years of advertising wisdom with a wide array of clients across all industries across the Indian subcontinent.</p>
                     </div>
                   </div>
                 </div>

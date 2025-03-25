@@ -341,22 +341,7 @@ const Header = () => {
                                 <div className="elementor-widget-container">
                                   <div className="row gx-6 row-cols-1 row-cols-md-2 row-cols-lg-5 row-cols-xl-6">
                                     <div className="col homemenu">
-                                      <div className="homemenu-thumb mb-15">
-                                        <img
-                                          src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/home-1.jpg"
-                                          alt=""
-                                        />
-                                        <div className="homemenu-btn">
-                                          <Link
-                                            className="tp-menu-btn"
-                                            href="https://etorisoft.com/wp/avtrix/"
-                                            target="_self"
-                                            rel="nofollow"
-                                          >
-                                            Multi page
-                                          </Link>
-                                        </div>
-                                      </div>
+                                     
                                       <div className="homemenu-content text-center">
                                         <h4 className="homemenu-title">
                                           <Link
@@ -370,7 +355,7 @@ const Header = () => {
                                       </div>
                                     </div>
                                     <div className="col homemenu">
-                                      <div className="homemenu-thumb mb-15">
+                                      {/* <div className="homemenu-thumb mb-15">
                                         <img
                                           src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/home-2.jpg"
                                           alt=""
@@ -385,11 +370,11 @@ const Header = () => {
                                             Multi page
                                           </Link>
                                         </div>
-                                      </div>
+                                      </div> */}
                                       <div className="homemenu-content text-center">
                                         <h4 className="homemenu-title">
                                           <Link
-                                            href="https://etorisoft.com/wp/avtrix/home-02/"
+                                            href="/"
                                             target="_self"
                                             rel="nofollow"
                                           >
@@ -399,7 +384,7 @@ const Header = () => {
                                       </div>
                                     </div>
                                     <div className="col homemenu">
-                                      <div className="homemenu-thumb mb-15">
+                                      {/* <div className="homemenu-thumb mb-15">
                                         <img
                                           src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/home-3.jpg"
                                           alt=""
@@ -414,11 +399,11 @@ const Header = () => {
                                             Multi page
                                           </Link>
                                         </div>
-                                      </div>
+                                      </div> */}
                                       <div className="homemenu-content text-center">
                                         <h4 className="homemenu-title">
                                           <Link
-                                            href="https://etorisoft.com/wp/avtrix/home-03/"
+                                            href="/"
                                             target="_self"
                                             rel="nofollow"
                                           >
@@ -428,7 +413,7 @@ const Header = () => {
                                       </div>
                                     </div>
                                     <div className="col homemenu">
-                                      <div className="homemenu-thumb mb-15">
+                                      {/* <div className="homemenu-thumb mb-15">
                                         <img
                                           src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/home-4.jpg"
                                           alt=""
@@ -443,11 +428,11 @@ const Header = () => {
                                             Multi page
                                           </Link>
                                         </div>
-                                      </div>
+                                      </div> */}
                                       <div className="homemenu-content text-center">
                                         <h4 className="homemenu-title">
                                           <Link
-                                            href="https://etorisoft.com/wp/avtrix/home-04/"
+                                            href="/"
                                             target="_self"
                                             rel="nofollow"
                                           >
@@ -457,7 +442,7 @@ const Header = () => {
                                       </div>
                                     </div>
                                     <div className="col homemenu">
-                                      <div className="homemenu-thumb mb-15">
+                                      {/* <div className="homemenu-thumb mb-15">
                                         <img
                                           src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/home-5.jpg"
                                           alt=""
@@ -472,11 +457,11 @@ const Header = () => {
                                             Multi page
                                           </Link>
                                         </div>
-                                      </div>
+                                      </div> */}
                                       <div className="homemenu-content text-center">
                                         <h4 className="homemenu-title">
                                           <Link
-                                            href="https://etorisoft.com/wp/avtrix/home-05/"
+                                            href="/"
                                             target="_self"
                                             rel="nofollow"
                                           >
@@ -486,7 +471,7 @@ const Header = () => {
                                       </div>
                                     </div>
                                     <div className="col homemenu">
-                                      <div className="homemenu-thumb mb-15">
+                                      {/* <div className="homemenu-thumb mb-15">
                                         <img
                                           src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/home-6.jpg"
                                           alt=""
@@ -501,11 +486,11 @@ const Header = () => {
                                             Multi page
                                           </Link>
                                         </div>
-                                      </div>
+                                      </div> */}
                                       <div className="homemenu-content text-center">
                                         <h4 className="homemenu-title">
                                           <Link
-                                            href="https://etorisoft.com/wp/avtrix/home-06/"
+                                            href="/"
                                             target="_self"
                                             rel="nofollow"
                                           >
@@ -737,26 +722,7 @@ const Header = () => {
               <div className="tp-header__right d-flex justify-content-end">
                 <div className="tp-header__action">
                   <ul>
-                    <li>
-                      {/* <button className="tp-header__search-btn tp-search-open-btn">
-                        <span>
-                          <svg
-                            width="18"
-                            height="18"
-                            viewBox="0 0 18 18"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              clipRule="evenodd"
-                              d="M12.4833 13.3769L16.6212 17.5149C16.8678 17.7615 17.2685 17.7615 17.515 17.5149C17.7617 17.2684 17.7617 16.8676 17.515 16.6211L13.3771 12.4832C14.4966 11.1613 15.1718 9.45191 15.1718 7.58592C15.1718 3.39921 11.7727 0 7.58592 0C3.39914 0 0 3.39914 0 7.58592C0 11.7727 3.39914 15.1718 7.58592 15.1718C9.45205 15.1718 11.1614 14.4967 12.4832 13.3771L12.4833 13.3769ZM7.58606 1.26403C11.0749 1.26403 13.9077 4.09676 13.9077 7.58563C13.9077 11.0745 11.0749 13.9072 7.58606 13.9072C4.09719 13.9072 1.26446 11.0745 1.26446 7.58563C1.26446 4.09676 4.09719 1.26403 7.58606 1.26403Z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </span>
-                      </button> */}
-                    </li>
+                    
                     <li>
                       <button className="tp-header__burs-btn tp-offcanvas-open-btn">
                         <span>
