@@ -15,25 +15,15 @@ const AboutFirst = () => {
           <div className="row">
             <div className="col-xl-8 col-lg-8">
               <div className="tp-ab__title-box">
-                <span
-                  ref={(el) => { if (el) textRefs.current.push(el) }}
-                  className="tp-hero__subtitle mb-25 tp-split__text tp-split__in-right"
-                >
-                  Creative Agency Beside New York USA
-                </span>
                 <h3
                   ref={(el) => { if (el) textRefs.current.push(el) }}
                   className="tp-ab__title tp-split__text tp-split__in-right"
                 >
-                  ABOUT OUR
-                  <span>
-                    <img
-                      decoding="async"
-                      src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/ab-in-shape-1.png"
-                      alt=""
-                    />
-                  </span>
-                  AGENCY &amp; SERVICES
+                  About the
+                  
+                 Agency <br />
+ &amp; 
+Legacy
                 </h3>
               </div>
             </div>

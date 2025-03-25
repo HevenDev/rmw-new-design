@@ -738,7 +738,7 @@ const Header = () => {
                 <div className="tp-header__action">
                   <ul>
                     <li>
-                      <button className="tp-header__search-btn tp-search-open-btn">
+                      {/* <button className="tp-header__search-btn tp-search-open-btn">
                         <span>
                           <svg
                             width="18"
@@ -755,7 +755,7 @@ const Header = () => {
                             />
                           </svg>
                         </span>
-                      </button>
+                      </button> */}
                     </li>
                     <li>
                       <button className="tp-header__burs-btn tp-offcanvas-open-btn">

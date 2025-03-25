@@ -1,5 +1,6 @@
 import Link from "next/link";
-
+import { FaFacebook, FaYoutube, FaInstagramSquare, FaLinkedin  } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 import { useSplitText } from "@/hooks/useSplitText";
 
 const Home = () => {
@@ -45,26 +46,32 @@ const Home = () => {
                   <ul>
                     <li>
                       <Link href="#">
-                        <i className="fab fa-facebook-f"></i>
+                        <i className="fab fa-facebook-f"><FaFacebook /></i>
                         <span>Facebook</span>
                       </Link>
                     </li>
                     <li>
                       <Link href="#">
-                        <i className="fab fa-twitter"></i>
+                        <i className="fab fa-twitter"><FaSquareXTwitter /></i>
                         <span>Twitter</span>
                       </Link>
                     </li>
                     <li>
                       <Link href="#">
-                        <i className="fab fa-dribbble"></i>
-                        <span>Dribbble</span>
+                        <i className="fab fa-dribbble"><FaYoutube /></i>
+                        <span>Youtube</span>
                       </Link>
                     </li>
                     <li>
                       <Link href="#">
-                        <i className="fab fa-behance"></i>
-                        <span>Behance</span>
+                        <i className="fab fa-behance"><FaInstagramSquare /></i>
+                        <span>Instagram</span>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="#">
+                        <i className="fab fa-behance"><FaLinkedin /></i>
+                        <span>LinkedIn</span>
                       </Link>
                     </li>
                   </ul>

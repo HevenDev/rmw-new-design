@@ -9,7 +9,7 @@ import Projects from "./Homepage/Projects";
 import ProjectSwiper from "./Homepage/ProjectSwiper";
 import Service from "./Homepage/Service";
 import SwiperHome from "./Homepage/SwiperHome";
-import Team from "./Homepage/Team";
+// import Team from "./Homepage/Team";
 import Work from "./Homepage/Work";
 
 const Elementor = () => {
@@ -69,7 +69,7 @@ const Elementor = () => {
 
         {/* ======== Section 9 ========  */}
 
-        <Team />
+        {/* <Team /> */}
 
         {/* ======== Section 10 ========  */}
 

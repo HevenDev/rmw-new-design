@@ -14,8 +14,7 @@ const Stratagies = () => {
           <div className="col-xl-6 col-lg-6">
             <div className="tp-cate__title-box">
               <h3 ref={(el) => { if (el) textRefs.current.push(el) }}  className="tp-cate__title mb-40 tp-split__text tp-split__in-right">
-                STRATEGIES FOR BUILDING GROWING, AND MANAGING YOUR
-                BRAND&apos;S IDENTITY
+              A good STRATEGY delivers a STORY that builds BRANDS that leave a lasting IMPRESSION.
               </h3>
               <div className="tp-hero__action d-flex align-items-center">
                 <span>
@@ -59,18 +58,10 @@ const Stratagies = () => {
             <div className="tp-cate__dsc-wrap ml-95">
               <div className="tp-cate__dsc mb-20">
                 <p>
-                  Must explain to you how all this mistaken idea of
-                  denouncing pleasure and praising pain was born and
-                  I will give you a complete account of the system,
-                  and expound the actual teachings of the great
-                  explorer of the truth.
+                For the better part of the last two decades, RITZ MEDIA WORLD has been building narratives that drive competitive movements. They don’t just influence behaviors but develop lasting habits. 
                 </p>
                 <p>
-                  The master-builder of human happiness. No one
-                  rejects, dislikes, or avoids pleasure itself,
-                  because it is pleasure, but because those who do
-                  not know how to pursue pleasure rationally
-                  encounter.
+                We pride ourselves in going out of our way to understand the consumer mindset in every walk of life. This enables us to build campaigns that don’t just speak at them, but we build campaigns that speak to them. 
                 </p>
               </div>
               <div className="tp-cate__list-box pt-10">
@@ -82,7 +73,7 @@ const Stratagies = () => {
                           aria-hidden="true"
                           className="fas fa-check-circle"
                         ></i>
-                        <span>Efficient Sprint Planning</span>
+                        <span>Brand Identity </span>
                       </Link>
                     </div>
                   </div>
@@ -93,7 +84,7 @@ const Stratagies = () => {
                           aria-hidden="true"
                           className="fas fa-check-circle"
                         ></i>
-                        <span>On Time Delivery</span>
+                        <span>Advertising Design</span>
                       </Link>
                     </div>
                   </div>
@@ -104,7 +95,7 @@ const Stratagies = () => {
                           aria-hidden="true"
                           className="fas fa-check-circle"
                         ></i>
-                        <span>Innovative Strategies</span>
+                        <span>Content Marketing </span>
                       </Link>
                     </div>
                   </div>
@@ -115,7 +106,7 @@ const Stratagies = () => {
                           aria-hidden="true"
                           className="fas fa-check-circle"
                         ></i>
-                        <span>Standup and Demos</span>
+                        <span>Digital Marketing </span>
                       </Link>
                     </div>
                   </div>

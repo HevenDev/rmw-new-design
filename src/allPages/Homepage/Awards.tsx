@@ -59,10 +59,10 @@ const Awards = () => {
                             <div className="tp-awards__left">
                               <div className="tp-awards__top mb-5 d-flex align-items-center">
                                 <h3 className="tp-awards__size">
-                                  x <span>2</span>
+                                  {/* x <span>2</span> */}
                                 </h3>
                                 <span className="tp-awards__sm-text">
-                                  FOR DISPLAY 2022
+                                  FOR DISPLAY 2024
                                 </span>
                               </div>
                               <div className="tp-awards__name d-flex align-items-center">
@@ -71,13 +71,12 @@ const Awards = () => {
                                     href="https://etorisoft.com/wp/avtrix/about/"
                                     rel="nofollow"
                                     target="_self"
-                                  >
-                                    
-                                    Brand of the week.
+                                  > 
+                                    Exellence in digital marketing
                                   </Link>
                                 </h3>
                                 <span className="tp-awards__title-sm">
-                                  / 2012
+                                  / 2024
                                 </span>
                               </div>
                             </div>

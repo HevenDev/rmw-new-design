@@ -5,7 +5,6 @@ import { useSplitText } from "@/hooks/useSplitText";
 import Image from "next/image";
 
 const Footer = () => {
-
   const textRefs = useSplitText();
 
   return (
@@ -20,7 +19,7 @@ const Footer = () => {
           <img
             src="https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/footer/footer-shape-1-1.png"
             alt=""
-            style={{filter: " sepia(100%) saturate(500%) hue-rotate(10deg)"}}
+            style={{ filter: " sepia(100%) saturate(500%) hue-rotate(10deg)" }}
           />
         </div>
         <div className="tp-footer__wrap  ">
@@ -30,9 +29,13 @@ const Footer = () => {
                 <div className="row justify-content-center">
                   <div className="col-xl-7">
                     <div className="tp-cta__item text-center">
-                      <h3 ref={(el) => { if (el) textRefs.current.push(el) }} className="tp-cta__title tp-split__text tp-split__in-right tp-cursor-point-area">
+                      <h3
+                        ref={(el) => {
+                          if (el) textRefs.current.push(el);
+                        }}
+                        className="tp-cta__title tp-split__text tp-split__in-right tp-cursor-point-area"
+                      >
                         <Link href="/contact/">
-                          
                           Get in <span>touch</span>
                         </Link>
                       </h3>
@@ -44,25 +47,26 @@ const Footer = () => {
           </div>
           {/* <!-- tp cta area end  --> */}
           <div className="container  ">
-            <div className="row">
+            <div className="row" style={{justifyContent:"space-between"}}>
               <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                 <div
                   id="custom_html-3"
                   className="widget_text tp-footer__widget footer-col-1-1 mb-40 widget_custom_html"
                 >
                   <div className="widget_text tp-footer-widget-content">
-                    <div className="textwidget custom-html-widget">
+                    <div style={{padding:"10px"}} className="textwidget custom-html-widget">
                       <div className="tp-footer__logo">
                         <Link href="https://etorisoft.com/wp/avtrix/index.html">
                           <Image
-                          width={50}
-                          height={50}
-                          layout="fixed"
+                            width={50}
+                            height={50}
+                            layout="fixed"
                             src="/rmw_logo_gold.png"
                             alt="logo"
                           />
                         </Link>
                       </div>
+                      <h6 style={{color:"#aaa4a4"}}>Accelerate your journey to success with result-oriented solutions for Digital Advertising, Social Media Management, SEO, and Compelling Content backed by more than 17 years of advertising wisdom with a wide array of clients across all industries across the Indian subcontinent.</h6>
                     </div>
                   </div>
                 </div>
@@ -131,13 +135,17 @@ const Footer = () => {
                     <div className="textwidget custom-html-widget">
                       <div className="tp-footer__contact-info">
                         <div className="tp-footer__list">
-                          <Link href="#">Ta-134/A, Gulshan Badda Link</Link>
-                          <Link href="tel:15569569365">(+880)155 69569 365</Link>
-                          <Link href="mailto:support@rstheme.com">
-                            support@rstheme.com
+                          <Link href="#">
+                          Address: 402 – 404 , 4th floor Corporate Park,
+                          Tower A1 Sector 142 , Greater Noida
+                          </Link>
+                          <Link href="tel:09220516777">09220516777</Link>
+                          <Link href="tel:07290002168">07290002168</Link>
+                          <Link href="mailto:
+info@ritzmediaworld.com">
+                            info@ritzmediaworld.com
                           </Link>
                           <Link href="#">Office Hours: 8AM - 11PM</Link>
-                          <Link href="#">Sunday - Wekend Day</Link>
                         </div>
                       </div>
                     </div>
@@ -158,7 +166,7 @@ const Footer = () => {
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-135"
                         >
                           <Link href="https://etorisoft.com/wp/avtrix/contact/">
-                            Web (UX/UI) Design
+                            Digital Marketing
                           </Link>
                         </li>
                         <li
@@ -166,7 +174,7 @@ const Footer = () => {
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-136"
                         >
                           <Link href="https://etorisoft.com/wp/avtrix/portfolio-details/">
-                            Software Technology
+                            Print Advertising
                           </Link>
                         </li>
                         <li
@@ -174,7 +182,7 @@ const Footer = () => {
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-137"
                         >
                           <Link href="https://etorisoft.com/wp/avtrix/service-details/">
-                            Web Development
+                            Radio Advertising
                           </Link>
                         </li>
                         <li
@@ -182,7 +190,7 @@ const Footer = () => {
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"
                         >
                           <Link href="https://etorisoft.com/wp/avtrix/service/">
-                            IT Cyber Security
+                            Creative Services
                           </Link>
                         </li>
                         <li
@@ -190,7 +198,15 @@ const Footer = () => {
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"
                         >
                           <Link href="https://etorisoft.com/wp/avtrix/about/">
-                            Cloud Computing
+                            Web Development
+                          </Link>
+                        </li>
+                        <li
+                          id="menu-item-139"
+                          className="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"
+                        >
+                          <Link href="https://etorisoft.com/wp/avtrix/about/">
+                            Celebrity Endorsements
                           </Link>
                         </li>
                       </ul>

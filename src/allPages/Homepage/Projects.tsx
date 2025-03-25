@@ -25,6 +25,7 @@ const Projects = () => {
                       decoding="async"
                       src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/project-bg-shape.png"
                       alt=""
+                      style={{filter: " sepia(100%) saturate(500%) hue-rotate(10deg)"}}
                     />
                   </div>
                   <div className="container">
@@ -93,11 +94,11 @@ const Projects = () => {
                                   target="_self"
                                 >
                                   
-                                  Branding &amp; Digital Marketing
+                                  Brand Identity 
                                 </Link>
                               </h3>
                               <span className="tp-project__categories">
-                                Business Strategies
+                              Brand Identity 
                               </span>
                             </div>
                           </div>
@@ -149,11 +150,11 @@ const Projects = () => {
                                   target="_self"
                                 >
                                   
-                                  Online Media Management
+                                  Digital Advertising 
                                 </Link>
                               </h3>
                               <span className="tp-project__categories">
-                                Competitor Analysis
+                              Digital Advertising 
                               </span>
                             </div>
                           </div>
@@ -205,11 +206,11 @@ const Projects = () => {
                                   target="_self"
                                 >
                                   
-                                  Professional Website Design
+                                  Social Media 
                                 </Link>
                               </h3>
                               <span className="tp-project__categories">
-                                Web Design &amp; Development
+                              Social Media 
                               </span>
                             </div>
                           </div>
@@ -261,127 +262,11 @@ const Projects = () => {
                                   target="_self"
                                 >
                                   
-                                  Search Engine Optimization
+                                  Print Advertising
                                 </Link>
                               </h3>
                               <span className="tp-project__categories">
-                                SEO &amp; Analysis
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="col-xl-6 col-lg-6 col-md-6 col-12 g-5">
-                          <div
-                            className="tp-project__item p-relative wow tpFadeInUp"
-                            data-wow-duration=".9s"
-                            data-wow-delay=".9s"
-                          >
-                            <div className="tp-project__thumb-content">
-                              <div className="tp-project__thumb">
-                                <img
-                                  decoding="async"
-                                  src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/p-thumb-1-5.jpg"
-                                  alt=""
-                                />
-                                <div className="tp-project__icon">
-                                  <Link href="https://etorisoft.com/wp/avtrix/portfolio-details/"
-                                    rel="nofollow"
-                                    target="_self"
-                                  >
-                                    <span>
-                                      <svg
-                                        width="189"
-                                        height="189"
-                                        viewBox="0 0 189 189"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                      >
-                                        <path
-                                          d="M6 183L173.812 15.1875M6 4H185V183"
-                                          stroke="currentColor"
-                                          strokeWidth="8"
-                                          strokeLinecap="square"
-                                          strokeLinejoin="round"
-                                        />
-                                      </svg>
-                                    </span>
-                                  </Link>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="tp-project__content">
-                              <h3 className="tp-project__title">
-                                <Link
-                                  href="https://etorisoft.com/wp/avtrix/portfolio-details/"
-                                  rel="nofollow"
-                                  target="_self"
-                                >
-                                  
-                                  Twice Profit Than Before
-                                </Link>
-                              </h3>
-                              <span className="tp-project__categories">
-                                Marketing Plan
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="col-xl-6 col-lg-6 col-md-6 col-12 g-5 order-sm-0">
-                          <div className="tp-project__action-wrap wow avtrix_clip_right">
-                            <div className="tp-project__action tp-btn__bounce">
-                              <Link
-                                className="tp-project__more-title"
-                                href="https://etorisoft.com/wp/avtrix/portfolio-details/"
-                                rel="nofollow"
-                                target="_self"
-                              >
-                                
-                                EXPLORE MORE
-                              </Link>
-                              <span className="tp-project__more-shape">
-                                <svg
-                                  width="613"
-                                  height="464"
-                                  viewBox="0 0 613 464"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <g
-                                    opacity="0.2"
-                                    filter="url(#filter0_f_1_1987)"
-                                  >
-                                    <path
-                                      d="M287.786 320.717C144.372 403.344 20.8576 426.133 91.0897 332.844C154.316 248.86 314.645 137.199 424.431 91.9876C537.988 45.223 590.839 76.4303 486.141 177.395C425.911 235.478 364.613 276.453 287.786 320.717Z"
-                                      fill="#FF3D00"
-                                    />
-                                  </g>
-                                  <defs>
-                                    <filter
-                                      id="filter0_f_1_1987"
-                                      x="0.808594"
-                                      y="0.724915"
-                                      width="611.758"
-                                      height="462.667"
-                                      filterUnits="userSpaceOnUse"
-                                      colorInterpolationFilters="sRGB"
-                                    >
-                                      <feFlood
-                                        floodOpacity="0"
-                                        result="BackgroundImageFix"
-                                      />
-                                      <feBlend
-                                        mode="normal"
-                                        in="SourceGraphic"
-                                        in2="BackgroundImageFix"
-                                        result="shape"
-                                      />
-                                      <feGaussianBlur
-                                        stdDeviation="35"
-                                        result="effect1_foregroundBlur_1_1987"
-                                      />
-                                    </filter>
-                                  </defs>
-                                </svg>
+                              Print Advertising
                               </span>
                             </div>
                           </div>
