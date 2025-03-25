@@ -116,7 +116,7 @@ const Home = () => {
                       <div className="tp-hero__action d-flex align-items-center">
                         <span>
                           <Link
-                            href="https://etorisoft.com/wp/avtrix/contact/"
+                            href="/service"
                             className="tp-hero__action-btn"
                           >
                             <span>

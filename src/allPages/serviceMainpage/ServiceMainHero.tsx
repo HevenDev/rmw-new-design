@@ -64,7 +64,7 @@ const ServiceMainHero = () => {
                       <div className="tp-hero__2-action d-flex align-items-center">
                         <span>
                           <a
-                            href="https://etorisoft.com/wp/avtrix/contact/"
+                            href="/contact"
                             className="tp-hero__action-btn tp-hero__2-btn"
                           >
                             <span>

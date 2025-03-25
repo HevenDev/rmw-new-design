@@ -1,3 +1,4 @@
+"use client"
 import { useSplitText } from "@/hooks/useSplitText";
 const ServiceThirdAward = () => {
 
