@@ -53,7 +53,7 @@ const Footer = () => {
                   <div className="widget_text tp-footer-widget-content">
                     <div className="textwidget custom-html-widget">
                       <div className="tp-footer__logo">
-                        <Link href="https://etorisoft.com/wp/avtrix/index.html">
+                        <Link href="/">
                           <Image
                           width={50}
                           height={50}

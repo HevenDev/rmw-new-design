@@ -47,6 +47,7 @@
     "embla-carousel-react": "^8.5.2",
     "framer-motion": "^12.5.0",
     "gsap": "^3.12.7",
+    "html-react-parser": "^5.2.2",
     "input-otp": "^1.4.2",
     "jodit-react": "^5.2.18",
     "jsonwebtoken": "^9.0.2",

@@ -1,6 +1,8 @@
-"use client"
+"use client";
 
-import React, { useState } from 'react';
+import axios from "axios";
+import Link from "next/link";
+import React, { useEffect, useState } from "react";
 
 interface Article {
   imageSrc: string;
@@ -10,51 +12,73 @@ interface Article {
   description: string;
 }
 
-const Articles: React.FC = () => {
-  const articles: Article[] = Array.from({ length: 22 }, (_, index) => ({
-    imageSrc: 'https://images.unsplash.com/photo-1740968786458-9bf66e5e0bb4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0N3x8fGVufDB8fHx8fA%3D%3D',
-    date: '07 March 2025',
-    minutesRead: '6 min read',
-    title: `Article Title ${index + 1}`,
-    description: 'This is a sample description of the article.'
-  }));
+const blogs: React.FC = () => {
+  const [blogs, setBlogs] = useState<any[]>([]); // State to store blogs
+  const [loading, setLoading] = useState<boolean>(true); // Loading state
+  const [error, setError] = useState<string | null>(null); // Error state
+
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      try {
+        const response = await axios.get("/api/all_blogs");
+        setBlogs(response.data); // Store API response
+      } catch (err) {
+        if (err instanceof Error) {
+          setError(err.message); // Type-safe error handling
+        } else {
+          setError("An unknown error occurred");
+        }
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchBlogs();
+  }, []);
 
   const [currentPage, setCurrentPage] = useState<number>(1);
   const cardsPerPage = 9;
 
   const indexOfLastCard = currentPage * cardsPerPage;
   const indexOfFirstCard = indexOfLastCard - cardsPerPage;
-  const currentCards = articles.slice(indexOfFirstCard, indexOfLastCard);
+  const currentCards = blogs.slice(indexOfFirstCard, indexOfLastCard);
 
-  const totalPages = Math.ceil(articles.length / cardsPerPage);
+  const totalPages = Math.ceil(blogs.length / cardsPerPage);
 
   const handlePageChange = (pageNumber: number) => {
     if (pageNumber < 1 || pageNumber > totalPages) return;
     setCurrentPage(pageNumber);
   };
 
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error}</p>;
+
   return (
     <div className="container mt-4">
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4 g-4">
         {currentCards.map((article, index) => (
-          <div className="col" key={index}>
+          <Link href={article.slug} className="col" key={index}>
             <div className="card h-100">
               <img
-                src={article.imageSrc}
+                src={article.blog_image}
                 className="card-img-top"
-                alt="Article"
-                style={{ height: '200px', objectFit: 'cover' }}
+                alt={article.slug}
+                style={{ height: "200px", objectFit: "cover" }}
               />
               <div className="card-body">
                 <div className="d-flex justify-content-between">
-                  <small className="text-muted">{article.date}</small>
-                  <small className="text-muted">{article.minutesRead}</small>
+                  <small className="text-muted">
+                    {new Date(article.created_at).toLocaleDateString("en-US", {
+                      year: "numeric",
+                      month: "long",
+                      day: "numeric",
+                    })}
+                  </small>
                 </div>
                 <h5 className="card-title mt-2">{article.title}</h5>
-                <p className="card-text">{article.description}</p>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
 
@@ -75,35 +99,58 @@ interface PaginationProps {
 }
 
 const Pagination: React.FC<PaginationProps> = ({ totalPages, currentPage, onPageChange }) => {
+  const generatePageNumbers = () => {
+    const pages = [];
+    const maxPagesToShow = 5; // Adjust for more or fewer visible pages
+
+    if (totalPages <= maxPagesToShow) {
+      // If total pages are few, show all
+      for (let i = 1; i <= totalPages; i++) pages.push(i);
+    } else {
+      if (currentPage > 3) pages.push(1, "..."); // First page + dots
+
+      // Middle pages logic
+      const start = Math.max(2, currentPage - 2);
+      const end = Math.min(totalPages - 1, currentPage + 2);
+      for (let i = start; i <= end; i++) pages.push(i);
+
+      if (currentPage < totalPages - 2) pages.push("...", totalPages); // Last page + dots
+    }
+
+    return pages;
+  };
+
+  const pageNumbers = generatePageNumbers();
+
   return (
     <nav className="my-4">
       <ul className="pagination justify-content-center">
         {/* Previous Button */}
         <li
-          className={`page-item ${currentPage === 1 ? 'disabled' : ''}`}
-          onClick={() => onPageChange(currentPage - 1)}
-          style={{ cursor: 'pointer' }}
+          className={`page-item ${currentPage === 1 ? "disabled" : ""}`}
+          onClick={() => currentPage > 1 && onPageChange(currentPage - 1)}
+          style={{ cursor: "pointer" }}
         >
           <span className="page-link">« Prev</span>
         </li>
 
         {/* Page Numbers */}
-        {Array.from({ length: totalPages }, (_, index) => (
+        {pageNumbers.map((page, index) => (
           <li
             key={index}
-            className={`page-item ${currentPage === index + 1 ? 'active transition' : ''}`}
-            onClick={() => onPageChange(index + 1)}
-            style={{ cursor: 'pointer' }}
+            className={`page-item ${currentPage === page ? "active" : ""}`}
+            onClick={() => typeof page === "number" && onPageChange(page)}
+            style={{ cursor: page === "..." ? "default" : "pointer" }}
           >
-            <span className="page-link">{index + 1}</span>
+            <span className="page-link">{page}</span>
           </li>
         ))}
 
         {/* Next Button */}
         <li
-          className={`page-item ${currentPage === totalPages ? 'disabled' : ''}`}
-          onClick={() => onPageChange(currentPage + 1)}
-          style={{ cursor: 'pointer' }}
+          className={`page-item ${currentPage === totalPages ? "disabled" : ""}`}
+          onClick={() => currentPage < totalPages && onPageChange(currentPage + 1)}
+          style={{ cursor: "pointer" }}
         >
           <span className="page-link">Next »</span>
         </li>
@@ -112,4 +159,5 @@ const Pagination: React.FC<PaginationProps> = ({ totalPages, currentPage, onPage
   );
 };
 
-export default Articles;
+
+export default blogs;
