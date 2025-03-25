@@ -109,7 +109,7 @@ const Article1 = () => {
                     <img
                       width="851"
                       height="462"
-                      src={article.blog_image}
+                      src={`/blogs/${article.blog_image}`}
                       className="img-responsive wp-post-image"
                       alt={article.slug}
                       decoding="async"
@@ -158,40 +158,7 @@ const Article1 = () => {
                 </h3>
                 <div className="postbox__text mb-30">{parse(article.description)}</div>
               </article>
-
-              {/* Pagination */}
-              <div className="tp-postbox-pagination">
-                <div className="basic-pagination mt-60">
-                  <nav>
-                    <ul>
-                      <li>
-                        <span
-                          aria-current="page"
-                          className="page-numbers current"
-                        >
-                          1
-                        </span>
-                      </li>
-                      <li>
-                        <a
-                          className="page-numbers"
-                          href="https://etorisoft.com/wp/avtrix/blog/page/2/"
-                        >
-                          2
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          className="next page-numbers"
-                          href="https://etorisoft.com/wp/avtrix/blog/page/2/"
-                        >
-                          <i className="far fa-angle-double-left"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
+              
             </div>
           </div>
 

@@ -60,9 +60,9 @@ const blogs: React.FC = () => {
           <Link href={article.slug} className="col" key={index}>
             <div className="card h-100">
               <img
-                src={article.blog_image}
+                src={`/blogs/${article.blog_image}`}
                 className="card-img-top"
-                alt={article.slug}
+                alt={`ritz-media-world/${article.blog_image}`}
                 style={{ height: "200px", objectFit: "cover" }}
               />
               <div className="card-body">
