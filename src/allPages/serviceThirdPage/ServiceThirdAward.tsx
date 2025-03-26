@@ -1,5 +1,27 @@
 "use client"
 import { useSplitText } from "@/hooks/useSplitText";
+
+interface AnimatedTextProps {
+  text: string;
+}
+const AnimatedText: React.FC<AnimatedTextProps> = ({ text }) => {
+  return (
+    <div style={{ display: "inline-block" }}>
+      {text.split("").map((char, index) => (
+        <div
+          key={index}
+          style={{
+            position: "relative",
+            display: "inline-block",
+            opacity: 1,
+          }}
+        >
+          {char}
+        </div>
+      ))}
+    </div>
+  );
+};
 const ServiceThirdAward = () => {
 
   const textRefs = useSplitText();

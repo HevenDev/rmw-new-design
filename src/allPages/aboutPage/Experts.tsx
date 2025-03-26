@@ -27,7 +27,7 @@ const Experts = () => {
                         </h3>
                         <Link
                           className="tp-btn-secondary mr-40"
-                          href="https://etorisoft.com/wp/avtrix/team/"
+                          href=""
                           target="_self"
                           rel="nofollow"
                         >
@@ -70,7 +70,7 @@ const Experts = () => {
                             >
                               <div className="tp-team__3-thumb p-relative">
                                 <Link
-                                  href="https://etorisoft.com/wp/avtrix/team-details/"
+                                  href=""
                                   rel="nofollow"
                                   target="_self"
                                 >
@@ -82,7 +82,7 @@ const Experts = () => {
                                 </Link>
                                 <div className="tp-team__3-action">
                                   <Link
-                                    href="https://etorisoft.com/wp/avtrix/team-details/"
+                                    href=""
                                     rel="nofollow"
                                     target="_self"
                                   >
@@ -129,7 +129,7 @@ const Experts = () => {
                                 <div className="tp-team__3-text">
                                   <h3 className="tp-team__3-title">
                                     <Link
-                                      href="https://etorisoft.com/wp/avtrix/team-details/"
+                                      href="#"
                                       rel="nofollow"
                                       target="_self"
                                     >
@@ -143,7 +143,7 @@ const Experts = () => {
                                 </div>
                                 <div className="tp-team__3-link">
                                   <Link
-                                    href="https://etorisoft.com/wp/avtrix/team-details/"
+                                    href="#"
                                     rel="nofollow"
                                     target="_self"
                                   >
@@ -163,7 +163,7 @@ const Experts = () => {
                             >
                               <div className="tp-team__3-thumb p-relative">
                                 <Link
-                                  href="https://etorisoft.com/wp/avtrix/team-details/"
+                                  href="#"
                                   rel="nofollow"
                                   target="_self"
                                 >
@@ -175,7 +175,7 @@ const Experts = () => {
                                 </Link>
                                 <div className="tp-team__3-action">
                                   <Link
-                                    href="https://etorisoft.com/wp/avtrix/team-details/"
+                                    href="#"
                                     rel="nofollow"
                                     target="_self"
                                   >
@@ -222,7 +222,7 @@ const Experts = () => {
                                 <div className="tp-team__3-text">
                                   <h3 className="tp-team__3-title">
                                     <Link
-                                      href="https://etorisoft.com/wp/avtrix/team-details/"
+                                      href="#"
                                       rel="nofollow"
                                       target="_self"
                                     >
@@ -236,7 +236,7 @@ const Experts = () => {
                                 </div>
                                 <div className="tp-team__3-link">
                                   <Link
-                                    href="https://etorisoft.com/wp/avtrix/team-details/"
+                                    href="#"
                                     rel="nofollow"
                                     target="_self"
                                   >
@@ -256,7 +256,7 @@ const Experts = () => {
                             >
                               <div className="tp-team__3-thumb p-relative">
                                 <Link
-                                  href="https://etorisoft.com/wp/avtrix/team-details/"
+                                  href="#"
                                   rel="nofollow"
                                   target="_self"
                                 >
@@ -268,7 +268,7 @@ const Experts = () => {
                                 </Link>
                                 <div className="tp-team__3-action">
                                   <Link
-                                    href="https://etorisoft.com/wp/avtrix/team-details/"
+                                    href="#"
                                     rel="nofollow"
                                     target="_self"
                                   >
@@ -315,7 +315,7 @@ const Experts = () => {
                                 <div className="tp-team__3-text">
                                   <h3 className="tp-team__3-title">
                                     <Link
-                                      href="https://etorisoft.com/wp/avtrix/team-details/"
+                                      href="#"
                                       rel="nofollow"
                                       target="_self"
                                     >
@@ -329,7 +329,7 @@ const Experts = () => {
                                 </div>
                                 <div className="tp-team__3-link">
                                   <Link
-                                    href="https://etorisoft.com/wp/avtrix/team-details/"
+                                    href="#"
                                     rel="nofollow"
                                     target="_self"
                                   >
@@ -349,7 +349,7 @@ const Experts = () => {
                             >
                               <div className="tp-team__3-thumb p-relative">
                                 <Link
-                                  href="https://etorisoft.com/wp/avtrix/team-details/"
+                                  href="#"
                                   rel="nofollow"
                                   target="_self"
                                 >

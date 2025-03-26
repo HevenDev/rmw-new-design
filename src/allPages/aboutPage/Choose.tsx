@@ -18,7 +18,7 @@ const Choose = () => {
       >
         <div className="tp-chooseus__icon">
           <Link
-            href="https://etorisoft.com/wp/avtrix/service-details/"
+            href="/service-details/"
             rel="nofollow"
             target="_self"
           >

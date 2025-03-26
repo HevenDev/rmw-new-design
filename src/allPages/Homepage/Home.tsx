@@ -40,36 +40,36 @@ const Home = () => {
                   filter: "sepia(100%) saturate(500%) hue-rotate(10deg)",
                 }}
               />
-
+                                                                       
               <div className="tp-hero__social">
                 <div className="tp-hero__social-content">
                   <ul>
                     <li>
-                      <Link href="#">
+                      <Link href="https://www.facebook.com/ritzmediaworld/">
                         <i className="fab fa-facebook-f"><FaFacebook /></i>
                         <span>Facebook</span>
                       </Link>
                     </li>
                     <li>
-                      <Link href="#">
+                      <Link href="https://x.com/i/flow/login?redirect_after_login=%2Fritzmediaworld">
                         <i className="fab fa-twitter"><FaSquareXTwitter /></i>
                         <span>Twitter</span>
                       </Link>
                     </li>
                     <li>
-                      <Link href="#">
+                      <Link href="https://www.youtube.com/c/RitzMediaWorldCreativeThinksMedia">
                         <i className="fab fa-dribbble"><FaYoutube /></i>
                         <span>Youtube</span>
                       </Link>
                     </li>
                     <li>
-                      <Link href="#">
+                      <Link href="https://www.instagram.com/ritzmediaworld/">
                         <i className="fab fa-behance"><FaInstagramSquare /></i>
                         <span>Instagram</span>
                       </Link>
                     </li>
                     <li>
-                      <Link href="#">
+                      <Link href="https://www.linkedin.com/company/ritzmediaworld/?originalSubdomain=in">
                         <i className="fab fa-behance"><FaLinkedin /></i>
                         <span>LinkedIn</span>
                       </Link>
@@ -139,7 +139,7 @@ const Home = () => {
                           </Link>
                         </span>
                         <Link
-                          href="https://etorisoft.com/wp/avtrix/contact/"
+                          href="/service"
                           rel="nofollow"
                           target="_self"
                         >

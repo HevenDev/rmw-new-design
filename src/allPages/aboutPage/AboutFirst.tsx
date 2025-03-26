@@ -32,7 +32,7 @@ Legacy
                 <div className="tp-hover__btn-wrap tp-btn__bounce">
                   <Link
                     className="tp-hover__btn tp-hover__btn-item"
-                    href="https://etorisoft.com/wp/avtrix/contact/"
+                    href="/contact"
                     target="_self"
                     rel="nofollow"
                   >

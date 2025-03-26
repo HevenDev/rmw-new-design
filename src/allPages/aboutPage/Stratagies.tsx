@@ -20,7 +20,7 @@ const Stratagies = () => {
                 <span>
                   <Link
                     className="tp-hero__action-btn"
-                    href="https://etorisoft.com/wp/avtrix/service/"
+                    href="/service"
                     rel="nofollow"
                     target="_self"
                   >
