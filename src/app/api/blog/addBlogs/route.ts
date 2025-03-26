@@ -1,116 +1,48 @@
 import { NextRequest, NextResponse } from "next/server";
-import { IncomingMessage } from "http";
-import formidable, { Fields, Files } from "formidable";
-import fs from "fs";
+import { writeFile } from "fs/promises";
 import path from "path";
-import { getDBPool } from "@/lib/db";
-
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
-
-// Function to convert NextRequest to IncomingMessage
-const convertNextRequestToNodeRequest = async (
-  req: NextRequest
-): Promise<IncomingMessage> => {
-  const body = await req.body?.getReader().read();
-  const nodeReq = Object.create(req);
-  nodeReq.headers = Object.fromEntries(req.headers.entries());
-  nodeReq.method = req.method;
-  nodeReq.url = req.url;
-  nodeReq.body = body ? Buffer.from(body.value || []) : undefined;
-  return nodeReq as IncomingMessage;
-};
+import { getDBPool } from "@/lib/db"; // Assuming you have a database connection setup
 
 export async function POST(req: NextRequest) {
   try {
-    const nodeReq = await convertNextRequestToNodeRequest(req);
-    const form = formidable({ multiples: false });
+    // Parse form data
+    const formData = await req.formData();
 
-    return new Promise((resolve, reject) => {
-      form.parse(nodeReq, async (err: any, fields: Fields, files: Files) => {
-        if (err) {
-          reject(
-            NextResponse.json(
-              { success: false, message: "File parsing error" },
-              { status: 500 }
-            )
-          );
-          return;
-        }
+    // Extract form values
+    const category_id = formData.get("category_id") as string;
+    const title = formData.get("title") as string;
+    let blog_url = formData.get("blog_url") as string;
+    const youtube_url = formData.get("youtube_url") as string;
+    const meta_title = formData.get("meta_title") as string;
+    const meta_description = formData.get("meta_description") as string;
+    const metaKeywords = formData.get("metaKeywords") as string;
+    const description = formData.get("description") as string;
+    const blogImage = formData.get("blogImage") as File | null;
+    blog_url = blog_url?.toLowerCase().replace(/\s+/g, "-") || "";
+    let imagePath = "";
 
-        // Extract form data
-        const {
-          category_id,
-          title,
-          blog_url,
-          youtube_url,
-          meta_title,
-          meta_description,
-          metaKeywords,
-          description,
-        } = fields as Record<string, any>;
+    // Handle image upload
+    if (blogImage) {
+      const bytes = await blogImage.arrayBuffer();
+      const buffer = Buffer.from(bytes);
 
-        if (!category_id || !title || !description) {
-          reject(
-            NextResponse.json(
-              { success: false, message: "Missing required fields" },
-              { status: 400 }
-            )
-          );
-          return;
-        }
+      // Define image path (saving to public/uploads folder)
+      const fileName = `${Date.now()}_${blogImage.name}`;
+      const uploadDir = path.join(process.cwd(), "public/blogs", fileName);
+      
+      await writeFile(uploadDir, buffer);
+      imagePath = `/${fileName}`;
+    }
+    const db = getDBPool();
+    // Insert data into MySQL
+    await db.execute(
+      "INSERT INTO blogs (category_id, title, slug, youtube_url, meta_title, meta_description, meta_keywords, blog_image, description) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+      [category_id, title, blog_url, youtube_url, meta_title, meta_description, metaKeywords, imagePath, description]
+    );
 
-        let imagePath = null;
-        if (files.blogImage) {
-          const file = files.blogImage[0]; // Get first file
-          const fileExtension = path.extname(file.originalFilename || "");
-          const fileName = `${Date.now()}${fileExtension}`;
-          const uploadDir = path.join(process.cwd(), "public", "blogs");
-
-          if (!fs.existsSync(uploadDir)) {
-            fs.mkdirSync(uploadDir, { recursive: true });
-          }
-
-          const filePath = path.join(uploadDir, fileName);
-          fs.renameSync(file.filepath, filePath);
-
-          imagePath = `/blogs/${fileName}`;
-        }
-
-        // Save data in MySQL
-        const db = getDBPool();
-        await db.execute(
-          `INSERT INTO blogs (category_id, title, blog_url, youtube_url, meta_title, meta_description, metaKeywords, description, blogImage) 
-           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
-          [
-            category_id,
-            title,
-            blog_url,
-            youtube_url,
-            meta_title,
-            meta_description,
-            metaKeywords,
-            description,
-            imagePath,
-          ]
-        );
-
-        resolve(
-          NextResponse.json(
-            { success: true, message: "Blog added successfully" },
-            { status: 200 }
-          )
-        );
-      });
-    });
+    return NextResponse.json({ message: "Blog added successfully!" }, { status: 201 });
   } catch (error) {
     console.error("Error adding blog:", error);
-    return NextResponse.json(
-      { success: false, message: "Internal server error" },
-      { status: 500 }
-    );
+    return NextResponse.json({ message: "Failed to add blog" }, { status: 500 });
   }
 }

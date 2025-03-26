@@ -13,7 +13,10 @@ import {
 } from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
 import axios from "axios";
-import { toast } from "react-hot-toast";
+// import { toast } from "sonner";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { FiXCircle } from "react-icons/fi";
 import Editor from "@/components/Editor/Editor";
 
 const AddBlogData = () => {
@@ -30,8 +33,10 @@ const AddBlogData = () => {
   });
 
   const [categories, setCategories] = useState<{ id: number; name: string }[]>([]);
+  const [loading, setLoading] = useState(false);
+  const [previewImage, setPreviewImage] = useState<string | null>(null);
+  const [errorMessage, setErrorMessage] = useState("");
 
-  // Fetch categories on mount
   useEffect(() => {
     const fetchCategories = async () => {
       try {
@@ -46,7 +51,19 @@ const AddBlogData = () => {
   }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+  
+    // Validate Blog URL to allow only letters, numbers, hyphens, and underscores
+    if (name === "blog_url") {
+      const regex = /^[a-zA-Z0-9-_]*$/;
+      if (!regex.test(value)) {
+        toast.error("Blog URL can only contain letters, numbers, hyphens, and underscores!");
+        return; // Stop updating state if invalid input is entered
+      }
+    }
+  
+    // Update the state for all inputs
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSelectChange = (value: string) => {
@@ -55,26 +72,56 @@ const AddBlogData = () => {
 
   const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
-      setFormData({ ...formData, blogImage: e.target.files[0] });
+      const file = e.target.files[0];
+      setFormData({ ...formData, blogImage: file });
+      setPreviewImage(URL.createObjectURL(file));
     }
+  };
+
+  const removeImage = () => {
+    setFormData({ ...formData, blogImage: null });
+    setPreviewImage(null);
+  };
+
+  const validateForm = () => {
+    for (const key in formData) {
+      if (formData[key as keyof typeof formData] === "" || formData[key as keyof typeof formData] === null) {
+        setErrorMessage("All fields are required");
+        toast.error("All fields are required");
+        return false;
+      }
+    }
+    setErrorMessage("");
+    return true;
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const formDataToSend = new FormData();
+    if (!validateForm()) return;
 
+    setLoading(true);
+    const formDataToSend = new FormData();
     Object.entries(formData).forEach(([key, value]) => {
-      if (value !== null) {
+      if (value !== null && value !== "") {
         formDataToSend.append(key, value as string | Blob);
       }
     });
 
     try {
-      const response = await axios.post("/api/blogs/add", formDataToSend, {
+      await axios.post("/api/blog/addBlogs", formDataToSend, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 
-      toast.success("Blog added successfully!");
+      toast.success("🎉 Blog added successfully!", {
+        position: "top-right",
+        autoClose: 4000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+
       setFormData({
         category_id: "",
         title: "",
@@ -86,69 +133,84 @@ const AddBlogData = () => {
         blogImage: null,
         description: "",
       });
+
+      setPreviewImage(null);
     } catch (error: any) {
       console.error("Error adding blog:", error);
-      toast.error(error.response?.data?.message || "Failed to add blog");
+      toast.error("❌ Failed to add blog!", {
+        position: "top-right",
+        autoClose: 4000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-3xl mx-auto p-6 bg-white shadow-lg rounded-xl space-y-4">
-      <h2 className="text-xl font-semibold">Add New Blog</h2>
+    <>
+      <ToastContainer />
+      <form onSubmit={handleSubmit} className="max-w-3xl mx-auto p-6 bg-white shadow-lg rounded-xl space-y-4">
+        <h2 className="text-xl font-semibold">Add New Blog</h2>
+        
 
-      {/* Blog Category */}
-      <Label>Blog Category</Label>
-      <Select onValueChange={handleSelectChange} value={formData.category_id}>
-        <SelectTrigger>
-          <SelectValue placeholder="Select Category" />
-        </SelectTrigger>
-        <SelectContent>
-          {categories.map((category) => (
-            <SelectItem key={category.id} value={category.id.toString()}>
-              {category.name}
-            </SelectItem>
-          ))}
-        </SelectContent>
-      </Select>
+        <Label>Blog Category</Label>
+        <Select onValueChange={handleSelectChange} value={formData.category_id}>
+          <SelectTrigger>
+            <SelectValue placeholder="Select Category" />
+          </SelectTrigger>
+          <SelectContent>
+            {categories.map((category) => (
+              <SelectItem key={category.id} value={category.id.toString()}>
+                {category.name}
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
 
-      {/* Blog Title */}
-      <Label>Blog Title</Label>
-      <Input name="title" value={formData.title} onChange={handleChange} />
+        <Label>Blog Title</Label>
+        <Input name="title" value={formData.title} onChange={handleChange} />
 
-      {/* Blog URL */}
-      <Label>Blog URL</Label>
-      <Input name="blog_url" value={formData.blog_url} onChange={handleChange} />
+        <Label>Blog URL</Label>
+        <Input name="blog_url" value={formData.blog_url} onChange={handleChange} />
 
-      {/* YouTube URL */}
-      <Label>YouTube URL</Label>
-      <Input name="youtube_url" value={formData.youtube_url} onChange={handleChange} />
+        <Label>YouTube URL</Label>
+        <Input name="youtube_url" value={formData.youtube_url} onChange={handleChange} />
 
-      {/* Meta Title */}
-      <Label>Meta Title</Label>
-      <Input name="meta_title" value={formData.meta_title} onChange={handleChange} />
+        <Label>Meta Title</Label>
+        <Input name="meta_title" value={formData.meta_title} onChange={handleChange} />
 
-      {/* Meta Description */}
-      <Label>Meta Description</Label>
-      <Textarea name="meta_description" value={formData.meta_description} onChange={handleChange} />
+        <Label>Meta Description</Label>
+        <Textarea name="meta_description" value={formData.meta_description} onChange={handleChange} />
 
-      {/* Meta Keywords */}
-      <Label>Meta Keywords</Label>
-      <Input name="metaKeywords" value={formData.metaKeywords} onChange={handleChange} />
+        <Label>Meta Keywords</Label>
+        <Input name="metaKeywords" value={formData.metaKeywords} onChange={handleChange} />
 
-      {/* Blog Image */}
-      <Label>Blog Image</Label>
-      <Input type="file" accept="image/*" onChange={handleImageChange} />
+        <Label>Blog Image</Label>
+        <div className="relative">
+          <Input type="file" accept="image/*" onChange={handleImageChange} />
+          {previewImage && (
+            <div className="relative mt-3">
+              <img src={previewImage} alt="Preview" className="w-32 h-32 object-cover rounded-md shadow-md" />
+              <button type="button" onClick={removeImage} className="absolute top-0 right-0 bg-red-500 text-white rounded-full p-1 hover:bg-red-600">
+                <FiXCircle size={20} />
+              </button>
+            </div>
+          )}
+        </div>
 
-      {/* Blog Content (Jodit Editor) */}
-      <Label>Blog Content</Label>
-      <Editor content={formData.description} setContent={(value) => setFormData({ ...formData, description: value })} />
-
-      {/* Submit Button */}
-      <Button type="submit" className="w-full mt-4">
-        Save Blog
-      </Button>
-    </form>
+        <Label>Blog Content</Label>
+        <Editor content={formData.description} setContent={(value) => setFormData({ ...formData, description: value })} />
+        {errorMessage && <p className="text-red-500">{errorMessage}</p>}
+        <Button type="submit" className="w-full mt-4" disabled={loading}>{loading ? "Saving..." : "Save Blog"}</Button>
+      </form>
+    </>
   );
 };
 
 export default AddBlogData;
+
