@@ -5,9 +5,6 @@ const page = () => {
   return (
     <>
       <AddBlogData />
-      <div className="m-auto bg-zinc-100 max-w-4xl">
-        
-      </div>
     </>
   );
 };

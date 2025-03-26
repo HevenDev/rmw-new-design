@@ -281,40 +281,7 @@ const Header = () => {
                       >
                         Service
                       </Link>
-                      {/* <ul
-                        className="submenu tp-submenu"
-                        aria-labelledby="103"
-                        role="menu"
-                      >
-                        <li
-                          itemScope
-                          itemType="https://www.schema.org/SiteNavigationElement"
-                          id="menu-item-92"
-                          className="menu-item menu-item-type-post_type menu-item-object-page menu-item-92 nav-item"
-                        >
-                          <Link
-                            title="Service"
-                            href="https://etorisoft.com/wp/avtrix/service/"
-                            className="dropdown-items"
-                          >
-                            Service
-                          </Link>
-                        </li>
-                        <li
-                          itemScope
-                          itemType="https://www.schema.org/SiteNavigationElement"
-                          id="menu-item-89"
-                          className="menu-item menu-item-type-post_type menu-item-object-page menu-item-89 nav-item"
-                        >
-                          <Link
-                            title="Service Details"
-                            href="https://etorisoft.com/wp/avtrix/service-details/"
-                            className="dropdown-items"
-                          >
-                            Service Details
-                          </Link>
-                        </li>
-                      </ul> */}
+                      
                       <div className="tp-submenu submenu has-homemenu">
                         <div
                           data-elementor-type="container"
@@ -352,6 +319,7 @@ const Header = () => {
                                             Digital Marketing
                                           </Link>
                                         </h4>
+                                        
                                       </div>
                                     </div>
                                     <div className="col homemenu">

@@ -44,7 +44,7 @@ const ServiceMainHero = () => {
                     <div className="col-xl-8 col-lg-7">
                       <div className="tp-hero__2-title-box mb-55 p-relative">
                         <span className="tp-hero__subtitle text-white mb-30">
-                          Digital <span> Agency </span> Beside Your Home Town
+                        Services Tailored to Transform Your Brand from 
                         </span>
                         <h3
                           className="tp-hero__title tp-hero-creative-agency p-relative wow avtrix_clip_down"
@@ -57,8 +57,8 @@ const ServiceMainHero = () => {
                             animationName: "avtrix_clip_down",
                           }}
                         >
-                          Empowering <span> brands </span> through the website
-                          in <span> digital </span> world
+                          {/* <span>“Just Another”</span> to <br /> <span>“The One.”</span> */}
+                          “Just Another" <span>to</span> <br /> “The One.”
                         </h3>
                       </div>
                       <div className="tp-hero__2-action d-flex align-items-center">
@@ -140,10 +140,7 @@ const ServiceMainHero = () => {
                           </a>
                         </div>
                         <p>
-                          Strategic ocean-bass sea chub unicorn fish treefish
-                          eulachon <span className="text-white">tidewater</span>
-                          goby. Flier, bighe carp Devario shortnose sucker platy
-                          smalleye squaretail zebra turkeyfish yellowfin
+                        At Ritz Media World, we have an obsession with being wizards of quirkiness that morph good ideas into Brilliant ones. Our services deliver results that drive your competitor’s envy. We blend digital magic, classic & modern mediums, and creative ingenuity to ensure that your brand doesn’t just speak; it captivates.
                         </p>
                       </div>
                     </div>
