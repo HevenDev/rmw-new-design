@@ -8,8 +8,7 @@ import "../styles/magnific-popup-css.css";
 import "../styles/elementor-css.css";
 import "../styles/animation-css.css";
 import PageWrapper from "@/components/pageWrapper/PageWrapper";
-// import "./styles/all-min-css.css";
-// import "./script/elementor.js"
+
 
 
 
