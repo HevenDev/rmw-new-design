@@ -65,17 +65,11 @@ const Article1 = () => {
   
   useEffect(() => {
     const fetchBlog = async () => {
-      
-      console.log("Fetching blog for slug:", blog_slug);
-  
       try {
         const response = await axios.get(`/api/blog/${blog_slug}`);
-        console.log("Full API Response:", response);
-        console.log("Response Data:", response.data);
   
         setArticle(response.data.blog); // Make sure to access `response.data.blog`
       } catch (err) {
-        console.error("Error fetching blog:", err);
         setError(err instanceof Error ? err.message : "An unknown error occurred");
       } finally {
         setLoading(false);

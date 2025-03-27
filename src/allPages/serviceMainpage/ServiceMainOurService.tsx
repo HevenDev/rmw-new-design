@@ -1,319 +1,138 @@
-const ServiceMainOurService = () => {
-  return (
-    <div
-      className="elementor-element elementor-element-9978344 e-con-full e-flex e-con e-parent e-lazyloaded"
-      data-id="9978344"
-      data-element_type="container"
-    >
-      <div
-        className="elementor-element elementor-element-9e4eb8b e-con-full e-flex e-con e-child"
-        data-id="9e4eb8b"
-        data-element_type="container"
-      >
-        <div
-          className="elementor-element elementor-element-4a2a93d elementor-widget elementor-widget-services"
-          data-id="4a2a93d"
-          data-element_type="widget"
-          data-widget_type="services.default"
-        >
-          <div className="elementor-widget-container">
-            <section className="tp-service-2-area tp-services__style-2 black-bg fix pt-150 pb-40 tp-bg-className">
-              <div className="container">
-                <div className="row">
-                  <div className="col-xl-12">
-                    <div className="tp-services__title-box mb-30">
-                      <div className="tp-section-title-wrap d-sm-flex align-items-center justify-content-between">
-                        <h3 className="tp-section-title">
-                          OUR
-                          <span>
-                            <i>SERVICE</i>
-                          </span>
-                        </h3>{" "}
-                      </div>
-                    </div>
-                  </div>
-                </div>
+"use client"
+import Loader from "@/components/loader/Loader";
+import axios from "axios";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
-                <div className="row">
-                  <div className="col-xl-12">
-                    <div className="tp-services__widget mb-85">
-                      <div className="tp-services__item tp-hover__reveal-item">
-                        <a
-                          href="https://etorisoft.com/wp/avtrix/service-details/"
-                          target="_self"
-                          rel=""
-                        >
-                          <div className="row align-items-center">
-                            <div className="col-xl-2 col-lg-2">
-                              <div className="tp-services__number">
-                                <h3 className="tp-services__number-text">
-                                  01/
-                                </h3>
-                              </div>
-                            </div>
-                            <div className="col-xl-3 col-lg-3">
-                              <div className="tp-services__featured">
-                                <h3 className="tp-services__tag">
-                                  Digital{" "}
-                                  <span>
-                                    <i>Marketing</i>
-                                  </span>
-                                </h3>
-                              </div>
-                            </div>
-                            <div className="col-xl-5 col-lg-5">
-                              <div className="tp-services__dsc">
-                                <p>
-                                  Welcome to our portfolio website! We are a
-                                  prof printing company that offers a wide range
-                                  of Lo rem ipsum dolor sit amet, consectetur{" "}
-                                </p>
-                              </div>
-                            </div>
-                            <div className="col-xl-2 col-lg-2">
-                              <div className="tp-services__action text-xl-end">
-                                <div className="tp-services__button">
-                                  <span>
-                                    <svg
-                                      width="56"
-                                      height="28"
-                                      viewBox="0 0 56 28"
-                                      fill="none"
-                                      xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                      <path
-                                        d="M55.2304 13.9101H0.360352M38.2384 0.45813C41.8964 13.9101 55.2304 14.0281 55.2304 14.0281C55.2304 14.0281 41.8964 14.1461 38.2384 27.5981"
-                                        stroke="currentColor"
-                                      ></path>
-                                    </svg>{" "}
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </a>
-                        <div
-                          className="tp-hover__reveal-bg"
-                          data-background="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/services-2-1.jpg"
-                          style={{
-                            backgroundImage:
-                              "url(https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/services-2-1.jpg)",
-                            transform: "translate(689.5px, 152.25px)",
-                          }}
-                        ></div>
-                      </div>
-                      <div className="tp-services__item tp-hover__reveal-item">
-                        <a
-                          href="https://etorisoft.com/wp/avtrix/service-details/"
-                          target="_self"
-                          rel=""
-                        >
-                          <div className="row align-items-center">
-                            <div className="col-xl-2 col-lg-2">
-                              <div className="tp-services__number">
-                                <h3 className="tp-services__number-text">
-                                  02/
-                                </h3>
-                              </div>
-                            </div>
-                            <div className="col-xl-3 col-lg-3">
-                              <div className="tp-services__featured">
-                                <h3 className="tp-services__tag">
-                                  Product{" "}
-                                  <span>
-                                    {" "}
-                                    <i> Design </i>{" "}
-                                  </span>
-                                </h3>
-                              </div>
-                            </div>
-                            <div className="col-xl-5 col-lg-5">
-                              <div className="tp-services__dsc">
-                                <p>
-                                  Welcome to our portfolio website! We are a
-                                  prof printing company that offers a wide range
-                                  of Lo rem ipsum dolor sit amet, consectetur{" "}
-                                </p>
-                              </div>
-                            </div>
-                            <div className="col-xl-2 col-lg-2">
-                              <div className="tp-services__action text-xl-end">
-                                <div className="tp-services__button">
-                                  <span>
-                                    <svg
-                                      width="56"
-                                      height="28"
-                                      viewBox="0 0 56 28"
-                                      fill="none"
-                                      xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                      <path
-                                        d="M55.2304 13.9101H0.360352M38.2384 0.45813C41.8964 13.9101 55.2304 14.0281 55.2304 14.0281C55.2304 14.0281 41.8964 14.1461 38.2384 27.5981"
-                                        stroke="currentColor"
-                                      ></path>
-                                    </svg>{" "}
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </a>
-                        <div
-                          className="tp-hover__reveal-bg"
-                          data-background="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/services-2-2.jpg"
-                          style={{
-                            backgroundImage:
-                              "url(https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/services-2-2.jpg)",
-                            transform: "translate(927.5px, 79.25px)",
-                          }}
-                        ></div>
-                      </div>
-                      <div className="tp-services__item tp-hover__reveal-item">
-                        <a
-                          href="https://etorisoft.com/wp/avtrix/service-details/"
-                          target="_self"
-                          rel=""
-                        >
-                          <div className="row align-items-center">
-                            <div className="col-xl-2 col-lg-2">
-                              <div className="tp-services__number">
-                                <h3 className="tp-services__number-text">
-                                  03/
-                                </h3>
-                              </div>
-                            </div>
-                            <div className="col-xl-3 col-lg-3">
-                              <div className="tp-services__featured">
-                                <h3 className="tp-services__tag">
-                                  Brand{" "}
-                                  <span>
-                                    {" "}
-                                    <i> Strategies </i>{" "}
-                                  </span>
-                                </h3>
-                              </div>
-                            </div>
-                            <div className="col-xl-5 col-lg-5">
-                              <div className="tp-services__dsc">
-                                <p>
-                                  Welcome to our portfolio website! We are a
-                                  prof printing company that offers a wide range
-                                  of Lo rem ipsum dolor sit amet, consectetur{" "}
-                                </p>
-                              </div>
-                            </div>
-                            <div className="col-xl-2 col-lg-2">
-                              <div className="tp-services__action text-xl-end">
-                                <div className="tp-services__button">
-                                  <span>
-                                    <svg
-                                      width="56"
-                                      height="28"
-                                      viewBox="0 0 56 28"
-                                      fill="none"
-                                      xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                      <path
-                                        d="M55.2304 13.9101H0.360352M38.2384 0.45813C41.8964 13.9101 55.2304 14.0281 55.2304 14.0281C55.2304 14.0281 41.8964 14.1461 38.2384 27.5981"
-                                        stroke="currentColor"
-                                      ></path>
-                                    </svg>{" "}
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </a>
-                        <div
-                          className="tp-hover__reveal-bg"
-                          data-background="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/services-2-3.png"
-                          style={{
-                            backgroundImage:
-                              "url(https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/services-2-3.png)",
-                            transform: "translate(927.5px, 42.25px)",
-                          }}
-                        ></div>
-                      </div>
-                      <div className="tp-services__item tp-hover__reveal-item">
-                        <a
-                          href="https://etorisoft.com/wp/avtrix/service-details/"
-                          target="_self"
-                          rel=""
-                        >
-                          <div className="row align-items-center">
-                            <div className="col-xl-2 col-lg-2">
-                              <div className="tp-services__number">
-                                <h3 className="tp-services__number-text">
-                                  04/
-                                </h3>
-                              </div>
-                            </div>
-                            <div className="col-xl-3 col-lg-3">
-                              <div className="tp-services__featured">
-                                <h3 className="tp-services__tag">
-                                  Content{" "}
-                                  <span>
-                                    <i>Marketing</i>
-                                  </span>
-                                </h3>
-                              </div>
-                            </div>
-                            <div className="col-xl-5 col-lg-5">
-                              <div className="tp-services__dsc">
-                                <p>
-                                  Welcome to our portfolio website! We are a
-                                  prof printing company that offers a wide range
-                                  of Lo rem ipsum dolor sit amet, consectetur{" "}
-                                </p>
-                              </div>
-                            </div>
-                            <div className="col-xl-2 col-lg-2">
-                              <div className="tp-services__action text-xl-end">
-                                <div className="tp-services__button">
-                                  <span>
-                                    <svg
-                                      width="56"
-                                      height="28"
-                                      viewBox="0 0 56 28"
-                                      fill="none"
-                                      xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                      <path
-                                        d="M55.2304 13.9101H0.360352M38.2384 0.45813C41.8964 13.9101 55.2304 14.0281 55.2304 14.0281C55.2304 14.0281 41.8964 14.1461 38.2384 27.5981"
-                                        stroke="currentColor"
-                                      ></path>
-                                    </svg>{" "}
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </a>
-                        <div
-                          className="tp-hover__reveal-bg"
-                          data-background="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/services-2-4.jpg"
-                          style={{
-                            backgroundImage:
-                              "url(https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/services-2-4.jpg)",
-                          }}
-                        ></div>
-                      </div>
+interface Service {
+  id: number;
+  title: string;
+  description: string;
+  imgUrl: string;
+  link: string;
+  translate: string;
+}
+
+const ServiceMainOurService = () => {
+  const [services, setServices] = useState<Service[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+
+  useEffect(() => {
+    // ✅ Fetch API Data
+    const fetchServices = async () => {
+      try {
+        const response = await axios.get("/api/services");
+        const data = response.data;
+        if (data.success) {
+          setServices(data.data);
+        } else {
+          console.error("Failed to fetch services");
+        }
+      } catch (error) {
+        console.error("Error fetching services:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchServices();
+  }, []);
+
+  useEffect(() => {
+    // ✅ Jab data load ho jaye tabhi event listener lagao
+    if (services.length === 0) return;
+
+    const hoverItems = document.querySelectorAll<HTMLElement>(".tp-hover__reveal-item");
+
+    if (hoverItems.length === 0) return;
+
+    const handleMouseMove = (e: MouseEvent) => {
+      hoverItems.forEach((hoverItem) => {
+        const itemRect = hoverItem.getBoundingClientRect();
+        const x = e.clientX - itemRect.left;
+        const y = e.clientY - itemRect.top;
+
+        const revealChild = hoverItem.querySelector<HTMLElement>(".tp-hover__reveal-bg");
+        if (revealChild) {
+          revealChild.style.transform = `translate(${x}px, ${y}px)`;
+        }
+      });
+    };
+
+    // ✅ Events ko naye elements pe lagao
+    hoverItems.forEach((item) => {
+      item.addEventListener("mousemove", handleMouseMove);
+    });
+
+    return () => {
+      hoverItems.forEach((item) => {
+        item.removeEventListener("mousemove", handleMouseMove);
+      });
+    };
+  }, [services]); // ✅ Dependencies me services rakho taaki API call ke baad event reattach ho
+
+  if (loading) return <Loader />;
+
+  return (
+    <div className="elementor-element elementor-element-9978344 e-con-full e-flex e-con e-parent e-lazyloaded">
+      <div className="container">
+        <h3 className="tp-section-title">
+          OUR <span><i>SERVICE</i></span>
+        </h3>
+
+        <div className="tp-services__widget mb-85">
+          {services.map((list, index) => (
+            <div key={index} className="tp-services__item tp-hover__reveal-item">
+              <Link href={list.link} target="_self">
+                <div className="row align-items-center">
+                  <div className="col-xl-2 col-lg-2">
+                    <div className="tp-services__number">
+                      <h3 className="tp-services__number-text">{`0${index + 1}`}</h3>
                     </div>
-                    <div className="tp-services__action text-center">
-                      <a
-                        className="tp-btn-secondary"
-                        href="https://etorisoft.com/wp/avtrix/service/"
-                        target="_self"
-                        rel=""
-                      >
-                        Get more services
-                      </a>
+                  </div>
+                  <div className="col-xl-3 col-lg-3">
+                    <div className="tp-services__featured">
+                      <h3 className="tp-services__tag">{list.title}</h3>
+                    </div>
+                  </div>
+                  <div className="col-xl-5 col-lg-5">
+                    <div className="tp-services__dsc">
+                      <p>{list.description}</p>
+                    </div>
+                  </div>
+                  <div className="col-xl-2 col-lg-2">
+                    <div className="tp-services__action text-xl-end">
+                      <div className="tp-services__button">
+                        <span>
+                          <svg
+                            width="56"
+                            height="28"
+                            viewBox="0 0 56 28"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M55.2304 13.9101H0.360352M38.2384 0.45813C41.8964 13.9101 55.2304 14.0281 55.2304 14.0281C55.2304 14.0281 41.8964 14.1461 38.2384 27.5981"
+                              stroke="currentColor"
+                            ></path>
+                          </svg>
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </section>
-          </div>
+              </Link>
+
+              {/* ✅ Background Move Hoga */}
+              <div
+                className="tp-hover__reveal-bg"
+                style={{
+                  backgroundImage: `url(${list.imgUrl})`,
+                  transform: list.translate,
+                }}
+              ></div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

@@ -1,4 +1,6 @@
-import React from 'react'
+"use client"
+
+import React, { useEffect } from 'react'
 import ServiceMainHero from './ServiceMainHero'
 import Header from '@/components/header/Header'
 import Footer from '@/components/footer/Footer'
@@ -18,6 +20,10 @@ import ServiceMainTeam from './ServiceMainTeam'
 import ServiceMainWorkSwiper from './ServiceMainWorkSwiper'
 
 const ServiceMainPage = () => {
+  
+  // useEffect(()=> {
+
+  // })
   return (
     <>
       <Header/>

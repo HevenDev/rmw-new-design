@@ -18,42 +18,18 @@ import { useState } from "react";
 // };
 
 
-  const data = [
-    {
-      title: "Digital Marketing",
-      imgSrc:
-        "https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/digital-marketing.png",
-      content:
-        "Turning browsers into buyers isn’t magic. It’s precise digital persuasion. Our strategically obsessive digital campaigns boost visibility, amplify engagement, and reliably convert attention into measurable profits. Predictably brilliant.",
-        link: "#",
-    },
-    {
-      title: "Content Marketing",
-      imgSrc:
-        "https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/content-marketing.png",
-      content:
-        "Content without action is merely decoration. Our stories don’t just attract eyes, they move hearts and minds, persuading customers to act, buy, and loyally champion your brand. Charmingly effective.",
-        link: "#",
-    },
-    {
-      title: "(PPC) Advertising",
-      imgSrc:
-        "https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/ppc.png",
-      content:
-        "Why chase customers when you can strategically appear exactly where they’re searching? Our PPC approach delivers instant leads, measurable returns, and satisfaction so swiftly that you’ll swear it’s cheating (it’s not).",
-        link: "#",
-    },
-    {
-      title: "Video Production",
-      imgSrc:
-        "https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/video.png",
-      content:
-        "An unforgettable jingle outperforms a thousand tweets. Harness radio’s enduring power to lodge your message permanently in minds, turning listeners into lifelong customers without ever demanding screen time.",
-        link: "#",
-    },
-  ]
+interface ServiceItem {
+  title: string;
+  imgSrc: string;
+  content: string;
+  link: string;
+}
 
-const Service = () => {
+interface ServiceProps {
+  data: ServiceItem[];
+}
+
+const Service: React.FC<ServiceProps> = ({ data }) => {
   // State to track the currently opened accordion item (default to index 0)
   const [openIndex, setOpenIndex] = useState<number>(0);
 
