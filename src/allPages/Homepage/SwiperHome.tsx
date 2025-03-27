@@ -61,81 +61,240 @@ const SwiperHome = () => {
                           <SwiperSlide>
                             <div className="tp-brand__item">
                               <div className="tp-brand__logo">
-                                
-                                  <img src="https://images.unsplash.com/photo-1742732370413-063ed597e8f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8" alt="jhfjy" style={{width: "100%", height:"100%", objectFit: "cover"}}/>
-                                
+                                <img
+                                   src="/home-images/home-swiper1-img2.jpeg"
+                                  alt="Brand logo"
+                                  style={{
+                                    width: "100%",
+                                    height: "100%",
+                                    objectFit: "cover",
+                                  }}
+                                />
                               </div>
                             </div>
                           </SwiperSlide>
                           <SwiperSlide>
                             <div className="tp-brand__item">
                               <div className="tp-brand__logo">
-                                
-                                  <img src="https://images.unsplash.com/photo-1742732370413-063ed597e8f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8" alt="jhfjy" style={{width: "100%", height:"100%", objectFit: "cover"}}/>
-                                
+                                <img
+                                  src="/home-images/home-swiper1-img3.jpeg"
+                                  alt="Brand logo"
+                                  style={{
+                                    width: "100%",
+                                    height: "100%",
+                                    objectFit: "cover",
+                                  }}
+                                />
                               </div>
                             </div>
                           </SwiperSlide>
                           <SwiperSlide>
                             <div className="tp-brand__item">
                               <div className="tp-brand__logo">
-                                
-                                  <img src="https://images.unsplash.com/photo-1742732370413-063ed597e8f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8" alt="jhfjy" style={{width: "100%", height:"100%", objectFit: "cover"}}/>
-                                
+                                <img
+                                  src="/home-images/home-swiper1-img4.jpeg"
+                                  alt="Brand logo"
+                                  style={{
+                                    width: "100%",
+                                    height: "100%",
+                                    objectFit: "cover",
+                                  }}
+                                />
                               </div>
                             </div>
                           </SwiperSlide>
                           <SwiperSlide>
                             <div className="tp-brand__item">
                               <div className="tp-brand__logo">
-                                
-                                  <img src="https://images.unsplash.com/photo-1742732370413-063ed597e8f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8" alt="jhfjy" style={{width: "100%", height:"100%", objectFit: "cover"}}/>
-                                
+                                <img
+                                  src="/home-images/home-swiper1-img5.jpeg"
+                                  alt="Brand logo"
+                                  style={{
+                                    width: "100%",
+                                    height: "100%",
+                                    objectFit: "cover",
+                                  }}
+                                />
                               </div>
                             </div>
                           </SwiperSlide>
                           <SwiperSlide>
                             <div className="tp-brand__item">
                               <div className="tp-brand__logo">
-                                
-                                  <img src="https://images.unsplash.com/photo-1742732370413-063ed597e8f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8" alt="jhfjy" style={{width: "100%", height:"100%", objectFit: "cover"}}/>
-                                
+                                <img
+                                  src="/home-images/home-swiper1-img6.jpeg"
+                                  alt="Brand logo"
+                                  style={{
+                                    width: "100%",
+                                    height: "100%",
+                                    objectFit: "cover",
+                                  }}
+                                />
                               </div>
                             </div>
                           </SwiperSlide>
                           <SwiperSlide>
                             <div className="tp-brand__item">
                               <div className="tp-brand__logo">
-                                
-                                  <img src="https://images.unsplash.com/photo-1742732370413-063ed597e8f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8" alt="jhfjy" style={{width: "100%", height:"100%", objectFit: "cover"}}/>
-                                
+                                <img
+                                  src="/home-images/home-swiper1-img7.jpeg"
+                                  alt="Brand logo"
+                                  style={{
+                                    width: "100%",
+                                    height: "100%",
+                                    objectFit: "cover",
+                                  }}
+                                />
                               </div>
                             </div>
                           </SwiperSlide>
                           <SwiperSlide>
                             <div className="tp-brand__item">
                               <div className="tp-brand__logo">
-                                
-                                  <img src="https://images.unsplash.com/photo-1742732370413-063ed597e8f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8" alt="jhfjy" style={{width: "100%", height:"100%", objectFit: "cover"}}/>
-                                
+                                <img
+                                  src="/home-images/home-swiper1-img8.jpeg"
+                                  alt="Brand logo"
+                                  style={{
+                                    width: "100%",
+                                    height: "100%",
+                                    objectFit: "cover",
+                                  }}
+                                />
                               </div>
                             </div>
                           </SwiperSlide>
                           <SwiperSlide>
                             <div className="tp-brand__item">
                               <div className="tp-brand__logo">
-                                
-                                  <img src="https://images.unsplash.com/photo-1742732370413-063ed597e8f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8" alt="jhfjy" style={{width: "100%", height:"100%", objectFit: "cover"}}/>
-                                
+                                <img
+                                  src="/home-images/home-swiper1-img9.jpeg"
+                                  alt="Brand logo"
+                                  style={{
+                                    width: "100%",
+                                    height: "100%",
+                                    objectFit: "cover",
+                                  }}
+                                />
                               </div>
                             </div>
                           </SwiperSlide>
                           <SwiperSlide>
                             <div className="tp-brand__item">
                               <div className="tp-brand__logo">
-                                
-                                  <img src="https://images.unsplash.com/photo-1742732370413-063ed597e8f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8" alt="jhfjy" style={{width: "100%", height:"100%", objectFit: "cover"}}/>
-                                
+                                <img
+                                  src="/home-images/home-swiper1-img10.jpeg"
+                                  alt="Brand logo"
+                                  style={{
+                                    width: "100%",
+                                    height: "100%",
+                                    objectFit: "cover",
+                                  }}
+                                />
+                              </div>
+                            </div>
+                          </SwiperSlide>
+                          <SwiperSlide>
+                            <div className="tp-brand__item">
+                              <div className="tp-brand__logo">
+                                <img
+                                  src="/home-images/home-swiper1-img11.jpeg"
+                                  alt="Brand logo"
+                                  style={{
+                                    width: "100%",
+                                    height: "100%",
+                                    objectFit: "cover",
+                                  }}
+                                />
+                              </div>
+                            </div>
+                          </SwiperSlide>
+                          <SwiperSlide>
+                            <div className="tp-brand__item">
+                              <div className="tp-brand__logo">
+                                <img
+                                  src="/home-images/home-swiper1-img12.jpeg"
+                                  alt="Brand logo"
+                                  style={{
+                                    width: "100%",
+                                    height: "100%",
+                                    objectFit: "cover",
+                                  }}
+                                />
+                              </div>
+                            </div>
+                          </SwiperSlide>
+                          <SwiperSlide>
+                            <div className="tp-brand__item">
+                              <div className="tp-brand__logo">
+                                <img
+                                  src="/home-images/home-swiper1-img13.jpeg"
+                                  alt="Brand logo"
+                                  style={{
+                                    width: "100%",
+                                    height: "100%",
+                                    objectFit: "cover",
+                                  }}
+                                />
+                              </div>
+                            </div>
+                          </SwiperSlide>
+                          <SwiperSlide>
+                            <div className="tp-brand__item">
+                              <div className="tp-brand__logo">
+                                <img
+                                  src="/home-images/home-swiper1-img14.jpeg"
+                                  alt="Brand logo"
+                                  style={{
+                                    width: "100%",
+                                    height: "100%",
+                                    objectFit: "cover",
+                                  }}
+                                />
+                              </div>
+                            </div>
+                          </SwiperSlide>
+                          <SwiperSlide>
+                            <div className="tp-brand__item">
+                              <div className="tp-brand__logo">
+                                <img
+                                  src="/home-images/home-swiper1-img15.jpeg"
+                                  alt="Brand logo"
+                                  style={{
+                                    width: "100%",
+                                    height: "100%",
+                                    objectFit: "cover",
+                                  }}
+                                />
+                              </div>
+                            </div>
+                          </SwiperSlide>
+                          <SwiperSlide>
+                            <div className="tp-brand__item">
+                              <div className="tp-brand__logo">
+                                <img
+                                  src="/home-images/home-swiper1-img16.jpeg"
+                                  alt="Brand logo"
+                                  style={{
+                                    width: "100%",
+                                    height: "100%",
+                                    objectFit: "cover",
+                                  }}
+                                />
+                              </div>
+                            </div>
+                          </SwiperSlide>
+                          <SwiperSlide>
+                            <div className="tp-brand__item">
+                              <div className="tp-brand__logo">
+                                <img
+                                  src="/home-images/home-swiper1-img17.jpeg"
+                                  alt="Brand logo"
+                                  style={{
+                                    width: "100%",
+                                    height: "100%",
+                                    objectFit: "cover",
+                                  }}
+                                />
                               </div>
                             </div>
                           </SwiperSlide>

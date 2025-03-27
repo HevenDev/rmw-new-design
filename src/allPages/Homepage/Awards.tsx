@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { GoArrowRight  } from "react-icons/go";
 
 const Awards = () => {
   return (
@@ -87,7 +88,7 @@ const Awards = () => {
                                   rel="nofollow"
                                   target="_self"
                                 >
-                                  <i className="far fa-arrow-right"></i>
+                                  <GoArrowRight  style={{color: "white", fontSize: "20px", fontWeight: "600"}}/>
                                 </Link>
                               </div>
                             </div>
@@ -127,7 +128,7 @@ const Awards = () => {
                                   rel="nofollow"
                                   target="_self"
                                 >
-                                  <i className="far fa-arrow-right"></i>
+                                  <GoArrowRight  style={{color: "white", fontSize: "20px", fontWeight: "600"}}/>
                                 </Link>
                               </div>
                             </div>
@@ -167,7 +168,7 @@ const Awards = () => {
                                   rel="nofollow"
                                   target="_self"
                                 >
-                                  <i className="far fa-arrow-right"></i>
+                                  <GoArrowRight  style={{color: "white", fontSize: "20px", fontWeight: "600"}}/>
                                 </Link>
                               </div>
                             </div>
@@ -207,7 +208,7 @@ const Awards = () => {
                                   rel="nofollow"
                                   target="_self"
                                 >
-                                  <i className="far fa-arrow-right"></i>
+                                  <GoArrowRight  style={{color: "white", fontSize: "20px", fontWeight: "600"}}/>
                                 </Link>
                               </div>
                             </div>
