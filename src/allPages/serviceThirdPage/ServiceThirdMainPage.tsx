@@ -22,15 +22,16 @@ const ServiceThirdMainPage = () => {
     <>
        <Header />
        <ServiceThirdHero />
-       <ServiceThirdVideo />
+       {/* <ServiceThirdVideo /> */}
        <SwiperHome />
        <ServiceThirdQuality />
-       <ServiceThirdAward />
+       
        <ServiceThirdColorMarque />
-       <ServiceThirdCardBoxes />
+       {/* <ServiceThirdCardBoxes /> */}
+       <ServiceThirdAward />
        <ServiceThirdFeatureMarque />
-       <ServiceThirdHoverEffect />
-       <ServiceThirdLegendTeam />
+       {/* <ServiceThirdHoverEffect /> */}
+       {/* <ServiceThirdLegendTeam /> */}
        <ServiceMainTestimonial />
        <ProjectSwiper />
        <ServiceThirdNumber />
