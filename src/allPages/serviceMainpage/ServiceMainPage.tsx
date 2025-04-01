@@ -12,12 +12,12 @@ import ServiceMainAbout from './ServiceMainAbout'
 import ProjectMarque from '../projectsPage/ProjectMarque'
 import ProjectNumbers from '../projectsPage/ProjectNumbers'
 import ServiceMainAwards from './ServiceMainAwards'
-import ServiceMainVideo from './ServiceMainVideo'
 import ServiceMainArticle from './ServiceMainArticle'
 import ServiceMainTalk from './ServiceMainTalk'
 import ServiceMainTestimonial from './ServiceMainTestimonial'
 import ServiceMainTeam from './ServiceMainTeam'
 import ServiceMainWorkSwiper from './ServiceMainWorkSwiper'
+import Awards from '../Homepage/Awards'
 
 const ServiceMainPage = () => {
   
@@ -36,11 +36,9 @@ const ServiceMainPage = () => {
       <ServiceMainWorkSwiper />
       <ProjectMarque />
       <ProjectNumbers />
-      <ServiceMainAwards />
-      <ServiceMainVideo />
+      <Awards/>
       <ServiceMainTeam/>
       <ServiceMainTestimonial />
-      <ServiceMainArticle />
       <ServiceMainTalk />
       <Footer/>  
     </>

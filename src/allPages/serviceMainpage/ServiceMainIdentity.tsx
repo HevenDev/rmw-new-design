@@ -565,7 +565,7 @@ const ServiceMainIdentity = () => {
                                 data-purecounter-duration="0"
                                 data-purecounter-end="25"
                               >
-                                25
+                                17
                               </b>
                             </h3>
                             <span className="tp-about__experience-title">
@@ -582,12 +582,12 @@ const ServiceMainIdentity = () => {
                               data-purecounter-duration="0"
                               data-purecounter-end="8"
                             >
-                              8
+                              1
                             </b>
-                            K{" "}
+                            B+{" "}
                           </h3>
                           <span className="tp-about__funfact-title">
-                            PROJECT COMPLETED
+                          Words Written
                           </span>
                         </div>
                         <div className="tp-about__funfact-item">
@@ -597,12 +597,12 @@ const ServiceMainIdentity = () => {
                               data-purecounter-duration="0"
                               data-purecounter-end="100"
                             >
-                              100
+                              1
                             </b>
-                            K{" "}
+                            M+{" "}
                           </h3>
                           <span className="tp-about__funfact-title">
-                            SATISFIED CUSTOMERS
+                          Creatives Published
                           </span>
                         </div>
                       </div>
@@ -622,7 +622,7 @@ const ServiceMainIdentity = () => {
                           CREATING <br />
                           NEW <span>IDENTITY</span>{" "}
                         </h3>
-                        <div className="tp-about__featured d-flex">
+                        {/* <div className="tp-about__featured d-flex">
                           <div className="tp-about__featured-item mr-85">
                             <h4 className="tp-about__featured-number">01</h4>
                             <h3 className="tp-about__featured-title">
@@ -635,9 +635,9 @@ const ServiceMainIdentity = () => {
                               Marketing strategy
                             </h3>
                           </div>
-                        </div>
+                        </div> */}
                       </div>
-                      <a
+                      {/* <a
                         className="tp-btn-primary"
                         href="https://etorisoft.com/wp/avtrix/about/"
                         target="_self"
@@ -645,7 +645,7 @@ const ServiceMainIdentity = () => {
                       >
                         <span> More about us </span>
                         <i className="far fa-arrow-right"></i>
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </div>

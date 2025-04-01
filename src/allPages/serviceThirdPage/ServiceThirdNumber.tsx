@@ -54,12 +54,12 @@ const ServiceThirdNumber = () => {
                               data-purecounter-duration="0"
                               data-purecounter-end="500"
                             >
-                              500
+                              1B
                             </b>
                             +{" "}
                           </h3>
                           <div className="tp-funfact__text">
-                            <span> Completed Project </span>
+                            <span> Words Written </span>
                           </div>
                         </div>
                       </div>
@@ -83,12 +83,12 @@ const ServiceThirdNumber = () => {
                               data-purecounter-duration="0"
                               data-purecounter-end="5"
                             >
-                              5
+                              1
                             </b>
-                            K+{" "}
+                            M+{" "}
                           </h3>
                           <div className="tp-funfact__text">
-                            <span> Awesome clients </span>
+                            <span>Creatives Published </span>
                           </div>
                         </div>
                       </div>
@@ -112,12 +112,12 @@ const ServiceThirdNumber = () => {
                               data-purecounter-duration="0"
                               data-purecounter-end="12"
                             >
-                              12
+                              1
                             </b>
-                            +{" "}
+                           K +{" "}
                           </h3>
                           <div className="tp-funfact__text">
-                            <span> Awesome client </span>
+                            <span> Campaigns Executed</span>
                           </div>
                         </div>
                       </div>
@@ -141,12 +141,12 @@ const ServiceThirdNumber = () => {
                               data-purecounter-duration="0"
                               data-purecounter-end="5"
                             >
-                              5
+                              500
                             </b>
-                            K+{" "}
+                            +{" "}
                           </h3>
                           <div className="tp-funfact__text">
-                            <span> Awwards Get </span>
+                            <span> Success Stories</span>
                           </div>
                         </div>
                       </div>

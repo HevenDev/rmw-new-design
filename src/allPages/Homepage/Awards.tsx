@@ -20,7 +20,7 @@ const Awards = () => {
               data-widget_type="awards.default"
             >
               <div className="elementor-widget-container">
-                <section className="tp-award__area tp-awards__1 pt-120 pb-120">
+                <section className="tp-award__area tp-awards__1 pt-120 ">
                   <div className="container">
                     <div className="row">
                       <div className="col-xl-12">
@@ -59,128 +59,9 @@ const Awards = () => {
                           <div className="tp-awards__content d-flex align-items-center justify-content-between">
                             <div className="tp-awards__left">
                               <div className="tp-awards__top mb-5 d-flex align-items-center">
-                                <h3 className="tp-awards__size">
-                                  {/* x <span>2</span> */}
-                                </h3>
-                                <span className="tp-awards__sm-text">
-                                  FOR DISPLAY 2024
-                                </span>
-                              </div>
-                              <div className="tp-awards__name d-flex align-items-center">
-                                <h3 className="tp-awards__title">
-                                  <Link
-                                    href="https://etorisoft.com/wp/avtrix/about/"
-                                    rel="nofollow"
-                                    target="_self"
-                                  > 
-                                    Exellence in Digital Marketing
-                                  </Link>
-                                </h3>
-                                <span className="tp-awards__title-sm">
-                                  / 2024
-                                </span>
-                              </div>
-                            </div>
-                            <div className="tp-awards__right">
-                              <div className="tp-awards__icon">
-                                <Link
-                                  href="https://etorisoft.com/wp/avtrix/about/"
-                                  rel="nofollow"
-                                  target="_self"
-                                >
-                                  <GoArrowRight  style={{color: "white", fontSize: "20px", fontWeight: "600"}}/>
-                                </Link>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="tp-awards__item">
-                          <div className="tp-awards__content d-flex align-items-center justify-content-between">
-                            <div className="tp-awards__left">
-                              <div className="tp-awards__top mb-5 d-flex align-items-center">
-                                <h3 className="tp-awards__size">
+                                {/* <h3 className="tp-awards__size">
                                   x <span>2</span>
-                                </h3>
-                                <span className="tp-awards__sm-text">
-                                  FOR DISPLAY 2023
-                                </span>
-                              </div>
-                              <div className="tp-awards__name d-flex align-items-center">
-                                <h3 className="tp-awards__title">
-                                  <Link
-                                    href="https://etorisoft.com/wp/avtrix/about/"
-                                    rel="nofollow"
-                                    target="_self"
-                                  >
-                                    
-                                    Elite marketing partner.
-                                  </Link>
-                                </h3>
-                                <span className="tp-awards__title-sm">
-                                  / 2014
-                                </span>
-                              </div>
-                            </div>
-                            <div className="tp-awards__right">
-                              <div className="tp-awards__icon">
-                                <Link
-                                  href="https://etorisoft.com/wp/avtrix/about/"
-                                  rel="nofollow"
-                                  target="_self"
-                                >
-                                  <GoArrowRight  style={{color: "white", fontSize: "20px", fontWeight: "600"}}/>
-                                </Link>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="tp-awards__item">
-                          <div className="tp-awards__content d-flex align-items-center justify-content-between">
-                            <div className="tp-awards__left">
-                              <div className="tp-awards__top mb-5 d-flex align-items-center">
-                                <h3 className="tp-awards__size">
-                                  x <span>2</span>
-                                </h3>
-                                <span className="tp-awards__sm-text">
-                                  FOR DISPLAY 2024
-                                </span>
-                              </div>
-                              <div className="tp-awards__name d-flex align-items-center">
-                                <h3 className="tp-awards__title">
-                                  <Link
-                                    href="https://etorisoft.com/wp/avtrix/about/"
-                                    rel="nofollow"
-                                    target="_self"
-                                  >
-                                    
-                                    High five awards.
-                                  </Link>
-                                </h3>
-                                <span className="tp-awards__title-sm">
-                                  / 2016
-                                </span>
-                              </div>
-                            </div>
-                            <div className="tp-awards__right">
-                              <div className="tp-awards__icon">
-                                <Link
-                                  href="https://etorisoft.com/wp/avtrix/about/"
-                                  rel="nofollow"
-                                  target="_self"
-                                >
-                                  <GoArrowRight  style={{color: "white", fontSize: "20px", fontWeight: "600"}}/>
-                                </Link>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="tp-awards__item">
-                          <div className="tp-awards__content d-flex align-items-center justify-content-between">
-                            <div className="tp-awards__left">
-                              <div className="tp-awards__top mb-5 d-flex align-items-center">
-                                <h3 className="tp-awards__size">
-                                  x <span>2</span>
-                                </h3>
+                                </h3> */}
                                 <span className="tp-awards__sm-text">
                                   FOR DISPLAY 2022
                                 </span>
@@ -188,23 +69,134 @@ const Awards = () => {
                               <div className="tp-awards__name d-flex align-items-center">
                                 <h3 className="tp-awards__title">
                                   <Link
-                                    href="https://etorisoft.com/wp/avtrix/about/"
+                                    href="/about"
+                                    rel="nofollow"
+                                    target="_self"
+                                  > 
+                                    Trusted Digital Advertising Agency in NCR-Awarded by The Economic Times
+                                  </Link>
+                                </h3>
+                               
+                              </div>
+                            </div>
+                            <div className="tp-awards__right">
+                              <div className="tp-awards__icon">
+                                <Link
+                                  href="/about/"
+                                  rel="nofollow"
+                                  target="_self"
+                                >
+                                  <GoArrowRight  style={{color: "white", fontSize: "20px", fontWeight: "600"}}/>
+                                </Link>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="tp-awards__item">
+                          <div className="tp-awards__content d-flex align-items-center justify-content-between">
+                            <div className="tp-awards__left">
+                              <div className="tp-awards__top mb-5 d-flex align-items-center">
+                              {/* <h3 className="tp-awards__size">
+                                  x <span>2</span>
+                                </h3>  */}
+                                <span className="tp-awards__sm-text">
+                                  FOR DISPLAY 2024
+                                </span>
+                              </div>
+                              <div className="tp-awards__name d-flex align-items-center">
+                                <h3 className="tp-awards__title">
+                                  <Link
+                                    href="/about/"
                                     rel="nofollow"
                                     target="_self"
                                   >
                                     
-                                    Top performer lifetime.
+                                    Excellence in Digital Media by Dainik Jagran
                                   </Link>
                                 </h3>
-                                <span className="tp-awards__title-sm">
-                                  / 2024
-                                </span>
+                               
                               </div>
                             </div>
                             <div className="tp-awards__right">
                               <div className="tp-awards__icon">
                                 <Link
                                   href="https://etorisoft.com/wp/avtrix/about/"
+                                  rel="nofollow"
+                                  target="_self"
+                                >
+                                  <GoArrowRight  style={{color: "white", fontSize: "20px", fontWeight: "600"}}/>
+                                </Link>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="tp-awards__item">
+                          <div className="tp-awards__content d-flex align-items-center justify-content-between">
+                            <div className="tp-awards__left">
+                              <div className="tp-awards__top mb-5 d-flex align-items-center">
+                                {/* <h3 className="tp-awards__size">
+                                  x <span>2</span>
+                                </h3> */}
+                                <span className="tp-awards__sm-text">
+                                  FOR DISPLAY 2011
+                                </span>
+                              </div>
+                              <div className="tp-awards__name d-flex align-items-center">
+                                <h3 className="tp-awards__title">
+                                  <Link
+                                    href="/about/"
+                                    rel="nofollow"
+                                    target="_self"
+                                  >
+                                    
+                                    Special Achievement Award in Retail Category
+                                  </Link>
+                                </h3>
+                               
+                              </div>
+                            </div>
+                            <div className="tp-awards__right">
+                              <div className="tp-awards__icon">
+                                <Link
+                                  href="/about/"
+                                  rel="nofollow"
+                                  target="_self"
+                                >
+                                  <GoArrowRight  style={{color: "white", fontSize: "20px", fontWeight: "600"}}/>
+                                </Link>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="tp-awards__item">
+                          <div className="tp-awards__content d-flex align-items-center justify-content-between">
+                            <div className="tp-awards__left">
+                              <div className="tp-awards__top mb-5 d-flex align-items-center">
+                                {/* <h3 className="tp-awards__size">
+                                  x <span>2</span>
+                                </h3> */}
+                                <span className="tp-awards__sm-text">
+                                  FOR DISPLAY 2022
+                                </span>
+                              </div>
+                              <div className="tp-awards__name d-flex align-items-center ">
+                                <h3 className="tp-awards__title mr-40">
+                                  <Link
+                                    href="/about/"
+                                    rel="nofollow"
+                                    target="_self"
+                                  >
+                                    
+                                    Icons by The Times of India
+                                  </Link>
+                                </h3>
+                                
+                              </div>
+                            </div>
+                            <div className="tp-awards__right">
+                              <div className="tp-awards__icon">
+                                <Link
+                                  href=" /about/"
                                   rel="nofollow"
                                   target="_self"
                                 >

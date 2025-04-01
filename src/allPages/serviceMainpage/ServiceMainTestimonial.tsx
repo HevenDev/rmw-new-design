@@ -75,29 +75,24 @@ const ServiceMainTestimonial = () => {
                                     <br /> In Our Town Forever{" "}
                                   </h3>
                                   <p>
-                                    creative agency, we believe in the power of
-                                    imagination and innovation. We are
-                                    constantly pushing the boundaries of what is
-                                    possible, and strive to create work that is
-                                    not only bea utiful and effective,but also
-                                    meaningful and impactful.
+                                  To me, advertising my brand was merely a means to ensure my elongated presence in the market. Thanks to ritz Media world, my advertisements not only ensured my brand’s sustenance but have also got me a great number of quality leads.
                                   </p>
                                 </div>
                                 <div className="tp-testi__2-author-box d-sm-flex align-items-center justify-content-between">
-                                  <div className="tp-testi__2-author-info d-flex align-items-center">
+                                  <div className="tp-testi__2-author-info d-flex align-items-center gap-1">
                                     <div className="tp-testi__2-author-thumb mr-25">
                                       <img
                                         decoding="async"
-                                        src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/testi-2-1-avater.png"
-                                        alt=""
+                                        src="https://ritzmediaworld.com//webroot/images/gallery/6106855b-46a9-5a43-b168-7d6774383544_1460_550.png"
+                                        alt=""  width={"50%"}
                                       />
                                     </div>
                                     <div className="tp-testi__2-author-text">
                                       <h3 className="tp-testi__2-author-title">
-                                        James N. Johnson
+                                      Madhusudan Ghee
                                       </h3>
                                       <span className="tp-testi__2-author-designation">
-                                        CEO &amp; Founder
+                                      Managing Director
                                       </span>
                                     </div>
                                   </div>
@@ -140,12 +135,7 @@ const ServiceMainTestimonial = () => {
                                     <br /> In Our Town Forever{" "}
                                   </h3>
                                   <p>
-                                    creative agency, we believe in the power of
-                                    imagination and innovation. We are
-                                    constantly pushing the boundaries of what is
-                                    possible, and strive to create work that is
-                                    not only bea utiful and effective,but also
-                                    meaningful and impactful.
+                                  If there is one thing serving as a full service digital agency for more than a decade taught us, it has to be the value of relationships. Therefore, our relationship with our clients is both a priority and a point of pride to us.
                                   </p>
                                 </div>
                                 <div className="tp-testi__2-author-box d-sm-flex align-items-center justify-content-between">
@@ -153,16 +143,16 @@ const ServiceMainTestimonial = () => {
                                     <div className="tp-testi__2-author-thumb mr-25">
                                       <img
                                         decoding="async"
-                                        src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/testi-2-1-avater.png"
-                                        alt=""
+                                        src="https://ritzmediaworld.com//webroot/images/gallery/6106855b-46a9-5a43-b168-7d6774383544_1460_550.png"
+                                        alt=""  width={"50%"}
                                       />
                                     </div>
                                     <div className="tp-testi__2-author-text">
                                       <h3 className="tp-testi__2-author-title">
-                                        James N. Johnson
+                                      FAIRFOX - EON
                                       </h3>
                                       <span className="tp-testi__2-author-designation">
-                                        CEO &amp; Founder
+                                      Marketing Head
                                       </span>
                                     </div>
                                   </div>
@@ -205,12 +195,7 @@ const ServiceMainTestimonial = () => {
                                     <br /> In Our Town Forever{" "}
                                   </h3>
                                   <p>
-                                    creative agency, we believe in the power of
-                                    imagination and innovation. We are
-                                    constantly pushing the boundaries of what is
-                                    possible, and strive to create work that is
-                                    not only bea utiful and effective,but also
-                                    meaningful and impactful.
+                                  They not only make sure that they deliver on their promises, but also educate you on what exactly is needed to be done for your brand, thereby preventing you from under or over spending your precious money.
                                   </p>
                                 </div>
                                 <div className="tp-testi__2-author-box d-sm-flex align-items-center justify-content-between">
@@ -218,16 +203,16 @@ const ServiceMainTestimonial = () => {
                                     <div className="tp-testi__2-author-thumb mr-25">
                                       <img
                                         decoding="async"
-                                        src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/testi-2-1-avater.png"
-                                        alt=""
+                                        src="https://ritzmediaworld.com//webroot/images/gallery/6106855b-46a9-5a43-b168-7d6774383544_1460_550.png"
+                                        alt="" width={"50%"}
                                       />
                                     </div>
                                     <div className="tp-testi__2-author-text">
                                       <h3 className="tp-testi__2-author-title">
-                                        James N. Johnson
+                                      Eldeco Group
                                       </h3>
                                       <span className="tp-testi__2-author-designation">
-                                        CEO &amp; Founder
+                                      Managing Director
                                       </span>
                                     </div>
                                   </div>
@@ -252,136 +237,7 @@ const ServiceMainTestimonial = () => {
                               </div>
                             </div>
                           </SwiperSlide>
-                          <SwiperSlide
-                            className="swiper-slide swiper-slide-active"
-                            data-swiper-slide-index="2"
-                            role="group"
-                            aria-label="4 / 5"
-                            style={{ width: "446px", marginRight: "30px" }}
-                          >
-                            <div className="tp-testi__2-item">
-                              <div className="tp-testi__2-content">
-                                <div className="tp-testi__2-title-box mb-45">
-                                  <h3 className="tp-section-title mb-60">
-                                    Best Creative{" "}
-                                    <span>
-                                      <i>Agency</i>
-                                    </span>{" "}
-                                    <br /> In Our Town Forever{" "}
-                                  </h3>
-                                  <p>
-                                    creative agency, we believe in the power of
-                                    imagination and innovation. We are
-                                    constantly pushing the boundaries of what is
-                                    possible, and strive to create work that is
-                                    not only bea utiful and effective,but also
-                                    meaningful and impactful.
-                                  </p>
-                                </div>
-                                <div className="tp-testi__2-author-box d-sm-flex align-items-center justify-content-between">
-                                  <div className="tp-testi__2-author-info d-flex align-items-center">
-                                    <div className="tp-testi__2-author-thumb mr-25">
-                                      <img
-                                        decoding="async"
-                                        src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/testi-2-1-avater.png"
-                                        alt=""
-                                      />
-                                    </div>
-                                    <div className="tp-testi__2-author-text">
-                                      <h3 className="tp-testi__2-author-title">
-                                        James N. Johnson
-                                      </h3>
-                                      <span className="tp-testi__2-author-designation">
-                                        CEO &amp; Founder
-                                      </span>
-                                    </div>
-                                  </div>
-                                  <div className="tp-testi__2-author-review">
-                                    <span>
-                                      <i className="fas fa-star"></i>
-                                    </span>
-                                    <span>
-                                      <i className="fas fa-star"></i>
-                                    </span>
-                                    <span>
-                                      <i className="fas fa-star"></i>
-                                    </span>
-                                    <span>
-                                      <i className="fas fa-star"></i>
-                                    </span>
-                                    <span>
-                                      <i className="fas fa-star-half-alt"></i>
-                                    </span>{" "}
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </SwiperSlide>
-                          <SwiperSlide
-                            className="swiper-slide swiper-slide-duplicate swiper-slide-next"
-                            data-swiper-slide-index="0"
-                            role="group"
-                            aria-label="5 / 5"
-                            style={{ width: "446px", marginRight: "30px" }}
-                          >
-                            <div className="tp-testi__2-item">
-                              <div className="tp-testi__2-content">
-                                <div className="tp-testi__2-title-box mb-45">
-                                  <h3 className="tp-section-title mb-60">
-                                    Best Creative{" "}
-                                    <span>
-                                      <i>Agency</i>
-                                    </span>{" "}
-                                    <br /> In Our Town Forever{" "}
-                                  </h3>
-                                  <p>
-                                    creative agency, we believe in the power of
-                                    imagination and innovation. We are
-                                    constantly pushing the boundaries of what is
-                                    possible, and strive to create work that is
-                                    not only bea utiful and effective,but also
-                                    meaningful and impactful.
-                                  </p>
-                                </div>
-                                <div className="tp-testi__2-author-box d-sm-flex align-items-center justify-content-between">
-                                  <div className="tp-testi__2-author-info d-flex align-items-center">
-                                    <div className="tp-testi__2-author-thumb mr-25">
-                                      <img
-                                        decoding="async"
-                                        src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/testi-2-1-avater.png"
-                                        alt=""
-                                      />
-                                    </div>
-                                    <div className="tp-testi__2-author-text">
-                                      <h3 className="tp-testi__2-author-title">
-                                        James N. Johnson
-                                      </h3>
-                                      <span className="tp-testi__2-author-designation">
-                                        CEO &amp; Founder
-                                      </span>
-                                    </div>
-                                  </div>
-                                  <div className="tp-testi__2-author-review">
-                                    <span>
-                                      <i className="fas fa-star"></i>
-                                    </span>
-                                    <span>
-                                      <i className="fas fa-star"></i>
-                                    </span>
-                                    <span>
-                                      <i className="fas fa-star"></i>
-                                    </span>
-                                    <span>
-                                      <i className="fas fa-star"></i>
-                                    </span>
-                                    <span>
-                                      <i className="fas fa-star-half-alt"></i>
-                                    </span>{" "}
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </SwiperSlide>
+                          
                         </Swiper>
                         <span
                           className="swiper-notification"
