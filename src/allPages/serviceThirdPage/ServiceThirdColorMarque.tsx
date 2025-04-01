@@ -34,7 +34,7 @@ const ServiceThirdColorMarque = () => {
       slidesPerView="auto"
       spaceBetween={30}
       allowTouchMove={false}
-      speed={18000}
+      speed={10000}
       autoplay={{
         delay: 1,
         disableOnInteraction: true,
@@ -60,7 +60,7 @@ const ServiceThirdColorMarque = () => {
                               "url(https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/text-slider/fire.jpg)",
                           }}
                         >
-                          ARKETING _ EDESIGNER _ WEB DEVELOPMENT _ CHEMICATION{" "}
+                          DIGITAL_MARKETING{" "}
                         </h3>
                       </div>
                     </SwiperSlide>
@@ -80,7 +80,7 @@ const ServiceThirdColorMarque = () => {
                               "url(https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/text-slider/fire.jpg)",
                           }}
                         >
-                          ARKETING _ EDESIGNER _ WEB DEVELOPMENT _ CHEMICATION{" "}
+                          PRINTING_MARKETING{" "}
                         </h3>
                       </div>
                     </SwiperSlide>
@@ -100,7 +100,7 @@ const ServiceThirdColorMarque = () => {
                               "url(https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/text-slider/fire.jpg)",
                           }}
                         >
-                          ARKETING _ EDESIGNER _ WEB DEVELOPMENT _ CHEMICATION{" "}
+                          RADIO ADVERTISMENT{" "}
                         </h3>
                       </div>
                     </SwiperSlide>
@@ -120,7 +120,7 @@ const ServiceThirdColorMarque = () => {
                               "url(https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/text-slider/fire.jpg)",
                           }}
                         >
-                          ARKETING _ EDESIGNER _ WEB DEVELOPMENT _ CHEMICATION{" "}
+                          CREATIVE_SERVICES{" "}
                         </h3>
                       </div>
                     </SwiperSlide>
@@ -140,7 +140,7 @@ const ServiceThirdColorMarque = () => {
                               "url(https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/text-slider/fire.jpg)",
                           }}
                         >
-                          ARKETING _ EDESIGNER _ WEB DEVELOPMENT _ CHEMICATION{" "}
+                          CONTENT_MARKETING{" "}
                         </h3>
                       </div>
                     </SwiperSlide>
@@ -160,7 +160,7 @@ const ServiceThirdColorMarque = () => {
                               "url(https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/text-slider/fire.jpg)",
                           }}
                         >
-                          ARKETING _ EDESIGNER _ WEB DEVELOPMENT _ CHEMICATION{" "}
+                          WEB_DEVELOPMENT{" "}
                         </h3>
                       </div>
                     </SwiperSlide>
@@ -180,110 +180,11 @@ const ServiceThirdColorMarque = () => {
                               "url(https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/text-slider/fire.jpg)",
                           }}
                         >
-                          ARKETING _ EDESIGNER _ WEB DEVELOPMENT _ CHEMICATION{" "}
+                          CELEBRITY_ENDORSEMENTS{" "}
                         </h3>
                       </div>
                     </SwiperSlide>
-                    <SwiperSlide
-                      className="swiper-slide swiper-slide-duplicate swiper-slide-active"
-                      data-swiper-slide-index="0"
-                      role="group"
-                      aria-label="11 / 15"
-                      style={{ marginRight: "30px" }}
-                    >
-                      <div className="tp-text__4-wrap">
-                        <h3
-                          className="tp-text__4-text"
-                          data-background="https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/text-slider/fire.jpg"
-                          style={{
-                            backgroundImage:
-                              "url(https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/text-slider/fire.jpg)",
-                          }}
-                        >
-                          ARKETING _ EDESIGNER _ WEB DEVELOPMENT _ CHEMICATION{" "}
-                        </h3>
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide
-                      className="swiper-slide swiper-slide-duplicate swiper-slide-next"
-                      data-swiper-slide-index="1"
-                      role="group"
-                      aria-label="12 / 15"
-                      style={{ marginRight: "30px" }}
-                    >
-                      <div className="tp-text__4-wrap">
-                        <h3
-                          className="tp-text__4-text"
-                          data-background="https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/text-slider/fire.jpg"
-                          style={{
-                            backgroundImage:
-                              "url(https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/text-slider/fire.jpg)",
-                          }}
-                        >
-                          ARKETING _ EDESIGNER _ WEB DEVELOPMENT _ CHEMICATION{" "}
-                        </h3>
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide
-                      className="swiper-slide swiper-slide-duplicate"
-                      data-swiper-slide-index="2"
-                      role="group"
-                      aria-label="13 / 15"
-                      style={{ marginRight: "30px" }}
-                    >
-                      <div className="tp-text__4-wrap">
-                        <h3
-                          className="tp-text__4-text"
-                          data-background="https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/text-slider/fire.jpg"
-                          style={{
-                            backgroundImage:
-                              "url(https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/text-slider/fire.jpg)",
-                          }}
-                        >
-                          ARKETING _ EDESIGNER _ WEB DEVELOPMENT _ CHEMICATION{" "}
-                        </h3>
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide
-                      className="swiper-slide swiper-slide-duplicate"
-                      data-swiper-slide-index="3"
-                      role="group"
-                      aria-label="14 / 15"
-                      style={{ marginRight: "30px" }}
-                    >
-                      <div className="tp-text__4-wrap">
-                        <h3
-                          className="tp-text__4-text"
-                          data-background="https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/text-slider/fire.jpg"
-                          style={{
-                            backgroundImage:
-                              "url(https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/text-slider/fire.jpg)",
-                          }}
-                        >
-                          ARKETING _ EDESIGNER _ WEB DEVELOPMENT _ CHEMICATION{" "}
-                        </h3>
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide
-                      className="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
-                      data-swiper-slide-index="4"
-                      role="group"
-                      aria-label="15 / 15"
-                      style={{ marginRight: "30px" }}
-                    >
-                      <div className="tp-text__4-wrap">
-                        <h3
-                          className="tp-text__4-text"
-                          data-background="https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/text-slider/fire.jpg"
-                          style={{
-                            backgroundImage:
-                              "url(https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/text-slider/fire.jpg)",
-                          }}
-                        >
-                          ARKETING _ EDESIGNER _ WEB DEVELOPMENT _ CHEMICATION{" "}
-                        </h3>
-                      </div>
-                    </SwiperSlide>
+                    
                   </Swiper>
                   <span
                     className="swiper-notification"

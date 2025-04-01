@@ -74,7 +74,7 @@ const ServiceMainWorkSwiper = () => {
                           </div>
                           <div className="tp-work__icon d-none d-md-block">
                             <a
-                              href="https://etorisoft.com/wp/avtrix/portfolio-details/"
+                              href="/"
                               target=""
                               rel=""
                             >
@@ -99,7 +99,7 @@ const ServiceMainWorkSwiper = () => {
                           </div>
                           <div className="tp-work__content">
                             <h3 className="tp-work__title">
-                              <a href="https://etorisoft.com/wp/avtrix/portfolio-details/">
+                              <a href="/services/digital-marketing/">
                                 Digital Marketing
                               </a>
                             </h3>
@@ -126,7 +126,7 @@ const ServiceMainWorkSwiper = () => {
                           </div>
                           <div className="tp-work__icon d-none d-md-block">
                             <a
-                              href="https://etorisoft.com/wp/avtrix/portfolio-details/"
+                              href="/"
                               target=""
                               rel=""
                             >
@@ -151,7 +151,7 @@ const ServiceMainWorkSwiper = () => {
                           </div>
                           <div className="tp-work__content">
                             <h3 className="tp-work__title">
-                              <a href="https://etorisoft.com/wp/avtrix/portfolio-details/">
+                              <a href="/services/digital-marketing/">
                                 Digital Marketing
                               </a>
                             </h3>
@@ -178,7 +178,7 @@ const ServiceMainWorkSwiper = () => {
                           </div>
                           <div className="tp-work__icon d-none d-md-block">
                             <a
-                              href="https://etorisoft.com/wp/avtrix/portfolio-details/"
+                              href="/services/digital-marketing/"
                               target=""
                               rel=""
                             >
@@ -203,7 +203,7 @@ const ServiceMainWorkSwiper = () => {
                           </div>
                           <div className="tp-work__content">
                             <h3 className="tp-work__title">
-                              <a href="https://etorisoft.com/wp/avtrix/portfolio-details/">
+                              <a href="/services/digital-marketing/">
                                 Digital Marketing
                               </a>
                             </h3>
@@ -230,7 +230,7 @@ const ServiceMainWorkSwiper = () => {
                           </div>
                           <div className="tp-work__icon d-none d-md-block">
                             <a
-                              href="https://etorisoft.com/wp/avtrix/portfolio-details/"
+                              href="/services/digital-marketing/"
                               target=""
                               rel=""
                             >
@@ -255,7 +255,7 @@ const ServiceMainWorkSwiper = () => {
                           </div>
                           <div className="tp-work__content">
                             <h3 className="tp-work__title">
-                              <a href="https://etorisoft.com/wp/avtrix/portfolio-details/">
+                              <a href="/services/digital-marketing/">
                                 Digital Marketing
                               </a>
                             </h3>
@@ -282,7 +282,7 @@ const ServiceMainWorkSwiper = () => {
                           </div>
                           <div className="tp-work__icon d-none d-md-block">
                             <a
-                              href="https://etorisoft.com/wp/avtrix/portfolio-details/"
+                              href="/"
                               target=""
                               rel=""
                             >
@@ -307,7 +307,7 @@ const ServiceMainWorkSwiper = () => {
                           </div>
                           <div className="tp-work__content">
                             <h3 className="tp-work__title">
-                              <a href="https://etorisoft.com/wp/avtrix/portfolio-details/">
+                              <a href="/">
                                 Digital Marketing
                               </a>
                             </h3>
@@ -334,7 +334,7 @@ const ServiceMainWorkSwiper = () => {
                           </div>
                           <div className="tp-work__icon d-none d-md-block">
                             <a
-                              href="https://etorisoft.com/wp/avtrix/portfolio-details/"
+                              href="/"
                               target=""
                               rel=""
                             >
@@ -359,7 +359,7 @@ const ServiceMainWorkSwiper = () => {
                           </div>
                           <div className="tp-work__content">
                             <h3 className="tp-work__title">
-                              <a href="https://etorisoft.com/wp/avtrix/portfolio-details/">
+                              <a href="/">
                                 Digital Marketing
                               </a>
                             </h3>

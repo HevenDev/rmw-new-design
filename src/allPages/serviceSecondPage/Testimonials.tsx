@@ -22,7 +22,7 @@ const Testimonials = () => {
                 <div className="tp-testi__3-action text-md-end">
                   <a
                     className="tp-btn-primary theme-btn"
-                    href="https://etorisoft.com/wp/avtrix/about/"
+                    href="/about/"
                     rel="nofollow"
                     target="_self"
                   >

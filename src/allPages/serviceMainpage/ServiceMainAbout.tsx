@@ -45,7 +45,7 @@ const ServiceMainAbout = () => {
                           </h3>
                           <a
                             className="tp-btn-secondary"
-                            href="https://etorisoft.com/wp/avtrix/about/"
+                            href="/about/"
                             target="_self"
                             rel="nofollow"
                           >
@@ -81,7 +81,7 @@ const ServiceMainAbout = () => {
                           </h3>
                           <a
                             className="tp-cta_2-mission-arrow"
-                            href="https://etorisoft.com/wp/avtrix/service-details/"
+                            href="/"
                             target="_self"
                             rel="nofollow"
                           >

@@ -729,7 +729,7 @@ const ServiceThirdAward = () => {
                       >
                         <a
                           className="tp-btn-primary"
-                          href="https://etorisoft.com/wp/avtrix/about/"
+                          href="/about/"
                           rel="nofollow"
                           target="_self"
                         >

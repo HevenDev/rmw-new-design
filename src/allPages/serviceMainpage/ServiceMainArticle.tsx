@@ -250,7 +250,7 @@ const ServiceMainArticle = () => {
                       <div className="tp-blog__action text-md-end">
                         <a
                           className="tp-btn-primary"
-                          href="https://etorisoft.com/wp/avtrix/blog/"
+                          href="/blog/"
                           target="_self"
                           rel="nofollow"
                         >
@@ -277,7 +277,7 @@ const ServiceMainArticle = () => {
                         <div className="col-xl-9 col-lg-9">
                           <div className="tp-blog__content d-sm-flex align-items-center">
                             <div className="tp-blog__thumb tp-blog-post-widget-thumb">
-                              <a href="https://etorisoft.com/wp/avtrix/transform-your-business-with-expert-digital-solutions/">
+                              <a href="/">
                                 <img
                                   decoding="async"
                                   src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/blog-post-6.png"
@@ -295,7 +295,7 @@ const ServiceMainArticle = () => {
                                 </span>
                               </div>
                               <h3 className="tp-blog__title">
-                                <a href="https://etorisoft.com/wp/avtrix/transform-your-business-with-expert-digital-solutions/">
+                                <a href="/">
                                   Transform Your Business with Expert Digital
                                 </a>
                               </h3>
@@ -306,7 +306,7 @@ const ServiceMainArticle = () => {
                           <div className="tp-blog__button p-relative text-lg-end">
                             <a
                               className="tp-btn-blog"
-                              href="https://etorisoft.com/wp/avtrix/transform-your-business-with-expert-digital-solutions/"
+                              href="/"
                             >
                               <span>BLOG DETAILS</span>
                               <b>
@@ -331,7 +331,7 @@ const ServiceMainArticle = () => {
                         <div className="col-xl-9 col-lg-9">
                           <div className="tp-blog__content d-sm-flex align-items-center">
                             <div className="tp-blog__thumb tp-blog-post-widget-thumb">
-                              <a href="https://etorisoft.com/wp/avtrix/boost-your-online-presence-with-our-services/">
+                              <a href="/">
                                 <img
                                   decoding="async"
                                   src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/blog-post-2.jpg"
@@ -349,7 +349,7 @@ const ServiceMainArticle = () => {
                                 </span>
                               </div>
                               <h3 className="tp-blog__title">
-                                <a href="https://etorisoft.com/wp/avtrix/boost-your-online-presence-with-our-services/">
+                                <a href="/">
                                   Boost Your Online Presence with Our
                                 </a>
                               </h3>
@@ -360,7 +360,7 @@ const ServiceMainArticle = () => {
                           <div className="tp-blog__button p-relative text-lg-end">
                             <a
                               className="tp-btn-blog"
-                              href="https://etorisoft.com/wp/avtrix/boost-your-online-presence-with-our-services/"
+                              href="/"
                             >
                               <span>BLOG DETAILS</span>
                               <b>
@@ -385,7 +385,7 @@ const ServiceMainArticle = () => {
                         <div className="col-xl-9 col-lg-9">
                           <div className="tp-blog__content d-sm-flex align-items-center">
                             <div className="tp-blog__thumb tp-blog-post-widget-thumb">
-                              <a href="https://etorisoft.com/wp/avtrix/innovative-solutions-for-a-digital-tomorrow/">
+                              <a href="/">
                                 <img
                                   decoding="async"
                                   src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/blog-post-5.png"
@@ -403,7 +403,7 @@ const ServiceMainArticle = () => {
                                 </span>
                               </div>
                               <h3 className="tp-blog__title">
-                                <a href="https://etorisoft.com/wp/avtrix/innovative-solutions-for-a-digital-tomorrow/">
+                                <a href="/">
                                   Innovative Solutions for a Digital Tomorrow
                                 </a>
                               </h3>
@@ -414,7 +414,7 @@ const ServiceMainArticle = () => {
                           <div className="tp-blog__button p-relative text-lg-end">
                             <a
                               className="tp-btn-blog"
-                              href="https://etorisoft.com/wp/avtrix/innovative-solutions-for-a-digital-tomorrow/"
+                              href="/"
                             >
                               <span>BLOG DETAILS</span>
                               <b>

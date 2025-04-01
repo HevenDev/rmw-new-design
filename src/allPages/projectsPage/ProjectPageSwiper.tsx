@@ -58,7 +58,7 @@ const ProjectPageSwiper = () => {
                   </div>
                   <div className="tp-work__icon d-none d-md-block">
                     <Link
-                      href="https://etorisoft.com/wp/avtrix/portfolio-details/"
+                      href="/"
                       target=""
                       rel=""
                     >
@@ -83,7 +83,7 @@ const ProjectPageSwiper = () => {
                   </div>
                   <div className="tp-work__content">
                     <h3 className="tp-work__title">
-                      <Link href="https://etorisoft.com/wp/avtrix/portfolio-details/">
+                      <Link href="/">
                         Digital Marketing
                       </Link>
                     </h3>
@@ -104,7 +104,7 @@ const ProjectPageSwiper = () => {
                   </div>
                   <div className="tp-work__icon d-none d-md-block">
                     <Link
-                      href="https://etorisoft.com/wp/avtrix/portfolio-details/"
+                      href="/"
                       target=""
                       rel=""
                     >
@@ -129,7 +129,7 @@ const ProjectPageSwiper = () => {
                   </div>
                   <div className="tp-work__content">
                     <h3 className="tp-work__title">
-                      <Link href="https://etorisoft.com/wp/avtrix/portfolio-details/">
+                      <Link href="/services/digital-marketing">
                         Digital Marketing
                       </Link>
                     </h3>
@@ -149,7 +149,7 @@ const ProjectPageSwiper = () => {
                   </div>
                   <div className="tp-work__icon d-none d-md-block">
                     <Link
-                      href="https://etorisoft.com/wp/avtrix/portfolio-details/"
+                      href="/"
                       target=""
                       rel=""
                     >
@@ -174,7 +174,7 @@ const ProjectPageSwiper = () => {
                   </div>
                   <div className="tp-work__content">
                     <h3 className="tp-work__title">
-                      <Link href="https://etorisoft.com/wp/avtrix/portfolio-details/">
+                      <Link href="/services/digital-marketing/">
                         Digital Marketing
                       </Link>
                     </h3>
@@ -194,7 +194,7 @@ const ProjectPageSwiper = () => {
                   </div>
                   <div className="tp-work__icon d-none d-md-block">
                     <Link
-                      href="https://etorisoft.com/wp/avtrix/portfolio-details/"
+                      href="/services/digital-marketing/"
                       target=""
                       rel=""
                     >
@@ -219,7 +219,7 @@ const ProjectPageSwiper = () => {
                   </div>
                   <div className="tp-work__content">
                     <h3 className="tp-work__title">
-                      <Link href="https://etorisoft.com/wp/avtrix/portfolio-details/">
+                      <Link href="/services/digital-marketing/">
                         Digital Marketing
                       </Link>
                     </h3>
@@ -239,7 +239,7 @@ const ProjectPageSwiper = () => {
                   </div>
                   <div className="tp-work__icon d-none d-md-block">
                     <Link
-                      href="https://etorisoft.com/wp/avtrix/portfolio-details/"
+                      href="/services/digital-marketing/"
                       target=""
                       rel=""
                     >
@@ -264,7 +264,7 @@ const ProjectPageSwiper = () => {
                   </div>
                   <div className="tp-work__content">
                     <h3 className="tp-work__title">
-                      <Link href="https://etorisoft.com/wp/avtrix/portfolio-details/">
+                      <Link href="/services/digital-marketing/">
                         Digital Marketing
                       </Link>
                     </h3>
@@ -284,7 +284,7 @@ const ProjectPageSwiper = () => {
                   </div>
                   <div className="tp-work__icon d-none d-md-block">
                     <Link
-                      href="https://etorisoft.com/wp/avtrix/portfolio-details/"
+                      href="/services/digital-marketing/"
                       target=""
                       rel=""
                     >
@@ -309,7 +309,7 @@ const ProjectPageSwiper = () => {
                   </div>
                   <div className="tp-work__content">
                     <h3 className="tp-work__title">
-                      <Link href="https://etorisoft.com/wp/avtrix/portfolio-details/">
+                      <Link href="/services/digital-marketing/">
                         Digital Marketing
                       </Link>
                     </h3>

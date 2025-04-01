@@ -340,7 +340,7 @@ const ServiceFirst = () => {
                   <div className="tp-hover__btn-wrap tp-btn__bounce">
                     <a
                       className="tp-hover__btn tp-hover__btn-item"
-                      href="https://etorisoft.com/wp/avtrix/contact/"
+                      href="/contact/"
                       rel="nofollow"
                       target="_self"
                       style={{

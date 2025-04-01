@@ -107,7 +107,7 @@ const Header = () => {
                                       <div className="homemenu-content text-center">
                                         <h4 className="homemenu-title">
                                           <Link
-                                            href="https://etorisoft.com/wp/avtrix/"
+                                            href="/digital-marketing/#"
                                             target="_self"
                                             rel="nofollow"
                                           >
@@ -125,7 +125,7 @@ const Header = () => {
                                         <div className="homemenu-btn">
                                           <Link
                                             className="tp-menu-btn"
-                                            href="https://etorisoft.com/wp/avtrix/home-02/"
+                                            href="/"
                                             target="_self"
                                             rel="nofollow"
                                           >
@@ -154,7 +154,7 @@ const Header = () => {
                                         <div className="homemenu-btn">
                                           <Link
                                             className="tp-menu-btn"
-                                            href="https://etorisoft.com/wp/avtrix/home-03/"
+                                            href="/"
                                             target="_self"
                                             rel="nofollow"
                                           >
@@ -183,7 +183,7 @@ const Header = () => {
                                         <div className="homemenu-btn">
                                           <Link
                                             className="tp-menu-btn"
-                                            href="https://etorisoft.com/wp/avtrix/home-04/"
+                                            href="/"
                                             target="_self"
                                             rel="nofollow"
                                           >
@@ -212,7 +212,7 @@ const Header = () => {
                                         <div className="homemenu-btn">
                                           <Link
                                             className="tp-menu-btn"
-                                            href="https://etorisoft.com/wp/avtrix/home-05/"
+                                            href="/"
                                             target="_self"
                                             rel="nofollow"
                                           >
@@ -241,7 +241,7 @@ const Header = () => {
                                         <div className="homemenu-btn">
                                           <Link
                                             className="tp-menu-btn"
-                                            href="https://etorisoft.com/wp/avtrix/home-06/"
+                                            href="/"
                                             target="_self"
                                             rel="nofollow"
                                           >
