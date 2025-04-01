@@ -6,11 +6,11 @@ const globalForMySQL = globalThis as unknown as { _mysqlPool?: Pool };
 const pool =
   globalForMySQL._mysqlPool ??
   mysql.createPool({
-    host: process.env.DATABASE_HOST || "127.0.0.1",
-    user: process.env.DATABASE_USER || "root",
-    password: process.env.DATABASE_PASSWORD || "",
-    database: process.env.DATABASE_NAME || "test",
-    port: Number(process.env.DATABASE_PORT) || 3306,
+    host: process.env.DATABASE_HOST,
+    user: process.env.DATABASE_USER,
+    password: process.env.DATABASE_PASSWORD,
+    database: process.env.DATABASE_NAME,
+    port: Number(process.env.DATABASE_PORT),
     waitForConnections: true,
     connectionLimit: 10,
     queueLimit: 0,

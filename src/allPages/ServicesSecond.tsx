@@ -10,8 +10,8 @@ import Footer from "@/components/footer/Footer";
 
 import ServiceFirst from "./serviceSecondPage/ServiceFirst";
 import ServiceImg from "./serviceSecondPage/ServiceImg";
-import Testimonials from "./serviceSecondPage/Testimonials";
 import { useParams } from 'next/navigation';
+import Feedback from './Homepage/Feedback';
 
 const ServicesSecondPage = () => {
   const params = useParams();
@@ -27,7 +27,7 @@ const ServicesSecondPage = () => {
       <SwiperHome />
       {/* <Service /> */}
       <ServiceImg/>
-      <Testimonials/>
+      <Feedback />
       <Footer/>
     </>
   )
