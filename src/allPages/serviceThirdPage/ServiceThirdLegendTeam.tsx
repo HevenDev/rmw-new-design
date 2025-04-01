@@ -1,6 +1,7 @@
 "use client";
 
 import { useSplitText } from "@/hooks/useSplitText";
+import { FaArrowLeft, FaArrowRight  } from "react-icons/fa6";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -287,14 +288,14 @@ const ServiceThirdLegendTeam = () => {
                           aria-label="Previous slide"
                           aria-controls="swiper-wrapper-b210b3eb231a6c870"
                         >
-                          <i className="fas fa-arrow-left"></i>
+                          <FaArrowLeft style={{fontSize:"20px"}} />
                         </button>
                         <button
                           className="team-next"
                           aria-label="Next slide"
                           aria-controls="swiper-wrapper-b210b3eb231a6c870"
                         >
-                          <i className="fas fa-arrow-right"></i>
+                          <FaArrowRight style={{fontSize:"20px"}}/>
                         </button>
                       </div>
                     </div>
@@ -345,7 +346,7 @@ const ServiceThirdLegendTeam = () => {
                         >
                           <div className="tp-team__3-thumb p-relative">
                             <a
-                              href="https://etorisoft.com/wp/avtrix/team-details/"
+                              href="/"
                               rel="nofollow"
                               target="_self"
                             >
@@ -357,7 +358,7 @@ const ServiceThirdLegendTeam = () => {
                             </a>
                             <div className="tp-team__3-action">
                               <a
-                                href="https://etorisoft.com/wp/avtrix/team-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >
@@ -404,7 +405,7 @@ const ServiceThirdLegendTeam = () => {
                             <div className="tp-team__3-text">
                               <h3 className="tp-team__3-title">
                                 <a
-                                  href="https://etorisoft.com/wp/avtrix/team-details/"
+                                  href="/"
                                   rel="nofollow"
                                   target="_self"
                                 >
@@ -418,7 +419,7 @@ const ServiceThirdLegendTeam = () => {
                             </div>
                             <div className="tp-team__3-link">
                               <a
-                                href="https://etorisoft.com/wp/avtrix/team-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >
@@ -450,7 +451,7 @@ const ServiceThirdLegendTeam = () => {
                         >
                           <div className="tp-team__3-thumb p-relative">
                             <a
-                              href="https://etorisoft.com/wp/avtrix/team-details/"
+                              href="/"
                               rel="nofollow"
                               target="_self"
                             >
@@ -462,7 +463,7 @@ const ServiceThirdLegendTeam = () => {
                             </a>
                             <div className="tp-team__3-action">
                               <a
-                                href="https://etorisoft.com/wp/avtrix/team-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >
@@ -509,7 +510,7 @@ const ServiceThirdLegendTeam = () => {
                             <div className="tp-team__3-text">
                               <h3 className="tp-team__3-title">
                                 <a
-                                  href="https://etorisoft.com/wp/avtrix/team-details/"
+                                  href="/"
                                   rel="nofollow"
                                   target="_self"
                                 >
@@ -523,7 +524,7 @@ const ServiceThirdLegendTeam = () => {
                             </div>
                             <div className="tp-team__3-link">
                               <a
-                                href="https://etorisoft.com/wp/avtrix/team-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >
@@ -555,7 +556,7 @@ const ServiceThirdLegendTeam = () => {
                         >
                           <div className="tp-team__3-thumb p-relative">
                             <a
-                              href="https://etorisoft.com/wp/avtrix/team-details/"
+                              href="/"
                               rel="nofollow"
                               target="_self"
                             >
@@ -567,7 +568,7 @@ const ServiceThirdLegendTeam = () => {
                             </a>
                             <div className="tp-team__3-action">
                               <a
-                                href="https://etorisoft.com/wp/avtrix/team-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >
@@ -614,7 +615,7 @@ const ServiceThirdLegendTeam = () => {
                             <div className="tp-team__3-text">
                               <h3 className="tp-team__3-title">
                                 <a
-                                  href="https://etorisoft.com/wp/avtrix/team-details/"
+                                  href="/"
                                   rel="nofollow"
                                   target="_self"
                                 >
@@ -628,7 +629,7 @@ const ServiceThirdLegendTeam = () => {
                             </div>
                             <div className="tp-team__3-link">
                               <a
-                                href="https://etorisoft.com/wp/avtrix/team-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >
@@ -660,7 +661,7 @@ const ServiceThirdLegendTeam = () => {
                         >
                           <div className="tp-team__3-thumb p-relative">
                             <a
-                              href="https://etorisoft.com/wp/avtrix/team-details/"
+                              href="/"
                               rel="nofollow"
                               target="_self"
                             >
@@ -672,7 +673,7 @@ const ServiceThirdLegendTeam = () => {
                             </a>
                             <div className="tp-team__3-action">
                               <a
-                                href="https://etorisoft.com/wp/avtrix/team-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >
@@ -719,7 +720,7 @@ const ServiceThirdLegendTeam = () => {
                             <div className="tp-team__3-text">
                               <h3 className="tp-team__3-title">
                                 <a
-                                  href="https://etorisoft.com/wp/avtrix/team-details/"
+                                  href="/"
                                   rel="nofollow"
                                   target="_self"
                                 >
@@ -733,7 +734,7 @@ const ServiceThirdLegendTeam = () => {
                             </div>
                             <div className="tp-team__3-link">
                               <a
-                                href="https://etorisoft.com/wp/avtrix/team-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >
@@ -765,7 +766,7 @@ const ServiceThirdLegendTeam = () => {
                         >
                           <div className="tp-team__3-thumb p-relative">
                             <a
-                              href="https://etorisoft.com/wp/avtrix/team-details/"
+                              href="/"
                               rel="nofollow"
                               target="_self"
                             >
@@ -777,7 +778,7 @@ const ServiceThirdLegendTeam = () => {
                             </a>
                             <div className="tp-team__3-action">
                               <a
-                                href="https://etorisoft.com/wp/avtrix/team-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >
@@ -824,7 +825,7 @@ const ServiceThirdLegendTeam = () => {
                             <div className="tp-team__3-text">
                               <h3 className="tp-team__3-title">
                                 <a
-                                  href="https://etorisoft.com/wp/avtrix/team-details/"
+                                  href="/"
                                   rel="nofollow"
                                   target="_self"
                                 >
@@ -838,7 +839,7 @@ const ServiceThirdLegendTeam = () => {
                             </div>
                             <div className="tp-team__3-link">
                               <a
-                                href="https://etorisoft.com/wp/avtrix/team-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >
@@ -870,7 +871,7 @@ const ServiceThirdLegendTeam = () => {
                         >
                           <div className="tp-team__3-thumb p-relative">
                             <a
-                              href="https://etorisoft.com/wp/avtrix/team-details/"
+                              href="/"
                               rel="nofollow"
                               target="_self"
                             >
@@ -882,7 +883,7 @@ const ServiceThirdLegendTeam = () => {
                             </a>
                             <div className="tp-team__3-action">
                               <a
-                                href="https://etorisoft.com/wp/avtrix/team-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >
@@ -929,7 +930,7 @@ const ServiceThirdLegendTeam = () => {
                             <div className="tp-team__3-text">
                               <h3 className="tp-team__3-title">
                                 <a
-                                  href="https://etorisoft.com/wp/avtrix/team-details/"
+                                  href="/"
                                   rel="nofollow"
                                   target="_self"
                                 >
@@ -943,7 +944,7 @@ const ServiceThirdLegendTeam = () => {
                             </div>
                             <div className="tp-team__3-link">
                               <a
-                                href="https://etorisoft.com/wp/avtrix/team-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >

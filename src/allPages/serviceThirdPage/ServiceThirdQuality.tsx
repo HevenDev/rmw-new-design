@@ -53,7 +53,7 @@ const ServiceThirdQuality = () => {
                       >
                         <a
                           className="tp-btn-secondary"
-                          href="https://etorisoft.com/wp/avtrix/service/"
+                          href="/service/"
                           rel="nofollow"
                           target="_self"
                         >
@@ -99,7 +99,7 @@ const ServiceThirdQuality = () => {
                         <div className="tp-services__3-item">
                           <div className="tp-services__3-thumb mb-30">
                             <a
-                              href="https://etorisoft.com/wp/avtrix/service-details/"
+                              href="/"
                               rel="nofollow"
                               target="_self"
                             >
@@ -159,7 +159,7 @@ const ServiceThirdQuality = () => {
                               </div>
                               <a
                                 className="tp-services__3-title"
-                                href="https://etorisoft.com/wp/avtrix/service-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >
@@ -169,7 +169,7 @@ const ServiceThirdQuality = () => {
                             </div>
                             <div className="tp-services__3-button">
                               <a
-                                href="https://etorisoft.com/wp/avtrix/service-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >
@@ -191,7 +191,7 @@ const ServiceThirdQuality = () => {
                         <div className="tp-services__3-item">
                           <div className="tp-services__3-thumb mb-30">
                             <a
-                              href="https://etorisoft.com/wp/avtrix/service-details/"
+                              href="/"
                               rel="nofollow"
                               target="_self"
                             >
@@ -251,7 +251,7 @@ const ServiceThirdQuality = () => {
                               </div>
                               <a
                                 className="tp-services__3-title"
-                                href="https://etorisoft.com/wp/avtrix/service-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >
@@ -261,7 +261,7 @@ const ServiceThirdQuality = () => {
                             </div>
                             <div className="tp-services__3-button">
                               <a
-                                href="https://etorisoft.com/wp/avtrix/service-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >
@@ -283,7 +283,7 @@ const ServiceThirdQuality = () => {
                         <div className="tp-services__3-item">
                           <div className="tp-services__3-thumb mb-30">
                             <a
-                              href="https://etorisoft.com/wp/avtrix/service-details/"
+                              href="/"
                               rel="nofollow"
                               target="_self"
                             >
@@ -343,7 +343,7 @@ const ServiceThirdQuality = () => {
                               </div>
                               <a
                                 className="tp-services__3-title"
-                                href="https://etorisoft.com/wp/avtrix/service-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >
@@ -353,7 +353,7 @@ const ServiceThirdQuality = () => {
                             </div>
                             <div className="tp-services__3-button">
                               <a
-                                href="https://etorisoft.com/wp/avtrix/service-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >
@@ -375,7 +375,7 @@ const ServiceThirdQuality = () => {
                         <div className="tp-services__3-item">
                           <div className="tp-services__3-thumb mb-30">
                             <a
-                              href="https://etorisoft.com/wp/avtrix/service-details/"
+                              href="/"
                               rel="nofollow"
                               target="_self"
                             >
@@ -435,7 +435,7 @@ const ServiceThirdQuality = () => {
                               </div>
                               <a
                                 className="tp-services__3-title"
-                                href="https://etorisoft.com/wp/avtrix/service-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >
@@ -445,7 +445,7 @@ const ServiceThirdQuality = () => {
                             </div>
                             <div className="tp-services__3-button">
                               <a
-                                href="https://etorisoft.com/wp/avtrix/service-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >
@@ -467,7 +467,7 @@ const ServiceThirdQuality = () => {
                         <div className="tp-services__3-item">
                           <div className="tp-services__3-thumb mb-30">
                             <a
-                              href="https://etorisoft.com/wp/avtrix/service-details/"
+                              href="/"
                               rel="nofollow"
                               target="_self"
                             >
@@ -527,7 +527,7 @@ const ServiceThirdQuality = () => {
                               </div>
                               <a
                                 className="tp-services__3-title"
-                                href="https://etorisoft.com/wp/avtrix/service-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >
@@ -537,7 +537,7 @@ const ServiceThirdQuality = () => {
                             </div>
                             <div className="tp-services__3-button">
                               <a
-                                href="https://etorisoft.com/wp/avtrix/service-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >
@@ -559,7 +559,7 @@ const ServiceThirdQuality = () => {
                         <div className="tp-services__3-item">
                           <div className="tp-services__3-thumb mb-30">
                             <a
-                              href="https://etorisoft.com/wp/avtrix/service-details/"
+                              href="/"
                               rel="nofollow"
                               target="_self"
                             >
@@ -619,7 +619,7 @@ const ServiceThirdQuality = () => {
                               </div>
                               <a
                                 className="tp-services__3-title"
-                                href="https://etorisoft.com/wp/avtrix/service-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >
@@ -629,7 +629,7 @@ const ServiceThirdQuality = () => {
                             </div>
                             <div className="tp-services__3-button">
                               <a
-                                href="https://etorisoft.com/wp/avtrix/service-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >
@@ -651,7 +651,7 @@ const ServiceThirdQuality = () => {
                         <div className="tp-services__3-item">
                           <div className="tp-services__3-thumb mb-30">
                             <a
-                              href="https://etorisoft.com/wp/avtrix/service-details/"
+                              href="/"
                               rel="nofollow"
                               target="_self"
                             >
@@ -711,7 +711,7 @@ const ServiceThirdQuality = () => {
                               </div>
                               <a
                                 className="tp-services__3-title"
-                                href="https://etorisoft.com/wp/avtrix/service-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >
@@ -721,7 +721,7 @@ const ServiceThirdQuality = () => {
                             </div>
                             <div className="tp-services__3-button">
                               <a
-                                href="https://etorisoft.com/wp/avtrix/service-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >
@@ -743,7 +743,7 @@ const ServiceThirdQuality = () => {
                         <div className="tp-services__3-item">
                           <div className="tp-services__3-thumb mb-30">
                             <a
-                              href="https://etorisoft.com/wp/avtrix/service-details/"
+                              href="/"
                               rel="nofollow"
                               target="_self"
                             >
@@ -803,7 +803,7 @@ const ServiceThirdQuality = () => {
                               </div>
                               <a
                                 className="tp-services__3-title"
-                                href="https://etorisoft.com/wp/avtrix/service-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >
@@ -813,7 +813,7 @@ const ServiceThirdQuality = () => {
                             </div>
                             <div className="tp-services__3-button">
                               <a
-                                href="https://etorisoft.com/wp/avtrix/service-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >
@@ -835,7 +835,7 @@ const ServiceThirdQuality = () => {
                         <div className="tp-services__3-item">
                           <div className="tp-services__3-thumb mb-30">
                             <a
-                              href="https://etorisoft.com/wp/avtrix/service-details/"
+                              href="/"
                               rel="nofollow"
                               target="_self"
                             >
@@ -895,7 +895,7 @@ const ServiceThirdQuality = () => {
                               </div>
                               <a
                                 className="tp-services__3-title"
-                                href="https://etorisoft.com/wp/avtrix/service-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >
@@ -905,7 +905,7 @@ const ServiceThirdQuality = () => {
                             </div>
                             <div className="tp-services__3-button">
                               <a
-                                href="https://etorisoft.com/wp/avtrix/service-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >
@@ -927,7 +927,7 @@ const ServiceThirdQuality = () => {
                         <div className="tp-services__3-item">
                           <div className="tp-services__3-thumb mb-30">
                             <a
-                              href="https://etorisoft.com/wp/avtrix/service-details/"
+                              href="/"
                               rel="nofollow"
                               target="_self"
                             >
@@ -987,7 +987,7 @@ const ServiceThirdQuality = () => {
                               </div>
                               <a
                                 className="tp-services__3-title"
-                                href="https://etorisoft.com/wp/avtrix/service-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >
@@ -997,7 +997,7 @@ const ServiceThirdQuality = () => {
                             </div>
                             <div className="tp-services__3-button">
                               <a
-                                href="https://etorisoft.com/wp/avtrix/service-details/"
+                                href="/"
                                 rel="nofollow"
                                 target="_self"
                               >

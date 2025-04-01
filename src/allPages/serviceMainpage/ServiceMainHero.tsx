@@ -87,7 +87,7 @@ const ServiceMainHero = () => {
                           </a>
                         </span>
                         <a
-                          href="https://etorisoft.com/wp/avtrix/contact/"
+                          href="/contact/"
                           rel="nofollow"
                           target="_self"
                         >
@@ -116,7 +116,7 @@ const ServiceMainHero = () => {
                           }}
                         >
                           <a
-                            href="https://etorisoft.com/wp/avtrix/contact/"
+                            href="/contact/"
                             rel="nofollow"
                             target="_self"
                           >

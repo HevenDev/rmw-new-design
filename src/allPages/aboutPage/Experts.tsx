@@ -27,7 +27,7 @@ const Experts = () => {
                         </h3>
                         <Link
                           className="tp-btn-secondary mr-40"
-                          href=""
+                          href="/"
                           target="_self"
                           rel="nofollow"
                         >
@@ -70,7 +70,7 @@ const Experts = () => {
                             >
                               <div className="tp-team__3-thumb p-relative">
                                 <Link
-                                  href=""
+                                  href="/"
                                   rel="nofollow"
                                   target="_self"
                                 >
@@ -82,7 +82,7 @@ const Experts = () => {
                                 </Link>
                                 <div className="tp-team__3-action">
                                   <Link
-                                    href=""
+                                    href="/"
                                     rel="nofollow"
                                     target="_self"
                                   >
@@ -129,7 +129,7 @@ const Experts = () => {
                                 <div className="tp-team__3-text">
                                   <h3 className="tp-team__3-title">
                                     <Link
-                                      href="#"
+                                      href="/"
                                       rel="nofollow"
                                       target="_self"
                                     >
@@ -361,7 +361,7 @@ const Experts = () => {
                                 </Link>
                                 <div className="tp-team__3-action">
                                   <Link
-                                    href="https://etorisoft.com/wp/avtrix/team-details/"
+                                    href="/team-details/"
                                     rel="nofollow"
                                     target="_self"
                                   >
@@ -408,7 +408,7 @@ const Experts = () => {
                                 <div className="tp-team__3-text">
                                   <h3 className="tp-team__3-title">
                                     <Link
-                                      href="https://etorisoft.com/wp/avtrix/team-details/"
+                                      href="/team-details/"
                                       rel="nofollow"
                                       target="_self"
                                     >
@@ -422,7 +422,7 @@ const Experts = () => {
                                 </div>
                                 <div className="tp-team__3-link">
                                   <Link
-                                    href="https://etorisoft.com/wp/avtrix/team-details/"
+                                    href="/team-details/"
                                     rel="nofollow"
                                     target="_self"
                                   >

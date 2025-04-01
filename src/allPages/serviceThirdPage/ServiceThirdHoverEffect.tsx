@@ -24,7 +24,7 @@ const ServiceThirdHoverEffect = () => {
                         <div className="col-xl-12">
                             <div className="tp-featured__2-text-box mb-90">
                                                                     <div className="tp-featured__2-item tp-hover__reveal-item wow tpFadeInUp" data-wow-duration="1s" data-wow-delay=".3s" style={{visibility: "visible", animationDuration: "1s", animationDelay: "0.3s", animationName: "tpFadeInUp"}}>
-                                        <a href="https://etorisoft.com/wp/avtrix/portfolio-details/" target="_self" rel="nofollow">
+                                        <a href="/" target="_self" rel="nofollow">
                                             <div className="tp-featured__2-content">
                                                 <h3 className="tp-featured__2-title">
                                                     CUSTOM WEB DESIGN                                                </h3>
@@ -34,7 +34,7 @@ const ServiceThirdHoverEffect = () => {
                                         </div>
                                     </div>
                                                                     <div className="tp-featured__2-item tp-hover__reveal-item wow tpFadeInUp" data-wow-duration="1s" data-wow-delay=".5s" style={{visibility: "visible", animationDuration: "1s", animationDelay: "0.5s", animationName: "tpFadeInUp"}}>
-                                        <a href="https://etorisoft.com/wp/avtrix/portfolio-details/" target="_self" rel="nofollow">
+                                        <a href="/" target="_self" rel="nofollow">
                                             <div className="tp-featured__2-content">
                                                 <h3 className="tp-featured__2-title">
                                                     WEB DEVELOPMENT                                                </h3>
@@ -44,7 +44,7 @@ const ServiceThirdHoverEffect = () => {
                                         </div>
                                     </div>
                                                                     <div className="tp-featured__2-item tp-hover__reveal-item wow tpFadeInUp" data-wow-duration="1s" data-wow-delay=".7s" style={{visibility: "visible", animationDuration: "1s", animationDelay: "0.7s", animationName: "tpFadeInUp"}}>
-                                        <a href="https://etorisoft.com/wp/avtrix/portfolio-details/" target="_self" rel="nofollow">
+                                        <a href="/" target="_self" rel="nofollow">
                                             <div className="tp-featured__2-content">
                                                 <h3 className="tp-featured__2-title">
                                                     UI/UX DESIGNER                                                </h3>
@@ -54,7 +54,7 @@ const ServiceThirdHoverEffect = () => {
                                         </div>
                                     </div>
                                                                     <div className="tp-featured__2-item tp-hover__reveal-item wow tpFadeInUp" data-wow-duration="1s" data-wow-delay=".9s" style={{visibility: "visible", animationDuration: "1s", animationDelay: "0.9s", animationName: "tpFadeInUp"}}>
-                                        <a href="https://etorisoft.com/wp/avtrix/portfolio-details/" target="_self" rel="nofollow">
+                                        <a href="/" target="_self" rel="nofollow">
                                             <div className="tp-featured__2-content">
                                                 <h3 className="tp-featured__2-title">
                                                     CUSTOM WEB DESIGN                                                </h3>
@@ -66,7 +66,7 @@ const ServiceThirdHoverEffect = () => {
                                                             </div>
                                                             <div className="tp-featured__2-action p-relative text-center wow tpFadeInUp" data-wow-duration=".9s" data-wow-delay=".3s" style={{visibility: "visible", animationDuration: "0.9s", animationDelay: "0.3s", animationName: "tpFadeInUp"}}>
                                     <div className="tp-featured__2-button">
-                                        <a href="https://etorisoft.com/wp/avtrix/portfolio-03/" target="_self" rel="nofollow">
+                                        <a href="/" target="_self" rel="nofollow">
                                             <b>EXPLORE MORE</b>
                                             <span>
                                                 <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -46,7 +46,7 @@ const ServiceMainTalk = () => {
                     <div className="col-xl-4 col-lg-4 col-md-4">
                       <div className="tp-cta__3-action d-none d-md-block text-md-end">
                         <a
-                          href="https://etorisoft.com/wp/avtrix/contact/"
+                          href="/contact/"
                           target="_self"
                           rel="nofollow"
                         >

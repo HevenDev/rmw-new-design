@@ -173,7 +173,7 @@ info@ritzmediaworld.com">
                           id="menu-item-135"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-135"
                         >
-                          <Link href="https://etorisoft.com/wp/avtrix/contact/">
+                          <Link href="/contact/">
                             Digital Marketing
                           </Link>
                         </li>
@@ -181,7 +181,7 @@ info@ritzmediaworld.com">
                           id="menu-item-136"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-136"
                         >
-                          <Link href="https://etorisoft.com/wp/avtrix/portfolio-details/">
+                          <Link href="/">
                             Print Advertising
                           </Link>
                         </li>
@@ -189,7 +189,7 @@ info@ritzmediaworld.com">
                           id="menu-item-137"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-137"
                         >
-                          <Link href="https://etorisoft.com/wp/avtrix/service-details/">
+                          <Link href="/">
                             Radio Advertising
                           </Link>
                         </li>
@@ -197,7 +197,7 @@ info@ritzmediaworld.com">
                           id="menu-item-138"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"
                         >
-                          <Link href="https://etorisoft.com/wp/avtrix/service/">
+                          <Link href="/service/">
                             Creative Services
                           </Link>
                         </li>
@@ -205,7 +205,7 @@ info@ritzmediaworld.com">
                           id="menu-item-139"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"
                         >
-                          <Link href="https://etorisoft.com/wp/avtrix/about/">
+                          <Link href="/about/">
                             Web Development
                           </Link>
                         </li>
@@ -213,7 +213,7 @@ info@ritzmediaworld.com">
                           id="menu-item-139"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"
                         >
-                          <Link href="https://etorisoft.com/wp/avtrix/about/">
+                          <Link href="/about/">
                             Celebrity Endorsements
                           </Link>
                         </li>

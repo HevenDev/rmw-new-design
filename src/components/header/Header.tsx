@@ -120,7 +120,7 @@ const Header = () => {
                                       <div className="homemenu-content text-center">
                                         <h4 className="homemenu-title">
                                           <Link
-                                            href="https://etorisoft.com/wp/avtrix/"
+                                            href="/"
                                             target="_self"
                                             rel="nofollow"
                                           >

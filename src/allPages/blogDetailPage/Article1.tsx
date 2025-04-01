@@ -122,7 +122,7 @@ const Article1 = () => {
                 </div>
                 <div className="postbox__meta-box mb-15">
                   <a
-                    href="https://etorisoft.com/wp/avtrix/author/admin/"
+                    href="/"
                     className="postbox__meta-title"
                   >
                     <span>
@@ -228,32 +228,32 @@ const Article1 = () => {
                 <h3 className="sidebar__widget-title">Categories</h3>
                 <ul>
                   <li className="cat-item cat-item-2">
-                    <a href="https://etorisoft.com/wp/avtrix/category/agency/">
+                    <a href="/">
                       Agency
                     </a>
                   </li>
                   <li className="cat-item cat-item-3">
-                    <a href="https://etorisoft.com/wp/avtrix/category/business/">
+                    <a href="/">
                       Business
                     </a>
                   </li>
                   <li className="cat-item cat-item-4">
-                    <a href="https://etorisoft.com/wp/avtrix/category/marketing/">
+                    <a href="/">
                       Marketing
                     </a>
                   </li>
                   <li className="cat-item cat-item-5">
-                    <a href="https://etorisoft.com/wp/avtrix/category/software/">
+                    <a href="/">
                       Software
                     </a>
                   </li>
                   <li className="cat-item cat-item-6">
-                    <a href="https://etorisoft.com/wp/avtrix/category/technology/">
+                    <a href="/">
                       Technology
                     </a>
                   </li>
                   <li className="cat-item cat-item-1">
-                    <a href="https://etorisoft.com/wp/avtrix/category/uncategorized/">
+                    <a href="/">
                       Uncategorized
                     </a>
                   </li>
@@ -270,7 +270,7 @@ const Article1 = () => {
                     .map((tag, index) => (
                       <a
                         key={index}
-                        href={`https://etorisoft.com/wp/avtrix/tag/${tag}/`}
+                        // href={`https://etorisoft.com/wp/avtrix/tag/${tag}/`}
                         className="tag-cloud-link"
                         style={{ fontSize: "16.4pt" }}
                       >

@@ -120,7 +120,7 @@ const Awards = () => {
                             <div className="tp-awards__right">
                               <div className="tp-awards__icon">
                                 <Link
-                                  href="https://etorisoft.com/wp/avtrix/about/"
+                                  href="/about/"
                                   rel="nofollow"
                                   target="_self"
                                 >

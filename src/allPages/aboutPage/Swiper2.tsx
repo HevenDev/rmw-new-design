@@ -5,6 +5,7 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "@/app/marque.css";
+import Link from "next/link";
 
 const Swiper2 = () => {
   return (
@@ -22,7 +23,7 @@ const Swiper2 = () => {
               spaceBetween={30}
               centeredSlides={true}
               allowTouchMove={false}
-              speed={20000}
+              speed={10000}
               autoplay={{
                 delay: 0,
                 disableOnInteraction: false,
@@ -41,7 +42,10 @@ const Swiper2 = () => {
               >
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
+                  <Link
+                  href="/service/digital-marketing"
+                > DIGITAL _ MARKETING
+                </Link>
                   </h3>
                 </div>
               </SwiperSlide>
@@ -53,8 +57,11 @@ const Swiper2 = () => {
                 style={{ marginLeft: "30px" }}
               >
                 <div className="tp-text__4-wrap">
-                  <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
+                <h3 className="tp-text__9-text">
+                <Link
+                  href="/service/printing-marketing"
+                >  PRINTING_MARKETING
+                </Link>
                   </h3>
                 </div>
               </SwiperSlide>
@@ -66,8 +73,11 @@ const Swiper2 = () => {
                 style={{ marginLeft: "30px" }}
               >
                 <div className="tp-text__4-wrap">
-                  <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
+                <h3 className="tp-text__9-text">
+                <Link
+                  href="/service/radio-marketing"
+                >RADIO_MARKETING
+                </Link>
                   </h3>
                 </div>
               </SwiperSlide>
@@ -79,8 +89,11 @@ const Swiper2 = () => {
                 style={{ marginLeft: "30px" }}
               >
                 <div className="tp-text__4-wrap">
-                  <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
+                <h3 className="tp-text__9-text">
+                <Link
+                  href="/service/creative-services"
+                > CREATIVE_SERVICES
+                </Link>
                   </h3>
                 </div>
               </SwiperSlide>
@@ -92,8 +105,11 @@ const Swiper2 = () => {
                 style={{ marginLeft: "30px" }}
               >
                 <div className="tp-text__4-wrap">
-                  <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
+                <h3 className="tp-text__9-text">
+                <Link
+                  href="/service/content-marketing"
+                > CONTENT_MARKETING
+                </Link>
                   </h3>
                 </div>
               </SwiperSlide>
@@ -105,151 +121,11 @@ const Swiper2 = () => {
                 style={{ marginLeft: "30px" }}
               >
                 <div className="tp-text__4-wrap">
-                  <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
-                  </h3>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide
-                className="swiper-slide swiper-slide-duplicate-active"
-                data-swiper-slide-index="0"
-                role="group"
-                aria-label="7 / 18"
-                style={{ marginLeft: "30px" }}
-              >
-                <div className="tp-text__4-wrap">
-                  <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
-                  </h3>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide
-                className="swiper-slide swiper-slide-duplicate-next"
-                data-swiper-slide-index="1"
-                role="group"
-                aria-label="8 / 18"
-                style={{ marginLeft: "30px" }}
-              >
-                <div className="tp-text__4-wrap">
-                  <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
-                  </h3>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide
-                className="swiper-slide"
-                data-swiper-slide-index="2"
-                role="group"
-                aria-label="9 / 18"
-                style={{ marginLeft: "30px" }}
-              >
-                <div className="tp-text__4-wrap">
-                  <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
-                  </h3>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide
-                className="swiper-slide"
-                data-swiper-slide-index="3"
-                role="group"
-                aria-label="10 / 18"
-                style={{ marginLeft: "30px" }}
-              >
-                <div className="tp-text__4-wrap">
-                  <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
-                  </h3>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide
-                className="swiper-slide"
-                data-swiper-slide-index="4"
-                role="group"
-                aria-label="11 / 18"
-                style={{ marginLeft: "30px" }}
-              >
-                <div className="tp-text__4-wrap">
-                  <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
-                  </h3>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide
-                className="swiper-slide swiper-slide-prev"
-                data-swiper-slide-index="5"
-                role="group"
-                aria-label="12 / 18"
-                style={{ marginLeft: "30px" }}
-              >
-                <div className="tp-text__4-wrap">
-                  <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
-                  </h3>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide
-                className="swiper-slide swiper-slide-duplicate swiper-slide-active"
-                data-swiper-slide-index="0"
-                role="group"
-                aria-label="13 / 18"
-                style={{ marginLeft: "30px" }}
-              >
-                <div className="tp-text__4-wrap">
-                  <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
-                  </h3>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide
-                className="swiper-slide swiper-slide-duplicate swiper-slide-next"
-                data-swiper-slide-index="1"
-                role="group"
-                aria-label="14 / 18"
-                style={{ marginLeft: "30px" }}
-              >
-                <div className="tp-text__4-wrap">
-                  <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
-                  </h3>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide
-                className="swiper-slide swiper-slide-duplicate"
-                data-swiper-slide-index="2"
-                role="group"
-                aria-label="15 / 18"
-                style={{ marginLeft: "30px" }}
-              >
-                <div className="tp-text__4-wrap">
-                  <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
-                  </h3>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide
-                className="swiper-slide swiper-slide-duplicate"
-                data-swiper-slide-index="3"
-                role="group"
-                aria-label="16 / 18"
-                style={{ marginLeft: "30px" }}
-              >
-                <div className="tp-text__4-wrap">
-                  <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
-                  </h3>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide
-                className="swiper-slide swiper-slide-duplicate"
-                data-swiper-slide-index="4"
-                role="group"
-                aria-label="17 / 18"
-                style={{ marginLeft: "30px" }}
-              >
-                <div className="tp-text__4-wrap">
-                  <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
+                <h3 className="tp-text__9-text">
+                <Link
+                  href="/service/web-development"
+                > WEB_DEVELOPMENT
+                </Link>
                   </h3>
                 </div>
               </SwiperSlide>
@@ -257,15 +133,19 @@ const Swiper2 = () => {
                 className="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
                 data-swiper-slide-index="5"
                 role="group"
-                aria-label="18 / 18"
+                aria-label="7 / 18"
                 style={{ marginLeft: "30px" }}
               >
                 <div className="tp-text__4-wrap">
-                  <h3 className="tp-text__9-text">
-                    MARKETING _ E DESIGNER _ WEB DEVELOPMENT _ CHEMICATION
+                <h3 className="tp-text__9-text">
+                <Link
+                  href="/service/celebrity-endorsements"
+                > CELEBRITY_ENDORSEMENTS
+                </Link>
                   </h3>
                 </div>
               </SwiperSlide>
+            
             </Swiper>
             <span
               className="swiper-notification"

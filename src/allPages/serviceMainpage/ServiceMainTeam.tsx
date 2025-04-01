@@ -316,7 +316,7 @@ const ServiceMainTeam = () => {
                           </span>
                           <h3 className="tp-team__2-title">
                             <a
-                              href="https://etorisoft.com/wp/avtrix/team-details/"
+                              href="/"
                               target="_self"
                               rel="nofollow"
                             >
@@ -367,7 +367,7 @@ const ServiceMainTeam = () => {
                           </span>
                           <h3 className="tp-team__2-title">
                             <a
-                              href="https://etorisoft.com/wp/avtrix/team-details/"
+                              href="/"
                               target="_self"
                               rel="nofollow"
                             >
@@ -418,7 +418,7 @@ const ServiceMainTeam = () => {
                           </span>
                           <h3 className="tp-team__2-title">
                             <a
-                              href="https://etorisoft.com/wp/avtrix/portfolio-details/"
+                              href="/"
                               target="_self"
                               rel="nofollow"
                             >
@@ -433,7 +433,7 @@ const ServiceMainTeam = () => {
                   <div className="tp-team__2-action text-center mt-90">
                     <a
                       className="tp-btn-secondary"
-                      href="https://etorisoft.com/wp/avtrix/team/"
+                      href="/"
                       rel="nofollow"
                       target="_self"
                     >

@@ -44,7 +44,7 @@ const Stratagies = () => {
                   </Link>
                 </span>
                 <Link
-                  href="https://etorisoft.com/wp/avtrix/service/"
+                  href="/service/"
                   rel="nofollow"
                   target="_self"
                 >

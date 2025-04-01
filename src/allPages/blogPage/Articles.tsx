@@ -125,38 +125,93 @@ const Pagination: React.FC<PaginationProps> = ({ totalPages, currentPage, onPage
 
   return (
     <nav className="my-4">
-      <ul className="pagination justify-content-center">
-        {/* Previous Button */}
-        <li
-          className={`page-item ${currentPage === 1 ? "disabled" : ""}`}
-          onClick={() => currentPage > 1 && onPageChange(currentPage - 1)}
-          style={{ cursor: "pointer" }}
+    <ul
+      className="pagination justify-content-center"
+      style={{
+        backgroundColor: "#111", // Black background
+        padding: "10px",
+        borderRadius: "8px",
+        display: "inline-flex",
+      }}
+    >
+      {/* Previous Button */}
+      <li
+        className={`page-item ${currentPage === 1 ? "disabled" : ""}`}
+        onClick={() => currentPage > 1 && onPageChange(currentPage - 1)}
+        style={{
+          cursor: "pointer",
+          margin: "0 5px",
+        }}
+      >
+        <span
+          className="page-link"
+          style={{
+            backgroundColor: currentPage === 1 ? "#555" : "#fddf82", // Darker gold for disabled, vibrant gold for active
+            color: "#111",
+            border: "none",
+            padding: "8px 12px",
+            borderRadius: "5px",
+            fontWeight: "bold",
+          }}
         >
-          <span className="page-link">« Prev</span>
-        </li>
-
-        {/* Page Numbers */}
-        {pageNumbers.map((page, index) => (
-          <li
-            key={index}
-            className={`page-item ${currentPage === page ? "active" : ""}`}
-            onClick={() => typeof page === "number" && onPageChange(page)}
-            style={{ cursor: page === "..." ? "default" : "pointer" }}
+          « Prev
+        </span>
+      </li>
+  
+      {/* Page Numbers */}
+      {pageNumbers.map((page, index) => (
+        <li
+          key={index}
+          className={`page-item ${currentPage === page ? "active" : ""}`}
+          onClick={() => typeof page === "number" && onPageChange(page)}
+          style={{
+            cursor: page === "..." ? "default" : "pointer",
+            margin: "0 5px",
+          }}
+        >
+          <span
+            className="page-link"
+            style={{
+              backgroundColor: currentPage === page ? "#fddf82" : "#222",
+              color: currentPage === page ? "#111" : "#fddf82",
+              fontWeight: "bold",
+              border: "none",
+              padding: "8px 12px",
+              borderRadius: "5px",
+              transition: "0.3s",
+            }}
           >
-            <span className="page-link">{page}</span>
-          </li>
-        ))}
-
-        {/* Next Button */}
-        <li
-          className={`page-item ${currentPage === totalPages ? "disabled" : ""}`}
-          onClick={() => currentPage < totalPages && onPageChange(currentPage + 1)}
-          style={{ cursor: "pointer" }}
-        >
-          <span className="page-link">Next »</span>
+            {page}
+          </span>
         </li>
-      </ul>
-    </nav>
+      ))}
+  
+      {/* Next Button */}
+      <li
+        className={`page-item ${currentPage === totalPages ? "disabled" : ""}`}
+        onClick={() => currentPage < totalPages && onPageChange(currentPage + 1)}
+        style={{
+          cursor: "pointer",
+          margin: "0 5px",
+        }}
+      >
+        <span
+          className="page-link"
+          style={{
+            backgroundColor: currentPage === totalPages ? "#555" : "#fddf82",
+            color: "#111",
+            border: "none",
+            padding: "8px 12px",
+            borderRadius: "5px",
+            fontWeight: "bold",
+          }}
+        >
+          Next »
+        </span>
+      </li>
+    </ul>
+  </nav>
+  
   );
 };
 

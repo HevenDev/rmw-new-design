@@ -61,7 +61,7 @@ const Projects = () => {
                                   alt=""
                                 />
                                 <div className="tp-project__icon">
-                                  <Link href="https://etorisoft.com/wp/avtrix/portfolio-details/"
+                                  <Link href="/"
                                     rel="nofollow"
                                     target="_self"
                                   >
@@ -89,7 +89,7 @@ const Projects = () => {
                             <div className="tp-project__content">
                               <h3 className="tp-project__title">
                                 <Link
-                                  href="https://etorisoft.com/wp/avtrix/portfolio-details/"
+                                  href="/"
                                   rel="nofollow"
                                   target="_self"
                                 >
@@ -117,7 +117,7 @@ const Projects = () => {
                                   alt=""
                                 />
                                 <div className="tp-project__icon">
-                                  <Link href="https://etorisoft.com/wp/avtrix/portfolio-details/"
+                                  <Link href="/"
                                     rel="nofollow"
                                     target="_self"
                                   >
@@ -145,7 +145,7 @@ const Projects = () => {
                             <div className="tp-project__content">
                               <h3 className="tp-project__title">
                                 <Link
-                                  href="https://etorisoft.com/wp/avtrix/portfolio-details/"
+                                  href="/"
                                   rel="nofollow"
                                   target="_self"
                                 >
@@ -173,7 +173,7 @@ const Projects = () => {
                                   alt=""
                                 />
                                 <div className="tp-project__icon">
-                                  <Link href="https://etorisoft.com/wp/avtrix/portfolio-details/"
+                                  <Link href="/"
                                     rel="nofollow"
                                     target="_self"
                                   >
@@ -201,7 +201,7 @@ const Projects = () => {
                             <div className="tp-project__content">
                               <h3 className="tp-project__title">
                                 <Link
-                                  href="https://etorisoft.com/wp/avtrix/portfolio-details/"
+                                  href="/"
                                   rel="nofollow"
                                   target="_self"
                                 >
@@ -229,7 +229,7 @@ const Projects = () => {
                                   alt=""
                                 />
                                 <div className="tp-project__icon">
-                                  <Link href="https://etorisoft.com/wp/avtrix/portfolio-details/"
+                                  <Link href="/"
                                     rel="nofollow"
                                     target="_self"
                                   >
@@ -257,7 +257,7 @@ const Projects = () => {
                             <div className="tp-project__content">
                               <h3 className="tp-project__title">
                                 <Link
-                                  href="https://etorisoft.com/wp/avtrix/portfolio-details/"
+                                  href="/"
                                   rel="nofollow"
                                   target="_self"
                                 >

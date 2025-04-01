@@ -476,14 +476,14 @@ const Form = () => {
                 >
                 <div className="tp-contact__text">
                   <h3 className="tp-contact__title">Contact</h3>
-                  <Link href="//" className="tp-contact__title-sm">
+                  <Link href="/" className="tp-contact__title-sm">
                     09220516777 <br />
                     07290002168
                   </Link>
                 </div>
                 <div className="tp-contact__email">
                   <h3 className="tp-contact__title">Email</h3>
-                  <Link href="//" className="tp-contact__title-sm">
+                  <Link href="/" className="tp-contact__title-sm">
                     info@ritzmediaworld.com
                   </Link>
                 </div>
@@ -509,12 +509,12 @@ const Form = () => {
                 <div className="tp-contact__social">
                   <h3 className="tp-contact__title">Follow</h3>
                   <div className="tp-contact__social-link">
-                    <Link href="#" target="http://1" rel="http://1">
+                    <Link href="#" >
                       <i aria-hidden="true">
                         <FaFacebookF />
                       </i>{" "}
                     </Link>
-                    <Link href="#" target="http://1" rel="http://1">
+                    <Link href="#" >
                       <i aria-hidden="true">
                         <FaInstagram />{" "}
                       </i>{" "}
