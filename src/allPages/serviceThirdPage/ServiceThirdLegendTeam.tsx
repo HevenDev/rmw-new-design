@@ -1,17 +1,16 @@
 "use client";
 
 import { useSplitText } from "@/hooks/useSplitText";
-import { FaArrowLeft, FaArrowRight  } from "react-icons/fa6";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 
 import "swiper/css/navigation";
-import { FreeMode, Navigation  } from "swiper/modules";
+import { FreeMode, Navigation } from "swiper/modules";
 
 const ServiceThirdLegendTeam = () => {
-
   const textRefs = useSplitText();
 
   return (
@@ -44,11 +43,17 @@ const ServiceThirdLegendTeam = () => {
                 <div className="tp-team__3-top p-relative mb-60">
                   <div className="row align-items-center">
                     <div className="col-md-6 col-sm-7">
-                      <div ref={(el) => { if (el) textRefs.current.push(el) }}
+                      <div
+                        ref={(el) => {
+                          if (el) textRefs.current.push(el);
+                        }}
                         className="tp-team__3-title-box mb-30 tp-split__text tp-split__in-right"
                         style={{ perspective: "400px" }}
                       >
-                        <div ref={(el) => { if (el) textRefs.current.push(el) }}
+                        <div
+                          ref={(el) => {
+                            if (el) textRefs.current.push(el);
+                          }}
                           className="tp-split__line"
                           style={{
                             display: "block",
@@ -288,14 +293,14 @@ const ServiceThirdLegendTeam = () => {
                           aria-label="Previous slide"
                           aria-controls="swiper-wrapper-b210b3eb231a6c870"
                         >
-                          <FaArrowLeft style={{fontSize:"20px"}} />
+                          <FaArrowLeft style={{ fontSize: "20px" }} />
                         </button>
                         <button
                           className="team-next"
                           aria-label="Next slide"
                           aria-controls="swiper-wrapper-b210b3eb231a6c870"
                         >
-                          <FaArrowRight style={{fontSize:"20px"}}/>
+                          <FaArrowRight style={{ fontSize: "20px" }} />
                         </button>
                       </div>
                     </div>
@@ -305,23 +310,23 @@ const ServiceThirdLegendTeam = () => {
                 <div className="tp-team__wrap">
                   <div className="swiper-container tp-team__3-active swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
                     <Swiper
-      spaceBetween={30}
-      slidesPerView={4}
-      loop={true}
-      autoplay={false}
-      speed={1200}
-      breakpoints={{
-        1200: { slidesPerView: 4 },
-        992: { slidesPerView: 3 },
-        768: { slidesPerView: 2 },
-        576: { slidesPerView: 1 },
-        0: { slidesPerView: 1 },
-      }}
-      navigation={{
-        nextEl: ".team-next",
-        prevEl: ".team-prev",
-      }}
-      modules={[FreeMode, Navigation]}
+                      spaceBetween={30}
+                      slidesPerView={4}
+                      loop={true}
+                      autoplay={false}
+                      speed={1200}
+                      breakpoints={{
+                        1200: { slidesPerView: 4 },
+                        992: { slidesPerView: 3 },
+                        768: { slidesPerView: 2 },
+                        576: { slidesPerView: 1 },
+                        0: { slidesPerView: 1 },
+                      }}
+                      navigation={{
+                        nextEl: ".team-next",
+                        prevEl: ".team-prev",
+                      }}
+                      modules={[FreeMode, Navigation]}
                       className="swiper-wrapper"
                       id="swiper-wrapper-b210b3eb231a6c870"
                       aria-live="polite"
@@ -345,11 +350,7 @@ const ServiceThirdLegendTeam = () => {
                           }}
                         >
                           <div className="tp-team__3-thumb p-relative">
-                            <a
-                              href="/"
-                              rel="nofollow"
-                              target="_self"
-                            >
+                            <a href="/" rel="nofollow" target="_self">
                               <img
                                 decoding="async"
                                 src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/team-3-3.jpg"
@@ -357,11 +358,7 @@ const ServiceThirdLegendTeam = () => {
                               />
                             </a>
                             <div className="tp-team__3-action">
-                              <a
-                                href="/"
-                                rel="nofollow"
-                                target="_self"
-                              >
+                              <a href="/" rel="nofollow" target="_self">
                                 <span>
                                   <svg
                                     width="42"
@@ -404,11 +401,7 @@ const ServiceThirdLegendTeam = () => {
                           <div className="tp-team__3-content d-flex align-items-center justify-content-between">
                             <div className="tp-team__3-text">
                               <h3 className="tp-team__3-title">
-                                <a
-                                  href="/"
-                                  rel="nofollow"
-                                  target="_self"
-                                >
+                                <a href="/" rel="nofollow" target="_self">
                                   {" "}
                                   Kristin Watson{" "}
                                 </a>
@@ -418,11 +411,7 @@ const ServiceThirdLegendTeam = () => {
                               </span>
                             </div>
                             <div className="tp-team__3-link">
-                              <a
-                                href="/"
-                                rel="nofollow"
-                                target="_self"
-                              >
+                              <a href="/" rel="nofollow" target="_self">
                                 <span>
                                   <i className="fas fa-long-arrow-right"></i>
                                 </span>
@@ -450,11 +439,7 @@ const ServiceThirdLegendTeam = () => {
                           }}
                         >
                           <div className="tp-team__3-thumb p-relative">
-                            <a
-                              href="/"
-                              rel="nofollow"
-                              target="_self"
-                            >
+                            <a href="/" rel="nofollow" target="_self">
                               <img
                                 decoding="async"
                                 src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/team-3-4.png"
@@ -462,11 +447,7 @@ const ServiceThirdLegendTeam = () => {
                               />
                             </a>
                             <div className="tp-team__3-action">
-                              <a
-                                href="/"
-                                rel="nofollow"
-                                target="_self"
-                              >
+                              <a href="/" rel="nofollow" target="_self">
                                 <span>
                                   <svg
                                     width="42"
@@ -509,11 +490,7 @@ const ServiceThirdLegendTeam = () => {
                           <div className="tp-team__3-content d-flex align-items-center justify-content-between">
                             <div className="tp-team__3-text">
                               <h3 className="tp-team__3-title">
-                                <a
-                                  href="/"
-                                  rel="nofollow"
-                                  target="_self"
-                                >
+                                <a href="/" rel="nofollow" target="_self">
                                   {" "}
                                   Ronald Richards{" "}
                                 </a>
@@ -523,11 +500,7 @@ const ServiceThirdLegendTeam = () => {
                               </span>
                             </div>
                             <div className="tp-team__3-link">
-                              <a
-                                href="/"
-                                rel="nofollow"
-                                target="_self"
-                              >
+                              <a href="/" rel="nofollow" target="_self">
                                 <span>
                                   <i className="fas fa-long-arrow-right"></i>
                                 </span>
@@ -555,11 +528,7 @@ const ServiceThirdLegendTeam = () => {
                           }}
                         >
                           <div className="tp-team__3-thumb p-relative">
-                            <a
-                              href="/"
-                              rel="nofollow"
-                              target="_self"
-                            >
+                            <a href="/" rel="nofollow" target="_self">
                               <img
                                 decoding="async"
                                 src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/team-3-1.png"
@@ -567,11 +536,7 @@ const ServiceThirdLegendTeam = () => {
                               />
                             </a>
                             <div className="tp-team__3-action">
-                              <a
-                                href="/"
-                                rel="nofollow"
-                                target="_self"
-                              >
+                              <a href="/" rel="nofollow" target="_self">
                                 <span>
                                   <svg
                                     width="42"
@@ -614,11 +579,7 @@ const ServiceThirdLegendTeam = () => {
                           <div className="tp-team__3-content d-flex align-items-center justify-content-between">
                             <div className="tp-team__3-text">
                               <h3 className="tp-team__3-title">
-                                <a
-                                  href="/"
-                                  rel="nofollow"
-                                  target="_self"
-                                >
+                                <a href="/" rel="nofollow" target="_self">
                                   {" "}
                                   Alextina Ditarson{" "}
                                 </a>
@@ -628,11 +589,7 @@ const ServiceThirdLegendTeam = () => {
                               </span>
                             </div>
                             <div className="tp-team__3-link">
-                              <a
-                                href="/"
-                                rel="nofollow"
-                                target="_self"
-                              >
+                              <a href="/" rel="nofollow" target="_self">
                                 <span>
                                   <i className="fas fa-long-arrow-right"></i>
                                 </span>
@@ -660,11 +617,7 @@ const ServiceThirdLegendTeam = () => {
                           }}
                         >
                           <div className="tp-team__3-thumb p-relative">
-                            <a
-                              href="/"
-                              rel="nofollow"
-                              target="_self"
-                            >
+                            <a href="/" rel="nofollow" target="_self">
                               <img
                                 decoding="async"
                                 src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/team-3-2.png"
@@ -672,11 +625,7 @@ const ServiceThirdLegendTeam = () => {
                               />
                             </a>
                             <div className="tp-team__3-action">
-                              <a
-                                href="/"
-                                rel="nofollow"
-                                target="_self"
-                              >
+                              <a href="/" rel="nofollow" target="_self">
                                 <span>
                                   <svg
                                     width="42"
@@ -719,11 +668,7 @@ const ServiceThirdLegendTeam = () => {
                           <div className="tp-team__3-content d-flex align-items-center justify-content-between">
                             <div className="tp-team__3-text">
                               <h3 className="tp-team__3-title">
-                                <a
-                                  href="/"
-                                  rel="nofollow"
-                                  target="_self"
-                                >
+                                <a href="/" rel="nofollow" target="_self">
                                   {" "}
                                   Robin Khan{" "}
                                 </a>
@@ -733,11 +678,7 @@ const ServiceThirdLegendTeam = () => {
                               </span>
                             </div>
                             <div className="tp-team__3-link">
-                              <a
-                                href="/"
-                                rel="nofollow"
-                                target="_self"
-                              >
+                              <a href="/" rel="nofollow" target="_self">
                                 <span>
                                   <i className="fas fa-long-arrow-right"></i>
                                 </span>
@@ -765,11 +706,7 @@ const ServiceThirdLegendTeam = () => {
                           }}
                         >
                           <div className="tp-team__3-thumb p-relative">
-                            <a
-                              href="/"
-                              rel="nofollow"
-                              target="_self"
-                            >
+                            <a href="/" rel="nofollow" target="_self">
                               <img
                                 decoding="async"
                                 src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/team-3-3.jpg"
@@ -777,11 +714,7 @@ const ServiceThirdLegendTeam = () => {
                               />
                             </a>
                             <div className="tp-team__3-action">
-                              <a
-                                href="/"
-                                rel="nofollow"
-                                target="_self"
-                              >
+                              <a href="/" rel="nofollow" target="_self">
                                 <span>
                                   <svg
                                     width="42"
@@ -824,11 +757,7 @@ const ServiceThirdLegendTeam = () => {
                           <div className="tp-team__3-content d-flex align-items-center justify-content-between">
                             <div className="tp-team__3-text">
                               <h3 className="tp-team__3-title">
-                                <a
-                                  href="/"
-                                  rel="nofollow"
-                                  target="_self"
-                                >
+                                <a href="/" rel="nofollow" target="_self">
                                   {" "}
                                   Kristin Watson{" "}
                                 </a>
@@ -838,11 +767,7 @@ const ServiceThirdLegendTeam = () => {
                               </span>
                             </div>
                             <div className="tp-team__3-link">
-                              <a
-                                href="/"
-                                rel="nofollow"
-                                target="_self"
-                              >
+                              <a href="/" rel="nofollow" target="_self">
                                 <span>
                                   <i className="fas fa-long-arrow-right"></i>
                                 </span>
@@ -870,11 +795,7 @@ const ServiceThirdLegendTeam = () => {
                           }}
                         >
                           <div className="tp-team__3-thumb p-relative">
-                            <a
-                              href="/"
-                              rel="nofollow"
-                              target="_self"
-                            >
+                            <a href="/" rel="nofollow" target="_self">
                               <img
                                 decoding="async"
                                 src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/team-3-4.png"
@@ -882,11 +803,7 @@ const ServiceThirdLegendTeam = () => {
                               />
                             </a>
                             <div className="tp-team__3-action">
-                              <a
-                                href="/"
-                                rel="nofollow"
-                                target="_self"
-                              >
+                              <a href="/" rel="nofollow" target="_self">
                                 <span>
                                   <svg
                                     width="42"
@@ -929,11 +846,7 @@ const ServiceThirdLegendTeam = () => {
                           <div className="tp-team__3-content d-flex align-items-center justify-content-between">
                             <div className="tp-team__3-text">
                               <h3 className="tp-team__3-title">
-                                <a
-                                  href="/"
-                                  rel="nofollow"
-                                  target="_self"
-                                >
+                                <a href="/" rel="nofollow" target="_self">
                                   {" "}
                                   Ronald Richards{" "}
                                 </a>
@@ -943,11 +856,7 @@ const ServiceThirdLegendTeam = () => {
                               </span>
                             </div>
                             <div className="tp-team__3-link">
-                              <a
-                                href="/"
-                                rel="nofollow"
-                                target="_self"
-                              >
+                              <a href="/" rel="nofollow" target="_self">
                                 <span>
                                   <i className="fas fa-long-arrow-right"></i>
                                 </span>

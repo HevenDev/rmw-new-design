@@ -2,8 +2,43 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
+import styles from "./serviceThirdQuality.module.css";
+
 import "swiper/css";
 import "swiper/css/pagination";
+
+const cardData = [
+  {
+    id: 1,
+    image: "/home-images/home-swiper1-img1.jpeg",
+    content:
+      "SEO isn’t merely about ranking; it's about relevance. Our strategically-obsessed SEO experts ensure your website not only climbs the search results ladder but also captivates real human beings—transforming casual searchers into committed customers.",
+  },
+  {
+    id: 2,
+    image: "/home-images/home-swiper1-img1.jpeg",
+    content:
+      "SEO isn’t merely about ranking; it's about relevance. Our strategically-obsessed SEO experts ensure your website not only climbs the search results ladder but also captivates real human beings—transforming casual searchers into committed customers.",
+  },
+  {
+    id: 3,
+    image: "/home-images/home-swiper1-img1.jpeg",
+    content:
+      "SEO isn’t merely about ranking; it's about relevance. Our strategically-obsessed SEO experts ensure your website not only climbs the search results ladder but also captivates real human beings—transforming casual searchers into committed customers.",
+  },
+  {
+    id: 4,
+    image: "/home-images/home-swiper1-img1.jpeg",
+    content:
+      "SEO isn’t merely about ranking; it's about relevance. Our strategically-obsessed SEO experts ensure your website not only climbs the search results ladder but also captivates real human beings—transforming casual searchers into committed customers.",
+  },
+  {
+    id: 5,
+    image: "/home-images/home-swiper1-img1.jpeg",
+    content:
+      "SEO isn’t merely about ranking; it's about relevance. Our strategically-obsessed SEO experts ensure your website not only climbs the search results ladder but also captivates real human beings—transforming casual searchers into committed customers.",
+  },
+];
 
 const ServiceThirdQuality = () => {
   return (
@@ -28,37 +63,54 @@ const ServiceThirdQuality = () => {
               <div className="container">
                 <div className="tp-services__2-title-wrap mb-40">
                   <div className="row align-items-center">
-                    <div className="col-xl-7 col-lg-7 col-md-7">
+                    <div className="">
                       <div className="tp-services__3-title-box">
                         <div className="tp-section-title-wrap">
-                          <h3 className="tp-section-title">
-                            
-                            Committed For Deliver <span>Top</span> Quality
+                          <h3
+                            className="tp-section-title"
+                            style={{ width: "50%" }}
+                          >
+                            Committed For Deliver <span>Top</span> Quality{" "}
                             <span>Services</span>
                           </h3>
                         </div>
                       </div>
-                    </div>
-                    <div className="col-xl-5 col-lg-5 col-md-5">
                       <div
-                        className="tp-services__3-action text-md-end wow tpFadeInUp"
-                        data-wow-duration=".9s"
-                        data-wow-delay=".3s"
-                        style={{
-                          visibility: "visible",
-                          animationDuration: "0.9s",
-                          animationDelay: "0.3s",
-                          animationName: "tpFadeInUp",
-                        }}
+                        className={`${styles.serviceCardsMain}`}
                       >
-                        <a
-                          className="tp-btn-secondary"
-                          href="/service/"
-                          rel="nofollow"
-                          target="_self"
-                        >
-                          MORE SERVICES{" "}
-                        </a>
+                        {cardData.map((card, index) => (
+                         <div
+                         key={card.id}
+                         className={`${styles.serviceCard} ${index % 2 === 0 ? styles.row : styles.rowReverse}`}
+                       >
+                            {/* Image */}
+                            <img
+                              src={card.image}
+                              alt="Service"
+                              style={{
+                                width:"100%",
+                                maxWidth: "380px",
+                                borderRadius: "10px",
+                                flexShrink: 0,
+                                objectFit: "cover",
+                              }}
+                            />
+
+                            {/* Content */}
+                            <div className={`${styles.serviceContent}`}
+                              style={{
+                                padding: "10px",
+                                flex: 1,
+                                lineHeight: "1.6",
+                                fontWeight: "500",
+                                textAlign: "center",
+                              }}
+                            >
+                              <p style={{ fontSize: "20px",
+                                color: "white",}}>{card.content}</p>
+                            </div>
+                          </div>
+                        ))}
                       </div>
                     </div>
                   </div>
@@ -1041,9 +1093,7 @@ const ServiceThirdQuality = () => {
                     ></span>
                   </div>
                 </div> */}
-                <div className="services">
-                  
-                </div>
+                <div className="services"></div>
               </div>
             </section>
           </div>

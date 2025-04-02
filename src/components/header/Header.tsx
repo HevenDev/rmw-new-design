@@ -58,7 +58,7 @@ const Header = () => {
     <header>
       <div
         id="header-sticky"
-        className={`tp-header-top-area tp-header__style-1 tp-header__transparent tp-header__border pr-160 pl-160 ${styles.headerBackground}`}
+        className={`tp-header-top-area tp-header__style-1 tp-header__transparent tp-header__border pt-0 pb-0 pr-160 pl-160 ${styles.headerBackground}`}
       >
         <div className="container-fluid">
           <div className="row align-items-center">
@@ -115,7 +115,7 @@ const Header = () => {
                                 data-widget_type="tp-menu-demo.default"
                               >
                                 <div className="elementor-widget-container">
-                                  <div className="row gx-6 row-cols-1 row-cols-md-2 row-cols-lg-5 row-cols-xl-6">
+                                  <div className="row gx-7 row-cols-1 row-cols-md-2 row-cols-lg-5 row-cols-xl-7">
                                     <div className="col homemenu">
                                       <div className="homemenu-content text-center">
                                         <h4 className="homemenu-title">

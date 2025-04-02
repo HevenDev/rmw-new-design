@@ -83,7 +83,7 @@ const ServiceMainIdentity = () => {
                                 opacity: 1,
                               }}
                             >
-                              B
+                              t
                             </div>
                             <div
                               style={{
@@ -93,17 +93,7 @@ const ServiceMainIdentity = () => {
                                 opacity: 1,
                               }}
                             >
-                              u
-                            </div>
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                transform: "none",
-                                opacity: 1,
-                              }}
-                            >
-                              i
+                              e
                             </div>
                             <div
                               style={{
@@ -123,7 +113,7 @@ const ServiceMainIdentity = () => {
                                 opacity: 1,
                               }}
                             >
-                              d
+                              l
                             </div>
                           </div>{" "}
                           <span>
@@ -141,7 +131,7 @@ const ServiceMainIdentity = () => {
                                   opacity: 1,
                                 }}
                               >
-                                S
+                                s
                               </div>
                               <div
                                 style={{
@@ -151,7 +141,7 @@ const ServiceMainIdentity = () => {
                                   opacity: 1,
                                 }}
                               >
-                                u
+                                t
                               </div>
                               <div
                                 style={{
@@ -161,7 +151,7 @@ const ServiceMainIdentity = () => {
                                   opacity: 1,
                                 }}
                               >
-                                c
+                                o
                               </div>
                               <div
                                 style={{
@@ -171,7 +161,17 @@ const ServiceMainIdentity = () => {
                                   opacity: 1,
                                 }}
                               >
-                                c
+                                r
+                              </div>
+                              <div
+                                style={{
+                                  position: "relative",
+                                  display: "inline-block",
+                                  transform: "none",
+                                  opacity: 1,
+                                }}
+                              >
+                                i
                               </div>
                               <div
                                 style={{
@@ -193,46 +193,7 @@ const ServiceMainIdentity = () => {
                               >
                                 s
                               </div>
-                              <div
-                                style={{
-                                  position: "relative",
-                                  display: "inline-block",
-                                  transform: "none",
-                                  opacity: 1,
-                                }}
-                              >
-                                s
-                              </div>
-                              <div
-                                style={{
-                                  position: "relative",
-                                  display: "inline-block",
-                                  transform: "none",
-                                  opacity: 1,
-                                }}
-                              >
-                                f
-                              </div>
-                              <div
-                                style={{
-                                  position: "relative",
-                                  display: "inline-block",
-                                  transform: "none",
-                                  opacity: 1,
-                                }}
-                              >
-                                u
-                              </div>
-                              <div
-                                style={{
-                                  position: "relative",
-                                  display: "inline-block",
-                                  transform: "none",
-                                  opacity: 1,
-                                }}
-                              >
-                                l
-                              </div>
+                              
                             </div>
                           </span>
                           <div
@@ -249,7 +210,6 @@ const ServiceMainIdentity = () => {
                                 opacity: 1,
                               }}
                             >
-                              ,
                             </div>
                           </div>{" "}
                           <div
@@ -266,7 +226,17 @@ const ServiceMainIdentity = () => {
                                 opacity: 1,
                               }}
                             >
-                              L
+                              t
+                            </div>
+                            <div
+                              style={{
+                                position: "relative",
+                                display: "inline-block",
+                                transform: "none",
+                                opacity: 1,
+                              }}
+                            >
+                              h
                             </div>
                             <div
                               style={{
@@ -286,58 +256,9 @@ const ServiceMainIdentity = () => {
                                 opacity: 1,
                               }}
                             >
-                              s
-                            </div>
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                transform: "none",
-                                opacity: 1,
-                              }}
-                            >
                               t
                             </div>
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                transform: "none",
-                                opacity: 1,
-                              }}
-                            >
-                              i
-                            </div>
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                transform: "none",
-                                opacity: 1,
-                              }}
-                            >
-                              n
-                            </div>
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                transform: "none",
-                                opacity: 1,
-                              }}
-                            >
-                              g
-                            </div>
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                transform: "none",
-                                opacity: 1,
-                              }}
-                            >
-                              ,
-                            </div>
+                           
                           </div>{" "}
                         </div>
                         <div
@@ -363,7 +284,7 @@ const ServiceMainIdentity = () => {
                                 opacity: 1,
                               }}
                             >
-                              P
+                              l
                             </div>
                             <div
                               style={{
@@ -373,47 +294,7 @@ const ServiceMainIdentity = () => {
                                 opacity: 1,
                               }}
                             >
-                              r
-                            </div>
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                transform: "none",
-                                opacity: 1,
-                              }}
-                            >
-                              o
-                            </div>
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                transform: "none",
-                                opacity: 1,
-                              }}
-                            >
-                              f
-                            </div>
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                transform: "none",
-                                opacity: 1,
-                              }}
-                            >
-                              i
-                            </div>
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                transform: "none",
-                                opacity: 1,
-                              }}
-                            >
-                              t
+                              e
                             </div>
                             <div
                               style={{
@@ -433,73 +314,6 @@ const ServiceMainIdentity = () => {
                                 opacity: 1,
                               }}
                             >
-                              b
-                            </div>
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                transform: "none",
-                                opacity: 1,
-                              }}
-                            >
-                              l
-                            </div>
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                transform: "none",
-                                opacity: 1,
-                              }}
-                            >
-                              e
-                            </div>
-                          </div>{" "}
-                          <div
-                            style={{
-                              position: "relative",
-                              display: "inline-block",
-                            }}
-                          >
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                transform: "none",
-                                opacity: 1,
-                              }}
-                            >
-                              P
-                            </div>
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                transform: "none",
-                                opacity: 1,
-                              }}
-                            >
-                              r
-                            </div>
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                transform: "none",
-                                opacity: 1,
-                              }}
-                            >
-                              o
-                            </div>
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                transform: "none",
-                                opacity: 1,
-                              }}
-                            >
                               d
                             </div>
                             <div
@@ -510,18 +324,8 @@ const ServiceMainIdentity = () => {
                                 opacity: 1,
                               }}
                             >
-                              u
-                            </div>
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                transform: "none",
-                                opacity: 1,
-                              }}
-                            >
-                              c
-                            </div>
+                              
+                            </div>{" "}
                             <div
                               style={{
                                 position: "relative",
@@ -540,7 +344,85 @@ const ServiceMainIdentity = () => {
                                 opacity: 1,
                               }}
                             >
-                              s
+                              o
+                            </div>
+                           
+                          </div>{" "}
+                          <div
+                            style={{
+                              position: "relative",
+                              display: "inline-block",
+                            }}
+                          >
+                            <div
+                              style={{
+                                position: "relative",
+                                display: "inline-block",
+                                transform: "none",
+                                opacity: 1,
+                              }}
+                            >
+                              L
+                            </div>
+                            <div
+                              style={{
+                                position: "relative",
+                                display: "inline-block",
+                                transform: "none",
+                                opacity: 1,
+                              }}
+                            >
+                              E
+                            </div>
+                            <div
+                              style={{
+                                position: "relative",
+                                display: "inline-block",
+                                transform: "none",
+                                opacity: 1,
+                              }}
+                            >
+                              G
+                            </div>
+                            <div
+                              style={{
+                                position: "relative",
+                                display: "inline-block",
+                                transform: "none",
+                                opacity: 1,
+                              }}
+                            >
+                              E
+                            </div>
+                            <div
+                              style={{
+                                position: "relative",
+                                display: "inline-block",
+                                transform: "none",
+                                opacity: 1,
+                              }}
+                            >
+                              N
+                            </div>
+                            <div
+                              style={{
+                                position: "relative",
+                                display: "inline-block",
+                                transform: "none",
+                                opacity: 1,
+                              }}
+                            >
+                              D
+                            </div>
+                            <div
+                              style={{
+                                position: "relative",
+                                display: "inline-block",
+                                transform: "none",
+                                opacity: 1,
+                              }}
+                            >
+                              S
                             </div>
                           </div>
                         </div>
@@ -565,7 +447,7 @@ const ServiceMainIdentity = () => {
                                 data-purecounter-duration="0"
                                 data-purecounter-end="25"
                               >
-                                17
+                                17+
                               </b>
                             </h3>
                             <span className="tp-about__experience-title">
@@ -610,17 +492,14 @@ const ServiceMainIdentity = () => {
                   </div>
                   <div className="col-xl-5">
                     <div className="tp-about__right">
-                      <div className="tp-about__content mb-40">
+                      <div className="tp-about__content mb-40 pt-60">
                         <p className="mb-40">
                           {" "}
-                          Whether it&apos;s crafting a visually stunning brand
-                          identity designing immersive digital experiences, or
-                          developing strategic marketing campaigns, we approach
-                          each{" "}
+                          We command growth with millions of hours in collective experience. At this point, It’s not a matter of ‘if’, it becomes a matter of ‘when’ you will attain the tipping point that will drive your.{" "}
                         </p>
                         <h3 className="tp-about__title mb-70">
-                          CREATING <br />
-                          NEW <span>IDENTITY</span>{" "}
+                        PERPETUAL  <br />
+                        <span>GROWTH</span>{" "}
                         </h3>
                         {/* <div className="tp-about__featured d-flex">
                           <div className="tp-about__featured-item mr-85">

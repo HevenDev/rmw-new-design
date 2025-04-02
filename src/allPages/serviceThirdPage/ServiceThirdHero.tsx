@@ -69,38 +69,6 @@ const ServiceThirdHero = () => {
                       </div>
                       <div className="tp-hero__3-content">
                         <div className="row align-items-center">
-                          <div className="col-xl-2 col-lg-2 col-md-4 order-xxl-0 order-xl-0 order-lg-0 order-md-0 order-sm-3 order-3">
-                            <div
-                              className="tp-hero__3-action wow tpfadeUp animated"
-                              data-wow-duration=".9s"
-                              data-wow-delay=".3s"
-                              style={{
-                                visibility: "visible",
-                                animationDuration: "0.9s",
-                                animationDelay: "0.3s",
-                              }}
-                            >
-                              <a href="contact.html">
-                                <span>
-                                  <svg
-                                    width="188"
-                                    height="188"
-                                    viewBox="0 0 188 188"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M5 183L172.812 15.1875M5 4H184V183"
-                                      stroke="currentColor"
-                                      strokeWidth="6.5"
-                                      strokeLinecap="square"
-                                      strokeLinejoin="round"
-                                    ></path>
-                                  </svg>
-                                </span>
-                              </a>
-                            </div>
-                          </div>
                           <div className="col-xl-5 col-lg-5 d-md-none d-lg-block">
                             <div
                               className="tp-hero__3-dsc wow tpfadeUp animated"
