@@ -19,7 +19,7 @@ const Sidebar = () => {
   const [profile, setProfile] = useState<ProfileType | null>(null);
   const [loading, setLoading] = useState(true);
   const [blogOpen, setBlogOpen] = useState(false);
-  const [expanded, setExpanded] = useState(true); // Sidebar toggle state
+  const [expanded, setExpanded] = useState(false); // Sidebar toggle state
 
   useEffect(() => {
     axios

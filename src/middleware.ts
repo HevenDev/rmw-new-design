@@ -5,11 +5,16 @@ export function middleware(req: NextRequest) {
   const token = req.cookies.get("auth_token")?.value;
   const { pathname } = req.nextUrl;
 
+  // ✅ Redirect /admin to /admin/dashboard
+  if (pathname === "/admin") {
+    return NextResponse.redirect(new URL("/admin/dashboard", req.url));
+  }
+
   // ✅ If authenticated user visits `/admin/sign-in`, redirect them to `/admin`
   if (pathname === "/admin/sign-in" && token) {
-    return NextResponse.redirect(new URL("/admin", req.url));
+    return NextResponse.redirect(new URL("/admin/dashboard", req.url));
   }
-                 
+
   // ✅ Allow access to `/admin/sign-in` if not authenticated
   if (pathname === "/admin/sign-in") {
     return NextResponse.next();
