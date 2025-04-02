@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation"; // Import usePathname
 import { Home, FileText, ChevronDown, Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
 import axios from "axios";
@@ -16,6 +17,7 @@ type ProfileType = {
 };
 
 const Sidebar = () => {
+  const pathname = usePathname(); // Get current URL path
   const [profile, setProfile] = useState<ProfileType | null>(null);
   const [loading, setLoading] = useState(true);
   const [blogOpen, setBlogOpen] = useState(false);
@@ -29,12 +31,15 @@ const Sidebar = () => {
       .finally(() => setLoading(false));
   }, []);
 
+  // 🔴 Hide sidebar for /admin/sign-in
+  if (pathname === "/admin/sign-in") return null;
+
   return (
     <div className="flex">
       {/* Sidebar Toggle Button */}
       <button
         onClick={() => setExpanded(!expanded)}
-        className=" fixed top-1.5  pl-3 dark:bg-gray-800 rounded-md z-50"
+        className="fixed top-1.5 pl-3 dark:bg-gray-800 rounded-md z-50"
       >
         <Menu className="w-6 h-6 text-black dark:text-white" />
       </button>
@@ -49,7 +54,7 @@ const Sidebar = () => {
         {/* Profile card */}
         <div className="flex items-center relative top-6 gap-3 p-3 hover:bg-gray-300 dark:hover:bg-gray-700 cursor-pointer transition rounded-md">
           {loading ? (
-            <p>...</p> // You can replace this with a spinner
+            <p>...</p>
           ) : (
             <Image
               src={profile?.profileImage || "/profile-images/img-2.webp"}
