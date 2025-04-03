@@ -31,7 +31,7 @@ export async function POST(req: NextRequest) {
       const uploadDir = path.join(process.cwd(), "public/blogs", fileName);
       
       await writeFile(uploadDir, buffer);
-      imagePath = `/${fileName}`;
+      imagePath = `${fileName}`;
     }
     const db = getDBPool();
     // Insert data into MySQL

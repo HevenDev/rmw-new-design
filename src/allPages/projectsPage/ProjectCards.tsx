@@ -63,7 +63,7 @@ console.log(cardData)
                 <div className={`card bg-dark text-white ${styles.card}`}>
                   <div className={styles.imageContainer}>
                     <img
-                      src={`/blogs/{card.blog_image}`}
+                      src={`/blogs/${card.blog_image}`}
                       
                       className={`card-img-top ${styles.image}`}
                       alt={card.title}
