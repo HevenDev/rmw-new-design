@@ -89,132 +89,34 @@ const Header = () => {
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link href="/service" className="nav-links">
-                        Service
-                      </Link>
-                      <div className="tp-submenu submenu has-homemenu">
-                        <div
-                          data-elementor-type="container"
-                          data-elementor-id="103"
-                          className="elementor elementor-103"
-                        >
-                          <div
-                            className="elementor-element elementor-element-039dca9 e-con-full e-flex e-con e-parent"
-                            data-id="039dca9"
-                            data-element_type="container"
-                          >
-                            <div
-                              className="elementor-element elementor-element-f21576b e-con-full e-flex e-con e-child"
-                              data-id="f21576b"
-                              data-element_type="container"
-                            >
-                              <div
-                                className="elementor-element elementor-element-08a5267 elementor-widget elementor-widget-tp-menu-demo"
-                                data-id="08a5267"
-                                data-element_type="widget"
-                                data-widget_type="tp-menu-demo.default"
-                              >
-                                <div className="elementor-widget-container">
-                                  <div className="row gx-7 row-cols-1 row-cols-md-2 row-cols-lg-5 row-cols-xl-7">
-                                    <div className="col homemenu">
-                                      <div className="homemenu-content text-center">
-                                        <h4 className="homemenu-title">
-                                          <Link
-                                            href="/"
-                                            target="_self"
-                                            rel="nofollow"
-                                          >
-                                            Digital Marketing
-                                          </Link>
-                                        </h4>
-                                      </div>
-                                    </div>
-                                    <div className="col homemenu">
-                                      <div className="homemenu-content text-center">
-                                        <h4 className="homemenu-title">
-                                          <Link
-                                            href="/"
-                                            target="_self"
-                                            rel="nofollow"
-                                          >
-                                            Print Advertising
-                                          </Link>
-                                        </h4>
-                                      </div>
-                                    </div>
-                                    <div className="col homemenu">
-                                      <div className="homemenu-content text-center">
-                                        <h4 className="homemenu-title">
-                                          <Link
-                                            href="/"
-                                            target="_self"
-                                            rel="nofollow"
-                                          >
-                                            Radio Advertising
-                                          </Link>
-                                        </h4>
-                                      </div>
-                                    </div>
-                                    <div className="col homemenu">
-                                      <div className="homemenu-content text-center">
-                                        <h4 className="homemenu-title">
-                                          <Link
-                                            href="/"
-                                            target="_self"
-                                            rel="nofollow"
-                                          >
-                                            Creative Services
-                                          </Link>
-                                        </h4>
-                                      </div>
-                                    </div>
-                                    <div className="col homemenu">
-                                      <div className="homemenu-content text-center">
-                                        <h4 className="homemenu-title">
-                                          <Link
-                                            href="/"
-                                            target="_self"
-                                            rel="nofollow"
-                                          >
-                                            Content Marketing
-                                          </Link>
-                                        </h4>
-                                      </div>
-                                    </div>
-                                    <div className="col homemenu">
-                                      <div className="homemenu-content text-center">
-                                        <h4 className="homemenu-title">
-                                          <Link
-                                            href="/"
-                                            target="_self"
-                                            rel="nofollow"
-                                          >
-                                            Web Development
-                                          </Link>
-                                        </h4>
-                                      </div>
-                                    </div>
-                                    <div className="col homemenu">
-                                      <div className="homemenu-content text-center">
-                                        <h4 className="homemenu-title">
-                                          <Link
-                                            href="/"
-                                            target="_self"
-                                            rel="nofollow"
-                                          >
-                                            Content Marketing
-                                          </Link>
-                                        </h4>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
+  <Link href="/service" className="nav-links">
+    Service
+  </Link>
+
+  <div className="tp-submenu submenu has-homemenu" style={{ width: "1000px", left: "-400px" }}>
+    <div data-elementor-type="container" data-elementor-id="103" className="elementor elementor-103">
+      <div className="elementor-element elementor-element-039dca9 e-con-full d-flex justify-content-center align-items-center e-con e-parent">
+        <div className="elementor-element elementor-element-f21576b e-con-full d-flex justify-content-center align-items-center e-con e-child">
+          <div className="elementor-element elementor-element-08a5267 elementor-widget elementor-widget-tp-menu-demo">
+            <div className="w-100">
+              {/* ✅ FIXED: Text in One Row, Equal Spacing */}
+              <ul className="d-flex justify-content-evenly align-items-center w-100 list-unstyled m-0 p-0">
+                <li className="flex-fill text-center text-nowrap px-2 fs-6">Digital Marketing</li>
+                <li className="flex-fill text-center text-nowrap px-2 fs-6">Print Marketing</li>
+                <li className="flex-fill text-center text-nowrap px-2 fs-6">SEO</li>
+                <li className="flex-fill text-center text-nowrap px-2 fs-6">Creative Marketing</li>
+                <li className="flex-fill text-center text-nowrap px-2 fs-6">Web Development</li>
+                <li className="flex-fill text-center text-nowrap px-2 fs-6">Celebrity Endorsement</li>
+                <li className="flex-fill text-center text-nowrap px-2 fs-6">Celebrity Marketing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+
                     <li className="nav-item">
                       <Link href="/our-work/" className="nav-links">
                         Our Work
