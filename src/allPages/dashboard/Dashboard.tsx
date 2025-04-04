@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import styles from "./Dashboard.module.css";
-import { Component } from "@/components/pieChart/PieChartComponent";
+import { PieChartComponent } from "@/components/pieChart/PieChartComponent";
 import "@/allPages/dashboard/Dashboard";
 
 declare namespace JSX {
@@ -18,7 +18,7 @@ const Dashboard = () => {
     <div className={`${styles.dashMain}`}>
       
         <div className={`${styles.dashContent}`}>
-          <Component></Component>
+          <PieChartComponent />
         </div>
         <div className={`${styles.dashWrites} `}>
           <h1>Heading</h1>
