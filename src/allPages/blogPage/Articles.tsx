@@ -5,16 +5,16 @@ import axios from "axios";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
-// interface Article {
-//   imageSrc: string;
-//   date: string;
-//   minutesRead: string;
-//   title: string;
-//   description: string;
-// }
+interface Article {
+  blog_image: string;
+  slug: string;
+  title: string;
+  description: string;
+  created_at: string;
+}
 
-const blogs: React.FC = () => {
-  const [blogs, setBlogs] = useState<any[]>([]); // State to store blogs
+const Blogs: React.FC = () => {
+  const [blogs, setBlogs] = useState<Article[]>([]); // State to store blogs
   const [loading, setLoading] = useState<boolean>(true); // Loading state
   const [error, setError] = useState<string | null>(null); // Error state
 
@@ -59,26 +59,37 @@ const blogs: React.FC = () => {
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4 g-4">
         {currentCards.map((article, index) => (
           <Link href={article.slug} className="col" key={index}>
-            <div className="card h-100">
-              <img
-                src={`/blogs/${article.blog_image}`}
-                className="card-img-top"
-                alt={`ritz-media-world/${article.blog_image}`}
-                style={{ height: "200px", objectFit: "cover" }}
-              />
-              <div className="card-body">
-                <div className="d-flex justify-content-between">
-                  <small className="text-muted">
-                    {new Date(article.created_at).toLocaleDateString("en-US", {
-                      year: "numeric",
-                      month: "long",
-                      day: "numeric",
-                    })}
-                  </small>
-                </div>
-                <h5 className="card-title mt-2">{article.title}</h5>
-              </div>
-            </div>
+           <div style={{ background: "#212529", color: "white" }} className="card h-100">
+  <div style={{ overflow: "hidden", height: "200px" }}>
+    <img
+      src={`/blogs/${article.blog_image}`}
+      className="card-img-top"
+      alt={`ritz-media-world/${article.blog_image}`}
+      style={{
+        height: "100%",
+        width: "100%",
+        objectFit: "cover",
+        transition: "all 0.3s ease-in-out",
+      }}
+      onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
+      onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+    />
+  </div>
+  <div className="card-body">
+    <div className="d-flex justify-content-between">
+      <small className="text-muted">
+        {new Date(article.created_at).toLocaleDateString("en-US", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        })}
+      </small>
+    </div>
+    <h5 className="card-title mt-2">{article.title}</h5>
+  </div>
+</div>
+
+
           </Link>
         ))}
       </div>
@@ -216,4 +227,4 @@ const Pagination: React.FC<PaginationProps> = ({ totalPages, currentPage, onPage
 };
 
 
-export default blogs;
+export default Blogs;

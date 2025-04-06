@@ -135,17 +135,30 @@ const AddBlogData = () => {
       });
 
       setPreviewImage(null);
-    } catch (error: any) {
-      console.error("Error adding blog:", error);
-      toast.error("❌ Failed to add blog!", {
-        position: "top-right",
-        autoClose: 4000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-      });
+    } catch (error) {
+      if (error instanceof Error) {
+        console.error("Error adding blog:", error.message);
+        toast.error("❌ Failed to add blog!", {
+          position: "top-right",
+          autoClose: 4000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+      } else {
+        console.error("Unknown error", error);
+        toast.error("❌ Failed to add blog!", {
+          position: "top-right",
+          autoClose: 4000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+      }
     } finally {
       setLoading(false);
     }

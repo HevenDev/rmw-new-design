@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
+import Link from "next/link";
 
 const Testimonials = () => {
   return (
@@ -20,7 +21,7 @@ const Testimonials = () => {
               </div>
               <div className="col-xl-4 col-lg-4 col-md-4">
                 <div className="tp-testi__3-action text-md-end">
-                  <a
+                  <Link
                     className="tp-btn-primary theme-btn"
                     href="/about/"
                     rel="nofollow"
@@ -28,7 +29,7 @@ const Testimonials = () => {
                   >
                     <span>More about us</span>
                     <i className="far fa-arrow-right"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

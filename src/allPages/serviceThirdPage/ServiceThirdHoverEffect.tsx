@@ -1,3 +1,4 @@
+import Link from "next/link"
 
 
 const ServiceThirdHoverEffect = () => {
@@ -24,56 +25,56 @@ const ServiceThirdHoverEffect = () => {
                         <div className="col-xl-12">
                             <div className="tp-featured__2-text-box mb-90">
                                                                     <div className="tp-featured__2-item tp-hover__reveal-item wow tpFadeInUp" data-wow-duration="1s" data-wow-delay=".3s" style={{visibility: "visible", animationDuration: "1s", animationDelay: "0.3s", animationName: "tpFadeInUp"}}>
-                                        <a href="/" target="_self" rel="nofollow">
+                                        <Link href="/" target="_self" rel="nofollow">
                                             <div className="tp-featured__2-content">
                                                 <h3 className="tp-featured__2-title">
                                                     CUSTOM WEB DESIGN                                                </h3>
                                             </div>
-                                        </a>
+                                        </Link>
                                         <div className="tp-hover__reveal-bg" data-background="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/featured-2-1.jpg" style={{backgroundImage: "url(https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/featured-2-1.jpg); transform: translate(729.5px, 236.406px)"}}>
                                         </div>
                                     </div>
                                                                     <div className="tp-featured__2-item tp-hover__reveal-item wow tpFadeInUp" data-wow-duration="1s" data-wow-delay=".5s" style={{visibility: "visible", animationDuration: "1s", animationDelay: "0.5s", animationName: "tpFadeInUp"}}>
-                                        <a href="/" target="_self" rel="nofollow">
+                                        <Link href="/" target="_self" rel="nofollow">
                                             <div className="tp-featured__2-content">
                                                 <h3 className="tp-featured__2-title">
                                                     WEB DEVELOPMENT                                                </h3>
                                             </div>
-                                        </a>
+                                        </Link>
                                         <div className="tp-hover__reveal-bg" data-background="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/featured-2-2.jpg" style={{backgroundImage: "url(https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/featured-2-2.jpg); transform: translate(384.5px, 163.406px)"}}>
                                         </div>
                                     </div>
                                                                     <div className="tp-featured__2-item tp-hover__reveal-item wow tpFadeInUp" data-wow-duration="1s" data-wow-delay=".7s" style={{visibility: "visible", animationDuration: "1s", animationDelay: "0.7s", animationName: "tpFadeInUp"}}>
-                                        <a href="/" target="_self" rel="nofollow">
+                                        <Link href="/" target="_self" rel="nofollow">
                                             <div className="tp-featured__2-content">
                                                 <h3 className="tp-featured__2-title">
                                                     UI/UX DESIGNER                                                </h3>
                                             </div>
-                                        </a>
+                                        </Link>
                                         <div className="tp-hover__reveal-bg" data-background="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/featured-2-3.jpg" style={{backgroundImage: "url(https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/featured-2-3.jpg); transform: translate(780.5px, 120.406px)"}}>
                                         </div>
                                     </div>
                                                                     <div className="tp-featured__2-item tp-hover__reveal-item wow tpFadeInUp" data-wow-duration="1s" data-wow-delay=".9s" style={{visibility: "visible", animationDuration: "1s", animationDelay: "0.9s", animationName: "tpFadeInUp"}}>
-                                        <a href="/" target="_self" rel="nofollow">
+                                        <Link href="/" target="_self" rel="nofollow">
                                             <div className="tp-featured__2-content">
                                                 <h3 className="tp-featured__2-title">
                                                     CUSTOM WEB DESIGN                                                </h3>
                                             </div>
-                                        </a>
+                                        </Link>
                                         <div className="tp-hover__reveal-bg" data-background="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/featured-2-4.jpg" style={{backgroundImage: "url(https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/featured-2-4.jpg); transform: translate(396.5px, 181.406px)"}}>
                                         </div>
                                     </div>
                                                             </div>
                                                             <div className="tp-featured__2-action p-relative text-center wow tpFadeInUp" data-wow-duration=".9s" data-wow-delay=".3s" style={{visibility: "visible", animationDuration: "0.9s", animationDelay: "0.3s", animationName: "tpFadeInUp"}}>
                                     <div className="tp-featured__2-button">
-                                        <a href="/" target="_self" rel="nofollow">
+                                        <Link href="/" target="_self" rel="nofollow">
                                             <b>EXPLORE MORE</b>
                                             <span>
                                                 <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M2.55859 39.3603L37.5912 4.32769M2.55859 1.99219H39.9267V39.3603" stroke="currentColor" strokeWidth="2.5" strokeLinecap="square" strokeLinejoin="round"></path>
                                                 </svg>
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                                     </div>

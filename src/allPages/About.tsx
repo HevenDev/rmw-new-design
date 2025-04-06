@@ -1,4 +1,4 @@
-import Choose from "./aboutPage/Choose";
+// import Choose from "./aboutPage/Choose";
 import Experts from "./aboutPage/Experts";
 import Work from "./Homepage/Work";
 import Stratagies from "./aboutPage/Stratagies";

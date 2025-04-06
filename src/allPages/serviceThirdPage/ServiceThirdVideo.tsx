@@ -1,3 +1,4 @@
+import Link from "next/link";
 const ServiceThirdVideo = () => {
   return (
     <div
@@ -34,7 +35,7 @@ const ServiceThirdVideo = () => {
                 <div className="row">
                   <div className="col-md-12">
                     <div className="tp-video__content text-center">
-                      <a
+                      <Link
                         href="/"
                         className="tp-video__3-play-icon popup-video p-relative"
                       >
@@ -49,7 +50,7 @@ const ServiceThirdVideo = () => {
                         <h3 className="tp-video__3-text">
                           <span>Play</span>
                         </h3>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

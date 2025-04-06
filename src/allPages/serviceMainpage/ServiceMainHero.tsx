@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const ServiceMainHero = () => {
   return (
     <div
@@ -27,13 +29,13 @@ const ServiceMainHero = () => {
                   <ul>
                     <li>Follow Us</li>
                     <li>
-                      <a href="#"> FB </a>
+                      <Link href="#"> FB </Link>
                     </li>
                     <li>
-                      <a href="#"> BE </a>
+                      <Link href="#"> BE </Link>
                     </li>
                     <li>
-                      <a href="#"> YT </a>
+                      <Link href="#"> YT </Link>
                     </li>
                   </ul>
                 </div>
@@ -58,12 +60,12 @@ const ServiceMainHero = () => {
                           }}
                         >
                           {/* <span>“Just Another”</span> to <br /> <span>“The One.”</span> */}
-                          “Just Another" <span>to</span> <br /> “The One.”
+                          &quot;Just Another&quot; <span>to</span> <br /> &quot;The One.&quot;
                         </h3>
                       </div>
                       <div className="tp-hero__2-action d-flex align-items-center">
                         <span>
-                          <a
+                          <Link
                             href="/contact"
                             className="tp-hero__action-btn tp-hero__2-btn"
                           >
@@ -84,16 +86,16 @@ const ServiceMainHero = () => {
                                 ></path>
                               </svg>
                             </span>
-                          </a>
+                          </Link>
                         </span>
-                        <a
+                        <Link
                           href="/contact/"
                           rel="nofollow"
                           target="_self"
                         >
                           
                           CONTACT US
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className="col-xl-4 col-lg-5">
@@ -115,7 +117,7 @@ const ServiceMainHero = () => {
                             animationDelay: "0.3s",
                           }}
                         >
-                          <a
+                          <Link
                             href="/contact/"
                             rel="nofollow"
                             target="_self"
@@ -137,7 +139,7 @@ const ServiceMainHero = () => {
                                 ></path>
                               </svg>
                             </span>
-                          </a>
+                          </Link>
                         </div>
                         <p>
                         At Ritz Media World, we have an obsession with being wizards of quirkiness that morph good ideas into Brilliant ones. Our services deliver results that drive your competitor’s envy. We blend digital magic, classic & modern mediums, and creative ingenuity to ensure that your brand doesn’t just speak; it captivates.

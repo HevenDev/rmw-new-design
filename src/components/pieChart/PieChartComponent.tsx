@@ -41,10 +41,17 @@ export function PieChartComponent() {
         const { data } = await axios.get("/api/get-visit-data");
         setChartData(data);
       } catch (err) {
-        setError("Failed to load visitor data");
+        if (err instanceof Error) {
+          console.error("Error fetching visitor data:", err.message);
+          setError("Failed to load visitor data: " + err.message);
+        } else {
+          console.error("Unexpected error:", err);
+          setError("Failed to load visitor data");
+        }
       } finally {
         setLoading(false);
       }
+      
     };
 
     fetchData();

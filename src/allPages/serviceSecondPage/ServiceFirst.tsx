@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useSplitText } from "@/hooks/useSplitText";
-
+import Link from "next/link";
 const ServiceFirst = () => {
 
   const textRefs = useSplitText();
@@ -338,7 +338,7 @@ const ServiceFirst = () => {
                 </div>
                 <div className="tp-service__btn-wrap text-center">
                   <div className="tp-hover__btn-wrap tp-btn__bounce">
-                    <a
+                    <Link
                       className="tp-hover__btn tp-hover__btn-item"
                       href="/contact/"
                       rel="nofollow"
@@ -369,7 +369,7 @@ const ServiceFirst = () => {
                           ></path>
                         </svg>
                       </span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="tp-service__thumb-box-1 d-none d-xl-block">

@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { FaFacebook, FaYoutube, FaInstagramSquare, FaLinkedin  } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
-import { useSplitText } from "@/hooks/useSplitText";
+// import { useSplitText } from "@/hooks/useSplitText";
 
 const Home = () => {
-  const textRefs = useSplitText();
+  // const textRefs = useSplitText();
 
   return (
     <div

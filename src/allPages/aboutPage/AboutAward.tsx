@@ -41,7 +41,7 @@ const AboutAward = () => {
                             data-purecounter-duration="0"
                             data-purecounter-end="25"
                           >
-                            25
+                            17
                           </b>
                           +{" "}
                         </h3>
@@ -52,7 +52,7 @@ const AboutAward = () => {
                 </div>
               </div>
               <div className="col-xl-7">
-                <div className="tp-awards__5-conftent ml-60">
+                <div className="tp-awards__5-conftent ml-60 justify-center">
                   <div className="tp-awards__5-title-box mb-70">
                     <h3
                       className="tp-section-title tp-split__text tp-split__in-right"
@@ -84,472 +84,9 @@ const AboutAward = () => {
                               opacity: 1,
                             }}
                           >
-                            W
-                          </div>
-                          <div
-                            style={{
-                              position: "relative",
-                              display: "inline-block",
-                              translate: "none",
-                              rotate: "none",
-                              scale: "none",
-                              transform: "translate(0px, 0px)",
-                              opacity: 1,
-                            }}
-                          >
-                            E
-                          </div>
-                          <div
-                            style={{
-                              position: "relative",
-                              display: "inline-block",
-                              translate: "none",
-                              rotate: "none",
-                              scale: "none",
-                              transform: "translate(0px, 0px)",
-                              opacity: 1,
-                            }}
-                          >
-                            '
-                          </div>
-                          <div
-                            style={{
-                              position: "relative",
-                              display: "inline-block",
-                              translate: "none",
-                              rotate: "none",
-                              scale: "none",
-                              transform: "translate(0px, 0px)",
-                              opacity: 1,
-                            }}
-                          >
-                            R
-                          </div>
-                          <div
-                            style={{
-                              position: "relative",
-                              display: "inline-block",
-                              translate: "none",
-                              rotate: "none",
-                              scale: "none",
-                              transform: "translate(0px, 0px)",
-                              opacity: 1,
-                            }}
-                          >
-                            E
+                            Our Work is Our Reward
                           </div>
                         </div>{" "}
-                        <div
-                          style={{
-                            position: "relative",
-                            display: "inline-block",
-                          }}
-                        >
-                          <div
-                            style={{
-                              position: "relative",
-                              display: "inline-block",
-                              translate: "none",
-                              rotate: "none",
-                              scale: "none",
-                              transform: "translate(0px, 0px)",
-                              opacity: 1,
-                            }}
-                          >
-                            A
-                          </div>
-                          <div
-                            style={{
-                              position: "relative",
-                              display: "inline-block",
-                              translate: "none",
-                              rotate: "none",
-                              scale: "none",
-                              transform: "translate(0px, 0px)",
-                              opacity: 1,
-                            }}
-                          >
-                            W
-                          </div>
-                          <div
-                            style={{
-                              position: "relative",
-                              display: "inline-block",
-                              translate: "none",
-                              rotate: "none",
-                              scale: "none",
-                              transform: "translate(0px, 0px)",
-                              opacity: 1,
-                            }}
-                          >
-                            A
-                          </div>
-                          <div
-                            style={{
-                              position: "relative",
-                              display: "inline-block",
-                              translate: "none",
-                              rotate: "none",
-                              scale: "none",
-                              transform: "translate(0px, 0px)",
-                              opacity: 1,
-                            }}
-                          >
-                            R
-                          </div>
-                          <div
-                            style={{
-                              position: "relative",
-                              display: "inline-block",
-                              translate: "none",
-                              rotate: "none",
-                              scale: "none",
-                              transform: "translate(0px, 0px)",
-                              opacity: 1,
-                            }}
-                          >
-                            D
-                          </div>
-                          <div
-                            style={{
-                              position: "relative",
-                              display: "inline-block",
-                              translate: "none",
-                              rotate: "none",
-                              scale: "none",
-                              transform: "translate(0px, 0px)",
-                              opacity: 1,
-                            }}
-                          >
-                            -
-                          </div>
-                          <div
-                            style={{
-                              position: "relative",
-                              display: "inline-block",
-                              translate: "none",
-                              rotate: "none",
-                              scale: "none",
-                              transform: "translate(0px, 0px)",
-                              opacity: 1,
-                            }}
-                          >
-                            W
-                          </div>
-                          <div
-                            style={{
-                              position: "relative",
-                              display: "inline-block",
-                              translate: "none",
-                              rotate: "none",
-                              scale: "none",
-                              transform: "translate(0px, 0px)",
-                              opacity: 1,
-                            }}
-                          >
-                            I
-                          </div>
-                          <div
-                            style={{
-                              position: "relative",
-                              display: "inline-block",
-                              translate: "none",
-                              rotate: "none",
-                              scale: "none",
-                              transform: "translate(0px, 0px)",
-                              opacity: 1,
-                            }}
-                          >
-                            N
-                          </div>
-                          <div
-                            style={{
-                              position: "relative",
-                              display: "inline-block",
-                              translate: "none",
-                              rotate: "none",
-                              scale: "none",
-                              transform: "translate(0px, 0px)",
-                              opacity: 1,
-                            }}
-                          >
-                            I
-                          </div>
-                          <div
-                            style={{
-                              position: "relative",
-                              display: "inline-block",
-                              translate: "none",
-                              rotate: "none",
-                              scale: "none",
-                              transform: "translate(0px, 0px)",
-                              opacity: 1,
-                            }}
-                          >
-                            N
-                          </div>
-                          <div
-                            style={{
-                              position: "relative",
-                              display: "inline-block",
-                              translate: "none",
-                              rotate: "none",
-                              scale: "none",
-                              transform: "translate(0px, 0px)",
-                              opacity: 1,
-                            }}
-                          >
-                            G
-                          </div>
-                        </div>{" "}
-                      </div>
-                      <div
-                        className="tp-split__line"
-                        style={{
-                          display: "block",
-                          textAlign: "start",
-                          position: "relative",
-                        }}
-                      >
-                        <span>
-                          <div
-                            style={{
-                              position: "relative",
-                              display: "inline-block",
-                            }}
-                          >
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                translate: "none",
-                                rotate: "none",
-                                scale: "none",
-                                transform: "translate(0px, 0px)",
-                                opacity: 1,
-                              }}
-                            >
-                              D
-                            </div>
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                translate: "none",
-                                rotate: "none",
-                                scale: "none",
-                                transform: "translate(0px, 0px)",
-                                opacity: 1,
-                              }}
-                            >
-                              E
-                            </div>
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                translate: "none",
-                                rotate: "none",
-                                scale: "none",
-                                transform: "translate(0px, 0px)",
-                                opacity: 1,
-                              }}
-                            >
-                              V
-                            </div>
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                translate: "none",
-                                rotate: "none",
-                                scale: "none",
-                                transform: "translate(0px, 0px)",
-                                opacity: 1,
-                              }}
-                            >
-                              E
-                            </div>
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                translate: "none",
-                                rotate: "none",
-                                scale: "none",
-                                transform: "translate(0px, 0px)",
-                                opacity: 1,
-                              }}
-                            >
-                              L
-                            </div>
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                translate: "none",
-                                rotate: "none",
-                                scale: "none",
-                                transform: "translate(0px, 0px)",
-                                opacity: 1,
-                              }}
-                            >
-                              O
-                            </div>
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                translate: "none",
-                                rotate: "none",
-                                scale: "none",
-                                transform: "translate(0px, 0px)",
-                                opacity: 1,
-                              }}
-                            >
-                              P
-                            </div>
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                translate: "none",
-                                rotate: "none",
-                                scale: "none",
-                                transform: "translate(0px, 0px)",
-                                opacity: 1,
-                              }}
-                            >
-                              M
-                            </div>
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                translate: "none",
-                                rotate: "none",
-                                scale: "none",
-                                transform: "translate(0px, 0px)",
-                                opacity: 1,
-                              }}
-                            >
-                              E
-                            </div>
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                translate: "none",
-                                rotate: "none",
-                                scale: "none",
-                                transform: "translate(0px, 0px)",
-                                opacity: 1,
-                              }}
-                            >
-                              N
-                            </div>
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                translate: "none",
-                                rotate: "none",
-                                scale: "none",
-                                transform: "translate(0px, 0px)",
-                                opacity: 1,
-                              }}
-                            >
-                              T
-                            </div>
-                          </div>
-                        </span>{" "}
-                        <i>
-                          <div
-                            style={{
-                              position: "relative",
-                              display: "inline-block",
-                            }}
-                          >
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                translate: "none",
-                                rotate: "none",
-                                scale: "none",
-                                transform: "translate(0px, 0px)",
-                                opacity: 1,
-                              }}
-                            >
-                              A
-                            </div>
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                translate: "none",
-                                rotate: "none",
-                                scale: "none",
-                                transform: "translate(0px, 0px)",
-                                opacity: 1,
-                              }}
-                            >
-                              G
-                            </div>
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                translate: "none",
-                                rotate: "none",
-                                scale: "none",
-                                transform: "translate(0px, 0px)",
-                                opacity: 1,
-                              }}
-                            >
-                              E
-                            </div>
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                translate: "none",
-                                rotate: "none",
-                                scale: "none",
-                                transform: "translate(0px, 0px)",
-                                opacity: 1,
-                              }}
-                            >
-                              N
-                            </div>
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                translate: "none",
-                                rotate: "none",
-                                scale: "none",
-                                transform: "translate(0px, 0px)",
-                                opacity: 1,
-                              }}
-                            >
-                              C
-                            </div>
-                            <div
-                              style={{
-                                position: "relative",
-                                display: "inline-block",
-                                translate: "none",
-                                rotate: "none",
-                                scale: "none",
-                                transform: "translate(0px, 0px)",
-                                opacity: 1,
-                              }}
-                            >
-                              Y
-                            </div>
-                          </div>
-                        </i>{" "}
                       </div>
                     </h3>
                     <p>
@@ -567,7 +104,7 @@ const AboutAward = () => {
                           data-purecounter-duration="0"
                           data-purecounter-end="25"
                         >
-                          25
+                          300
                         </b>
                         +{" "}
                       </h3>
@@ -580,7 +117,7 @@ const AboutAward = () => {
                           data-purecounter-duration="0"
                           data-purecounter-end="153"
                         >
-                          153
+                          40
                         </b>
                         +{" "}
                       </h3>
@@ -593,13 +130,14 @@ const AboutAward = () => {
                           data-purecounter-duration="0"
                           data-purecounter-end="56"
                         >
-                          56
+                          35
                         </b>
                         +{" "}
                       </h3>
                     </div>
                   </div>
-                  <div className="tp-awards__5-founder-box d-sm-flex align-items-center">
+                  {/* DONT DELETE THE BELOW COMMENTED CODE IT WILL BE USED IN FUTURE */}
+                  {/* <div className="tp-awards__5-founder-box d-sm-flex align-items-center">
                     <div className="tp-awards__5-avater-thumb">
                       <img
                         decoding="async"
@@ -620,7 +158,7 @@ const AboutAward = () => {
                         Foundation, since <span>21st</span> Oct , 2019{" "}
                       </h3>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

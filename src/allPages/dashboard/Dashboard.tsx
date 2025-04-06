@@ -4,14 +4,14 @@ import styles from "./Dashboard.module.css";
 import { PieChartComponent } from "@/components/pieChart/PieChartComponent";
 import "@/allPages/dashboard/Dashboard";
 
-declare namespace JSX {
-  interface IntrinsicElements {
-    button: React.DetailedHTMLProps<
-      React.ButtonHTMLAttributes<HTMLButtonElement>,
-      HTMLButtonElement
-    >;
-  }
-}
+// declare namespace JSX {
+//   interface IntrinsicElements {
+//     button: React.DetailedHTMLProps<
+//       React.ButtonHTMLAttributes<HTMLButtonElement>,
+//       HTMLButtonElement
+//     >;
+//   }
+// }
 
 const Dashboard = () => {
   return (

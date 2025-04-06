@@ -64,7 +64,7 @@ Legacy
         <div className="tp-ab__thumb pt-100 pl-75 pr-75 text-center">
           <img
             decoding="async"
-            src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/ab-in-image.jpg"
+            src="https://ritzmediaworld.com/webroot/images/gallery/17e24618-1ebc-dd6c-1887-291bde275d77_1460_550.webp"
             alt=""
           />
         </div>

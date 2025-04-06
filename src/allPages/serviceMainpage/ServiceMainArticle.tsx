@@ -1,5 +1,6 @@
 "use client"
 import { useSplitText } from "@/hooks/useSplitText";
+import Link from "next/link";
 
 const ServiceMainArticle = () => {
 
@@ -248,7 +249,7 @@ const ServiceMainArticle = () => {
                     </div>
                     <div className="col-xl-4 col-lg-4 col-md-4">
                       <div className="tp-blog__action text-md-end">
-                        <a
+                        <Link
                           className="tp-btn-primary"
                           href="/blog/"
                           target="_self"
@@ -256,7 +257,7 @@ const ServiceMainArticle = () => {
                         >
                           <span> More about us </span>
                           <i className="fal fa-arrow-right"></i>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -277,13 +278,13 @@ const ServiceMainArticle = () => {
                         <div className="col-xl-9 col-lg-9">
                           <div className="tp-blog__content d-sm-flex align-items-center">
                             <div className="tp-blog__thumb tp-blog-post-widget-thumb">
-                              <a href="/">
+                              <Link href="/">
                                 <img
                                   decoding="async"
                                   src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/blog-post-6.png"
                                   alt=""
                                 />
-                              </a>
+                              </Link>
                             </div>
                             <div className="tp-blog__text">
                               <div className="tp-blog__meta-box d-flex align-items-center">
@@ -295,16 +296,16 @@ const ServiceMainArticle = () => {
                                 </span>
                               </div>
                               <h3 className="tp-blog__title">
-                                <a href="/">
+                                <Link href="/">
                                   Transform Your Business with Expert Digital
-                                </a>
+                                </Link>
                               </h3>
                             </div>
                           </div>
                         </div>
                         <div className="col-xl-3 col-lg-3">
                           <div className="tp-blog__button p-relative text-lg-end">
-                            <a
+                            <Link
                               className="tp-btn-blog"
                               href="/"
                             >
@@ -312,7 +313,7 @@ const ServiceMainArticle = () => {
                               <b>
                                 <i className="fas fa-long-arrow-right"></i>
                               </b>
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -331,13 +332,13 @@ const ServiceMainArticle = () => {
                         <div className="col-xl-9 col-lg-9">
                           <div className="tp-blog__content d-sm-flex align-items-center">
                             <div className="tp-blog__thumb tp-blog-post-widget-thumb">
-                              <a href="/">
+                              <Link href="/">
                                 <img
                                   decoding="async"
                                   src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/blog-post-2.jpg"
                                   alt=""
                                 />
-                              </a>
+                              </Link>
                             </div>
                             <div className="tp-blog__text">
                               <div className="tp-blog__meta-box d-flex align-items-center">
@@ -349,16 +350,16 @@ const ServiceMainArticle = () => {
                                 </span>
                               </div>
                               <h3 className="tp-blog__title">
-                                <a href="/">
+                                <Link href="/">
                                   Boost Your Online Presence with Our
-                                </a>
+                                </Link>
                               </h3>
                             </div>
                           </div>
                         </div>
                         <div className="col-xl-3 col-lg-3">
                           <div className="tp-blog__button p-relative text-lg-end">
-                            <a
+                            <Link
                               className="tp-btn-blog"
                               href="/"
                             >
@@ -366,7 +367,7 @@ const ServiceMainArticle = () => {
                               <b>
                                 <i className="fas fa-long-arrow-right"></i>
                               </b>
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -385,13 +386,13 @@ const ServiceMainArticle = () => {
                         <div className="col-xl-9 col-lg-9">
                           <div className="tp-blog__content d-sm-flex align-items-center">
                             <div className="tp-blog__thumb tp-blog-post-widget-thumb">
-                              <a href="/">
+                              <Link href="/">
                                 <img
                                   decoding="async"
                                   src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/blog-post-5.png"
                                   alt=""
                                 />
-                              </a>
+                              </Link>
                             </div>
                             <div className="tp-blog__text">
                               <div className="tp-blog__meta-box d-flex align-items-center">
@@ -403,16 +404,16 @@ const ServiceMainArticle = () => {
                                 </span>
                               </div>
                               <h3 className="tp-blog__title">
-                                <a href="/">
+                                <Link href="/">
                                   Innovative Solutions for a Digital Tomorrow
-                                </a>
+                                </Link>
                               </h3>
                             </div>
                           </div>
                         </div>
                         <div className="col-xl-3 col-lg-3">
                           <div className="tp-blog__button p-relative text-lg-end">
-                            <a
+                            <Link
                               className="tp-btn-blog"
                               href="/"
                             >
@@ -420,7 +421,7 @@ const ServiceMainArticle = () => {
                               <b>
                                 <i className="fas fa-long-arrow-right"></i>
                               </b>
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>

@@ -1,5 +1,6 @@
 "use client";
 import { useSplitText } from "@/hooks/useSplitText";
+import Link from "next/link";
 
 const ServiceMainTalk = () => {
 
@@ -39,13 +40,13 @@ const ServiceMainTalk = () => {
                           className="text-white text-6xl tp-split__text tp-split__in-right"
                           style={{ perspective: "400px" }}
                         >
-                          Let's Do Something Remarkable Together.
+                          Let&apos;s Do Something Remarkable Together.
                         </h3>
                       </div>
                     </div>
                     <div className="col-xl-4 col-lg-4 col-md-4">
                       <div className="tp-cta__3-action d-none d-md-block text-md-end">
-                        <a
+                        <Link
                           href="/contact/"
                           target="_self"
                           rel="nofollow"
@@ -65,7 +66,7 @@ const ServiceMainTalk = () => {
                               strokeLinejoin="round"
                             ></path>
                           </svg>{" "}
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>

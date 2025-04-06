@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useEffect } from 'react'
+// import React, { useEffect } from 'react'
 import ServiceMainHero from './ServiceMainHero'
 import Header from '@/components/header/Header'
 import Footer from '@/components/footer/Footer'
@@ -11,8 +11,8 @@ import SwiperHome from '../Homepage/SwiperHome'
 import ServiceMainAbout from './ServiceMainAbout'
 import ProjectMarque from '../projectsPage/ProjectMarque'
 import ProjectNumbers from '../projectsPage/ProjectNumbers'
-import ServiceMainAwards from './ServiceMainAwards'
-import ServiceMainArticle from './ServiceMainArticle'
+// import ServiceMainAwards from './ServiceMainAwards'
+// import ServiceMainArticle from './ServiceMainArticle'
 import ServiceMainTalk from './ServiceMainTalk'
 import ServiceMainTestimonial from './ServiceMainTestimonial'
 import ServiceMainTeam from './ServiceMainTeam'

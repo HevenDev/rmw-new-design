@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
+import Link from "next/link";
 
 const ServiceMainWorkSwiper = () => {
   return (
@@ -73,7 +74,7 @@ const ServiceMainWorkSwiper = () => {
                             />
                           </div>
                           <div className="tp-work__icon d-none d-md-block">
-                            <a
+                            <Link
                               href="/"
                               target=""
                               rel=""
@@ -95,13 +96,13 @@ const ServiceMainWorkSwiper = () => {
                                   ></path>
                                 </svg>
                               </span>
-                            </a>
+                            </Link>
                           </div>
                           <div className="tp-work__content">
                             <h3 className="tp-work__title">
-                              <a href="/services/digital-marketing/">
+                              <Link href="/services/digital-marketing/">
                                 Digital Marketing
-                              </a>
+                              </Link>
                             </h3>
                             <span className="tp-work__subtitle">
                               Art , Direction
@@ -125,7 +126,7 @@ const ServiceMainWorkSwiper = () => {
                             />
                           </div>
                           <div className="tp-work__icon d-none d-md-block">
-                            <a
+                            <Link
                               href="/"
                               target=""
                               rel=""
@@ -147,13 +148,13 @@ const ServiceMainWorkSwiper = () => {
                                   ></path>
                                 </svg>
                               </span>
-                            </a>
+                            </Link>
                           </div>
                           <div className="tp-work__content">
                             <h3 className="tp-work__title">
-                              <a href="/services/digital-marketing/">
+                              <Link href="/services/digital-marketing/">
                                 Digital Marketing
-                              </a>
+                              </Link>
                             </h3>
                             <span className="tp-work__subtitle">
                               Art , Direction
@@ -177,7 +178,7 @@ const ServiceMainWorkSwiper = () => {
                             />
                           </div>
                           <div className="tp-work__icon d-none d-md-block">
-                            <a
+                            <Link
                               href="/services/digital-marketing/"
                               target=""
                               rel=""
@@ -199,13 +200,13 @@ const ServiceMainWorkSwiper = () => {
                                   ></path>
                                 </svg>
                               </span>
-                            </a>
+                            </Link>
                           </div>
                           <div className="tp-work__content">
                             <h3 className="tp-work__title">
-                              <a href="/services/digital-marketing/">
+                              <Link href="/services/digital-marketing/">
                                 Digital Marketing
-                              </a>
+                              </Link>
                             </h3>
                             <span className="tp-work__subtitle">
                               Art , Direction
@@ -229,7 +230,7 @@ const ServiceMainWorkSwiper = () => {
                             />
                           </div>
                           <div className="tp-work__icon d-none d-md-block">
-                            <a
+                            <Link
                               href="/services/digital-marketing/"
                               target=""
                               rel=""
@@ -251,13 +252,13 @@ const ServiceMainWorkSwiper = () => {
                                   ></path>
                                 </svg>
                               </span>
-                            </a>
+                            </Link>
                           </div>
                           <div className="tp-work__content">
                             <h3 className="tp-work__title">
-                              <a href="/services/digital-marketing/">
+                              <Link href="/services/digital-marketing/">
                                 Digital Marketing
-                              </a>
+                              </Link>
                             </h3>
                             <span className="tp-work__subtitle">
                               Art , Direction
@@ -281,7 +282,7 @@ const ServiceMainWorkSwiper = () => {
                             />
                           </div>
                           <div className="tp-work__icon d-none d-md-block">
-                            <a
+                            <Link
                               href="/"
                               target=""
                               rel=""
@@ -303,13 +304,13 @@ const ServiceMainWorkSwiper = () => {
                                   ></path>
                                 </svg>
                               </span>
-                            </a>
+                            </Link>
                           </div>
                           <div className="tp-work__content">
                             <h3 className="tp-work__title">
-                              <a href="/">
+                              <Link href="/">
                                 Digital Marketing
-                              </a>
+                              </Link>
                             </h3>
                             <span className="tp-work__subtitle">
                               Art , Direction
@@ -333,7 +334,7 @@ const ServiceMainWorkSwiper = () => {
                             />
                           </div>
                           <div className="tp-work__icon d-none d-md-block">
-                            <a
+                            <Link
                               href="/"
                               target=""
                               rel=""
@@ -355,13 +356,13 @@ const ServiceMainWorkSwiper = () => {
                                   ></path>
                                 </svg>
                               </span>
-                            </a>
+                            </Link>
                           </div>
                           <div className="tp-work__content">
                             <h3 className="tp-work__title">
-                              <a href="/">
+                              <Link href="/">
                                 Digital Marketing
-                              </a>
+                              </Link>
                             </h3>
                             <span className="tp-work__subtitle">
                               Art , Direction

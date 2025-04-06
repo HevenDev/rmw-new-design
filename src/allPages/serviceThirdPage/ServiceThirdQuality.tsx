@@ -1,7 +1,7 @@
 "use client";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Pagination, Autoplay } from "swiper/modules";
 import styles from "./serviceThirdQuality.module.css";
 
 import "swiper/css";

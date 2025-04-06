@@ -1,3 +1,4 @@
+import Link from "next/link";
 const ServiceMainAbout = () => {
   return (
     <div
@@ -43,14 +44,14 @@ const ServiceMainAbout = () => {
                             We Build <span>Successful</span> <br />
                             Profitable Products{" "}
                           </h3>
-                          <a
+                          <Link
                             className="tp-btn-secondary"
                             href="/about/"
                             target="_self"
                             rel="nofollow"
                           >
                             more about
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -79,7 +80,7 @@ const ServiceMainAbout = () => {
                             <span>COMPANY</span> <br />
                             MISSION{" "}
                           </h3>
-                          <a
+                          <Link
                             className="tp-cta_2-mission-arrow"
                             href="/"
                             target="_self"
@@ -102,7 +103,7 @@ const ServiceMainAbout = () => {
                                 ></path>
                               </svg>
                             </span>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>

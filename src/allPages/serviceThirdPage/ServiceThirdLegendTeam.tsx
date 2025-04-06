@@ -9,6 +9,7 @@ import "swiper/css/free-mode";
 
 import "swiper/css/navigation";
 import { FreeMode, Navigation } from "swiper/modules";
+import Link from "next/link";
 
 const ServiceThirdLegendTeam = () => {
   const textRefs = useSplitText();
@@ -350,15 +351,15 @@ const ServiceThirdLegendTeam = () => {
                           }}
                         >
                           <div className="tp-team__3-thumb p-relative">
-                            <a href="/" rel="nofollow" target="_self">
+                            <Link href="/" rel="nofollow" target="_self">
                               <img
                                 decoding="async"
                                 src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/team-3-3.jpg"
                                 alt=""
                               />
-                            </a>
+                            </Link>
                             <div className="tp-team__3-action">
-                              <a href="/" rel="nofollow" target="_self">
+                              <Link href="/" rel="nofollow" target="_self">
                                 <span>
                                   <svg
                                     width="42"
@@ -376,46 +377,46 @@ const ServiceThirdLegendTeam = () => {
                                     ></path>
                                   </svg>
                                 </span>
-                              </a>
+                              </Link>
                             </div>
                             <div className="tp-team__3-social">
                               <div className="tp-team__3-social-link">
-                                <a rel="nofollow" target="_blank" href="#">
+                                <Link rel="nofollow" target="_blank" href="#">
                                   <i className="fab fa-twitter"></i>
-                                </a>
+                                </Link>
 
-                                <a rel="nofollow" target="_blank" href="#">
+                                <Link rel="nofollow" target="_blank" href="#">
                                   <i className="fab fa-facebook-f"></i>
-                                </a>
+                                </Link>
 
-                                <a rel="nofollow" target="_blank" href="#">
+                                <Link rel="nofollow" target="_blank" href="#">
                                   <i className="fab fa-instagram"></i>
-                                </a>
+                                </Link>
 
-                                <a rel="nofollow" target="_blank" href="#">
+                                <Link rel="nofollow" target="_blank" href="#">
                                   <i className="fa-brands fa-youtube"></i>
-                                </a>
+                                </Link>
                               </div>
                             </div>
                           </div>
                           <div className="tp-team__3-content d-flex align-items-center justify-content-between">
                             <div className="tp-team__3-text">
                               <h3 className="tp-team__3-title">
-                                <a href="/" rel="nofollow" target="_self">
+                                <Link href="/" rel="nofollow" target="_self">
                                   {" "}
                                   Kristin Watson{" "}
-                                </a>
+                                </Link>
                               </h3>
                               <span className="tp-team__3-designation">
                                 BACKEND DEVELOPER
                               </span>
                             </div>
                             <div className="tp-team__3-link">
-                              <a href="/" rel="nofollow" target="_self">
+                              <Link href="/" rel="nofollow" target="_self">
                                 <span>
                                   <i className="fas fa-long-arrow-right"></i>
                                 </span>
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -439,15 +440,15 @@ const ServiceThirdLegendTeam = () => {
                           }}
                         >
                           <div className="tp-team__3-thumb p-relative">
-                            <a href="/" rel="nofollow" target="_self">
+                            <Link href="/" rel="nofollow" target="_self">
                               <img
                                 decoding="async"
                                 src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/team-3-4.png"
                                 alt=""
                               />
-                            </a>
+                            </Link>
                             <div className="tp-team__3-action">
-                              <a href="/" rel="nofollow" target="_self">
+                              <Link href="/" rel="nofollow" target="_self">
                                 <span>
                                   <svg
                                     width="42"
@@ -465,46 +466,46 @@ const ServiceThirdLegendTeam = () => {
                                     ></path>
                                   </svg>
                                 </span>
-                              </a>
+                              </Link>
                             </div>
                             <div className="tp-team__3-social">
                               <div className="tp-team__3-social-link">
-                                <a rel="nofollow" target="_blank" href="#">
+                                <Link rel="nofollow" target="_blank" href="#">
                                   <i className="fab fa-twitter"></i>
-                                </a>
+                                </Link>
 
-                                <a rel="nofollow" target="_blank" href="#">
+                                <Link rel="nofollow" target="_blank" href="#">
                                   <i className="fab fa-facebook-f"></i>
-                                </a>
+                                </Link>
 
-                                <a rel="nofollow" target="_blank" href="#">
+                                <Link rel="nofollow" target="_blank" href="#">
                                   <i className="fab fa-instagram"></i>
-                                </a>
+                                </Link>
 
-                                <a rel="nofollow" target="_blank" href="#">
+                                <Link rel="nofollow" target="_blank" href="#">
                                   <i className="fa-brands fa-youtube"></i>
-                                </a>
+                                </Link>
                               </div>
                             </div>
                           </div>
                           <div className="tp-team__3-content d-flex align-items-center justify-content-between">
                             <div className="tp-team__3-text">
                               <h3 className="tp-team__3-title">
-                                <a href="/" rel="nofollow" target="_self">
+                                <Link href="/" rel="nofollow" target="_self">
                                   {" "}
                                   Ronald Richards{" "}
-                                </a>
+                                </Link>
                               </h3>
                               <span className="tp-team__3-designation">
                                 MARKETING OFFICER
                               </span>
                             </div>
                             <div className="tp-team__3-link">
-                              <a href="/" rel="nofollow" target="_self">
+                              <Link href="/" rel="nofollow" target="_self">
                                 <span>
                                   <i className="fas fa-long-arrow-right"></i>
                                 </span>
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -528,15 +529,15 @@ const ServiceThirdLegendTeam = () => {
                           }}
                         >
                           <div className="tp-team__3-thumb p-relative">
-                            <a href="/" rel="nofollow" target="_self">
+                            <Link href="/" rel="nofollow" target="_self">
                               <img
                                 decoding="async"
                                 src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/team-3-1.png"
                                 alt=""
                               />
-                            </a>
+                            </Link>
                             <div className="tp-team__3-action">
-                              <a href="/" rel="nofollow" target="_self">
+                              <Link href="/" rel="nofollow" target="_self">
                                 <span>
                                   <svg
                                     width="42"
@@ -554,46 +555,46 @@ const ServiceThirdLegendTeam = () => {
                                     ></path>
                                   </svg>
                                 </span>
-                              </a>
+                              </Link>
                             </div>
                             <div className="tp-team__3-social">
                               <div className="tp-team__3-social-link">
-                                <a rel="nofollow" target="_blank" href="#">
+                                <Link rel="nofollow" target="_blank" href="#">
                                   <i className="fab fa-twitter"></i>
-                                </a>
+                                </Link>
 
-                                <a rel="nofollow" target="_blank" href="#">
+                                <Link rel="nofollow" target="_blank" href="#">
                                   <i className="fab fa-facebook-f"></i>
-                                </a>
+                                </Link>
 
-                                <a rel="nofollow" target="_blank" href="#">
+                                <Link rel="nofollow" target="_blank" href="#">
                                   <i className="fab fa-instagram"></i>
-                                </a>
+                                </Link>
 
-                                <a rel="nofollow" target="_blank" href="#">
+                                <Link rel="nofollow" target="_blank" href="#">
                                   <i className="fa-brands fa-youtube"></i>
-                                </a>
+                                </Link>
                               </div>
                             </div>
                           </div>
                           <div className="tp-team__3-content d-flex align-items-center justify-content-between">
                             <div className="tp-team__3-text">
                               <h3 className="tp-team__3-title">
-                                <a href="/" rel="nofollow" target="_self">
+                                <Link href="/" rel="nofollow" target="_self">
                                   {" "}
                                   Alextina Ditarson{" "}
-                                </a>
+                                </Link>
                               </h3>
                               <span className="tp-team__3-designation">
                                 GRAPHIC DESIGNER
                               </span>
                             </div>
                             <div className="tp-team__3-link">
-                              <a href="/" rel="nofollow" target="_self">
+                              <Link href="/" rel="nofollow" target="_self">
                                 <span>
                                   <i className="fas fa-long-arrow-right"></i>
                                 </span>
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -617,15 +618,15 @@ const ServiceThirdLegendTeam = () => {
                           }}
                         >
                           <div className="tp-team__3-thumb p-relative">
-                            <a href="/" rel="nofollow" target="_self">
+                            <Link href="/" rel="nofollow" target="_self">
                               <img
                                 decoding="async"
                                 src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/team-3-2.png"
                                 alt=""
                               />
-                            </a>
+                            </Link>
                             <div className="tp-team__3-action">
-                              <a href="/" rel="nofollow" target="_self">
+                              <Link href="/" rel="nofollow" target="_self">
                                 <span>
                                   <svg
                                     width="42"
@@ -643,46 +644,46 @@ const ServiceThirdLegendTeam = () => {
                                     ></path>
                                   </svg>
                                 </span>
-                              </a>
+                              </Link>
                             </div>
                             <div className="tp-team__3-social">
                               <div className="tp-team__3-social-link">
-                                <a rel="nofollow" target="_blank" href="#">
+                                <Link rel="nofollow" target="_blank" href="#">
                                   <i className="fab fa-twitter"></i>
-                                </a>
+                                </Link>
 
-                                <a rel="nofollow" target="_blank" href="#">
+                                <Link rel="nofollow" target="_blank" href="#">
                                   <i className="fab fa-facebook-f"></i>
-                                </a>
+                                </Link>
 
-                                <a rel="nofollow" target="_blank" href="#">
+                                <Link rel="nofollow" target="_blank" href="#">
                                   <i className="fab fa-instagram"></i>
-                                </a>
+                                </Link>
 
-                                <a rel="nofollow" target="_blank" href="#">
+                                <Link rel="nofollow" target="_blank" href="#">
                                   <i className="fa-brands fa-youtube"></i>
-                                </a>
+                                </Link>
                               </div>
                             </div>
                           </div>
                           <div className="tp-team__3-content d-flex align-items-center justify-content-between">
                             <div className="tp-team__3-text">
                               <h3 className="tp-team__3-title">
-                                <a href="/" rel="nofollow" target="_self">
+                                <Link href="/" rel="nofollow" target="_self">
                                   {" "}
                                   Robin Khan{" "}
-                                </a>
+                                </Link>
                               </h3>
                               <span className="tp-team__3-designation">
                                 WEB DEVELOPER
                               </span>
                             </div>
                             <div className="tp-team__3-link">
-                              <a href="/" rel="nofollow" target="_self">
+                              <Link href="/" rel="nofollow" target="_self">
                                 <span>
                                   <i className="fas fa-long-arrow-right"></i>
                                 </span>
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -706,15 +707,15 @@ const ServiceThirdLegendTeam = () => {
                           }}
                         >
                           <div className="tp-team__3-thumb p-relative">
-                            <a href="/" rel="nofollow" target="_self">
+                            <Link href="/" rel="nofollow" target="_self">
                               <img
                                 decoding="async"
                                 src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/team-3-3.jpg"
                                 alt=""
                               />
-                            </a>
+                            </Link>
                             <div className="tp-team__3-action">
-                              <a href="/" rel="nofollow" target="_self">
+                              <Link href="/" rel="nofollow" target="_self">
                                 <span>
                                   <svg
                                     width="42"
@@ -732,46 +733,46 @@ const ServiceThirdLegendTeam = () => {
                                     ></path>
                                   </svg>
                                 </span>
-                              </a>
+                              </Link>
                             </div>
                             <div className="tp-team__3-social">
                               <div className="tp-team__3-social-link">
-                                <a rel="nofollow" target="_blank" href="#">
+                                <Link rel="nofollow" target="_blank" href="#">
                                   <i className="fab fa-twitter"></i>
-                                </a>
+                                </Link>
 
-                                <a rel="nofollow" target="_blank" href="#">
+                                <Link rel="nofollow" target="_blank" href="#">
                                   <i className="fab fa-facebook-f"></i>
-                                </a>
+                                </Link>
 
-                                <a rel="nofollow" target="_blank" href="#">
+                                <Link rel="nofollow" target="_blank" href="#">
                                   <i className="fab fa-instagram"></i>
-                                </a>
+                                </Link>
 
-                                <a rel="nofollow" target="_blank" href="#">
+                                <Link rel="nofollow" target="_blank" href="#">
                                   <i className="fa-brands fa-youtube"></i>
-                                </a>
+                                </Link>
                               </div>
                             </div>
                           </div>
                           <div className="tp-team__3-content d-flex align-items-center justify-content-between">
                             <div className="tp-team__3-text">
                               <h3 className="tp-team__3-title">
-                                <a href="/" rel="nofollow" target="_self">
+                                <Link href="/" rel="nofollow" target="_self">
                                   {" "}
                                   Kristin Watson{" "}
-                                </a>
+                                </Link>
                               </h3>
                               <span className="tp-team__3-designation">
                                 BACKEND DEVELOPER
                               </span>
                             </div>
                             <div className="tp-team__3-link">
-                              <a href="/" rel="nofollow" target="_self">
+                              <Link href="/" rel="nofollow" target="_self">
                                 <span>
                                   <i className="fas fa-long-arrow-right"></i>
                                 </span>
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -795,15 +796,15 @@ const ServiceThirdLegendTeam = () => {
                           }}
                         >
                           <div className="tp-team__3-thumb p-relative">
-                            <a href="/" rel="nofollow" target="_self">
+                            <Link href="/" rel="nofollow" target="_self">
                               <img
                                 decoding="async"
                                 src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/team-3-4.png"
                                 alt=""
                               />
-                            </a>
+                            </Link>
                             <div className="tp-team__3-action">
-                              <a href="/" rel="nofollow" target="_self">
+                              <Link href="/" rel="nofollow" target="_self">
                                 <span>
                                   <svg
                                     width="42"
@@ -821,46 +822,46 @@ const ServiceThirdLegendTeam = () => {
                                     ></path>
                                   </svg>
                                 </span>
-                              </a>
+                              </Link>
                             </div>
                             <div className="tp-team__3-social">
                               <div className="tp-team__3-social-link">
-                                <a rel="nofollow" target="_blank" href="#">
+                                <Link rel="nofollow" target="_blank" href="#">
                                   <i className="fab fa-twitter"></i>
-                                </a>
+                                </Link>
 
-                                <a rel="nofollow" target="_blank" href="#">
+                                <Link rel="nofollow" target="_blank" href="#">
                                   <i className="fab fa-facebook-f"></i>
-                                </a>
+                                </Link>
 
-                                <a rel="nofollow" target="_blank" href="#">
+                                <Link rel="nofollow" target="_blank" href="#">
                                   <i className="fab fa-instagram"></i>
-                                </a>
+                                </Link>
 
-                                <a rel="nofollow" target="_blank" href="#">
+                                <Link rel="nofollow" target="_blank" href="#">
                                   <i className="fa-brands fa-youtube"></i>
-                                </a>
+                                </Link>
                               </div>
                             </div>
                           </div>
                           <div className="tp-team__3-content d-flex align-items-center justify-content-between">
                             <div className="tp-team__3-text">
                               <h3 className="tp-team__3-title">
-                                <a href="/" rel="nofollow" target="_self">
+                                <Link href="/" rel="nofollow" target="_self">
                                   {" "}
                                   Ronald Richards{" "}
-                                </a>
+                                </Link>
                               </h3>
                               <span className="tp-team__3-designation">
                                 MARKETING OFFICER
                               </span>
                             </div>
                             <div className="tp-team__3-link">
-                              <a href="/" rel="nofollow" target="_self">
+                              <Link href="/" rel="nofollow" target="_self">
                                 <span>
                                   <i className="fas fa-long-arrow-right"></i>
                                 </span>
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>

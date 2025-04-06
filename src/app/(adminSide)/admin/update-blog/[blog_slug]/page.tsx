@@ -45,12 +45,17 @@ const UpdateBlog = () => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const { data } = await axios.get("/api/blog/categories");
-        setCategories(data);
+        const response = await axios.get("/api/blog/categories");
+        setCategories(response.data);
       } catch (error) {
-        toast.error("Failed to load categories");
-      }
-    };
+        if (error instanceof Error) {
+          console.error("Error fetching categories:", error.message);
+          toast.error("Failed to load categories: " + error.message);
+        } else {
+          console.error("Unexpected error:", error);
+          toast.error("An unexpected error occurred");
+        }
+      }}
     fetchCategories();
   }, []);
 
@@ -74,8 +79,14 @@ const UpdateBlog = () => {
 
         setExistingImage(data.blog.blog_image);
         setPreviewImage(data.blog.blog_image ? `/blogs/${data.blog.blog_image}` : null);
-      } catch (error) {
-        toast.error("Failed to load blog data");
+      }catch (error) {
+        if (error instanceof Error) {
+          console.error("Error fetching categories:", error.message);
+          toast.error("Failed to load categories: " + error.message);
+        } else {
+          console.error("Unexpected error:", error);
+          toast.error("An unexpected error occurred");
+        }
       } finally {
         setIsFetching(false); // ✅ Data loaded
       }
@@ -135,8 +146,14 @@ const UpdateBlog = () => {
       toast.success("✅ Blog updated successfully!");
       router.push("/admin/manage-blogs");
     } catch (error) {
-      toast.error("❌ Failed to update blog!");
-    } finally {
+      if (error instanceof Error) {
+        console.error("Error pushing blog:", error.message);
+        toast.error("Failed to load categories: " + error.message);
+      } else {
+        console.error("Unexpected error:", error);
+        toast.error("An unexpected error occurred");
+      }
+    }finally {
       setLoading(false);
     }
   };

@@ -78,7 +78,7 @@ export async function PUT(req: NextRequest, context: { params?: { blog_slug?: st
       const uploadDir = path.join(process.cwd(), "public/blogs", fileName);
 
       await writeFile(uploadDir, buffer);
-      imagePath = `${fileName}`; // Save new image path
+      imagePath = `${fileName}`; // Save new image path 
 
       // ✅ Remove old image if it exists
       if (existingImage) {

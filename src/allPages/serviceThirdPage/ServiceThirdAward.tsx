@@ -1,27 +1,28 @@
 "use client"
 import { useSplitText } from "@/hooks/useSplitText";
+import Link from "next/link";
 
-interface AnimatedTextProps {
-  text: string;
-}
-const AnimatedText: React.FC<AnimatedTextProps> = ({ text }) => {
-  return (
-    <div style={{ display: "inline-block" }}>
-      {text.split("").map((char, index) => (
-        <div
-          key={index}
-          style={{
-            position: "relative",
-            display: "inline-block",
-            opacity: 1,
-          }}
-        >
-          {char}
-        </div>
-      ))}
-    </div>
-  );
-};
+// interface AnimatedTextProps {
+//   text: string;
+// }
+// const AnimatedText: React.FC<LinknimatedTextProps> = ({ text }) => {
+//   return (
+//     <div style={{ display: "inline-block" }}>
+//       {text.split("").map((char, index) => (
+//         <div
+//           key={index}
+//           style={{
+//             position: "relative",
+//             display: "inline-block",
+//             opacity: 1,
+//           }}
+//         >
+//           {char}
+//         </div>
+//       ))}
+//     </div>
+//   );
+// };
 const ServiceThirdAward = () => {
 
   const textRefs = useSplitText();
@@ -727,7 +728,7 @@ const ServiceThirdAward = () => {
                           animationName: "tpFadeInUp",
                         }}
                       >
-                        <a
+                        <Link
                           className="tp-btn-primary"
                           href="/about/"
                           rel="nofollow"
@@ -735,7 +736,7 @@ const ServiceThirdAward = () => {
                         >
                           <span> More about us </span>
                           <i className="far fa-arrow-right"></i>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>

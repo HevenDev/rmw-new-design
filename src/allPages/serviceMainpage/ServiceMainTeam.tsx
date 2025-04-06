@@ -1,5 +1,6 @@
 "use client";
 import { useSplitText } from "@/hooks/useSplitText";
+import Link from "next/link";
 
 const ServiceMainTeam = () => {
 
@@ -291,21 +292,21 @@ const ServiceMainTeam = () => {
                           />
                           <div className="tp-team__2-social">
                             <div className="tp-team__2-social-link">
-                              <a rel="nofollow" target="_blank" href="#">
+                              <Link rel="nofollow" target="_blank" href="#">
                                 <i className="fab fa-twitter"></i>
-                              </a>
+                              </Link>
 
-                              <a rel="nofollow" target="_blank" href="#">
+                              <Link rel="nofollow" target="_blank" href="#">
                                 <i className="fab fa-facebook-f"></i>
-                              </a>
+                              </Link>
 
-                              <a rel="nofollow" target="_blank" href="#">
+                              <Link rel="nofollow" target="_blank" href="#">
                                 <i className="fab fa-instagram"></i>
-                              </a>
+                              </Link>
 
-                              <a rel="nofollow" target="_blank" href="#">
+                              <Link rel="nofollow" target="_blank" href="#">
                                 <i className="fab fa-linkedin-in"></i>
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -315,14 +316,14 @@ const ServiceMainTeam = () => {
                             CREATIVE DIRECTOR{" "}
                           </span>
                           <h3 className="tp-team__2-title">
-                            <a
+                            <Link
                               href="/"
                               target="_self"
                               rel="nofollow"
                             >
                               {" "}
                               ESTHER HOWAR{" "}
-                            </a>
+                            </Link>
                           </h3>
                         </div>
                       </div>
@@ -342,21 +343,21 @@ const ServiceMainTeam = () => {
                           />
                           <div className="tp-team__2-social">
                             <div className="tp-team__2-social-link">
-                              <a rel="nofollow" target="_blank" href="#">
+                              <Link rel="nofollow" target="_blank" href="#">
                                 <i className="fab fa-twitter"></i>
-                              </a>
+                              </Link>
 
-                              <a rel="nofollow" target="_blank" href="#">
+                              <Link rel="nofollow" target="_blank" href="#">
                                 <i className="fab fa-facebook-f"></i>
-                              </a>
+                              </Link>
 
-                              <a rel="nofollow" target="_blank" href="#">
+                              <Link rel="nofollow" target="_blank" href="#">
                                 <i className="fab fa-instagram"></i>
-                              </a>
+                              </Link>
 
-                              <a rel="nofollow" target="_blank" href="#">
+                              <Link rel="nofollow" target="_blank" href="#">
                                 <i className="fab fa-linkedin-in"></i>
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -366,14 +367,14 @@ const ServiceMainTeam = () => {
                             MARKETING STAFF{" "}
                           </span>
                           <h3 className="tp-team__2-title">
-                            <a
+                            <Link
                               href="/"
                               target="_self"
                               rel="nofollow"
                             >
                               {" "}
                               DWONA MEXBO{" "}
-                            </a>
+                            </Link>
                           </h3>
                         </div>
                       </div>
@@ -393,21 +394,21 @@ const ServiceMainTeam = () => {
                           />
                           <div className="tp-team__2-social">
                             <div className="tp-team__2-social-link">
-                              <a rel="nofollow" target="_blank" href="#">
+                              <Link rel="nofollow" target="_blank" href="#">
                                 <i className="fab fa-twitter"></i>
-                              </a>
+                              </Link>
 
-                              <a rel="nofollow" target="_blank" href="#">
+                              <Link rel="nofollow" target="_blank" href="#">
                                 <i className="fab fa-facebook-f"></i>
-                              </a>
+                              </Link>
 
-                              <a rel="nofollow" target="_blank" href="#">
+                              <Link rel="nofollow" target="_blank" href="#">
                                 <i className="fab fa-instagram"></i>
-                              </a>
+                              </Link>
 
-                              <a rel="nofollow" target="_blank" href="#">
+                              <Link rel="nofollow" target="_blank" href="#">
                                 <i className="fab fa-linkedin-in"></i>
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -417,28 +418,28 @@ const ServiceMainTeam = () => {
                             CREATIVE DIRECTOR{" "}
                           </span>
                           <h3 className="tp-team__2-title">
-                            <a
+                            <Link
                               href="/"
                               target="_self"
                               rel="nofollow"
                             >
                               {" "}
                               MEORN DEXWA{" "}
-                            </a>
+                            </Link>
                           </h3>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div className="tp-team__2-action text-center mt-90">
-                    <a
+                    <Link
                       className="tp-btn-secondary"
                       href="/"
                       rel="nofollow"
                       target="_self"
                     >
                       Get More Team
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

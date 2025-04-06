@@ -121,7 +121,7 @@ const Article1 = () => {
                   </Link>
                 </div>
                 <div className="postbox__meta-box mb-15">
-                  <a
+                  <Link
                     href="/"
                     className="postbox__meta-title"
                   >
@@ -129,8 +129,8 @@ const Article1 = () => {
                       <i className="fad fa-user"></i>
                     </span>
                     {/* {article.author} */}
-                  </a>
-                  <a href="#" className="postbox__meta-title">
+                  </Link>
+                  <Link href="#" className="postbox__meta-title">
                     <span>
                       <i className="fas fa-calendar-alt"></i>
                     </span>
@@ -139,16 +139,16 @@ const Article1 = () => {
                       month: "long",
                       day: "numeric",
                     })}
-                  </a>
-                  <a href="#" className="postbox__meta-title">
+                  </Link>
+                  <Link href="#" className="postbox__meta-title">
                     <span>
                       <i className="fad fa-comments"></i>
                     </span>
                     {/* {article.comments} */}
-                  </a>
+                  </Link>
                 </div>
                 <h3 className="postbox__title mb-25">
-                  <a href={article.slug}>{article.title}</a>
+                  <Link href={article.slug}>{article.title}</Link>
                 </h3>
                 <div className="postbox__text mb-30">{parse(article.description)}</div>
               </article>
@@ -157,8 +157,8 @@ const Article1 = () => {
           </div>
 
           {/* Sidebar */}
-          <div className="col-xxl-4 col-xl-4 col-lg-4">
-            <div className="sidebar__wrapper">
+          <div className="col-xxl-4 col-xl-4 col-lg-4 " >
+            <div className="sidebar__wrapper" style={{position:"relative"}}>
               <div
                 id="search-1"
                 className="sidebar__widget mb-40 widget_search"
@@ -191,7 +191,7 @@ const Article1 = () => {
                     >
                       <div className="tp-rc__post d-flex align-items-center">
                         <div className="tp-rc__post-thumb mr-25">
-                          <a href={post.link}>
+                          <Link href={post.link}>
                             <img
                               width="150"
                               height="150"
@@ -203,11 +203,11 @@ const Article1 = () => {
                               alt=""
                               decoding="async"
                             />
-                          </a>
+                          </Link>
                         </div>
                         <div className="tp-rc__post-content">
                           <h3 className="tp-rc__post-title">
-                            <a href={post.link}>{post.title}</a>
+                            <Link href={post.link}>{post.title}</Link>
                           </h3>
                           <div className="tp-rc__post-meta">
                             <span>
@@ -223,39 +223,39 @@ const Article1 = () => {
               </div>
               <div
                 id="categories-2"
-                className="sidebar__widget mb-40 widget_categories"
+                className="sidebar__widget mb-40 widget_categories" style={{position:"sticky", top:"163px"}}
               >
                 <h3 className="sidebar__widget-title">Categories</h3>
                 <ul>
                   <li className="cat-item cat-item-2">
-                    <a href="/">
+                    <Link href="/">
                       Agency
-                    </a>
+                    </Link>
                   </li>
                   <li className="cat-item cat-item-3">
-                    <a href="/">
+                    <Link href="/">
                       Business
-                    </a>
+                    </Link>
                   </li>
                   <li className="cat-item cat-item-4">
-                    <a href="/">
+                    <Link href="/">
                       Marketing
-                    </a>
+                    </Link>
                   </li>
                   <li className="cat-item cat-item-5">
-                    <a href="/">
+                    <Link href="/">
                       Software
-                    </a>
+                    </Link>
                   </li>
                   <li className="cat-item cat-item-6">
-                    <a href="/">
+                    <Link href="/">
                       Technology
-                    </a>
+                    </Link>
                   </li>
                   <li className="cat-item cat-item-1">
-                    <a href="/">
+                    <Link href="/">
                       Uncategorized
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -268,14 +268,14 @@ const Article1 = () => {
                   {blogData
                     .flatMap((post) => post.tags)
                     .map((tag, index) => (
-                      <a
-                        key={index}
+                      <Link
+                      href="/"                        key={index}
                         // href={`https://etorisoft.com/wp/avtrix/tag/${tag}/`}
                         className="tag-cloud-link"
                         style={{ fontSize: "16.4pt" }}
                       >
                         {tag}
-                      </a>
+                      </Link>
                     ))}
                 </div>
               </div>

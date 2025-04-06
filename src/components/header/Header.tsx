@@ -13,17 +13,17 @@ import {
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
-declare namespace JSX {
-  interface IntrinsicElements {
-    li: React.DetailedHTMLProps<
-      React.LiHTMLAttributes<HTMLLIElement>,
-      HTMLLIElement
-    >;
-  }
-}
+// declare namespace JSX {
+//   interface IntrinsicElements {
+//     li: React.DetailedHTMLProps<
+//       React.LiHTMLAttributes<HTMLLIElement>,
+//       HTMLLIElement
+//     >;
+//   }
+// }
 
 const Header = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  // const [isHovered, setIsHovered] = useState(false);
 
   const [isServiceDropdownOpen, setIsServiceDropdownOpen] = useState(true);
 
@@ -89,33 +89,150 @@ const Header = () => {
                       </Link>
                     </li>
                     <li className="nav-item">
-  <Link href="/service" className="nav-links">
-    Service
-  </Link>
+                      <Link href="/service" className="nav-links">
+                        Service
+                      </Link>
 
-  <div className="tp-submenu submenu has-homemenu" style={{ width: "1000px", left: "-400px" }}>
-    <div data-elementor-type="container" data-elementor-id="103" className="elementor elementor-103">
-      <div className="elementor-element elementor-element-039dca9 e-con-full d-flex justify-content-center align-items-center e-con e-parent">
-        <div className="elementor-element elementor-element-f21576b e-con-full d-flex justify-content-center align-items-center e-con e-child">
-          <div className="elementor-element elementor-element-08a5267 elementor-widget elementor-widget-tp-menu-demo">
-            <div className="w-100">
-              {/* ✅ FIXED: Text in One Row, Equal Spacing */}
-              <ul className="d-flex justify-content-evenly align-items-center w-100 list-unstyled m-0 p-0">
-                <li className="flex-fill text-center text-nowrap px-2 fs-6">Digital Marketing</li>
-                <li className="flex-fill text-center text-nowrap px-2 fs-6">Print Marketing</li>
-                <li className="flex-fill text-center text-nowrap px-2 fs-6">SEO</li>
-                <li className="flex-fill text-center text-nowrap px-2 fs-6">Creative Marketing</li>
-                <li className="flex-fill text-center text-nowrap px-2 fs-6">Web Development</li>
-                <li className="flex-fill text-center text-nowrap px-2 fs-6">Celebrity Endorsement</li>
-                <li className="flex-fill text-center text-nowrap px-2 fs-6">Celebrity Marketing</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</li>
+                      <div
+                        className="tp-submenu submenu has-homemenu"
+                        style={{
+                          padding:"0 25px",
+                          width: "990px",
+                          left: "-50%",
+                          transform: "translate(-40%, 0)",
+                        }}
+                      >
+                        <div
+                          data-elementor-type="container"
+                          data-elementor-id="103"
+                          className="elementor elementor-103"
+                        >
+                          <div className="elementor-element elementor-element-039dca9 e-con-full d-flex justify-content-center align-items-center e-con e-parent">
+                            <div className="elementor-element elementor-element-f21576b e-con-full d-flex justify-content-center align-items-center e-con e-child">
+                              <div className="elementor-element elementor-element-08a5267 elementor-widget elementor-widget-tp-menu-demo">
+                                <div className="w-100">
+                                  {/* ✅ FIXED: Text in One Row, Equal Spacing */}
+                                  <ul className="d-flex justify-content-evenly align-items-center w-100 list-unstyled m-0 p-0">
+                                    {[
+                                      {
+                                        name: "Digital Marketing",
+                                        sub: [
+                                          "SEO",
+                                          "Content Strategy",
+                                          "PPC Ads",
+                                          "Email Marketing",
+                                        ],
+                                      },
+                                      {
+                                        name: "Print Marketing",
+                                        sub: [
+                                          "Flyers",
+                                          "Posters",
+                                          "Brochures",
+                                          "Banners",
+                                        ],
+                                      },
+                                      {
+                                        name: "Radio Advertising",
+                                        sub: [
+                                          "Local FM",
+                                          "National AM",
+                                          "Podcast Ads",
+                                          "Sponsorships",
+                                        ],
+                                      },
+                                      {
+                                        name: "Content Marketing",
+                                        sub: [
+                                          "Blog Writing",
+                                          "Video Content",
+                                          "Podcasts",
+                                          "Social Media",
+                                        ],
+                                      },
+                                      {
+                                        name: "Creative Services",
+                                        sub: [
+                                          "Branding",
+                                          "Graphic Design",
+                                          "Motion Graphics",
+                                          "Copywriting",
+                                        ],
+                                      },
+                                      {
+                                        name: "Web Development",
+                                        sub: [
+                                          "Frontend",
+                                          "Backend",
+                                          "Full Stack",
+                                          "WordPress",
+                                        ],
+                                      },
+                                      {
+                                        name: "Celebrity Endorsement",
+                                        sub: [
+                                          "TV Ads",
+                                          "Social Campaigns",
+                                          "Live Events",
+                                          "Collaborations",
+                                        ],
+                                      },
+                                    ].map((item, index) => (
+                                      <li
+                                        key={index}
+                                        className="position-relative flex-fill text-center text-nowrap"
+                                        style={{
+                                          padding: "0 10px",
+                                          cursor: "pointer",
+                                          color:"#1e1e1e",
+                                        }}
+                                      >
+                                        {/* Main Menu Item */}
+                                        <Link href="#" className="nav-link" style={{fontSize:"14px"}}>
+                                          {item.name}
+                                          </Link>
+
+                                        {/* Submenu: Hidden by Default, Appears on Hover */}
+                                        <ul
+                                          className=" dropdown-menu position-absolute shadow"
+                                          style={{
+                                            borderTop:"2px solid #fddf82",
+                                            top: "100%",
+                                            left: "50%",
+                                            transform: "translateX(-50%)",
+                                            minWidth: "200px",
+                                            display: "none",
+                                            background: "#1c1c1c",
+                                            color: "#aaa4a4",
+                                          }}
+                                        >
+                                          {item.sub.map((subItem, subIndex) => (
+                                            <li key={subIndex}>
+                                             <Link href="#"
+                                                style={{ padding: "2px 0", fontSize:"15px" }}
+                                              >
+                                                {subItem}
+                                                </Link>
+                                            </li>
+                                          ))}
+                                        </ul>
+                                      </li>
+                                    ))}
+                                  </ul>
+
+                                  {/* ✅ CSS to Show Dropdown on Hover */}
+                                  <style jsx>{`
+                                    li.position-relative:hover .dropdown-menu {
+                                      display: block !important;
+                                    }
+                                  `}</style>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
 
                     <li className="nav-item">
                       <Link href="/our-work/" className="nav-links">

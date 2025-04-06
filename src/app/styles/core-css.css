@@ -4327,7 +4327,7 @@ input.search-input-field {
   }
 }
 
-.tp-main__menu ul li::before {
+.tp-main__menu ul .li::before {
   position: absolute;
   width: 6px;
   height: 6px;

@@ -3,9 +3,14 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import styles from "./Card.module.css";
 import Link from "next/link";
-
+type Card = {
+  id: string;
+  blog_image: string;
+  title: string;
+  slug: string; // or just string if there are more statuses
+};
 const ProjectCards = () => {
-  const [cardData, setCardData] = useState<any[]>([]);
+  const [cardData, setCardData] = useState<Card[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(true); // Loading state
   const [error, setError] = useState<string | null>(null);
@@ -60,11 +65,11 @@ console.log(cardData)
           <div className="row">
             {selectedCards.map((card, index) => (
               <div key={index} className="col-lg-4 col-md-6 mb-4">
-                <div className={`card bg-dark text-white ${styles.card}`}>
+                <div style={{height:"100%"}} className={`card bg-dark text-white ${styles.card}`}>
                   <div className={styles.imageContainer}>
                     <img
                       src={`/blogs/${card.blog_image}`}
-                      
+                      style={{height: "200px", objectFit: "cover"}}
                       className={`card-img-top ${styles.image}`}
                       alt={card.title}
                     />

@@ -135,33 +135,6 @@ const Footer = () => {
               </div>
               <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                 <div
-                  id="custom_html-4"
-                  className="widget_text tp-footer__widget footer-col-1-3 mb-40 widget_custom_html"
-                >
-                  <div className="widget_text tp-footer-widget-content">
-                    <h3 className="tp-footer__widget-title">Contact info</h3>
-                    <div className="textwidget custom-html-widget">
-                      <div className="tp-footer__contact-info">
-                        <div className="tp-footer__list">
-                          <Link href="#">
-                          Address: 402 – 404 , 4th floor Corporate Park,
-                          Tower A1 Sector 142 , Greater Noida
-                          </Link>
-                          <Link href="tel:09220516777">09220516777</Link>
-                          <Link href="tel:07290002168">07290002168</Link>
-                          <Link href="mailto:
-info@ritzmediaworld.com">
-                            info@ritzmediaworld.com
-                          </Link>
-                          <Link href="#">Office Hours: 8AM - 11PM</Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                <div
                   id="nav_menu-4"
                   className="tp-footer__widget footer-col-1-4 mb-40 widget_nav_menu"
                 >
@@ -221,7 +194,35 @@ info@ritzmediaworld.com">
                     </div>
                   </div>
                 </div>
+              </div>  
+              <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <div
+                  id="custom_html-4"
+                  className="widget_text tp-footer__widget footer-col-1-3 mb-40 widget_custom_html"
+                >
+                  <div className="widget_text tp-footer-widget-content">
+                    <h3 className="tp-footer__widget-title">Contact info</h3>
+                    <div className="textwidget custom-html-widget">
+                      <div className="tp-footer__contact-info">
+                        <div className="tp-footer__list">
+                          <Link href="#">
+                          Address: 402 – 404 , 4th floor Corporate Park,
+                          Tower A1 Sector 142 , Greater Noida
+                          </Link>
+                          <Link href="tel:09220516777">09220516777</Link>
+                          <Link href="tel:07290002168">07290002168</Link>
+                          <Link href="mailto:
+info@ritzmediaworld.com">
+                            info@ritzmediaworld.com
+                          </Link>
+                          <Link href="#">Office Hours: 8AM - 11PM</Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+              
             </div>
           </div>
           {/* <!-- tp copyright area start --> */}
