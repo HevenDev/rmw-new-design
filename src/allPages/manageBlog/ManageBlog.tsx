@@ -347,7 +347,7 @@ export default function ManageBlogs() {
           </div>
 
           {/* Mobile View */}
-          <div className="block md:hidden grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className=" md:hidden grid grid-cols-1 sm:grid-cols-2 gap-4">
             {currentBlogs.map((blog) => (
               <div
                 key={blog.id}
