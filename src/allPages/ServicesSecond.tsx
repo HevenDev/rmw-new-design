@@ -13,6 +13,7 @@ import axios from 'axios';
 
 type CardItem = {
   title: string;
+  imgSrc: string;
   description: string;
   link: string;
 };

@@ -15,7 +15,7 @@ export async function GET(
   context: { params?: { servicesSecondLayer?: string } }
 ) {
   try {
-    const { servicesSecondLayer } = context.params || {};
+    const { servicesSecondLayer } = await Promise.resolve(context.params || {});
 
     if (!servicesSecondLayer) {
       return NextResponse.json({ error: 'Slug is required' }, { status: 400 });

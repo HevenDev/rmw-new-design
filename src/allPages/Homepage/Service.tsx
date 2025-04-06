@@ -21,7 +21,7 @@ import { useState } from "react";
 interface ServiceItem {
   title: string;
   imgSrc: string;
-  content: string;
+  description: string;
   link: string;
 }
 
@@ -91,7 +91,7 @@ const Service: React.FC<ServiceProps> = ({ data }) => {
                                   <img
                                     decoding="async"
                                     src={item.imgSrc}
-                                    alt={item.title}
+                                    alt=""
                                   />
                                 </span>
                                 {item.title}
@@ -108,7 +108,7 @@ const Service: React.FC<ServiceProps> = ({ data }) => {
                               data-bs-parent="#accordion-310c8f9"
                             >
                               <div className="accordion-body">
-                                <p>{item.content}</p>
+                                <p>{item.description}</p>
                                 <a style={{fontSize: "18px", color: "#fddf82", fontStyle:"italic"}} href={item.link}>Learn more...</a>
                               </div>
                             </div>

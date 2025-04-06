@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <PageWrapper>
-          <TrackPageView />
+          {/* <TrackPageView /> */}
           {children}
         </PageWrapper>
       </body>
