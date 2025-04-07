@@ -29,7 +29,11 @@ const ServicesSecondPage = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(`/api/services/${serviceSecond}`);
-        setCard(response.data.cards); // should be array of { title, description, link }
+        const updatedCards: CardItem[] = response.data.cards.map((item: CardItem) => ({
+          ...item,
+          link: `${serviceSecond}/${item.link}`,
+        }));
+        setCard(updatedCards); // should be array of { title, description, link }
       } catch (err) {
         setError(err instanceof Error ? err.message : "An unknown error occurred");
       } finally {

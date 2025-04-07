@@ -12,6 +12,7 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import axios from "axios";
 
 // declare namespace JSX {
 //   interface IntrinsicElements {
@@ -21,10 +22,34 @@ import { FaXTwitter } from "react-icons/fa6";
 //     >;
 //   }
 // }
+type SubService = {
+  name: string;
+  link: string;
+};
+
+type ServiceMenuItem = {
+  name: string;
+  link: string;
+  sub: SubService[];
+};
 
 const Header = () => {
   // const [isHovered, setIsHovered] = useState(false);
+  const [menuData, setMenuData] = useState<ServiceMenuItem[]>([]);
 
+  useEffect(() => {
+    const fetchMenu = async () => {
+      try {
+        const response = await axios.get("/api/header_data");
+        setMenuData(response.data);
+      } catch (error) {
+        console.error("Failed to fetch menu", error);
+      }
+    };
+  
+    fetchMenu();
+  }, []);
+  
   const [isServiceDropdownOpen, setIsServiceDropdownOpen] = useState(true);
 
   useStickyElements();
@@ -96,9 +121,9 @@ const Header = () => {
                       <div
                         className="tp-submenu submenu has-homemenu"
                         style={{
-                          padding:"0 25px",
-                          width: "990px",
-                          left: "-50%",
+                          padding: "0 25px",
+                          width: "90vw",
+                          left: "-70%",
                           transform: "translate(-40%, 0)",
                         }}
                       >
@@ -110,141 +135,59 @@ const Header = () => {
                           <div className="elementor-element elementor-element-039dca9 e-con-full d-flex justify-content-center align-items-center e-con e-parent">
                             <div className="elementor-element elementor-element-f21576b e-con-full d-flex justify-content-center align-items-center e-con e-child">
                               <div className="elementor-element elementor-element-08a5267 elementor-widget elementor-widget-tp-menu-demo">
-                              <div className="w-100">
-  {/* ✅ FIXED: Text in One Row, Equal Spacing */}
-  <ul className="d-flex justify-content-evenly align-items-center w-100 list-unstyled m-0 p-0">
-    {[
-      {
-        name: "Digital Marketing",
-        link: "/services/digital-marketing",
-        sub: [
-          { name: "SEO (Search Engine Optimization)", link: "/services/digital-marketing/seo" },
-          { name: "PPC (Google Ads) Services", link: "/services/digital-marketing/ppc" },
-          { name: "Social Media Management", link: "/services/digital-marketing/social-media" },
-          { name: "ORM (Online Reputation Management)", link: "/services/digital-marketing/orm" },
-          { name: "Lead Generation", link: "/services/digital-marketing/lead-generation" },
-          { name: "Brand Awareness", link: "/services/digital-marketing/brand-awareness" },
-        ],
-      },
-      {
-        name: "Print Advertising",
-        link: "/services/print-advertising",
-        sub: [
-          { name: "Advertisement Design", link: "/services/print-advertising/ad-design" },
-          { name: "Ad Placement", link: "/services/print-advertising/ad-placement" },
-          { name: "Copywriting", link: "/services/print-advertising/copywriting" },
-          { name: "Cost Negotiation", link: "/services/print-advertising/cost-negotiation" },
-          { name: "Ad Size Optimization", link: "/services/print-advertising/size-optimization" },
-          { name: "Ad Scheduling", link: "/services/print-advertising/scheduling" },
-        ],
-      },
-      {
-        name: "Radio Advertising",
-        link: "/services/radio-advertising",
-        sub: [
-          { name: "Voiceover Casting", link: "/services/radio-advertising/voiceover" },
-          { name: "Recording & Production", link: "/services/radio-advertising/production" },
-          { name: "Advertising Concept Development", link: "/services/radio-advertising/concept" },
-          { name: "Scriptwriting", link: "/services/radio-advertising/scriptwriting" },
-          { name: "Media Planning", link: "/services/radio-advertising/planning" },
-          { name: "Cost Negotiations", link: "/services/radio-advertising/cost" },
-        ],
-      },
-      {
-        name: "Content Marketing",
-        link: "/services/content-marketing",
-        sub: [
-          { name: "Customized Content Strategy", link: "/services/content-marketing/strategy" },
-          { name: "Email and Newsletters Marketing", link: "/services/content-marketing/email" },
-          { name: "Asset Creation and Infographics", link: "/services/content-marketing/infographics" },
-          { name: "Content Promotion and Optimization", link: "/services/content-marketing/optimization" },
-        ],
-      },
-      {
-        name: "Creative Services",
-        link: "/services/creative-services",
-        sub: [
-          { name: "Branding & Identity Development", link: "/services/creative-services/branding" },
-          { name: "Graphic Design", link: "/services/creative-services/graphic-design" },
-          { name: "Logo Design", link: "/services/creative-services/logo" },
-          { name: "Print Advertising Design", link: "/services/creative-services/print-design" },
-          { name: "UI/UX Design", link: "/services/creative-services/ui-ux" },
-          { name: "Packaging Design", link: "/services/creative-services/packaging" },
-        ],
-      },
-      {
-        name: "Web Development",
-        link: "/services/web-development",
-        sub: [
-          { name: "Custom Design & Development", link: "/services/web-development/custom" },
-          { name: "WordPress Web Design", link: "/services/web-development/wordpress" },
-          { name: "E-Commerce Website Development", link: "/services/web-development/ecommerce" },
-          { name: "Landing Page Development", link: "/services/web-development/landing-page" },
-        ],
-      },
-      {
-        name: "Celebrity Endorsement",
-        link: "/services/celebrity-endorsement",
-        sub: [
-          { name: "Celebrity Identification", link: "/services/celebrity-endorsement/identification" },
-          { name: "Contract Negotiations", link: "/services/celebrity-endorsement/contracts" },
-          { name: "Creative Collaboration", link: "/services/celebrity-endorsement/collaboration" },
-          { name: "Campaign Integration", link: "/services/celebrity-endorsement/integration" },
-          { name: "Public Relations", link: "/services/celebrity-endorsement/pr" },
-          { name: "Legal Compliance", link: "/services/celebrity-endorsement/legal" },
-        ],
-      },
-    ].map((item, index) => (
-      <li
-        key={index}
-        className="position-relative flex-fill text-center text-nowrap"
-        style={{
-          padding: "0 10px",
-          cursor: "pointer",
-          color: "#1e1e1e",
-        }}
-      >
-        {/* Main Menu Item */}
-        <Link href={item.link} className="nav-link" style={{ fontSize: "14px" }}>
-          {item.name}
-        </Link>
+                                <div className="w-100">
+                                  <ul className="d-flex justify-content-evenly align-items-center w-100 list-unstyled m-0 p-0">
+                                    {menuData.map((item, index) => (
+                                      <li
+                                        key={index}
+                                        className="position-relative flex-fill text-center text-nowrap"
+                                        style={{
+                                          padding: "0 10px",
+                                          cursor: "pointer",
+                                          color: "#1e1e1e",
+                                        }}
+                                      >
+                                        {/* Main Menu Item */}
+                                        <Link href={item.link} className="nav-link" style={{ fontSize: "14px" }}>
+                                          {item.name}
+                                        </Link>
 
-        {/* Submenu */}
-        <ul
-          className="dropdown-menu position-absolute shadow"
-          style={{
-            borderTop: "2px solid #fddf82",
-            top: "100%",
-            left: "50%",
-            transform: "translateX(-50%)",
-            minWidth: "200px",
-            display: "none",
-            background: "#1c1c1c",
-            color: "#aaa4a4",
-          }}
-        >
-          {item.sub.map((subItem, subIndex) => (
-            <li key={subIndex}>
-              <Link
-                href={subItem.link}
-                style={{ padding: "2px 0", fontSize: "15px", display: "block", color: "#fff", textDecoration: "none" }}
-              >
-                {subItem.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </li>
-    ))}
-  </ul>
+                                        {/* Submenu */}
+                                        <ul
+                                          className="dropdown-menu position-absolute shadow"
+                                          style={{
+                                            borderTop: "2px solid #fddf82",
+                                            top: "100%",
+                                            left: "50%",
+                                            transform: "translateX(-50%)",
+                                            minWidth: "200px",
+                                            display: "none",
+                                            background: "#1c1c1c",
+                                            color: "#aaa4a4",
+                                          }}
+                                        >
+                                          {item.sub.map((subItem, subIndex) => (
+                                            <li key={subIndex}>
+                                              <Link
+                                                href={subItem.link}
+                                                style={{ padding: "2px 0", fontSize: "15px", display: "block", color: "#fff", textDecoration: "none" }}
+                                              >
+                                                {subItem.name}
+                                              </Link>
+                                            </li>
+                                          ))}
+                                        </ul>
+                                      </li>
+                                    ))}
+                                  </ul>
 
-  {/* ✅ CSS to Show Dropdown on Hover */}
-  <style jsx>{`
+                                  {/* ✅ CSS to Show Dropdown on Hover */}
+                                  <style jsx>{`
     li.position-relative:hover .dropdown-menu {
       display: block !important;
     }
   `}</style>
-</div>
+                                </div>
 
                               </div>
                             </div>
@@ -379,9 +322,8 @@ const Header = () => {
       {/* Mobile Sidebar */}
       {isMobile && (
         <div
-          className={`${styles.mobileMenuOverlay} ${
-            isMenuOpen ? styles.open : ""
-          }`}
+          className={`${styles.mobileMenuOverlay} ${isMenuOpen ? styles.open : ""
+            }`}
           onClick={() => setIsMenuOpen(false)}
         >
           <div
@@ -435,9 +377,8 @@ const Header = () => {
                     </button>
                   </div>
                   <ul
-                    className={`${styles.submenu} ${
-                      isServiceDropdownOpen ? styles.show : ""
-                    }`}
+                    className={`${styles.submenu} ${isServiceDropdownOpen ? styles.show : ""
+                      }`}
                   >
                     <li style={{ paddingLeft: "20px" }}>
                       <Link href="/service">Service</Link>
@@ -534,9 +475,8 @@ const Header = () => {
 
           {/* Sidebar */}
           <div
-            className={`${styles.desktopSidebar} ${styles.mobileMenuOverlay} ${
-              isDesktopSidebarOpen ? styles.open : ""
-            }`}
+            className={`${styles.desktopSidebar} ${styles.mobileMenuOverlay} ${isDesktopSidebarOpen ? styles.open : ""
+              }`}
             onClick={() => setIsDesktopSidebarOpen(false)}
           >
             <div

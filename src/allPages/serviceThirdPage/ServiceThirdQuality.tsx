@@ -1,11 +1,18 @@
 "use client";
 
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Pagination, Autoplay } from "swiper/modules";
+import { useParams } from "next/navigation";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import styles from "./serviceThirdQuality.module.css";
 
 import "swiper/css";
 import "swiper/css/pagination";
+
+interface CardData {
+  title: string;
+  description: string;
+  image?: string;
+}
 
 const cardData = [
   {
@@ -13,40 +20,69 @@ const cardData = [
     heading: "Strategic SEO for Real Impact",
     image: "/home-images/home-swiper1-img1.jpeg",
     content:
-      "SEO isn’t merely about ranking; it's about relevance. Our strategically-obsessed SEO experts ensure your website not only climbs the search results ladder but also captivates real human beings—transforming casual searchers into committed customers.",
+      "SEO isn't merely about ranking; it's about relevance. Our strategically-obsessed SEO experts ensure your website not only climbs the search results ladder but also captivates real human beings—transforming casual searchers into committed customers.",
   },
   {
     id: 2,
     heading: "Boost Your Visibility with SEO",
     image: "/home-images/home-swiper1-img1.jpeg",
     content:
-      "SEO isn’t merely about ranking; it's about relevance. Our strategically-obsessed SEO experts ensure your website not only climbs the search results ladder but also captivates real human beings—transforming casual searchers into committed customers.",
+      "SEO isn't merely about ranking; it's about relevance. Our strategically-obsessed SEO experts ensure your website not only climbs the search results ladder but also captivates real human beings—transforming casual searchers into committed customers.",
   },
   {
     id: 3,
     heading: "Get Found, Get Chosen",
     image: "/home-images/home-swiper1-img1.jpeg",
     content:
-      "SEO isn’t merely about ranking; it's about relevance. Our strategically-obsessed SEO experts ensure your website not only climbs the search results ladder but also captivates real human beings—transforming casual searchers into committed customers.",
+      "SEO isn't merely about ranking; it's about relevance. Our strategically-obsessed SEO experts ensure your website not only climbs the search results ladder but also captivates real human beings—transforming casual searchers into committed customers.",
   },
   {
     id: 4,
     heading: "Precision SEO Execution",
     image: "/home-images/home-swiper1-img1.jpeg",
     content:
-      "SEO isn’t merely about ranking; it's about relevance. Our strategically-obsessed SEO experts ensure your website not only climbs the search results ladder but also captivates real human beings—transforming casual searchers into committed customers.",
+      "SEO isn't merely about ranking; it's about relevance. Our strategically-obsessed SEO experts ensure your website not only climbs the search results ladder but also captivates real human beings—transforming casual searchers into committed customers.",
   },
   {
     id: 5,
     heading: "Conversion-Focused Optimization",
     image: "/home-images/home-swiper1-img1.jpeg",
     content:
-      "SEO isn’t merely about ranking; it's about relevance. Our strategically-obsessed SEO experts ensure your website not only climbs the search results ladder but also captivates real human beings—transforming casual searchers into committed customers.",
+      "SEO isn't merely about ranking; it's about relevance. Our strategically-obsessed SEO experts ensure your website not only climbs the search results ladder but also captivates real human beings—transforming casual searchers into committed customers.",
   },
 ];
 
-
 const ServiceThirdQuality = () => {
+  const params = useParams();
+  const [cardData, setCardData] = useState<CardData[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  const { secondPage, thirdPage } = params as {
+    secondPage: string;
+    thirdPage: string;
+  };
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await axios.get(
+          `/api/services/${secondPage}/${thirdPage}`
+        );
+        setCardData(res.data.cards); // Make sure your API returns { cards: [...] }
+        console.log("Response",cardData)
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    if (secondPage && thirdPage) {
+      fetchData();
+    }
+  }, [secondPage, thirdPage]);
+
+  if (loading) return <p>Loading...</p>;
   return (
     <div
       className="elementor-element elementor-element-3205e74 e-con-full e-flex e-con e-parent e-lazyloaded"
@@ -67,7 +103,7 @@ const ServiceThirdQuality = () => {
           <div className="elementor-widget-container">
             <section className="tp-service__3-area fix tp-services__3-style p-relative pt-120 pb-120 tp-bg-className">
               <div className="container">
-                <div className="tp-services__2-title-wrap mb-40">
+                <div className="tp-services__2-title-wrap mb-40 add_123">
                   <div className="row align-items-center">
                     <div className="">
                       <div className="tp-services__3-title-box">
@@ -82,47 +118,40 @@ const ServiceThirdQuality = () => {
                         </div>
                       </div>
                       <div className={`${styles.serviceCardsMain}`}>
-  {cardData.map((card, index) => (
-    <div
-      key={card.id}
-      className={`${styles.serviceCard} ${index % 2 === 0 ? styles.row : styles.rowReverse}`}
-    >
-      {/* Image */}
-      <img
-        src={card.image}
-        alt="Service"
-        style={{
-          width: "100%",
-          maxWidth: "380px",
-          borderRadius: "10px",
-          flexShrink: 0,
-          objectFit: "cover",
-        }}
-      />
-
-      {/* Content */}
-      <div
-        className={`${styles.serviceContent}`}
-        style={{
-          padding: "10px",
-          flex: 1,
-          lineHeight: "1.6",
-          fontWeight: "500",
-          textAlign: "center",
-        }}
-      >
-        {/* Heading */}
-        <h3 style={{ fontSize: "24px", color: "#fddf82", marginBottom: "10px" }}>
-          {card.heading}
-        </h3>
-
-        {/* Paragraph */}
-        <p style={{ fontSize: "20px", color: "white"}}>{card.content}</p>
-      </div>
-    </div>
-  ))}
-</div>
-
+                        {cardData.map((card, index) => (
+                          <div
+                            key={card.title}
+                            className={`${styles.serviceCard} ${index % 2 === 0 ? styles.row : styles.rowReverse}`}
+                          >
+                            <img
+                              src="/blogs/1.png"
+                              alt="Service"
+                              style={{
+                                width: "100%",
+                                maxWidth: "380px",
+                                borderRadius: "10px",
+                                flexShrink: 0,
+                                objectFit: "cover",
+                              }}
+                            />
+                            <div
+                              className={styles.serviceContent}
+                              style={{
+                                padding: "10px",
+                                flex: 1,
+                                lineHeight: "1.6",
+                                fontWeight: "500",
+                                textAlign: "center",
+                              }}
+                            >
+                              <h3 style={{ fontSize: "24px", color: "#fddf82", marginBottom: "10px" }}>
+                                {card.title}
+                              </h3>
+                              <p style={{ fontSize: "20px", color: "white" }}>{card.description}</p>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
