@@ -1,3 +1,4 @@
+import Link from "next/link";
 const ServiceThirdHero = () => {
   return (
     <div
@@ -35,17 +36,20 @@ const ServiceThirdHero = () => {
               <div className="tp-hero__3-social">
                 <div className="tp-hero__2-social-content">
                   <ul>
-                    <li>
-                      <a href="#">Fb</a>{" "}
+                  <li>
+                      <Link href="https://www.facebook.com/ritzmediaworld/"> Fb {" "}</Link> /
                     </li>
                     <li>
-                      <a href="#">Tw</a>{" "}
+                      <Link href="https://www.instagram.com/ritzmediaworld/"> In </Link>
                     </li>
                     <li>
-                      <a href="#">In</a>{" "}
+                      <Link href="https://www.youtube.com/c/RitzMediaWorldCreativeThinksMedia"> YT </Link>
                     </li>
                     <li>
-                      <a href="#">Yt</a>{" "}
+                      <Link href="https://x.com/i/flow/login?redirect_after_login=%2Fritzmediaworld"> X </Link>
+                    </li>
+                    <li>
+                      <Link href="https://www.linkedin.com/company/ritzmediaworld/?originalSubdomain=in"> Ln</Link>
                     </li>
                   </ul>
                 </div>

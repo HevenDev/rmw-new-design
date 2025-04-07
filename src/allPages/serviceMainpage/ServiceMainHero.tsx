@@ -29,13 +29,19 @@ const ServiceMainHero = () => {
                   <ul>
                     <li>Follow Us</li>
                     <li>
-                      <Link href="#"> FB </Link>
+                      <Link href="https://www.facebook.com/ritzmediaworld/"> Fb </Link>
                     </li>
                     <li>
-                      <Link href="#"> BE </Link>
+                      <Link href="https://www.instagram.com/ritzmediaworld/"> In </Link>
                     </li>
                     <li>
-                      <Link href="#"> YT </Link>
+                      <Link href="https://www.youtube.com/c/RitzMediaWorldCreativeThinksMedia"> YT </Link>
+                    </li>
+                    <li>
+                      <Link href="https://x.com/i/flow/login?redirect_after_login=%2Fritzmediaworld"> X </Link>
+                    </li>
+                    <li>
+                      <Link href="https://www.linkedin.com/company/ritzmediaworld/?originalSubdomain=in"> Ln</Link>
                     </li>
                   </ul>
                 </div>

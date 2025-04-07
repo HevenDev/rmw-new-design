@@ -509,27 +509,27 @@ const Form = () => {
                 <div className="tp-contact__social">
                   <h3 className="tp-contact__title">Follow</h3>
                   <div className="tp-contact__social-link">
-                    <Link href="#" >
+                    <Link href="https://www.facebook.com/ritzmediaworld/" >
                       <i aria-hidden="true">
                         <FaFacebookF />
                       </i>{" "}
                     </Link>
-                    <Link href="#" >
+                    <Link href="https://www.instagram.com/ritzmediaworld/" >
                       <i aria-hidden="true">
                         <FaInstagram />{" "}
                       </i>{" "}
                     </Link>
-                    <Link href="#" target="http://1" rel="http://1">
+                    <Link href="https://x.com/i/flow/login?redirect_after_login=%2Fritzmediaworld" target="http://1" rel="http://1">
                       <i aria-hidden="true">
                         <FaXTwitter />
                       </i>{" "}
                     </Link>
-                    <Link href="#" target="http://1" rel="http://1">
+                    <Link href="https://www.linkedin.com/company/ritzmediaworld/?originalSubdomain=in">
                       <i aria-hidden="true">
                         <FaLinkedin />
                       </i>{" "}
                     </Link>
-                    <Link href="#" target="http://1" rel="http://1">
+                    <Link href="https://www.youtube.com/c/RitzMediaWorldCreativeThinksMedia" target="http://1" rel="http://1">
                       <i aria-hidden="true">
                       <FaYoutube />
                       </i>{" "}

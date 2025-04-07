@@ -146,7 +146,7 @@ const Footer = () => {
                           id="menu-item-135"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-135"
                         >
-                          <Link href="/contact/">
+                          <Link href="/services/digital-marketing">
                             Digital Marketing
                           </Link>
                         </li>
@@ -154,7 +154,7 @@ const Footer = () => {
                           id="menu-item-136"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-136"
                         >
-                          <Link href="/">
+                          <Link href="/services/print-advertising">
                             Print Advertising
                           </Link>
                         </li>
@@ -162,7 +162,7 @@ const Footer = () => {
                           id="menu-item-137"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-137"
                         >
-                          <Link href="/">
+                          <Link href="/services/radio-advertising">
                             Radio Advertising
                           </Link>
                         </li>
@@ -170,7 +170,7 @@ const Footer = () => {
                           id="menu-item-138"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"
                         >
-                          <Link href="/service/">
+                          <Link href="/service/creative-services">
                             Creative Services
                           </Link>
                         </li>
@@ -178,7 +178,7 @@ const Footer = () => {
                           id="menu-item-139"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"
                         >
-                          <Link href="/about/">
+                          <Link href="/services/web-development">
                             Web Development
                           </Link>
                         </li>
@@ -186,7 +186,7 @@ const Footer = () => {
                           id="menu-item-139"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"
                         >
-                          <Link href="/about/">
+                          <Link href="/services/celebrity-endorsements">
                             Celebrity Endorsements
                           </Link>
                         </li>

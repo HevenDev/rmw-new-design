@@ -24,10 +24,18 @@
   .row {
     flex-direction: row;
   }
+
+  .row p h3{
+    text-align: left;
+  }
   
   /* Odd index -> Image right, Content left */
   .rowReverse {
     flex-direction: row-reverse;
+  }
+
+  .rowReverse p h3{
+    text-align: right;
   }
   
   /* 📱 Responsive: Below 1000px, Always Center Align */

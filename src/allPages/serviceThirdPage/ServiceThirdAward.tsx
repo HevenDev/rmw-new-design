@@ -615,10 +615,10 @@ const ServiceThirdAward = () => {
                             animationName: "tpFadeInUp",
                           }}
                         >
-                          If you ask our clients what it’s like working with 36,
-                          they’ll talk about whether real success. We love
-                          building brands it&apos;s crafting a stunning brand iden
-                          how much we care about their success.
+                         We’ve held hands with budding brands that have
+                          shattered sealings of convention. With us behind them,
+                          they have achieved great feats in their industry and
+                          went on to dominate their competition.
                         </p>
                       </div>
                       <div
@@ -640,7 +640,7 @@ const ServiceThirdAward = () => {
                               data-purecounter-duration="0"
                               data-purecounter-end="5"
                             >
-                              5
+                              17
                             </b>
                           </h3>
                           <div className="tp-awards__3-funfact-text">
@@ -649,15 +649,15 @@ const ServiceThirdAward = () => {
                         </div>
                         <div className="tp-awards__3-funfact-item">
                           <h3 className="tp-awards__3-funfact-number">
-                            +
+                            
                             <b
                               className="purecounter"
                               data-purecounter-duration="0"
                               data-purecounter-end="50"
                             >
-                              50
+                              300+
                             </b>
-                            k
+                            
                           </h3>
                           <div className="tp-awards__3-funfact-text">
                             <span>SUCCESSFUL PROJECTS</span>
