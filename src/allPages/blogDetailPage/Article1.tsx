@@ -70,7 +70,9 @@ const Article1 = () => {
 
         setArticle(response.data.blog); // Make sure to access `response.data.blog`
       } catch (err) {
-        setError(err instanceof Error ? err.message : "An unknown error occurred");
+        setError(
+          err instanceof Error ? err.message : "An unknown error occurred"
+        );
       } finally {
         setLoading(false);
       }
@@ -78,7 +80,6 @@ const Article1 = () => {
 
     fetchBlog();
   }, [blog_slug]);
-
 
   // console.log("article here check it",article)
 
@@ -89,8 +90,11 @@ const Article1 = () => {
   return (
     <section className="postbox__area fix pt-160 pb-160">
       <div className="container">
-        <div className="row g-5">
-          <div className="col-xxl-8 col-xl-8 col-lg-8 blog-post-items blog-padding">
+        <div style={{ display: "flex" }}>
+          <div
+            style={{ width: "68%", height: "100%" }}
+            className=" blog-post-items blog-padding"
+          >
             <div className="postbox__wrapper">
               {/* Dynamically render blog posts */}
 
@@ -121,10 +125,7 @@ const Article1 = () => {
                   </Link>
                 </div>
                 <div className="postbox__meta-box mb-15">
-                  <Link
-                    href="/"
-                    className="postbox__meta-title"
-                  >
+                  <Link href="/" className="postbox__meta-title">
                     <span>
                       <i className="fad fa-user"></i>
                     </span>
@@ -150,15 +151,22 @@ const Article1 = () => {
                 <h3 className="postbox__title mb-25">
                   <Link href={article.slug}>{article.title}</Link>
                 </h3>
-                <div className="postbox__text mb-30">{parse(article.description)}</div>
+                <div className="postbox__text mb-30">
+                  {parse(article.description)}
+                </div>
               </article>
-
             </div>
           </div>
 
           {/* Sidebar */}
-          <div className="col-xxl-4 col-xl-4 col-lg-4 " >
-            <div className="sidebar__wrapper"
+          <div style={{ width: "33.333%", position: "relative" }}>
+            <div
+              className="sidebar__wrapper"
+              style={{
+                position: "sticky",
+                top: "100px", // adjust based on your header height
+                alignSelf: "flex-start",
+              }}
             >
               <div
                 id="search-1"
@@ -196,10 +204,7 @@ const Article1 = () => {
                             <img
                               width="150"
                               height="150"
-                              src={post.image.replace(
-                                ".png",
-                                "-150x150.png"
-                              )}
+                              src={post.image.replace(".png", "-150x150.png")}
                               className="attachment-thumbnail size-thumbnail wp-post-image"
                               alt=""
                               decoding="async"
@@ -229,34 +234,22 @@ const Article1 = () => {
                 <h3 className="sidebar__widget-title">Categories</h3>
                 <ul>
                   <li className="cat-item cat-item-2">
-                    <Link href="/">
-                      Agency
-                    </Link>
+                    <Link href="/">Agency</Link>
                   </li>
                   <li className="cat-item cat-item-3">
-                    <Link href="/">
-                      Business
-                    </Link>
+                    <Link href="/">Business</Link>
                   </li>
                   <li className="cat-item cat-item-4">
-                    <Link href="/">
-                      Marketing
-                    </Link>
+                    <Link href="/">Marketing</Link>
                   </li>
                   <li className="cat-item cat-item-5">
-                    <Link href="/">
-                      Software
-                    </Link>
+                    <Link href="/">Software</Link>
                   </li>
                   <li className="cat-item cat-item-6">
-                    <Link href="/">
-                      Technology
-                    </Link>
+                    <Link href="/">Technology</Link>
                   </li>
                   <li className="cat-item cat-item-1">
-                    <Link href="/">
-                      Uncategorized
-                    </Link>
+                    <Link href="/">Uncategorized</Link>
                   </li>
                 </ul>
               </div>
@@ -270,7 +263,8 @@ const Article1 = () => {
                     .flatMap((post) => post.tags)
                     .map((tag, index) => (
                       <Link
-                        href="/" key={index}
+                        href="/"
+                        key={index}
                         // href={`https://etorisoft.com/wp/avtrix/tag/${tag}/`}
                         className="tag-cloud-link"
                         style={{ fontSize: "16.4pt" }}
