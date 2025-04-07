@@ -61,13 +61,13 @@ const Article1 = () => {
   const [error, setError] = useState<string | null>(null);
 
   const params = useParams();
-  const blog_slug = params?.blogDetailPage as string; 
-  
+  const blog_slug = params?.blogDetailPage as string;
+
   useEffect(() => {
     const fetchBlog = async () => {
       try {
         const response = await axios.get(`/api/blog/${blog_slug}`);
-  
+
         setArticle(response.data.blog); // Make sure to access `response.data.blog`
       } catch (err) {
         setError(err instanceof Error ? err.message : "An unknown error occurred");
@@ -75,10 +75,10 @@ const Article1 = () => {
         setLoading(false);
       }
     };
-  
+
     fetchBlog();
-  }, [blog_slug]); 
-  
+  }, [blog_slug]);
+
 
   // console.log("article here check it",article)
 
@@ -152,13 +152,14 @@ const Article1 = () => {
                 </h3>
                 <div className="postbox__text mb-30">{parse(article.description)}</div>
               </article>
-              
+
             </div>
           </div>
 
           {/* Sidebar */}
           <div className="col-xxl-4 col-xl-4 col-lg-4 " >
-            <div className="sidebar__wrapper" style={{position:"relative"}}>
+            <div className="sidebar__wrapper"
+            >
               <div
                 id="search-1"
                 className="sidebar__widget mb-40 widget_search"
@@ -223,7 +224,7 @@ const Article1 = () => {
               </div>
               <div
                 id="categories-2"
-                className="sidebar__widget mb-40 widget_categories" style={{position:"sticky", top:"163px"}}
+                className="sidebar__widget mb-40 widget_categories"
               >
                 <h3 className="sidebar__widget-title">Categories</h3>
                 <ul>
@@ -269,7 +270,7 @@ const Article1 = () => {
                     .flatMap((post) => post.tags)
                     .map((tag, index) => (
                       <Link
-                      href="/"                        key={index}
+                        href="/" key={index}
                         // href={`https://etorisoft.com/wp/avtrix/tag/${tag}/`}
                         className="tag-cloud-link"
                         style={{ fontSize: "16.4pt" }}

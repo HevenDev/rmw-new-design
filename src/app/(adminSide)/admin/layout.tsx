@@ -1,5 +1,5 @@
-import "@/app/admin.css";
-import Sidebar from "@/components/sidenav/Sidenav";
+import "../../admin.css";
+import Sidebar from "../../../components/sidenav/Sidenav";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

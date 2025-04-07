@@ -1,5 +1,5 @@
 // import Editor from "@/allPages/addBlog/AddBlog";
-import AddBlogData from "@/components/addBlogData/AddBlogData";
+import AddBlogData from "../../../../components/addBlogData/AddBlogData";
 
 const page = () => {
   return (
