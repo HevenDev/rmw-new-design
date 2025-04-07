@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation"; // Import usePathname
 import { Home, FileText, ChevronDown, Menu } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn } from "../../lib/utils";
 import axios from "axios";
 import Link from "next/link";
 import LogoutButton from "../logout/Logout";
