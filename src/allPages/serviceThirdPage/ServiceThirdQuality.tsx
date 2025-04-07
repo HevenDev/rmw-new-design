@@ -28,8 +28,8 @@ const ServiceThirdQuality = () => {
         const res = await axios.get(
           `/api/services/${secondPage}/${thirdPage}`
         );
-        console.log("Response",res)
-        setCardData(res.data.card); // Make sure your API returns { cards: [...] }
+        setCardData(res.data.cards); // Make sure your API returns { cards: [...] }
+        console.log("Response",cardData)
       } catch (error) {
         console.error("Error fetching data:", error);
       } finally {
@@ -62,11 +62,11 @@ const ServiceThirdQuality = () => {
                       <div className={`${styles.serviceCardsMain}`}>
                         {cardData.map((card, index) => (
                           <div
-                            key={card.id}
+                            key={card.title}
                             className={`${styles.serviceCard} ${index % 2 === 0 ? styles.row : styles.rowReverse}`}
                           >
                             <img
-                              src="/1.png"
+                              src="/blogs/1.png"
                               alt="Service"
                               style={{
                                 width: "100%",
