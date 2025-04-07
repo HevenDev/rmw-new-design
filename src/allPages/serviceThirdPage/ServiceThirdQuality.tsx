@@ -5,52 +5,12 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import styles from "./serviceThirdQuality.module.css";
 
-import "swiper/css";
-import "swiper/css/pagination";
 
 interface CardData {
   title: string;
   description: string;
   image?: string;
 }
-
-const cardData = [
-  {
-    id: 1,
-    heading: "Strategic SEO for Real Impact",
-    image: "/home-images/home-swiper1-img1.jpeg",
-    content:
-      "SEO isn't merely about ranking; it's about relevance. Our strategically-obsessed SEO experts ensure your website not only climbs the search results ladder but also captivates real human beings—transforming casual searchers into committed customers.",
-  },
-  {
-    id: 2,
-    heading: "Boost Your Visibility with SEO",
-    image: "/home-images/home-swiper1-img1.jpeg",
-    content:
-      "SEO isn't merely about ranking; it's about relevance. Our strategically-obsessed SEO experts ensure your website not only climbs the search results ladder but also captivates real human beings—transforming casual searchers into committed customers.",
-  },
-  {
-    id: 3,
-    heading: "Get Found, Get Chosen",
-    image: "/home-images/home-swiper1-img1.jpeg",
-    content:
-      "SEO isn't merely about ranking; it's about relevance. Our strategically-obsessed SEO experts ensure your website not only climbs the search results ladder but also captivates real human beings—transforming casual searchers into committed customers.",
-  },
-  {
-    id: 4,
-    heading: "Precision SEO Execution",
-    image: "/home-images/home-swiper1-img1.jpeg",
-    content:
-      "SEO isn't merely about ranking; it's about relevance. Our strategically-obsessed SEO experts ensure your website not only climbs the search results ladder but also captivates real human beings—transforming casual searchers into committed customers.",
-  },
-  {
-    id: 5,
-    heading: "Conversion-Focused Optimization",
-    image: "/home-images/home-swiper1-img1.jpeg",
-    content:
-      "SEO isn't merely about ranking; it's about relevance. Our strategically-obsessed SEO experts ensure your website not only climbs the search results ladder but also captivates real human beings—transforming casual searchers into committed customers.",
-  },
-];
 
 const ServiceThirdQuality = () => {
   const params = useParams();
@@ -103,7 +63,7 @@ const ServiceThirdQuality = () => {
           <div className="elementor-widget-container">
             <section className="tp-service__3-area fix tp-services__3-style p-relative pt-120 pb-120 tp-bg-className">
               <div className="container">
-                <div className="tp-services__2-title-wrap mb-40 add_123">
+                <div className="tp-services__2-title-wrap mb-40 ">
                   <div className="row align-items-center">
                     <div className="">
                       <div className="tp-services__3-title-box">
