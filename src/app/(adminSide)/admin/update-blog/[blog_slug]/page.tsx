@@ -14,9 +14,9 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
+} from "../../../../../components/ui/select";
 import { Label } from "../../../../../components/ui/label";
-import Editor from "@/components/Editor/Editor";
+import Editor from "../../../../../components/Editor/Editor";
 import { FiXCircle } from "react-icons/fi";
 
 const UpdateBlog = () => {
