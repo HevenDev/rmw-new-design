@@ -10,6 +10,8 @@ import ServiceImg from "./serviceSecondPage/ServiceImg";
 import Feedback from './Homepage/Feedback';
 import { useParams } from 'next/navigation';
 import axios from 'axios';
+import ServiceEndTag from "@/components/endTag/serviceEndTag";
+
 
 type CardItem = {
   title: string;
@@ -55,6 +57,7 @@ const ServicesSecondPage = () => {
       <Service data={card} />
       <ServiceImg />
       <Feedback />
+      <ServiceEndTag/>
       <Footer />
     </>
   );

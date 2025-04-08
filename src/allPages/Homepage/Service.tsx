@@ -39,7 +39,14 @@ const Service: React.FC<ServiceProps> = ({ data }) => {
   };
 
   return (
-    <div className="tp-service__area fix pt-120 tp-bg-class pb-50">
+    <div className="tp-service__area fix tp-bg-class pb-50">
+      <div style={{position: "relative",
+      padding:"20px 10px",
+      maxWidth:"800px",
+      fontSize:"19px",
+  left: "50%",
+  transform: "translate(-50%)",
+  textAlign: "center"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum molestiae veritatis praesentium ratione quod ut quasi. Nemo, temporibus? Esse fuga neque ad nesciunt delectus dicta adipisci, qui ex! Sapiente repellendus harum voluptas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum molestiae veritatis praesentium ratione quod ut quasi. Nemo, temporibus? Esse</div>
       <div className="container">
         <div className="row">
           <div className="col-xl-12">

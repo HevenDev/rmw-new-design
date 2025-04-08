@@ -10,6 +10,7 @@ const Footer = () => {
   return (
     <footer>
       {/* <!-- tp footer area start  --> */}
+      
       <section
         className="tp-footer-area fix tp-footer__1 tp-footer__plr black-bg-2 z-index-11 p-relative"
         data-background=""

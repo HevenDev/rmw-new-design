@@ -11,7 +11,7 @@
     justify-content: center;
     width: 100%;
     align-items: center;
-    gap: 15%;
+    gap: 8%;
     padding: 30px;
     flex-wrap: wrap;
     border-radius: 12px;
@@ -20,12 +20,24 @@
     cursor: pointer;
   }
   
+  .serviceContent h3{
+    font-size: 24px;
+    text-align: left;
+  }
+  .serviceContent p{
+    font-size: 22px;
+    text-align: left;
+  }
   /* Default: Even index -> Image left, Content right */
   .row {
     flex-direction: row;
   }
 
-  .row p h3{
+  .row p{
+    text-align: left;
+  }
+
+  .row h3{
     text-align: left;
   }
   
@@ -34,7 +46,11 @@
     flex-direction: row-reverse;
   }
 
-  .rowReverse p h3{
+  .rowReverse p{
+    text-align: right;
+  }
+
+  .rowReverse h3{
     text-align: right;
   }
   
@@ -45,4 +61,28 @@
       text-align: center;
       gap: 20px;
     }
+    .serviceContent h3{
+      font-size: 23px;
+      text-align: left;
+    }
+    .serviceContent p{
+      font-size: 21px;
+      text-align: left;
+    }
+
   }
+
+  @media (max-width: 581px) {
+    .serviceContent h3{
+      font-size: 22px;
+      text-align: left;
+    }
+    .serviceContent p{
+      font-size: 19px;
+      text-align: left;
+    }
+    .serviceCard{
+      padding: 3px;
+    }
+  }
+

@@ -4786,6 +4786,8 @@ input.search-input-field {
   color: var(--tp-theme-primary);
   background-color: var(--tp-common-black);
   transition: 0.3s;
+  border: 1px solid;
+  border-radius: 20px;
 }
 
 .postbox__comment-input .inputText::placeholder {
@@ -4808,6 +4810,8 @@ input.search-input-field {
   color: var(--tp-theme-primary);
   background-color: var(--tp-common-black);
   margin-bottom: 20px;
+  border: 1px solid;
+  border-radius: 20px;
 }
 
 .postbox__comment-input .textareaText::placeholder {

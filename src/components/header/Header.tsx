@@ -46,10 +46,10 @@ const Header = () => {
         console.error("Failed to fetch menu", error);
       }
     };
-  
+
     fetchMenu();
   }, []);
-  
+
   const [isServiceDropdownOpen, setIsServiceDropdownOpen] = useState(true);
 
   useStickyElements();
@@ -148,7 +148,11 @@ const Header = () => {
                                         }}
                                       >
                                         {/* Main Menu Item */}
-                                        <Link href={item.link} className="nav-link" style={{ fontSize: "14px" }}>
+                                        <Link
+                                          href={item.link}
+                                          className="nav-link"
+                                          style={{ fontSize: "14px" }}
+                                        >
                                           {item.name}
                                         </Link>
 
@@ -170,7 +174,13 @@ const Header = () => {
                                             <li key={subIndex}>
                                               <Link
                                                 href={subItem.link}
-                                                style={{ padding: "2px 0", fontSize: "15px", display: "block", color: "#fff", textDecoration: "none" }}
+                                                style={{
+                                                  padding: "2px 0",
+                                                  fontSize: "15px",
+                                                  display: "block",
+                                                  color: "#fff",
+                                                  textDecoration: "none",
+                                                }}
                                               >
                                                 {subItem.name}
                                               </Link>
@@ -183,12 +193,11 @@ const Header = () => {
 
                                   {/* ✅ CSS to Show Dropdown on Hover */}
                                   <style jsx>{`
-    li.position-relative:hover .dropdown-menu {
-      display: block !important;
-    }
-  `}</style>
+                                    li.position-relative:hover .dropdown-menu {
+                                      display: block !important;
+                                    }
+                                  `}</style>
                                 </div>
-
                               </div>
                             </div>
                           </div>
@@ -322,8 +331,9 @@ const Header = () => {
       {/* Mobile Sidebar */}
       {isMobile && (
         <div
-          className={`${styles.mobileMenuOverlay} ${isMenuOpen ? styles.open : ""
-            }`}
+          className={`${styles.mobileMenuOverlay} ${
+            isMenuOpen ? styles.open : ""
+          }`}
           onClick={() => setIsMenuOpen(false)}
         >
           <div
@@ -377,8 +387,9 @@ const Header = () => {
                     </button>
                   </div>
                   <ul
-                    className={`${styles.submenu} ${isServiceDropdownOpen ? styles.show : ""
-                      }`}
+                    className={`${styles.submenu} ${
+                      isServiceDropdownOpen ? styles.show : ""
+                    }`}
                   >
                     <li style={{ paddingLeft: "20px" }}>
                       <Link href="/service">Service</Link>
@@ -475,8 +486,9 @@ const Header = () => {
 
           {/* Sidebar */}
           <div
-            className={`${styles.desktopSidebar} ${styles.mobileMenuOverlay} ${isDesktopSidebarOpen ? styles.open : ""
-              }`}
+            className={`${styles.desktopSidebar} ${styles.mobileMenuOverlay} ${
+              isDesktopSidebarOpen ? styles.open : ""
+            }`}
             onClick={() => setIsDesktopSidebarOpen(false)}
           >
             <div

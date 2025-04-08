@@ -88,7 +88,7 @@ const ServiceThirdQuality = () => {
                               alt="Service"
                               style={{
                                 width: "100%",
-                                maxWidth: "380px",
+                                maxWidth: "470px",
                                 borderRadius: "10px",
                                 flexShrink: 0,
                                 objectFit: "cover",
@@ -104,10 +104,10 @@ const ServiceThirdQuality = () => {
                                 textAlign: "center",
                               }}
                             >
-                              <h3 style={{ fontSize: "24px", color: "#fddf82", marginBottom: "10px" }}>
+                              <h3 style={{ color: "#fddf82", marginBottom: "10px" }}>
                                 {card.title}
                               </h3>
-                              <p style={{ fontSize: "20px", color: "white" }}>{card.description}</p>
+                              <p style={{ color: "white" }}>{card.description}</p>
                             </div>
                           </div>
                         ))}

@@ -548,9 +548,11 @@ const Form = () => {
                   visibility: "visible",
                   animationDuration: "0.9s",
                   animationDelay: "0.9s",
+                  border:"0.5px solid #fddf82",
+                  borderRadius:"20px"
                 }}
                 >
-              <div id="contact-form">
+              <div  id="contact-form">
                 <div
                   className="wpcf7 js"
                   id="wpcf7-f990-p70-o1"
@@ -593,9 +595,9 @@ const Form = () => {
                         value=""
                         />
                     </div>
-                    <div className="postbox__comment-form">
+                    <div  className="postbox__comment-form">
                       <div className="row">
-                        <div className="col-xxl-6 col-xl-6 col-lg-6">
+                        <div  className="col-xxl-6 col-xl-6 col-lg-6">
                           <div className="postbox__comment-input mb-35">
                             <span
                               className="wpcf7-form-control-wrap"
@@ -670,9 +672,9 @@ const Form = () => {
                       <button
                         type="submit"
                         className="tp-btn-secondary"
-                        //  fdprocessedid="vtyjbb"
+                        style={{padding:"20px 30px"}}
                         >
-                        Send Us Messages
+                        submit
                         <span>
                           <i className="far fa-angle-right"></i>
                         </span>

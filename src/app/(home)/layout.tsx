@@ -8,6 +8,8 @@ import "../styles/magnific-popup-css.css";
 import "../styles/elementor-css.css";
 import "../styles/animation-css.css";
 import PageWrapper from "@/components/pageWrapper/PageWrapper";
+import Button from "@/components/sideButton/sideButton";
+
 // import { TrackPageView } from "@/components/trackView/TrackPageView";
 
 
@@ -29,6 +31,7 @@ export default function RootLayout({
         <PageWrapper>
           {/* <TrackPageView /> */}
           {children}
+          <Button/>
         </PageWrapper>
       </body>
     </html>

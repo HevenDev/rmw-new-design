@@ -70,11 +70,11 @@ const Feedback = () => {
                           <div className="tp-testimonial__item">
                             <div className="tp-testimonial__thumb-box mb-25 d-flex align-items-center justify-content-between">
                               <div className="tp-testimonial__thumb">
-                                <img
+                                {/* <img
                                   decoding="async"
                                   src="https://ritzmediaworld.com//webroot/images/gallery/6106855b-46a9-5a43-b168-7d6774383544_1460_550.png"
                                   alt=""
-                                />
+                                /> */}
                               </div>
                               <div className="tp-testimonial__icon">
                                 <span>
@@ -122,11 +122,11 @@ const Feedback = () => {
                           <div className="tp-testimonial__item">
                             <div className="tp-testimonial__thumb-box mb-25 d-flex align-items-center justify-content-between">
                               <div className="tp-testimonial__thumb">
-                                <img
+                                {/* <img
                                   decoding="async"
                                   src="https://ritzmediaworld.com//webroot/images/gallery/6106855b-46a9-5a43-b168-7d6774383544_1460_550.png"
                                   alt=""
-                                />
+                                /> */}
                               </div>
                               <div className="tp-testimonial__icon">
                                 <span>
@@ -174,11 +174,11 @@ const Feedback = () => {
                           <div className="tp-testimonial__item">
                             <div className="tp-testimonial__thumb-box mb-25 d-flex align-items-center justify-content-between">
                               <div className="tp-testimonial__thumb">
-                                <img
+                                {/* <img
                                   decoding="async"
                                   src="https://ritzmediaworld.com//webroot/images/gallery/6106855b-46a9-5a43-b168-7d6774383544_1460_550.png"
                                   alt=""
-                                />
+                                /> */}
                               </div>
                               <div className="tp-testimonial__icon">
                                 <span>
@@ -226,11 +226,11 @@ const Feedback = () => {
                           <div className="tp-testimonial__item">
                             <div className="tp-testimonial__thumb-box mb-25 d-flex align-items-center justify-content-between">
                               <div className="tp-testimonial__thumb">
-                                <img
+                                {/* <img
                                   decoding="async"
                                   src="https://ritzmediaworld.com//webroot/images/gallery/6106855b-46a9-5a43-b168-7d6774383544_1460_550.png"
                                   alt=""
-                                />
+                                /> */}
                               </div>
                               <div className="tp-testimonial__icon">
                                 <span>
@@ -285,6 +285,7 @@ const Feedback = () => {
           </div>
         </div>
       </div>
+      
     </div>
   );
 };
