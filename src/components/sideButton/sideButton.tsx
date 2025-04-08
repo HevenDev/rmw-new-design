@@ -10,7 +10,7 @@ const SideButton: React.FC = () => {
   return (
     <>
       <div className={styles.growBusinessBtn} onClick={toggleForm}>
-        GROW YOUR BUSINESS
+        FREE CONSULTANCY
       </div>
 
       <div
@@ -26,7 +26,7 @@ const SideButton: React.FC = () => {
           <button style={{fontSize:"40px"}} className={styles.closeBtn} onClick={toggleForm}>
             &times;
           </button>
-          <h2 style={{fontSize:"28px"}}>WE'LL CONNECT CONNECT WITH YOU SHORTLY</h2>
+          <h2 style={{fontSize:"28px"}}>WE&apos;LL CONNECT CONNECT WITH YOU SHORTLY</h2>
           <form className={styles.queryForm}>
             <input type="text" placeholder="Your Name" required />
             <input type="tel" placeholder="Your Phone" required />
