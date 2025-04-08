@@ -3,7 +3,7 @@ import { useSplitText } from "@/hooks/useSplitText";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
-import "@/app/marque.css";
+import "@/app/styles/marque.css";
 import Link from "next/link";
 
 const Experts = () => {
