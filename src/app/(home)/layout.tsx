@@ -1,6 +1,6 @@
-import type { Metadata } from "next";
+// app/(home)/layout.tsx
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../globals.css";
+import "../styles/globals.css";
 import "../styles/core-css.css";
 import "../styles/unit-css.css";
 import "../styles/spacing.css";
@@ -12,28 +12,17 @@ import Button from "@/components/sideButton/sideButton";
 
 // import { TrackPageView } from "@/components/trackView/TrackPageView";
 
-
-
-
-export const metadata: Metadata = {
+export const metadata = {
   title: "Ritz Media World",
   description: "Best digital agency in India",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function HomeLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body>
         <PageWrapper>
           {/* <TrackPageView /> */}
           {children}
           <Button/>
         </PageWrapper>
-      </body>
-    </html>
   );
 }

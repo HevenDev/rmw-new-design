@@ -4,7 +4,7 @@
 // import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
-import "@/app/marque.css"
+import "@/app/styles/marque.css"
 const ProjectMarque = () => {
   return (
     <div className="swiper-container tp-text__3-slider-active swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
