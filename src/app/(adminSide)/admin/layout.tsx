@@ -1,5 +1,5 @@
 // app/(admin)/layout.tsx
-import "../../admin.css";
+import "@/app/styles/admin.css";
 import Sidebar from "@/components/sidenav/Sidenav";
 
 export const metadata = {

@@ -1,6 +1,6 @@
 // app/[blog]/layout.tsx
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../globals.css";
+import "../styles/globals.css";
 import "../styles/core-css.css";
 import "../styles/unit-css.css";
 import "../styles/spacing.css";
