@@ -7,7 +7,7 @@ import "../styles/spacing.css";
 import "../styles/magnific-popup-css.css";
 import "../styles/elementor-css.css";
 import "../styles/animation-css.css";
-import { TrackPageView } from "@/components/trackView/TrackPageView";
+// import { TrackPageView } from "@/components/trackView/TrackPageView";
 
 export const metadata = {
   title: 'Blog',
@@ -17,7 +17,7 @@ export const metadata = {
 export default function BlogLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <TrackPageView />
+      {/* <TrackPageView /> */}
       {children}
     </>
   );
