@@ -453,6 +453,7 @@ export default function ManageBlogs() {
                 <button
                   className="bg-red-600 text-white px-4 py-2 rounded"
                   onClick={handleDelete}
+                  style={{cursor: "pointer"}}
                 >
                   Yes, Delete
                 </button>
