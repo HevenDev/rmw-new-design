@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation"; // Import usePathname
-import { Home, FileText, ChevronDown, Menu } from "lucide-react";
+import { Home, FileText, ChevronDown, Menu, User } from "lucide-react";
 import { cn } from "../../lib/utils";
 import axios from "axios";
 import Link from "next/link";
@@ -74,7 +74,7 @@ const Sidebar = () => {
 
         {/* Menu Items */}
         <nav className="flex-1 mt-4">
-          <Link href="/admin">
+          <Link href="/admin/dashboard">
             <div className="flex items-center gap-3 p-3 hover:bg-gray-300 dark:hover:bg-gray-700 cursor-pointer transition rounded-md">
               <Home className="w-5 h-5" />
               {expanded && <span>Dashboard</span>}
@@ -112,6 +112,13 @@ const Sidebar = () => {
               </Link>
             </div>
           )}
+
+          <Link href="/admin/register">
+            <div className="flex items-center gap-3 p-3 hover:bg-gray-300 dark:hover:bg-gray-700 cursor-pointer transition rounded-md">
+              <User className="w-5 h-5" />
+              {expanded && <span>Create user</span>}
+            </div>
+          </Link>
         </nav>
 
         {/* Logout */}

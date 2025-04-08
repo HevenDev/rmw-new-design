@@ -1,25 +1,17 @@
+// app/(admin)/layout.tsx
 import "../../admin.css";
-import Sidebar from "../../../components/sidenav/Sidenav";
-import { Metadata } from "next";
+import Sidebar from "@/components/sidenav/Sidenav";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Admin panel",
   description: "Admin panel page",
 };
 
-export default async function RootLayout({
-  children,
-}: Readonly<{ children: React.ReactNode }>) { // Accessing the cookie value
+export default function AdminLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body>
-        <div className="admin-layout">
-          <Sidebar /> 
-          <main className="admin-content">
-            {children}
-          </main>
-        </div>
-      </body>
-    </html>
+    <div className="admin-layout">
+      <Sidebar />
+      <main className="admin-content">{children}</main>
+    </div>
   );
 }
