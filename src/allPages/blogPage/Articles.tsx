@@ -38,7 +38,7 @@ const Blogs: React.FC = () => {
   }, []);
 
   const [currentPage, setCurrentPage] = useState<number>(1);
-  const cardsPerPage = 9;
+  const cardsPerPage = 12;
 
   const indexOfLastCard = currentPage * cardsPerPage;
   const indexOfFirstCard = indexOfLastCard - cardsPerPage;
