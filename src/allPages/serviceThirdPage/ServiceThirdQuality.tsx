@@ -9,7 +9,7 @@ import styles from "./serviceThirdQuality.module.css";
 interface CardData {
   title: string;
   description: string;
-  image?: string;
+  image_url?: string;
 }
 
 const ServiceThirdQuality = () => {
@@ -84,8 +84,8 @@ const ServiceThirdQuality = () => {
                             className={`${styles.serviceCard} ${index % 2 === 0 ? styles.row : styles.rowReverse}`}
                           >
                             <img
-                              src="/blogs/1.png"
-                              alt="Service"
+                              src={card.image_url ? card.image_url : "/default-fallback.jpg"}
+  alt={card.title}
                               style={{
                                 width: "100%",
                                 maxWidth: "470px",

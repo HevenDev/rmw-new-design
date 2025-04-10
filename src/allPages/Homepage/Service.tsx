@@ -42,11 +42,11 @@ const Service: React.FC<ServiceProps> = ({ data }) => {
     <div className="tp-service__area fix tp-bg-class pb-50">
       <div style={{position: "relative",
       padding:"20px 10px",
-      maxWidth:"800px",
+      maxWidth:"950px",
       fontSize:"19px",
   left: "50%",
   transform: "translate(-50%)",
-  textAlign: "center"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum molestiae veritatis praesentium ratione quod ut quasi. Nemo, temporibus? Esse fuga neque ad nesciunt delectus dicta adipisci, qui ex! Sapiente repellendus harum voluptas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum molestiae veritatis praesentium ratione quod ut quasi. Nemo, temporibus? Esse</div>
+  textAlign: "center"}}>In an online world noisier than a crowded marketplace, ordinary digital tactics won’t cut through—they’ll merely add to the clutter. Ritz Media World specializes in crafting digital marketing strategies that are uniquely persuasive, cleverly targeted, and astonishingly effective. Using a potent blend of algorithm mastery, compelling content, and customer psychology, we ensure your brand doesn’t just appear—it dominates. From mastering Google searches to enchanting social followers, our digital strategies generate measurable results, drive profitable actions, and turn idle clicks into loyal customers. If you prefer actual results over digital vanity metrics, you've arrived at precisely the right place.</div>
       <div className="container">
         <div className="row">
           <div className="col-xl-12">

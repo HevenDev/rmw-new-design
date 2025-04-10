@@ -3,8 +3,9 @@ import { getDBPool } from '@/lib/db';
 import { RowDataPacket } from 'mysql2';
 
 type ThirdLayerCard = RowDataPacket & {
-  title: string;
-  description: string;
+  title: true,
+    description: true,
+    image_url: true,
 };
 
 export async function GET(
@@ -50,9 +51,10 @@ export async function GET(
     const serviceSecondId = serviceSecond.id;
 
     const [thirdLayerCards] = await pool.query<ThirdLayerCard[]>(
-      'SELECT title, description FROM service_third WHERE service2_id = ?',
+      'SELECT title, description, image_url FROM service_third WHERE service2_id = ?',
       [serviceSecondId]
     );
+    
 
     return NextResponse.json({
       s3heading1: serviceSecond.s3heading1,
