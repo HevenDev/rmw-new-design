@@ -46,7 +46,7 @@ const Service: React.FC<ServiceProps> = ({ data }) => {
       fontSize:"19px",
   left: "50%",
   transform: "translate(-50%)",
-  textAlign: "center"}}>In an online world noisier than a crowded marketplace, ordinary digital tactics won’t cut through—they’ll merely add to the clutter. Ritz Media World specializes in crafting digital marketing strategies that are uniquely persuasive, cleverly targeted, and astonishingly effective. Using a potent blend of algorithm mastery, compelling content, and customer psychology, we ensure your brand doesn’t just appear—it dominates. From mastering Google searches to enchanting social followers, our digital strategies generate measurable results, drive profitable actions, and turn idle clicks into loyal customers. If you prefer actual results over digital vanity metrics, you've arrived at precisely the right place.</div>
+  textAlign: "center"}}>In an online world noisier than a crowded marketplace, ordinary digital tactics won’t cut through—they’ll merely add to the clutter. Ritz Media World specializes in crafting digital marketing strategies that are uniquely persuasive, cleverly targeted, and astonishingly effective. Using a potent blend of algorithm mastery, compelling content, and customer psychology, we ensure your brand doesn’t just appear—it dominates. From mastering Google searches to enchanting social followers, our digital strategies generate measurable results, drive profitable actions, and turn idle clicks into loyal customers. If you prefer actual results over digital vanity metrics, you&apos;ve arrived at precisely the right place.</div>
       <div className="container">
         <div className="row">
           <div className="col-xl-12">
