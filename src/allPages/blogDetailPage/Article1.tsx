@@ -1,13 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useParams } from "next/navigation";
 import axios from "axios";
 import Link from "next/link";
 import Loader from "@/components/loader/Loader";
 import parse from "html-react-parser";
+import { IoSearchSharp } from "react-icons/io5";
 
-// Define the type for a blog post
 type BlogPost = {
   id: string;
   title: string;
@@ -37,7 +37,6 @@ interface BlogPosts {
   created_at: string;
 }
 
-// Blog data array
 const blogData: BlogPost[] = [
   {
     id: "post-2447",
@@ -47,8 +46,7 @@ const blogData: BlogPost[] = [
     author: "admin",
     date: "September 24, 2024",
     comments: "No Comments",
-    excerpt:
-      "Digital marketing encompasses a range of strategies and techniques used to promote products and services online. It leverages channels such as social media, search engines, email, and websites to reach and engage with target audiences. By utilizing data analytics, businesses can gain insights into consumer behavior, allowing for more personalized and effective marketing plans. The dynamic […]",
+    excerpt: "Digital marketing encompasses a range of strategies...",
     link: "https://etorisoft.com/wp/avtrix/innovative-solutions-for-a-digital-tomorrow/",
     categories: ["agency", "apps", "business"],
     tags: ["agency", "apps", "business"],
@@ -57,18 +55,16 @@ const blogData: BlogPost[] = [
 
 const Article1 = () => {
   const [article, setArticle] = useState<BlogPosts | null>(null);
-  const [loading, setLoading] = useState<boolean>(true);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-
   const params = useParams();
   const blog_slug = params?.blogDetailPage as string;
-
+  const contentRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const fetchBlog = async () => {
       try {
         const response = await axios.get(`/api/blog/${blog_slug}`);
-
-        setArticle(response.data.blog); // Make sure to access `response.data.blog`
+        setArticle(response.data.blog);
       } catch (err) {
         setError(
           err instanceof Error ? err.message : "An unknown error occurred"
@@ -77,209 +73,124 @@ const Article1 = () => {
         setLoading(false);
       }
     };
-
     fetchBlog();
   }, [blog_slug]);
-
-  // console.log("article here check it",article)
 
   if (loading) return <Loader />;
   if (error) return <p>Error: {error}</p>;
   if (!article) return <p>No article found.</p>;
 
   return (
-    <section className="postbox__area fix pt-160 pb-160">
+    <section className="pt-160 pb-120" style={{ backgroundColor: "#0f0f0f", color: "#fff" }}>
       <div className="container">
-        <div style={{ display: "flex" }}>
-          <div
-            style={{ width: "68%", height: "100%" }}
-            className=" blog-post-items blog-padding"
-          >
-            <div className="postbox__wrapper">
-              {/* Dynamically render blog posts */}
-
-              <article
-                key={article.id}
-                className={`postbox__item format-standard ${article.id} post type-post status-publish has-post-thumbnail hentry`}
-              >
-                <div className="postbox__thumb mb-30 p-relative">
-                  <Link href={article.slug}>
-                    <img
-                      width="851"
-                      height="462"
-                      src={`/blogs/${article.blog_image}`}
-                      className="img-responsive wp-post-image"
-                      alt={article.slug}
-                      decoding="async"
-                      // srcSet={`${
-                      //   article.blog_image
-                      // } 851w, ${article.blog_image.replace(
-                      //   ".png",
-                      //   "-300x163.png"
-                      // )} 300w, ${article.blog_image.replace(
-                      //   ".png",
-                      //   "-768x417.png"
-                      // )} 768w`}
-                      sizes="(max-width: 851px) 100vw, 851px"
-                    />
-                  </Link>
-                </div>
-                <div className="postbox__meta-box mb-15">
-                  <Link href="/" className="postbox__meta-title">
-                    <span>
-                      <i className="fad fa-user"></i>
-                    </span>
-                    {/* {article.author} */}
-                  </Link>
-                  <Link href="#" className="postbox__meta-title">
-                    <span>
-                      <i className="fas fa-calendar-alt"></i>
-                    </span>
-                    {new Date(article.created_at).toLocaleDateString("en-US", {
-                      year: "numeric",
-                      month: "long",
-                      day: "numeric",
-                    })}
-                  </Link>
-                  <Link href="#" className="postbox__meta-title">
-                    <span>
-                      <i className="fad fa-comments"></i>
-                    </span>
-                    {/* {article.comments} */}
-                  </Link>
-                </div>
-                <h3 className="postbox__title mb-25">
-                  <Link href={article.slug}>{article.title}</Link>
-                </h3>
-                <div className="postbox__text mb-30">
-                  {parse(article.description)}
-                </div>
-              </article>
+        <div className="row">
+          {/* Main Content */}
+          <div className="col-md-8" ref={contentRef}>
+            <div className="text-white p-4 rounded shadow-sm mb-4" style={{ backgroundColor: "#1f1f1f" }}>
+              <img
+                src={`/blogs/${article.blog_image}`}
+                alt={article.slug}
+                className="img-fluid rounded mb-3"
+                style={{ width: "100%", height: "400px", objectFit: "cover", objectPosition: "center" }}
+              />
+              <div className="text-white mb-2">
+                <i className="fas fa-calendar-alt me-2"></i>
+                {new Date(article.created_at).toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
+              </div>
+              <h1 className="h3 mb-4">{article.title}</h1>
+              <div className="blog_description">{parse(article.description)}</div>
             </div>
           </div>
 
           {/* Sidebar */}
-          <div style={{ width: "33.333%", position: "relative" }}>
-            <div
-              className="sidebar__wrapper"
-              style={{
-                position: "sticky",
-                top: "100px", // adjust based on your header height
-                alignSelf: "flex-start",
-              }}
-            >
-              <div
-                id="search-1"
-                className="sidebar__widget mb-40 widget_search"
-              >
-                <h3 className="sidebar__widget-title">Search</h3>
-                <div className="blog-sidebar__search p-relative">
-                  <div className="search-px">
-                    <form
-                      action="https://etorisoft.com/wp/avtrix/"
-                      method="get"
-                    >
-                      <input type="text" name="s" placeholder="Search" />
-                      <button type="submit">
-                        <i className="far fa-search"></i>
-                      </button>
-                    </form>
+          <div className="col-md-4" style={{ backgroundColor: "#0f0f0f" }}>
+            <div id="stickySidebar" style={{
+              position: "sticky",
+              top: "120px", // standard top offset
+              maxHeight: "75vh", // don't go beyond viewport
+              overflowY: "auto", // scroll when needed
+              paddingRight: "8px", // avoid content cut by scrollbar
+            }}>
+              {/* Search */}
+              <div className="p-3 rounded shadow-sm mb-4" style={{ backgroundColor: "#1f1f1f" }}>
+                <h5 className="mb-3 text-white">Search</h5>
+                <form>
+                  <div className="input-group">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Search..."
+                    />
+                    <button className="btn btn-primary" type="submit">
+                      <IoSearchSharp />
+                    </button>
                   </div>
-                </div>
+                </form>
               </div>
-              <div
-                id="tp-latest-posts-1"
-                className="sidebar__widget mb-40 widget_tp-latest-posts"
-              >
-                <h3 className="sidebar__widget-title"> Recent Posts </h3>
-                <div className="tp-sidebar-widget-content">
-                  {blogData.map((post) => (
-                    <div
-                      key={post.id}
-                      className="tp-sidebar-post tp-rc__post tp-sidebar-post-specing"
-                    >
-                      <div className="tp-rc__post d-flex align-items-center">
-                        <div className="tp-rc__post-thumb mr-25">
-                          <Link href={post.link}>
-                            <img
-                              width="150"
-                              height="150"
-                              src={post.image.replace(".png", "-150x150.png")}
-                              className="attachment-thumbnail size-thumbnail wp-post-image"
-                              alt=""
-                              decoding="async"
-                            />
-                          </Link>
-                        </div>
-                        <div className="tp-rc__post-content">
-                          <h3 className="tp-rc__post-title">
-                            <Link href={post.link}>{post.title}</Link>
-                          </h3>
-                          <div className="tp-rc__post-meta">
-                            <span>
-                              <i className="fas fa-calendar-alt pr-5"></i>
-                              {post.date}
-                            </span>
-                          </div>
-                        </div>
-                      </div>
+
+              {/* Recent Posts */}
+              <div className="p-3 text-white rounded shadow-sm mb-4" style={{ backgroundColor: "#1f1f1f" }}>
+                <h5 className="mb-3 text-white">Recent Posts</h5>
+                {blogData.map((post) => (
+                  <div key={post.id} className="d-flex mb-3 gap-3">
+                    <Link href={post.link}>
+                      <img
+                        src={post.image.replace(".png", "-150x150.png")}
+                        alt={post.title}
+                        className="rounded me-3"
+                        style={{ width: "64px", height: "64px", objectFit: "cover" }}
+                      />
+                    </Link>
+                    <div>
+                      <h6 className="mb-1 text-white">
+                        <Link href={post.link}>{post.title}</Link>
+                      </h6>
+                      <small className="text-white">{post.date}</small>
                     </div>
-                  ))}
-                </div>
+                  </div>
+                ))}
               </div>
-              <div
-                id="categories-2"
-                className="sidebar__widget mb-40 widget_categories"
-              >
-                <h3 className="sidebar__widget-title">Categories</h3>
-                <ul>
-                  <li className="cat-item cat-item-2">
-                    <Link href="/">Agency</Link>
-                  </li>
-                  <li className="cat-item cat-item-3">
-                    <Link href="/">Business</Link>
-                  </li>
-                  <li className="cat-item cat-item-4">
-                    <Link href="/">Marketing</Link>
-                  </li>
-                  <li className="cat-item cat-item-5">
-                    <Link href="/">Software</Link>
-                  </li>
-                  <li className="cat-item cat-item-6">
-                    <Link href="/">Technology</Link>
-                  </li>
-                  <li className="cat-item cat-item-1">
-                    <Link href="/">Uncategorized</Link>
-                  </li>
+
+              {/* Categories */}
+              <div className="p-3 rounded text-white shadow-sm mb-4" style={{ backgroundColor: "#1f1f1f" }}>
+                <h5 className="mb-3 text-white">Categories</h5>
+                <ul className="list-unstyled mb-0">
+                  <li><Link href="/">Agency</Link></li>
+                  <li><Link href="/">Business</Link></li>
+                  <li><Link href="/">Marketing</Link></li>
+                  <li><Link href="/">Software</Link></li>
+                  <li><Link href="/">Technology</Link></li>
+                  <li><Link href="/">Uncategorized</Link></li>
                 </ul>
               </div>
-              <div
-                id="tag_cloud-1"
-                className="sidebar__widget mb-40 widget_tag_cloud"
-              >
-                <h3 className="sidebar__widget-title">Tags</h3>
-                <div className="tagcloud">
-                  {blogData
-                    .flatMap((post) => post.tags)
-                    .map((tag, index) => (
-                      <Link
-                        href="/"
-                        key={index}
-                        // href={`https://etorisoft.com/wp/avtrix/tag/${tag}/`}
-                        className="tag-cloud-link"
-                        style={{ fontSize: "16.4pt" }}
-                      >
-                        {tag}
-                      </Link>
-                    ))}
+
+              {/* Tags */}
+              {/* <div className="bg-white p-3 rounded shadow-sm">
+                <h5 className="mb-3">Tags</h5>
+                <div className="d-flex flex-wrap gap-2">
+                  {blogData.flatMap((post) => post.tags).map((tag, i) => (
+                    <Link
+                      key={i}
+                      href="/"
+                      className="badge bg-secondary text-decoration-none"
+                    >
+                      {tag}
+                    </Link>
+                  ))}
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
       </div>
     </section>
+
   );
 };
 
 export default Article1;
+

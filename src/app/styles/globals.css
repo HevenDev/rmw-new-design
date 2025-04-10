@@ -402,3 +402,29 @@ img:is([sizes="auto" i], [sizes^="auto," i]) {
   font-size: 22px;
   color: #fff;
 }
+
+.blog_description :is(h1, h2, h3, h4, h5, h6) {
+  color: #fff;
+}
+#stickySidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+#stickySidebar::-webkit-scrollbar-track {
+  background: #1f1f1f; /* track color */
+}
+
+#stickySidebar::-webkit-scrollbar-thumb {
+  background-color: #555; /* thumb color */
+  border-radius: 4px;
+}
+
+#stickySidebar::-webkit-scrollbar-thumb:hover {
+  background-color: #888; /* hover effect */
+}
+
+/* Firefox */
+#stickySidebar {
+  scrollbar-width: thin;
+  scrollbar-color: #555 #1f1f1f;
+}
