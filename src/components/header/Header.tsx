@@ -91,9 +91,9 @@ const Header = () => {
               <div className="tp-main__logo">
                 <Link className="main-logo" href="/">
                   <Image
-                    width={50}
-                    height={50}
-                    src="/rmw_logo_gold.png"
+                    width={75}
+                    height={75}
+                    src="/logo_black.png"
                     alt="logo"
                   />
                 </Link>
@@ -144,7 +144,7 @@ const Header = () => {
                                         style={{
                                           padding: "0 10px",
                                           cursor: "pointer",
-                                          color: "#1e1e1e",
+                                          color: "#0c0c0c",
                                         }}
                                       >
                                         {/* Main Menu Item */}
@@ -166,19 +166,20 @@ const Header = () => {
                                             transform: "translateX(-50%)",
                                             minWidth: "200px",
                                             display: "none",
-                                            background: "#1c1c1c",
-                                            color: "#aaa4a4",
+                                            background: "#f2f2f2eb",
+                                            color: "#0c0c0c",
                                           }}
                                         >
                                           {item.sub.map((subItem, subIndex) => (
                                             <li key={subIndex}>
                                               <Link
+                                              className={styles.subDropLink}
                                                 href={subItem.link}
                                                 style={{
                                                   padding: "2px 0",
                                                   fontSize: "15px",
                                                   display: "block",
-                                                  color: "#fff",
+                                                  color: "#0c0c0c",
                                                   textDecoration: "none",
                                                 }}
                                               >
@@ -252,14 +253,14 @@ const Header = () => {
                               cy="2.39022"
                               rx="2.39023"
                               ry="2.39022"
-                              fill="#fddf82"
+                              fill="#001240"
                             />
                             <ellipse
                               cx="13.9137"
                               cy="2.39022"
                               rx="2.39023"
                               ry="2.39022"
-                              fill="white"
+                              fill="black"
                               fillOpacity="0.7"
                             />
                             <ellipse
@@ -267,7 +268,7 @@ const Header = () => {
                               cy="2.39022"
                               rx="2.39023"
                               ry="2.39022"
-                              fill="white"
+                              fill="black"
                               fillOpacity="0.7"
                             />
                             <ellipse
@@ -275,7 +276,7 @@ const Header = () => {
                               cy="12.6339"
                               rx="2.39023"
                               ry="2.39022"
-                              fill="white"
+                              fill="black"
                               fillOpacity="0.7"
                             />
                             <ellipse
@@ -283,14 +284,14 @@ const Header = () => {
                               cy="12.6349"
                               rx="2.39023"
                               ry="2.39022"
-                              fill="white"
+                              fill="black"
                             />
                             <ellipse
                               cx="25.441"
                               cy="12.6349"
                               rx="2.39023"
                               ry="2.39022"
-                              fill="white"
+                              fill="black"
                               fillOpacity="0.7"
                             />
                             <ellipse
@@ -298,7 +299,7 @@ const Header = () => {
                               cy="23.0484"
                               rx="2.39023"
                               ry="2.39022"
-                              fill="white"
+                              fill="black"
                               fillOpacity="0.7"
                             />
                             <ellipse
@@ -306,7 +307,7 @@ const Header = () => {
                               cy="23.0484"
                               rx="2.39023"
                               ry="2.39022"
-                              fill="white"
+                              fill="black"
                               fillOpacity="0.7"
                             />
                             <ellipse
@@ -314,7 +315,7 @@ const Header = () => {
                               cy="23.0484"
                               rx="2.39023"
                               ry="2.39022"
-                              fill="#fddf82"
+                              fill="#001240"
                             />
                           </svg>
                         </span>

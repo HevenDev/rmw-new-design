@@ -75,11 +75,12 @@
   --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
 }
 html:root {
-  --tp-theme-primary: #fddf82 ;
+  --tp-theme-primary: #001240 ;
   --tp-theme-pruple: #8247FF;
   --tp-theme-third: #E94D35;
   --tp-theme-rgba-primary: 249, 81, 29;
 }
+/* linear-gradient(90deg, #ffffff 4.11%, rgba(255, 255, 255, 0.8) 57.6%, rgba(255, 255, 255, 0) 101.94%) */
 
 :where(.is-layout-flex) {
   gap: 0.5em;

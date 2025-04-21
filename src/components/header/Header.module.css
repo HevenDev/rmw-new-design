@@ -303,7 +303,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background: #333;
+    background: #f2f2f2eb;
     list-style: none;
     padding: 10px 0;
     min-width: 150px;
@@ -367,7 +367,7 @@
 }
 
 
-Dropdown Parent
+/* Dropdown Parent */
 .dropdown {
   position: relative;
   cursor: pointer;
@@ -427,9 +427,7 @@ Dropdown Parent
   transition: opacity 0.3s ease-in-out;
 }
 
-
-
-
-
-/* hover service */
+.subDropLink:hover{
+  color: #fddf82;
+}
 

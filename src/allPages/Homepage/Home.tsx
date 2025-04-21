@@ -11,11 +11,13 @@ const Home = () => {
       className="elementor-element elementor-element-199ac0f e-con-full e-flex e-con e-parent"
       data-id="199ac0f"
       data-element_type="container"
+      style={{padding: "0px !important"}}
     >
       <div
         className="elementor-element elementor-element-5a1b25c e-con-full e-flex e-con e-child"
         data-id="5a1b25c"
         data-element_type="container"
+        style={{padding: "0px !important"}}
       >
         <div
           className="elementor-element elementor-element-12cef4b elementor-widget elementor-widget-hero-banner"
@@ -26,18 +28,18 @@ const Home = () => {
           <div className="elementor-widget-container">
             <section
               className="tp-hero__area fix tp-hero__space tp-hero__bg p-relative tp-bg-className"
-              data-background="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/hero-bg-1.jpg"
+              data-background="/assets/homepageImages/RMW_banner_wht.jpg"
             >
               <img
                 decoding="async"
-                src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/hero-bg-1.jpg"
+                src="/assets/homepageImages/RMW_banner_wht.jpg"
                 alt=""
                 style={{
                   height: "100%",
                   width: "100%",
                   position: "absolute",
                   zIndex: "-1",
-                  filter: "sepia(100%) saturate(500%) hue-rotate(10deg)",
+                  // filter: "sepia(100%) saturate(500%) hue-rotate(10deg)",
                 }}
               />
                                                                        

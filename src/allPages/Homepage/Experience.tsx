@@ -28,7 +28,7 @@ const Experience = () => {
           data-widget_type="choose-us.default"
         >
           <div className="elementor-widget-container">
-            <section className="tp-chooseus__area fix tp-chooseus__1 p-relative section-bg tp-bg-class">
+            <section className="tp-chooseus__area fix tp-chooseus__1 p-relative tp-bg-class">
               <div
                 className="tp-chooseus__bg-thumb d-none d-xl-block wow avtrix_clip_right"
                 data-background="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/chooseus-thumb-1-1.jpg"
@@ -114,17 +114,17 @@ const Experience = () => {
                       <div className="tp-experience">
                         <div className="tp-ex-contain">
                           <div className="tp-ex-icon"><SiAdobecreativecloud size={40}/></div>
-                          <h2 className="tp-ex-head">Creative Strategy</h2>
+                          <h2 className="tp-ex-head" style={{color: "#0c0c0c"}}>Creative Strategy</h2>
                         </div>
                         <div className="tp-ex-contain">
                           <div className="tp-ex-icon"><FaGlobe size={40}/></div>
-                          <h2 className="tp-ex-head">Digital Marketing</h2>
+                          <h2 className="tp-ex-head" style={{color: "#0c0c0c"}}>Digital Marketing</h2>
                         </div>
                         <div className="tp-ex-contain">
                           <div className="tp-ex-icon">
                           <BiAnalyse size={40} />
                           </div>
-                          <h2 className="tp-ex-head">Market Analysis</h2>
+                          <h2 className="tp-ex-head" style={{color: "#0c0c0c"}}>Market Analysis</h2>
                         </div>
                       </div>
                     </div>

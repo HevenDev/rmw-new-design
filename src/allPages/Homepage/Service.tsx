@@ -40,13 +40,15 @@ const Service: React.FC<ServiceProps> = ({ data }) => {
 
   return (
     <div className="tp-service__area fix tp-bg-class pb-50">
-      <div style={{position: "relative",
-      padding:"20px 10px",
-      maxWidth:"950px",
-      fontSize:"19px",
-  left: "50%",
-  transform: "translate(-50%)",
-  textAlign: "center"}}>In an online world noisier than a crowded marketplace, ordinary digital tactics won’t cut through—they’ll merely add to the clutter. Ritz Media World specializes in crafting digital marketing strategies that are uniquely persuasive, cleverly targeted, and astonishingly effective. Using a potent blend of algorithm mastery, compelling content, and customer psychology, we ensure your brand doesn’t just appear—it dominates. From mastering Google searches to enchanting social followers, our digital strategies generate measurable results, drive profitable actions, and turn idle clicks into loyal customers. If you prefer actual results over digital vanity metrics, you&apos;ve arrived at precisely the right place.</div>
+      <div style={{
+        position: "relative",
+        padding: "20px 10px",
+        maxWidth: "950px",
+        fontSize: "19px",
+        left: "50%",
+        transform: "translate(-50%)",
+        textAlign: "center"
+      }}>In an online world noisier than a crowded marketplace, ordinary digital tactics won’t cut through—they’ll merely add to the clutter. Ritz Media World specializes in crafting digital marketing strategies that are uniquely persuasive, cleverly targeted, and astonishingly effective. Using a potent blend of algorithm mastery, compelling content, and customer psychology, we ensure your brand doesn’t just appear—it dominates. From mastering Google searches to enchanting social followers, our digital strategies generate measurable results, drive profitable actions, and turn idle clicks into loyal customers. If you prefer actual results over digital vanity metrics, you&apos;ve arrived at precisely the right place.</div>
       <div className="container">
         <div className="row">
           <div className="col-xl-12">
@@ -54,10 +56,10 @@ const Service: React.FC<ServiceProps> = ({ data }) => {
               <span className="tp-section-title-pre mb-30">Services</span>
               <div className="tp-section-title-wrap d-md-flex align-items-center justify-content-between">
                 <h3 className="tp-section-title">
-                What We Provide
+                  What We Provide
                   <br />
                   <span >
-                    <i style={{top: "-18px", fontSize:"22px"}} className="tp-hero__subtitle mb-10">is more than what you’ll ever need</i>
+                    <i style={{ top: "-18px", fontSize: "22px" }} className="tp-hero__subtitle mb-10">is more than what you’ll ever need</i>
                   </span>
                 </h3>
                 <Link
@@ -87,9 +89,8 @@ const Service: React.FC<ServiceProps> = ({ data }) => {
                           <div className="accordion-item" key={index}>
                             <h2 className="accordion-header">
                               <button
-                                className={`accordion-button p-relative ${
-                                  openIndex === index ? "" : "collapsed"
-                                }`}
+                                className={`accordion-button p-relative ${openIndex === index ? "" : "collapsed"
+                                  }`}
                                 type="button"
                                 onClick={() => toggleAccordion(index)}
                                 aria-expanded={openIndex === index}
@@ -109,14 +110,13 @@ const Service: React.FC<ServiceProps> = ({ data }) => {
                             </h2>
                             <div
                               id={`collapse-${index}`}
-                              className={`accordion-collapse collapse ${
-                                openIndex === index ? "show" : ""
-                              }`}
+                              className={`accordion-collapse collapse ${openIndex === index ? "show" : ""
+                                }`}
                               data-bs-parent="#accordion-310c8f9"
                             >
                               <div className="accordion-body">
                                 <p>{item.description}</p>
-                                <a style={{fontSize: "18px", color: "#fddf82", fontStyle:"italic"}} href={item.link}>Learn more...</a>
+                                <a style={{ fontSize: "18px", color: "#001240", fontStyle: "italic" }} href={item.link}>Learn more...</a>
                               </div>
                             </div>
                           </div>

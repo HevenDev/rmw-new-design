@@ -15,6 +15,7 @@ import Button from "@/components/sideButton/sideButton";
 export const metadata = {
   title: "Ritz Media World",
   description: "Best digital agency in India",
+  robots: "noindex, nofollow",
 };
 
 export default function HomeLayout({ children }: { children: React.ReactNode }) {
