@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import styles from "./Card.module.css";
 import Link from "next/link";
+import Loader from "@/components/loader/Loader";
 type Card = {
   id: string;
   blog_image: string;
@@ -33,7 +34,6 @@ const ProjectCards = () => {
 
     fetchData();
   }, []);
-console.log(cardData)
   const totalPages = Math.ceil(cardData.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
   const selectedCards = cardData.slice(startIndex, startIndex + itemsPerPage);
@@ -54,7 +54,7 @@ console.log(cardData)
     <div className="container my-5">
       {loading ? (
         <div className="text-center">
-          <p className="text-white text-lg">Loading case studies...</p>
+          <p className="text-white text-lg"><Loader /></p>
         </div>
       ) : error ? (
         <div className="text-center text-red-500">
@@ -105,7 +105,7 @@ console.log(cardData)
               ⬅ Prev
             </button>
 
-            <span style={{ fontSize: "16px", padding: "5px 15px", color: "white", borderRadius: "20px" }}>
+            <span style={{ fontSize: "16px", padding: "5px 15px", color: "#0c0c0c", borderRadius: "20px" }}>
               Page {currentPage} of {totalPages}
             </span>
 

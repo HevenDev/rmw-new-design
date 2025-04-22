@@ -40,7 +40,6 @@ export default function RegisterForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
-      console.log(res);
       
       if (!res.ok) throw new Error("Registration failed");
 

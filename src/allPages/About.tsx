@@ -5,7 +5,6 @@ import Stratagies from "./aboutPage/Stratagies";
 import AboutFirst from "./aboutPage/AboutFirst";
 import AboutAward from "./aboutPage/AboutAward"
 import Footer from "@/components/footer/Footer";
-import Header from "@/components/header/Header";
 import Swiper1 from "./aboutPage/Swiper1";
 import Swiper2 from "./aboutPage/Swiper2";
 import Experience from "./Homepage/Experience";
@@ -14,7 +13,6 @@ const About = () => {
     
     return(
         <>
-        <Header/>
         <AboutFirst/>
         <Stratagies/>
         <AboutAward/>

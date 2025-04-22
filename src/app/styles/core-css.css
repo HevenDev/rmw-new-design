@@ -3036,8 +3036,8 @@ xclip
   left: 50%;
   top: 50%;
   height: 50px;
-  width: 150px;
-  /* transform: translateX(-50%) translateY(-50%); */
+  /* width: 150px; */
+  transform: translateX(-47.5%) translateY(-100%);
 }
 
 .loader-text {

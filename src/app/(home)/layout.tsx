@@ -9,6 +9,7 @@ import "../styles/elementor-css.css";
 import "../styles/animation-css.css";
 import PageWrapper from "@/components/pageWrapper/PageWrapper";
 import Button from "@/components/sideButton/sideButton";
+import Header from "@/components/header/Header";
 
 // import { TrackPageView } from "@/components/trackView/TrackPageView";
 
@@ -22,6 +23,7 @@ export default function HomeLayout({ children }: { children: React.ReactNode }) 
   return (
         <PageWrapper>
           {/* <TrackPageView /> */}
+          <Header />
           {children}
           <Button/>
         </PageWrapper>

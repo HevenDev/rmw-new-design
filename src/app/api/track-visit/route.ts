@@ -38,7 +38,6 @@ export async function POST(req: NextRequest) {
         "INSERT INTO visit_logs (url, user_id, browser, visitors) VALUES (?, ?, ?, 1)",
         [url, userId, browser]
       );
-      console.log(response);
       return response;
     }
   } catch (error) {

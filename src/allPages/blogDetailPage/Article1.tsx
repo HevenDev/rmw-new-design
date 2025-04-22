@@ -60,6 +60,7 @@ const Article1 = () => {
   const params = useParams();
   const blog_slug = params?.blogDetailPage as string;
   const contentRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     const fetchBlog = async () => {
       try {
@@ -81,19 +82,20 @@ const Article1 = () => {
   if (!article) return <p>No article found.</p>;
 
   return (
-    <section className="pt-160 pb-120" style={{ backgroundColor: "#0f0f0f", color: "#fff" }}>
+    <section className="pt-160 pb-120" style={{ backgroundColor: "#f0f0f0" }}>
       <div className="container">
         <div className="row">
           {/* Main Content */}
           <div className="col-md-8" ref={contentRef}>
-            <div className="text-white p-4 rounded shadow-sm mb-4" style={{ backgroundColor: "#1f1f1f" }}>
+            <div className="text-white  rounded shadow-sm" style={{ backgroundColor: "#f2f2f2" }}>
               <img
                 src={`/blogs/${article.blog_image}`}
+                
                 alt={article.slug}
                 className="img-fluid rounded mb-3"
-                style={{ width: "100%", height: "400px", objectFit: "cover", objectPosition: "center" }}
+                
               />
-              <div className="text-white mb-2">
+              <div className="text-black mb-2 px-4">
                 <i className="fas fa-calendar-alt me-2"></i>
                 {new Date(article.created_at).toLocaleDateString("en-US", {
                   year: "numeric",
@@ -101,13 +103,12 @@ const Article1 = () => {
                   day: "numeric",
                 })}
               </div>
-              <h1 className="h3 mb-4">{article.title}</h1>
-              <div className="blog_description">{parse(article.description)}</div>
+              <div className="blog_description px-4">{parse(article.description)}</div>
             </div>
           </div>
 
           {/* Sidebar */}
-          <div className="col-md-4" style={{ backgroundColor: "#0f0f0f" }}>
+          <div className="col-md-4" style={{ backgroundColor: "#f0f0f0" }}>
             <div id="stickySidebar" style={{
               position: "sticky",
               top: "120px", // standard top offset

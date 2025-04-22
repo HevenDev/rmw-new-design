@@ -43,7 +43,6 @@ export default function ManageBlogs() {
     };
     fetchBlogs();
   }, []);
-
   const handleDelete = async () => {
     if (!deleteBlog) return;
     try {
@@ -70,6 +69,7 @@ export default function ManageBlogs() {
   const indexOfLastBlog = currentPage * blogsPerPage;
   const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
   const currentBlogs = filteredBlogs.slice(indexOfFirstBlog, indexOfLastBlog);
+
 
   return (
     <div className="p-10 pl-20 bg-gray-100 min-h-screen">

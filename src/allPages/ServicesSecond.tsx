@@ -11,6 +11,7 @@ import Feedback from './Homepage/Feedback';
 import { useParams } from 'next/navigation';
 import axios from 'axios';
 import ServiceEndTag from "@/components/endTag/serviceEndTag";
+import Loader from '@/components/loader/Loader';
 
 
 type CardItem = {
@@ -46,7 +47,7 @@ const ServicesSecondPage = () => {
     fetchData();
   }, [serviceSecond]);
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <div><Loader /></div>;
   if (error) return <div className="text-red-500">Error: {error}</div>;
 
   return (

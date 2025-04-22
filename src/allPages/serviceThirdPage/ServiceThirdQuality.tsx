@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import styles from "./serviceThirdQuality.module.css";
+import Loader from "@/components/loader/Loader";
 
 
 interface CardData {
@@ -28,8 +29,7 @@ const ServiceThirdQuality = () => {
         const res = await axios.get(
           `/api/services/${secondPage}/${thirdPage}`
         );
-        setCardData(res.data.cards); // Make sure your API returns { cards: [...] }
-        console.log("Response",cardData)
+        setCardData(res.data.cards); 
       } catch (error) {
         console.error("Error fetching data:", error);
       } finally {
@@ -42,7 +42,7 @@ const ServiceThirdQuality = () => {
     }
   }, [secondPage, thirdPage]);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <p><Loader /></p>;
   return (
     <div
       className="elementor-element elementor-element-3205e74 e-con-full e-flex e-con e-parent e-lazyloaded"

@@ -9,14 +9,22 @@ const page = () => {
   return (
     <div>
 
-      <Header />
-
       <div className="body-overlay"></div>
       <PagesBanner headingTitle={"Blog"} />
 
       <Articles />
 
       <Footer />
+
+
+
+
+
+
+
+
+
+      
     </div>
   );
 };
