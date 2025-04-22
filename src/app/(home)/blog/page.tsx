@@ -1,6 +1,5 @@
 import Articles from "@/allPages/blogPage/Articles";
 import Footer from "@/components/footer/Footer";
-import Header from "@/components/header/Header";
 import PagesBanner from "@/components/pagesBanner/PagesBanner";
 import React from "react";
 
