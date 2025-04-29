@@ -14,7 +14,7 @@ const Form = () => {
 <>
 
 
-    <div className="tp-contact__area pt-130 pb-90 black-bg">
+    <div className="tp-contact__area pt-130 pb-90 black-bg ">
       <div className="container">
         <div className="row">
           <div className="col-xl-6 col-lg-6" style={{padding:"2rem"}}>
@@ -24,7 +24,7 @@ const Form = () => {
                   ref={(el) => {
                       if (el) textRefs.current.push(el);
                     }}
-                    className="tp-section-title tp-split__text tp-split__in-right mb-35"
+                    className="tp-section-title tp-split__text tp-split__in-right mb-35 text-white"
                     style={{ perspective: "400px" }}
                     >
                   <div
@@ -449,7 +449,7 @@ const Form = () => {
                   </div>
                 </h3>
                 <p
-                  className="wow tpfadeUp animated"
+                  className="wow tpfadeUp animated text-white"
                   data-wow-duration=".9s"
                   data-wow-delay=".3s"
                   style={{
@@ -474,16 +474,16 @@ const Form = () => {
                    justifyContent: "space-between" //changed
                 }}
                 >
-                <div className="tp-contact__text">
-                  <h3 className="tp-contact__title">Contact</h3>
-                  <Link href="/" className="tp-contact__title-sm">
+                <div className="tp-contact__text ">
+                  <h3 className="tp-contact__title text-white">Contact</h3>
+                  <Link href="/" className="tp-contact__title-sm text-white">
                     09220516777 <br />
                     07290002168
                   </Link>
                 </div>
                 <div className="tp-contact__email">
-                  <h3 className="tp-contact__title">Email</h3>
-                  <Link href="/" className="tp-contact__title-sm">
+                  <h3 className="tp-contact__title text-white">Email</h3>
+                  <Link href="/" className="tp-contact__title-sm text-white">
                     info@ritzmediaworld.com
                   </Link>
                 </div>
@@ -500,14 +500,14 @@ const Form = () => {
                 }}
                 >
                 <div className=" tp-contact__adress">
-                  <h3 className="tp-contact__title">Address</h3>
-                  <div className="tp-contact__title-sm">
+                  <h3 className="tp-contact__title text-white">Address</h3>
+                  <div className="tp-contact__title-sm text-white">
                     402 – 404 , 4th floor Corporate Park, <br /> Tower A1 Sector
                     142 , Greater Noida{" "}
                   </div>
                 </div>
                 <div className="tp-contact__social">
-                  <h3 className="tp-contact__title">Follow</h3>
+                  <h3 className="tp-contact__title text-white">Follow</h3>
                   <div className="tp-contact__social-link">
                     <Link href="https://www.facebook.com/ritzmediaworld/" >
                       <i aria-hidden="true">
@@ -607,6 +607,7 @@ const Form = () => {
                                 size={40}
                                 maxLength={400}
                                 className="wpcf7-form-control wpcf7-text inputText"
+                                style={{color:"white"}}
                                 aria-invalid="false"
                                 placeholder="Your Name"
                                 type="text"
@@ -625,6 +626,7 @@ const Form = () => {
                                 size={40}
                                 maxLength={400}
                                 className="wpcf7-form-control wpcf7-text inputText"
+                                style={{color:"white"}}
                                 aria-invalid="false"
                                 placeholder="Phone Number"
                                 type="text"
@@ -640,6 +642,7 @@ const Form = () => {
                                 size={40}
                                 maxLength={400}
                                 className="wpcf7-form-control wpcf7-email wpcf7-text wpcf7-validates-as-email inputText"
+                                style={{color:"white"}}
                                 aria-invalid="false"
                                 placeholder="Email Address"
                                 type="email"
@@ -659,6 +662,7 @@ const Form = () => {
                                 rows={10}
                                 maxLength={2000}
                                 className="wpcf7-form-control wpcf7-textarea textareaText"
+                                style={{color:"white"}}
                                 aria-invalid="false"
                                 placeholder="Write Message"
                                 name="contact_form_1_message"

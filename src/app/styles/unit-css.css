@@ -829,7 +829,7 @@ blockquote cite::before {
 #wp-calendar tbody td {
 	background: #fff;
 	border: 1px solid #e1e1e1;
-	text-align: center;
+	text-align: center;	
 	padding: 8px 0;
 	transition: 0.3s;
 }

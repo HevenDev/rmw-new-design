@@ -22,7 +22,7 @@ const Work = () => {
               data-widget_type="fun-facts.default"
             >
               <div className="elementor-widget-container">
-                <div className="tp-funfact__area fix tp-funfact__1 p-relative pt-75">
+                <div className="tp-funfact__area fix tp-funfact__1 p-relative">
                   <div className="tp-funfact__shape">
                     <img
                       decoding="async"

@@ -7,6 +7,20 @@ import Link from "next/link";
 import Loader from "@/components/loader/Loader";
 import parse from "html-react-parser";
 import { IoSearchSharp } from "react-icons/io5";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
+
+
+const images = [
+  // Images from public/about-images folder
+  { src: '/about-images/about-head.webp', title: 'about Heading' },
+  { src: '/about-images/gut-wallpaper.jpg', title: 'guts' },
+  { src: '/about-images/guts-wallpaper-2.jpg', title: 'Berserk' },
+  { src: '/about-images/gut-wallpaper.jpg', title: 'guts' },
+  { src: '/about-images/guts-wallpaper-2.jpg', title: 'Berserk' },
+
+];
 
 type BlogPost = {
   id: string;
@@ -20,6 +34,8 @@ type BlogPost = {
   categories: string[];
   tags: string[];
 };
+
+
 
 interface BlogPosts {
   id: number;
@@ -82,7 +98,7 @@ const Article1 = () => {
   if (!article) return <p>No article found.</p>;
 
   return (
-    <section className="pt-160 pb-120" style={{ backgroundColor: "#f0f0f0" }}>
+    <section className="pt-160" style={{ backgroundColor: "#f0f0f0" }}>
       <div className="container">
         <div className="row">
           {/* Main Content */}
@@ -188,8 +204,70 @@ const Article1 = () => {
           </div>
         </div>
       </div>
-    </section>
+      <div style={{ width: '100vw', overflow: 'hidden', paddingTop:'30px' }}>
+      <Swiper
+        modules={[Autoplay]}
+        loop={true}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        speed={1000}
+        grabCursor={true}
+        spaceBetween={20}
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        }}
+        style={{ width: '100%', height: '350px' }}
+      >
+        {images.map((image, index) => (
+          <SwiperSlide key={index}>
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                height: '100%',
+                backfaceVisibility: 'hidden',
+              }}
+            >
+              <img
+                src={image.src}
+                alt={image.title}
+                loading="lazy"
+                style={{
+                  width: '100%',
+                  height: '80%',
+                  objectFit: 'cover',
+                }}
+              />
+              <h3
+                style={{
+                  margin: '10px 0 0',
+                  fontSize: '1.2rem',
+                  textAlign: 'center',
+                }}
+              >
+                {image.title}
+              </h3>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
 
+    </section>
   );
 };
 

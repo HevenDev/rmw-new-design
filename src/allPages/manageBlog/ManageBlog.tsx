@@ -294,7 +294,7 @@ export default function ManageBlogs() {
           >
             <motion.div
               className="bg-white p-6 rounded-md shadow-md"
-              initial={{ y: -50, opacity: 0 }}
+              initial={{ y: -50, opacity: 0 }}  
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -50, opacity: 0 }}
               transition={{ duration: 0.3 }}

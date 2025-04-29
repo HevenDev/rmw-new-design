@@ -12,7 +12,7 @@ const Experts = () => {
 
   return (
     <div className="elementor-widget-container">
-                <section className="tp-team__3-area tp-team__inner-1 p-relative pt-120 pb-135">
+                <section className="tp-team__3-area tp-team__inner-1 p-relative pt-120">
                   <div className="container">
                     <div className="tp-team__title-box mb-75">
                       <span ref={(el) => { if (el) textRefs.current.push(el) }} className="tp-section-title-pre mb-25 tp-split__text tp-split__in-right">

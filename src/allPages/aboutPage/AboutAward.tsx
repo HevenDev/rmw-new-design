@@ -136,7 +136,7 @@ const AboutAward = () => {
                       </h3>
                     </div>
                   </div>
-                  {/* DONT DELETE THE BELOW COMMENTED CODE IT WILL BE USED IN FUTURE */}
+                  {/* DONT DELETE THE BELOW COMMENTED CODE... IT WILL BE USED IN FUTURE */}
                   {/* <div className="tp-awards__5-founder-box d-sm-flex align-items-center">
                     <div className="tp-awards__5-avater-thumb">
                       <img
