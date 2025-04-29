@@ -2,7 +2,7 @@
 
 // import React, { useEffect } from 'react'
 import ServiceMainHero from './ServiceMainHero'
-import Header from '@/components/header/Header'
+// import Header from '@/components/header/Header'
 import Footer from '@/components/footer/Footer'
 import ProjectSwiper from '../Homepage/ProjectSwiper'
 import ServiceMainIdentity from './ServiceMainIdentity'
@@ -21,12 +21,8 @@ import Awards from '../Homepage/Awards'
 
 const ServiceMainPage = () => {
   
-  // useEffect(()=> {
-
-  // })
   return (
     <>
-      <Header/>
       <ServiceMainHero />
       <ProjectSwiper />
       <ServiceMainIdentity />

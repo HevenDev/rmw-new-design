@@ -1,7 +1,6 @@
 "use client"
 
 import Footer from '@/components/footer/Footer'
-import Header from '@/components/header/Header'
 import React, { useEffect, useState } from 'react'
 import ServiceThirdHero from './ServiceThirdHero'
 import SwiperHome from '../Homepage/SwiperHome'
@@ -60,10 +59,9 @@ const ServiceThirdMainPage = () => {
     }
   }, [secondPage, thirdPage]);
 
-  if (loading) return <p><Loader /></p>;
+  if (loading) return <Loader />;
   return (
     <>
-       <Header />
        <ServiceThirdHero heading={head} para={para} />
        <SwiperHome />
        <ServiceThirdQuality cardData={cardData} />

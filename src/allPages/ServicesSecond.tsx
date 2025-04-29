@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from 'react';
 import SwiperHome from "./Homepage/SwiperHome";
 import Service from "./Homepage/Service";
-import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import ServiceFirst from "./serviceSecondPage/ServiceFirst";
 import ServiceImg from "./serviceSecondPage/ServiceImg";
@@ -59,7 +58,6 @@ const ServicesSecondPage = () => {
 
   return (
     <>
-      <Header />
       <ServiceFirst heading={head}/>
       <SwiperHome />
       <p style={{
