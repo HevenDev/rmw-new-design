@@ -3,7 +3,11 @@
 import React from "react";
 import { useSplitText } from "@/hooks/useSplitText";
 import Link from "next/link";
-const ServiceFirst = () => {
+type ServiceFirstProps = {
+  heading: string | null;
+};
+
+const ServiceFirst = ({ heading }: ServiceFirstProps) => {
 
   const textRefs = useSplitText();
 
@@ -17,9 +21,9 @@ const ServiceFirst = () => {
                 <div className="tp-ab__title-box z-index-2 mb-80">
                   <h3 ref={(el) => { if (el) textRefs.current.push(el) }}
                     className="tp-service__title text-center tp-split__text tp-split__in-right"
-                    style={{ perspective: "400px" }}
+                    style={{ perspective: "400px", color: "#fff", fontSize:"6vw"}}
                   >
-                    Digital Maketing
+                    {heading}
                   </h3>
                 </div>
                 <div className="tp-service__btn-wrap text-center">

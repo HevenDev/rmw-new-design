@@ -127,7 +127,7 @@ const ServiceMainArticle = () => {
                               >
                                 T
                               </div>
-                            </div>{" "}
+                            </div>
                             <span>
                               <i>
                                 <div
@@ -244,7 +244,7 @@ const ServiceMainArticle = () => {
                               </i>
                             </span>
                           </div>
-                        </h3>{" "}
+                        </h3>
                       </div>
                     </div>
                     <div className="col-xl-4 col-lg-4 col-md-4">

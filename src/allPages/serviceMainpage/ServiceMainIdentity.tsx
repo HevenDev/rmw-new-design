@@ -68,7 +68,7 @@ const ServiceMainIdentity = () => {
                             >
                               e
                             </div>
-                          </div>{" "}
+                          </div>
                           <div
                             style={{
                               position: "relative",
@@ -115,7 +115,7 @@ const ServiceMainIdentity = () => {
                             >
                               l
                             </div>
-                          </div>{" "}
+                          </div>
                           <span>
                             <div
                               style={{
@@ -211,7 +211,7 @@ const ServiceMainIdentity = () => {
                               }}
                             >
                             </div>
-                          </div>{" "}
+                          </div>
                           <div
                             style={{
                               position: "relative",
@@ -259,7 +259,7 @@ const ServiceMainIdentity = () => {
                               t
                             </div>
                            
-                          </div>{" "}
+                          </div>
                         </div>
                         <div
                         ref={(el) => { if (el) textRefs.current.push(el) }}
@@ -325,7 +325,7 @@ const ServiceMainIdentity = () => {
                               }}
                             >
                               
-                            </div>{" "}
+                            </div>
                             <div
                               style={{
                                 position: "relative",
@@ -347,7 +347,7 @@ const ServiceMainIdentity = () => {
                               o
                             </div>
                            
-                          </div>{" "}
+                          </div>
                           <div
                             style={{
                               position: "relative",
@@ -426,7 +426,7 @@ const ServiceMainIdentity = () => {
                             </div>
                           </div>
                         </div>
-                      </h3>{" "}
+                      </h3>
                     </div>
                   </div>
                 </div>
@@ -466,7 +466,7 @@ const ServiceMainIdentity = () => {
                             >
                               1
                             </b>
-                            B+{" "}
+                            B+
                           </h3>
                           <span className="tp-about__funfact-title">
                           Words Written
@@ -481,7 +481,7 @@ const ServiceMainIdentity = () => {
                             >
                               1
                             </b>
-                            M+{" "}
+                            M+
                           </h3>
                           <span className="tp-about__funfact-title">
                           Creatives Published
@@ -494,12 +494,12 @@ const ServiceMainIdentity = () => {
                     <div className="tp-about__right">
                       <div className="tp-about__content mb-40 pt-60">
                         <p className="mb-40">
-                          {" "}
-                          We command growth with millions of hours in collective experience. At this point, It’s not a matter of ‘if’, it becomes a matter of ‘when’ you will attain the tipping point that will drive your.{" "}
+                          
+                          We command growth with millions of hours in collective experience. At this point, It’s not a matter of ‘if’, it becomes a matter of ‘when’ you will attain the tipping point that will drive your.
                         </p>
                         <h3 className="tp-about__title mb-70">
                         PERPETUAL  <br />
-                        <span>GROWTH</span>{" "}
+                        <span>GROWTH</span>
                         </h3>
                         {/* <div className="tp-about__featured d-flex">
                           <div className="tp-about__featured-item mr-85">

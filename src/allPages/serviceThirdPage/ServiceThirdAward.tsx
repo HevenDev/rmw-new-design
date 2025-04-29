@@ -83,7 +83,7 @@ const ServiceThirdAward = () => {
                                 display: "inline-block",
                               }}
                             >
-                              {" "}
+                              
                               <div
                                 style={{
                                   position: "relative",
@@ -149,7 +149,7 @@ const ServiceThirdAward = () => {
                               >
                                 e
                               </div>
-                            </div>{" "}
+                            </div>
                             <div
                               style={{
                                 position: "relative",
@@ -325,7 +325,7 @@ const ServiceThirdAward = () => {
                               >
                                 g
                               </div>
-                            </div>{" "}
+                            </div>
                           </div>
                           <div ref={(el) => { if (el) textRefs.current.push(el) }}
                             className="tp-split__line"
@@ -486,16 +486,16 @@ const ServiceThirdAward = () => {
                                   t
                                 </div>
                               </div>
-                            </span>{" "}
+                            </span>
                             <i>
-                              {" "}
+                              
                               <div
                                 style={{
                                   position: "relative",
                                   display: "inline-block",
                                 }}
                               >
-                                {" "}
+                                
                                 <div
                                   style={{
                                     position: "relative",
@@ -600,8 +600,8 @@ const ServiceThirdAward = () => {
                                 >
                                   s
                                 </div>
-                              </div>{" "}
-                            </i>{" "}
+                              </div>
+                            </i>
                           </div>
                         </h3>
                         <p
@@ -681,12 +681,12 @@ const ServiceThirdAward = () => {
                               <i
                                 aria-hidden="true"
                                 className="fas fa-badge-check"
-                              ></i>{" "}
+                              ></i>
                             </span>
                             <p>
-                              {" "}
+                              
                               Your site will be more visible and accessible We
-                              are creative{" "}
+                              are creative
                             </p>
                           </li>
                           <li>
@@ -694,12 +694,12 @@ const ServiceThirdAward = () => {
                               <i
                                 aria-hidden="true"
                                 className="fas fa-badge-check"
-                              ></i>{" "}
+                              ></i>
                             </span>
                             <p>
-                              {" "}
+                              
                               Optimizing your web pages to improve ranking
-                              brands Taken{" "}
+                              brands Taken
                             </p>
                           </li>
                           <li>
@@ -707,12 +707,12 @@ const ServiceThirdAward = () => {
                               <i
                                 aria-hidden="true"
                                 className="fas fa-badge-check"
-                              ></i>{" "}
+                              ></i>
                             </span>
                             <p>
-                              {" "}
+                              
                               Increase your sales with high-quality SEO services
-                              like{" "}
+                              like
                             </p>
                           </li>
                         </ul>

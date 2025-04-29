@@ -23,13 +23,13 @@ const ServiceMainAwards = () => {
                   <div className="col-xl-6 col-lg-6 g-5">
                     <div className="tp-awards__title-box mb-50">
                       <h3 className="tp-section-title mb-40">
-                        Check Our <span>Awards</span> <br /> &amp;{" "}
+                        Check Our <span>Awards</span> <br /> &amp;
                         <i> Achievements </i>
-                      </h3>{" "}
+                      </h3>
                       <p>
-                        {" "}
+                        
                         Whether it&apos;s crafting a visually stunning brand identity
-                        designing immersive digital experiences, or developing{" "}
+                        designing immersive digital experiences, or developing
                       </p>
                     </div>
                     <div className="tp-awards__wrap">
@@ -53,7 +53,7 @@ const ServiceMainAwards = () => {
                                     aria-controls="nav-First"
                                     aria-selected="false"
                                   >
-                                    2020{" "}
+                                    2020
                                   </button>
                                   <button
                                     className="nav-link active"
@@ -65,7 +65,7 @@ const ServiceMainAwards = () => {
                                     aria-controls="nav-Second"
                                     aria-selected="true"
                                   >
-                                    2021{" "}
+                                    2021
                                   </button>
                                   <button
                                     className="nav-link"
@@ -77,7 +77,7 @@ const ServiceMainAwards = () => {
                                     aria-controls="nav-Third"
                                     aria-selected="false"
                                   >
-                                    2023{" "}
+                                    2023
                                   </button>
                                 </div>
                               </nav>
@@ -99,7 +99,7 @@ const ServiceMainAwards = () => {
                                   <div className="tp-awards__item d-flex tp-awards-border">
                                     <div className="tp-awards__icon">
                                       <span>
-                                        {" "}
+                                        
                                         <svg
                                           width="50"
                                           height="60"
@@ -131,7 +131,7 @@ const ServiceMainAwards = () => {
                                             d="M48.866 24.5166H44.3722C43.7433 24.5166 43.2285 25.0314 43.2285 25.6603C43.2285 26.2893 43.7433 26.804 44.3722 26.804H48.866C49.495 26.804 50.0097 26.2893 50.0097 25.6603C50.0097 25.0234 49.495 24.5166 48.866 24.5166Z"
                                             fill="currentColor"
                                           ></path>
-                                        </svg>{" "}
+                                        </svg>
                                       </span>
                                     </div>
                                     <div className="tp-awards__text">
@@ -145,7 +145,7 @@ const ServiceMainAwards = () => {
                                   <div className="tp-awards__item d-flex">
                                     <div className="tp-awards__icon">
                                       <span>
-                                        {" "}
+                                        
                                         <svg
                                           width="50"
                                           height="60"
@@ -184,7 +184,7 @@ const ServiceMainAwards = () => {
                                               ></rect>
                                             </clipPath>
                                           </defs>
-                                        </svg>{" "}
+                                        </svg>
                                       </span>
                                     </div>
                                     <div className="tp-awards__text">
@@ -209,7 +209,7 @@ const ServiceMainAwards = () => {
                                   <div className="tp-awards__item d-flex tp-awards-border">
                                     <div className="tp-awards__icon">
                                       <span>
-                                        {" "}
+                                        
                                         <svg
                                           width="50"
                                           height="60"
@@ -241,7 +241,7 @@ const ServiceMainAwards = () => {
                                             d="M48.866 24.5166H44.3722C43.7433 24.5166 43.2285 25.0314 43.2285 25.6603C43.2285 26.2893 43.7433 26.804 44.3722 26.804H48.866C49.495 26.804 50.0097 26.2893 50.0097 25.6603C50.0097 25.0234 49.495 24.5166 48.866 24.5166Z"
                                             fill="currentColor"
                                           ></path>
-                                        </svg>{" "}
+                                        </svg>
                                       </span>
                                     </div>
                                     <div className="tp-awards__text">
@@ -255,7 +255,7 @@ const ServiceMainAwards = () => {
                                   <div className="tp-awards__item d-flex">
                                     <div className="tp-awards__icon">
                                       <span>
-                                        {" "}
+                                        
                                         <svg
                                           width="45"
                                           height="45"
@@ -294,12 +294,12 @@ const ServiceMainAwards = () => {
                                               ></rect>
                                             </clipPath>
                                           </defs>
-                                        </svg>{" "}
+                                        </svg>
                                       </span>
                                     </div>
                                     <div className="tp-awards__text">
                                       <h3 className="tp-awards__title">
-                                        Highest quality development{" "}
+                                        Highest quality development
                                       </h3>
                                     </div>
                                   </div>
@@ -319,7 +319,7 @@ const ServiceMainAwards = () => {
                                   <div className="tp-awards__item d-flex tp-awards-border">
                                     <div className="tp-awards__icon">
                                       <span>
-                                        {" "}
+                                        
                                         <svg
                                           width="50"
                                           height="60"
@@ -351,7 +351,7 @@ const ServiceMainAwards = () => {
                                             d="M48.866 24.5166H44.3722C43.7433 24.5166 43.2285 25.0314 43.2285 25.6603C43.2285 26.2893 43.7433 26.804 44.3722 26.804H48.866C49.495 26.804 50.0097 26.2893 50.0097 25.6603C50.0097 25.0234 49.495 24.5166 48.866 24.5166Z"
                                             fill="currentColor"
                                           ></path>
-                                        </svg>{" "}
+                                        </svg>
                                       </span>
                                     </div>
                                     <div className="tp-awards__text">
@@ -365,7 +365,7 @@ const ServiceMainAwards = () => {
                                   <div className="tp-awards__item d-flex">
                                     <div className="tp-awards__icon">
                                       <span>
-                                        {" "}
+                                        
                                         <svg
                                           width="45"
                                           height="45"
@@ -404,7 +404,7 @@ const ServiceMainAwards = () => {
                                               ></rect>
                                             </clipPath>
                                           </defs>
-                                        </svg>{" "}
+                                        </svg>
                                       </span>
                                     </div>
                                     <div className="tp-awards__text">
@@ -434,8 +434,8 @@ const ServiceMainAwards = () => {
                               02x <span> /</span>
                             </h3>
                             <h3 className="tp-awards__featured-title">
-                              {" "}
-                              DEVELOPER AWARD{" "}
+                              
+                              DEVELOPER AWARD
                             </h3>
                           </div>
                         </div>
@@ -446,8 +446,8 @@ const ServiceMainAwards = () => {
                               05X <span> /</span>
                             </h3>
                             <h3 className="tp-awards__featured-title">
-                              {" "}
-                              PRODUCT DESIGN{" "}
+                              
+                              PRODUCT DESIGN
                             </h3>
                           </div>
                         </div>
@@ -458,8 +458,8 @@ const ServiceMainAwards = () => {
                               03X <span> /</span>
                             </h3>
                             <h3 className="tp-awards__featured-title">
-                              {" "}
-                              SITE OF THE DAY{" "}
+                              
+                              SITE OF THE DAY
                             </h3>
                           </div>
                         </div>
@@ -470,8 +470,8 @@ const ServiceMainAwards = () => {
                               02X <span> /</span>
                             </h3>
                             <h3 className="tp-awards__featured-title">
-                              {" "}
-                              THE BEST ANALYZER{" "}
+                              
+                              THE BEST ANALYZER
                             </h3>
                           </div>
                         </div>

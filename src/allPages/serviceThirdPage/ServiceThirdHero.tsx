@@ -1,5 +1,9 @@
 import Link from "next/link";
-const ServiceThirdHero = () => {
+type headingProp = {
+  heading: string | null;
+  para: string | null;
+};
+const ServiceThirdHero = ({ heading, para }: headingProp) => {
   return (
     <div
       className="elementor-element elementor-element-9b5be38 e-con-full e-flex e-con e-parent e-lazyloaded"
@@ -37,7 +41,7 @@ const ServiceThirdHero = () => {
                 <div className="tp-hero__2-social-content">
                   <ul>
                   <li>
-                      <Link href="https://www.facebook.com/ritzmediaworld/"> Fb {" "}</Link> /
+                      <Link href="https://www.facebook.com/ritzmediaworld/"> Fb </Link> /
                     </li>
                     <li>
                       <Link href="https://www.instagram.com/ritzmediaworld/"> In </Link>
@@ -60,15 +64,7 @@ const ServiceThirdHero = () => {
                     <div className="col-xl-12">
                       <div className="tp-hero__3-title-box mb-55 p-relative">
                         <h3 className="tp-hero__3-big-title cd-headline clip tp_title_anim">
-                          <span
-                            className="cd-words-wrapper"
-                            style={{ width: "326.781px" }}
-                          >
-                            <b className="is-hidden">NEW</b>
-                            <b className="app is-hidden">UI/UX</b>
-                            <b className="is-visible">SEO</b>
-                          </span>
-                          AGENCY{" "}
+                          {heading}
                         </h3>
                       </div>
                       <div className="tp-hero__3-content">
@@ -85,10 +81,7 @@ const ServiceThirdHero = () => {
                               }}
                             >
                               <p>
-                                {" "}
-                                We are a creative studio that specializes in
-                                providing high-quality design and branding
-                                solutions to businesses and individuals.{" "}
+                                {para}
                               </p>
                             </div>
                           </div>
@@ -103,14 +96,14 @@ const ServiceThirdHero = () => {
                                 animationDelay: "0.7s",
                               }}
                             >
-                              <h3 className="tp-hero__title">
-                                WEB{" "}
+                              {/* <h3 className="tp-hero__title">
+                                WEB
                                 <span>
                                   <i>DESIGN</i>
-                                </span>{" "}
+                                </span>
                                 <br />
-                                SERVICES{" "}
-                              </h3>
+                                SERVICES
+                              </h3> */}
                             </div>
                           </div>
                         </div>

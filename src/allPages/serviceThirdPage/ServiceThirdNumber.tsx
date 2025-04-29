@@ -56,7 +56,7 @@ const ServiceThirdNumber = () => {
                             >
                               1B
                             </b>
-                            +{" "}
+                            +
                           </h3>
                           <div className="tp-funfact__text">
                             <span> Words Written </span>
@@ -85,7 +85,7 @@ const ServiceThirdNumber = () => {
                             >
                               1
                             </b>
-                            M+{" "}
+                            M+
                           </h3>
                           <div className="tp-funfact__text">
                             <span>Creatives Published </span>
@@ -114,7 +114,7 @@ const ServiceThirdNumber = () => {
                             >
                               1
                             </b>
-                           K +{" "}
+                           K +
                           </h3>
                           <div className="tp-funfact__text">
                             <span> Campaigns Executed</span>
@@ -143,7 +143,7 @@ const ServiceThirdNumber = () => {
                             >
                               500
                             </b>
-                            +{" "}
+                            +
                           </h3>
                           <div className="tp-funfact__text">
                             <span> Success Stories</span>

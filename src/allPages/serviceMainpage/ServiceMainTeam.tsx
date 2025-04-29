@@ -108,7 +108,7 @@ const ServiceMainTeam = () => {
                             >
                               t
                             </div>
-                          </div>{" "}
+                          </div>
                           <div
                             style={{
                               position: "relative",
@@ -270,7 +270,7 @@ const ServiceMainTeam = () => {
                               </div>
                             </i>
                           </span>
-                        </h3>{" "}
+                        </h3>
                       </div>
                     </div>
                   </div>
@@ -312,8 +312,8 @@ const ServiceMainTeam = () => {
                         </div>
                         <div className="tp-team__2-content text-center">
                           <span className="tp-team__2-designation">
-                            {" "}
-                            CREATIVE DIRECTOR{" "}
+                            
+                            CREATIVE DIRECTOR
                           </span>
                           <h3 className="tp-team__2-title">
                             <Link
@@ -321,8 +321,8 @@ const ServiceMainTeam = () => {
                               target="_self"
                               rel="nofollow"
                             >
-                              {" "}
-                              ESTHER HOWAR{" "}
+                              
+                              ESTHER HOWAR
                             </Link>
                           </h3>
                         </div>
@@ -363,8 +363,8 @@ const ServiceMainTeam = () => {
                         </div>
                         <div className="tp-team__2-content text-center">
                           <span className="tp-team__2-designation">
-                            {" "}
-                            MARKETING STAFF{" "}
+                            
+                            MARKETING STAFF
                           </span>
                           <h3 className="tp-team__2-title">
                             <Link
@@ -372,8 +372,8 @@ const ServiceMainTeam = () => {
                               target="_self"
                               rel="nofollow"
                             >
-                              {" "}
-                              DWONA MEXBO{" "}
+                              
+                              DWONA MEXBO
                             </Link>
                           </h3>
                         </div>
@@ -414,8 +414,8 @@ const ServiceMainTeam = () => {
                         </div>
                         <div className="tp-team__2-content text-center">
                           <span className="tp-team__2-designation">
-                            {" "}
-                            CREATIVE DIRECTOR{" "}
+                            
+                            CREATIVE DIRECTOR
                           </span>
                           <h3 className="tp-team__2-title">
                             <Link
@@ -423,8 +423,8 @@ const ServiceMainTeam = () => {
                               target="_self"
                               rel="nofollow"
                             >
-                              {" "}
-                              MEORN DEXWA{" "}
+                              
+                              MEORN DEXWA
                             </Link>
                           </h3>
                         </div>
