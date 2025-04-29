@@ -54,7 +54,7 @@ const ServiceThirdFeatureMarque = () => {
                       >
                         <div className="tp-text__5-wrap">
                           <h3 className="tp-text__5-text">
-                            FEATURED PROJECTS{" "}
+                            FEATURED PROJECTS
                           </h3>
                         </div>
                       </SwiperSlide>
@@ -67,7 +67,7 @@ const ServiceThirdFeatureMarque = () => {
                       >
                         <div className="tp-text__5-wrap">
                           <h3 className="tp-text__5-text">
-                            FEATURED PROJECTS{" "}
+                            FEATURED PROJECTS
                           </h3>
                         </div>
                       </SwiperSlide>
@@ -80,7 +80,7 @@ const ServiceThirdFeatureMarque = () => {
                       >
                         <div className="tp-text__5-wrap">
                           <h3 className="tp-text__5-text">
-                            FEATURED PROJECTS{" "}
+                            FEATURED PROJECTS
                           </h3>
                         </div>
                       </SwiperSlide>
@@ -93,7 +93,7 @@ const ServiceThirdFeatureMarque = () => {
                       >
                         <div className="tp-text__5-wrap">
                           <h3 className="tp-text__5-text">
-                            FEATURED PROJECTS{" "}
+                            FEATURED PROJECTS
                           </h3>
                         </div>
                       </SwiperSlide>
@@ -106,7 +106,7 @@ const ServiceThirdFeatureMarque = () => {
                       >
                         <div className="tp-text__5-wrap">
                           <h3 className="tp-text__5-text">
-                            FEATURED PROJECTS{" "}
+                            FEATURED PROJECTS
                           </h3>
                         </div>
                       </SwiperSlide>
@@ -119,7 +119,7 @@ const ServiceThirdFeatureMarque = () => {
                       >
                         <div className="tp-text__5-wrap">
                           <h3 className="tp-text__5-text">
-                            FEATURED PROJECTS{" "}
+                            FEATURED PROJECTS
                           </h3>
                         </div>
                       </SwiperSlide>
@@ -132,7 +132,7 @@ const ServiceThirdFeatureMarque = () => {
                       >
                         <div className="tp-text__5-wrap">
                           <h3 className="tp-text__5-text">
-                            FEATURED PROJECTS{" "}
+                            FEATURED PROJECTS
                           </h3>
                         </div>
                       </SwiperSlide>
@@ -145,7 +145,7 @@ const ServiceThirdFeatureMarque = () => {
                       >
                         <div className="tp-text__5-wrap">
                           <h3 className="tp-text__5-text">
-                            FEATURED PROJECTS{" "}
+                            FEATURED PROJECTS
                           </h3>
                         </div>
                       </SwiperSlide>
@@ -158,7 +158,7 @@ const ServiceThirdFeatureMarque = () => {
                       >
                         <div className="tp-text__5-wrap">
                           <h3 className="tp-text__5-text">
-                            FEATURED PROJECTS{" "}
+                            FEATURED PROJECTS
                           </h3>
                         </div>
                       </SwiperSlide>

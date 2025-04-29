@@ -41,7 +41,7 @@ const Form = () => {
                     <div
                       style={{ position: "relative", display: "inline-block" }}
                       >
-                      {" "}
+                      
                       <div
                         style={{
                             position: "relative",
@@ -81,7 +81,7 @@ const Form = () => {
                         >
                         k
                       </div>
-                    </div>{" "}
+                    </div>
                     <div
                       style={{ position: "relative", display: "inline-block" }}
                       >
@@ -170,7 +170,7 @@ const Form = () => {
                             }}
                             >
                           y,
-                        </div>{" "}
+                        </div>
                         <div
                           style={{
                               position: "relative",
@@ -209,7 +209,7 @@ const Form = () => {
                             }}
                             >
                           d
-                        </div>{" "}
+                        </div>
                         <div
                           style={{
                               position: "relative",
@@ -300,7 +300,7 @@ const Form = () => {
                             }}
                             >
                           e
-                        </div>{" "}
+                        </div>
                         <div
                           style={{
                               position: "relative",
@@ -445,7 +445,7 @@ const Form = () => {
                           y
                         </div>
                       </div>
-                    </span>{" "}
+                    </span>
                   </div>
                 </h3>
                 <p
@@ -459,7 +459,7 @@ const Form = () => {
                     }}
                     >
                         You’ve got a Project, an Idea, or a marketing Emergency that needs our genius intervention?
-                  {" "}
+                  
                     Well, we’ve seen them all. Let’s get in touch and fall in love. All you need to do is fill out the details below and we’ll get in touch.
                 </p>
               </div>
@@ -503,7 +503,7 @@ const Form = () => {
                   <h3 className="tp-contact__title text-white">Address</h3>
                   <div className="tp-contact__title-sm text-white">
                     402 – 404 , 4th floor Corporate Park, <br /> Tower A1 Sector
-                    142 , Greater Noida{" "}
+                    142 , Greater Noida
                   </div>
                 </div>
                 <div className="tp-contact__social">
@@ -512,27 +512,27 @@ const Form = () => {
                     <Link href="https://www.facebook.com/ritzmediaworld/" >
                       <i aria-hidden="true">
                         <FaFacebookF />
-                      </i>{" "}
+                      </i>
                     </Link>
                     <Link href="https://www.instagram.com/ritzmediaworld/" >
                       <i aria-hidden="true">
-                        <FaInstagram />{" "}
-                      </i>{" "}
+                        <FaInstagram />
+                      </i>
                     </Link>
                     <Link href="https://x.com/i/flow/login?redirect_after_login=%2Fritzmediaworld" target="http://1" rel="http://1">
                       <i aria-hidden="true">
                         <FaXTwitter />
-                      </i>{" "}
+                      </i>
                     </Link>
                     <Link href="https://www.linkedin.com/company/ritzmediaworld/?originalSubdomain=in">
                       <i aria-hidden="true">
                         <FaLinkedin />
-                      </i>{" "}
+                      </i>
                     </Link>
                     <Link href="https://www.youtube.com/c/RitzMediaWorldCreativeThinksMedia" target="http://1" rel="http://1">
                       <i aria-hidden="true">
                       <FaYoutube />
-                      </i>{" "}
+                      </i>
                     </Link>
                   </div>
                 </div>
@@ -561,7 +561,7 @@ const Form = () => {
                   data-wpcf7-id="990"
                   >
                   <div className="screen-reader-response">
-                    <p role="status" aria-live="polite" aria-atomic="true"></p>{" "}
+                    <p role="status" aria-live="polite" aria-atomic="true"></p>
                     <ul></ul>
                   </div>
                   <form

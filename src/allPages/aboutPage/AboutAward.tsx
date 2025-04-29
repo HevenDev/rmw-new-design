@@ -43,7 +43,7 @@ const AboutAward = () => {
                           >
                             17
                           </b>
-                          +{" "}
+                          +
                         </h3>
                         <p className="text-white"> Services </p>
                       </div>
@@ -72,7 +72,7 @@ const AboutAward = () => {
                             display: "inline-block",
                           }}
                         >
-                          {" "}
+                          
                           <div
                             style={{
                               position: "relative",
@@ -86,13 +86,13 @@ const AboutAward = () => {
                           >
                             Our Work is Our Reward
                           </div>
-                        </div>{" "}
+                        </div>
                       </div>
                     </h3>
                     <p>
                       Our Mad Men are obsessed with building stories. Like a
                       moth to a flame, they’re just obsessed with any branding
-                      problem that may need a solution.{" "}
+                      problem that may need a solution.
                     </p>
                   </div>
                   <div className="tp-awards__5-funfact-box mb-80 p-relative d-sm-flex align-items-center justify-content-between">
@@ -106,7 +106,7 @@ const AboutAward = () => {
                         >
                           300
                         </b>
-                        +{" "}
+                        +
                       </h3>
                     </div>
                     <div className="tp-awards__5-funfact-item text-center">
@@ -119,7 +119,7 @@ const AboutAward = () => {
                         >
                           40
                         </b>
-                        +{" "}
+                        +
                       </h3>
                     </div>
                     <div className="tp-awards__5-funfact-item text-center">
@@ -132,7 +132,7 @@ const AboutAward = () => {
                         >
                           35
                         </b>
-                        +{" "}
+                        +
                       </h3>
                     </div>
                   </div>
@@ -154,8 +154,8 @@ const AboutAward = () => {
                     </div>
                     <div className="tp-awards__5-since">
                       <h3 className="tp-awards__5-since-title">
-                        {" "}
-                        Foundation, since <span>21st</span> Oct , 2019{" "}
+                        
+                        Foundation, since <span>21st</span> Oct , 2019
                       </h3>
                     </div>
                   </div> */}

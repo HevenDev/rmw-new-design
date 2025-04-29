@@ -1,10 +1,5 @@
-"use client";
 
-import { useParams } from "next/navigation";
-import { useState, useEffect } from "react";
-import axios from "axios";
 import styles from "./serviceThirdQuality.module.css";
-import Loader from "@/components/loader/Loader";
 
 
 interface CardData {
@@ -13,36 +8,12 @@ interface CardData {
   image_url?: string;
 }
 
-const ServiceThirdQuality = () => {
-  const params = useParams();
-  const [cardData, setCardData] = useState<CardData[]>([]);
-  const [loading, setLoading] = useState(true);
+interface ServiceThirdQualityProps {
+  cardData: CardData[];
+}
 
-  const { secondPage, thirdPage } = params as {
-    secondPage: string;
-    thirdPage: string;
-  };
+const ServiceThirdQuality: React.FC<ServiceThirdQualityProps> = ({ cardData }) => {
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await axios.get(
-          `/api/services/${secondPage}/${thirdPage}`
-        );
-        setCardData(res.data.cards); 
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    if (secondPage && thirdPage) {
-      fetchData();
-    }
-  }, [secondPage, thirdPage]);
-
-  if (loading) return <p><Loader /></p>;
   return (
     <div
       className="elementor-element elementor-element-3205e74 e-con-full e-flex e-con e-parent e-lazyloaded"
@@ -72,7 +43,7 @@ const ServiceThirdQuality = () => {
                             className="tp-section-title"
                             style={{ width: "50%" }}
                           >
-                            Committed For Deliver <span>Top</span> Quality{" "}
+                            Committed For Deliver <span>Top</span> Quality
                             <span>Services</span>
                           </h3>
                         </div>

@@ -40,7 +40,7 @@ const ProjectNumbers = () => {
                       >
                         1
                       </b>
-                      B+{" "}
+                      B+
                     </h3>
                     <div className="tp-funfact__text">
                       <span> Words Written </span>
@@ -69,7 +69,7 @@ const ProjectNumbers = () => {
                       >
                         1
                       </b>
-                      M+{" "}
+                      M+
                     </h3>
                     <div className="tp-funfact__text">
                       <span> Creatives Published </span>
@@ -98,7 +98,7 @@ const ProjectNumbers = () => {
                       >
                         1
                       </b>
-                      K+{" "}
+                      K+
                     </h3>
                     <div className="tp-funfact__text">
                       <span>Campaigns Executed</span>
@@ -127,7 +127,7 @@ const ProjectNumbers = () => {
                       >
                         500
                       </b>
-                      +{" "}
+                      +
                     </h3>
                     <div className="tp-funfact__text">
                       <span>Success Stories </span>

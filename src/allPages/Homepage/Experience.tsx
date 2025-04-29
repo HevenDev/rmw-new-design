@@ -81,10 +81,10 @@ const Experience = () => {
                           className="tp-section-title-2 tp-split__text tp-split__in-right mb-40"
                         >
                           17+ Years Of Storytelling <br />
-                          Turning{" "}
+                          Turning
                           <span style={{ color: "var(--tp-theme-primary)" }}>
                             Brands
-                          </span>{" "}
+                          </span>
                           in to <br />
                           Household Names
                           <span className="tp-section-title-2-shape">

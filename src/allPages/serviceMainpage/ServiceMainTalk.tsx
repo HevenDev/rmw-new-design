@@ -65,7 +65,7 @@ const ServiceMainTalk = () => {
                               strokeLinecap="square"
                               strokeLinejoin="round"
                             ></path>
-                          </svg>{" "}
+                          </svg>
                         </Link>
                       </div>
                     </div>

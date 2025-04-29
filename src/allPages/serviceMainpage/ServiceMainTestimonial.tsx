@@ -68,11 +68,11 @@ const ServiceMainTestimonial = () => {
                               <div className="tp-testi__2-content">
                                 <div className="tp-testi__2-title-box mb-45">
                                   <h3 className="tp-section-title mb-60">
-                                    Best Creative{" "}
+                                    Best Creative
                                     <span>
                                       <i>Agency</i>
-                                    </span>{" "}
-                                    <br /> In Our Town Forever{" "}
+                                    </span>
+                                    <br /> In Our Town Forever
                                   </h3>
                                   <p>
                                   To me, advertising my brand was merely a means to ensure my elongated presence in the market. Thanks to ritz Media world, my advertisements not only ensured my brand’s sustenance but have also got me a great number of quality leads.
@@ -111,7 +111,7 @@ const ServiceMainTestimonial = () => {
                                     </span>
                                     <span>
                                       <i className="fas fa-star-half-alt"></i>
-                                    </span>{" "}
+                                    </span>
                                   </div>
                                 </div>
                               </div>
@@ -128,11 +128,11 @@ const ServiceMainTestimonial = () => {
                               <div className="tp-testi__2-content">
                                 <div className="tp-testi__2-title-box mb-45">
                                   <h3 className="tp-section-title mb-60">
-                                    Best Creative{" "}
+                                    Best Creative
                                     <span>
                                       <i>Agency</i>
-                                    </span>{" "}
-                                    <br /> In Our Town Forever{" "}
+                                    </span>
+                                    <br /> In Our Town Forever
                                   </h3>
                                   <p>
                                   If there is one thing serving as a full service digital agency for more than a decade taught us, it has to be the value of relationships. Therefore, our relationship with our clients is both a priority and a point of pride to us.
@@ -171,7 +171,7 @@ const ServiceMainTestimonial = () => {
                                     </span>
                                     <span>
                                       <i className="fas fa-star-half-alt"></i>
-                                    </span>{" "}
+                                    </span>
                                   </div>
                                 </div>
                               </div>
@@ -188,11 +188,11 @@ const ServiceMainTestimonial = () => {
                               <div className="tp-testi__2-content">
                                 <div className="tp-testi__2-title-box mb-45">
                                   <h3 className="tp-section-title mb-60">
-                                    Best Creative{" "}
+                                    Best Creative
                                     <span>
                                       <i>Agency</i>
-                                    </span>{" "}
-                                    <br /> In Our Town Forever{" "}
+                                    </span>
+                                    <br /> In Our Town Forever
                                   </h3>
                                   <p>
                                   They not only make sure that they deliver on their promises, but also educate you on what exactly is needed to be done for your brand, thereby preventing you from under or over spending your precious money.
@@ -231,7 +231,7 @@ const ServiceMainTestimonial = () => {
                                     </span>
                                     <span>
                                       <i className="fas fa-star-half-alt"></i>
-                                    </span>{" "}
+                                    </span>
                                   </div>
                                 </div>
                               </div>

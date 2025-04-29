@@ -55,7 +55,7 @@ const ServiceThirdSlowMarque = () => {
                       <div className="tp-text__6-wrap">
                         <h3 className="tp-text__6-text">
                           <Link href="/services/digital-marketing">
-                            {" "}
+                            
                             DIGITAL _ MARKETING
                           </Link>
                           <span>
@@ -85,7 +85,7 @@ const ServiceThirdSlowMarque = () => {
                       <div className="tp-text__6-wrap">
                         <h3 className="tp-text__6-text">
                           <Link href="/services/print-marketing">
-                            {" "}
+                            
                             PRINT_ADVERTISING
                           </Link>
                           <span>
@@ -144,9 +144,9 @@ const ServiceThirdSlowMarque = () => {
                       <div className="tp-text__6-wrap">
                         <h3 className="tp-text__6-text">
                           <Link href="/services/creative-services">
-                            {" "}
+                            
                             CREATIVE_SERVICES
-                          </Link>{" "}
+                          </Link>
                           <span>
                             <svg
                               width="24"
@@ -174,9 +174,9 @@ const ServiceThirdSlowMarque = () => {
                       <div className="tp-text__6-wrap">
                         <h3 className="tp-text__6-text">
                           <Link href="/services/content-marketing">
-                            {" "}
+                            
                             CONTENT_MARKETING
-                          </Link>{" "}
+                          </Link>
                           <span>
                             <svg
                               width="24"
@@ -204,9 +204,9 @@ const ServiceThirdSlowMarque = () => {
                       <div className="tp-text__6-wrap">
                         <h3 className="tp-text__6-text">
                           <Link href="/services/web-development">
-                            {" "}
+                            
                             WEB_DEVELOPMENT
-                          </Link>{" "}
+                          </Link>
                           <span>
                             <svg
                               width="24"
@@ -234,9 +234,9 @@ const ServiceThirdSlowMarque = () => {
                       <div className="tp-text__6-wrap">
                         <h3 className="tp-text__6-text">
                           <Link href="/services/celebrity-endorsements">
-                            {" "}
+                            
                             CELEBRITY_ENDORSEMENTS
-                          </Link>{" "}
+                          </Link>
                           <span>
                             <svg
                               width="24"

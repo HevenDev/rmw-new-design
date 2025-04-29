@@ -37,10 +37,10 @@ const ServiceMainWorkSwiper = () => {
                   <div className="col-md-12">
                     <div className="tp-work__title-box text-sm-center mb-55">
                       <h3 className="tp-section-title">
-                        SELECTED{" "}
+                        SELECTED
                         <span>
                           <i>WORKS</i>
-                        </span>{" "}
+                        </span>
                       </h3>
                     </div>
                   </div>

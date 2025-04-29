@@ -2,7 +2,11 @@
 import { useSplitText } from "@/hooks/useSplitText";
 // import Link from "next/link";
 
-const ServiceEndTag = () => {
+type ServiceEndtagProp = {
+  endtag: string | null;
+};
+
+const ServiceEndTag = ({ endtag }: ServiceEndtagProp) => {
 
   const textRefs = useSplitText();
 
@@ -47,7 +51,7 @@ const ServiceEndTag = () => {
                         transform: "translate(-50%)",
                         textAlign: "center"}}
                         >
-                          Lorem ipsum dolor sit amet coLorem ipsum dolor sit amet.
+                          {endtag}
                         </h3>
                       </div>
                     </div>

@@ -121,7 +121,7 @@ const ServiceThirdLegendTeam = () => {
                               >
                                 t
                               </div>
-                            </div>{" "}
+                            </div>
                             <div
                               style={{
                                 position: "relative",
@@ -283,7 +283,7 @@ const ServiceThirdLegendTeam = () => {
                                 </div>
                               </i>
                             </span>
-                          </h3>{" "}
+                          </h3>
                         </div>
                       </div>
                     </div>
@@ -403,8 +403,8 @@ const ServiceThirdLegendTeam = () => {
                             <div className="tp-team__3-text">
                               <h3 className="tp-team__3-title">
                                 <Link href="/" rel="nofollow" target="_self">
-                                  {" "}
-                                  Kristin Watson{" "}
+                                  
+                                  Kristin Watson
                                 </Link>
                               </h3>
                               <span className="tp-team__3-designation">
@@ -492,8 +492,8 @@ const ServiceThirdLegendTeam = () => {
                             <div className="tp-team__3-text">
                               <h3 className="tp-team__3-title">
                                 <Link href="/" rel="nofollow" target="_self">
-                                  {" "}
-                                  Ronald Richards{" "}
+                                  
+                                  Ronald Richards
                                 </Link>
                               </h3>
                               <span className="tp-team__3-designation">
@@ -581,8 +581,8 @@ const ServiceThirdLegendTeam = () => {
                             <div className="tp-team__3-text">
                               <h3 className="tp-team__3-title">
                                 <Link href="/" rel="nofollow" target="_self">
-                                  {" "}
-                                  Alextina Ditarson{" "}
+                                  
+                                  Alextina Ditarson
                                 </Link>
                               </h3>
                               <span className="tp-team__3-designation">
@@ -670,8 +670,8 @@ const ServiceThirdLegendTeam = () => {
                             <div className="tp-team__3-text">
                               <h3 className="tp-team__3-title">
                                 <Link href="/" rel="nofollow" target="_self">
-                                  {" "}
-                                  Robin Khan{" "}
+                                  
+                                  Robin Khan
                                 </Link>
                               </h3>
                               <span className="tp-team__3-designation">
@@ -759,8 +759,8 @@ const ServiceThirdLegendTeam = () => {
                             <div className="tp-team__3-text">
                               <h3 className="tp-team__3-title">
                                 <Link href="/" rel="nofollow" target="_self">
-                                  {" "}
-                                  Kristin Watson{" "}
+                                  
+                                  Kristin Watson
                                 </Link>
                               </h3>
                               <span className="tp-team__3-designation">
@@ -848,8 +848,8 @@ const ServiceThirdLegendTeam = () => {
                             <div className="tp-team__3-text">
                               <h3 className="tp-team__3-title">
                                 <Link href="/" rel="nofollow" target="_self">
-                                  {" "}
-                                  Ronald Richards{" "}
+                                  
+                                  Ronald Richards
                                 </Link>
                               </h3>
                               <span className="tp-team__3-designation">

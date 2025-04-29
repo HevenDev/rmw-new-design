@@ -42,7 +42,7 @@ const ServiceMainAbout = () => {
                         <div className="tp-cta__2-text p-relative">
                           <h3 className="tp-cta__2-title mb-45">
                             We Build <span>Successful</span> <br />
-                            Profitable Products{" "}
+                            Profitable Products
                           </h3>
                           <Link
                             className="tp-btn-secondary"
@@ -78,7 +78,7 @@ const ServiceMainAbout = () => {
                         <div className="tp-cta__2-text-2 p-relative">
                           <h3 className="tp-cta__2-title tp-cta-mission">
                             <span>COMPANY</span> <br />
-                            MISSION{" "}
+                            MISSION
                           </h3>
                           <Link
                             className="tp-cta_2-mission-arrow"

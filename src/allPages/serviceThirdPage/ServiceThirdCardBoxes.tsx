@@ -32,7 +32,7 @@ const ServiceThirdCardBoxes = () => {
                                 title="featured-1-1"
                                 alt="featured-1-1"
                                 loading="lazy"
-                              />{" "}
+                              />
                             </span>
                           </div>
                           <span className="tp-featured__sub-title">
@@ -40,7 +40,7 @@ const ServiceThirdCardBoxes = () => {
                           </span>
                           <h3 className="tp-featured__title">
                             <a href="#" rel="" target="">
-                              Responsive framework{" "}
+                              Responsive framework
                             </a>
                           </h3>
                         </div>
@@ -57,7 +57,7 @@ const ServiceThirdCardBoxes = () => {
                                 title="featured-1-2"
                                 alt="featured-1-2"
                                 loading="lazy"
-                              />{" "}
+                              />
                             </span>
                           </div>
                           <span className="tp-featured__sub-title">
@@ -65,7 +65,7 @@ const ServiceThirdCardBoxes = () => {
                           </span>
                           <h3 className="tp-featured__title">
                             <a href="#" rel="" target="">
-                              Pre-Proccecing Css{" "}
+                              Pre-Proccecing Css
                             </a>
                           </h3>
                         </div>
@@ -82,13 +82,13 @@ const ServiceThirdCardBoxes = () => {
                                 title="featured-1-3"
                                 alt="featured-1-3"
                                 loading="lazy"
-                              />{" "}
+                              />
                             </span>
                           </div>
                           <span className="tp-featured__sub-title">HTML5</span>
                           <h3 className="tp-featured__title">
                             <a href="#" rel="" target="">
-                              Responsive framework{" "}
+                              Responsive framework
                             </a>
                           </h3>
                         </div>
@@ -105,13 +105,13 @@ const ServiceThirdCardBoxes = () => {
                                 title="featured-1-4"
                                 alt="featured-1-4"
                                 loading="lazy"
-                              />{" "}
+                              />
                             </span>
                           </div>
                           <span className="tp-featured__sub-title">SASS</span>
                           <h3 className="tp-featured__title">
                             <a href="#" rel="" target="">
-                              Pre-Proccecing Css{" "}
+                              Pre-Proccecing Css
                             </a>
                           </h3>
                         </div>
@@ -128,7 +128,7 @@ const ServiceThirdCardBoxes = () => {
                                 title="featured-1-5"
                                 alt="featured-1-5"
                                 loading="lazy"
-                              />{" "}
+                              />
                             </span>
                           </div>
                           <span className="tp-featured__sub-title">
@@ -136,7 +136,7 @@ const ServiceThirdCardBoxes = () => {
                           </span>
                           <h3 className="tp-featured__title">
                             <a href="#" rel="" target="">
-                              Easy To Customize{" "}
+                              Easy To Customize
                             </a>
                           </h3>
                         </div>
@@ -153,7 +153,7 @@ const ServiceThirdCardBoxes = () => {
                                 title="featured-1-6"
                                 alt="featured-1-6"
                                 loading="lazy"
-                              />{" "}
+                              />
                             </span>
                           </div>
                           <span className="tp-featured__sub-title">
@@ -161,7 +161,7 @@ const ServiceThirdCardBoxes = () => {
                           </span>
                           <h3 className="tp-featured__title">
                             <a href="#" rel="" target="">
-                              Responsive framework{" "}
+                              Responsive framework
                             </a>
                           </h3>
                         </div>

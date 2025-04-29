@@ -23,6 +23,9 @@ type CardItem = {
 
 const ServicesSecondPage = () => {
   const [card, setCard] = useState<CardItem[]>([]);
+  const [head, setHead] = useState<string | null>(null);
+  const [para, setPara] = useState<string | null>(null);
+  const [endTag, setEndTag] = useState<string | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
   const params = useParams();
@@ -32,11 +35,15 @@ const ServicesSecondPage = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(`/api/services/${serviceSecond}`);
+        
         const updatedCards: CardItem[] = response.data.cards.map((item: CardItem) => ({
           ...item,
           link: `${serviceSecond}/${item.link}`,
         }));
         setCard(updatedCards); // should be array of { title, description, link }
+        setHead(response.data.s2heading)
+        setPara(response.data.s2para)
+        setEndTag(response.data.s2endtag)
       } catch (err) {
         setError(err instanceof Error ? err.message : "An unknown error occurred");
       } finally {
@@ -53,12 +60,21 @@ const ServicesSecondPage = () => {
   return (
     <>
       <Header />
-      <ServiceFirst />
+      <ServiceFirst heading={head}/>
       <SwiperHome />
+      <p style={{
+              position: "relative",
+              padding: "20px 10px",
+              maxWidth: "950px",
+              fontSize: "19px",
+              left: "50%",
+              transform: "translate(-50%)",
+              textAlign: "center"
+            }}>{para}</p>
       <Service data={card} />
       <ServiceImg />
       <Feedback />
-      <ServiceEndTag/>
+      <ServiceEndTag endtag={endTag}/>
       <Footer />
     </>
   );
