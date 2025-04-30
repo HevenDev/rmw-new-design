@@ -147,7 +147,7 @@ const ServiceThirdAward = () => {
                                   opacity: 1,
                                 }}
                               >
-                                e
+                                e{" "}
                               </div>
                             </div>
                             <div
@@ -323,7 +323,7 @@ const ServiceThirdAward = () => {
                                   opacity: 1,
                                 }}
                               >
-                                g
+                                g{" "}
                               </div>
                             </div>
                           </div>
@@ -483,7 +483,7 @@ const ServiceThirdAward = () => {
                                     opacity: 1,
                                   }}
                                 >
-                                  t
+                                  t{" "}
                                 </div>
                               </div>
                             </span>

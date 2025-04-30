@@ -25,7 +25,7 @@ const ServiceThirdFeatureMarque = () => {
           data-widget_type="text-slider.default"
         >
           <div className="elementor-widget-container">
-            <section className="tp-text-slider__5-area fix black-bg pt-110">
+            <section className="tp-text-slider__5-area fix black-bg ">
               <div className="container">
                 <div className="tp-text__5-box">
                   <div className="swiper-container tp-text__5-slider-active swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">

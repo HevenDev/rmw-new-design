@@ -17,7 +17,7 @@ const ServiceThirdNumber = () => {
           data-widget_type="fun-facts.default"
         >
           <div className="elementor-widget-container">
-            <section className="tp-funfact__4-area tp-funfact__3 tp-funfact__4 tp-funfact__4-bg pt-120 pb-120 tp-bg-className">
+            <section className="tp-funfact__4-area tp-funfact__3 tp-funfact__4 tp-funfact__4-bg tp-bg-className">
               <div className="tp-funfact__4-shap-1">
                 <img
                   decoding="async"

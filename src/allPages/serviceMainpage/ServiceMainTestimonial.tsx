@@ -251,11 +251,7 @@ const ServiceMainTestimonial = () => {
                       <div className="tp-testi__2-thumb-box">
                         <div className="tp-testi__2-thumb p-relative">
                           <span className="tp-testi__2-thumb-shape"></span>
-                          <img
-                            decoding="async"
-                            src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/testi-2-1.png"
-                            alt=""
-                          />
+                         
                         </div>
                       </div>
                     </div>

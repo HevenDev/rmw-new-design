@@ -34,6 +34,9 @@ const ServiceThirdSlowMarque = () => {
                     freeMode={true}
                     slidesPerView="auto"
                     spaceBetween={30}
+                    style={{
+                      backgroundColor:"white"
+                    }}
                     allowTouchMove={false}
                     speed={6000}
                     autoplay={{

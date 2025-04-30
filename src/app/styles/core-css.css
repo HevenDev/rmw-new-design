@@ -7549,8 +7549,8 @@ input.search-input-field {
 }
 
 .tp-hero__3-space {
-  padding-top: 230px;
-  padding-bottom: 100px;
+  padding-top: 130px;
+  padding-bottom: 20px;
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px),
@@ -7566,7 +7566,7 @@ input.search-input-field {
   background-repeat: no-repeat;
 }
 
-.tp-hero__3-overlay::before {
+/* .tp-hero__3-overlay::before {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -7576,7 +7576,7 @@ input.search-input-field {
   background-color: var(--tp-common-black);
   z-index: -1;
   opacity: 0.8;
-}
+} */
 
 .tp-hero__3-social {
   position: absolute;
@@ -7607,26 +7607,34 @@ input.search-input-field {
 }
 
 .tp-hero__3-big-title {
-  font-size: 150px;
+  font-size: 100px;
   color: var(--tp-common-black);
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px),
-  only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px)
+   {
   .tp-hero__3-big-title {
-    font-size: 120px;
+    font-size: 90px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .tp-hero__3-big-title {
-    font-size: 80px;
+    font-size: 75px;
   }
 }
 
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-hero__3-big-title {
+    font-size: 60px;
+  }
+}
+
+
+
 @media (max-width: 575px) {
   .tp-hero__3-big-title {
-    font-size: 85px;
+    font-size: 42px;
   }
 }
 
@@ -7685,18 +7693,18 @@ input.search-input-field {
 }
 
 .tp-hero__3-dsc {
-  margin-left: 162px;
+  width: 80vw;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .tp-hero__3-dsc {
-    margin-left: 90px;
+    margin-left: 0px;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .tp-hero__3-dsc {
-    margin-left: 50px;
+    margin-left: 0px;
   }
 }
 
@@ -9786,7 +9794,6 @@ input.search-input-field {
   top: 0;
   left: 0;
   content: "";
-  background: var(--tp-common-black);
   z-index: -1;
 }
 
@@ -11310,7 +11317,7 @@ input.search-input-field {
   top: 0;
   left: 0;
   content: "";
-  background: rgba(0, 0, 0, 0.84);
+  /* background: rgba(0, 0, 0, 0.84); */
 }
 
 .tp-funfact__4-shap-1 {
@@ -12000,7 +12007,7 @@ input.search-input-field {
   right: 0;
   top: 0;
   content: "";
-  background-color: var(--tp-common-black);
+  /* background-color: var(--tp-common-black); */
   z-index: -1;
 }
 

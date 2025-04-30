@@ -14,7 +14,7 @@ const Form = () => {
 <>
 
 
-    <div className="tp-contact__area pt-130 pb-90 black-bg ">
+    <div className="tp-contact__area pt-130 pb-90">
       <div className="container">
         <div className="row">
           <div className="col-xl-6 col-lg-6" style={{padding:"2rem"}}>
@@ -24,7 +24,7 @@ const Form = () => {
                   ref={(el) => {
                       if (el) textRefs.current.push(el);
                     }}
-                    className="tp-section-title tp-split__text tp-split__in-right mb-35 text-white"
+                    className="tp-section-title tp-split__text tp-split__in-right mb-35 text-black"
                     style={{ perspective: "400px" }}
                     >
                   <div
@@ -79,7 +79,7 @@ const Form = () => {
                             opacity: 1,
                         }}
                         >
-                        k
+                        k{" "}
                       </div>
                     </div>
                     <div
@@ -169,7 +169,7 @@ const Form = () => {
                               opacity: 1,
                             }}
                             >
-                          y,
+                          y,{" "}
                         </div>
                         <div
                           style={{
@@ -208,7 +208,7 @@ const Form = () => {
                               opacity: 1,
                             }}
                             >
-                          d
+                          d{" "}
                         </div>
                         <div
                           style={{
@@ -299,7 +299,7 @@ const Form = () => {
                               opacity: 1,
                             }}
                             >
-                          e
+                          e{" "}
                         </div>
                         <div
                           style={{
@@ -449,7 +449,7 @@ const Form = () => {
                   </div>
                 </h3>
                 <p
-                  className="wow tpfadeUp animated text-white"
+                  className="wow tpfadeUp animated text-black"
                   data-wow-duration=".9s"
                   data-wow-delay=".3s"
                   style={{
@@ -475,15 +475,15 @@ const Form = () => {
                 }}
                 >
                 <div className="tp-contact__text ">
-                  <h3 className="tp-contact__title text-white">Contact</h3>
-                  <Link href="/" className="tp-contact__title-sm text-white">
+                  <h3 className="tp-contact__title text-black">Contact</h3>
+                  <Link href="/" className="tp-contact__title-sm text-black">
                     09220516777 <br />
                     07290002168
                   </Link>
                 </div>
                 <div className="tp-contact__email">
-                  <h3 className="tp-contact__title text-white">Email</h3>
-                  <Link href="/" className="tp-contact__title-sm text-white">
+                  <h3 className="tp-contact__title text-black">Email</h3>
+                  <Link href="/" className="tp-contact__title-sm text-black">
                     info@ritzmediaworld.com
                   </Link>
                 </div>
@@ -500,14 +500,14 @@ const Form = () => {
                 }}
                 >
                 <div className=" tp-contact__adress">
-                  <h3 className="tp-contact__title text-white">Address</h3>
-                  <div className="tp-contact__title-sm text-white">
+                  <h3 className="tp-contact__title text-black">Address</h3>
+                  <div className="tp-contact__title-sm text-black">
                     402 – 404 , 4th floor Corporate Park, <br /> Tower A1 Sector
                     142 , Greater Noida
                   </div>
                 </div>
                 <div className="tp-contact__social">
-                  <h3 className="tp-contact__title text-white">Follow</h3>
+                  <h3 className="tp-contact__title text-black">Follow</h3>
                   <div className="tp-contact__social-link">
                     <Link href="https://www.facebook.com/ritzmediaworld/" >
                       <i aria-hidden="true">
@@ -548,8 +548,9 @@ const Form = () => {
                   visibility: "visible",
                   animationDuration: "0.9s",
                   animationDelay: "0.9s",
-                  border:"0.5px solid #fddf82",
-                  borderRadius:"20px"
+                  borderRadius:"20px",
+                  background:"white",
+                  border:"2px solid black"
                 }}
                 >
               <div  id="contact-form">
@@ -607,7 +608,7 @@ const Form = () => {
                                 size={40}
                                 maxLength={400}
                                 className="wpcf7-form-control wpcf7-text inputText"
-                                style={{color:"white"}}
+                                style={{background:"white"}}
                                 aria-invalid="false"
                                 placeholder="Your Name"
                                 type="text"
@@ -626,7 +627,7 @@ const Form = () => {
                                 size={40}
                                 maxLength={400}
                                 className="wpcf7-form-control wpcf7-text inputText"
-                                style={{color:"white"}}
+                                style={{background:"white"}}
                                 aria-invalid="false"
                                 placeholder="Phone Number"
                                 type="text"
@@ -642,7 +643,7 @@ const Form = () => {
                                 size={40}
                                 maxLength={400}
                                 className="wpcf7-form-control wpcf7-email wpcf7-text wpcf7-validates-as-email inputText"
-                                style={{color:"white"}}
+                                style={{background:"white"}}
                                 aria-invalid="false"
                                 placeholder="Email Address"
                                 type="email"
@@ -662,7 +663,7 @@ const Form = () => {
                                 rows={10}
                                 maxLength={2000}
                                 className="wpcf7-form-control wpcf7-textarea textareaText"
-                                style={{color:"white"}}
+                                style={{background:"white"}}
                                 aria-invalid="false"
                                 placeholder="Write Message"
                                 name="contact_form_1_message"
@@ -676,7 +677,7 @@ const Form = () => {
                       <button
                         type="submit"
                         className="tp-btn-secondary"
-                        style={{padding:"20px 30px"}}
+                        style={{padding:"20px 30px", background:"#adc1de"}}
                         >
                         submit
                         <span>

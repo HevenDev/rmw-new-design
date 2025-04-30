@@ -6,11 +6,13 @@ const ServiceMainHero = () => {
       className="elementor-element elementor-element-00d6da7 e-con-full e-flex e-con e-parent e-lazyloaded"
       data-id="00d6da7"
       data-element_type="container"
+      style={{padding:'0', margin: "0"}}
     >
       <div
         className="elementor-element elementor-element-3a22ef0 e-con-full e-flex e-con e-child"
         data-id="3a22ef0"
         data-element_type="container"
+        style={{padding:'0', margin: "0"}}
       >
         <div
           className="elementor-element elementor-element-e84e3a9 elementor-widget elementor-widget-hero-banner"

@@ -32,7 +32,7 @@ const ServiceThirdQuality: React.FC<ServiceThirdQualityProps> = ({ cardData }) =
           data-widget_type="services.default"
         >
           <div className="elementor-widget-container">
-            <section className="tp-service__3-area fix tp-services__3-style p-relative pt-120 pb-120 tp-bg-className">
+            <section className="tp-service__3-area fix tp-services__3-style p-relative pt-120 tp-bg-className">
               <div className="container">
                 <div className="tp-services__2-title-wrap mb-40 ">
                   <div className="row align-items-center">
@@ -55,7 +55,7 @@ const ServiceThirdQuality: React.FC<ServiceThirdQualityProps> = ({ cardData }) =
                             className={`${styles.serviceCard} ${index % 2 === 0 ? styles.row : styles.rowReverse}`}
                           >
                             <img
-                              src={card.image_url ? card.image_url : "/default-fallback.jpg"}
+                              src={`/${card.image_url}`}
   alt={card.title}
                               style={{
                                 width: "100%",
@@ -78,7 +78,7 @@ const ServiceThirdQuality: React.FC<ServiceThirdQualityProps> = ({ cardData }) =
                               <h3 style={{ color: "#fddf82", marginBottom: "10px" }}>
                                 {card.title}
                               </h3>
-                              <p style={{ color: "white" }}>{card.description}</p>
+                              <p style={{ color: "black" }}>{card.description}</p>
                             </div>
                           </div>
                         ))}
