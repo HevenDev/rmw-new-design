@@ -12,6 +12,7 @@ import Header from "@/components/header/Header";
 
 import { getMetaOrThrow, getAllSlugs } from '@/lib/meta'
 import { notFound } from 'next/navigation'
+// import  notFound  from '@/app/404'
 import type { Metadata } from 'next'
 
 export async function generateMetadata({ params }: { params: { blogDetailPage: string } }): Promise<Metadata> {
