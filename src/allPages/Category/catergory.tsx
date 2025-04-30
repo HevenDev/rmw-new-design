@@ -76,7 +76,7 @@ const Category = () => {
                   </div>
                   <div className="card-body text-center">
                     <h5 className="card-title">{card.title}</h5>
-                    <Link href={card.slug} className={`bg-orange-600 ${styles.button}`}>
+                    <Link href={`/${card.slug}`} className={`bg-orange-600 ${styles.button}`}>
                       Read more <span className={styles.arrow}>&rarr;</span>
                     </Link>
                   </div>
