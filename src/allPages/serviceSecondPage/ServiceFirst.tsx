@@ -4,7 +4,7 @@ import React from "react";
 import { useSplitText } from "@/hooks/useSplitText";
 import Link from "next/link";
 type ServiceFirstProps = {
-  heading: string | null;
+  heading?: string | null;
 };
 
 const ServiceFirst = ({ heading }: ServiceFirstProps) => {
