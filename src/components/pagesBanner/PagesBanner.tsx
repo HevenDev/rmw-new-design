@@ -10,7 +10,7 @@ const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle }) => {
       data-background="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/12/breadcrumb-bg-1.jpg"
       data-bg-color="#140e0e"
     >
-      <img
+      {/* <img
           decoding="async"
           src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/12/breadcrumb-bg-1.jpg"
           alt=""
@@ -23,7 +23,7 @@ const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle }) => {
             zIndex: "-1",
             filter: "sepia(100%) saturate(500%) hue-rotate(10deg)",
           }}
-        />  
+        />   */}
       <div className="breadcrumb__shape">
       
         <img

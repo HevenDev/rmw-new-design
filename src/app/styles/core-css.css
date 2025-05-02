@@ -7017,8 +7017,9 @@ input.search-input-field {
 
 .tp-hero__social {
   position: absolute;
+  top: 48%;
   bottom: 55%;
-  right: -330px;
+  left: -345px;
   z-index: 5;
   transform: rotate(-90deg);
 }
@@ -7029,13 +7030,13 @@ input.search-input-field {
   }
 } */
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+/* @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .tp-hero__social {
     top: auto;
     bottom: 55%;
     right: -330px;
-  }
-}
+  } 
+} */
 /* 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .tp-hero__social {

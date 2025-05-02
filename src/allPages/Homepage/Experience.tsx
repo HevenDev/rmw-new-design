@@ -34,7 +34,7 @@ const Experience = () => {
                 data-background="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/chooseus-thumb-1-1.jpg"
                 style={{
                   backgroundImage:
-                    "url(https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/chooseus-thumb-1-1.jpg)",
+                    "url(/test-images/test-image.jpg)"
                 }}
                 data-wow-delay=".3s"
                 data-wow-duration="2.5s"

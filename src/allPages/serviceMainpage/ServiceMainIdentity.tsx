@@ -66,7 +66,7 @@ const ServiceMainIdentity = () => {
                                 opacity: 1,
                               }}
                             >
-                              e
+                              e{" "}
                             </div>
                           </div>
                           <div
@@ -113,7 +113,7 @@ const ServiceMainIdentity = () => {
                                 opacity: 1,
                               }}
                             >
-                              l
+                              l{" "}
                             </div>
                           </div>
                           <span>
@@ -191,7 +191,7 @@ const ServiceMainIdentity = () => {
                                   opacity: 1,
                                 }}
                               >
-                                s
+                                s{" "}
                               </div>
                               
                             </div>
@@ -256,7 +256,7 @@ const ServiceMainIdentity = () => {
                                 opacity: 1,
                               }}
                             >
-                              t
+                              t{" "}
                             </div>
                            
                           </div>
@@ -314,7 +314,7 @@ const ServiceMainIdentity = () => {
                                 opacity: 1,
                               }}
                             >
-                              d
+                              d{" "}
                             </div>
                             <div
                               style={{
@@ -344,7 +344,7 @@ const ServiceMainIdentity = () => {
                                 opacity: 1,
                               }}
                             >
-                              o
+                              o{" "}
                             </div>
                            
                           </div>

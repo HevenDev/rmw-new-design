@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -16,7 +16,6 @@ import { useState } from "react";
 //     transform: "translateY(0)",
 //   },
 // };
-
 
 interface ServiceItem {
   title: string;
@@ -40,7 +39,6 @@ const Service: React.FC<ServiceProps> = ({ data }) => {
 
   return (
     <div className="tp-service__area fix tp-bg-class pb-50">
-      
       <div className="container">
         <div className="row">
           <div className="col-xl-12">
@@ -50,8 +48,13 @@ const Service: React.FC<ServiceProps> = ({ data }) => {
                 <h3 className="tp-section-title">
                   What We Provide
                   <br />
-                  <span >
-                    <i style={{ top: "-18px", fontSize: "22px" }} className="tp-hero__subtitle mb-10">is more than what you’ll ever need</i>
+                  <span>
+                    <i
+                      style={{ top: "-18px", fontSize: "22px" }}
+                      className="tp-hero__subtitle mb-10"
+                    >
+                      is more than what you’ll ever need
+                    </i>
                   </span>
                 </h3>
                 <Link
@@ -81,8 +84,9 @@ const Service: React.FC<ServiceProps> = ({ data }) => {
                           <div className="accordion-item" key={index}>
                             <h2 className="accordion-header">
                               <button
-                                className={`accordion-button p-relative ${openIndex === index ? "" : "collapsed"
-                                  }`}
+                                className={`accordion-button p-relative ${
+                                  openIndex === index ? "" : "collapsed"
+                                }`}
                                 type="button"
                                 onClick={() => toggleAccordion(index)}
                                 aria-expanded={openIndex === index}
@@ -102,13 +106,23 @@ const Service: React.FC<ServiceProps> = ({ data }) => {
                             </h2>
                             <div
                               id={`collapse-${index}`}
-                              className={`accordion-collapse collapse ${openIndex === index ? "show" : ""
-                                }`}
+                              className={`accordion-collapse collapse ${
+                                openIndex === index ? "show" : ""
+                              }`}
                               data-bs-parent="#accordion-310c8f9"
                             >
                               <div className="accordion-body">
                                 <p>{item.description}</p>
-                                <a style={{ fontSize: "18px", color: "#001240", fontStyle: "italic" }} href={item.link}>Learn more...</a>
+                                <a
+                                  style={{
+                                    fontSize: "18px",
+                                    color: "#001240",
+                                    fontStyle: "italic",
+                                  }}
+                                  href={item.link}
+                                >
+                                  Learn more...
+                                </a>
                               </div>
                             </div>
                           </div>
@@ -124,10 +138,13 @@ const Service: React.FC<ServiceProps> = ({ data }) => {
           {/* Image Section */}
           <div className="col-xl-6">
             <div className="tp-services__thumb ml-30">
-              <img
-                decoding="async"
-                src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/services-1-1.png"
-                alt=""
+              <video
+                src="/test-images/test-video.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-auto object-cover"
               />
             </div>
           </div>

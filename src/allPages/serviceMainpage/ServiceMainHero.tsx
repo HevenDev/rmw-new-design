@@ -19,7 +19,7 @@ const ServiceMainHero = () => {
           data-id="e84e3a9"
           data-element_type="widget"
           data-widget_type="hero-banner.default"
-          style={{backgroundImage: "url(https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/bg.png)",
+          style={{backgroundImage: "url(/service-first-images/Service_first_layer_banner_image.jpg)",
             backgroundPosition: "bottom left",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover"}}

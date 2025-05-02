@@ -15,6 +15,7 @@ const AboutAward = () => {
                     <img
                       decoding="async"
                       src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/awards-in-1.png"
+                      style={{height:"450px"}}
                       alt=""
                     />
                   </div>

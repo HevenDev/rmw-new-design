@@ -49,7 +49,7 @@ Legacy
                       >
                         <path
                           d="M1 25.37L23.8469 2.52313M1 1H25.37V25.37"
-                          stroke="white"
+                          stroke="black"
                           strokeLinecap="square"
                           strokeLinejoin="round"
                         />

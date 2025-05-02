@@ -2,21 +2,74 @@
 
 'use client'
 
-import Link from 'next/link'
+
+import React from "react";
+import styles from "./not-found.module.css";
+import Image from "next/image";
 
 export default function NotFound() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen text-center p-8">
-      <h1 className="text-5xl font-bold text-red-600 mb-4">404 - Page Not Found</h1>
-      <p className="text-lg text-gray-600 mb-6">
-        Sorry, you are lost.
-      </p>
-      <Link
+    <div className={`${styles.stars} ${styles.bgPurple}`}>
+    <div className={styles.centralBody}>
+      <Image
+        className={styles.image404}
+        src="http://salehriaz.com/404Page/img/404.svg"
+        alt="404"
+        width={300}
+        height={200}
+      />
+      <a
         href="/"
-        className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition"
+        className={styles.btnGoHome}
       >
-        Go back home
-      </Link>
+        GO BACK HOME
+      </a>
     </div>
+
+    <div className={styles.objects}>
+      <Image
+        className={styles.objectRocket}
+        src="http://salehriaz.com/404Page/img/rocket.svg"
+        alt="rocket"
+        width={40}
+        height={40}
+      />
+
+      <div className={styles.earthMoon}>
+        <Image
+          className={styles.objectEarth}
+          src="http://salehriaz.com/404Page/img/earth.svg"
+          alt="earth"
+          width={100}
+          height={100}
+        />
+        <Image
+          className={styles.objectMoon}
+          src="http://salehriaz.com/404Page/img/moon.svg"
+          alt="moon"
+          width={80}
+          height={80}
+        />
+      </div>
+
+      <div className={styles.boxAstronaut}>
+        <Image
+          className={styles.objectAstronaut}
+          src="http://salehriaz.com/404Page/img/astronaut.svg"
+          alt="astronaut"
+          width={140}
+          height={140}
+        />
+      </div>
+    </div>
+
+    <div className={styles.glowingStars}>
+      <div className={styles.star}></div>
+      <div className={styles.star}></div>
+      <div className={styles.star}></div>
+      <div className={styles.star}></div>
+      <div className={styles.star}></div>
+    </div>
+  </div>
   )
 }
