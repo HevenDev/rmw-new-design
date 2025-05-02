@@ -23,6 +23,8 @@ type CardItem = {
 const ServicesSecondPage = () => {
   const [card, setCard] = useState<CardItem[]>([]);
   const [head, setHead] = useState<string | null>(null);
+  const [img1, setImg1] = useState<string | null>(null);
+  const [img2, setImg2] = useState<string | null>(null);
   const [para, setPara] = useState<string | null>(null);
   const [endTag, setEndTag] = useState<string | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
@@ -39,10 +41,12 @@ const ServicesSecondPage = () => {
           ...item,
           link: `${serviceSecond}/${item.link}`,
         }));
-        setCard(updatedCards); // should be array of { title, description, link }
+        setCard(updatedCards);
         setHead(response.data.s2heading)
         setPara(response.data.s2para)
         setEndTag(response.data.s2endtag)
+        setImg1(response.data.img1)
+        setImg2(response.data.img2)
       } catch (err) {
         setError(err instanceof Error ? err.message : "An unknown error occurred");
       } finally {
@@ -58,7 +62,7 @@ const ServicesSecondPage = () => {
 
   return (
     <>
-      <ServiceFirst heading={head}/>
+      <ServiceFirst heading={head} image1={img1} image2={img2}/>
       <SwiperHome />
       <p style={{
               position: "relative",

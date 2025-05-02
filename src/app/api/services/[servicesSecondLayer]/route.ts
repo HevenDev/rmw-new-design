@@ -25,7 +25,7 @@ export async function GET(
 
     // 1. Get service matching the slug
     const [services] = await pool.query<RowDataPacket[]>(
-      'SELECT id, s2heading, s2para, s2endtag FROM services WHERE link = ?',
+      'SELECT id, s2heading, s2para, s2endtag, img1, img2 FROM services WHERE link = ?',
       [servicesSecondLayer]
     );
 
@@ -45,6 +45,8 @@ export async function GET(
       s2heading: service.s2heading,
       s2para: service.s2para,
       s2endtag: service.s2endtag,
+      img1: service.img1,
+      img2: service.img2,
       cards,
     });
   } catch (error) {

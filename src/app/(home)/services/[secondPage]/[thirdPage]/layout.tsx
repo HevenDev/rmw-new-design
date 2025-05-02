@@ -34,7 +34,7 @@ export default async function Layout({
 }) {
   try {
     const getParam = await params;
-    const data = await getMetaOrThrow(getParam.thirdPage, 'serviceThird')
+    await getMetaOrThrow(getParam.thirdPage, 'serviceThird')
     return <>{children}</>
   } catch {
     notFound()

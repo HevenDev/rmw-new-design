@@ -5,9 +5,11 @@ import { useSplitText } from "@/hooks/useSplitText";
 import Link from "next/link";
 type ServiceFirstProps = {
   heading?: string | null;
+  image1?: string | null;
+  image2?: string | null;
 };
 
-const ServiceFirst = ({ heading }: ServiceFirstProps) => {
+const ServiceFirst = ({ heading, image1, image2 }: ServiceFirstProps) => {
 
   const textRefs = useSplitText();
 
@@ -21,7 +23,7 @@ const ServiceFirst = ({ heading }: ServiceFirstProps) => {
                 <div className="tp-ab__title-box z-index-2 mb-80">
                   <h3 ref={(el) => { if (el) textRefs.current.push(el) }}
                     className="tp-service__title text-center tp-split__text tp-split__in-right"
-                    style={{ perspective: "400px", color: "#fff", fontSize:"6vw"}}
+                    style={{ perspective: "400px", color: "#fff", fontSize: "6vw" }}
                   >
                     {heading}
                   </h3>
@@ -65,15 +67,15 @@ const ServiceFirst = ({ heading }: ServiceFirstProps) => {
                 <div className="tp-service__thumb-box-1 d-none d-xl-block">
                   <div className="tp-service__thumb p-relative">
                     <img
+                      src={`/service-second-images/${image1}`}
                       decoding="async"
-                      src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/service-1.jpg"
                       alt=""
                     />
                     <div className="tp-service__thumb-shape-1">
                       <span>
                         <img
                           decoding="async"
-                          src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/service-shape-1.png"
+                          src={`/service-second-images/${image2}`}
                           alt=""
                         />
                       </span>

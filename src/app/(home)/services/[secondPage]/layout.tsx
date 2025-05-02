@@ -29,7 +29,7 @@ export default async function Layout({
   params: { secondPage: string }
 }) {
   try {
-    const getParam = params;
+    const getParam = await params;
     await getMetaOrThrow(getParam.secondPage, 'serviceSecond')
     return <>{children}</>
   } catch {
