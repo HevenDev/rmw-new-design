@@ -1,43 +1,37 @@
-import { ReactNode } from 'react';
-import { Metadata } from 'next';
-import { RowDataPacket } from 'mysql2';
-import { getDBPool } from '@/lib/db'; 
-type Props = {
-  children: ReactNode;
-  params: { secondPage: string };
-};
+import { getMetaOrThrow, getAllSlugs } from '@/lib/meta'
+import { notFound } from 'next/navigation'
+import type { Metadata } from 'next'
 
-interface MetaDataRow extends RowDataPacket {
-  meta_title: string;
-  meta_description: string;
-}
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { secondPage } = await params;  
-  const slug = secondPage;  
-
-  const pool = await getDBPool();
-
-  const [rows] = await pool.query<MetaDataRow[]>(
-    'SELECT meta_title, meta_description FROM services WHERE link = ?',
-    [slug]
-  );
-
-  const data = rows.length > 0 ? rows[0] : null;
-
-  if (!data) {
+export async function generateMetadata({ params }: { params: { secondPage: string } }): Promise<Metadata> {
+  try {
+    const getParam = await params;
+    const data = await getMetaOrThrow(getParam.secondPage, 'serviceSecond')
     return {
-      title: 'Page Not Found',
-      description: 'This page does not exist.',
-    };
+      title: data.meta_title,
+      description: data.meta_description,
+      keywords: data.meta_keywords?.split(','),
+    }
+  } catch {
+    notFound()
   }
-
-  return {
-    title: data.meta_title,
-    description: data.meta_description,
-  };
 }
 
-export default function ServiceSecondLayout({ children }: Props) {
-  return <>{children}</>;
+export async function generateStaticParams() {
+  const slugs = (await getAllSlugs('serviceSecond')) as { slug: string }[]
+  return slugs.map(({ slug }) => ({ secondPage: slug }))
+}
+
+export default async function Layout({
+  children,
+  params,
+}: {
+  children: React.ReactNode
+  params: { secondPage: string }
+}) {
+  try {
+    await getMetaOrThrow(params.secondPage, 'serviceSecond')
+    return <>{children}</>
+  } catch {
+    notFound()
+  }
 }

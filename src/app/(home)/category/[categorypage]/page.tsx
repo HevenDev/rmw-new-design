@@ -1,16 +1,32 @@
 "use client";
-import React from 'react'
-import PagesBanner from "@/components/pagesBanner/PagesBanner"
-import Categorycards from "@/allPages/Category/catergory"
+import React from 'react';
+import { useParams } from 'next/navigation';
+import Categorycards from "@/allPages/Category/catergory";
+import CategoryBanner from '@/components/pagesBanner/CategoryBanner';
+import Footer from '@/components/footer/Footer';
 
-const page = () => {
-  
+const Page = () => {
+  const params = useParams();
+  const categorySlug = params?.categorypage as string;
+
+  // Convert "web-design" → "Web Design"
+  const formatCategoryTitle = (slug: string) => {
+    if (!slug) return '';
+    return slug
+      .split('-')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+  };
+
+  const formattedCategory = formatCategoryTitle(categorySlug);
+
   return (
     <>
-    <PagesBanner headingTitle={"Category"} />
-    <Categorycards/>
-  </>
-  )
-}
+      <CategoryBanner categoryTitle={`${formattedCategory}`} />
+      <Categorycards />
+      <Footer />
+    </>
+  );
+};
 
-export default page
+export default Page;

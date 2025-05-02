@@ -339,7 +339,7 @@ const Article1 = () => {
         const response = await axios.get(`/api/blog/${blog_slug}`);
         const response_card = await axios.get(`/api/blog/sidecards`);
         const related = await axios.get(`/api/blog/related/${blog_slug}`);
-        setRelatedBlogs(related.data);
+        setRelatedBlogs(related.data.related);
         setArticle(response.data.blog);
         setSidecard(response_card.data); // ✅ Assumes response.data.blog is array
       } catch (err) {
@@ -455,7 +455,7 @@ const Article1 = () => {
       </div>
 
       {/* Swiper Carousel */}
-      <div style={{ width: "100vw", overflow: "hidden", paddingTop: "30px" }}>
+      <div style={{ width: "100vw", overflow: "hidden", padding: "5rem 0 3rem" }}>
         <Swiper
           modules={[Autoplay]}
           loop={true}
@@ -468,14 +468,14 @@ const Article1 = () => {
             768: { slidesPerView: 2, spaceBetween: 15 },
             1024: { slidesPerView: 3, spaceBetween: 20 },
           }}
-          style={{ width: "100%", height: "350px" }}
+          style={{ width: "90%", height: "350px", margin: "auto" }}
         >
           {relatedBlogs.map((image, index) => (
             <SwiperSlide key={index}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", height: "100%" }}>
-                <Link href={"/"}>
+                <Link href={`/${image.slug}`}>
                   <img
-                    src={image.blog_image}
+                    src={`/blogs/${image.blog_image}`}
                     alt={image.title}
                     loading="lazy"
                     style={{ width: "100%", height: "80%", objectFit: "cover" }}
