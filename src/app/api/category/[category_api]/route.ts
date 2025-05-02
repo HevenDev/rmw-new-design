@@ -3,20 +3,12 @@ import { getDBPool } from "@/lib/db";
 
 const db = getDBPool();
 
-// Helper function to convert "digital-marketing" -> "Digital Marketing"
-function slugToName(slug: string): string {
-  return slug
-    .split("-")
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" ");
-}
 
 export async function GET(
   req: NextRequest,
   context: { params: { category_api: string } }
 ) {
   const { category_api } = await context.params;
-  const categoryName = slugToName(category_api); // Convert slug to Name
 
   try {
     const [rows] = await db.query(
@@ -27,10 +19,10 @@ export async function GET(
         b.slug
       FROM blogs b
       INNER JOIN categories c ON b.category_id = c.id
-      WHERE c.name = ?
+      WHERE c.link = ?
       ORDER BY b.id DESC
       `,
-      [categoryName]
+      [category_api]
     );
 
     return NextResponse.json(rows, { status: 200 });

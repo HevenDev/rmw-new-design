@@ -9,7 +9,7 @@ export async function generateMetadata({ params }: { params: { secondPage: strin
     return {
       title: data.meta_title,
       description: data.meta_description,
-      keywords: data.meta_keywords?.split(','),
+      keywords: data.meta_keywords
     }
   } catch {
     notFound()
@@ -29,7 +29,8 @@ export default async function Layout({
   params: { secondPage: string }
 }) {
   try {
-    await getMetaOrThrow(params.secondPage, 'serviceSecond')
+    const getParam = params;
+    await getMetaOrThrow(getParam.secondPage, 'serviceSecond')
     return <>{children}</>
   } catch {
     notFound()

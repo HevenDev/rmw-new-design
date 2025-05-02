@@ -13,7 +13,7 @@ export async function generateMetadata({
     return {
       title: data.meta_title,
       description: data.meta_description,
-      keywords: data.meta_keywords?.split(','),
+      keywords: data.meta_keywords
     }
   } catch {
     notFound()
@@ -33,7 +33,8 @@ export default async function Layout({
   params: { secondPage: string; thirdPage: string }
 }) {
   try {
-    await getMetaOrThrow(params.thirdPage, 'serviceThird')
+    const getParam = await params;
+    const data = await getMetaOrThrow(getParam.thirdPage, 'serviceThird')
     return <>{children}</>
   } catch {
     notFound()

@@ -5,11 +5,13 @@ import type { Metadata } from 'next'
 export async function generateMetadata({ params }: { params: { categorypage: string } }): Promise<Metadata> {
   try {
     const getParam = await params;
+    console.log(getParam.categorypage);
     const data = await getMetaOrThrow(getParam.categorypage, 'category')
+    debugger
     return {
       title: data.meta_title,
       description: data.meta_description,
-      keywords: data.meta_keywords?.split(','),
+      keywords: data.meta_keywords
     }
   } catch {
     notFound()
@@ -29,7 +31,8 @@ export default async function Layout({
   params: { categorypage: string }
 }) {
   try {
-    await getMetaOrThrow(params.categorypage, 'category')
+    const getParam = await params;
+    await getMetaOrThrow(getParam.categorypage, 'category')
     return <>{children}</>
   } catch {
     notFound()
