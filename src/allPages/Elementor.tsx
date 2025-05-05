@@ -34,35 +34,28 @@ const Elementor = () => {
   const data = [
     {
       title: "Digital Marketing",
-      imgSrc:
-        "https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/digital-marketing.png",
+   
       description:
         "Turning browsers into buyers isn’t magic. It’s precise digital persuasion. Our strategically obsessive digital campaigns boost visibility, amplify engagement, and reliably convert attention into measurable profits. Predictably brilliant.",
-        link: "#",
+        link: "/services/best-digital-marketing-agency",
     },
     {
       title: "Content Marketing",
-      imgSrc:
-        "https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/content-marketing.png",
-        description:
+      description:
         "Content without action is merely decoration. Our stories don’t just attract eyes, they move hearts and minds, persuading customers to act, buy, and loyally champion your brand. Charmingly effective.",
-        link: "#",
+        link: "/services/leading-content-marketing-agency",
     },
     {
       title: "(PPC) Advertising",
-      imgSrc:
-        "https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/ppc.png",
-        description:
+      description:
         "Why chase customers when you can strategically appear exactly where they’re searching? Our PPC approach delivers instant leads, measurable returns, and satisfaction so swiftly that you’ll swear it’s cheating (it’s not).",
         link: "#",
     },
     {
-      title: "Video Production",
-      imgSrc:
-        "https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/video.png",
-        description:
-        "An unforgettable jingle outperforms a thousand tweets. Harness radio’s enduring power to lodge your message permanently in minds, turning listeners into lifelong customers without ever demanding screen time.",
-        link: "#",
+      title: "Web Designing & Development",
+      description:
+        "Your website is your digital handshake, so let’s make sure that it’s firm and welcoming. We design intuitive and visually delightful digital experiences that charm visitors into becoming loyal patrons.",
+        link: "/services/best-website-designing-company",
     },
   ]
 

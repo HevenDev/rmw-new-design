@@ -57,11 +57,11 @@ const Projects = () => {
                               <div className="tp-project__thumb">
                                 <img
                                   decoding="async"
-                                  src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/p-thumb-1-1.jpg"
+                                  src="/home-images/Brand_Identity.jpg"
                                   alt=""
                                 />
                                 <div className="tp-project__icon">
-                                  <Link href="/"
+                                  <Link href="/services/leading-creative-agency-india/branding-identity-agency-india"
                                     rel="nofollow"
                                     target="_self"
                                   >
@@ -88,8 +88,7 @@ const Projects = () => {
                             </div>
                             <div className="tp-project__content">
                               <h3 className="tp-project__title">
-                                <Link
-                                  href="/"
+                                <Link href="/services/leading-creative-agency-india/branding-identity-agency-india"
                                   rel="nofollow"
                                   target="_self"
                                 >
@@ -113,11 +112,11 @@ const Projects = () => {
                               <div className="tp-project__thumb">
                                 <img
                                   decoding="async"
-                                  src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/p-thumb-1-2.jpg"
+                                  src="/home-images/Digital_advertising.jpg"
                                   alt=""
                                 />
                                 <div className="tp-project__icon">
-                                  <Link href="/"
+                                  <Link href="/services/best-digital-marketing-agency"
                                     rel="nofollow"
                                     target="_self"
                                   >
@@ -145,7 +144,7 @@ const Projects = () => {
                             <div className="tp-project__content">
                               <h3 className="tp-project__title">
                                 <Link
-                                  href="/"
+                                  href="/services/best-digital-marketing-agency"
                                   rel="nofollow"
                                   target="_self"
                                 >
@@ -169,11 +168,11 @@ const Projects = () => {
                               <div className="tp-project__thumb">
                                 <img
                                   decoding="async"
-                                  src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/p-thumb-1-3.jpg"
+                                  src="/home-images/Social_Media.jpg"
                                   alt=""
                                 />
                                 <div className="tp-project__icon">
-                                  <Link href="/"
+                                  <Link href="/services/best-digital-marketing-agency/social-media-management-india"
                                     rel="nofollow"
                                     target="_self"
                                   >
@@ -201,7 +200,7 @@ const Projects = () => {
                             <div className="tp-project__content">
                               <h3 className="tp-project__title">
                                 <Link
-                                  href="/"
+                                  href="/services/best-digital-marketing-agency/social-media-management-india"
                                   rel="nofollow"
                                   target="_self"
                                 >
@@ -225,11 +224,11 @@ const Projects = () => {
                               <div className="tp-project__thumb">
                                 <img
                                   decoding="async"
-                                  src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/p-thumb-1-4.jpg"
+                                  src="/home-images/Print_Advertising.jpg"
                                   alt=""
                                 />
                                 <div className="tp-project__icon">
-                                  <Link href="/"
+                                  <Link href="/services/best-print-advertising-agency"
                                     rel="nofollow"
                                     target="_self"
                                   >
@@ -257,7 +256,7 @@ const Projects = () => {
                             <div className="tp-project__content">
                               <h3 className="tp-project__title">
                                 <Link
-                                  href="/"
+                                  href="/services/best-print-advertising-agency"
                                   rel="nofollow"
                                   target="_self"
                                 >
