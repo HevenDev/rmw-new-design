@@ -62,7 +62,7 @@ const Blogs: React.FC = () => {
   if (error) return <p>Error: {error}</p>;
 
   return (
-    <div className="container mt-4">
+    <div className="container mt-4 mb-50">
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4 g-4">
         {currentCards.map((article, index) => (
           <Link href={article.slug} className="col" key={index}>
@@ -107,9 +107,9 @@ const Blogs: React.FC = () => {
           disabled={currentPage === 1}
           style={{
             color: "#000",
-            background: "#fddf82",
+            background: "var(--tp-primary-blue)",
             padding: "10px 20px",
-            border: "2px solid #000",
+            // border: "2px solid #000",
             borderRadius: "30px",
             fontWeight: "bold",
             cursor: currentPage === 1 ? "not-allowed" : "pointer",
@@ -131,9 +131,9 @@ const Blogs: React.FC = () => {
           disabled={currentPage === totalPages}
           style={{
             color: "#000",
-            background: "rgb(224, 199, 122)",
+            background: "var(--tp-primary-blue)",
             padding: "10px 20px",
-            border: "2px solid #000",
+            // border: "2px solid #000",
             borderRadius: "30px",
             fontWeight: "bold",
             cursor: currentPage === totalPages ? "not-allowed" : "pointer",

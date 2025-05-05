@@ -144,7 +144,7 @@ const Service: React.FC<ServiceProps> = ({ data }) => {
                 loop
                 muted
                 playsInline
-                className="w-full h-auto object-cover"
+              className="w-full h-screen object-cover"
               />
             </div>
           </div>

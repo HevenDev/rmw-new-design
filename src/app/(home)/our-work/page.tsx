@@ -9,7 +9,7 @@ import PagesBanner from "@/components/pagesBanner/PagesBanner"
 const page = () => {
   return (
     <>
-      <PagesBanner headingTitle={"Our work"} />
+      <PagesBanner headingTitle={"Our work"} bannerImages={"/bannerImages/Case_study_Rmw.jpg"}/>
       <ProjectCards />
       <ProjectMarque />
       <ProjectNumbers />

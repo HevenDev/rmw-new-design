@@ -47,7 +47,7 @@ const ServiceMainHero = () => {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div>  
               <div className="tp-hero__2-wrap">
                 <div className="container">
                   <div className="row align-items-center">

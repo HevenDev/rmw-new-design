@@ -30,6 +30,7 @@ const ServiceMainWorkSwiper = () => {
                   decoding="async"
                   src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/work-1-shape-1.png"
                   alt=""
+                  
                 />
               </div>
               <div className="container">

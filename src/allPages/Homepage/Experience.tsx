@@ -40,7 +40,7 @@ const Experience = () => {
                 data-wow-duration="2.5s"
               >
                 <div className="tp-chooseus__icon">
-                  <Link href="#" rel="" target="">
+                  <Link href="/about" rel="" target="">
                     <span>
                       <svg
                         width="229"
@@ -81,9 +81,9 @@ const Experience = () => {
                           className="tp-section-title-2 tp-split__text tp-split__in-right mb-40"
                         >
                           17+ Years Of Storytelling <br />
-                          Turning
+                          Turning{" "}
                           <span style={{ color: "var(--tp-theme-primary)" }}>
-                            Brands
+                            Brands{" "}
                           </span>
                           in to <br />
                           Household Names

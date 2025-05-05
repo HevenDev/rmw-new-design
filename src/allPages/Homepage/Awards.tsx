@@ -21,7 +21,7 @@ const Awards = () => {
           data-widget_type="awards.default"
         >
           <div className="elementor-widget-container">
-            <section className="tp-award__area tp-awards__1 pt-120 ">
+            <section className="tp-award__area tp-awards__1 ">
               <div className="container">
                 <div className="row">
                   <div className="col-xl-12">
@@ -47,6 +47,7 @@ const Awards = () => {
                     <div className="tp-awards__thumb text-center text-lg-start">
                       <Image
                         src="/service-first-images/Service_first_layer_icon.png"
+                        
                         alt="Service First Layer Icon"
                         width={440}
                         height={366}

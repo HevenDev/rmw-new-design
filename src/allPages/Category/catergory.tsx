@@ -93,9 +93,9 @@ const Category = () => {
                 disabled={currentPage === 1}
                 style={{
                   color: "#000",
-                  background: "#fddf82",
+                  background: "var(--tp-primary-blue)",
                   padding: "10px 20px",
-                  border: "2px solid #000",
+                  // border: "2px solid #000",
                   borderRadius: "30px",
                   fontWeight: "bold",
                   cursor: currentPage === 1 ? "not-allowed" : "pointer",
@@ -117,9 +117,9 @@ const Category = () => {
                 disabled={currentPage === totalPages}
                 style={{
                   color: "#000",
-                  background: "rgb(224, 199, 122)",
+                  background: "var(--tp-primary-blue)",
                   padding: "10px 20px",
-                  border: "2px solid #000",
+                  // border: "2px solid #000",
                   borderRadius: "30px",
                   fontWeight: "bold",
                   cursor: currentPage === totalPages ? "not-allowed" : "pointer",

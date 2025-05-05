@@ -11,7 +11,7 @@ const Home = () => {
       className="elementor-element elementor-element-199ac0f e-con-full e-flex e-con e-parent"
       data-id="199ac0f"
       data-element_type="container"
-      style={{padding: "0px !important"}}
+      style={{margin:"0",padding: "0px !important"}}
     >
       <div
         className="elementor-element elementor-element-5a1b25c e-con-full e-flex e-con e-child"

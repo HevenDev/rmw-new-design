@@ -234,7 +234,7 @@ info@ritzmediaworld.com">
                   <div className="col-xl-6 col-lg-7 ">
                     <div className="tp-copyright__text">
                       <p>
-                        © 2025 <span> Oclata,</span> All Rights Reserved
+                        © 2025 <span> RITZ MEDIA WORLD,</span> All Rights Reserved
                       </p>
                     </div>
                   </div>

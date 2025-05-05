@@ -2,8 +2,9 @@ import Link from "next/link";
 
 interface PagesBannerProps {
   headingTitle: string;
+  bannerImages?: string;
 }
-const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle }) => {
+const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle, bannerImages }) => {
   return (
     <section
       className="breadcrumb__area fix p-relative breadcrumb__plr breadcrumb__overlay breadcrumb__bg"
@@ -15,7 +16,7 @@ const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle }) => {
           src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/12/breadcrumb-bg-1.jpg"
           alt=""
           style={{
-            backgroundColor: "rgb(20, 14, 14)",
+            backgroundColor: "rgb(20, 14, 14)", 
             top:"1px", 
             height: "100%",
             width: "100%",
@@ -27,8 +28,9 @@ const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle }) => {
       <div className="breadcrumb__shape">
       
         <img
-          src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/12/breadcrumb-shape.png"
+          src={bannerImages}
           alt=""
+          style={{height:"100%"}}
         />
       </div>
       <div className="container">

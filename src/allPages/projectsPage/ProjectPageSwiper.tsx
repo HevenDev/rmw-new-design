@@ -14,6 +14,7 @@ const ProjectPageSwiper = () => {
           decoding="async"
           src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/work-1-shape-1.png"
           alt=""
+          
         />
       </div>
       <div className="container">
@@ -54,6 +55,7 @@ const ProjectPageSwiper = () => {
                       decoding="async"  
                       src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/work-1-1.jpg"
                       alt=""
+
                     />
                   </div>
                   <div className="tp-work__icon d-none d-md-block">

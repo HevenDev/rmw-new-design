@@ -41,7 +41,7 @@
   margin: 15px auto;
   width: 100px;
   padding: 10px 15px;
-  border: 1px solid #ffcb39;
+  border: 1px solid var(--tp-primary-blue);
   border-radius: 100px;
   font-weight: 400;
   display: block;
@@ -50,11 +50,11 @@
   text-decoration: none;
   letter-spacing: 2px;
   font-size: 11px;
-  transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in; 
 }
 
 .btnGoHome:hover {
-  background-color: #ffcb39;
+  background-color: var(--tp-primary-blue);
   color: #fff;
   transform: scale(1.05);
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);

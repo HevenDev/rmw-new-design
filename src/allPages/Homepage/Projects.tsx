@@ -19,13 +19,13 @@ const Projects = () => {
               data-widget_type="projects.default"
             >
               <div className="elementor-widget-container">
-                <div className="tp-project__area tp-project__1 p-relative pt-135 pb-135 tp-bg-class">
+                <div className="tp-project__area tp-project__1 p-relative tp-bg-class">
                   <div className="tp-project__shape">
                     <img
                       decoding="async"
                       src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/project-bg-shape.png"
                       alt=""
-                      style={{filter: " sepia(100%) saturate(500%) hue-rotate(10deg)"}}
+                      style={{filter: 'sepia(10%) saturate(120%) brightness(105%) hue-rotate(185deg)'}}
                     />
                   </div>
                   <div className="container">

@@ -23,7 +23,7 @@ const Feedback = () => {
           data-widget_type="testimonial.default"
         >
           <div className="elementor-widget-container">
-            <section className="tp-testimonial__area fix pt-145 pb-155 tp-bg-class">
+            <section className="tp-testimonial__area fix tp-bg-class">
               <div className="container">
                 <div className="tp-testimonial__wrap p-relative">
                   <div className="tp-testimonial__shape">
@@ -31,7 +31,7 @@ const Feedback = () => {
                       decoding="async"
                       src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/testi-bg-1-1-shape.png"
                       alt=""
-                      style={{filter: " sepia(100%) saturate(500%) hue-rotate(10deg)"}}
+                      style={{filter: 'sepia(10%) saturate(120%) brightness(105%) hue-rotate(185deg)'}}
                     />
                   </div>
                   <div className="row">

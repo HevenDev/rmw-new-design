@@ -28,7 +28,8 @@ const Work = () => {
                       decoding="async"
                       src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/funfact-shape-1-1.png"
                       alt=""
-                      style={{filter: "sepia(100%) saturate(500%) hue-rotate(10deg)"}}
+                      style={{filter: 'sepia(10%) saturate(120%) brightness(105%) hue-rotate(185deg)'}}
+                      // filter: "sepia(100%) saturate(500%) hue-rotate(10deg)"
                     />
                   </div>
                   <div

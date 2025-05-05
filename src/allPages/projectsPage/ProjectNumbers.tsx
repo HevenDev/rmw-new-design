@@ -1,6 +1,6 @@
 const ProjectNumbers = () => {
   return (
-    <section className="tp-funfact-2-area tp-funfact__3 pt-35 mb-5 p-relative">
+    <section className="tp-funfact-2-area tp-funfact__3 mb-5 p-relative">
       <div className="tp-text__3-shape-1 d-none d-xl-block">
         <img
           decoding="async"
