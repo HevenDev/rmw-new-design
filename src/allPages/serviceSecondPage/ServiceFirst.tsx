@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import { useSplitText } from "@/hooks/useSplitText";
@@ -10,7 +10,6 @@ type ServiceFirstProps = {
 };
 
 const ServiceFirst = ({ heading }: ServiceFirstProps) => {
-
   // const textRefs = useSplitText();
   const lines = heading?.split(" ");
 
@@ -22,11 +21,27 @@ const ServiceFirst = ({ heading }: ServiceFirstProps) => {
             <div className="col-xl-12">
               <div className="tp-service__wrap p-relative">
                 <div className="tp-ab__title-box z-index-2 mb-80">
-                  <div style={{ width: "100%", height: "350px", position: "relative", textAlign: "center" }}>
-                    <svg viewBox="0 0 800 200" style={{ width: "100%", height: "100%" }}>
+                  <div
+                    style={{
+                      width: "100%",
+                      height: "350px",
+                      position: "relative",
+                      textAlign: "center",
+                    }}
+                  >
+                    <svg
+                      viewBox="0 0 800 200"
+                      style={{ width: "100%", height: "100%" }}
+                    >
                       <defs>
                         <mask id="video-text-mask">
-                          <rect x="0" y="0" width="100%" height="100%" fill="black" />
+                          <rect
+                            x="0"
+                            y="0"
+                            width="100%"
+                            height="100%"
+                            fill="black"
+                          />
                           {lines?.map((line, index) => (
                             <text
                               key={index}
@@ -44,7 +59,13 @@ const ServiceFirst = ({ heading }: ServiceFirstProps) => {
                           ))}
                         </mask>
                       </defs>
-                      <foreignObject x="0" y="0" width="100%" height="100%" mask="url(#video-text-mask)">
+                      <foreignObject
+                        x="0"
+                        y="0"
+                        width="100%"
+                        height="100%"
+                        mask="url(#video-text-mask)"
+                      >
                         <video
                           src="/videos/bg_pattern.mp4"
                           autoPlay
@@ -61,7 +82,6 @@ const ServiceFirst = ({ heading }: ServiceFirstProps) => {
                       </foreignObject>
                     </svg>
                   </div>
-
                 </div>
                 <div className="tp-service__btn-wrap text-center">
                   <div className="tp-hover__btn-wrap tp-btn__bounce">
