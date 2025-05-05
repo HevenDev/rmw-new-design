@@ -88,14 +88,17 @@ const Header = () => {
         <div className="container-fluid">
           <div className="row align-items-center">
             <div className="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
-              <div className="tp-main__logo">
+              <div className="tp-main__logo"
+              style={{
+                background:"#10153f",
+                height:"100px",
+                width:"100px",
+                display:" flex",
+                alignItems:"center",
+                justifyContent:"center"
+              }}>
                 <Link className="main-logo" href="/">
-                  <Image
-                    width={75}
-                    height={75}
-                    src="/logo_black.png"
-                    alt="logo"
-                  />
+                  <img src="/rmw_logo_gold.png" alt="" style={{height:"60px"}}/>
                 </Link>
               </div>
             </div>

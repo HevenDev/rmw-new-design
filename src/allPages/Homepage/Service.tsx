@@ -145,6 +145,10 @@ const Service: React.FC<ServiceProps> = ({ data }) => {
                 muted
                 playsInline
               className="w-full h-screen object-cover"
+              style={{
+                height:"100vh",
+                width:"100%"
+              }}
               />
             </div>
           </div>

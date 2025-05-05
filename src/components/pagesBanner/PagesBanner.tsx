@@ -24,13 +24,21 @@ const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle, bannerImages })
             zIndex: "-1",
             filter: "sepia(100%) saturate(500%) hue-rotate(10deg)",
           }}
+
+
         />   */}
-      <div className="breadcrumb__shape">
+      <div className="breadcrumb__shape"
+      >
       
         <img
           src={bannerImages}
           alt=""
-          style={{height:"100%"}}
+          style={{
+            maxWidth: "100%",
+            height: "47vh",
+            objectFit: "cover",
+
+          }}
         />
       </div>
       <div className="container">

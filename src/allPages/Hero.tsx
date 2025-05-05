@@ -17,7 +17,10 @@ const Header = () => {
         <div className="contianer-fluid">
           <div className="row align-items-center">
             <div className="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
-              <div className="tp-main__logo">
+              <div className="tp-main__logo" 
+              style={{
+                background:"blue"
+              }}>
                 <Link
                   className="main-logo"
                   href="/"
@@ -25,7 +28,7 @@ const Header = () => {
                   <Image
                     width={50}
                     height={50}
-                    src="/rmw_logo_gold.png"
+                    src="/logo_blue.png"
                     alt="logo"
                   />
                 </Link>
