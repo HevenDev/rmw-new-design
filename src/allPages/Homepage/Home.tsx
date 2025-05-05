@@ -1,5 +1,10 @@
 import Link from "next/link";
-import { FaFacebook, FaYoutube, FaInstagramSquare, FaLinkedin  } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaYoutube,
+  FaInstagramSquare,
+  FaLinkedin,
+} from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 // import { useSplitText } from "@/hooks/useSplitText";
 
@@ -11,13 +16,13 @@ const Home = () => {
       className="elementor-element elementor-element-199ac0f e-con-full e-flex e-con e-parent"
       data-id="199ac0f"
       data-element_type="container"
-      style={{margin:"0",padding: "0px !important"}}
+      style={{ margin: "0", padding: "0px !important" }}
     >
       <div
         className="elementor-element elementor-element-5a1b25c e-con-full e-flex e-con e-child"
         data-id="5a1b25c"
         data-element_type="container"
-        style={{padding: "0px !important"}}
+        style={{ padding: "0px !important" }}
       >
         <div
           className="elementor-element elementor-element-12cef4b elementor-widget elementor-widget-hero-banner"
@@ -30,38 +35,46 @@ const Home = () => {
               className="tp-hero__area fix tp-hero__space tp-hero__bg p-relative tp-bg-className"
               // data-background="/assets/homepageImages/RMW_banner_wht.jpg"
             >
-              
-                                                                       
               <div className="tp-hero__social">
                 <div className="tp-hero__social-content">
                   <ul>
                     <li>
                       <Link href="https://www.facebook.com/ritzmediaworld/">
-                        <i className="fab fa-facebook-f"><FaFacebook /></i>
+                        <i className="fab fa-facebook-f">
+                          <FaFacebook />
+                        </i>
                         <span>Facebook</span>
                       </Link>
                     </li>
                     <li>
                       <Link href="https://x.com/i/flow/login?redirect_after_login=%2Fritzmediaworld">
-                        <i className="fab fa-twitter"><FaSquareXTwitter /></i>
+                        <i className="fab fa-twitter">
+                          <FaSquareXTwitter />
+                        </i>
                         <span>Twitter</span>
                       </Link>
                     </li>
                     <li>
                       <Link href="https://www.youtube.com/c/RitzMediaWorldCreativeThinksMedia">
-                        <i className="fab fa-dribbble"><FaYoutube /></i>
+                        <i className="fab fa-dribbble">
+                          <FaYoutube />
+                        </i>
                         <span>Youtube</span>
                       </Link>
                     </li>
                     <li>
                       <Link href="https://www.instagram.com/ritzmediaworld/">
-                        <i className="fab fa-behance"><FaInstagramSquare /></i>
+                        <i className="fab fa-behance">
+                          <FaInstagramSquare />
+                        </i>
                         <span>Instagram</span>
                       </Link>
                     </li>
                     <li>
                       <Link href="https://www.linkedin.com/company/ritzmediaworld/?originalSubdomain=in">
-                        <i className="fab fa-behance"><FaLinkedin /></i>
+                        <i className="fab fa-behance">
+                          <FaLinkedin />
+                        </i>
                         <span>LinkedIn</span>
                       </Link>
                     </li>
@@ -74,47 +87,70 @@ const Home = () => {
                     <div className="col-xl-8 col-lg-7">
                       <div className="tp-hero__title-box mb-70 p-relative">
                         <span className="tp-hero__subtitle mb-20">
-                        Telling Stories to Remember with
+                          Telling Stories to Remember with
                         </span>
-                        <div style={{ width: "100%", height: "350px", position: "relative", textAlign: "start" }}>
-                    <svg viewBox="0 0 800 200" style={{ width: "100%", height: "100%" }}>
-                      <defs>
-                        <mask id="video-text-mask">
-                          <rect x="0" y="0" width="100%" height="100%" fill="black" />
-                          {lines?.map((line, index) => (
-                            <text
-                              key={index}
-                              x="50%"
-                              y={`${30 + index * 40}%`} // Adjust spacing between lines
-                              dominantBaseline="middle"
-                              textAnchor="middle"
-                              fontSize="100"
-                              fontWeight="bold"
-                              fill="white"
-                              fontFamily="Arial, sans-serif"
-                            >
-                              {line}
-                            </text>
-                          ))}
-                        </mask>
-                      </defs>
-                      <foreignObject x="0" y="0" width="100%" height="100%" mask="url(#video-text-mask)">
-                        <video
-                          src="/videos/bg_pattern.mp4"
-                          autoPlay
-                          loop
-                          muted
-                          playsInline
+                        <div
                           style={{
                             width: "100%",
-                            height: "100%",
-                            objectFit: "cover",
-                            display: "block",
+                            height: "410px",
+                            position: "relative",
+                            textAlign: "start",
                           }}
-                        />
-                      </foreignObject>
-                    </svg>
-                  </div>
+                        >
+                          <svg
+                            viewBox="0 0 800 200"
+                            style={{ width: "100%", height: "350px" }}
+                          >
+                            <defs>
+                              <mask id="video-text-mask">
+                                <rect
+                                  x="0"
+                                  y="0"
+                                  width="100%"
+                                  height="410px"
+                                  fill="black"
+                                />
+                                {lines?.map((line, index) => (
+                                  <text
+                                    key={index}
+                                    x={0}
+                                    y={0 + index * 100}
+                                    dominantBaseline="hanging"
+                                    textAnchor="start"
+                                    fontSize="100"
+                                    fontWeight="bold"
+                                    fill="white"
+                                    fontFamily="Arial, sans-serif"
+                                  >
+                                    {line}
+                                  </text>
+                                ))}
+                              </mask>
+                            </defs>
+                            <foreignObject
+                              x="0"
+                              y="0"
+                              width="100%"
+                              height="410px"
+                              mask="url(#video-text-mask)"
+                            >
+                              <video
+                                src="/videos/bg_pattern.mp4"
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                                style={{
+                                  width: "100%",
+                                  height: "410px",
+                                  objectFit: "cover",
+                                  display: "block",
+                                }}
+                              />
+                            </foreignObject>
+                          </svg>
+                        </div>
+
                         {/* <h3 className="tp-hero__title tp-marketing tp-split__text tp-split__in-right p-relative">
                           Advertising
                         </h3>
@@ -145,10 +181,7 @@ const Home = () => {
                       </div>
                       <div className="tp-hero__action d-flex align-items-center">
                         <span>
-                          <Link
-                            href="/service"
-                            className="tp-hero__action-btn"
-                          >
+                          <Link href="/service" className="tp-hero__action-btn">
                             <span>
                               <svg
                                 width="33"
@@ -168,11 +201,7 @@ const Home = () => {
                             </span>
                           </Link>
                         </span>
-                        <Link
-                          href="/service"
-                          rel="nofollow"
-                          target="_self"
-                        >
+                        <Link href="/service" rel="nofollow" target="_self">
                           LEARN MORE
                         </Link>
                       </div>
@@ -203,7 +232,10 @@ const Home = () => {
                           </div>
                         </div>
                         <p>
-                        Billions of words written, Millions of Creatives Delivered, Thousands of Campaigns executed, and hundreds of success stories completed. This is a quick summary of what Ritz Media World is all about.
+                          Billions of words written, Millions of Creatives
+                          Delivered, Thousands of Campaigns executed, and
+                          hundreds of success stories completed. This is a quick
+                          summary of what Ritz Media World is all about.
                         </p>
                       </div>
                     </div>

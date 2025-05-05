@@ -1,4 +1,4 @@
-import Link from "next/link";
+// import Link from "next/link";
 type headingProp = {
   heading: string | null;
   para: string | null;

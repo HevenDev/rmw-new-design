@@ -9,9 +9,9 @@ type ServiceFirstProps = {
   image2?: string | null;
 };
 
-const ServiceFirst = ({ heading, image1, image2 }: ServiceFirstProps) => {
+const ServiceFirst = ({ heading }: ServiceFirstProps) => {
 
-  const textRefs = useSplitText();
+  // const textRefs = useSplitText();
   const lines = heading?.split(" ");
 
   return (

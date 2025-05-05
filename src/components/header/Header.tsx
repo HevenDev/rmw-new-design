@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 import { useState, useEffect } from "react";
 import useStickyElements from "@/hooks/useStickyElements";
 import styles from "./Header.module.css"; // Import CSS module

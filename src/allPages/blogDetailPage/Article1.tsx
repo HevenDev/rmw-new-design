@@ -281,13 +281,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
-const images = [
-  { src: "/about-images/about-head.webp", title: "about Heading" },
-  { src: "/about-images/gut-wallpaper.jpg", title: "guts" },
-  { src: "/about-images/guts-wallpaper-2.jpg", title: "Berserk" },
-  { src: "/about-images/gut-wallpaper.jpg", title: "guts" },
-  { src: "/about-images/guts-wallpaper-2.jpg", title: "Berserk" },
-];
 
 type RelatedBlog = {
   id: number;

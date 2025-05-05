@@ -6,6 +6,7 @@
 import React from "react";
 import styles from "./not-found.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function NotFound() {
   return (
@@ -18,12 +19,12 @@ export default function NotFound() {
         width={300}
         height={200}
       />
-      <a
+      <Link
         href="/"
         className={styles.btnGoHome}
       >
         GO BACK HOME
-      </a>
+      </Link>
     </div>
 
     <div className={styles.objects}>

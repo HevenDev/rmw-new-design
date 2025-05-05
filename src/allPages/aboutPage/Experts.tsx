@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "@/app/styles/marque.css";
-import Link from "next/link";
+// import Link from "next/link";
 
 const Experts = () => {
   const textRefs = useSplitText(); // ✅ Using the existing GSAP animation
