@@ -12,6 +12,7 @@ type ServiceFirstProps = {
 const ServiceFirst = ({ heading, image1, image2 }: ServiceFirstProps) => {
 
   const textRefs = useSplitText();
+  const lines = heading?.split(" ");
 
   return (
     <div className="elementor-widget-container">
@@ -21,23 +22,26 @@ const ServiceFirst = ({ heading, image1, image2 }: ServiceFirstProps) => {
             <div className="col-xl-12">
               <div className="tp-service__wrap p-relative">
                 <div className="tp-ab__title-box z-index-2 mb-80">
-                  <div style={{ width: "100%", height: "250px", position: "relative", textAlign: "center" }}>
+                  <div style={{ width: "100%", height: "350px", position: "relative", textAlign: "center" }}>
                     <svg viewBox="0 0 800 200" style={{ width: "100%", height: "100%" }}>
                       <defs>
                         <mask id="video-text-mask">
                           <rect x="0" y="0" width="100%" height="100%" fill="black" />
-                          <text
-                            x="50%"
-                            y="50%"
-                            dominantBaseline="middle"
-                            textAnchor="middle"
-                            fontSize="90"
-                            fontWeight="bold"
-                            fill="white"
-                            fontFamily="Arial, sans-serif"
-                          >
-                            {heading}
-                          </text>
+                          {lines?.map((line, index) => (
+                            <text
+                              key={index}
+                              x="50%"
+                              y={`${30 + index * 40}%`} // Adjust spacing between lines
+                              dominantBaseline="middle"
+                              textAnchor="middle"
+                              fontSize="100"
+                              fontWeight="bold"
+                              fill="white"
+                              fontFamily="Arial, sans-serif"
+                            >
+                              {line}
+                            </text>
+                          ))}
                         </mask>
                       </defs>
                       <foreignObject x="0" y="0" width="100%" height="100%" mask="url(#video-text-mask)">
@@ -57,6 +61,7 @@ const ServiceFirst = ({ heading, image1, image2 }: ServiceFirstProps) => {
                       </foreignObject>
                     </svg>
                   </div>
+
                 </div>
                 <div className="tp-service__btn-wrap text-center">
                   <div className="tp-hover__btn-wrap tp-btn__bounce">
