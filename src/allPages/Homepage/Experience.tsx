@@ -64,7 +64,7 @@ const Experience = () => {
               <div className="container">
                 <div className="row">
                   <div className="col-xl-7 offset-xl-5">
-                    <div className="tp-chooseus__wrap pt-100 pb-105">
+                    <div className="tp-chooseus__wrap">
                       <div className="tp-chooseus__title-box mb-45">
                         <span
                           ref={(el) => {

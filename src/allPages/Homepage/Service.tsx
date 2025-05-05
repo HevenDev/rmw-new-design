@@ -37,7 +37,7 @@ const Service: React.FC<ServiceProps> = ({ data }) => {
   };
 
   return (
-    <div className="tp-service__area fix tp-bg-class pb-50">
+    <div className="tp-service__area fix tp-bg-class">
       <div className="container">
         <div className="row">
           <div className="col-xl-12">

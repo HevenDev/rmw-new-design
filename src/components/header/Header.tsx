@@ -396,16 +396,16 @@ const Header = () => {
                     }`}
                   >
                     <li style={{ paddingLeft: "20px" }}>
-                      <Link href="/service">Service</Link>
+                      <Link href="/service">Digital Marketing</Link>
                     </li>
                     <li style={{ paddingLeft: "20px" }}>
-                      <Link href="/service/details">Service Details</Link>
+                      <Link href="/service/details">Creative Services</Link>
                     </li>
                     <li style={{ paddingLeft: "20px" }}>
-                      <Link href="/service">Service</Link>
+                      <Link href="/service">Print Marketing</Link>
                     </li>
                     <li style={{ paddingLeft: "20px" }}>
-                      <Link href="/service">Service</Link>
+                      <Link href="/service">Radio Marketing</Link>
                     </li>
                     <li style={{ paddingLeft: "20px" }}>
                       <Link href="/service">Service</Link>

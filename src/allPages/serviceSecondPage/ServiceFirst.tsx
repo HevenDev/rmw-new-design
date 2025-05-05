@@ -30,38 +30,32 @@ const ServiceFirst = ({ heading, image1, image2 }: ServiceFirstProps) => {
                 </div>
                 <div className="tp-service__btn-wrap text-center">
                   <div className="tp-hover__btn-wrap tp-btn__bounce">
-                    <Link
-                      className="tp-hover__btn tp-hover__btn-item"
-                      href="/contact/"
-                      rel="nofollow"
-                      target="_self"
-                      style={{
-                        translate: "none",
-                        rotate: "none",
-                        scale: "none",
-                        transform: "translate(0px, 0px)",
-                      }}
-                    >
-                      <span className="tp-btn__circle-text">
-                        LET&apos;S TALK TODAY
-                      </span>
-                      <span className="tp-btn__circle-arrow">
-                        <svg
-                          width="26"
-                          height="27"
-                          viewBox="0 0 26 27"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M1 25.37L23.8469 2.52313M1 1H25.37V25.37"
-                            stroke="white"
-                            strokeLinecap="square"
-                            strokeLinejoin="round"
-                          ></path>
-                        </svg>
-                      </span>
-                    </Link>
+                  <Link
+                    className="tp-hover__btn tp-hover__btn-item"
+                    href="/contact"
+                    target="_self"
+                    rel="nofollow"
+                  >
+                    <span className="tp-btn__circle-text">
+                      LET&#039;S TALK TODAY
+                    </span>
+                    <span className="tp-btn__circle-arrow">
+                      <svg
+                        width="26"
+                        height="27"
+                        viewBox="0 0 26 27"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 25.37L23.8469 2.52313M1 1H25.37V25.37"
+                          stroke="black"
+                          strokeLinecap="square"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </Link>
                   </div>
                 </div>
                 <div className="tp-service__thumb-box-1 d-none d-xl-block">

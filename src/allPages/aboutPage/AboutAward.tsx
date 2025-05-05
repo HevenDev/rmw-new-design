@@ -6,7 +6,7 @@ const AboutAward = () => {
   return (
     <div>
       <div className="elementor-widget-container">
-        <section className="tp-awards__5-area fix tp-awards__5 pt-35 pb-120">
+        <section className="tp-awards__5-area fix tp-awards__5 pt-35 ">
           <div className="container">
             <div className="row">
               <div className="col-xl-5">
