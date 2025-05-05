@@ -19,7 +19,6 @@ import { useState } from "react";
 
 interface ServiceItem {
   title: string;
-  imgSrc: string;
   description: string;
   link: string;
 }
@@ -59,7 +58,7 @@ const Service: React.FC<ServiceProps> = ({ data }) => {
                 </h3>
                 <Link
                   className="tp-btn-primary"
-                  href="/service/"
+                  href="/services"
                   rel="nofollow"
                   target="_self"
                 >
@@ -91,13 +90,6 @@ const Service: React.FC<ServiceProps> = ({ data }) => {
                                 onClick={() => toggleAccordion(index)}
                                 aria-expanded={openIndex === index}
                               >
-                                <span className="accordion-icon">
-                                  <img
-                                    decoding="async"
-                                    src={item.imgSrc}
-                                    alt=""
-                                  />
-                                </span>
                                 {item.title}
                                 <span className="accordion-num-count">
                                   {/* {String(index + 1).padStart(2, "0")} */}
