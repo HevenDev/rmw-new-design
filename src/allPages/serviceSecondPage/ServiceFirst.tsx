@@ -21,50 +21,80 @@ const ServiceFirst = ({ heading, image1, image2 }: ServiceFirstProps) => {
             <div className="col-xl-12">
               <div className="tp-service__wrap p-relative">
                 <div className="tp-ab__title-box z-index-2 mb-80">
-                  <h3 ref={(el) => { if (el) textRefs.current.push(el) }}
-                    className="tp-service__title text-center tp-split__text tp-split__in-right"
-                    style={{ perspective: "400px", color: "#000", fontSize: "6vw" }}
-                  >
-                    {heading}
-                  </h3>
+                  <div style={{ width: "100%", height: "250px", position: "relative", textAlign: "center" }}>
+                    <svg viewBox="0 0 800 200" style={{ width: "100%", height: "100%" }}>
+                      <defs>
+                        <mask id="video-text-mask">
+                          <rect x="0" y="0" width="100%" height="100%" fill="black" />
+                          <text
+                            x="50%"
+                            y="50%"
+                            dominantBaseline="middle"
+                            textAnchor="middle"
+                            fontSize="90"
+                            fontWeight="bold"
+                            fill="white"
+                            fontFamily="Arial, sans-serif"
+                          >
+                            {heading}
+                          </text>
+                        </mask>
+                      </defs>
+                      <foreignObject x="0" y="0" width="100%" height="100%" mask="url(#video-text-mask)">
+                        <video
+                          src="/videos/bg_pattern.mp4"
+                          autoPlay
+                          loop
+                          muted
+                          playsInline
+                          style={{
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover",
+                            display: "block",
+                          }}
+                        />
+                      </foreignObject>
+                    </svg>
+                  </div>
                 </div>
                 <div className="tp-service__btn-wrap text-center">
                   <div className="tp-hover__btn-wrap tp-btn__bounce">
-                  <Link
-                    className="tp-hover__btn tp-hover__btn-item"
-                    href="/contact"
-                    target="_self"
-                    rel="nofollow"
-                  >
-                    <span className="tp-btn__circle-text">
-                      LET&#039;S TALK TODAY
-                    </span>
-                    <span className="tp-btn__circle-arrow">
-                      <svg
-                        width="26"
-                        height="27"
-                        viewBox="0 0 26 27"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M1 25.37L23.8469 2.52313M1 1H25.37V25.37"
-                          stroke="black"
-                          strokeLinecap="square"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </span>
-                  </Link>
+                    <Link
+                      className="tp-hover__btn tp-hover__btn-item"
+                      href="/contact"
+                      target="_self"
+                      rel="nofollow"
+                    >
+                      <span className="tp-btn__circle-text">
+                        LET&#039;S TALK TODAY
+                      </span>
+                      <span className="tp-btn__circle-arrow">
+                        <svg
+                          width="26"
+                          height="27"
+                          viewBox="0 0 26 27"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 25.37L23.8469 2.52313M1 1H25.37V25.37"
+                            stroke="black"
+                            strokeLinecap="square"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </span>
+                    </Link>
                   </div>
                 </div>
                 <div className="tp-service__thumb-box-1 d-none d-xl-block">
                   <div className="tp-service__thumb p-relative">
-                  <img
-                          decoding="async"
-                          src={`/service-second-images/${image1}.jpg`}
-                          alt=""
-                        />
+                    <img
+                      decoding="async"
+                      src={`/service-second-images/${image1}.jpg`}
+                      alt=""
+                    />
                     <div className="tp-service__thumb-shape-1">
                       <span>
                         {/* <img
