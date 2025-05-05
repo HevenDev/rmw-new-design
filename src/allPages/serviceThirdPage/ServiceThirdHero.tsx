@@ -4,7 +4,7 @@ type headingProp = {
   para: string | null;
 };
 const ServiceThirdHero = ({ heading, para }: headingProp) => {
-  const lines = heading?.split(" ");
+  // const lines = heading?.split(" ");
   return (
     <div
       className="elementor-element elementor-element-9b5be38 e-con-full e-flex e-con e-parent e-lazyloaded"
