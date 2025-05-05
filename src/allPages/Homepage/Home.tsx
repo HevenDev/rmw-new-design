@@ -85,7 +85,7 @@ const Home = () => {
                         <h3 className="tp-hero__title tp-marketing tp-split__text tp-split__in-right p-relative">
                           Communication
                         </h3>
-                        <div className="tp-hero__title-shape">
+                        {/* <div className="tp-hero__title-shape">
                           <span>
                             <svg
                               width="349"
@@ -102,7 +102,7 @@ const Home = () => {
                               />
                             </svg>
                           </span>
-                        </div>
+                        </div> */}
                       </div>
                       <div className="tp-hero__action d-flex align-items-center">
                         <span>

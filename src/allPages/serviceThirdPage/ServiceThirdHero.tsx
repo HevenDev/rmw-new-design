@@ -4,6 +4,7 @@ type headingProp = {
   para: string | null;
 };
 const ServiceThirdHero = ({ heading, para }: headingProp) => {
+  const lines = heading?.split(" ");
   return (
     <div
       className="elementor-element elementor-element-9b5be38 e-con-full e-flex e-con e-parent e-lazyloaded"
@@ -27,9 +28,9 @@ const ServiceThirdHero = ({ heading, para }: headingProp) => {
             <section
               className="tp-hero__3-area fix tp-hero__3-space tp-hero__3-bg tp-hero__3-overlay p-relative tp-bg-className"
               data-background="/service-banner/Service_Bg_RMW.jpg"
-              style={{
-                backgroundImage: "/service-banner/Service_Bg_RMW.jpg",
-              }}
+              // style={{
+              //   backgroundImage: "/service-banner/Service_Bg_RMW.jpg",
+              // }}
             >
               <div className="tp-hero__3-shape">
                 <style jsx>{`
@@ -45,14 +46,14 @@ const ServiceThirdHero = ({ heading, para }: headingProp) => {
                     }
                   }
                 `}</style>
-                <img
+                {/* <img
                   decoding="async"
                   src="/service-banner/Service_Bg_RMW.jpg"
                   alt=""
-                />
+                /> */}
               </div>
 
-              <div className="tp-hero__3-social">
+              {/* <div className="tp-hero__3-social">
                 <div className="tp-hero__2-social-content">
                   <ul>
                     <li>
@@ -88,18 +89,21 @@ const ServiceThirdHero = ({ heading, para }: headingProp) => {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> */}
               <div className="tp-hero__3-wrap">
                 <div className="container">
                   <div className="row align-items-center">
                     <div className="col-xl-12">
                       <div className="tp-hero__3-title-box mb-55 p-relative">
-                        <h3 className="tp-hero__3-big-title cd-headline clip tp_title_anim">
-                          {heading}
-                        </h3>
+                         
                       </div>
                       <div className="tp-hero__3-content">
-                        <div className="row align-items-center">
+                        <div className="row align-items-center"
+                        style={{
+                          display:"flex",
+                          alignItems:"center",
+                          justifyContent:"center"
+                        }}>
                           <div className="col-xl-5 col-lg-5 d-md-none d-lg-block">
                             <div
                               className="tp-hero__3-dsc wow tpfadeUp animated"
@@ -111,7 +115,11 @@ const ServiceThirdHero = ({ heading, para }: headingProp) => {
                                 animationDelay: "0.5s",
                               }}
                             >
-                              <p>{para}</p>
+                              <p
+                                style={{ textAlign: "center", margin: "auto" }}
+                              >
+                                {para}
+                              </p>
                             </div>
                           </div>
                           <div className="col-xl-5 col-lg-5 col-md-8">

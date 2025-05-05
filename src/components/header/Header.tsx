@@ -85,24 +85,29 @@ const Header = () => {
         id="header-sticky"
         className={`tp-header-top-area tp-header__style-1 tp-header__transparent tp-header__border pt-0 pb-0 pr-160 pl-160 ${styles.headerBackground}`}
         style={{
-          background:"white"
+          background: "white",
         }}
       >
         <div className="container-fluid">
           <div className="row align-items-center">
             <div className="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
-              <div className="tp-main__logo"
-              style={{
-                background:"#10153f",
-                height:"100px",
-                width:"100px",
-                display:" flex",
-                alignItems:"center",
-                justifyContent:"center",
-              
-              }}>
+              <div
+                className="tp-main__logo"
+                style={{
+                  background: "#10153f",
+                  height: "100px",
+                  width: "100px",
+                  display: " flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
                 <Link className="main-logo" href="/">
-                  <img src="/rmw_logo_gold.png" alt="" style={{height:"60px"}}/>
+                  <img
+                    src="/rmw_logo_gold.png"
+                    alt=""
+                    style={{ height: "60px" }}
+                  />
                 </Link>
               </div>
             </div>
@@ -180,7 +185,7 @@ const Header = () => {
                                           {item.sub.map((subItem, subIndex) => (
                                             <li key={subIndex}>
                                               <Link
-                                              className={styles.subDropLink}
+                                                className={styles.subDropLink}
                                                 href={subItem.link}
                                                 style={{
                                                   padding: "2px 0",
