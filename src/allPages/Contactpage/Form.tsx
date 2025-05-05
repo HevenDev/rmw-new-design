@@ -677,7 +677,7 @@ const Form = () => {
                       <button
                         type="submit"
                         className="tp-btn-secondary"
-                        style={{padding:"20px 30px", background:"#adc1de"}}
+                        style={{padding:"20px 30px", background:"#10153f", color:"white"}}
                         >
                         submit
                         <span>

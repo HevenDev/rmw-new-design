@@ -28,21 +28,9 @@ const Home = () => {
           <div className="elementor-widget-container">
             <section
               className="tp-hero__area fix tp-hero__space tp-hero__bg p-relative tp-bg-className"
-              data-background="/assets/homepageImages/RMW_banner_wht.jpg"
+              // data-background="/assets/homepageImages/RMW_banner_wht.jpg"
             >
-              <img
-                decoding="async"
-                src="/assets/homepageImages/RMW_banner_wht.jpg"
-                alt=""
-                style={{
-                  height: "100vh",
-                  width: "100%",
-                  position: "absolute",
-                  objectFit:"cover",
-                  zIndex: "-1",
-                  // filter: "sepia(100%) saturate(500%) hue-rotate(10deg)",
-                }}
-              />
+              
                                                                        
               <div className="tp-hero__social">
                 <div className="tp-hero__social-content">

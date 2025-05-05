@@ -88,7 +88,7 @@ const ServiceFirst = ({ heading, image1, image2 }: ServiceFirstProps) => {
                     </Link>
                   </div>
                 </div>
-                <div className="tp-service__thumb-box-1 d-none d-xl-block">
+                {/* <div className="tp-service__thumb-box-1 d-none d-xl-block">
                   <div className="tp-service__thumb p-relative">
                     <img
                       decoding="async"
@@ -97,11 +97,11 @@ const ServiceFirst = ({ heading, image1, image2 }: ServiceFirstProps) => {
                     />
                     <div className="tp-service__thumb-shape-1">
                       <span>
-                        {/* <img
+                        <img
                           decoding="async"
                           src={`/service-second-images/${image2}.jpg`}
                           alt=""
-                        /> */}
+                        />
                       </span>
                     </div>
                   </div>
@@ -115,15 +115,15 @@ const ServiceFirst = ({ heading, image1, image2 }: ServiceFirstProps) => {
                     />
                     <div className="tp-service__thumb-shape-2">
                       <span>
-                        {/* <img
+                        <img
                           decoding="async"
                           src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/shape-2.png"
                           alt=""
-                        /> */}
+                        />
                       </span>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
