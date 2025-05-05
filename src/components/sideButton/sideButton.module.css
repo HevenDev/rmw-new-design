@@ -93,8 +93,8 @@
   }
   
   .queryForm button {
-    background-color: #fddf82;
-    color: #000;
+    background-color: black;
+    color: white;
     border: none;
     padding: 12px;
     font-size: 16px;
@@ -103,7 +103,8 @@
   }
   
   .queryForm button:hover {
-    background-color: #e64356;
+    background-color: white;
+    color: black;
   }
   
   .queryForm select {

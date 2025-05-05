@@ -84,6 +84,9 @@ const Header = () => {
       <div
         id="header-sticky"
         className={`tp-header-top-area tp-header__style-1 tp-header__transparent tp-header__border pt-0 pb-0 pr-160 pl-160 ${styles.headerBackground}`}
+        style={{
+          background:"white"
+        }}
       >
         <div className="container-fluid">
           <div className="row align-items-center">
@@ -95,7 +98,8 @@ const Header = () => {
                 width:"100px",
                 display:" flex",
                 alignItems:"center",
-                justifyContent:"center"
+                justifyContent:"center",
+              
               }}>
                 <Link className="main-logo" href="/">
                   <img src="/rmw_logo_gold.png" alt="" style={{height:"60px"}}/>
@@ -501,8 +505,8 @@ const Header = () => {
             >
               <div className={styles.MobileSidebarLogo}>
                 <img
-                  style={{ height: "50px" }}
-                  src="/rmw_logo_gold.png"
+                  style={{ height: "60px" }}
+                  src="/logo_blue.png"
                   alt="RMW Logo"
                 />
                 <button
@@ -532,7 +536,7 @@ const Header = () => {
                     marginTop: "20px",
                   }}
                 >
-                  Gallery
+                  Manage blogs
                 </p>
                 <div
                   style={{

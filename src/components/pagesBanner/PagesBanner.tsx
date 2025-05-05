@@ -35,7 +35,7 @@ const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle, bannerImages })
           alt=""
           style={{
             width: "100vw",
-            height: "47vh",
+            height: "53vh",
             objectFit: "cover",
 
           }}
