@@ -5,7 +5,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 
 const Home = () => {
   // const textRefs = useSplitText();
-
+  const lines = ["Advertising", "Branding", "Communication"];
   return (
     <div
       className="elementor-element elementor-element-199ac0f e-con-full e-flex e-con e-parent"
@@ -76,7 +76,46 @@ const Home = () => {
                         <span className="tp-hero__subtitle mb-20">
                         Telling Stories to Remember with
                         </span>
-                        <h3 className="tp-hero__title tp-marketing tp-split__text tp-split__in-right p-relative">
+                        <div style={{ width: "100%", height: "350px", position: "relative", textAlign: "start" }}>
+                    <svg viewBox="0 0 800 200" style={{ width: "100%", height: "100%" }}>
+                      <defs>
+                        <mask id="video-text-mask">
+                          <rect x="0" y="0" width="100%" height="100%" fill="black" />
+                          {lines?.map((line, index) => (
+                            <text
+                              key={index}
+                              x="50%"
+                              y={`${30 + index * 40}%`} // Adjust spacing between lines
+                              dominantBaseline="middle"
+                              textAnchor="middle"
+                              fontSize="100"
+                              fontWeight="bold"
+                              fill="white"
+                              fontFamily="Arial, sans-serif"
+                            >
+                              {line}
+                            </text>
+                          ))}
+                        </mask>
+                      </defs>
+                      <foreignObject x="0" y="0" width="100%" height="100%" mask="url(#video-text-mask)">
+                        <video
+                          src="/videos/bg_pattern.mp4"
+                          autoPlay
+                          loop
+                          muted
+                          playsInline
+                          style={{
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover",
+                            display: "block",
+                          }}
+                        />
+                      </foreignObject>
+                    </svg>
+                  </div>
+                        {/* <h3 className="tp-hero__title tp-marketing tp-split__text tp-split__in-right p-relative">
                           Advertising
                         </h3>
                         <h3 className="tp-hero__title tp-marketing tp-split__text tp-split__in-right p-relative">
@@ -84,7 +123,7 @@ const Home = () => {
                         </h3>
                         <h3 className="tp-hero__title tp-marketing tp-split__text tp-split__in-right p-relative">
                           Communication
-                        </h3>
+                        </h3> */}
                         {/* <div className="tp-hero__title-shape">
                           <span>
                             <svg
