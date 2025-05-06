@@ -2163,8 +2163,7 @@ xclip
 /*  2.6 Breadcrumb
 /*----------------------------------------*/
 .breadcrumb__plr {
-  padding-top: 210px;
-  padding-bottom: 160px;
+  padding-top: 10%;
 }
 
 .breadcrumb__bg {
