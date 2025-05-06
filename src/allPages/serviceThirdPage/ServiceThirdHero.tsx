@@ -46,50 +46,22 @@ const ServiceThirdHero = ({ heading, para }: headingProp) => {
                     }
                   }
                 `}</style>
-                <img
-                  decoding="async"
-                  src="/service-banner/Service_Bg_RMW.jpg"
-                  alt=""
-                />
+                <video src="/videos/third_layer_video.mov"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  controls={false}
+                  controlsList="nodownload" style={{
+                    width: "100%",
+                    height: "auto",
+                    objectFit: "cover",
+                    display: "block",
+                    pointerEvents: "none",
+                    userSelect: "none",
+                  }} />
               </div>
 
-              <div className="tp-hero__3-social">
-                <div className="tp-hero__2-social-content">
-                  <ul>
-                    <li>
-                      <Link href="https://www.facebook.com/ritzmediaworld/">
-                        {" "}
-                        Fb{" "}
-                      </Link>{" "}
-                      /
-                    </li>
-                    <li>
-                      <Link href="https://www.instagram.com/ritzmediaworld/">
-                        {" "}
-                        In{" "}
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="https://www.youtube.com/c/RitzMediaWorldCreativeThinksMedia">
-                        {" "}
-                        YT{" "}
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="https://x.com/i/flow/login?redirect_after_login=%2Fritzmediaworld">
-                        {" "}
-                        X{" "}
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="https://www.linkedin.com/company/ritzmediaworld/?originalSubdomain=in">
-                        {" "}
-                        Ln
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
               <div className="tp-hero__3-wrap">
                 <div className="container">
                   <div className="row align-items-center">
