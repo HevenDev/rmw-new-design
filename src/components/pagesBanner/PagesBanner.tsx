@@ -2,14 +2,11 @@ import Link from "next/link";
 
 interface PagesBannerProps {
   headingTitle: string;
-  bannerImages?: string;
 }
-const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle, bannerImages }) => {
+const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle }) => {
   return (
     <section
       className="breadcrumb__area fix p-relative breadcrumb__plr breadcrumb__overlay breadcrumb__bg"
-      data-background="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/12/breadcrumb-bg-1.jpg"
-      data-bg-color="#140e0e"
     >
       {/* <img
           decoding="async"
@@ -29,8 +26,8 @@ const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle, bannerImages })
         />   */}
       <div className="breadcrumb__shape"
       >
-      
-        <img
+
+        {/* <img
           src={bannerImages}
           alt=""
           style={{
@@ -39,7 +36,7 @@ const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle, bannerImages })
             objectFit: "cover",
 
           }}
-        />
+        /> */}
       </div>
       <div className="container">
         <div className="row">
@@ -55,12 +52,69 @@ const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle, bannerImages })
                     href="/"
                     className="home"
                   >
-                    <span property="name">Ritz Media World</span>
                   </Link>
                   <meta property="position" content="1" />
                 </span>
               </div>
-              <h3 className="breadcrumb__title">{headingTitle}</h3>
+              {/* <h3 className="breadcrumb__title">{headingTitle}</h3> */}
+              <div
+                style={{
+                  width: "100%",
+                  height: "300px",
+                  position: "relative",
+                  textAlign: "center",
+                }}
+              >
+                <svg
+                  viewBox="0 0 800 200"
+                  style={{ width: "100%", height: "100%" }}
+                >
+                  <defs>
+                    <mask id="video-text-mask">
+                      <rect
+                        x="0"
+                        y="0"
+                        width="100%"
+                        height="100%"
+                        fill="black"
+                      />
+                      <text
+                        x="50%"
+                        y={`40%`} // Adjust spacing between lines
+                        dominantBaseline="middle"
+                        textAnchor="middle"
+                        fontSize="100"
+                        fontWeight="bold"
+                        fill="white"
+                        fontFamily="Arial, sans-serif"
+                      >
+                        {headingTitle}
+                      </text>
+                    </mask>
+                  </defs>
+                  <foreignObject
+                    x="0"
+                    y="0"
+                    width="100%"
+                    height="100%"
+                    mask="url(#video-text-mask)"
+                  >
+                    <video
+                      src="/videos/bg_pattern2.mp4"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                        display: "block",
+                      }}
+                    />
+                  </foreignObject>
+                </svg>
+              </div>
             </div>
           </div>
         </div>

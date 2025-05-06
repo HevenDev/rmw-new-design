@@ -7,30 +7,7 @@ const CategoryBanner: React.FC<CategoryBannerProps> = ({ categoryTitle }) => {
   return (
     <section
       className="breadcrumb__area fix p-relative breadcrumb__plr breadcrumb__overlay breadcrumb__bg"
-      data-background="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/12/breadcrumb-bg-1.jpg"
-      data-bg-color="#140e0e"
     >
-      <img
-          decoding="async"
-          src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/12/breadcrumb-bg-1.jpg"
-          alt=""
-          style={{
-            backgroundColor: "rgb(20, 14, 14)",
-            top:"1px", 
-            height: "100%",
-            width: "100%",
-            position: "absolute",
-            zIndex: "-1",
-            filter: "sepia(100%) saturate(500%) hue-rotate(10deg)",
-          }}
-        />  
-      <div className="breadcrumb__shape">
-      
-        <img
-          src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/12/breadcrumb-shape.png"
-          alt=""
-        />
-      </div>
       <div className="container">
         <div className="row">
           <div className="col-xxl-12">
@@ -45,12 +22,69 @@ const CategoryBanner: React.FC<CategoryBannerProps> = ({ categoryTitle }) => {
                     href="/"
                     className="home"
                   >
-                    <span property="name">Ritz Media World / Category</span>
+                    <span property="name">Blog / Category</span>
                   </Link>
                   <meta property="position" content="1" />
                 </span>
               </div>
-              <h3 className="breadcrumb__title">{categoryTitle}</h3>
+              <div
+                style={{
+                  width: "100%",
+                  height: "300px",
+                  position: "relative",
+                  textAlign: "center",
+                }}
+              >
+                <svg
+                  viewBox="0 0 800 200"
+                  style={{ width: "100%", height: "100%" }}
+                >
+                  <defs>
+                    <mask id="video-text-mask">
+                      <rect
+                        x="0"
+                        y="0"
+                        width="100%"
+                        height="100%"
+                        fill="black"
+                      />
+                      <text
+                        x="50%"
+                        y={`40%`} // Adjust spacing between lines
+                        dominantBaseline="middle"
+                        textAnchor="middle"
+                        fontSize="60"
+                        fontWeight="bold"
+                        fill="white"
+                        fontFamily="Arial, sans-serif"
+                      >
+                        {categoryTitle}
+                      </text>
+                    </mask>
+                  </defs>
+                  <foreignObject
+                    x="0"
+                    y="0"
+                    width="100%"
+                    height="100%"
+                    mask="url(#video-text-mask)"
+                  >
+                    <video
+                      src="/videos/bg_pattern2.mp4"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                        display: "block",
+                      }}
+                    />
+                  </foreignObject>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
