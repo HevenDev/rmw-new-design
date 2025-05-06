@@ -45,7 +45,7 @@ const ServiceThirdAward = () => {
           data-widget_type="choose-us.default"
         >
           <div className="elementor-widget-container">
-            <section className="tp-award__3-area fix tp-awards__3-bg-style pt-120 pb-120 p-relative">
+            <section className="tp-award__3-area fix tp-awards__3-bg-style p-relative">
               <div
                 className="tp-awards__3-thumb-bg mt-85 d-none d-xl-block wow avtrix_clip_up"
                 data-background="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/awards-3-bg-1.jpg"

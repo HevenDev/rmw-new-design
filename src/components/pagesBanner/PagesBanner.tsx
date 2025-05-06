@@ -60,13 +60,14 @@ const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle }) => {
               <div
                 style={{
                   width: "100%",
-                  height: "300px",
+                  height: "auto",
                   position: "relative",
                   textAlign: "center",
+                  marginTop:"90px"
                 }}
               >
                 <svg
-                  viewBox="0 0 800 200"
+                  viewBox="0 0 400 200"
                   style={{ width: "100%", height: "100%" }}
                 >
                   <defs>
@@ -83,7 +84,7 @@ const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle }) => {
                         y={`40%`} // Adjust spacing between lines
                         dominantBaseline="middle"
                         textAnchor="middle"
-                        fontSize="100"
+                        fontSize="5rem"
                         fontWeight="bold"
                         fill="white"
                         fontFamily="Arial, sans-serif"

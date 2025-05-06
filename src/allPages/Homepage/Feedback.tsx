@@ -26,17 +26,17 @@ const Feedback = () => {
             <section className="tp-testimonial__area fix tp-bg-class">
               <div className="container">
                 <div className="tp-testimonial__wrap p-relative">
-                  <div className="tp-testimonial__shape">
+                  {/* <div className="tp-testimonial__shape">
                     <img
                       decoding="async"
                       src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/testi-bg-1-1-shape.png"
                       alt=""
                       style={{filter: 'sepia(10%) saturate(120%) brightness(105%) hue-rotate(185deg)'}}
                     />
-                  </div>
+                  </div> */}
                   <div className="row">
                     <div className="col-xl-12">
-                      <div className="tp-awards__title-box mb-100">
+                      <div className="tp-awards__title-box mb-20">
                         <span className="tp-section-title-pre mb-20">
                           Clients Feedback
                         </span>

@@ -129,7 +129,7 @@ const Service: React.FC<ServiceProps> = ({ data }) => {
 
           {/* Image Section */}
           <div className="col-xl-6">
-            <div className="tp-services__thumb ml-30">
+            <div className="tp-services__thumb">
               <video
                 src="/test-images/test-video.mp4"
                 autoPlay

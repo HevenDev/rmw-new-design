@@ -33,54 +33,8 @@ const Home = () => {
           <div className="elementor-widget-container">
             <section
               className="tp-hero__area fix tp-hero__space tp-hero__bg p-relative tp-bg-className"
-            // data-background="/assets/homepageImages/RMW_banner_wht.jpg"
             >
-              <div className="tp-hero__social">
-                <div className="tp-hero__social-content">
-                  <ul>
-                    <li>
-                      <Link href="https://www.facebook.com/ritzmediaworld/">
-                        <i className="fab fa-facebook-f">
-                          <FaFacebook />
-                        </i>
-                        <span>Facebook</span>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="https://x.com/i/flow/login?redirect_after_login=%2Fritzmediaworld">
-                        <i className="fab fa-twitter">
-                          <FaSquareXTwitter />
-                        </i>
-                        <span>Twitter</span>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="https://www.youtube.com/c/RitzMediaWorldCreativeThinksMedia">
-                        <i className="fab fa-dribbble">
-                          <FaYoutube />
-                        </i>
-                        <span>Youtube</span>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="https://www.instagram.com/ritzmediaworld/">
-                        <i className="fab fa-behance">
-                          <FaInstagramSquare />
-                        </i>
-                        <span>Instagram</span>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="https://www.linkedin.com/company/ritzmediaworld/?originalSubdomain=in">
-                        <i className="fab fa-behance">
-                          <FaLinkedin />
-                        </i>
-                        <span>LinkedIn</span>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+             
               <div className="tp-hero__wrap">
                 <div className="container">
                   <div className="row">
@@ -92,14 +46,14 @@ const Home = () => {
                         <div
                           style={{
                             width: "100%",
-                            height: "350px",
                             position: "relative",
                             textAlign: "start",
                           }}
                         >
                           <svg
+                          className="home_svg"
                             viewBox="0 0 800 350"
-                            style={{ width: "100%", height: "100%" }}
+                            style={{ width: "100%", height: "auto",aspectRatio: "800 / 350" }}
                           >
                             <defs>
                               <mask id="video-text-mask">
@@ -117,7 +71,7 @@ const Home = () => {
                                     y={0 + index * 100}
                                     dominantBaseline="hanging"
                                     textAnchor="start"
-                                    fontSize="100"
+                                    fontSize="95"
                                     fontWeight="bold"
                                     fill="white"
                                     fontFamily="Arial, sans-serif"

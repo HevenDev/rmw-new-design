@@ -121,3 +121,8 @@
     background-size: 12px;
   }
   
+  @media (max-width: 768px) {
+    .growBusinessBtn{
+      display: none;
+    }
+  }

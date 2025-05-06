@@ -5,9 +5,7 @@ interface CategoryBannerProps {
 }
 const CategoryBanner: React.FC<CategoryBannerProps> = ({ categoryTitle }) => {
   return (
-    <section
-      className="breadcrumb__area fix p-relative breadcrumb__plr breadcrumb__overlay breadcrumb__bg"
-    >
+    <section className="breadcrumb__area fix p-relative breadcrumb__plr breadcrumb__overlay breadcrumb__bg">
       <div className="container">
         <div className="row">
           <div className="col-xxl-12">
@@ -30,9 +28,10 @@ const CategoryBanner: React.FC<CategoryBannerProps> = ({ categoryTitle }) => {
               <div
                 style={{
                   width: "100%",
-                  height: "300px",
+                  height: "auto",
                   position: "relative",
                   textAlign: "center",
+                  marginTop: "90px",
                 }}
               >
                 <svg
@@ -53,7 +52,7 @@ const CategoryBanner: React.FC<CategoryBannerProps> = ({ categoryTitle }) => {
                         y={`40%`} // Adjust spacing between lines
                         dominantBaseline="middle"
                         textAnchor="middle"
-                        fontSize="60"
+                        fontSize="65"
                         fontWeight="bold"
                         fill="white"
                         fontFamily="Arial, sans-serif"

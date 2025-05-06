@@ -65,7 +65,7 @@ const Category = () => {
           <div className="row">
             {selectedCards.map((card, index) => (
               <div key={index} className="col-lg-4 col-md-6 mb-4">
-                <div style={{ height: "100%" }} className={`card bg-dark text-white ${styles.card}`}>
+                <div style={{ height: "100%" }} className={`card bg-white text-black ${styles.card}`}>
                   <div className={styles.imageContainer}>
                     <img
                       src={`/blogs/${card.blog_image}`}
@@ -76,7 +76,7 @@ const Category = () => {
                   </div>
                   <div className="card-body text-center">
                     <h5 className="card-title">{card.title}</h5>
-                    <Link href={`/${card.slug}`} className={`bg-orange-600 ${styles.button}`}>
+                    <Link href={`/${card.slug}`} className={` ${styles.button}`}>
                       Read more <span className={styles.arrow}>&rarr;</span>
                     </Link>
                   </div>

@@ -16,14 +16,13 @@ const AboutFirst = () => {
             <div className="col-xl-8 col-lg-8">
               <div className="tp-ab__title-box">
                 <h3
-                  ref={(el) => { if (el) textRefs.current.push(el) }}
+                  ref={(el) => {
+                    if (el) textRefs.current.push(el);
+                  }}
                   className="tp-ab__title tp-split__text tp-split__in-right"
                 >
-                  About the
-                  
-                 Agency <br />
- &amp; 
-Legacy
+                  About the Agency <br />
+                  &amp; Legacy
                 </h3>
               </div>
             </div>
@@ -62,11 +61,7 @@ Legacy
           </div>
         </div>
         <div className="tp-ab__thumb pt-100 text-center">
-          <img
-            decoding="async"
-            src="/about-images/First_Banner.jpg"
-            alt=""
-          />
+          <img decoding="async" src="/about-images/First_Banner.jpg" alt="" />
         </div>
       </section>
     </div>

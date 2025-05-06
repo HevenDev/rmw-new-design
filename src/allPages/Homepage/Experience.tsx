@@ -114,17 +114,17 @@ const Experience = () => {
                       <div className="tp-experience">
                         <div className="tp-ex-contain">
                           <div className="tp-ex-icon"><SiAdobecreativecloud size={40}/></div>
-                          <h2 className="tp-ex-head" style={{color: "#0c0c0c"}}>Creative Strategy</h2>
+                          <h2 className="tp-ex-head" style={{color: "#0c0c0c", textAlign:"center"}}>Creative Strategy</h2>
                         </div>
                         <div className="tp-ex-contain">
                           <div className="tp-ex-icon"><FaGlobe size={40}/></div>
-                          <h2 className="tp-ex-head" style={{color: "#0c0c0c"}}>Digital Marketing</h2>
+                          <h2 className="tp-ex-head" style={{color: "#0c0c0c", textAlign:"center"}}>Digital Marketing</h2>
                         </div>
                         <div className="tp-ex-contain">
                           <div className="tp-ex-icon">
                           <BiAnalyse size={40} />
                           </div>
-                          <h2 className="tp-ex-head" style={{color: "#0c0c0c"}}>Market Analysis</h2>
+                          <h2 className="tp-ex-head" style={{color: "#0c0c0c", textAlign:"center"}}>Market Analysis</h2>
                         </div>
                       </div>
                     </div>

@@ -1,6 +1,4 @@
-
 import styles from "./serviceThirdQuality.module.css";
-
 
 interface CardData {
   title: string;
@@ -8,14 +6,15 @@ interface CardData {
   image_url?: string;
 }
 
-
 interface ServiceThirdQualityProps {
   cardData: CardData[];
   para: string | null;
 }
 
-const ServiceThirdQuality: React.FC<ServiceThirdQualityProps> = ({ cardData, para }) => {
-
+const ServiceThirdQuality: React.FC<ServiceThirdQualityProps> = ({
+  cardData,
+  para,
+}) => {
   return (
     <div
       className="elementor-element elementor-element-3205e74 e-con-full e-flex e-con e-parent e-lazyloaded"
@@ -34,35 +33,28 @@ const ServiceThirdQuality: React.FC<ServiceThirdQualityProps> = ({ cardData, par
           data-widget_type="services.default"
         >
           <div className="elementor-widget-container">
-            <div className="tp-hero__3-content">
-              <div className="row align-items-center">
-                <div className="">
-                  <div
-                    className="tp-hero__3-dsc wow tpfadeUp animated"
-                    data-wow-duration=".9s"
-                    data-wow-delay=".5s"
-                    style={{
-                      visibility: "visible",
-                      animationDuration: "0.9s",
-                      animationDelay: "0.5s",
-                      margin: "auto"
-                    }}
-                  >
-                    <p>{para}</p>
-                  </div>
-                </div>
-              </div>
+            <div className="">
+              <p
+                style={{
+                  width: "90%",
+                  margin: "auto",
+                  textAlign: "center",
+                  fontSize: "clamp(13.5px, 22px, 1.2vw)",
+                  lineHeight: "1.25rem",
+                }}
+              >
+                {para}
+              </p>
             </div>
             <section className="tp-service__3-area fix tp-services__3-style p-relative pt-100 tp-bg-className">
               <div className="container">
-                <div className="tp-services__2-title-wrap mb-40 ">
+                <div className="tp-services__2-title-wrap ">
                   <div className="row align-items-center">
                     <div className="">
                       <div className="tp-services__3-title-box">
                         <div className="tp-section-title-wrap">
                           <h3
                             className="tp-section-title"
-                            style={{ width: "50%" }}
                           >
                             Committed For Deliver <span>Top</span> Quality
                             <span>Services</span>
@@ -73,7 +65,9 @@ const ServiceThirdQuality: React.FC<ServiceThirdQualityProps> = ({ cardData, par
                         {cardData.map((card, index) => (
                           <div
                             key={card.title}
-                            className={`${styles.serviceCard} ${index % 2 === 0 ? styles.row : styles.rowReverse}`}
+                            className={`${styles.serviceCard} ${
+                              index % 2 === 0 ? styles.row : styles.rowReverse
+                            }`}
                           >
                             <img
                               src={`/${card.image_url}`}
@@ -96,10 +90,17 @@ const ServiceThirdQuality: React.FC<ServiceThirdQualityProps> = ({ cardData, par
                                 textAlign: "center",
                               }}
                             >
-                              <h3 style={{ color: "#fddf82", marginBottom: "10px" }}>
+                              <h3
+                                style={{
+                                  color: "#fddf82",
+                                  marginBottom: "10px",
+                                }}
+                              >
                                 {card.title}
                               </h3>
-                              <p style={{ color: "black" }}>{card.description}</p>
+                              <p style={{ color: "black" }}>
+                                {card.description}
+                              </p>
                             </div>
                           </div>
                         ))}

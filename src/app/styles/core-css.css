@@ -3620,11 +3620,7 @@ input.search-input-field {
   }
 }
 
-@media (max-width: 575px) {
-  .tp-header__style-1 {
-    padding: 10px 30px 10px 30px;
-  }
-}
+
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
   only screen and (min-width: 576px) and (max-width: 767px) {
@@ -7056,7 +7052,7 @@ input.search-input-field {
   (max-width: 575px) {
   .tp-hero__social {
     top: auto;
-    bottom: 8%;
+    bottom: 5%;
     left: 5%;
     transform: rotate(0deg);
   }
@@ -9785,21 +9781,9 @@ input.search-input-field {
   padding-top: 30px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .tp-testi__2-plr {
-    padding-bottom: 40px;
-  }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .tp-testi__2-plr {
-    padding-bottom: 57px;
-  }
-}
-
 @media (max-width: 575px) {
   .tp-testi__2-plr {
-    padding-bottom: 70px;
+    padding-bottom: 20px;
   }
 }
 
@@ -11208,7 +11192,7 @@ input.search-input-field {
   only screen and (min-width: 768px) and (max-width: 991px),
   (max-width: 575px) {
   .tp-funfact__number {
-    font-size: 70px;
+    font-size: 45px;
   }
 }
 
@@ -11306,7 +11290,7 @@ input.search-input-field {
 
 .tp-funfact__3 .tp-funfact__number {
   font-weight: 800;
-  font-size: 70px;
+  font-size: 50px;
   -webkit-text-stroke: 1px var(--tp-common-black);
 }
 
@@ -11514,7 +11498,7 @@ input.search-input-field {
 }
 
 .tp-project__icon span {
-  color: var(--tp-common-black);
+  color: #fff;
 }
 
 .tp-project__content {
@@ -11556,7 +11540,7 @@ input.search-input-field {
   font-weight: 500;
   font-size: 26px;
   letter-spacing: -0.03em;
-  color: var(--tp-common-black);
+  color: #fff;
   transition: 0.3s;
 }
 
@@ -11574,14 +11558,14 @@ input.search-input-field {
 }
 
 .tp-project__title:hover {
-  color: var(--tp-theme-primary);
+  color: #fff;
 }
 
 .tp-project__categories {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: var(--tp-common-black);
+  color: #fff;
 }
 
 .tp-project__action {
@@ -12180,7 +12164,6 @@ input.search-input-field {
 .tp-awards__3-list-box ul li {
   position: relative;
   list-style: none;
-  padding-left: 40px;
   display: inline-block;
   text-transform: capitalize;
   color: var(--tp-common-black);
@@ -13965,13 +13948,13 @@ div.tp-awards__5-avater-thumb img {
 
 .tp-text__2-text {
   font-weight: 600;
-  font-size: 70px;
+  font-size: 40px;
   color: var(--tp-common-black);
 }
 
 .tp-text__2-text span {
   display: inline-block;
-  margin: 0px 37px 0 30px;
+  margin: 0px 30px 0 30px;
   transform: translateY(-6px);
 }
 
@@ -15859,14 +15842,12 @@ div.tp-awards__5-avater-thumb img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 4%;
   }
   .about_our_work-mp{
     margin-left: 0;
     padding-left: 0;
   }
-}
-
-@media (max-width: 555px) {
-  
+  .tp-text__9-text, .tp-text__8-text, .tp-text__4-text{
+    font-size: 40px;
+  }
 }

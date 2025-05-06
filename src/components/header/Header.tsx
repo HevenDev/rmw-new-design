@@ -83,7 +83,7 @@ const Header = () => {
     <header>
       <div
         id="header-sticky"
-        className={`tp-header-top-area tp-header__style-1 tp-header__transparent tp-header__border pt-0 pb-0 pr-160 pl-160 ${styles.headerBackground}`}
+        className={`tp-header-top-area tp-header__style-1 tp-header__transparent tp-header__border ${styles.headerBackground}`}
         style={{
           background: "white",
           borderBottom:"white"
@@ -95,9 +95,8 @@ const Header = () => {
               <div
                 className="tp-main__logo"
                 style={{
-                  background: "#10153f",
-                  height: "100px",
                   width: "100px",
+                  padding: "16px 0",
                   display: " flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -105,10 +104,10 @@ const Header = () => {
               >
                 <Link className="main-logo" href="/">
                   <img
-                    src="/rmw_logo_gold.png"
+                    src="/logo-brown.png"
                     alt=""
                     className="sm-size"
-                    style={{ height: "60px"}}
+                    style={{ height: "50px"}}
                   />
                 </Link>
               </div>
@@ -366,7 +365,7 @@ const Header = () => {
             >
               <img
                 style={{ height: "50px" }}
-                src="/rmw_logo_gold.png"
+                src="/logo-brown.png"
                 alt="RMW Logo"
               />
               <button
@@ -451,7 +450,7 @@ const Header = () => {
                   display: "flex",
                   justifyContent: "space-evenly",
                   fontSize: "20px",
-                  color: "#fddf82",
+                  color: "#001240",
                 }}
               >
                 <li>

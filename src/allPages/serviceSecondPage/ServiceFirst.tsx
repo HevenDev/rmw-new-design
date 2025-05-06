@@ -26,13 +26,13 @@ const ServiceFirst = ({ heading }: ServiceFirstProps) => {
                   <div
                     style={{
                       width: "100%",
-                      height: "350px",
+                      height: "auto",
                       position: "relative",
                       textAlign: "center",
                     }}
                   >
                     <svg
-                      viewBox="0 0 800 200"
+                      viewBox="0 0 800 250"
                       style={{ width: "100%", height: "100%" }}
                     >
                       <defs>

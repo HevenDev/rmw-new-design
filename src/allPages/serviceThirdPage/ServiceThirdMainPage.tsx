@@ -3,14 +3,11 @@
 import Footer from '@/components/footer/Footer'
 import React, { useEffect, useState } from 'react'
 import ServiceThirdHero from './ServiceThirdHero'
-import SwiperHome from '../Homepage/SwiperHome'
 import ServiceThirdQuality from './ServiceThirdQuality'
 import ServiceThirdAward from './ServiceThirdAward'
 import ServiceThirdColorMarque from './ServiceThirdColorMarque'
-import ServiceThirdFeatureMarque from './ServiceThirdFeatureMarque'
 import ServiceMainTestimonial from '../serviceMainpage/ServiceMainTestimonial'
 import ProjectSwiper from '../Homepage/ProjectSwiper'
-import ServiceThirdNumber from './ServiceThirdNumber'
 import Form from '../Contactpage/Form'
 import ServiceThirdSlowMarque from './ServiceThirdSlowMarque'
 import ServiceEndTag from '@/components/endTag/serviceEndTag'
@@ -63,14 +60,12 @@ const ServiceThirdMainPage = () => {
   return (
     <>
        <ServiceThirdHero heading={head}  />
-       <SwiperHome />
+       {/* <SwiperHome /> */}
        <ServiceThirdQuality cardData={cardData} para={para} />
        <ServiceThirdColorMarque />
        <ServiceThirdAward />
-       <ServiceThirdFeatureMarque />
        <ServiceMainTestimonial />
        <ProjectSwiper />
-       <ServiceThirdNumber />
        <Form />
        <ServiceThirdSlowMarque />
        <ServiceEndTag endtag={endTag} />

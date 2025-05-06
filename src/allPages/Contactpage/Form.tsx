@@ -14,7 +14,7 @@ const Form = () => {
 <>
 
 
-    <div className="tp-contact__area pt-130 pb-90">
+    <div className="tp-contact__area pt-30 pb-30">
       <div className="container">
         <div className="row">
           <div className="col-xl-6 col-lg-6" style={{padding:"2rem"}}>

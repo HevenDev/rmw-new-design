@@ -56,7 +56,7 @@ const AboutAward = () => {
                 </div>
               </div>
               <div className="col-xl-7">
-                <div className="tp-awards__5-conftent ml-60 justify-center">
+                <div className="tp-awards__5-conftent justify-center">
                   <div className="tp-awards__5-title-box mb-70">
                     <h3
                       className="tp-section-title tp-split__text tp-split__in-right"
@@ -101,7 +101,7 @@ const AboutAward = () => {
                   </div>
                   <div className="tp-awards__5-funfact-box mb-80 p-relative d-sm-flex align-items-center justify-content-between">
                     <div className="tp-awards__5-funfact-item text-center">
-                      <p className="text-white">Satisfied Clients</p>
+                      <p className="text-black">Satisfied Clients</p>
                       <h3 className="tp-awards__5-funfact-text">
                         <b
                           className="purecounter"
@@ -114,7 +114,7 @@ const AboutAward = () => {
                       </h3>
                     </div>
                     <div className="tp-awards__5-funfact-item text-center">
-                      <p className="text-white">Service Catagories</p>
+                      <p className="text-black">Service Catagories</p>
                       <h3 className="tp-awards__5-funfact-text">
                         <b
                           className="purecounter"
@@ -127,7 +127,7 @@ const AboutAward = () => {
                       </h3>
                     </div>
                     <div className="tp-awards__5-funfact-item text-center">
-                      <p className="text-white">Awward Win</p>
+                      <p className="text-black">Awward Win</p>
                       <h3 className="tp-awards__5-funfact-text">
                         <b
                           className="purecounter"

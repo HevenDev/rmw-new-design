@@ -60,6 +60,7 @@ const ServiceThirdHero = ({ heading }: headingProp) => {
                     display: "block",
                     pointerEvents: "none",
                     userSelect: "none",
+                    marginTop:"82px"
                   }}
                 />
               </div>
@@ -68,17 +69,17 @@ const ServiceThirdHero = ({ heading }: headingProp) => {
                 <div className="container">
                   <div className="row align-items-center">
                     <div className="col-xl-12">
-                      <div className="tp-hero__3-title-box mb-55 p-relative">
+                      <div className="tp-hero__3-title-box p-relative">
                         <div
                           style={{
                             width: "100%",
-                            height: "500px",
+                            height: "auto",
                             position: "relative",
                             textAlign: "center",
                           }}
                         >
                           <svg
-                            viewBox="0 0 800 500"
+                            viewBox="0 0 800 400"
                             style={{ width: "100%", height: "100%" }}
                           >
                             <defs>
@@ -94,7 +95,7 @@ const ServiceThirdHero = ({ heading }: headingProp) => {
                                   <text
                                     key={index}
                                     x="50%"
-                                    y={`${30 + index * 18}%`} // Adjust spacing between lines
+                                    y={`${30 + index * 22}%`} // Adjust spacing between lines
                                     dominantBaseline="middle"
                                     textAnchor="middle"
                                     fontSize="100"

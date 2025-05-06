@@ -54,7 +54,9 @@ const ProjectCards = () => {
     <div className="container my-5">
       {loading ? (
         <div className="text-center">
-          <p className="text-white text-lg"><Loader /></p>
+          <p className="text-white text-lg">
+            <Loader />
+          </p>
         </div>
       ) : error ? (
         <div className="text-center text-red-500">
@@ -65,18 +67,24 @@ const ProjectCards = () => {
           <div className="row">
             {selectedCards.map((card, index) => (
               <div key={index} className="col-lg-4 col-md-6 mb-4">
-                <div style={{height:"100%"}} className={`card bg-dark text-white ${styles.card}`}>
+                <div
+                  style={{ height: "100%" }}
+                  className={`card bg-white text-black ${styles.card}`}
+                >
                   <div className={styles.imageContainer}>
                     <img
                       src={`/blogs/${card.blog_image}`}
-                      style={{height: "200px", objectFit: "cover"}}
+                      style={{ height: "200px", objectFit: "cover" }}
                       className={`card-img-top ${styles.image}`}
                       alt={card.title}
                     />
                   </div>
                   <div className="card-body text-center">
                     <h5 className="card-title">{card.title}</h5>
-                    <Link href={card.slug} className={`bg-orange-600 ${styles.button}`}>
+                    <Link
+                      href={card.slug}
+                      className={`bg-[#6ea2ee] ${styles.button}`}
+                    >
                       Case Studies <span className={styles.arrow}>&rarr;</span>
                     </Link>
                   </div>
@@ -105,7 +113,14 @@ const ProjectCards = () => {
               ⬅ Prev
             </button>
 
-            <span style={{ fontSize: "16px", padding: "5px 15px", color: "#0c0c0c", borderRadius: "20px" }}>
+            <span
+              style={{
+                fontSize: "16px",
+                padding: "5px 15px",
+                color: "#0c0c0c",
+                borderRadius: "20px",
+              }}
+            >
               Page {currentPage} of {totalPages}
             </span>
 
