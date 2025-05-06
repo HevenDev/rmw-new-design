@@ -1,9 +1,8 @@
-import Link from "next/link";
+// import Link from "next/link";
 type headingProp = {
   heading: string | null;
-  para: string | null;
 };
-const ServiceThirdHero = ({ heading, para }: headingProp) => {
+const ServiceThirdHero = ({ heading }: headingProp) => {
   const lines = heading?.split(" ");
   return (
     <div
@@ -46,20 +45,23 @@ const ServiceThirdHero = ({ heading, para }: headingProp) => {
                     }
                   }
                 `}</style>
-                <video src="/videos/third_layer_video.mov"
+                <video
+                  src="/videos/third_layer_video.mov"
                   autoPlay
                   loop
                   muted
                   playsInline
                   controls={false}
-                  controlsList="nodownload" style={{
+                  controlsList="nodownload"
+                  style={{
                     width: "100%",
                     height: "auto",
                     objectFit: "cover",
                     display: "block",
                     pointerEvents: "none",
                     userSelect: "none",
-                  }} />
+                  }}
+                />
               </div>
 
               <div className="tp-hero__3-wrap">
@@ -67,11 +69,27 @@ const ServiceThirdHero = ({ heading, para }: headingProp) => {
                   <div className="row align-items-center">
                     <div className="col-xl-12">
                       <div className="tp-hero__3-title-box mb-55 p-relative">
-                        <div style={{ width: "100%", height: "300px", position: "relative", textAlign: "center" }}>
-                          <svg viewBox="0 0 800 200" style={{ width: "100%", height: "100%" }}>
+                        <div
+                          style={{
+                            width: "100%",
+                            height: "300px",
+                            position: "relative",
+                            textAlign: "center",
+                          }}
+                        >
+                          <svg
+                            viewBox="0 0 800 200"
+                            style={{ width: "100%", height: "100%" }}
+                          >
                             <defs>
                               <mask id="video-text-mask">
-                                <rect x="0" y="0" width="100%" height="100%" fill="black" />
+                                <rect
+                                  x="0"
+                                  y="0"
+                                  width="100%"
+                                  height="100%"
+                                  fill="black"
+                                />
                                 {lines?.map((line, index) => (
                                   <text
                                     key={index}
@@ -89,7 +107,13 @@ const ServiceThirdHero = ({ heading, para }: headingProp) => {
                                 ))}
                               </mask>
                             </defs>
-                            <foreignObject x="0" y="0" width="100%" height="100%" mask="url(#video-text-mask)">
+                            <foreignObject
+                              x="0"
+                              y="0"
+                              width="100%"
+                              height="100%"
+                              mask="url(#video-text-mask)"
+                            >
                               <video
                                 src="/videos/bg_pattern.mp4"
                                 autoPlay
@@ -98,7 +122,7 @@ const ServiceThirdHero = ({ heading, para }: headingProp) => {
                                 playsInline
                                 style={{
                                   width: "100%",
-                                  height: "100%",
+                                  height: "auto",
                                   objectFit: "cover",
                                   display: "block",
                                 }}
@@ -107,24 +131,7 @@ const ServiceThirdHero = ({ heading, para }: headingProp) => {
                           </svg>
                         </div>
                       </div>
-                      <div className="tp-hero__3-content">
-                        <div className="row align-items-center">
-                          <div className="col-xl-5 col-lg-5 d-md-none d-lg-block">
-                            <div
-                              className="tp-hero__3-dsc wow tpfadeUp animated"
-                              data-wow-duration=".9s"
-                              data-wow-delay=".5s"
-                              style={{
-                                visibility: "visible",
-                                animationDuration: "0.9s",
-                                animationDelay: "0.5s",
-                              }}
-                            >
-                              <p>{para}</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                     
                     </div>
                   </div>
                 </div>

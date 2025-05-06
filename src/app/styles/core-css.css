@@ -7729,10 +7729,12 @@ input.search-input-field {
 
 .tp-hero__3-dsc p {
   font-size: 16px;
-  line-height: 2;
+  line-height: 1.7;
   margin: 0;
-  color: var(--tp-common-black);
+  color: #000000ba;
   text-align: center;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {

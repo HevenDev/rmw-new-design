@@ -62,9 +62,9 @@ const ServiceThirdMainPage = () => {
   if (loading) return <Loader />;
   return (
     <>
-       <ServiceThirdHero heading={head} para={para} />
+       <ServiceThirdHero heading={head}  />
        <SwiperHome />
-       <ServiceThirdQuality cardData={cardData} />
+       <ServiceThirdQuality cardData={cardData} para={para} />
        <ServiceThirdColorMarque />
        <ServiceThirdAward />
        <ServiceThirdFeatureMarque />
