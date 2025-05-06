@@ -92,14 +92,14 @@ const Home = () => {
                         <div
                           style={{
                             width: "100%",
-                            height: "410px",
+                            height: "350px",
                             position: "relative",
                             textAlign: "start",
                           }}
                         >
                           <svg
-                            viewBox="0 0 800 200"
-                            style={{ width: "100%", height: "350px" }}
+                            viewBox="0 0 800 350"
+                            style={{ width: "100%", height: "100%" }}
                           >
                             <defs>
                               <mask id="video-text-mask">
@@ -107,7 +107,7 @@ const Home = () => {
                                   x="0"
                                   y="0"
                                   width="100%"
-                                  height="410px"
+                                  height="100%"
                                   fill="black"
                                 />
                                 {lines?.map((line, index) => (
@@ -131,7 +131,7 @@ const Home = () => {
                               x="0"
                               y="0"
                               width="100%"
-                              height="410px"
+                              height="100%"
                               mask="url(#video-text-mask)"
                             >
                               <video
@@ -142,7 +142,7 @@ const Home = () => {
                                 playsInline
                                 style={{
                                   width: "100%",
-                                  height: "410px",
+                                  height: "100%",
                                   objectFit: "cover",
                                   display: "block",
                                 }}
@@ -150,34 +150,6 @@ const Home = () => {
                             </foreignObject>
                           </svg>
                         </div>
-
-                        {/* <h3 className="tp-hero__title tp-marketing tp-split__text tp-split__in-right p-relative">
-                          Advertising
-                        </h3>
-                        <h3 className="tp-hero__title tp-marketing tp-split__text tp-split__in-right p-relative">
-                          Branding
-                        </h3>
-                        <h3 className="tp-hero__title tp-marketing tp-split__text tp-split__in-right p-relative">
-                          Communication
-                        </h3> */}
-                        {/* <div className="tp-hero__title-shape">
-                          <span>
-                            <svg
-                              width="349"
-                              height="83"
-                              viewBox="0 0 349 83"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M289.606 6.18644C224.67 -0.493387 79.3469 -4.08379 17.5379 34.9932C-59.7235 83.8393 171.734 85.1324 259.844 77.577C312.563 73.0563 347 61.9956 347 45.9929C347 32.2157 287.201 11.5094 178.975 15.4233"
-                                stroke="currentColor"
-                                strokeWidth="3"
-                                strokeLinecap="round"
-                              />
-                            </svg>
-                          </span>
-                        </div> */}
                       </div>
                       <div className="tp-hero__action d-flex align-items-center">
                         <span>
