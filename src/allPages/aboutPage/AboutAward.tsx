@@ -4,22 +4,25 @@ import React from "react";
 
 const AboutAward = () => {
   return (
+    
     <div>
       <div className="elementor-widget-container">
-        <section className="tp-awards__5-area fix tp-awards__5 pt-35 ">
-          <div className="container">
+        <section className="tp-awards__5-area fix tp-awards__5 pt-35 about_our_work-mp">
+          <div className="container "
+          
+          >
             <div className="row">
-              <div className="col-xl-5">
+              <div className="col-xl-5 about_our_work">
                 <div className="tp-awards__5-thumb-box p-relative">
                   <div className="tp-awards__5-thumb">
                     <img
                       decoding="async"
-                      src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/awards-in-1.png"
+                      src="/about-images/Our_reward.jpg"
                       style={{height:"450px"}}
                       alt=""
                     />
                   </div>
-                  <div className="tp-services__4-shape-box  d-sm-block">
+                  {/* <div className="tp-services__4-shape-box  d-sm-block">
                     <div className="tp-services__4-shape p-relative">
                       <span>
                         <svg
@@ -49,7 +52,7 @@ const AboutAward = () => {
                         <p className="text-white"> Services </p>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="col-xl-7">

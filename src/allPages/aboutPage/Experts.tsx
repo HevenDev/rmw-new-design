@@ -20,7 +20,7 @@ const Experts = () => {
               }}
               className="tp-section-title-pre mb-25 tp-split__text tp-split__in-right"
             >
-              Expert team
+             
             </span>
             <div className="tp-section-title-wrap mb-20 d-sm-flex align-items-center justify-content-between">
               <h3
@@ -29,10 +29,7 @@ const Experts = () => {
                 }}
                 className="tp-section-title tp-split__text tp-split__in-right"
               >
-                Expert Members <br />
-                <span>
-                  <i>Behind Us</i>
-                </span>
+                Our Masterminds
               </h3>
             </div>
           </div>

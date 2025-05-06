@@ -3173,7 +3173,7 @@ xclip
   border-bottom: 1px solid var(--tp-border-primary);
 }
 
-.tp-section-title-pre::after {
+/* .tp-section-title-pre::after {
   position: absolute;
   width: 1px;
   height: 42px;
@@ -3181,7 +3181,7 @@ xclip
   right: 0;
   content: "";
   background-color: #353434;
-}
+} */
 
 .tp-section-title-pre.pruple {
   font-weight: 600;
@@ -8804,7 +8804,9 @@ input.search-input-field {
 }
 
 .tp-ab__thumb img {
-  width: 100%;
+    width: 100vw;
+    height: 53vh;
+    object-fit: cover;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
@@ -15847,3 +15849,19 @@ div.tp-awards__5-avater-thumb img {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+
+/* self added css*/
+@media (max-width: 767px) {
+  .about_our_work{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4%;
+  }
+  .about_our_work-mp{
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+
