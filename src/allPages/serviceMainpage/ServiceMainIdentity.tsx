@@ -23,7 +23,9 @@ const ServiceMainIdentity = () => {
           data-widget_type="about.default"
         >
           <div className="elementor-widget-container">
-            <section className="tp-about-area pt-90 pb-145">
+            <section className="tp-about-area pt-90" style={{
+            paddingTop:"50px"
+            }}>
               <div className="container">
                 <div className="row">
                   <div className="col-xl-8 col-lg-8">

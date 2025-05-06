@@ -15,9 +15,10 @@ import ProjectNumbers from '../projectsPage/ProjectNumbers'
 // import ServiceMainArticle from './ServiceMainArticle'
 import ServiceMainTalk from './ServiceMainTalk'
 import ServiceMainTestimonial from './ServiceMainTestimonial'
-import ServiceMainTeam from './ServiceMainTeam'
-import ServiceMainWorkSwiper from './ServiceMainWorkSwiper'
+// import ServiceMainTeam from './ServiceMainTeam'
+// import ServiceMainWorkSwiper from './ServiceMainWorkSwiper'
 import Awards from '../Homepage/Awards'
+import Experts from "../aboutPage/Experts";
 
 const ServiceMainPage = () => {
   
@@ -29,11 +30,11 @@ const ServiceMainPage = () => {
       <ServiceMainOurService/>
       <ServiceMainAbout/>
       <SwiperHome/>
-      <ServiceMainWorkSwiper />
+      {/* <ServiceMainWorkSwiper /> */}
       <ProjectMarque />
       <ProjectNumbers />
       <Awards/>
-      <ServiceMainTeam/>
+      <Experts/>
       <ServiceMainTestimonial />
       <ServiceMainTalk />
       <Footer/>  

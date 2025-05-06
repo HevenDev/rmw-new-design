@@ -61,10 +61,10 @@ Legacy
             </div>
           </div>
         </div>
-        <div className="tp-ab__thumb pt-100 pl-75 pr-75 text-center">
+        <div className="tp-ab__thumb pt-100 text-center">
           <img
             decoding="async"
-            src="https://ritzmediaworld.com/webroot/images/gallery/17e24618-1ebc-dd6c-1887-291bde275d77_1460_550.webp"
+            src="/about-images/First_Banner.jpg"
             alt=""
           />
         </div>

@@ -63,7 +63,7 @@
 .sidebarLogo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 2px;
   margin-bottom: 20px;
 }
 
@@ -172,10 +172,9 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 10px;
   padding-left: 10px;
   font-size: 16px;
-  line-height: 40px;
+  line-height: 35px;
 }
 
 @media (min-width: 992px) {
@@ -371,7 +370,6 @@
 .dropdown {
   position: relative;
   cursor: pointer;
-  padding: 10px;
 }
 
 /* Dropdown Toggle */
@@ -401,7 +399,7 @@
 
 /* When Dropdown is Open */
 .submenu.show {
-  max-height: 200px; /* Adjust if needed */
+  max-height: 400px; /* Adjust if needed */
   opacity: 1;
   transform: translateY(0);
 }
@@ -431,3 +429,29 @@
   color: #fddf82;
 }
 
+/* Make full height sidebar scrollable */
+.mobileMenu {
+  height: 100vh;
+  overflow-y: auto;
+  padding-bottom: 2rem;
+}
+
+/* Optional: Add smooth scroll style */
+.mobileMenu::-webkit-scrollbar {
+  width: 6px;
+}
+.mobileMenu::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+/* Smooth dropdown with max-height transition */
+.submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.show {
+  max-height: 1000px; /* Large enough to show all items */
+}

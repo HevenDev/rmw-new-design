@@ -53,7 +53,7 @@ const ServiceMainHero = () => {
                   <div className="row align-items-center">
                     <div className="col-xl-8 col-lg-7">
                       <div className="tp-hero__2-title-box mb-55 p-relative">
-                        <span className="tp-hero__subtitle text-white mb-30">
+                        <span className="tp-hero__subtitle text-blue mb-30">
                         Services Tailored to Transform Your Brand from 
                         </span>
                         <h3
@@ -87,7 +87,7 @@ const ServiceMainHero = () => {
                               >
                                 <path
                                   d="M1.99996 26.5469L29.4548 7.97636M6.73828 2L31.2851 6.73832L26.5468 31.2852"
-                                  stroke="white"
+                                  stroke="black"
                                   strokeWidth="2"
                                   strokeLinecap="square"
                                   strokeLinejoin="round"
@@ -111,8 +111,9 @@ const ServiceMainHero = () => {
                         <div className="tp-hero__2-circle-shape">
                           <img
                             decoding="async"
-                            src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/website_designing.png"
+                            src="/service-first-images/One_roof_2.png"
                             alt=""
+                            style={{maxHeight:"220px"}}
                           />
                         </div>
                         <div

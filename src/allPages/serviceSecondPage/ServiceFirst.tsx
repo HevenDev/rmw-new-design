@@ -3,6 +3,7 @@
 import React from "react";
 import { useSplitText } from "@/hooks/useSplitText";
 import Link from "next/link";
+import useGSAPHoverEffect from "@/hooks/useGSAPHoverEffect";
 type ServiceFirstProps = {
   heading?: string | null;
   image1?: string | null;
@@ -12,6 +13,7 @@ type ServiceFirstProps = {
 const ServiceFirst = ({ heading }: ServiceFirstProps) => {
   // const textRefs = useSplitText();
   const lines = heading?.split(" ");
+  useGSAPHoverEffect();
 
   return (
     <div className="elementor-widget-container">

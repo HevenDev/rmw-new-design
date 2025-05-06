@@ -86,6 +86,7 @@ const Header = () => {
         className={`tp-header-top-area tp-header__style-1 tp-header__transparent tp-header__border pt-0 pb-0 pr-160 pl-160 ${styles.headerBackground}`}
         style={{
           background: "white",
+          borderBottom:"white"
         }}
       >
         <div className="container-fluid">
@@ -106,7 +107,8 @@ const Header = () => {
                   <img
                     src="/rmw_logo_gold.png"
                     alt=""
-                    style={{ height: "60px" }}
+                    className="sm-size"
+                    style={{ height: "60px"}}
                   />
                 </Link>
               </div>
@@ -167,7 +169,6 @@ const Header = () => {
                                         >
                                           {item.name}
                                         </Link>
-
                                         {/* Submenu */}
                                         <ul
                                           className="dropdown-menu position-absolute shadow"
@@ -405,43 +406,41 @@ const Header = () => {
                     }`}
                   >
                     <li style={{ paddingLeft: "20px" }}>
-                      <Link href="/service">Digital Marketing</Link>
+                      <Link href="/services/best-digital-marketing-agency">Digital Marketing</Link>
                     </li>
                     <li style={{ paddingLeft: "20px" }}>
-                      <Link href="/service/details">Creative Services</Link>
+                      <Link href="/services/leading-creative-agency-india">Creative Services</Link>
                     </li>
                     <li style={{ paddingLeft: "20px" }}>
-                      <Link href="/service">Print Marketing</Link>
+                      <Link href="/services/best-print-advertising-agency">Print Marketing</Link>
                     </li>
                     <li style={{ paddingLeft: "20px" }}>
-                      <Link href="/service">Radio Marketing</Link>
+                      <Link href="/services/top-radio-ad-agency">Radio Marketing</Link>
                     </li>
                     <li style={{ paddingLeft: "20px" }}>
-                      <Link href="/service">Service</Link>
+                      <Link href="/services/leading-content-marketing-agency">Content Marketing</Link>
                     </li>
                     <li style={{ paddingLeft: "20px" }}>
-                      <Link href="/service">Service</Link>
+                      <Link href="/services/best-website-designing-company">Web Development</Link>
                     </li>
                     <li style={{ paddingLeft: "20px" }}>
-                      <Link href="/service">Service</Link>
+                      <Link href="/services/celebrity-endorsement-agency-india">Celebrity Endorsements</Link>
                     </li>
                     <li style={{ paddingLeft: "20px" }}>
-                      <Link href="/service">Service</Link>
+                      <Link href="/services/influencer-marketing-agency-in-india">Influencer Marketing</Link>
                     </li>
-                    <li style={{ paddingLeft: "20px" }}>
-                      <Link href="/service">Service</Link>
-                    </li>
+                    
                   </ul>
                 </li>
 
                 <li>
-                  <Link href="/our-work/">Our Work</Link>
+                  <Link href="/our-work">Our Work</Link>
                 </li>
                 <li>
                   <Link href="/blog">Blog</Link>
                 </li>
                 <li>
-                  <Link href="/contact/">Contact us</Link>
+                  <Link href="/contact">Contact us</Link>
                 </li>
               </ul>
             </nav>

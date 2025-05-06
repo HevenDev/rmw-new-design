@@ -30,6 +30,7 @@ const ServiceMainTestimonial = () => {
                   decoding="async"
                   src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/testi-2-1-shape.png"
                   alt=""
+                  
                 />
               </div>
 
@@ -38,6 +39,7 @@ const ServiceMainTestimonial = () => {
                   decoding="async"
                   src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/testi-2-2-shape.png"
                   alt=""
+                  style={{filter: 'sepia(10%) saturate(120%) brightness(105%) hue-rotate(185deg)'}}
                 />
               </div>
 

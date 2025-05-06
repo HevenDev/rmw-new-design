@@ -8808,8 +8808,6 @@ input.search-input-field {
 
 .tp-ab__thumb img {
     width: 100vw;
-    height: 53vh;
-    object-fit: cover;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
@@ -8821,7 +8819,9 @@ input.search-input-field {
 }
 
 .tp-ab__thumb-wrap img {
-  width: 100%;
+     width: 100vw;
+    height: 53vh;
+    object-fit: cover;
 }
 
 /*----------------------------------------*/
@@ -15868,3 +15868,6 @@ div.tp-awards__5-avater-thumb img {
   }
 }
 
+@media (max-width: 555px) {
+  
+}
