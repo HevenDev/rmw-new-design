@@ -56,7 +56,7 @@ const ServiceThirdHero = ({ heading }: headingProp) => {
                   style={{
                     width: "100%",
                     height: "auto",
-                    objectFit: "cover",
+                    objectFit: "contain",
                     display: "block",
                     pointerEvents: "none",
                     userSelect: "none",
@@ -72,13 +72,13 @@ const ServiceThirdHero = ({ heading }: headingProp) => {
                         <div
                           style={{
                             width: "100%",
-                            height: "300px",
+                            height: "500px",
                             position: "relative",
                             textAlign: "center",
                           }}
                         >
                           <svg
-                            viewBox="0 0 800 200"
+                            viewBox="0 0 800 500"
                             style={{ width: "100%", height: "100%" }}
                           >
                             <defs>
@@ -94,10 +94,10 @@ const ServiceThirdHero = ({ heading }: headingProp) => {
                                   <text
                                     key={index}
                                     x="50%"
-                                    y={`${20 + index * 30}%`} // Adjust spacing between lines
+                                    y={`${30 + index * 18}%`} // Adjust spacing between lines
                                     dominantBaseline="middle"
                                     textAnchor="middle"
-                                    fontSize="70"
+                                    fontSize="100"
                                     fontWeight="bold"
                                     fill="white"
                                     fontFamily="Arial, sans-serif"

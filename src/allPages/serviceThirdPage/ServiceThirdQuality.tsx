@@ -34,25 +34,26 @@ const ServiceThirdQuality: React.FC<ServiceThirdQualityProps> = ({ cardData, par
           data-widget_type="services.default"
         >
           <div className="elementor-widget-container">
-          <div className="tp-hero__3-content">
-                        <div className="row align-items-center">
-                          <div className="col-xl-5 col-lg-5 d-md-none d-lg-block">
-                            <div
-                              className="tp-hero__3-dsc wow tpfadeUp animated"
-                              data-wow-duration=".9s"
-                              data-wow-delay=".5s"
-                              style={{
-                                visibility: "visible",
-                                animationDuration: "0.9s",
-                                animationDelay: "0.5s",
-                              }}
-                            >
-                              <p>{para}</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-            <section className="tp-service__3-area fix tp-services__3-style p-relative pt-120 tp-bg-className">
+            <div className="tp-hero__3-content">
+              <div className="row align-items-center">
+                <div className="">
+                  <div
+                    className="tp-hero__3-dsc wow tpfadeUp animated"
+                    data-wow-duration=".9s"
+                    data-wow-delay=".5s"
+                    style={{
+                      visibility: "visible",
+                      animationDuration: "0.9s",
+                      animationDelay: "0.5s",
+                      margin: "auto"
+                    }}
+                  >
+                    <p>{para}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <section className="tp-service__3-area fix tp-services__3-style p-relative pt-100 tp-bg-className">
               <div className="container">
                 <div className="tp-services__2-title-wrap mb-40 ">
                   <div className="row align-items-center">
@@ -76,7 +77,7 @@ const ServiceThirdQuality: React.FC<ServiceThirdQualityProps> = ({ cardData, par
                           >
                             <img
                               src={`/${card.image_url}`}
-  alt={card.title}
+                              alt={card.title}
                               style={{
                                 width: "100%",
                                 maxWidth: "470px",
@@ -106,7 +107,7 @@ const ServiceThirdQuality: React.FC<ServiceThirdQualityProps> = ({ cardData, par
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="services"></div>
               </div>
             </section>

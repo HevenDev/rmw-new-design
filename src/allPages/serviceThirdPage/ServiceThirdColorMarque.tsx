@@ -26,20 +26,20 @@ const ServiceThirdColorMarque = () => {
         >
           <div className="elementor-widget-container">
             <section className="tp-text-slider__4-area fix pt-50 pb-20">
-              <div className="tp-text__slider-4-wrap p-relative">
+              <div className="tp-text__slider-4-wrap p-relative" style={{ backgroundColor: "#10153f" }}>
                 <div className="swiper-container tp-text__4-slider-active swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
                   <Swiper
-      loop={true}
-      freeMode={true}
-      slidesPerView="auto"
-      spaceBetween={30}
-      allowTouchMove={false}
-      speed={10000}
-      autoplay={{
-        delay: 1,
-        disableOnInteraction: true,
-      }}
-      modules={[FreeMode, Autoplay]}
+                    loop={true}
+                    freeMode={true}
+                    slidesPerView="auto"
+                    spaceBetween={30}
+                    allowTouchMove={false}
+                    speed={10000}
+                    autoplay={{
+                      delay: 1,
+                      disableOnInteraction: true,
+                    }}
+                    modules={[FreeMode, Autoplay]}
                     className="swiper-wrapper slide-transtion"
                     id="swiper-wrapper-77f5103a8e6d056d"
                     aria-live="off"
@@ -184,7 +184,7 @@ const ServiceThirdColorMarque = () => {
                         </h3>
                       </div>
                     </SwiperSlide>
-                    
+
                   </Swiper>
                   <span
                     className="swiper-notification"
