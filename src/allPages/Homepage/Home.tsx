@@ -33,7 +33,7 @@ const Home = () => {
           <div className="elementor-widget-container">
             <section
               className="tp-hero__area fix tp-hero__space tp-hero__bg p-relative tp-bg-className"
-              // data-background="/assets/homepageImages/RMW_banner_wht.jpg"
+            // data-background="/assets/homepageImages/RMW_banner_wht.jpg"
             >
               <div className="tp-hero__social">
                 <div className="tp-hero__social-content">
