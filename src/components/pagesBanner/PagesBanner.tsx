@@ -100,7 +100,7 @@ const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle }) => {
                     mask="url(#video-text-mask)"
                   >
                     <video
-                      src="/videos/bg_pattern.mp4"
+                      src="/videos/bg_pattern2.mp4"
                       autoPlay
                       loop
                       muted
