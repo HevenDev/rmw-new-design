@@ -31,7 +31,6 @@ const Experience = () => {
             <section className="tp-chooseus__area fix tp-chooseus__1 p-relative tp-bg-class">
               <div
                 className="tp-chooseus__bg-thumb d-none d-xl-block wow avtrix_clip_right"
-                data-background="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/08/chooseus-thumb-1-1.jpg"
                 style={{
                   backgroundImage:
                     "url(/about-images/Team_rmw.jpg)"
@@ -39,7 +38,7 @@ const Experience = () => {
                 data-wow-delay=".3s"
                 data-wow-duration="2.5s"
               >
-                <div className="tp-chooseus__icon">
+                {/* <div className="tp-chooseus__icon">
                   <Link href="/about" rel="" target="">
                     <span>
                       <svg
@@ -59,7 +58,7 @@ const Experience = () => {
                       </svg>
                     </span>
                   </Link>
-                </div>
+                </div> */}
               </div>
               <div className="container">
                 <div className="row">

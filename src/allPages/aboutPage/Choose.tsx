@@ -12,7 +12,6 @@ const Choose = () => {
     <section className="tp-chooseus__area fix tp-chooseus__1 p-relative section-bg tp-bg-className">
       <div
         className="tp-chooseus__bg-thumb d-none d-xl-block wow avtrix_clip_right"
-        data-background="/test-images/test-image.jpg"
         data-wow-delay=".3s"
         data-wow-duration="2.5s"
       >

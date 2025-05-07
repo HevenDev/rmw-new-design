@@ -93,7 +93,7 @@ const Home = () => {
                                   height: "100%",
                                   objectFit: "cover",
                                   display: "block",
-                                }}
+                                }}  
                               />
                             </foreignObject>
                           </svg>
