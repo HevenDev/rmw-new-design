@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 // import Image from "next/image";
+import { usePathname } from "next/navigation";
+
 import { useState, useEffect } from "react";
 import useStickyElements from "@/hooks/useStickyElements";
 import styles from "./Header.module.css"; // Import CSS module
@@ -36,6 +38,15 @@ type ServiceMenuItem = {
 const Header = () => {
   // const [isHovered, setIsHovered] = useState(false);
   const [menuData, setMenuData] = useState<ServiceMenuItem[]>([]);
+
+  const pathname = usePathname();
+
+useEffect(() => {
+  // Close mobile menu on route change
+  setIsMenuOpen(false);
+  setIsServiceDropdownOpen(true); // Optionally reset dropdown too
+}, [pathname]);
+
 
   useEffect(() => {
     const fetchMenu = async () => {
