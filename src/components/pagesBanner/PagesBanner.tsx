@@ -129,65 +129,65 @@ const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle }) => {
                 </svg>
               </div> */}
               <div
-      style={{
-        width: '100%',
-        height: 'auto',
-        position: 'relative',
-        marginTop: '90px',
-        overflow: 'hidden',
-      }}
-    >
-      {/* Video layer */}
-      <video
-        src="/videos/bg_pattern2.mp4"
-        autoPlay
-        loop
-        muted
-        playsInline
-        style={{
-          width: '100%',
-          height: '100%',
-          objectFit: 'cover',
-          display: 'block',
-          WebkitMaskImage: `url(#${headingTitle.replace(/\s+/g, '')}-mask)`,
-          WebkitMaskRepeat: 'no-repeat',
-          WebkitMaskSize: '100% 100%',
-          maskImage: `url(#${headingTitle.replace(/\s+/g, '')}-mask)`,
-          maskRepeat: 'no-repeat',
-          maskSize: '100% 100%',
-        }}
-      />
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  position: 'relative',
+                  marginTop: '90px',
+                  overflow: 'hidden',
+                }}
+              >
+                {/* Video layer */}
+                <video
+                  src="/videos/bg_pattern2.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    display: 'block',
+                    WebkitMaskImage: `url(#${headingTitle.replace(/\s+/g, '')}-mask)`,
+                    WebkitMaskRepeat: 'no-repeat',
+                    WebkitMaskSize: '100% 100%',
+                    maskImage: `url(#${headingTitle.replace(/\s+/g, '')}-mask)`,
+                    maskRepeat: 'no-repeat',
+                    maskSize: '100% 100%',
+                  }}
+                />
 
-      {/* Inline SVG mask definition */}
-      <svg
-        viewBox={viewBox}
-        style={{
-          position: 'absolute',
-          width: 0,
-          height: 0,
-        }}
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <mask
-          id={`${headingTitle.replace(/\s+/g, '')}-mask`}
-          maskUnits="userSpaceOnUse"
-        >
-          <rect width="100%" height="100%" fill="black" />
-          <text
-            x="50%"
-            y="50%"
-            dominantBaseline="middle"
-            textAnchor="middle"
-            fontSize="5rem"
-            fontWeight="bold"
-            fill="white"
-            fontFamily="Arial, sans-serif"
-          >
-            {headingTitle}
-          </text>
-        </mask>
-      </svg>
-    </div>
+                {/* Inline SVG mask definition */}
+                <svg
+                  viewBox={viewBox}
+                  style={{
+                    position: 'absolute',
+                    width: 0,
+                    height: 0,
+                  }}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    id={`${headingTitle.replace(/\s+/g, '')}-mask`}
+                    maskUnits="userSpaceOnUse"
+                  >
+                    <rect width="100%" height="100%" fill="black" />
+                    <text
+                      x="50%"
+                      y="50%"
+                      dominantBaseline="middle"
+                      textAnchor="middle"
+                      fontSize="5rem"
+                      fontWeight="bold"
+                      fill="white"
+                      fontFamily="Arial, sans-serif"
+                    >
+                      {headingTitle}
+                    </text>
+                  </mask>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
