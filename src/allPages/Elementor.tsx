@@ -7,10 +7,10 @@ import Feedback from "./Homepage/Feedback";
 import Home from "./Homepage/Home";
 import Projects from "./Homepage/Projects";
 import ProjectSwiper from "./Homepage/ProjectSwiper";
-import Service from "./Homepage/service";
 import SwiperHome from "./Homepage/SwiperHome";
 // import Team from "./Homepage/Team";
 import Work from "./Homepage/Work";
+import Service from "./Homepage/Service";
 
 const Elementor = () => {
   useEffect(() => {

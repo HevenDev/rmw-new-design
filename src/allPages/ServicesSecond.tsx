@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import SwiperHome from "./Homepage/SwiperHome";
-import Service from "./Homepage/service";
+import Service from "./Homepage/Service";
 import Footer from "@/components/footer/Footer";
 import ServiceFirst from "./serviceSecondPage/ServiceFirst";
 import ServiceImg from "./serviceSecondPage/ServiceImg";
