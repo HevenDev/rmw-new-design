@@ -40,7 +40,7 @@ const ServiceMainAbout = () => {
                       <div className="tp-cta__2-circle"></div>
                       <div className="tp-cta__2-content">
                         <div className="tp-cta__2-text p-relative">
-                          <h3 className="tp-cta__2-title mb-45">
+                          <h3 className="tp-cta__2-title mb-45 text-white">
                             We Build <span>Successful</span> <br />
                             Profitable Products
                           </h3>
@@ -76,7 +76,7 @@ const ServiceMainAbout = () => {
                       ></div>
                       <div className="tp-cta__2-content">
                         <div className="tp-cta__2-text-2 p-relative">
-                          <h3 className="tp-cta__2-title tp-cta-mission">
+                          <h3 className="tp-cta__2-title tp-cta-mission text-white">
                             <span>COMPANY</span> <br />
                             MISSION
                           </h3>

@@ -10,7 +10,7 @@ const page = () => {
     <div>
 
       <div className="body-overlay"></div>
-      <PagesBanner headingTitle={"Blog"} bannerImages={"/bannerImages/Blog_RMW.jpg"} />
+      <PagesBanner headingTitle={"Blog"}/>
 
       <Articles />
 

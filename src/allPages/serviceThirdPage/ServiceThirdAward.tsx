@@ -48,12 +48,11 @@ const ServiceThirdAward = () => {
             <section className="tp-award__3-area fix tp-awards__3-bg-style p-relative">
               <div
                 className="tp-awards__3-thumb-bg mt-85 d-none d-xl-block wow avtrix_clip_up"
-                data-background="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/awards-3-bg-1.jpg"
                 data-wow-delay=".3s"
                 data-wow-duration="2.5s"
                 style={{
                   backgroundImage:
-                    "url(https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/awards-3-bg-1.jpg)",
+                    "url(/about-images/Team_rmw.jpg)",
                   visibility: "visible",
                   animationDuration: "2.5s",
                   animationDelay: "0.3s",

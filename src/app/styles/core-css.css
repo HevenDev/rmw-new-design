@@ -8815,8 +8815,8 @@ input.search-input-field {
 
 .tp-ab__thumb-wrap img {
      width: 100vw;
-    height: 53vh;
-    object-fit: cover;
+    /* height: 53vh; */
+    object-fit: contain;
 }
 
 /*----------------------------------------*/
