@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -17,9 +17,7 @@ const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle }) => {
     return () => window.removeEventListener("resize", updateViewBox);
   }, []);
   return (
-    <section
-      className="breadcrumb__area fix p-relative breadcrumb__plr breadcrumb__overlay breadcrumb__bg"
-    >
+    <section className="breadcrumb__area fix p-relative breadcrumb__plr breadcrumb__overlay breadcrumb__bg">
       {/* <img
           decoding="async"
           src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/12/breadcrumb-bg-1.jpg"
@@ -36,9 +34,7 @@ const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle }) => {
 
 
         />   */}
-      <div className="breadcrumb__shape"
-      >
-
+      <div className="breadcrumb__shape">
         {/* <img
           src={bannerImages}
           alt=""
@@ -63,19 +59,18 @@ const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle }) => {
                     title="Go to Ritz Media World."
                     href="/"
                     className="home"
-                  >
-                  </Link>
+                  ></Link>
                   <meta property="position" content="1" />
                 </span>
               </div>
               {/* <h3 className="breadcrumb__title">{headingTitle}</h3> */}
-              {/* <div
+              <div
                 style={{
                   width: "100%",
                   height: "auto",
                   position: "relative",
                   textAlign: "center",
-                  marginTop:"90px"
+                  marginTop: "90px",
                 }}
               >
                 <svg
@@ -126,66 +121,6 @@ const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle }) => {
                       }}
                     />
                   </foreignObject>
-                </svg>
-              </div> */}
-              <div
-                style={{
-                  width: '100%',
-                  height: 'auto',
-                  position: 'relative',
-                  marginTop: '90px',
-                  overflow: 'hidden',
-                }}
-              >
-                {/* Video layer */}
-                <video
-                  src="/videos/bg_pattern2.mp4"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover',
-                    display: 'block',
-                    WebkitMaskImage: `url(#${headingTitle.replace(/\s+/g, '')}-mask)`,
-                    WebkitMaskRepeat: 'no-repeat',
-                    WebkitMaskSize: '100% 100%',
-                    maskImage: `url(#${headingTitle.replace(/\s+/g, '')}-mask)`,
-                    maskRepeat: 'no-repeat',
-                    maskSize: '100% 100%',
-                  }}
-                />
-
-                {/* Inline SVG mask definition */}
-                <svg
-                  viewBox={viewBox}
-                  style={{
-                    position: 'absolute',
-                    width: 0,
-                    height: 0,
-                  }}
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <mask
-                    id={`${headingTitle.replace(/\s+/g, '')}-mask`}
-                    maskUnits="userSpaceOnUse"
-                  >
-                    <rect width="100%" height="100%" fill="black" />
-                    <text
-                      x="50%"
-                      y="50%"
-                      dominantBaseline="middle"
-                      textAnchor="middle"
-                      fontSize="5rem"
-                      fontWeight="bold"
-                      fill="white"
-                      fontFamily="Arial, sans-serif"
-                    >
-                      {headingTitle}
-                    </text>
-                  </mask>
                 </svg>
               </div>
             </div>

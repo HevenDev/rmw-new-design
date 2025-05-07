@@ -1,102 +1,147 @@
-'use client';
+// import React from 'react';
 
-import { useEffect, useRef, useState } from 'react';
+// const Page = () => {
+//   return (
+//     <div
+//       style={{
+//         width: "100%",
+//         position: "relative",
+//         textAlign: "start",
+//       }}
+//     >
+//       <svg
+//         className="home_svg"
+//         viewBox="0 0 500 200"
+//         style={{ width: "100%", height: "auto", aspectRatio: "500 / 200" }}
+//       >
+//         <defs>
+//           <clipPath id="video-text-clip">
+//             {/* Static text */}
+//             <text
+//               x="0"
+//               y="50"
+//               dominantBaseline="hanging"
+//               textAnchor="start"
+//               fontSize="50"
+//               fontWeight="bold"
+//               fill="white"
+//               fontFamily="Arial, sans-serif"
+//             >
+//               CONTACT US
+//             </text>
+//           </clipPath>
+//         </defs>
+//       </svg>
 
-interface VideoTextMaskProps {
-  headingTitle: string;
-}
+//       {/* Video Container */}
+//       <div
+//         style={{
+//           position: "absolute",
+//           top: 0,
+//           left: 0,
+//           width: "100%",
+//           height: "100%",
+//           clipPath: "url(#video-text-clip)",
+//           WebkitClipPath: "url(#video-text-clip)", // For better support on Safari
+//         }}
+//       >
+//         <video
+//           src="/videos/bg_pattern.mp4"
+//           autoPlay
+//           loop
+//           muted
+//           playsInline
+//           style={{
+//             width: "100%",
+//             height: "100%",
+//             objectFit: "cover",
+//             display: "block",
+//           }}
+//         />
+//       </div>
+//     </div>
+//   );
+// }
 
-const VideoTextMask: React.FC<VideoTextMaskProps> = ({ headingTitle }) => {
-  const [viewBox, setViewBox] = useState('0 0 400 200');
-  const videoRef = useRef<HTMLVideoElement>(null);
+// export default Page;
 
-  useEffect(() => {
-    const updateViewBox = () => {
-      setViewBox(window.innerWidth >= 800 ? '0 0 800 200' : '0 0 400 200');
-    };
 
-    updateViewBox();
-    window.addEventListener('resize', updateViewBox);
-    return () => window.removeEventListener('resize', updateViewBox);
-  }, []);
+import React from 'react';
+
+const ResponsiveVideoTextWithClamp = () => {
+  const svgWidth = 800;
+  const svgHeight = 350;
+
+  // clamp for font size: min 30px, preferred 8vw, max 95px
+  // 8vw adapts font size relative to viewport width
+  const fontSizeClamp = 'clamp(30px, 8vw, 95px)';
+
+  // vertical position centered roughly in the SVG
+  const textY = svgHeight / 2;
 
   return (
     <div
       style={{
-        position: 'relative',
         width: '100%',
-        height: '200px',
-        marginTop: '90px',
-        overflow: 'hidden',
+        maxWidth: svgWidth,
+        margin: '0 auto',
+        position: 'relative',
+        height: svgHeight,
+        textAlign: 'start',
       }}
     >
       <svg
-        viewBox={viewBox}
-        style={{
-          width: '100%',
-          height: '100%',
-          display: 'block',
-        }}
-        xmlns="http://www.w3.org/2000/svg"
+        viewBox={`0 0 ${svgWidth} ${svgHeight}`}
+        style={{ width: '100%', height: 'auto', aspectRatio: `${svgWidth} / ${svgHeight}` }}
       >
         <defs>
-          <mask id="text-mask">
-            <rect width="100%" height="100%" fill="black" />
+          <clipPath id="video-text-clip">
             <text
-              x="50%"
-              y="50%"
-              textAnchor="middle"
+              x="40" // some left padding
+              y={textY}
               dominantBaseline="middle"
-              fontSize="4rem"
-              fontWeight="bold"
+              textAnchor="start"
               fill="white"
               fontFamily="Arial, sans-serif"
-            >
-              Contact us
-            </text>
-          </mask>
-        </defs>
-
-        <image
-          href="/videos/bg_pattern2.mp4"
-          width="100%"
-          height="100%"
-          preserveAspectRatio="xMidYMid slice"
-          mask="url(#text-mask)"
-        />
-
-        {/* Fallback for Safari using <video> absolutely positioned behind text-shaped mask */}
-        <foreignObject width="100%" height="100%">
-          <div
-            style={{
-              width: '100%',
-              height: '100%',
-              maskImage: 'url(#text-mask)',
-              WebkitMaskImage: 'url(#text-mask)',
-              maskRepeat: 'no-repeat',
-              WebkitMaskRepeat: 'no-repeat',
-              maskSize: 'cover',
-              WebkitMaskSize: 'cover',
-            }}
-          >
-            <video
-              ref={videoRef}
-              src="/videos/bg_pattern2.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
+              fontWeight="bold"
               style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
+                fontSize: fontSizeClamp,
+                userSelect: 'none',
               }}
-            />
-          </div>
-        </foreignObject>
+            >
+              CONTACT US
+            </text>
+          </clipPath>
+        </defs>
       </svg>
+
+      <div
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          clipPath: 'url(#video-text-clip)',
+          WebkitClipPath: 'url(#video-text-clip)',
+        }}
+      >
+        <video
+          src="/videos/bg_pattern.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            display: 'block',
+          }}
+        />
+      </div>
     </div>
   );
 };
 
-export default VideoTextMask;
+export default ResponsiveVideoTextWithClamp;
