@@ -2,7 +2,7 @@
 // import ServiceFirst from "./servicePage/serviceFirst";
 // import testimonials from "./servicePage/testimonials";
 import SwiperHome from "./Homepage/SwiperHome";
-// import Service from "./Homepage/Service";
+// import Service from "./Homepage/services";
 // import serviceImg from "./servicePage/serviceImg";
 
 

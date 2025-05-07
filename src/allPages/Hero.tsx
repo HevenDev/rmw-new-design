@@ -68,13 +68,13 @@ const Header = () => {
                     </li>
                     <li
                       itemScope
-                      itemType="https://www.schema.org/service"
+                      itemType="https://www.schema.org/services"
                       id="menu-item-88"
                       className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown has-dropdown menu-item-88 nav-item"
                     >
                       <Link
                         title="Service"
-                        href="/service"
+                        href="/services"
                         className="nav-links"
                       >
                         Service

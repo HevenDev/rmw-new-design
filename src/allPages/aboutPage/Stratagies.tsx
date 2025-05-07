@@ -25,7 +25,7 @@ const Stratagies = () => {
                   <span>
                     <Link
                       className="tp-hero__action-btn"
-                      href="/service"
+                      href="/services"
                       rel="nofollow"
                       target="_self"
                     >
@@ -48,7 +48,7 @@ const Stratagies = () => {
                       </span>
                     </Link>
                   </span>
-                  <Link href="/service/" rel="nofollow" target="_self">
+                  <Link href="/services/" rel="nofollow" target="_self">
                     LEARN MORE
                   </Link>
                 </div>

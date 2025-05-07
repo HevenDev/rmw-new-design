@@ -101,7 +101,7 @@ const Home = () => {
                       </div>
                       <div className="tp-hero__action d-flex align-items-center">
                         <span>
-                          <Link href="/service" className="tp-hero__action-btn">
+                          <Link href="/services" className="tp-hero__action-btn">
                             <span>
                               <svg
                                 width="33"
@@ -121,7 +121,7 @@ const Home = () => {
                             </span>
                           </Link>
                         </span>
-                        <Link href="/service" rel="nofollow" target="_self">
+                        <Link href="/services" rel="nofollow" target="_self">
                           LEARN MORE
                         </Link>
                       </div>

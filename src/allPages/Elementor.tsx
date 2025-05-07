@@ -7,7 +7,7 @@ import Feedback from "./Homepage/Feedback";
 import Home from "./Homepage/Home";
 import Projects from "./Homepage/Projects";
 import ProjectSwiper from "./Homepage/ProjectSwiper";
-import Service from "./Homepage/Service";
+import Service from "./Homepage/services";
 import SwiperHome from "./Homepage/SwiperHome";
 // import Team from "./Homepage/Team";
 import Work from "./Homepage/Work";
