@@ -439,7 +439,7 @@ const ServiceMainIdentity = () => {
                         <div className="tp-about__thumb p-relative">
                           <img
                             decoding="async"
-                            src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/09/about-1-1.jpg"
+                            src="/about-images/Team_rmw.jpg"
                             alt=""
                           />
                           <div className="tp-about__experience">
