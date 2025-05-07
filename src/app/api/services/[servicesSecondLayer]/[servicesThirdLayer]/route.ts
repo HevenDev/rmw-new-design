@@ -13,7 +13,7 @@ export async function GET(
   { params }: { params: { servicesSecondLayer: string; servicesThirdLayer: string } }
 ) {
   try {
-    const { servicesSecondLayer, servicesThirdLayer } = params;
+    const { servicesSecondLayer, servicesThirdLayer } = await params;
 
     if (!servicesSecondLayer || !servicesThirdLayer) {
       return NextResponse.json(
