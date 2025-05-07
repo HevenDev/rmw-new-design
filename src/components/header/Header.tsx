@@ -520,7 +520,7 @@ useEffect(() => {
               <div className={styles.MobileSidebarLogo}>
                 <img
                   style={{ height: "60px" }}
-                  src="/logo_blue.png"
+                  src="/logo-brown.png"
                   alt="RMW Logo"
                 />
                 <button
@@ -559,12 +559,25 @@ useEffect(() => {
                     gridTemplateColumns: "repeat(3, 1fr)",
                   }}
                 >
-                  <img src="/home-images/home-swiper1-img1.jpeg" alt="" />
-                  <img src="/home-images/home-swiper1-img1.jpeg" alt="" />
-                  <img src="/home-images/home-swiper1-img1.jpeg" alt="" />
-                  <img src="/home-images/home-swiper1-img1.jpeg" alt="" />
-                  <img src="/home-images/home-swiper1-img1.jpeg" alt="" />
-                  <img src="/home-images/home-swiper1-img1.jpeg" alt="" />
+                  
+                  <Link href="/revving-up-success-advertising-and-car-care-a-surprising-comparison" >
+                  <img src="/blogs/2023/09/acr-768x404.jpg" alt="" />
+                  </Link>
+                  <Link href="/sticking-to-success-a-case-study-on-the-fevicol-marketing-campaign" >
+                  <img src="/blogs/2023/09/Slide1-768x432.jpg" alt="" />
+                  </Link>
+                  <Link href="/from-reality-to-virtuality-metaverse-technology" >
+                  <img src="/blogs/db16fa7c-4f82-1f75-04f3-4270575794e8_1100_550.png" alt="" />
+                  </Link>
+                  <Link href="/how-did-cooking-shows-influence-indias-cooking-utensil-sales" >
+                  <img src="/blogs/cook-1024x539.jpg" alt="" />
+                  </Link>
+                  <Link href="/a-recipe-for-success-smiling-face-packaging-by-lays-india-a-case-study" >
+                  <img src="/blogs/2023/09/banner-6-768x404.jpg" alt="" />
+                  </Link>
+                  <Link href="/dominos-in-india-a-slice-of-success-in-advertising-strategy" >
+                  <img src="/blogs/2023/09/dii-768x404.jpg" alt="" />
+                  </Link>
                 </div>
               </div>
 

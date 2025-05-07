@@ -1,9 +1,21 @@
+"use client"
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 interface PagesBannerProps {
   headingTitle: string;
 }
 const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle }) => {
+  const [viewBox, setViewBox] = useState("0 0 500 200");
+  useEffect(() => {
+    const updateViewBox = () => {
+      setViewBox(window.innerWidth >= 800 ? "0 0 800 200" : "0 0 500 200");
+    };
+
+    updateViewBox(); // Set initial value
+    window.addEventListener("resize", updateViewBox);
+    return () => window.removeEventListener("resize", updateViewBox);
+  }, []);
   return (
     <section
       className="breadcrumb__area fix p-relative breadcrumb__plr breadcrumb__overlay breadcrumb__bg"
@@ -57,7 +69,7 @@ const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle }) => {
                 </span>
               </div>
               {/* <h3 className="breadcrumb__title">{headingTitle}</h3> */}
-              <div
+              {/* <div
                 style={{
                   width: "100%",
                   height: "auto",
@@ -67,7 +79,7 @@ const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle }) => {
                 }}
               >
                 <svg
-                  viewBox="0 0 400 200"
+                  viewBox={viewBox}
                   style={{ width: "100%", height: "100%" }}
                 >
                   <defs>
@@ -96,6 +108,65 @@ const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle }) => {
                   <foreignObject
                     x="0"
                     y="0"
+                    width="100%"
+                    height="100%"
+                    mask="url(#video-text-mask)"
+                  >
+                    <video
+                      src="/videos/bg_pattern2.mp4"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                        display: "block",
+                      }}
+                    />
+                  </foreignObject>
+                </svg>
+              </div> */}
+              <div
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  position: "relative",
+                  textAlign: "center",
+                  marginTop: "90px",
+                  overflow: "hidden",
+                }}
+              >
+                {/* Video shown ONLY through text shape */}
+                <svg
+                  viewBox={viewBox}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                  }}
+                  preserveAspectRatio="xMidYMid slice"
+                >
+                  <defs>
+                    <mask id="video-text-mask" maskUnits="userSpaceOnUse">
+                      <rect width="100%" height="100%" fill="black" />
+                      <text
+                        x="50%"
+                        y="50%"
+                        dominantBaseline="middle"
+                        textAnchor="middle"
+                        fontSize="5rem"
+                        fontWeight="bold"
+                        fill="white"
+                        fontFamily="Arial, sans-serif"
+                      >
+                        {headingTitle}
+                      </text>
+                    </mask>
+                  </defs>
+
+                  {/* Masked video inside SVG */}
+                  <foreignObject
                     width="100%"
                     height="100%"
                     mask="url(#video-text-mask)"
