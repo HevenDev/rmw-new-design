@@ -1,11 +1,11 @@
 import Link from "next/link";
 
 const ServiceMainHero = () => {
+  const lines = ['"Just Another" to', '"The One."' ]
   return (
     <div
       className="elementor-element elementor-element-00d6da7 e-con-full e-flex e-con e-parent e-lazyloaded"
       data-id="00d6da7"
-      data-element_type="container"
       style={{padding:'0', margin: "0"}}
     >
       <div
@@ -18,36 +18,11 @@ const ServiceMainHero = () => {
           className="elementor-element elementor-element-e84e3a9 elementor-widget elementor-widget-hero-banner"
           data-id="e84e3a9"
           data-element_type="widget"
-          data-widget_type="hero-banner.default"
-          style={{backgroundImage: "url(/service-first-images/Service_first_layer_banner_image.jpg)",
-            backgroundPosition: "bottom left",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover"}}
+          style={{backgroundColor:"white"}}
         >
           <div className="elementor-widget-container">
             <section className="tp-hero-2-area fix tp-hero__space tp-hero__2-bg tp-hero__2-overlay p-relative tp-bg-className">
-              <div className="tp-hero__2-social">
-                <div className="tp-hero__2-social-content">
-                  <ul>
-                    <li>Follow Us</li>
-                    <li>
-                      <Link href="https://www.facebook.com/ritzmediaworld/"> Fb </Link>
-                    </li>
-                    <li>
-                      <Link href="https://www.instagram.com/ritzmediaworld/"> In </Link>
-                    </li>
-                    <li>
-                      <Link href="https://www.youtube.com/c/RitzMediaWorldCreativeThinksMedia"> YT </Link>
-                    </li>
-                    <li>
-                      <Link href="https://x.com/i/flow/login?redirect_after_login=%2Fritzmediaworld"> X </Link>
-                    </li>
-                    <li>
-                      <Link href="https://www.linkedin.com/company/ritzmediaworld/?originalSubdomain=in"> Ln</Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>  
+              
               <div className="tp-hero__2-wrap">
                 <div className="container">
                   <div className="row align-items-center">
@@ -56,20 +31,67 @@ const ServiceMainHero = () => {
                         <span className="tp-hero__subtitle text-blue mb-30">
                         Services Tailored to Transform Your Brand from 
                         </span>
-                        <h3
-                          className="tp-hero__title tp-hero-creative-agency p-relative wow avtrix_clip_down"
-                          data-wow-delay=".3s"
-                          data-wow-duration="2s"
+                        <div
                           style={{
-                            visibility: "visible",
-                            animationDuration: "2s",
-                            animationDelay: "0.3s",
-                            animationName: "avtrix_clip_down",
+                            width: "100%",
+                            position: "relative",
+                            textAlign: "start",
                           }}
                         >
-                          {/* <span>“Just Another”</span> to <br /> <span>“The One.”</span> */}
-                          &quot;Just Another&quot; <span>to</span> <br /> &quot;The One.&quot;
-                        </h3>
+                          <svg
+                          className="home_svg"
+                            viewBox="0 0 800 250"
+                            style={{ width: "100%", height: "auto",aspectRatio: "800 / 350" }}
+                          >
+                            <defs>
+                              <mask id="video-text-mask">
+                                <rect
+                                  x="0"
+                                  y="0"
+                                  width="100%"
+                                  height="100%"
+                                  fill="black"
+                                />
+                                  {lines?.map((line, index) => (
+                                  <text
+                                    key={index}
+                                    x={0}
+                                    y={0 + index * 100}
+                                    dominantBaseline="hanging"
+                                    textAnchor="start"
+                                    fontSize="95"
+                                    fontWeight="bold"
+                                    fill="white"
+                                    fontFamily="Arial, sans-serif"
+                                  >
+                                    {line}
+                                  </text>
+                                ))}
+                              </mask>
+                            </defs>
+                            <foreignObject
+                              x="0"
+                              y="0"
+                              width="100%"
+                              height="100%"
+                              mask="url(#video-text-mask)"
+                            >
+                              <video
+                                src="/videos/bg_pattern.mp4"
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                                style={{
+                                  width: "100%",
+                                  height: "100%",
+                                  objectFit: "cover",
+                                  display: "block",
+                                }}
+                              />
+                            </foreignObject>
+                          </svg>
+                        </div>
                       </div>
                       <div className="tp-hero__2-action d-flex align-items-center">
                         <span>
