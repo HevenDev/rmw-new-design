@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import React from "react";
 import { BiAnalyse } from "react-icons/bi";
 import { SiAdobecreativecloud } from "react-icons/si";
