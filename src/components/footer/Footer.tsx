@@ -22,18 +22,18 @@ const Footer = () => {
               <div className="tp-cta__box">
                 <div className="row justify-content-center">
                   <div className="col-xl-7">
+                      <Link href="/contact/">
                     <div className="tp-cta__item text-center">
                       <h3
                         ref={(el) => {
                           if (el) textRefs.current.push(el);
                         }}
-                        className="tp-cta__title tp-split__text tp-split__in-right tp-cursor-point-area"
+                        className="tp-cta__title tp-split__text tp-split__in-right"
                       >
-                        <Link href="/contact/">
-                          Get in <span>touch</span>
-                        </Link>
+                          <span>Get in</span> <span>touch</span>
                       </h3>
                     </div>
+                        </Link>
                   </div>
                 </div>
               </div>

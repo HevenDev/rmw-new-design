@@ -10219,6 +10219,7 @@ input.search-input-field {
   display: inline-block;
   text-transform: uppercase;
   color: var(--tp-common-black);
+  cursor: pointer;
 }
 
 @media (max-width: 575px) {

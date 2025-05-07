@@ -66,7 +66,7 @@ const Blogs: React.FC = () => {
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4 g-4">
         {currentCards.map((article, index) => (
           <Link href={article.slug} className="col" key={index}>
-            <div style={{ background: "#212529", color: "white" }} className="card h-100">
+            <div style={{ background: "white", color: "black" }} className="card h-100">
               <div style={{ overflow: "hidden", height: "200px" }}>
                 <img
                   src={`/blogs/${article.blog_image}`}
