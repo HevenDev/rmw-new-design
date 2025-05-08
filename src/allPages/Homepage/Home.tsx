@@ -1,10 +1,38 @@
+"use client"
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 // import { useSplitText } from "@/hooks/useSplitText";
 
 const Home = () => {
   // const textRefs = useSplitText();
-  const lines = ["Advertising", "Branding", "Communication"];
+  const lines = ["ADVERTISING", "BRANDING", "COMMUNICATION"];
+  const [svgSize, setSvgSize] = useState({ width: 300, height: 200 });
+  useEffect(() => {
+    const updateSize = () => {
+      const w = window.innerWidth;
+      if (w < 628) {
+        // Width less than 628: width 300, height 280
+        setSvgSize({ width: 300, height: 200 });
+      } else if (w >= 628 && w < 1024) {
+        // Width between 628 and 1024: width 628, height 300
+        setSvgSize({ width: 628, height: 300 });
+      } else {
+        // Width 1024 and above: width 800, height 350
+        setSvgSize({ width: 800, height: 350 });
+      }
+    };
+
+    updateSize();
+    window.addEventListener("resize", updateSize);
+    return () => window.removeEventListener("resize", updateSize);
+  }, []);
+
+  const { width: svgWidth, height: svgHeight } = svgSize;
+  const fontSizeClamp = "clamp(3.5rem, 8vw, 5rem)";
+
+  // vertical position centered roughly in the SVG
+  const textY = svgHeight / 2;
   return (
     <div
       className="elementor-element elementor-element-199ac0f e-con-full e-flex e-con e-parent"
@@ -28,7 +56,7 @@ const Home = () => {
             <section
               className="tp-hero__area fix tp-hero__space tp-hero__bg p-relative tp-bg-className"
             >
-             
+
               <div className="tp-hero__wrap">
                 <div className="container">
                   <div className="row">
@@ -40,63 +68,73 @@ const Home = () => {
                         <div
                           style={{
                             width: "100%",
+                            maxWidth: svgWidth,
                             position: "relative",
+                            height: svgHeight,
                             textAlign: "start",
+                            // marginTop: "90px",
                           }}
                         >
                           <svg
-                          className="home_svg"
-                            viewBox="0 0 800 350"
-                            style={{ width: "100%", height: "auto",aspectRatio: "800 / 350" }}
+                            viewBox={`0 0 ${svgWidth} ${svgHeight}`}
+                            style={{
+                              width: "100%",
+                              height: "auto",
+                              aspectRatio: `${svgWidth} / ${svgHeight}`,
+                            }}
                           >
                             <defs>
-                              <mask id="video-text-mask">
-                                <rect
-                                  x="0"
-                                  y="0"
-                                  width="100%"
-                                  height="100%"
-                                  fill="black"
-                                />
-                                {lines?.map((line, index) => (
-                                  <text
-                                    key={index}
-                                    x={0}
-                                    y={0 + index * 100}
-                                    dominantBaseline="hanging"
-                                    textAnchor="start"
-                                    fontSize="95"
-                                    fontWeight="bold"
-                                    fill="white"
-                                    fontFamily="Arial, sans-serif"
-                                  >
-                                    {line}
-                                  </text>
-                                ))}
-                              </mask>
+                              <clipPath id="video-text-clip">
+                                <text
+                                  x={svgWidth / 2}
+                                  y={textY / 2}
+                                  textAnchor="start"
+                                  fill="white"
+                                  fontFamily="Arial, sans-serif"
+                                  fontWeight="bold"
+                                  style={{
+                                    fontSize: fontSizeClamp,
+                                    userSelect: "none",
+                                  }}
+                                >
+                                  {lines.map((line, index) => (
+                                    <tspan
+                                      key={index}
+                                      x={0}
+                                      dy={index === 0 ? "0" : "1em"} // vertical offset between lines
+                                    >
+                                      {line}
+                                    </tspan>
+                                  ))}
+                                </text>
+                              </clipPath>
                             </defs>
-                            <foreignObject
-                              x="0"
-                              y="0"
-                              width="100%"
-                              height="100%"
-                              mask="url(#video-text-mask)"
-                            >
-                              <video
-                                src="/videos/bg_pattern.mp4"
-                                autoPlay
-                                loop
-                                muted
-                                playsInline
-                                style={{
-                                  width: "100%",
-                                  height: "100%",
-                                  objectFit: "cover",
-                                  display: "block",
-                                }}  
-                              />
-                            </foreignObject>
                           </svg>
+                          <div
+                            style={{
+                              position: "absolute",
+                              top: 0,
+                              left: 0,
+                              width: "100%",
+                              height: "100%",
+                              clipPath: "url(#video-text-clip)",
+                              WebkitClipPath: "url(#video-text-clip)",
+                            }}
+                          >
+                            <video
+                              src="/videos/bg_pattern.mp4"
+                              autoPlay
+                              loop
+                              muted
+                              playsInline
+                              style={{
+                                width: "100%",
+                                height: "100%",
+                                objectFit: "cover",
+                                display: "block",
+                              }}
+                            />
+                          </div>
                         </div>
                       </div>
                       <div className="tp-hero__action d-flex align-items-center">

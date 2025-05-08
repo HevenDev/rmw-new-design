@@ -1,9 +1,38 @@
+"use client"
+import { useEffect, useState } from "react";
+
 // import Link from "next/link";
 type headingProp = {
   heading: string | null;
 };
 const ServiceThirdHero = ({ heading }: headingProp) => {
-  const lines = heading?.split(" ");
+  const lines = heading?.toUpperCase().split(" ");
+  const [svgSize, setSvgSize] = useState({ width: 300, height: 200 });
+  useEffect(() => {
+    const updateSize = () => {
+      const w = window.innerWidth;
+      if (w < 628) {
+        // Width less than 628: width 300, height 280
+        setSvgSize({ width: 300, height: 200 });
+      } else if (w >= 628 && w < 1024) {
+        // Width between 628 and 1024: width 628, height 300
+        setSvgSize({ width: 628, height: 300 });
+      } else {
+        // Width 1024 and above: width 800, height 350
+        setSvgSize({ width: 800, height: 350 });
+      }
+    };
+
+    updateSize();
+    window.addEventListener("resize", updateSize);
+    return () => window.removeEventListener("resize", updateSize);
+  }, []);
+
+  const { width: svgWidth, height: svgHeight } = svgSize;
+  const fontSizeClamp = "clamp(3.5rem, 8vw, 5.5rem)";
+
+  // vertical position centered roughly in the SVG
+  const textY = svgHeight / 2;
   return (
     <div
       className="elementor-element elementor-element-9b5be38 e-con-full e-flex e-con e-parent e-lazyloaded"
@@ -60,7 +89,7 @@ const ServiceThirdHero = ({ heading }: headingProp) => {
                     display: "block",
                     pointerEvents: "none",
                     userSelect: "none",
-                    marginTop:"82px"
+                    marginTop: "82px"
                   }}
                 />
               </div>
@@ -73,66 +102,77 @@ const ServiceThirdHero = ({ heading }: headingProp) => {
                         <div
                           style={{
                             width: "100%",
-                            height: "auto",
+                            maxWidth: svgWidth,
+                            margin: "0 auto",
                             position: "relative",
-                            textAlign: "center",
+                            height: svgHeight,
+                            textAlign: "start",
+                            // marginTop: "90px",
                           }}
                         >
                           <svg
-                            viewBox="0 0 800 400"
-                            style={{ width: "100%", height: "100%" }}
+                            viewBox={`0 0 ${svgWidth} ${svgHeight}`}
+                            style={{
+                              width: "100%",
+                              height: "auto",
+                              aspectRatio: `${svgWidth} / ${svgHeight}`,
+                            }}
                           >
                             <defs>
-                              <mask id="video-text-mask">
-                                <rect
-                                  x="0"
-                                  y="0"
-                                  width="100%"
-                                  height="100%"
-                                  fill="black"
-                                />
-                                {lines?.map((line, index) => (
-                                  <text
-                                    key={index}
-                                    x="50%"
-                                    y={`${30 + index * 22}%`} // Adjust spacing between lines
-                                    dominantBaseline="middle"
-                                    textAnchor="middle"
-                                    fontSize="100"
-                                    fontWeight="bold"
-                                    fill="white"
-                                    fontFamily="Arial, sans-serif"
-                                  >
-                                    {line}
-                                  </text>
-                                ))}
-                              </mask>
+                              <clipPath id="video-text-clip">
+                                <text
+                                  x={svgWidth / 2}
+                                  y={textY / 1.5}
+                                  textAnchor="middle"
+                                  fill="white"
+                                  fontFamily="Arial, sans-serif"
+                                  fontWeight="bold"
+                                  style={{
+                                    fontSize: fontSizeClamp,
+                                    userSelect: "none",
+                                  }}
+                                >
+                                  {lines?.map((line, index) => (
+                                    <tspan
+                                      key={index}
+                                      x={svgWidth / 2}
+                                      dy={index === 0 ? "0" : "1em"} // vertical offset between lines
+                                    >
+                                      {line}
+                                    </tspan>
+                                  ))}
+                                </text>
+                              </clipPath>
                             </defs>
-                            <foreignObject
-                              x="0"
-                              y="0"
-                              width="100%"
-                              height="100%"
-                              mask="url(#video-text-mask)"
-                            >
-                              <video
-                                src="/videos/bg_pattern.mp4"
-                                autoPlay
-                                loop
-                                muted
-                                playsInline
-                                style={{
-                                  width: "100%",
-                                  height: "auto",
-                                  objectFit: "cover",
-                                  display: "block",
-                                }}
-                              />
-                            </foreignObject>
                           </svg>
+                          <div
+                            style={{
+                              position: "absolute",
+                              top: 0,
+                              left: 0,
+                              width: "100%",
+                              height: "100%",
+                              clipPath: "url(#video-text-clip)",
+                              WebkitClipPath: "url(#video-text-clip)",
+                            }}
+                          >
+                            <video
+                              src="/videos/bg_pattern.mp4"
+                              autoPlay
+                              loop
+                              muted
+                              playsInline
+                              style={{
+                                width: "100%",
+                                height: "100%",
+                                objectFit: "cover",
+                                display: "block",
+                              }}
+                            />
+                          </div>
                         </div>
                       </div>
-                     
+
                     </div>
                   </div>
                 </div>

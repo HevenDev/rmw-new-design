@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import useGSAPHoverEffect from "@/hooks/useGSAPHoverEffect";
 type ServiceFirstProps = {
@@ -11,7 +11,33 @@ type ServiceFirstProps = {
 
 const ServiceFirst = ({ heading }: ServiceFirstProps) => {
   // const textRefs = useSplitText();
-  const lines = heading?.split(" ");
+  const lines = heading?.toUpperCase().split(" ");
+  const [svgSize, setSvgSize] = useState({ width: 300, height: 200 });
+    useEffect(() => {
+      const updateSize = () => {
+        const w = window.innerWidth;
+        if (w < 628) {
+          // Width less than 628: width 300, height 280
+          setSvgSize({ width: 300, height: 200 });
+        } else if (w >= 628 && w < 1024) {
+          // Width between 628 and 1024: width 628, height 300
+          setSvgSize({ width: 628, height: 300 });
+        } else {
+          // Width 1024 and above: width 800, height 350
+          setSvgSize({ width: 800, height: 350 });
+        }
+      };
+  
+      updateSize();
+      window.addEventListener("resize", updateSize);
+      return () => window.removeEventListener("resize", updateSize);
+    }, []);
+  
+    const { width: svgWidth, height: svgHeight } = svgSize;
+    const fontSizeClamp = "clamp(3.5rem, 8vw, 6rem)";
+  
+    // vertical position centered roughly in the SVG
+    const textY = svgHeight / 2;
   useGSAPHoverEffect();
 
   return (
@@ -22,67 +48,78 @@ const ServiceFirst = ({ heading }: ServiceFirstProps) => {
             <div className="col-xl-12">
               <div className="tp-service__wrap p-relative">
                 <div className="tp-ab__title-box z-index-2 mb-80">
-                  <div
+                <div
+                style={{
+                  width: "100%",
+                  maxWidth: svgWidth,
+                  margin: "0 auto",
+                  position: "relative",
+                  height: svgHeight,
+                  textAlign: "start",
+                  // marginTop: "90px",
+                }}
+              >
+                <svg
+                  viewBox={`0 0 ${svgWidth} ${svgHeight}`}
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                    aspectRatio: `${svgWidth} / ${svgHeight}`,
+                  }}
+                >
+                  <defs>
+                    <clipPath id="video-text-clip">
+                      <text
+                        x={svgWidth / 2}
+                        y={textY /1.5}
+                        textAnchor="middle"
+                        fill="white"
+                        fontFamily="Arial, sans-serif"
+                        fontWeight="bold"
+                        style={{
+                          fontSize: fontSizeClamp,
+                          userSelect: "none",
+                        }}
+                      >
+                        {lines?.map((line, index) => (
+                          <tspan
+                            key={index}
+                            x={svgWidth / 2}
+                            dy={index === 0 ? "0" : "1em"} // vertical offset between lines
+                          >
+                            {line}
+                          </tspan>
+                        ))}
+                      </text>
+                    </clipPath>
+                  </defs>
+                </svg>
+                <div
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                    clipPath: "url(#video-text-clip)",
+                    WebkitClipPath: "url(#video-text-clip)",
+                  }}
+                >
+                  <video
+                    src="/videos/bg_pattern.mp4"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
                     style={{
                       width: "100%",
-                      height: "auto",
-                      position: "relative",
-                      textAlign: "center",
+                      height: "100%",
+                      objectFit: "cover",
+                      display: "block",
                     }}
-                  >
-                    <svg
-                      viewBox="0 0 800 250"
-                      style={{ width: "100%", height: "100%" }}
-                    >
-                      <defs>
-                        <mask id="video-text-mask">
-                          <rect
-                            x="0"
-                            y="0"
-                            width="100%"
-                            height="100%"
-                            fill="black"
-                          />
-                          {lines?.map((line, index) => (
-                            <text
-                              key={index}
-                              x="50%"
-                              y={`${30 + index * 40}%`} // Adjust spacing between lines
-                              dominantBaseline="middle"
-                              textAnchor="middle"
-                              fontSize="100"
-                              fontWeight="bold"
-                              fill="white"
-                              fontFamily="Arial, sans-serif"
-                            >
-                              {line}
-                            </text>
-                          ))}
-                        </mask>
-                      </defs>
-                      <foreignObject
-                        x="0"
-                        y="0"
-                        width="100%"
-                        height="100%"
-                        mask="url(#video-text-mask)"
-                      >
-                        <video
-                          src="/videos/bg_pattern.mp4"
-                          autoPlay
-                          loop
-                          muted
-                          playsInline
-                          style={{
-                            width: "100%",
-                            height: "100%",
-                            objectFit: "cover",
-                            display: "block",
-                          }}
-                        />
-                      </foreignObject>
-                    </svg>
-                  </div>
+                  />
+                </div>
+              </div>
                 </div>
                 <div className="tp-service__btn-wrap text-center">
                   <div className="tp-hover__btn-wrap tp-btn__bounce">
