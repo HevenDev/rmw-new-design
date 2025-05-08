@@ -2163,7 +2163,7 @@ xclip
 /*  2.6 Breadcrumb
 /*----------------------------------------*/
 .breadcrumb__plr {
-  padding-top: 10%;
+  padding-top: 112px;
 }
 
 .breadcrumb__bg {
@@ -6132,7 +6132,7 @@ input.search-input-field {
 }
 
 .tp-footer__list a:hover {
-  color: var(--tp-theme-primary);
+  color: white;
 }
 
 .tp-footer__form form input {
@@ -6521,7 +6521,7 @@ input.search-input-field {
 }
 
 .tp-footer__1 .tp-footer__widget ul li:hover {
-  color: var(--tp-theme-primary);
+  color: white;
 }
 
 .tp-footer__3-contact p {

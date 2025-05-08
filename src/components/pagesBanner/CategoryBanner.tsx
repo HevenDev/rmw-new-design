@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -6,6 +6,7 @@ interface CategoryBannerProps {
   categoryTitle: string;
 }
 const CategoryBanner: React.FC<CategoryBannerProps> = ({ categoryTitle }) => {
+  const lines = categoryTitle.split(" ");
   const [svgSize, setSvgSize] = useState({ width: 300, height: 200 });
   useEffect(() => {
     const updateSize = () => {
@@ -23,12 +24,12 @@ const CategoryBanner: React.FC<CategoryBannerProps> = ({ categoryTitle }) => {
     };
 
     updateSize();
-    window.addEventListener('resize', updateSize);
-    return () => window.removeEventListener('resize', updateSize);
+    window.addEventListener("resize", updateSize);
+    return () => window.removeEventListener("resize", updateSize);
   }, []);
 
   const { width: svgWidth, height: svgHeight } = svgSize;
-  const fontSizeClamp = 'clamp(2.8rem, 8vw, 6rem)';
+  const fontSizeClamp = "clamp(3.5rem, 8vw, 6rem)";
 
   // vertical position centered roughly in the SVG
   const textY = svgHeight / 2;
@@ -55,49 +56,59 @@ const CategoryBanner: React.FC<CategoryBannerProps> = ({ categoryTitle }) => {
               </div>
               <div
                 style={{
-                  width: '100%',
+                  width: "100%",
                   maxWidth: svgWidth,
-                  margin: '0 auto',
-                  position: 'relative',
+                  margin: "0 auto",
+                  position: "relative",
                   height: svgHeight,
-                  textAlign: 'start',
+                  textAlign: "start",
                   // marginTop: "90px",
                 }}
               >
                 <svg
                   viewBox={`0 0 ${svgWidth} ${svgHeight}`}
-                  style={{ width: '100%', height: 'auto', aspectRatio: `${svgWidth} / ${svgHeight}` }}
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                    aspectRatio: `${svgWidth} / ${svgHeight}`,
+                  }}
                 >
                   <defs>
                     <clipPath id="video-text-clip">
                       <text
-                        x={svgWidth / 2} // some left padding
-                        y={textY}
-                        dominantBaseline="middle"
+                        x={svgWidth / 2}
+                        y={textY /1.5}
                         textAnchor="middle"
                         fill="white"
                         fontFamily="Arial, sans-serif"
                         fontWeight="bold"
                         style={{
                           fontSize: fontSizeClamp,
-                          userSelect: 'none',
+                          userSelect: "none",
                         }}
                       >
-                        {categoryTitle}
+                        {lines.map((line, index) => (
+                          <tspan
+                            key={index}
+                            x={svgWidth / 2}
+                            dy={index === 0 ? "0" : "1em"} // vertical offset between lines
+                          >
+                            {line}
+                          </tspan>
+                        ))}
                       </text>
                     </clipPath>
                   </defs>
-
                 </svg>
                 <div
                   style={{
-                    position: 'absolute',
+                    position: "absolute",
                     top: 0,
                     left: 0,
-                    width: '100%',
-                    height: '100%',
-                    clipPath: 'url(#video-text-clip)',
-                    WebkitClipPath: 'url(#video-text-clip)',
+                    width: "100%",
+                    height: "100%",
+                    clipPath: "url(#video-text-clip)",
+                    WebkitClipPath: "url(#video-text-clip)",
                   }}
                 >
                   <video
@@ -107,10 +118,10 @@ const CategoryBanner: React.FC<CategoryBannerProps> = ({ categoryTitle }) => {
                     muted
                     playsInline
                     style={{
-                      width: '100%',
-                      height: '100%',
-                      objectFit: 'cover',
-                      display: 'block',
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                      display: "block",
                     }}
                   />
                 </div>

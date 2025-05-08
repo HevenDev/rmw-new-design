@@ -6,26 +6,17 @@ interface PagesBannerProps {
   headingTitle: string;
 }
 const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle }) => {
-  // const [viewBox, setViewBox] = useState("0 0 500 200");
-  // useEffect(() => {
-  //   const updateViewBox = () => {
-  //     setViewBox(window.innerWidth >= 800 ? "0 0 800 200" : "0 0 500 200");
-  //   };
-
-  //   updateViewBox(); // Set initial value
-  //   window.addEventListener("resize", updateViewBox);
-  //   return () => window.removeEventListener("resize", updateViewBox);
-  // }, []);
+  const heading = headingTitle.toUpperCase()
   const [svgSize, setSvgSize] = useState({ width: 300, height: 200 });
   useEffect(() => {
     const updateSize = () => {
       const w = window.innerWidth;
-      if (w < 628) {
-        // Width less than 628: width 300, height 280
+      if (w < 768) {
+        // Width less than 768: width 300, height 280
         setSvgSize({ width: 300, height: 200 });
-      } else if (w >= 628 && w < 1024) {
-        // Width between 628 and 1024: width 628, height 300
-        setSvgSize({ width: 628, height: 300 });
+      } else if (w >= 768 && w < 1024) {
+        // Width between 768 and 1024: width 768, height 300
+        setSvgSize({ width: 768, height: 300 });
       } else {
         // Width 1024 and above: width 800, height 350
         setSvgSize({ width: 800, height: 350 });
@@ -98,7 +89,7 @@ const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle }) => {
                   position: 'relative',
                   height: svgHeight,
                   textAlign: 'start',
-                  marginTop: "90px",
+                  // marginTop: "90px",
                 }}
               >
                 <svg
@@ -120,7 +111,7 @@ const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle }) => {
                           userSelect: 'none',
                         }}
                       >
-                        {headingTitle}
+                        {heading}
                       </text>
                     </clipPath>
                   </defs>

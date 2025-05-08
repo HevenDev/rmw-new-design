@@ -535,7 +535,7 @@ useEffect(() => {
                 style={{
                   fontSize: "18px",
                   fontFamily: "sans-serif",
-                  color: "white",
+                  color: "#000",
                 }}
               >
                 Web designing in a powerful way of just not an only professions.
@@ -545,7 +545,7 @@ useEffect(() => {
               <div>
                 <p
                   style={{
-                    color: "#f7d97e",
+                    color: "#000",
                     fontSize: "26px",
                     marginTop: "20px",
                   }}
@@ -556,7 +556,7 @@ useEffect(() => {
                   style={{
                     display: "grid",
                     gap: "2px",
-                    gridTemplateColumns: "repeat(3, 1fr)",
+                    gridTemplateColumns: "repeat(2, 1fr)",
                   }}
                 >
                   
@@ -584,17 +584,17 @@ useEffect(() => {
               <div className={styles.contactInfo}>
                 <h3>Contact</h3>
                 <p>
-                  📍 Address: 402 – 404 , 4th floor Corporate Park, Tower A1
+                   Address: 402 – 404 , 4th floor Corporate Park, Tower A1
                   Sector 142 , Greater Noida
                 </p>
                 <p>
-                  ✉️ <Link href="/">info@ritzmediaworld.com</Link>
+                   <Link href="/">info@ritzmediaworld.com</Link>
                 </p>
                 <p>
-                  📞 <Link href="/">09220516777</Link>
+                   <Link href="/">09220516777</Link>
                 </p>
                 <p>
-                  📞 <Link href="/">09220516777</Link>
+                   <Link href="/">09220516777</Link>
                 </p>
               </div>
 
@@ -613,7 +613,7 @@ useEffect(() => {
                     display: "flex",
                     gap: "30px",
                     fontSize: "20px",
-                    color: "#fddf82",
+                    color: "#334258",
                   }}
                 >
                   <li>
