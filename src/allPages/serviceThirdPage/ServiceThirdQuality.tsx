@@ -8,12 +8,10 @@ interface CardData {
 
 interface ServiceThirdQualityProps {
   cardData: CardData[];
-  para: string | null;
 }
 
 const ServiceThirdQuality: React.FC<ServiceThirdQualityProps> = ({
-  cardData,
-  para,
+  cardData
 }) => {
   return (
     <div
@@ -33,19 +31,7 @@ const ServiceThirdQuality: React.FC<ServiceThirdQualityProps> = ({
           data-widget_type="services.default"
         >
           <div className="elementor-widget-container">
-            <div className="">
-              <p
-                style={{
-                  width: "90%",
-                  margin: "auto",
-                  textAlign: "center",
-                  fontSize: "clamp(13.5px, 22px, 1.2vw)",
-                  lineHeight: "1.25rem",
-                }}
-              >
-                {para}
-              </p>
-            </div>
+          
             <section className="tp-service__3-area fix tp-services__3-style p-relative pt-100 tp-bg-className">
               <div className="container">
                 <div className="tp-services__2-title-wrap ">
@@ -57,7 +43,7 @@ const ServiceThirdQuality: React.FC<ServiceThirdQualityProps> = ({
                             className="tp-section-title"
                           >
                             Committed For Deliver <span>Top</span> Quality
-                            <span>Services</span>
+                            <span> Services</span>
                           </h3>
                         </div>
                       </div>

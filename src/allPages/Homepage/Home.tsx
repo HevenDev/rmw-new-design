@@ -29,7 +29,7 @@ const Home = () => {
   }, []);
 
   const { width: svgWidth, height: svgHeight } = svgSize;
-  const fontSizeClamp = "clamp(3.5rem, 8vw, 5rem)";
+  const fontSizeClamp = "clamp(2rem, 8vw, 5rem)";
 
   // vertical position centered roughly in the SVG
   const textY = svgHeight / 2;

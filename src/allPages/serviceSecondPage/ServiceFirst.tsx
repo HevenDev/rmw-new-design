@@ -12,13 +12,13 @@ type ServiceFirstProps = {
 const ServiceFirst = ({ heading }: ServiceFirstProps) => {
   // const textRefs = useSplitText();
   const lines = heading?.toUpperCase().split(" ");
-  const [svgSize, setSvgSize] = useState({ width: 300, height: 200 });
+  const [svgSize, setSvgSize] = useState({ width: 320, height: 200 });
     useEffect(() => {
       const updateSize = () => {
         const w = window.innerWidth;
         if (w < 628) {
           // Width less than 628: width 300, height 280
-          setSvgSize({ width: 300, height: 200 });
+          setSvgSize({ width: 320, height: 200 });
         } else if (w >= 628 && w < 1024) {
           // Width between 628 and 1024: width 628, height 300
           setSvgSize({ width: 628, height: 300 });
@@ -34,7 +34,7 @@ const ServiceFirst = ({ heading }: ServiceFirstProps) => {
     }, []);
   
     const { width: svgWidth, height: svgHeight } = svgSize;
-    const fontSizeClamp = "clamp(3.5rem, 8vw, 6rem)";
+    const fontSizeClamp = "clamp(2.5rem, 8vw, 6rem)";
   
     // vertical position centered roughly in the SVG
     const textY = svgHeight / 2;

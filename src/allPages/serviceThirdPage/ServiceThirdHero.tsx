@@ -14,7 +14,7 @@ const ServiceThirdHero = ({ heading }: headingProp) => {
       if (w < 628) {
         // Width less than 628: width 300, height 280
         setSvgSize({ width: 300, height: 200 });
-      } else if (w >= 628 && w < 1024) {
+      } else if (w >= 800 && w < 1024) {
         // Width between 628 and 1024: width 628, height 300
         setSvgSize({ width: 628, height: 300 });
       } else {
@@ -29,7 +29,7 @@ const ServiceThirdHero = ({ heading }: headingProp) => {
   }, []);
 
   const { width: svgWidth, height: svgHeight } = svgSize;
-  const fontSizeClamp = "clamp(3.5rem, 8vw, 5.5rem)";
+  const fontSizeClamp = "clamp(2rem, 7vw, 5.5rem)";
 
   // vertical position centered roughly in the SVG
   const textY = svgHeight / 2;
@@ -60,39 +60,7 @@ const ServiceThirdHero = ({ heading }: headingProp) => {
                 backgroundImage: "/service-banner/Service_Bg_RMW.jpg",
               }}
             >
-              <div className="tp-hero__3-shape">
-                <style jsx>{`
-                  .tp-hero__3-shape img {
-                    height: 800px; /* Fixed height */
-                    width: 100vw; /* Keeps original aspect ratio */
-                    object-fit: cover; /* Adjusts image content within the box */
-                  }
-
-                  @media (max-width: 768px) {
-                    .tp-hero__3-shape img {
-                      height: 800px; /* Still fixed on smaller screens */
-                    }
-                  }
-                `}</style>
-                <video
-                  src="/videos/third_layer_video.mov"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  controls={false}
-                  controlsList="nodownload"
-                  style={{
-                    width: "100%",
-                    height: "auto",
-                    objectFit: "contain",
-                    display: "block",
-                    pointerEvents: "none",
-                    userSelect: "none",
-                    marginTop: "82px"
-                  }}
-                />
-              </div>
+             
 
               <div className="tp-hero__3-wrap">
                 <div className="container">

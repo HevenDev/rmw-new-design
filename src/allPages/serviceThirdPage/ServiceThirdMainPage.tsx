@@ -25,7 +25,6 @@ const ServiceThirdMainPage = () => {
   const params = useParams();
   const [cardData, setCardData] = useState<CardData[]>([]);
   const [head, setHead] = useState<string | null>(null);
-  const [para, setPara] = useState<string | null>(null);
   const [endTag, setEndTag] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -42,7 +41,6 @@ const ServiceThirdMainPage = () => {
         );
         setCardData(res.data.cards); 
         setHead(res.data.s3heading1)
-        setPara(res.data.s3para)
         setEndTag(res.data.s3endtag)
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -61,7 +59,7 @@ const ServiceThirdMainPage = () => {
     <>
        <ServiceThirdHero heading={head}  />
        {/* <SwiperHome /> */}
-       <ServiceThirdQuality cardData={cardData} para={para} />
+       <ServiceThirdQuality cardData={cardData} />
        <ServiceThirdColorMarque />
        <ServiceThirdAward />
        <ServiceMainTestimonial />
