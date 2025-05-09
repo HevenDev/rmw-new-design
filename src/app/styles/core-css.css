@@ -10757,10 +10757,10 @@ input.search-input-field {
   height: 38px;
   line-height: 38px;
   text-align: center;
-  color: #5c5c5b;
+  color: #ffffff;
   display: inline-block;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgb(255, 255, 255);
   margin-right: 5px;
   transition: 0.3s;
 }
@@ -10770,7 +10770,7 @@ input.search-input-field {
 }
 
 .tp-contact__social-link a:hover {
-  color: var(--tp-common-black);
+  color: var(--tp-common-white);
   border: 1px solid var(--tp-theme-primary);
   background-color: var(--tp-theme-primary);
 }
