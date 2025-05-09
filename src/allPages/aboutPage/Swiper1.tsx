@@ -40,7 +40,7 @@ const Swiper1 = () => {
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__8-text">
                   <Link
-                  href="/services/digital-marketing"
+                  href="/services/best-digital-marketing-agency"
                 > DIGITAL _ MARKETING
                 </Link>
                   </h3>
@@ -56,7 +56,7 @@ const Swiper1 = () => {
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__8-text">
                   <Link
-                  href="/services/printing-marketing"
+                  href="/services/best-print-advertising-agency"
                 >  PRINTING_MARKETING
                 </Link>
                   </h3>
@@ -72,7 +72,7 @@ const Swiper1 = () => {
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__8-text">
                   <Link
-                  href="/services/radio-marketing"
+                  href="/services/top-radio-ad-agency"
                 >RADIO_MARKETING
                 </Link>
                   </h3>
@@ -88,7 +88,7 @@ const Swiper1 = () => {
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__8-text">
                   <Link
-                  href="/services/creative-services"
+                  href="/services/leading-creative-agency-india"
                 > CREATIVE_SERVICES
                 </Link>
                   </h3>
@@ -104,7 +104,7 @@ const Swiper1 = () => {
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__8-text">
                   <Link
-                  href="/services/content-marketing"
+                  href="/services/leading-content-marketing-agency"
                 > CONTENT_MARKETING
                 </Link>
                   </h3>
@@ -120,7 +120,7 @@ const Swiper1 = () => {
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__8-text">
                   <Link
-                  href="/services/web-development"
+                  href="/services/best-website-designing-company"
                 > WEB_DEVELOPMENT
                 </Link>
                   </h3>
@@ -136,13 +136,28 @@ const Swiper1 = () => {
                 <div className="tp-text__4-wrap">
                   <h3 className="tp-text__8-text">
                   <Link
-                  href="/services/celebrity-endorsements"
+                  href="/services/celebrity-endorsement-agency-india"
                 > CELEBRITY_ENDORSEMENTS
                 </Link>
                   </h3>
                 </div>
               </SwiperSlide>
-              
+              <SwiperSlide
+                className="swiper-slide swiper-slide-duplicate"
+                data-swiper-slide-index="0"
+                role="group"
+                aria-label="7 / 18"
+                style={{ marginRight: "30px" }}
+              >
+                <div className="tp-text__4-wrap">
+                  <h3 className="tp-text__8-text">
+                  <Link
+                  href="/services/influencer-marketing-agency-in-india"
+                >INFLUENCER_MARKETING
+                </Link>
+                  </h3>
+                </div>
+              </SwiperSlide>
             </Swiper>
             <span
               className="swiper-notification"

@@ -194,7 +194,7 @@ const Footer = () => {
                           id="menu-item-139"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"
                         >
-                          <Link href="/services/celebrity-endorsement-agency-india">
+                          <Link href="/services/influencer-marketing-agency-in-india">
                             Influencer Marketing
                           </Link>
                         </li>

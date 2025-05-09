@@ -82,18 +82,18 @@ const ServiceMainTestimonial = () => {
                                 </div>
                                 <div className="tp-testi__2-author-box d-sm-flex align-items-center justify-content-between">
                                   <div className="tp-testi__2-author-info d-flex align-items-center gap-1">
-                                    <div className="tp-testi__2-author-thumb mr-25">
+                                    {/* <div className="tp-testi__2-author-thumb mr-25">
                                       <img
                                         decoding="async"
                                         src="https://ritzmediaworld.com//webroot/images/gallery/6106855b-46a9-5a43-b168-7d6774383544_1460_550.png"
                                         alt=""  width={"50%"}
                                       />
-                                    </div>
+                                    </div> */}
                                     <div className="tp-testi__2-author-text">
                                       <h3 className="tp-testi__2-author-title">
                                       Madhusudan Ghee
                                       </h3>
-                                      <span className="tp-testi__2-author-designation">
+                                      <span className="tp-testi__2-author-designation text-black">
                                       Managing Director
                                       </span>
                                     </div>
@@ -142,18 +142,18 @@ const ServiceMainTestimonial = () => {
                                 </div>
                                 <div className="tp-testi__2-author-box d-sm-flex align-items-center justify-content-between">
                                   <div className="tp-testi__2-author-info d-flex align-items-center">
-                                    <div className="tp-testi__2-author-thumb mr-25">
+                                    {/* <div className="tp-testi__2-author-thumb mr-25">
                                       <img
                                         decoding="async"
                                         src="https://ritzmediaworld.com//webroot/images/gallery/6106855b-46a9-5a43-b168-7d6774383544_1460_550.png"
                                         alt=""  width={"50%"}
                                       />
-                                    </div>
+                                    </div> */}
                                     <div className="tp-testi__2-author-text">
                                       <h3 className="tp-testi__2-author-title">
                                       FAIRFOX - EON
                                       </h3>
-                                      <span className="tp-testi__2-author-designation">
+                                      <span className="tp-testi__2-author-designation text-black">
                                       Marketing Head
                                       </span>
                                     </div>
@@ -202,18 +202,18 @@ const ServiceMainTestimonial = () => {
                                 </div>
                                 <div className="tp-testi__2-author-box d-sm-flex align-items-center justify-content-between">
                                   <div className="tp-testi__2-author-info d-flex align-items-center">
-                                    <div className="tp-testi__2-author-thumb mr-25">
+                                    {/* <div className="tp-testi__2-author-thumb mr-25">
                                       <img
                                         decoding="async"
                                         src="https://ritzmediaworld.com//webroot/images/gallery/6106855b-46a9-5a43-b168-7d6774383544_1460_550.png"
                                         alt="" width={"50%"}
                                       />
-                                    </div>
+                                    </div> */}
                                     <div className="tp-testi__2-author-text">
                                       <h3 className="tp-testi__2-author-title">
                                       Eldeco Group
                                       </h3>
-                                      <span className="tp-testi__2-author-designation">
+                                      <span className="tp-testi__2-author-designation text-black">
                                       Managing Director
                                       </span>
                                     </div>

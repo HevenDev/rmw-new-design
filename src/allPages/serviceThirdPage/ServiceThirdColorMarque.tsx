@@ -3,6 +3,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
+import Link from "next/link";
 
 import { FreeMode, Autoplay } from "swiper/modules";
 
@@ -26,7 +27,10 @@ const ServiceThirdColorMarque = () => {
         >
           <div className="elementor-widget-container">
             <section className="tp-text-slider__4-area fix pt-50 pb-20">
-              <div className="tp-text__slider-4-wrap p-relative" style={{ backgroundColor: "#10153f" }}>
+              <div
+                className="tp-text__slider-4-wrap p-relative"
+                style={{ backgroundColor: "#10153f" }}
+              >
                 <div className="swiper-container tp-text__4-slider-active swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
                   <Swiper
                     loop={true}
@@ -34,7 +38,7 @@ const ServiceThirdColorMarque = () => {
                     slidesPerView="auto"
                     spaceBetween={30}
                     allowTouchMove={false}
-                    speed={10000}
+                    speed={15000}
                     autoplay={{
                       delay: 1,
                       disableOnInteraction: true,
@@ -60,7 +64,10 @@ const ServiceThirdColorMarque = () => {
                               "url(https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/text-slider/fire.jpg)",
                           }}
                         >
-                          DIGITAL_MARKETING
+                          <Link href="/services/best-digital-marketing-agency">
+                            {" "}
+                            DIGITAL _ MARKETING
+                          </Link>
                         </h3>
                       </div>
                     </SwiperSlide>
@@ -80,7 +87,10 @@ const ServiceThirdColorMarque = () => {
                               "url(https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/text-slider/fire.jpg)",
                           }}
                         >
-                          PRINTING_MARKETING
+                          <Link href="/services/best-print-advertising-agency">
+                            {" "}
+                            PRINT_ADVERTISING
+                          </Link>
                         </h3>
                       </div>
                     </SwiperSlide>
@@ -100,7 +110,9 @@ const ServiceThirdColorMarque = () => {
                               "url(https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/text-slider/fire.jpg)",
                           }}
                         >
-                          RADIO ADVERTISMENT
+                          <Link href="/services/top-radio-ad-agency">
+                            RADIO_ADVERTISING
+                          </Link>
                         </h3>
                       </div>
                     </SwiperSlide>
@@ -120,7 +132,10 @@ const ServiceThirdColorMarque = () => {
                               "url(https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/text-slider/fire.jpg)",
                           }}
                         >
-                          CREATIVE_SERVICES
+                          <Link href="/services/leading-creative-agency-india">
+                            {" "}
+                            CREATIVE_SERVICES
+                          </Link>
                         </h3>
                       </div>
                     </SwiperSlide>
@@ -140,7 +155,10 @@ const ServiceThirdColorMarque = () => {
                               "url(https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/text-slider/fire.jpg)",
                           }}
                         >
-                          CONTENT_MARKETING
+                          <Link href="/services/leading-content-marketing-agency">
+                            {" "}
+                            CONTENT_MARKETING
+                          </Link>
                         </h3>
                       </div>
                     </SwiperSlide>
@@ -160,7 +178,10 @@ const ServiceThirdColorMarque = () => {
                               "url(https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/text-slider/fire.jpg)",
                           }}
                         >
-                          WEB_DEVELOPMENT
+                          <Link href="/services/best-website-designing-company">
+                            {" "}
+                            WEB_DEVELOPMENT
+                          </Link>
                         </h3>
                       </div>
                     </SwiperSlide>
@@ -180,11 +201,36 @@ const ServiceThirdColorMarque = () => {
                               "url(https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/text-slider/fire.jpg)",
                           }}
                         >
-                          CELEBRITY_ENDORSEMENTS
+                          <Link href="/services/celebrity-endorsement-agency-india">
+                            {" "}
+                            CELEBRITY_ENDORSEMENTS
+                          </Link>
                         </h3>
                       </div>
                     </SwiperSlide>
-
+                    <SwiperSlide
+                      className="swiper-slide swiper-slide-prev"
+                      data-swiper-slide-index="4"
+                      role="group"
+                      aria-label="10 / 15"
+                      style={{ marginRight: "30px" }}
+                    >
+                      <div className="tp-text__4-wrap">
+                        <h3
+                          className="tp-text__4-text"
+                          data-background="https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/text-slider/fire.jpg"
+                          style={{
+                            backgroundImage:
+                              "url(https://etorisoft.com/wp/avtrix/wp-content/themes/avtrix/assets/img/text-slider/fire.jpg)",
+                          }}
+                        >
+                          <Link href="/services/influencer-marketing-agency-in-india">
+                            {" "}
+                            INFLUENCER_MARKETING
+                          </Link>
+                        </h3>
+                      </div>
+                    </SwiperSlide>
                   </Swiper>
                   <span
                     className="swiper-notification"
