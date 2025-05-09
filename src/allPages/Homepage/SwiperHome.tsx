@@ -38,7 +38,7 @@ const SwiperHome = () => {
                             delay: 2000,
                             disableOnInteraction: false,
                           }} // Adjust autoplay delay
-                          speed={1500}
+                          // speed={1500}
                           centeredSlides={true}
                           breakpoints={{
                             1200: { slidesPerView: 5 },

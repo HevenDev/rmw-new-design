@@ -1,96 +1,134 @@
+"use client"
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const ServiceMainHero = () => {
-  const lines = ['"Just Another" to', '"The One."' ]
+  const lines = ['"Just Another"', 'to "The One."'];
+  const [svgSize, setSvgSize] = useState({ width: 300, height: 200 });
+  useEffect(() => {
+    const updateSize = () => {
+      const w = window.innerWidth;
+      if (w < 628) {
+        // Width less than 628: width 300, height 280
+        setSvgSize({ width: 300, height: 200 });
+      } else if (w >= 628 && w < 1024) {
+        // Width between 628 and 1024: width 628, height 300
+        setSvgSize({ width: 628, height: 200 });
+      } else {
+        // Width 1024 and above: width 800, height 350
+        setSvgSize({ width: 800, height: 200 });
+      }
+    };
+
+    updateSize();
+    window.addEventListener("resize", updateSize);
+    return () => window.removeEventListener("resize", updateSize);
+  }, []);
+
+  const { width: svgWidth, height: svgHeight } = svgSize;
+  const fontSizeClamp = "clamp(2rem, 8vw, 5rem)";
+
+  // vertical position centered roughly in the SVG
+  const textY = svgHeight / 2;
   return (
     <div
       className="elementor-element elementor-element-00d6da7 e-con-full e-flex e-con e-parent e-lazyloaded"
       data-id="00d6da7"
-      style={{padding:'0', margin: "0"}}
+      style={{ padding: '0', margin: "0" }}
     >
       <div
         className="elementor-element elementor-element-3a22ef0 e-con-full e-flex e-con e-child"
         data-id="3a22ef0"
         data-element_type="container"
-        style={{padding:'0', margin: "0"}}
+        style={{ padding: '0', margin: "0" }}
       >
         <div
           className="elementor-element elementor-element-e84e3a9 elementor-widget elementor-widget-hero-banner"
           data-id="e84e3a9"
           data-element_type="widget"
-          style={{backgroundColor:"white"}}
+          style={{ backgroundColor: "white" }}
         >
           <div className="elementor-widget-container">
             <section className="tp-hero-2-area fix tp-hero__space tp-hero__2-bg tp-hero__2-overlay p-relative tp-bg-className">
-              
+
               <div className="tp-hero__2-wrap">
                 <div className="container">
                   <div className="row align-items-center">
                     <div className="col-xl-8 col-lg-7">
                       <div className="tp-hero__2-title-box mb-55 p-relative">
                         <span className="tp-hero__subtitle text-blue mb-30">
-                        Services Tailored to Transform Your Brand from 
+                          Services Tailored to Transform Your Brand from
                         </span>
                         <div
                           style={{
                             width: "100%",
+                            maxWidth: svgWidth,
                             position: "relative",
+                            height: svgHeight,
                             textAlign: "start",
+                            // marginTop: "90px",
                           }}
                         >
                           <svg
-                          className="home_svg"
-                            viewBox="0 0 800 250"
-                            style={{ width: "100%", height: "auto",aspectRatio: "800 / 350" }}
+                            viewBox={`0 0 ${svgWidth} ${svgHeight}`}
+                            style={{
+                              width: "100%",
+                              height: "auto",
+                              aspectRatio: `${svgWidth} / ${svgHeight}`,
+                            }}
                           >
                             <defs>
-                              <mask id="video-text-mask">
-                                <rect
-                                  x="0"
-                                  y="0"
-                                  width="100%"
-                                  height="100%"
-                                  fill="black"
-                                />
-                                  {lines?.map((line, index) => (
-                                  <text
-                                    key={index}
-                                    x={0}
-                                    y={0 + index * 100}
-                                    dominantBaseline="hanging"
-                                    textAnchor="start"
-                                    fontSize="95"
-                                    fontWeight="bold"
-                                    fill="white"
-                                    fontFamily="Arial, sans-serif"
-                                  >
-                                    {line}
-                                  </text>
-                                ))}
-                              </mask>
+                              <clipPath id="video-text-clip">
+                                <text
+                                  x={svgWidth / 2}
+                                  y={textY / 2}
+                                  textAnchor="start"
+                                  fill="white"
+                                  fontFamily="Arial, sans-serif"
+                                  fontWeight="bold"
+                                  style={{
+                                    fontSize: fontSizeClamp,
+                                    userSelect: "none",
+                                  }}
+                                >
+                                  {lines.map((line, index) => (
+                                    <tspan
+                                      key={index}
+                                      x={0}
+                                      dy={index === 0 ? "0" : "1em"} // vertical offset between lines
+                                    >
+                                      {line}
+                                    </tspan>
+                                  ))}
+                                </text>
+                              </clipPath>
                             </defs>
-                            <foreignObject
-                              x="0"
-                              y="0"
-                              width="100%"
-                              height="100%"
-                              mask="url(#video-text-mask)"
-                            >
-                              <video
-                                src="/videos/bg_pattern.mp4"
-                                autoPlay
-                                loop
-                                muted
-                                playsInline
-                                style={{
-                                  width: "100%",
-                                  height: "100%",
-                                  objectFit: "cover",
-                                  display: "block",
-                                }}
-                              />
-                            </foreignObject>
                           </svg>
+                          <div
+                            style={{
+                              position: "absolute",
+                              top: 0,
+                              left: 0,
+                              width: "100%",
+                              height: "100%",
+                              clipPath: "url(#video-text-clip)",
+                              WebkitClipPath: "url(#video-text-clip)",
+                            }}
+                          >
+                            <video
+                              src="/videos/bg_pattern.mp4"
+                              autoPlay
+                              loop
+                              muted
+                              playsInline
+                              style={{
+                                width: "100%",
+                                height: "100%",
+                                objectFit: "cover",
+                                display: "block",
+                              }}
+                            />
+                          </div>
                         </div>
                       </div>
                       <div className="tp-hero__2-action d-flex align-items-center">
@@ -123,7 +161,7 @@ const ServiceMainHero = () => {
                           rel="nofollow"
                           target="_self"
                         >
-                          
+
                           CONTACT US
                         </Link>
                       </div>
@@ -135,7 +173,7 @@ const ServiceMainHero = () => {
                             decoding="async"
                             src="/service-first-images/One_roof_2.png"
                             alt=""
-                            style={{maxHeight:"220px"}}
+                            style={{ maxHeight: "220px" }}
                           />
                         </div>
                         <div
@@ -173,7 +211,7 @@ const ServiceMainHero = () => {
                           </Link>
                         </div>
                         <p>
-                        At Ritz Media World, we have an obsession with being wizards of quirkiness that morph good ideas into Brilliant ones. Our services deliver results that drive your competitor’s envy. We blend digital magic, classic & modern mediums, and creative ingenuity to ensure that your brand doesn’t just speak; it captivates.
+                          At Ritz Media World, we have an obsession with being wizards of quirkiness that morph good ideas into Brilliant ones. Our services deliver results that drive your competitor’s envy. We blend digital magic, classic & modern mediums, and creative ingenuity to ensure that your brand doesn’t just speak; it captivates.
                         </p>
                       </div>
                     </div>

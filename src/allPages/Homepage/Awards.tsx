@@ -56,42 +56,7 @@ const Awards = () => {
                   </div>
 
                   <div className="col-xl-6 col-lg-6">
-                    <div className="tp-awards__item">
-                      <div className="tp-awards__content d-flex align-items-center justify-content-between">
-                        <div className="tp-awards__left">
-                          <div className="tp-awards__top mb-5 d-flex align-items-center">
-                            {/* <h3 className="tp-awards__size">
-                                  x <span>2</span>
-                                </h3> */}
-                            <span className="tp-awards__sm-text">
-                              FOR DISPLAY 2022
-                            </span>
-                          </div>
-                          <div className="tp-awards__name d-flex align-items-center">
-                            <h3 className="tp-awards__title">
-                              <Link href="/about" rel="nofollow" target="_self">
-                                Trusted Digital Advertising Agency in
-                                NCR-Awarded by The Economic Times
-                              </Link>
-                            </h3>
-                          </div>
-                        </div>
-                        <div className="tp-awards__right">
-                          <div className="tp-awards__icon">
-                            <Link href="/about/" rel="nofollow" target="_self">
-                              <GoArrowRight
-                                style={{
-                                  color: "white",
-                                  fontSize: "20px",
-                                  fontWeight: "600",
-                                }}
-                              />
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="tp-awards__item">
+                  <div className="tp-awards__item">
                       <div className="tp-awards__content d-flex align-items-center justify-content-between">
                         <div className="tp-awards__left">
                           <div className="tp-awards__top mb-5 d-flex align-items-center">
@@ -99,7 +64,7 @@ const Awards = () => {
                                   x <span>2</span>
                                 </h3>  */}
                             <span className="tp-awards__sm-text">
-                              FOR DISPLAY 2024
+                               2024
                             </span>
                           </div>
                           <div className="tp-awards__name d-flex align-items-center">
@@ -137,17 +102,14 @@ const Awards = () => {
                                   x <span>2</span>
                                 </h3> */}
                             <span className="tp-awards__sm-text">
-                              FOR DISPLAY 2011
+                               2022
                             </span>
                           </div>
                           <div className="tp-awards__name d-flex align-items-center">
                             <h3 className="tp-awards__title">
-                              <Link
-                                href="/about/"
-                                rel="nofollow"
-                                target="_self"
-                              >
-                                Special Achievement Award in Retail Category
+                              <Link href="/about" rel="nofollow" target="_self">
+                                Trusted Digital Advertising Agency in
+                                NCR-Awarded by The Economic Times
                               </Link>
                             </h3>
                           </div>
@@ -155,6 +117,46 @@ const Awards = () => {
                         <div className="tp-awards__right">
                           <div className="tp-awards__icon">
                             <Link href="/about/" rel="nofollow" target="_self">
+                              <GoArrowRight
+                                style={{
+                                  color: "white",
+                                  fontSize: "20px",
+                                  fontWeight: "600",
+                                }}
+                              />
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+                    <div className="tp-awards__item">
+                      <div className="tp-awards__content d-flex align-items-center justify-content-between">
+                        <div className="tp-awards__left">
+                          <div className="tp-awards__top mb-5 d-flex align-items-center">
+                            {/* <h3 className="tp-awards__size">
+                                  x <span>2</span>
+                                </h3> */}
+                            <span className="tp-awards__sm-text">
+                               2022
+                            </span>
+                          </div>
+                          <div className="tp-awards__name d-flex align-items-center ">
+                            <h3 className="tp-awards__title mr-40">
+                              <Link
+                                href="/about/"
+                                rel="nofollow"
+                                target="_self"
+                              >
+                                Icons by The Times of India
+                              </Link>
+                            </h3>
+                          </div>
+                        </div>
+                        <div className="tp-awards__right">
+                          <div className="tp-awards__icon">
+                            <Link href=" /about/" rel="nofollow" target="_self">
                               <GoArrowRight
                                 style={{
                                   color: "white",
@@ -175,24 +177,24 @@ const Awards = () => {
                                   x <span>2</span>
                                 </h3> */}
                             <span className="tp-awards__sm-text">
-                              FOR DISPLAY 2022
+                               2011
                             </span>
                           </div>
-                          <div className="tp-awards__name d-flex align-items-center ">
-                            <h3 className="tp-awards__title mr-40">
+                          <div className="tp-awards__name d-flex align-items-center">
+                            <h3 className="tp-awards__title">
                               <Link
                                 href="/about/"
                                 rel="nofollow"
                                 target="_self"
                               >
-                                Icons by The Times of India
+                                Special Achievement Award in Retail Category
                               </Link>
                             </h3>
                           </div>
                         </div>
                         <div className="tp-awards__right">
                           <div className="tp-awards__icon">
-                            <Link href=" /about/" rel="nofollow" target="_self">
+                            <Link href="/about/" rel="nofollow" target="_self">
                               <GoArrowRight
                                 style={{
                                   color: "white",

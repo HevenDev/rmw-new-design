@@ -56,15 +56,6 @@ const Service: React.FC<ServiceProps> = ({ data }) => {
                     </i>
                   </span>
                 </h3>
-                <Link
-                  className="tp-btn-primary"
-                  href="/services"
-                  rel="nofollow"
-                  target="_self"
-                >
-                  <span>More about us</span>
-                  <i className="far fa-arrow-right"></i>
-                </Link>
               </div>
             </div>
           </div>
