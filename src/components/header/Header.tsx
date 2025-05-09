@@ -41,12 +41,11 @@ const Header = () => {
 
   const pathname = usePathname();
 
-useEffect(() => {
-  // Close mobile menu on route change
-  setIsMenuOpen(false);
-  setIsServiceDropdownOpen(true); // Optionally reset dropdown too
-}, [pathname]);
-
+  useEffect(() => {
+    // Close mobile menu on route change
+    setIsMenuOpen(false);
+    setIsServiceDropdownOpen(true); // Optionally reset dropdown too
+  }, [pathname]);
 
   useEffect(() => {
     const fetchMenu = async () => {
@@ -97,7 +96,7 @@ useEffect(() => {
         className={`tp-header-top-area tp-header__style-1 tp-header__transparent tp-header__border ${styles.headerBackground}`}
         style={{
           background: "white",
-          borderBottom:"white"
+          borderBottom: "white",
         }}
       >
         <div className="container-fluid">
@@ -118,7 +117,7 @@ useEffect(() => {
                     src="/logo-brown.png"
                     alt=""
                     className="sm-size"
-                    style={{ height: "50px"}}
+                    style={{ height: "50px" }}
                   />
                 </Link>
               </div>
@@ -416,30 +415,45 @@ useEffect(() => {
                     }`}
                   >
                     <li style={{ paddingLeft: "20px" }}>
-                      <Link href="/services/best-digital-marketing-agency">Digital Marketing</Link>
+                      <Link href="/services/best-digital-marketing-agency">
+                        Digital Marketing
+                      </Link>
                     </li>
                     <li style={{ paddingLeft: "20px" }}>
-                      <Link href="/services/leading-creative-agency-india">Creative Services</Link>
+                      <Link href="/services/leading-creative-agency-india">
+                        Creative Services
+                      </Link>
                     </li>
                     <li style={{ paddingLeft: "20px" }}>
-                      <Link href="/services/best-print-advertising-agency">Print Marketing</Link>
+                      <Link href="/services/best-print-advertising-agency">
+                        Print Marketing
+                      </Link>
                     </li>
                     <li style={{ paddingLeft: "20px" }}>
-                      <Link href="/services/top-radio-ad-agency">Radio Marketing</Link>
+                      <Link href="/services/top-radio-ad-agency">
+                        Radio Marketing
+                      </Link>
                     </li>
                     <li style={{ paddingLeft: "20px" }}>
-                      <Link href="/services/leading-content-marketing-agency">Content Marketing</Link>
+                      <Link href="/services/leading-content-marketing-agency">
+                        Content Marketing
+                      </Link>
                     </li>
                     <li style={{ paddingLeft: "20px" }}>
-                      <Link href="/services/best-website-designing-company">Web Development</Link>
+                      <Link href="/services/best-website-designing-company">
+                        Web Development
+                      </Link>
                     </li>
                     <li style={{ paddingLeft: "20px" }}>
-                      <Link href="/services/celebrity-endorsement-agency-india">Celebrity Endorsements</Link>
+                      <Link href="/services/celebrity-endorsement-agency-india">
+                        Celebrity Endorsements
+                      </Link>
                     </li>
                     <li style={{ paddingLeft: "20px" }}>
-                      <Link href="/services/influencer-marketing-agency-in-india">Influencer Marketing</Link>
+                      <Link href="/services/influencer-marketing-agency-in-india">
+                        Influencer Marketing
+                      </Link>
                     </li>
-                    
                   </ul>
                 </li>
 
@@ -550,33 +564,30 @@ useEffect(() => {
                     marginTop: "20px",
                   }}
                 >
-                  Manage blogs
+                  Case Studies
                 </p>
                 <div
+                  className={styles.case_imgs}
                   style={{
                     display: "grid",
                     gap: "2px",
                     gridTemplateColumns: "repeat(2, 1fr)",
                   }}
                 >
-                  
-                  <Link href="/revving-up-success-advertising-and-car-care-a-surprising-comparison" >
-                  <img src="/blogs/2023/09/acr-768x404.jpg" alt="" />
+                  <Link href="/revving-up-success-advertising-and-car-care-a-surprising-comparison">
+                    <img src="/blogs/2023/09/acr-768x404.jpg" alt="" />
                   </Link>
-                  <Link href="/sticking-to-success-a-case-study-on-the-fevicol-marketing-campaign" >
-                  <img src="/blogs/2023/09/Slide1-768x432.jpg" alt="" />
+                  <Link href="/sticking-to-success-a-case-study-on-the-fevicol-marketing-campaign">
+                    <img src="/blogs/2023/09/Slide1-768x432.jpg" alt="" />
                   </Link>
-                  <Link href="/from-reality-to-virtuality-metaverse-technology" >
-                  <img src="/blogs/db16fa7c-4f82-1f75-04f3-4270575794e8_1100_550.png" alt="" />
+                  <Link href="/from-reality-to-virtuality-metaverse-technology">
+                    <img
+                      src="/blogs/db16fa7c-4f82-1f75-04f3-4270575794e8_1100_550.png"
+                      alt=""
+                    />
                   </Link>
-                  <Link href="/how-did-cooking-shows-influence-indias-cooking-utensil-sales" >
-                  <img src="/blogs/cook-1024x539.jpg" alt="" />
-                  </Link>
-                  <Link href="/a-recipe-for-success-smiling-face-packaging-by-lays-india-a-case-study" >
-                  <img src="/blogs/2023/09/banner-6-768x404.jpg" alt="" />
-                  </Link>
-                  <Link href="/dominos-in-india-a-slice-of-success-in-advertising-strategy" >
-                  <img src="/blogs/2023/09/dii-768x404.jpg" alt="" />
+                  <Link href="/how-did-cooking-shows-influence-indias-cooking-utensil-sales">
+                    <img src="/blogs/cook-1024x539.jpg" alt="" />
                   </Link>
                 </div>
               </div>
@@ -584,17 +595,17 @@ useEffect(() => {
               <div className={styles.contactInfo}>
                 <h3>Contact</h3>
                 <p>
-                   Address: 402 – 404 , 4th floor Corporate Park, Tower A1
-                  Sector 142 , Greater Noida
+                  Address: 402 – 404 , 4th floor Corporate Park, Tower A1 Sector
+                  142 , Greater Noida
                 </p>
                 <p>
-                   <Link href="/">info@ritzmediaworld.com</Link>
+                  <Link href="/">info@ritzmediaworld.com</Link>
                 </p>
                 <p>
-                   <Link href="/">09220516777</Link>
+                  <Link href="/">09220516777</Link>
                 </p>
                 <p>
-                   <Link href="/">09220516777</Link>
+                  <Link href="/">09220516777</Link>
                 </p>
               </div>
 
