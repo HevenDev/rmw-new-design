@@ -35,33 +35,9 @@ const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle }) => {
   const textY = svgHeight / 2;
   return (
     <section className="breadcrumb__area fix p-relative breadcrumb__plr breadcrumb__overlay breadcrumb__bg">
-      {/* <img
-          decoding="async"
-          src="https://etorisoft.com/wp/avtrix/wp-content/uploads/2024/12/breadcrumb-bg-1.jpg"
-          alt=""
-          style={{
-            backgroundColor: "rgb(20, 14, 14)", 
-            top:"1px", 
-            height: "100%",
-            width: "100%",
-            position: "absolute",
-            zIndex: "-1",
-            filter: "sepia(100%) saturate(500%) hue-rotate(10deg)",
-          }}
-
-
-        />   */}
+     
       <div className="breadcrumb__shape">
-        {/* <img
-          src={bannerImages}
-          alt=""
-          style={{
-            width: "100vw",
-            height: "53vh",
-            objectFit: "cover",
-
-          }}
-        /> */}
+      
       </div>
       <div className="container">
         <div className="row">
@@ -80,7 +56,7 @@ const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle }) => {
                   <meta property="position" content="1" />
                 </span>
               </div>
-              {/* <h3 className="breadcrumb__title">{headingTitle}</h3> */}
+           
               <div
                 style={{
                   width: '100%',
@@ -89,7 +65,6 @@ const PagesBanner: React.FC<PagesBannerProps> = ({ headingTitle }) => {
                   position: 'relative',
                   height: svgHeight,
                   textAlign: 'start',
-                  // marginTop: "90px",
                 }}
               >
                 <svg
