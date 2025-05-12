@@ -85,7 +85,7 @@ const Blogs: React.FC = () => {
       </div>
 
       {/* Blog Cards */}
-      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4 g-4">
+      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3  g-4">
         {currentCards.map((article, index) => (
           <Link href={article.slug} className="col" key={index}>
             <div style={{ background: "white", color: "black" }} className="card h-100">

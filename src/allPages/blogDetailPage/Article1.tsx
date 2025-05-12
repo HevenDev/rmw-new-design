@@ -325,6 +325,16 @@ const Article1 = () => {
   const params = useParams();
   const blog_slug = params?.blogDetailPage as string;
   const contentRef = useRef<HTMLDivElement>(null);
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    // Search logic is already reactive via state
+  };
+
+  const filteredPosts = sidecard.filter((post) =>
+    post.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   useEffect(() => {
     const fetchBlog = async () => {
@@ -386,45 +396,51 @@ const Article1 = () => {
             >
               {/* Search */}
               <div className="p-3 rounded shadow-sm mb-4" style={{ backgroundColor: "#1f1f1f" }}>
-                <h5 className="mb-3 text-white">Search</h5>
-                <form>
-                  <div className="input-group">
-                    <input type="text" className="form-control" placeholder="Search..." />
-                    <button className="btn btn-primary" type="submit">
-                      <IoSearchSharp />
-                    </button>
-                  </div>
-                </form>
-              </div>
+        <h5 className="mb-3 text-white">Search</h5>
+        <form onSubmit={handleSearch}>
+          <div className="input-group">
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Search..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+            <button className="btn btn-primary" type="submit">
+              <IoSearchSharp />
+            </button>
+          </div>
+        </form>
+      </div>
 
               {/* Recent Posts */}
               <div className="p-3 text-white rounded shadow-sm mb-4" style={{ backgroundColor: "#1f1f1f" }}>
-                <h5 className="mb-3 text-white">Recent Posts</h5>
-                {sidecard.map((post) => (
-                  <div key={post.id} className="d-flex mb-3 gap-3">
-                    <Link href={`/${post.slug}`}>
-                      <img
-                        src={`/blogs/${post.blog_image}`}
-                        alt={post.title}
-                        className="rounded me-3"
-                        style={{ width: "190px", height: "80px", objectFit: "cover" }}
-                      />
-                    </Link>
-                    <div>
-                      <h6 className="mb-1 text-white">
-                        <Link href={`/${post.slug}`}>{post.title}</Link>
-                      </h6>
-                      <small className="text-white">
-                        {new Intl.DateTimeFormat("en-US", {
-                          year: "numeric",
-                          month: "long",
-                          day: "numeric",
-                        }).format(new Date(post.created_at))}
-                      </small>
-                    </div>
-                  </div>
-                ))}
-              </div>
+        <h5 className="mb-3 text-white">Recent Posts</h5>
+        {filteredPosts.map((post) => (
+          <div key={post.id} className="d-flex mb-3 gap-3">
+            <Link href={`/${post.slug}`}>
+              <img
+                src={`/blogs/${post.blog_image}`}
+                alt={post.title}
+                className="rounded me-3"
+                style={{ width: "190px", height: "80px", objectFit: "cover" }}
+              />
+            </Link>
+            <div>
+              <h6 className="mb-1 text-white">
+                <Link href={`/${post.slug}`}>{post.title}</Link>
+              </h6>
+              <small className="text-white">
+                {new Intl.DateTimeFormat("en-US", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                }).format(new Date(post.created_at))}
+              </small>
+            </div>
+          </div>
+        ))}
+      </div>
 
               {/* Categories */}
               <div className="p-3 rounded text-white shadow-sm mb-4" style={{ backgroundColor: "#1f1f1f" }}>
