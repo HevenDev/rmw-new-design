@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useSplitText } from "@/hooks/useSplitText";
 import Image from "next/image";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaXTwitter, FaYoutube } from "react-icons/fa6";
 
 const Footer = () => {
   const textRefs = useSplitText();
@@ -17,23 +19,23 @@ const Footer = () => {
         data-bg-color=""
       >
         <div className="tp-footer__wrap  ">
-          <div className="tp-cta-area pt-75 pb-95">
+          <div className="tp-cta-area pt-75 pb-75">
             <div className="container">
               <div className="tp-cta__box">
                 <div className="row justify-content-center">
                   <div className="col-xl-7">
-                      <Link href="/contact/">
-                    <div className="tp-cta__item text-center">
-                      <h3
-                        ref={(el) => {
-                          if (el) textRefs.current.push(el);
-                        }}
-                        className="tp-cta__title tp-split__text tp-split__in-right"
-                      >
+                    <Link href="/contact/">
+                      <div className="tp-cta__item text-center">
+                        <h3
+                          ref={(el) => {
+                            if (el) textRefs.current.push(el);
+                          }}
+                          className="tp-cta__title tp-split__text tp-split__in-right"
+                        >
                           <span>Get in</span> <span>touch</span>
-                      </h3>
-                    </div>
-                        </Link>
+                        </h3>
+                      </div>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -42,7 +44,7 @@ const Footer = () => {
           {/* <!-- tp cta area end  --> */}
           <div className="container  ">
             <div className="row" style={{ justifyContent: "space-between" }}>
-              <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+              <div className="col-12 col-md-6 col-lg-3">
                 <div
                   id="custom_html-3"
                   className="widget_text tp-footer__widget footer-col-1-1 mb-40 widget_custom_html"
@@ -71,11 +73,38 @@ const Footer = () => {
                         clients across all industries across the Indian
                         subcontinent.
                       </p>
+                      <div className="tp-contact__social-link">
+                        <Link href="https://www.facebook.com/ritzmediaworld/" >
+                          <i aria-hidden="true">
+                            <FaFacebookF />
+                          </i>
+                        </Link>
+                        <Link href="https://www.instagram.com/ritzmediaworld/" >
+                          <i aria-hidden="true">
+                            <FaInstagram />
+                          </i>
+                        </Link>
+                        <Link href="https://x.com/i/flow/login?redirect_after_login=%2Fritzmediaworld" target="http://1" rel="http://1">
+                          <i aria-hidden="true">
+                            <FaXTwitter />
+                          </i>
+                        </Link>
+                        <Link href="https://www.linkedin.com/company/ritzmediaworld/?originalSubdomain=in">
+                          <i aria-hidden="true">
+                            <FaLinkedin />
+                          </i>
+                        </Link>
+                        <Link href="https://www.youtube.com/c/RitzMediaWorldCreativeThinksMedia" target="http://1" rel="http://1">
+                          <i aria-hidden="true">
+                            <FaYoutube />
+                          </i>
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+              <div className="col-6 col-md-6 col-lg-3">
                 <div
                   id="nav_menu-3"
                   className="tp-footer__widget footer-col-1-2 mb-40 widget_nav_menu"
@@ -118,14 +147,14 @@ const Footer = () => {
                           id="menu-item-144"
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-144"
                         >
-                          <Link href="/contact-us">Contact</Link>
+                          <Link href="/contact">Contact</Link>
                         </li>
                       </ul>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+              <div className="col-6 col-md-6 col-lg-3">
                 <div
                   id="nav_menu-4"
                   className="tp-footer__widget footer-col-1-4 mb-40 widget_nav_menu"
@@ -171,7 +200,7 @@ const Footer = () => {
                           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"
                         >
                           <Link href="/service/leading-content-marketing-agency">
-                           Content Marketing
+                            Content Marketing
                           </Link>
                         </li>
                         <li
@@ -203,7 +232,7 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+              <div className="col-12 col-md-6 col-lg-3">
                 <div
                   id="custom_html-4"
                   className="widget_text tp-footer__widget footer-col-1-3 mb-40 widget_custom_html"
@@ -236,7 +265,7 @@ info@ritzmediaworld.com"
             </div>
           </div>
           {/* <!-- tp copyright area start --> */}
-          <div className="tp-copyright-area pt-80 pb-5">
+          <div className="tp-copyright-area pb-5">
             <div className="container">
               <div className="tp-copyright__wrap   pt-20">
                 <div className="row align-items-center">
