@@ -97,7 +97,7 @@ const Blogs: React.FC = () => {
                   style={{
                     height: "100%",
                     width: "100%",
-                    objectFit: "cover",
+                    objectFit: "fill",
                     transition: "all 0.3s ease-in-out",
                   }}
                   onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.1)")}

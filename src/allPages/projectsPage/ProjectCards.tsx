@@ -74,7 +74,7 @@ const ProjectCards = () => {
                   <div className={styles.imageContainer}>
                     <img
                       src={`/blogs/${card.blog_image}`}
-                      style={{ height: "200px", objectFit: "cover" }}
+                      style={{ height: "200px", objectFit: "fill" }}
                       className={`card-img-top ${styles.image}`}
                       alt={card.title}
                     />

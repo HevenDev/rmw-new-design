@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Contact - Ritz Media World",
-  description: "Best digital agency in India - Contact",
+  title: "Case Studies - Ritz Media World",
+  description: "Best digital agency in India - Case studies",
   robots: "noindex, nofollow",
 };
 
