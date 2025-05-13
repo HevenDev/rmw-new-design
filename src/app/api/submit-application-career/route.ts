@@ -1,8 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getDBPool } from "@/lib/db";
 
+// Improved error handling
 export async function POST(req: NextRequest) {
-    try {
+  try {
     const formData = await req.formData();
 
     const name = formData.get("name") as string;
@@ -20,13 +21,19 @@ export async function POST(req: NextRequest) {
     const pool = getDBPool();
 
     await pool.execute(
-        "INSERT INTO queries (name, email, phone, category, resume, message) VALUES (?, ?, ?, ?, ?, ?)",
-        [name, email, phone, category, resumePath, message]
+      "INSERT INTO queries (name, email, phone, category, resume, message) VALUES (?, ?, ?, ?, ?, ?)",
+      [name, email, phone, category, resumePath, message]
     );
 
     return NextResponse.json({ success: true });
-  } catch (error) {
-    console.error("Form submission error:", error);
-    return NextResponse.json({ success: false, error: (error as any).message }, { status: 500 });
+  } catch (error: unknown) {
+    // Type guard to check if the error is an instance of Error
+    if (error instanceof Error) {
+      console.error("Form submission error:", error.message);
+      return NextResponse.json({ success: false, error: error.message }, { status: 500 });
+    } else {
+      console.error("Unknown error:", error);
+      return NextResponse.json({ success: false, error: "An unexpected error occurred" }, { status: 500 });
+    }
   }
 }

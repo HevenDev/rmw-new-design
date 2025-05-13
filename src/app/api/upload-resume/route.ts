@@ -24,8 +24,7 @@ export async function POST(req: NextRequest) {
 
     const publicPath = `/uploads/${fileName}`;
     return NextResponse.json({ success: true, filePath: publicPath });
-  } catch (err: any) {
-    console.error("Upload error:", err);
-    return NextResponse.json({ success: false, error: "Server error" }, { status: 500 });
-  }
-}
+  } catch (error) {
+    console.error("Error uploading resume", error);
+    return NextResponse.json({ error: "Failed to update blog" }, { status: 500 });
+  }}

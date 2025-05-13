@@ -1,10 +1,11 @@
 import { NextResponse } from "next/server";
 import { getDBPool } from "@/lib/db";
+import { RowDataPacket } from "mysql2";
 
 export async function GET() {
   try {
     const pool = getDBPool();
-    const [rows]: any = await pool.query("SELECT * FROM queries ORDER BY id DESC");
+    const [rows] = await pool.query<RowDataPacket[]>("SELECT * FROM queries ORDER BY id DESC");
 
     return NextResponse.json({ success: true, data: rows });
   } catch (error) {
