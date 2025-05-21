@@ -76,7 +76,7 @@
   --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
 }
 html:root {
-  --tp-theme-primary: #001240 ;
+  --tp-theme-primary: #e7dc25 ;
   --tp-theme-pruple: #8247FF;
   --tp-theme-third: #E94D35;
   --tp-theme-rgba-primary: 249, 81, 29;
@@ -458,3 +458,4 @@ img:is([sizes="auto" i], [sizes^="auto," i]) {
     font-size: 50px;
   }
 }
+

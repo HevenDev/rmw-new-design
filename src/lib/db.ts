@@ -1,5 +1,6 @@
 import mysql, { Pool } from "mysql2/promise";
 
+
 // Use globalThis instead of global
 const globalForMySQL = globalThis as unknown as { _mysqlPool?: Pool };
 

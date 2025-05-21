@@ -2,6 +2,8 @@
 
 import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import * as XLSX from "xlsx";
+import { saveAs } from "file-saver";
 
 interface Submission {
   id: number;
@@ -11,7 +13,7 @@ interface Submission {
   resume: string;
   category: string;
   message: string;
-  created_at: string; // Adjust if your DB uses another column name
+  created_at: string;
 }
 
 const FormSubmissions = () => {
@@ -37,10 +39,40 @@ const FormSubmissions = () => {
     fetchSubmissions();
   }, []);
 
+  const exportToExcel = () => {
+    const formattedData = submissions.map((sub) => ({
+      ID: sub.id,
+      Name: sub.name,
+      Email: sub.email,
+      Phone: sub.phone,
+      Resume: sub.resume,
+      Category: sub.category,
+      Message: sub.message,
+      "Submitted On": new Date(sub.created_at).toLocaleString(),
+    }));
+
+    const worksheet = XLSX.utils.json_to_sheet(formattedData);
+    const workbook = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(workbook, worksheet, "Submissions");
+
+    const excelBuffer = XLSX.write(workbook, { bookType: "xlsx", type: "array" });
+    const blob = new Blob([excelBuffer], {
+      type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    });
+
+    saveAs(blob, "form_submissions.xlsx");
+  };
+
   return (
     <div className="container py-5">
       <div className="bg-white p-4 rounded shadow">
-        <h2 className="text-center fw-bold mb-4">Form Submissions</h2>
+        <div className="d-flex justify-content-between align-items-center mb-4">
+          <h2 className="fw-bold mb-0">Form Submissions</h2>
+          <button className="btn btn-success" onClick={exportToExcel}>
+            Export to Excel
+          </button>
+        </div>
+
         {loading ? (
           <p className="text-center">Loading...</p>
         ) : (
@@ -78,7 +110,6 @@ const FormSubmissions = () => {
                         "No file"
                       )}
                     </td>
-
                     <td>{sub.category}</td>
                     <td>{sub.message}</td>
                     <td>{new Date(sub.created_at).toLocaleString()}</td>

@@ -7,10 +7,11 @@ import "../styles/spacing.css";
 import "../styles/magnific-popup-css.css";
 import "../styles/elementor-css.css";
 import "../styles/animation-css.css";
+
+import { Toaster } from "react-hot-toast";
 import PageWrapper from "@/components/pageWrapper/PageWrapper";
 import Button from "@/components/sideButton/sideButton";
 import Header from "@/components/header/Header";
-
 // import { TrackPageView } from "@/components/trackView/TrackPageView";
 
 export const metadata = {
@@ -21,11 +22,14 @@ export const metadata = {
 
 export default function HomeLayout({ children }: { children: React.ReactNode }) {
   return (
-        <PageWrapper>
-          {/* <TrackPageView /> */}
-          <Header />
-          {children}
-          <Button/>
-        </PageWrapper>
+    <>
+      <Toaster position="top-right"  reverseOrder={false} />
+      <PageWrapper>
+        {/* <TrackPageView /> */}
+        <Header />
+        {children}
+        <Button />
+      </PageWrapper>
+    </>
   );
 }

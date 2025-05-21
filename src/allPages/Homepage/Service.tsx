@@ -99,7 +99,7 @@ const Service: React.FC<ServiceProps> = ({ data }) => {
                                 <a
                                   style={{
                                     fontSize: "18px",
-                                    color: "#001240",
+                                    color: "#e7dc25",
                                     fontStyle: "italic",
                                   }}
                                   href={item.link}
