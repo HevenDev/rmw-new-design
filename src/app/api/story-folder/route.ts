@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import fs from "fs/promises";
 import path from "path";
 import { getDBPool } from "@/lib/db"; // adjust your import path accordingly
+import { ResultSetHeader } from 'mysql2';
 
 export const POST = async (req: Request) => {
   try {
@@ -60,20 +61,16 @@ export const POST = async (req: Request) => {
 
     // Insert into database
     const pool = getDBPool();
-    const [result] = await pool.execute(
+
+    const [result] = await pool.execute<ResultSetHeader>(
       `INSERT INTO story_folders (title, slug, cover_image_url, category, author)
-       VALUES (?, ?, ?, ?, ?)`,
-      [
-        title,
-        slug,
-        coverImageUrl,
-        category,
-        author
-      ]
+   VALUES (?, ?, ?, ?, ?)`,
+      [title, slug, coverImageUrl, category, author]
     );
 
-    // Get insertId from result to send back
-    const insertId = (result as any).insertId;
+    // Now you get proper type safety
+    const insertId = result.insertId;
+
 
     return NextResponse.json({
       id: insertId,

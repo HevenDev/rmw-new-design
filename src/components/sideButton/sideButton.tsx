@@ -5,7 +5,7 @@ import HCaptcha from "@hcaptcha/react-hcaptcha";
 import toast from "react-hot-toast";
 
 const SideButton: React.FC = () => {
-  const captchaRef = useRef<any>(null);
+  const captchaRef = useRef<HCaptcha | null>(null);
   const formRef = useRef<HTMLFormElement>(null);
   const [captchaToken, setCaptchaToken] = useState<string | null>(null);
   const [showForm, setShowForm] = useState(false);

@@ -1,6 +1,6 @@
 "use client";
 
-import { notFound } from "next/navigation";
+// import { notFound } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import {
@@ -57,60 +57,69 @@ const stories = [
 
 export default function StoryPage({ params }: { params: { storyId: string } }) {
   const story = stories.find((s) => s.slug === params.storyId);
-  if (!story) return notFound();
-
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMuted, setIsMuted] = useState(true);
   const [isPaused, setIsPaused] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
-  const currentSlide = story.slides[currentIndex];
   const backgroundVideoRef = useRef<HTMLVideoElement | null>(null);
   const mainVideoRef = useRef<HTMLVideoElement | null>(null); // your existing videoRef can be reused
+   const currentSlide = story?.slides?.[currentIndex];
 
-  // Ensure both refs are assigned properly
-  useEffect(() => {
-    if (backgroundVideoRef.current) {
-      backgroundVideoRef.current.pause();
-    }
+// ✅ Pause background video + add 1 min cap on video
+useEffect(() => {
+  if (!currentSlide) return;
 
-    if (currentSlide.type === "video" && mainVideoRef.current) {
-      const video = mainVideoRef.current;
+  if (backgroundVideoRef.current) {
+    backgroundVideoRef.current.pause();
+  }
 
-      const onTimeUpdate = () => {
-        if (video.currentTime >= 60) {
-          video.pause(); // ⛔ Stop after 1 minute
-        }
-      };
+  if (currentSlide.type === "video" && mainVideoRef.current) {
+    const video = mainVideoRef.current;
 
-      video.addEventListener("timeupdate", onTimeUpdate);
-
-      return () => {
-        video.removeEventListener("timeupdate", onTimeUpdate);
-      };
-    }
-  }, [currentSlide]);
-
-  useEffect(() => {
-    if (!isPaused) {
-      const timer = setTimeout(() => {
-        goToNext();
-      }, 10000);
-      return () => clearTimeout(timer);
-    }
-  }, [currentIndex, isPaused]);
-
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.muted = isMuted;
-      if (isPaused) {
-        videoRef.current.pause();
-      } else {
-        videoRef.current.play();
+    const onTimeUpdate = () => {
+      if (video.currentTime >= 60) {
+        video.pause();
       }
-    }
-  }, [isMuted, isPaused, currentSlide]);
+    };
 
+    video.addEventListener("timeupdate", onTimeUpdate);
+
+    return () => {
+      video.removeEventListener("timeupdate", onTimeUpdate);
+    };
+  }
+}, [currentSlide]);
+
+// ✅ Auto-advance after 10s
+useEffect(() => {
+  if (!isPaused) {
+    const timer = setTimeout(() => {
+      goToNext();
+    }, 10000);
+    return () => clearTimeout(timer);
+  }
+}, [currentIndex, isPaused]); // 👈 also fix missing dependency
+
+// ✅ Sync muted/paused state
+useEffect(() => {
+  if (!currentSlide) return;
+  if (videoRef.current) {
+    videoRef.current.muted = isMuted;
+    if (isPaused) {
+      videoRef.current.pause();
+    } else {
+      videoRef.current.play();
+    }
+  }
+}, [isMuted, isPaused, currentSlide]);
+
+// ✅ Render fallback when story is not ready
+if (!story || !currentSlide) {
+  return <div>Loading...</div>; // Or show spinner, etc.
+}
+  
+  
   const goToPrev = () => {
     setCurrentIndex((prev) =>
       prev === 0 ? story.slides.length - 1 : prev - 1

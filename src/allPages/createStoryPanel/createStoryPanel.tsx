@@ -112,70 +112,70 @@ const CreateStoryPanel: React.FC = () => {
   
   
 
-  const handleAddStory = () => {
-    if (activeFolderId === null) return;
+  // const handleAddStory = () => {
+  //   if (activeFolderId === null) return;
 
-    const newStory: Story = {
-      id: stories[activeFolderId]?.length + 1 || 1,
-      title: `Story ${stories[activeFolderId]?.length + 1 || 1}`,
-      image: "https://via.placeholder.com/150",
-      slug,
-      slides: [],
-    };
+  //   const newStory: Story = {
+  //     id: stories[activeFolderId]?.length + 1 || 1,
+  //     title: `Story ${stories[activeFolderId]?.length + 1 || 1}`,
+  //     image: "https://via.placeholder.com/150",
+  //     slug,
+  //     slides: [],
+  //   };
 
-    setStories((prev) => ({
-      ...prev,
-      [activeFolderId]: [...(prev[activeFolderId] || []), newStory],
-    }));
-  };
+  //   setStories((prev) => ({
+  //     ...prev,
+  //     [activeFolderId]: [...(prev[activeFolderId] || []), newStory],
+  //   }));
+  // };
 
   const [showStoryForm, setShowStoryForm] = useState(false);
-  const [newStoryTitle, setNewStoryTitle] = useState("");
-  const [newStorySlides, setNewStorySlides] = useState([
-    { type: "image", text: "", image: "" },
-    { type: "video", text: "", image: "" },
-  ]);
+  // const [newStoryTitle, setNewStoryTitle] = useState("");
+  // const [newStorySlides, setNewStorySlides] = useState([
+  //   { type: "image", text: "", image: "" },
+  //   { type: "video", text: "", image: "" },
+  // ]);
 
-  const handleAddSlide = () => {
-    setNewStorySlides([
-      ...newStorySlides,
-      { type: "image", text: "", image: "" },
-    ]);
-  };
+  // const handleAddSlide = () => {
+  //   setNewStorySlides([
+  //     ...newStorySlides,
+  //     { type: "image", text: "", image: "" },
+  //   ]);
+  // };
 
-  const handleSlideChange = (index: number, field: string, value: string) => {
-    const updatedSlides = [...newStorySlides];
-    updatedSlides[index] = { ...updatedSlides[index], [field]: value };
-    setNewStorySlides(updatedSlides);
-  };
+  // const handleSlideChange = (index: number, field: string, value: string) => {
+  //   const updatedSlides = [...newStorySlides];
+  //   updatedSlides[index] = { ...updatedSlides[index], [field]: value };
+  //   setNewStorySlides(updatedSlides);
+  // };
 
-  const handleSubmitNewStory = () => {
-    if (activeFolderId === null) return;
-    const folder = folders.find((f) => f.id === activeFolderId);
-    const slug =
-      folder?.title.toLowerCase().replace(/\s+/g, "-") || "story-slug";
+  // const handleSubmitNewStory = () => {
+  //   if (activeFolderId === null) return;
+  //   const folder = folders.find((f) => f.id === activeFolderId);
+  //   const slug =
+  //     folder?.title.toLowerCase().replace(/\s+/g, "-") || "story-slug";
 
-    const newStory: Story = {
-      id: stories[activeFolderId]?.length + 1 || 1,
-      title: newStoryTitle,
-      image: newStorySlides[0].image || "https://via.placeholder.com/150", // first slide image as cover
-      slug,
-      slides: newStorySlides,
-    };
+  //   const newStory: Story = {
+  //     id: stories[activeFolderId]?.length + 1 || 1,
+  //     title: newStoryTitle,
+  //     image: newStorySlides[0].image || "https://via.placeholder.com/150", // first slide image as cover
+  //     slug,
+  //     slides: newStorySlides,
+  //   };
 
-    setStories((prev) => ({
-      ...prev,
-      [activeFolderId]: [...(prev[activeFolderId] || []), newStory],
-    }));
+  //   setStories((prev) => ({
+  //     ...prev,
+  //     [activeFolderId]: [...(prev[activeFolderId] || []), newStory],
+  //   }));
 
-    // Reset
-    setShowStoryForm(false);
-    setNewStoryTitle("");
-    setNewStorySlides([
-      { type: "image", text: "", image: "" },
-      { type: "video", text: "", image: "" },
-    ]);
-  };
+  //   // Reset
+  //   setShowStoryForm(false);
+  //   setNewStoryTitle("");
+  //   setNewStorySlides([
+  //     { type: "image", text: "", image: "" },
+  //     { type: "video", text: "", image: "" },
+  //   ]);
+  // };
 
   const [newSlide, setNewSlide] = useState({
     type: "image",
@@ -362,8 +362,8 @@ const CreateStoryPanel: React.FC = () => {
         <div className="position-fixed top-0 start-0 w-100 h-100 bg-dark bg-opacity-90 text-white d-flex flex-column p-5 z-3 overflow-auto">
           <div className="d-flex justify-content-between align-items-center mb-4">
             <h3 className="fw-bold mb-0">
-              Add Stories to "
-              {folders.find((f) => f.id === activeFolderId)?.title}"
+              Add Stories to 
+              {folders.find((f) => f.id === activeFolderId)?.title}
             </h3>
             <button
               className="btn btn-outline-light"

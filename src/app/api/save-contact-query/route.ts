@@ -12,7 +12,7 @@ export async function POST(req: NextRequest) {
 
     const pool = getDBPool();
 
-    const [result] = await pool.execute(
+    await pool.execute(
       "INSERT INTO contactQueries (name, phone, email, service, query) VALUES (?, ?, ?, ?, ?)",
       [name, phone, email, service, query]
     );

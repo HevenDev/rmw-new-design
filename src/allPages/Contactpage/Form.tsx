@@ -15,7 +15,7 @@ import { useSplitText } from "@/hooks/useSplitText"; //changed
 
 const Form = () => {
   const textRefs = useSplitText(); //changed
-  const captchaRef = useRef<any>(null);
+  const captchaRef = useRef<HCaptcha>(null);
   const [captchaToken, setCaptchaToken] = useState<string | null>(null);
 
   const handleCaptchaVerify = (token: string) => {
