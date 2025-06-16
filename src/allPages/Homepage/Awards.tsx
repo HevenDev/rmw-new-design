@@ -46,7 +46,7 @@ const Awards = () => {
                   <div className="col-xl-6 col-lg-6">
                     <div className="tp-awards__thumb text-center text-lg-start">
                       <Image
-                        src="/service-first-images/Service_first_layer_icon.png"
+                        src="/home-images/home-project/Award-440x440.png"
                         
                         alt="Service First Layer Icon"
                         width={440}

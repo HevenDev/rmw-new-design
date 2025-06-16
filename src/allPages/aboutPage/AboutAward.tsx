@@ -1,8 +1,5 @@
 import React from "react";
 
-
-
-
 const AboutAward = () => {
   return (
     
@@ -18,7 +15,7 @@ const AboutAward = () => {
                   <div className="tp-awards__5-thumb">
                     <img
                       decoding="async"
-                      src="/about-images/Our_reward.jpg"
+                      src="/about-images/award.jpg"
                       style={{height:"450px"}}
                       alt=""
                     />

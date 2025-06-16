@@ -127,7 +127,7 @@ const ServiceMainOurService = () => {
               <div
                 className="tp-hover__reveal-bg"
                 style={{
-                  backgroundImage: `url(/service_images/${list.imgUrl})`,
+                  backgroundImage: `url(/services/${list.imgUrl})`,
                   transform: list.translate,
                 }}
               ></div>

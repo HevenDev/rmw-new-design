@@ -25,12 +25,12 @@ const ServiceMainAbout = () => {
                     <div className="tp-cta__2-item p-relative">
                       <div
                         className="tp-cta__2-thumb wow avtrix_clip_up"
-                        data-background="/service-first-images/service-first-build.jpg"
+                        data-background="/services/Successful-Profitable-Products-465x640.png"
                         data-wow-delay=".3s"
                         data-wow-duration="2s"
                         style={{
                           backgroundImage:
-                            "url(/service-first-images/service-first-build.jpg)",
+                            "url(/services/Successful-Profitable-Products-465x640.png)",
                           visibility: "visible",
                           animationDuration: "2s",
                           animationDelay: "0.3s",
@@ -62,12 +62,12 @@ const ServiceMainAbout = () => {
                       <div className="tp-cta__2-circle-2"></div>
                       <div
                         className="tp-cta__2-thumb wow avtrix_clip_down"
-                        data-background="/service-first-images/service-first-company.jpg"
+                        data-background="/services/Company-Mission-465x640.png"
                         data-wow-delay=".3s"
                         data-wow-duration="2s"
                         style={{
                           backgroundImage:
-                            "url(/service-first-images/service-first-company.jpg)",
+                            "url(/services/Company-Mission-465x640.png)",
                           visibility: "visible",
                           animationDuration: "2s",
                           animationDelay: "0.3s",

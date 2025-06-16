@@ -57,7 +57,7 @@ const Projects = () => {
                               <div className="tp-project__thumb">
                                 <img
                                   decoding="async"
-                                  src="/home-images/Brand_Identity.jpg"
+                                  src="/home-images/home-project/Brand-Identity-610x600.png"
                                   alt=""
                                 />
                                 <div className="tp-project__icon">
@@ -112,8 +112,8 @@ const Projects = () => {
                               <div className="tp-project__thumb">
                                 <img
                                   decoding="async"
-                                  src="/home-images/Digital_advertising.jpg"
-                                  alt=""
+                                  src="/home-images/home-project/Digital-Advertising-610x600.png"
+                                  alt="Digital-Advertising"
                                 />
                                 <div className="tp-project__icon">
                                   <Link href="/services/best-digital-marketing-agency"
@@ -168,7 +168,7 @@ const Projects = () => {
                               <div className="tp-project__thumb">
                                 <img
                                   decoding="async"
-                                  src="/home-images/Social_Media.jpg"
+                                  src="/home-images/home-project/Social-Media-610x600.png"
                                   alt=""
                                 />
                                 <div className="tp-project__icon">
@@ -224,7 +224,7 @@ const Projects = () => {
                               <div className="tp-project__thumb">
                                 <img
                                   decoding="async"
-                                  src="/home-images/Print_Advertising.jpg"
+                                  src="/home-images/home-project/Print-Advertising-610x600.png"
                                   alt=""
                                 />
                                 <div className="tp-project__icon">

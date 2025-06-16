@@ -442,7 +442,7 @@ const ServiceMainIdentity = () => {
                             src="/about-images/Team_rmw.jpg"
                             alt=""
                           />
-                          <div className="tp-about__experience">
+                          {/* <div className="tp-about__experience">
                             <h3 className="tp-about__experience-number">
                               <b
                                 className="purecounter"
@@ -455,7 +455,7 @@ const ServiceMainIdentity = () => {
                             <span className="tp-about__experience-title">
                               years of experience
                             </span>
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                       <div className="tp-about__funfact-box mr-70">
