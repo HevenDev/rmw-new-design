@@ -49,7 +49,7 @@
 .closeMenu {
   background: none;
   border: none;
-  color: #e7dc25;
+  color: #3d002e;
   font-size: 24px;
   cursor: pointer;
   align-self: center;
@@ -340,7 +340,7 @@
   .dropdownArrow {
     background: none;
     border: none;
-    color: #e7dc25;
+    color: #3d002e;
     font-size: 16px;
     cursor: pointer;
   }
@@ -406,7 +406,7 @@
 .dropdownArrow {
   background: none;
   border: none;
-  color: #e7dc25;
+  color: #3d002e;
   font-size: 16px;
   cursor: pointer;
 }
