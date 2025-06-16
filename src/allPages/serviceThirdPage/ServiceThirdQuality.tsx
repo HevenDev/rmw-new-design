@@ -78,7 +78,7 @@ const ServiceThirdQuality: React.FC<ServiceThirdQualityProps> = ({
                             >
                               <h3
                                 style={{
-                                  color: "#fddf82",
+                                  color: "#390350",
                                   marginBottom: "10px",
                                 }}
                               >
